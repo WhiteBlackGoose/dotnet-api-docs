@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
@@ -19,13 +19,13 @@ namespace CSharp
             GetStringPageFunction pageFunction = new GetStringPageFunction();
 
             // Detect when page function returns
-            pageFunction.Return += new ReturnEventHandler<String>(PageFunction_Return);
+            pageFunction.Return += new ReturnEventHandler<string>(PageFunction_Return);
 
             // Call page function
             this.NavigationService.Navigate(pageFunction);
         }
 
-        void PageFunction_Return(object sender, ReturnEventArgs<String> e)
+        void PageFunction_Return(object sender, ReturnEventArgs<string> e)
         {
             // Retrieve page function return value
             string returnValue = e.Result;

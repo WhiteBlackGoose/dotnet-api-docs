@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
@@ -79,7 +79,7 @@ namespace PhotoStore
         }
 
         private string _description;
-        public String Description { get { return _description; } }
+        public string Description { get { return _description; } }
 
         private double _cost;
         public double Cost { get { return _cost; } }
@@ -128,7 +128,7 @@ namespace PhotoStore
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(String info)
+        private void OnPropertyChanged(string info)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(info));

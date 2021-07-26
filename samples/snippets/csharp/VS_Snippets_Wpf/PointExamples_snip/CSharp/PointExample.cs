@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -367,14 +367,14 @@ namespace Microsoft.Samples.PointExamples
         // </SnippetSubtractExample2>
 
         // <SnippetToStringExample>
-        private String toStringExample()
+        private string toStringExample()
         {
 
             Point point1 = new Point(10, 5);
 
             // Get a string representation of a Point structure.
             // pointString is equal to 10,5	.
-            String stringResult = point1.ToString();
+            string stringResult = point1.ToString();
 
             return stringResult;
         }

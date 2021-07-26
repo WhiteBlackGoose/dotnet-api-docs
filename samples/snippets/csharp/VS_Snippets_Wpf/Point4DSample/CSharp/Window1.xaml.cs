@@ -1,4 +1,4 @@
-﻿//This is a list of commonly used namespaces for a window.
+//This is a list of commonly used namespaces for a window.
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -32,7 +32,7 @@ namespace FourDPointSample
             RadioButton li = (sender as RadioButton);
 			
             // Strings used to display the results
-            String syntaxString, resultType, operationString;
+            string syntaxString, resultType, operationString;
 					
 			// The local variables point1, point2, vector2, etc are defined in each
 			// case block for readability reasons. Each variable is contained within
@@ -307,14 +307,14 @@ namespace FourDPointSample
                         //<SnippetMil4DPoints3DN15>
                         // Gets a string representation of the structure
                         Point4D point1 = new Point4D(10, 5, 1, 4);
-                        String pointString;
+                        string pointString;
 
                         pointString = point1.ToString();
                         // matrixString is equal to 10, 5, 1, 4
 
                         // Displaying Results
                         syntaxString = "pointString = point1.ToString();";
-                        resultType = "String";
+                        resultType = "string";
                         operationString = "Getting the string representation of a Point4D";
                         ShowResults(pointString.ToString(), syntaxString, resultType, operationString);
                         //</SnippetMil4DPoints3DN15>
@@ -352,7 +352,7 @@ namespace FourDPointSample
                         // result variables
                         Boolean areEqual;
                         Boolean areNotEqual;
-                        String stringResult;
+                        string stringResult;
 
                         // defining x,y,z of point1
                         point4D1.X = 10;
@@ -396,7 +396,7 @@ namespace FourDPointSample
 
         //</SnippetMil4DPoints3DN2>
         // Displays the results of the operation
-        private void ShowResults(String resultValue, String syntax, String resultType, String opString)
+        private void ShowResults(string resultValue, string syntax, string resultType, string opString)
         {
 
             txtResultValue.Text = resultValue;

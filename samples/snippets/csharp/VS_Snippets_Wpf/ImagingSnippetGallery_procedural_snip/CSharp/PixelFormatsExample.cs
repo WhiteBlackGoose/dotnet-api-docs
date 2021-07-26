@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -86,7 +86,7 @@ namespace SDKSample
             IList<PixelFormatChannelMask> myChannelMaskCollection = myPixelFormat.Masks;
 
             // Capture the mask info in a string.
-            String stringOfValues = " ";
+            string stringOfValues = " ";
             foreach (PixelFormatChannelMask myMask in myChannelMaskCollection)
             {
                 IList<byte> myBytesCollection = myMask.Mask;

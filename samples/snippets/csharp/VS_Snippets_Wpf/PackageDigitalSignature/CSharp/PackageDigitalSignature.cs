@@ -1,4 +1,4 @@
-﻿// PackageDigitalSignature SDK Sample - PackageDigitalSignature.cs
+// PackageDigitalSignature SDK Sample - PackageDigitalSignature.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -56,7 +56,7 @@ namespace SDKSample
         ///   content and resource files.</summary>
         /// <param name="packageFilename">
         ///   The filename of the Package to create.</param>
-        private static void CreatePackage(String packageFilename)
+        private static void CreatePackage(string packageFilename)
         {
             // Create URIs for the parts that will be added to the Package.
             Uri uriDocument = new Uri(@"Content\Document.xml", UriKind.Relative);

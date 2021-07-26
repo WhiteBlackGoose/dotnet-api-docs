@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,7 +52,7 @@ namespace InputCommandBinding
             }
 
             Color newColor = 
-                (Color)ColorConverter.ConvertFromString((String)colorString);
+                (Color)ColorConverter.ConvertFromString((string)colorString);
             
             alternateColor = new SolidColorBrush(newColor);
 

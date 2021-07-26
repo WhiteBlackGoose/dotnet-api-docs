@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -127,7 +127,7 @@ namespace SDKSamples
 
             try
             {
-                intFont = Int32.Parse(fontSize);
+                intFont = int.Parse(fontSize);
                 return intFont;
             }
             catch (FormatException e)

@@ -1,4 +1,4 @@
-﻿//This is a list of commonly used namespaces for a window.
+//This is a list of commonly used namespaces for a window.
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -31,7 +31,7 @@ namespace ThreeDPointSample
 			RadioButton li = (sender as RadioButton);
 			
             // Strings used to display the results
-            String syntaxString, resultType, operationString;
+            string syntaxString, resultType, operationString;
 					
 			// The local variables point1, point2, vector2, etc are defined in each
 			// case block for readability reasons. Each variable is contained within
@@ -386,7 +386,7 @@ namespace ThreeDPointSample
         //</SnippetMil3DPoints3DN2>
 
         // Displays the results of the operation
-        private void ShowResults(String resultValue, String syntax, String resultType, String opString)
+        private void ShowResults(string resultValue, string syntax, string resultType, string opString)
         {
 
             txtResultValue.Text = resultValue;

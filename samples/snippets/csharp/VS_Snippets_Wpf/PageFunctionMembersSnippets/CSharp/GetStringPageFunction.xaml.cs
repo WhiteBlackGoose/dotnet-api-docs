@@ -1,10 +1,10 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Navigation;
 
 namespace CSharp
 {
-    public partial class GetStringPageFunction : PageFunction<String>
+    public partial class GetStringPageFunction : PageFunction<string>
     {
         public GetStringPageFunction()
         {
@@ -27,7 +27,7 @@ namespace CSharp
         void doneButton_Click(object sender, RoutedEventArgs e)
         {
             // Complete the page function and return data of type T
-            OnReturn(new ReturnEventArgs<String>(this.pageFunctionData.Text));
+            OnReturn(new ReturnEventArgs<string>(this.pageFunctionData.Text));
         }
         //</SnippetCallOnReturnCODE>
     }

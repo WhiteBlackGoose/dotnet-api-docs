@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -43,7 +43,7 @@ namespace SDKSample
         // The following variable and method provide the support for
         // handling property changed events.
         public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(String info)
+        private void OnPropertyChanged(string info)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(info));
