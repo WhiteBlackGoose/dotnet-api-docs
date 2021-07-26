@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example for the Exception( ) constructor.
 using System;
 
@@ -93,8 +93,8 @@ parameterless constructor of the base class.
 
 Half of 12 is 6.
 System.Exception: Exception of type System.Exception was thrown.
-   at NDP_UE_CS.NewExceptionDemo.Half(Int32 input)
-   at NDP_UE_CS.NewExceptionDemo.CalcHalf(Int32 input)
+   at NDP_UE_CS.NewExceptionDemo.Half(int input)
+   at NDP_UE_CS.NewExceptionDemo.CalcHalf(int input)
 
 Here, an exception is thrown using the
 parameterless constructor of a derived class.
@@ -102,7 +102,7 @@ parameterless constructor of a derived class.
 Half of 24 is 12.
 NDP_UE_CS.NotEvenException: The argument to a function requiring even input is
 not divisible by 2.
-   at NDP_UE_CS.NewExceptionDemo.Half2(Int32 input)
-   at NDP_UE_CS.NewExceptionDemo.CalcHalf2(Int32 input)
+   at NDP_UE_CS.NewExceptionDemo.Half2(int input)
+   at NDP_UE_CS.NewExceptionDemo.CalcHalf2(int input)
 */
 //</Snippet1>

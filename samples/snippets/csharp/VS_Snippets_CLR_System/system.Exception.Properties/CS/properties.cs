@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example for the Exception.HelpLink, Exception.Source,
 // Exception.StackTrace, and Exception.TargetSite properties.
 using System;
@@ -13,7 +13,7 @@ namespace NDP_UE_CS
 
         public LogTableOverflowException(
             string auxMessage, Exception inner ) :
-                base( String.Format( "{0} - {1}",
+                base( string.Format( "{0} - {1}",
                     overflowMessage, auxMessage ), inner )
         {
             this.HelpLink = "https://docs.microsoft.com";
@@ -44,7 +44,7 @@ namespace NDP_UE_CS
             catch( Exception e )
             {
                 throw new LogTableOverflowException(
-                    String.Format( "Record \"{0}\" was not logged.",
+                    string.Format( "Record \"{0}\" was not logged.",
                         newRecord ), e );
             }
         }
@@ -68,7 +68,7 @@ namespace NDP_UE_CS
                 for( int count = 1; ; count++ )
                 {
                     log.AddRecord(
-                        String.Format(
+                        string.Format(
                             "Log record number {0}", count ) );
                 }
             }
@@ -106,10 +106,10 @@ Source ---
 Exception_Class_Samples
 
 StackTrace ---
-   at NDP_UE_CS.LogTable.AddRecord(String newRecord)
+   at NDP_UE_CS.LogTable.AddRecord(string newRecord)
    at NDP_UE_CS.OverflowDemo.Main()
 
 TargetSite ---
-Int32 AddRecord(System.String)
+int AddRecord(System.String)
 */
 //</Snippet1>

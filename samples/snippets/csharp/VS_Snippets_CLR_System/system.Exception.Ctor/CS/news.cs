@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 // Example for the Exception( string ) constructor.
 using System;
 
@@ -16,7 +16,7 @@ namespace NDP_UE_CS
         { }
 
         public NotEvenException( string auxMessage ) :
-            base( String.Format( "{0} - {1}",
+            base( string.Format( "{0} - {1}",
                 auxMessage, notEvenMessage ) )
         { }
     }
@@ -47,7 +47,7 @@ namespace NDP_UE_CS
         static int Half( int input )
         {
             if( input % 2 != 0 )
-                throw new Exception( String.Format(
+                throw new Exception( string.Format(
                     "The argument {0} is not divisible by 2.",
                     input ) );
 
@@ -59,7 +59,7 @@ namespace NDP_UE_CS
         {
             if( input % 2 != 0 )
                 throw new NotEvenException(
-                    String.Format( "Invalid argument: {0}", input ) );
+                    string.Format( "Invalid argument: {0}", input ) );
 
             else return input / 2;
         }
@@ -105,8 +105,8 @@ constructor of the base class.
 
 Half of 18 is 9.
 System.Exception: The argument 21 is not divisible by 2.
-   at NDP_UE_CS.NewSExceptionDemo.Half(Int32 input)
-   at NDP_UE_CS.NewSExceptionDemo.CalcHalf(Int32 input)
+   at NDP_UE_CS.NewSExceptionDemo.Half(int input)
+   at NDP_UE_CS.NewSExceptionDemo.CalcHalf(int input)
 
 Here, an exception is thrown using the
 constructor of a derived class.
@@ -114,7 +114,7 @@ constructor of a derived class.
 Half of 30 is 15.
 NDP_UE_CS.NotEvenException: Invalid argument: 33 - The argument to a function r
 equiring even input is not divisible by 2.
-   at NDP_UE_CS.NewSExceptionDemo.Half2(Int32 input)
-   at NDP_UE_CS.NewSExceptionDemo.CalcHalf2(Int32 input)
+   at NDP_UE_CS.NewSExceptionDemo.Half2(int input)
+   at NDP_UE_CS.NewSExceptionDemo.CalcHalf2(int input)
 */
 //</Snippet2>
