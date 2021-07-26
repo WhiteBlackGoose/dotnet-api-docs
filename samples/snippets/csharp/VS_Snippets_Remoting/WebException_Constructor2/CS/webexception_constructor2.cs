@@ -1,6 +1,6 @@
-﻿// System.Net.WebException.WebException(String);
+// System.Net.WebException.WebException(string);
 /*
-This program demonstrates the 'WebException(String)' constructor of 'WebException' class.
+This program demonstrates the 'WebException(string)' constructor of 'WebException' class.
 It creates a 'HttpConnect' object and calls the 'ConnectHttpServer' method with invalid 'URL'.
 When the method tries to establish a socket connection to that address an exception is thrown.In 
 the 'catch' block  a new 'WebException' object is created with a message(specific to the present 
@@ -29,7 +29,7 @@ public class HttpConnect{
 		   }
 		}
 
-    	public void ConnectHttpServer(String connectUri)
+    	public void ConnectHttpServer(string connectUri)
       {
 // <Snippet1>
 	      try

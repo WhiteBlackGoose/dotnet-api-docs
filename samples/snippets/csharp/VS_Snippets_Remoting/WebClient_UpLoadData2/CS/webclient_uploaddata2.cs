@@ -1,8 +1,8 @@
-﻿// System.Net.WebClient.UploadData(String,byte[])
+// System.Net.WebClient.UploadData(string,byte[])
 /*
-This program demonstrates the 'UploadData(String,byte[])' method of "WebClient" class.
+This program demonstrates the 'UploadData(string,byte[])' method of "WebClient" class.
 It accepts an Uri and some string content to be posted to the Uri. This string is posted to the Uri 
-provided as input using the 'UploadData(String,byte[])' method. The custom made site responds back 
+provided as input using the 'UploadData(string,byte[])' method. The custom made site responds back 
 with whatever was posted to it. The contents of the response are displayed to the console.
 
 Note : The results described were obtained using a custom made site. This behavior may not be the

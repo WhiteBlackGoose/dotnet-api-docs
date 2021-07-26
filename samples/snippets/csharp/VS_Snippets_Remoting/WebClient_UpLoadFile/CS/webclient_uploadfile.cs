@@ -1,8 +1,8 @@
-﻿// System.Net.WebClient.UploadFile(String,String)
+// System.Net.WebClient.UploadFile(string,String)
 /*
-This program demonstrates the 'UploadFile(String,String)' method of "WebClient" class.
+This program demonstrates the 'UploadFile(string,String)' method of "WebClient" class.
 It accepts an Uri and the path of a file to be uploaded to the Uri. This file is uploaded to the Uri 
-provided as input using the 'UploadFile(String,String)' method. The custom made site responds back 
+provided as input using the 'UploadFile(string,String)' method. The custom made site responds back 
 with whatever was posted to it. Thus the contents of the file are displayed to the console.
 
 Note: The results described were obtained using a custom made site. This behavior may not be the
@@ -23,7 +23,7 @@ public class WebClient_UpLoadFile
         {
 // <Snippet1>
             Console.Write("\nPlease enter the URI to post data to : ");
-            String uriString = Console.ReadLine();
+            string uriString = Console.ReadLine();
 
             // Create a new WebClient instance.
             WebClient myWebClient = new WebClient();

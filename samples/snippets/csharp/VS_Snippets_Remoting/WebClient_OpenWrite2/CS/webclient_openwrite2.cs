@@ -1,8 +1,8 @@
-﻿// System.Net.WebClient.OpenWrite(String)
+// System.Net.WebClient.OpenWrite(string)
 /*
-This program demonstrates the 'OpenWrite(String)' method of "WebClient" class.
+This program demonstrates the 'OpenWrite(string)' method of "WebClient" class.
 It accepts an Uri and some string content to be posted to the Uri. The
-program makes a call to 'OpenWrite(String)' method and obtains a "Stream" instance
+program makes a call to 'OpenWrite(string)' method and obtains a "Stream" instance
 This stream is used to post data to the site. 
 
 Note : Behavior of this program may not be the same with all other sites. Also certain 

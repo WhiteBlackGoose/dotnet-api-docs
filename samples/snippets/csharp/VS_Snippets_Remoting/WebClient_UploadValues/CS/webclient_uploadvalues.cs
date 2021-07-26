@@ -1,9 +1,9 @@
-﻿// System.Net.WebClient.UploadValues(String,NameValueCollection)
+// System.Net.WebClient.UploadValues(string,NameValueCollection)
 /*
-This program demonstrates the 'UploadValues(String,NameValueCollection)' method of "WebClient" class.
+This program demonstrates the 'UploadValues(string,NameValueCollection)' method of "WebClient" class.
 It accepts an Uri.Forms a 'NameValueCollection' instance using 
 a set of pre-defined name-value pairs. These are posted to the Uri provided as input using the 
-'UploadValues(String,NameValueCollection)'method. The custom made site responds back 
+'UploadValues(string,NameValueCollection)'method. The custom made site responds back 
 with whatever was posted to it. This is displayed to the console.
 
 Note : The results described were obtained using a custom made site. This behavior may not be the
@@ -48,7 +48,7 @@ public class WebClient_UpLoadValues
             myNameValueCollection.Add("Age",age);
 
             Console.WriteLine("\nUploading to {0} ...",  uriString);
-            // 'The Upload(String,NameValueCollection)' implicitly method sets HTTP POST as the request method.            
+            // 'The Upload(string,NameValueCollection)' implicitly method sets HTTP POST as the request method.            
             byte[] responseArray = myWebClient.UploadValues(uriString,myNameValueCollection);
             
             // Decode and display the response.

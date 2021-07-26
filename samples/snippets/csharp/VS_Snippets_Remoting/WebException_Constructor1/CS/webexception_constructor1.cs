@@ -1,4 +1,4 @@
-﻿// System.Net.WebException.WebException();
+// System.Net.WebException.WebException();
 
 /*
 This program demonstrates the 'WebException()' constructor of 'WebException' class.
@@ -30,7 +30,7 @@ public class HttpConnect{
 		   }
 		}
 
-    	public void ConnectHttpServer(String connectUri)
+    	public void ConnectHttpServer(string connectUri)
       {
 // <Snippet1>
 
@@ -51,7 +51,7 @@ public class HttpConnect{
 		   }
          catch(SocketException e)
 		   {
-   		   String exp = e.Message;	
+   		   string exp = e.Message;	
 	   	   // Throw the WebException with no parameters.
 		      throw new WebException();
 		   }
