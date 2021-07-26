@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 
 public class Example
@@ -14,7 +14,7 @@ public class Example
 
    private static string GetComponentParts(float value)
    {
-      string result = String.Format("{0:R}: ", value);
+      string result = string.Format("{0:R}: ", value);
       int indent = result.Length;
 
       // Convert the single to a 4-byte array.
@@ -22,19 +22,19 @@ public class Example
       int formattedSingle = BitConverter.ToInt32(bytes, 0);
       
       // Get the sign bit (byte 3, bit 7).
-      result += String.Format("Sign: {0}\n", 
+      result += string.Format("Sign: {0}\n", 
                               (formattedSingle >> 31) != 0 ? "1 (-)" : "0 (+)");
 
       // Get the exponent (byte 2 bit 7 to byte 3, bits 6)
       int exponent =  (formattedSingle >> 23) & 0x000000FF;
       int adjustment = (exponent != 0) ? 127 : 126;
-      result += String.Format("{0}Exponent: 0x{1:X4} ({1})\n", new String(' ', indent), exponent - adjustment);
+      result += string.Format("{0}Exponent: 0x{1:X4} ({1})\n", new string(' ', indent), exponent - adjustment);
 
       // Get the significand (bits 0-22)
       long significand = exponent != 0 ? 
                          ((formattedSingle & 0x007FFFFF) | 0x800000) : 
                          (formattedSingle & 0x007FFFFF); 
-      result += String.Format("{0}Mantissa: 0x{1:X13}\n", new String(' ', indent), significand);    
+      result += string.Format("{0}Mantissa: 0x{1:X13}\n", new string(' ', indent), significand);    
       return result;   
    }
 }

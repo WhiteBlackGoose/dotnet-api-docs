@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       string[] values = { "100", "(100)", "-123,456,789", "123.45e+6", 
                           "+500", "5e2", "3.1416", "600.", "-.123", 
                           "-Infinity", "-1E-16", Double.MaxValue.ToString(), 
-                          Single.MinValue.ToString(), String.Empty };
+                          Single.MinValue.ToString(), string.Empty };
       foreach (string value in values)
       {
          try {   

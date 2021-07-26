@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the Single.Parse( ) methods.
 using System;
 using System.Globalization;
@@ -28,7 +28,7 @@ class SingleParseDemo
 
             // Display the first part of the output line.
             Console.Write( "  Parse of {0,-20}", 
-                String.Format( "\"{0}\"", singleString ) );
+                string.Format( "\"{0}\"", singleString ) );
 
             try
             {
@@ -64,10 +64,10 @@ class SingleParseDemo
     public static void Main( )
     {
         Console.WriteLine( "This example of\n" +
-            "  Single.Parse( String ),\n" +
-            "  Single.Parse( String, NumberStyles ),\n" +
-            "  Single.Parse( String, IFormatProvider ), and\n" +
-            "  Single.Parse( String, NumberStyles, " +
+            "  Single.Parse( string ),\n" +
+            "  Single.Parse( string, NumberStyles ),\n" +
+            "  Single.Parse( string, IFormatProvider ), and\n" +
+            "  Single.Parse( string, NumberStyles, " +
             "IFormatProvider )\ngenerates the " +
             "following output when run in the [{0}] culture.", 
             CultureInfo.CurrentCulture.Name );
@@ -114,10 +114,10 @@ class SingleParseDemo
 
 /*
 This example of
-  Single.Parse( String ),
-  Single.Parse( String, NumberStyles ),
-  Single.Parse( String, IFormatProvider ), and
-  Single.Parse( String, NumberStyles, IFormatProvider )
+  Single.Parse( string ),
+  Single.Parse( string, NumberStyles ),
+  Single.Parse( string, IFormatProvider ), and
+  Single.Parse( string, NumberStyles, IFormatProvider )
 generates the following output when run in the [en-US] culture.
 Several string representations of Single values are parsed.
 

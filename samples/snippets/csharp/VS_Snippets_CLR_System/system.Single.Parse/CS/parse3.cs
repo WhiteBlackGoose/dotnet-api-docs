@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 
@@ -25,7 +25,7 @@ public class Example
       foreach (CultureInfo provider in providers)
       {
          Console.WriteLine("Parsing using the {0} culture:",
-                           provider.Name == String.Empty ? "Invariant" : provider.Name);
+                           provider.Name == string.Empty ? "Invariant" : provider.Name);
          // Parse each element in the array of string values.
          foreach (string value in values)
          {

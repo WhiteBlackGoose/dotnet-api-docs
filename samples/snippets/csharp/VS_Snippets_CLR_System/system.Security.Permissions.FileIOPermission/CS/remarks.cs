@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security;
 using System.Security.Permissions;
 
@@ -11,7 +11,7 @@ public class FileIOPermissionDemo
             FileIOPermission fileIOPerm1;
             fileIOPerm1 = new FileIOPermission(PermissionState.Unrestricted);
 
-            // Tests for: SetPathList(FileIOPermissionAccess,String)
+            // Tests for: SetPathList(FileIOPermissionAccess,string)
 
             // Test the Read list
             fileIOPerm1.SetPathList(FileIOPermissionAccess.Read, "C:\\documents");

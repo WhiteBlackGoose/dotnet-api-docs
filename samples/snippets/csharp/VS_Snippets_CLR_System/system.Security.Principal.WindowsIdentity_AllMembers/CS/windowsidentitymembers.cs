@@ -1,4 +1,4 @@
-﻿// This sample demonstrates how to use each member of the WindowsIdentity
+// This sample demonstrates how to use each member of the WindowsIdentity
 // class.
 //<Snippet1>
 using System;
@@ -143,7 +143,7 @@ class WindowsIdentityMembers
 
         // Retrieve the authentication type for the 
         //<Snippet18>
-        String authenticationType = windowsIdentity.AuthenticationType;
+        string authenticationType = windowsIdentity.AuthenticationType;
 
         // Append the authenication type to the output message.
         if (authenticationType != null)
