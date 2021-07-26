@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Printing;
@@ -37,7 +37,7 @@ namespace BatchPrintXPSFiles
             
             // Prompt user to identify the directory, and then create the directory object.
             Console.Write("Enter the directory containing the XPS files: ");
-            String directoryPath = Console.ReadLine();
+            string directoryPath = Console.ReadLine();
             DirectoryInfo dir = new DirectoryInfo(directoryPath);
 
             // If the user mistyped, end the thread and return to the Main thread.
@@ -61,7 +61,7 @@ namespace BatchPrintXPSFiles
                     // Batch process all XPS files in the directory.
                     foreach (FileInfo f in dir.GetFiles("*.xps"))
                     {
-                        String nextFile = directoryPath + "\\" + f.Name;
+                        string nextFile = directoryPath + "\\" + f.Name;
                         Console.WriteLine("Adding {0} to queue.", nextFile);
 
                         try

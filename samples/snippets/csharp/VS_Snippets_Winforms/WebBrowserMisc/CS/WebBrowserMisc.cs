@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Security.Permissions;
 
@@ -82,7 +82,7 @@ public class Form1 : Form
             this.webBrowser1.Document;
 
         if (document != null && document.All["userName"] != null && 
-            String.IsNullOrEmpty(
+            string.IsNullOrEmpty(
             document.All["userName"].GetAttribute("value")))
         {
             e.Cancel = true;

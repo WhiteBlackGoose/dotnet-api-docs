@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.ComponentModel;
 using System.Windows;
@@ -35,7 +35,7 @@ namespace SDKSample
         public event PropertyChangedEventHandler PropertyChanged;
 
         // OnPropertyChanged event handler to update property value in binding
-        private void OnPropertyChanged(String info)
+        private void OnPropertyChanged(string info)
         {
             if (PropertyChanged != null)
                 PropertyChanged(this, new PropertyChangedEventArgs(info));

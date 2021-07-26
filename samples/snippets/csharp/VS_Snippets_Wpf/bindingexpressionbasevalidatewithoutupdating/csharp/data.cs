@@ -1,4 +1,4 @@
-﻿//<SnippetData>
+//<SnippetData>
 using System;
 using System.ComponentModel;
 using System.Windows.Controls;
@@ -72,7 +72,7 @@ namespace BindingExpressionBaseValidateWithoutUpdating
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void NotifyPropertyChanged(String info)
+        protected void NotifyPropertyChanged(string info)
         {
             if (PropertyChanged != null)
             {

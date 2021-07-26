@@ -1,4 +1,4 @@
-﻿//<snippet00>
+//<snippet00>
 using System;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
@@ -97,7 +97,7 @@ namespace WebBrowserExtensibility
                 // Raise the NavigateError event.
                 this.parent.OnNavigateError(
                     new WebBrowserNavigateErrorEventArgs(
-                    (String)url, (String)frame, (Int32)statusCode, cancel));
+                    (string)url, (string)frame, (int)statusCode, cancel));
             }
         }
     }
@@ -109,13 +109,13 @@ namespace WebBrowserExtensibility
     // Provides data for the WebBrowser2.NavigateError event.
     public class WebBrowserNavigateErrorEventArgs : EventArgs
     {
-        private String urlValue;
-        private String frameValue;
-        private Int32 statusCodeValue;
+        private string urlValue;
+        private string frameValue;
+        private int statusCodeValue;
         private Boolean cancelValue;
 
         public WebBrowserNavigateErrorEventArgs(
-            String url, String frame, Int32 statusCode, Boolean cancel)
+            string url, string frame, int statusCode, Boolean cancel)
         {
             urlValue = url;
             frameValue = frame;
@@ -123,19 +123,19 @@ namespace WebBrowserExtensibility
             cancelValue = cancel;
         }
 
-        public String Url
+        public string Url
         {
             get { return urlValue; }
             set { urlValue = value; }
         }
 
-        public String Frame
+        public string Frame
         {
             get { return frameValue; }
             set { frameValue = value; }
         }
 
-        public Int32 StatusCode
+        public int StatusCode
         {
             get { return statusCodeValue; }
             set { statusCodeValue = value; }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
@@ -114,7 +114,7 @@ namespace SDKSample
             // result variables
             Boolean areEqual;
             Boolean areNotEqual;
-            String stringResult;
+            string stringResult;
 
             // defining x,y,z,w of point1
             point4D1.X = 10;

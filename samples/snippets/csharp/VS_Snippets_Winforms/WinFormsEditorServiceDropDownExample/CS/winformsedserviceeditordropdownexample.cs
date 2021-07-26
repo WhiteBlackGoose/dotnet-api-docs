@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -119,7 +119,7 @@ namespace IWindowsFormsEditorServiceExample
 
         public WinFormsEdServiceDropDownExampleControl()
         {
-            localDropDownTestString = "Test String";
+            localDropDownTestString = "Test string";
             this.Size = new Size(210, 74);
             this.BackColor = Color.Beige;
         }

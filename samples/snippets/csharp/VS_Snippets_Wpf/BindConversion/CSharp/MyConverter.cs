@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.ComponentModel;
 using System.Windows;
@@ -24,7 +24,7 @@ namespace SDKSample
                 case "en":
                     switch (type.Name)
                     {
-                        case "String":
+                        case "string":
                             return "Today is " + date.ToString("F", culture);
                         case "Brush":
                             return Brushes.Blue;
@@ -33,7 +33,7 @@ namespace SDKSample
                 case "es":
                     switch (type.Name)
                     {
-                        case "String":
+                        case "string":
                             return "Hoy es " + date.ToString("F", culture);
                         case "Brush":
                             return Brushes.Orange;
@@ -42,7 +42,7 @@ namespace SDKSample
                 case "de":
                     switch (type.Name)
                     {
-                        case "String":
+                        case "string":
                             return "Heute ist " + date.ToString("F", culture);
                         case "Brush":
                             return Brushes.Green;
@@ -51,7 +51,7 @@ namespace SDKSample
                 case "fr":
                     switch (type.Name)
                     {
-                        case "String":
+                        case "string":
                             return "Aujourd'hui est " + date.ToString("F", culture);
                         case "Brush":
                             return Brushes.Red;

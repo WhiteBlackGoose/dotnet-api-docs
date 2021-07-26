@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.ComponentModel;
 using System.Windows.Controls;
@@ -49,7 +49,7 @@ namespace Foo
            _myDataProperty = "Last bound time was " + adate.ToLongTimeString();
         }
 
-        public String MyDataProperty
+        public string MyDataProperty
         {
             get {return _myDataProperty;}
             set {

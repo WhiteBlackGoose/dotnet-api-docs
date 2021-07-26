@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -97,7 +97,7 @@ namespace IWindowsFormsEditorServiceExample
                                                                           this.ok_button});
             this.MinimumSize = new System.Drawing.Size(350, 100);
             this.Name = "StringInputDialog";
-            this.Text = "String Input Dialog";
+            this.Text = "string Input Dialog";
             this.ResumeLayout(false);
         }
     }
@@ -122,7 +122,7 @@ namespace IWindowsFormsEditorServiceExample
       
         public WinFormsEdServiceDialogExampleControl()
         {
-            localDialogTestString = "Test String"; 
+            localDialogTestString = "Test string"; 
             this.Size = new Size(210, 74);
             this.BackColor = Color.Beige;
         }

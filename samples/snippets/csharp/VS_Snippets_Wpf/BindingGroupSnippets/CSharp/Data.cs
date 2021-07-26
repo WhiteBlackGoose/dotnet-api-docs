@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -136,7 +136,7 @@ namespace BindingGroupSnippets
 
         public override string ToString()
         {
-            return String.Format("{0}, {1:c}, {2:D}", Description, Price, OfferExpires);
+            return string.Format("{0}, {1:c}, {2:D}", Description, Price, OfferExpires);
         }
 
         public string Description
@@ -182,7 +182,7 @@ namespace BindingGroupSnippets
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        private void NotifyPropertyChanged(String info)
+        private void NotifyPropertyChanged(string info)
         {
             if (PropertyChanged != null)
             {

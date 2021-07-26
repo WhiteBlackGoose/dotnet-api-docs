@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Data;
 using System.Windows;
 using System.Windows.Controls;
@@ -23,7 +23,7 @@ namespace SDKSample
             try
             {
                 if (((string)value).Length > 0)
-                    age = Int32.Parse((String)value);
+                    age = int.Parse((string)value);
             }
             catch (Exception e)
             {
