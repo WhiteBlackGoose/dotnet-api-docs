@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,7 +9,7 @@ public class Example : IComparer<CultureInfo>
    {
       // Assign possible values and their associated patterns to a
       // generic Dictionary object.
-      Dictionary<int, String> patterns = new Dictionary<int, String>();
+      Dictionary<int, string> patterns = new Dictionary<int, string>();
       string[] patternStrings= { "($n)", "-$n", "$-n", "$n-", "(n$)",
                                  "-n$", "n-$", "n$-", "-n $", "-$ n",
                                  "n $-", "$ n-", "$ -n", "n- $", "($ n)",
@@ -33,7 +33,7 @@ public class Example : IComparer<CultureInfo>
 
    public int Compare(CultureInfo x, CultureInfo y)
    {
-      return String.Compare(x.Name, y.Name);
+      return string.Compare(x.Name, y.Name);
    }
 }
 // A portion of the output appears as follows:

@@ -1,4 +1,4 @@
-﻿// The following code example creates instances of T:System.Globalization.RegionInfo using culture names.
+// The following code example creates instances of T:System.Globalization.RegionInfo using culture names.
 
 // <snippet1>
 using System;
@@ -16,7 +16,7 @@ public class SamplesRegionInfo  {
       //    but it is also the region name for the country/region "Argentina";
       //    therefore, it does not fail as expected.
       Console.WriteLine("Without checks...");
-      foreach (String culture in myCultures)  {
+      foreach (string culture in myCultures)  {
          try  {
             RegionInfo myRI = new RegionInfo( culture );
          }
@@ -28,7 +28,7 @@ public class SamplesRegionInfo  {
       Console.WriteLine();
 
       Console.WriteLine( "Checking the culture names first..." );
-      foreach (String culture in myCultures)  {
+      foreach (string culture in myCultures)  {
          if ( culture == "" )  {
             Console.WriteLine("The culture is the invariant culture.");
          }
@@ -58,12 +58,12 @@ This code produces the following output.
 Without checks...
 System.ArgumentException: Region name '' is not supported.
 Parameter name: name
-   at System.Globalization.RegionInfo..ctor(String name)
+   at System.Globalization.RegionInfo..ctor(string name)
    at SamplesRegionInfo.Main()
 System.ArgumentException: Region name 'en' is not supported.
 Parameter name: name
-   at System.Globalization.CultureTableRecord..ctor(String regionName, Boolean useUserOverride)
-   at System.Globalization.RegionInfo..ctor(String name)
+   at System.Globalization.CultureTableRecord..ctor(string regionName, Boolean useUserOverride)
+   at System.Globalization.RegionInfo..ctor(string name)
    at SamplesRegionInfo.Main()
 
 Checking the culture names first...

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -109,7 +109,7 @@ public class Example : IComparer
         Region r1 = (Region) o1;
         Region r2 = (Region) o2;
 
-        return String.Compare(r1.NativeName, r2.NativeName,
+        return string.Compare(r1.NativeName, r2.NativeName,
                               StringComparison.CurrentCulture);
    }
 }

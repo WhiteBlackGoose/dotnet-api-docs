@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Globalization;
 
@@ -9,7 +9,7 @@ public class Example
       CultureInfo stdCulture = CultureInfo.GetCultureInfo("en-US");
       CultureInfo custCulture = CultureInfo.CreateSpecificCulture("en-US");
 
-      String value = "310,16";
+      string value = "310,16";
       try {
          Console.WriteLine("{0} culture reflects user overrides: {1}",
                            stdCulture.Name, stdCulture.UseUserOverride);

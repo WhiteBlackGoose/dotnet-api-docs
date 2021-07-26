@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -10,7 +10,7 @@ public class Example
       UnicodeCategory category = UnicodeCategory.UppercaseLetter;
 
       for (ushort codePoint = 0; codePoint < ushort.MaxValue; codePoint++) {
-         Char ch = (char)codePoint;
+         char ch = (char)codePoint;
 
          if (CharUnicodeInfo.GetUnicodeCategory(ch) == category) {
             if (ctr % 5 == 0)

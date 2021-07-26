@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Globalization;
@@ -19,7 +19,7 @@ public class Example : IComparer
       foreach (var prop in props) {
          if (prop.PropertyType.IsArray) {
             Array arr = prop.GetValue(nfi1) as Array;
-            Console.Write(String.Format("   {0}: ", prop.Name) + "{ ");
+            Console.Write(string.Format("   {0}: ", prop.Name) + "{ ");
             int ctr = 0;
             foreach (var item in arr) {
                Console.Write("{0}{1}", item, ctr == arr.Length - 1 ?" }" : ", ");
@@ -43,7 +43,7 @@ public class Example : IComparer
       PropertyInfo py = y as PropertyInfo;
       if (py == null) return 1;
 
-      return String.Compare(px.Name, py.Name);
+      return string.Compare(px.Name, py.Name);
    }
 }
 // The example displays the following output:

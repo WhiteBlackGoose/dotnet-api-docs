@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 
 namespace ConsoleApplication2
@@ -86,7 +86,7 @@ namespace ConsoleApplication2
 
 		string IConvertible.ToString(IFormatProvider provider)
 		{
-			return String.Format("({0}, {1})", x, y);
+			return string.Format("({0}, {1})", x, y);
 		}
 
 		object IConvertible.ToType(Type conversionType, IFormatProvider provider)

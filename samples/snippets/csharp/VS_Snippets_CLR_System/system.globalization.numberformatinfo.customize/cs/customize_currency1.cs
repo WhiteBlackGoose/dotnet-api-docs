@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -26,7 +26,7 @@ public class Example
 
       // Produce the result strings by calling a composite formatting method.
       foreach (var value in values)
-         Console.WriteLine(String.Format(enUS, "{0:C}", value));
+         Console.WriteLine(string.Format(enUS, "{0:C}", value));
    }
 }
 // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -39,7 +39,7 @@ public class Example
    {
       // Deserialize the data
       StreamReader sr = new StreamReader(@".\NumericData.bin");
-      String data = sr.ReadToEnd();
+      string data = sr.ReadToEnd();
       sr.Close();
 
       String[] stringValues = data.Split('|');

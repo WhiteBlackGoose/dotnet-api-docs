@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -12,9 +12,9 @@ public class Example
                             "\u0627\u0628\u064C";
 
       // The Unicode code points specify private surrogate pairs.
-      string strSurrogates = Char.ConvertFromUtf32(0x10148) +
-                             Char.ConvertFromUtf32(0x20026) + "a" +
-                             Char.ConvertFromUtf32(0xF1001);
+      string strSurrogates = char.ConvertFromUtf32(0x10148) +
+                             char.ConvertFromUtf32(0x20026) + "a" +
+                             char.ConvertFromUtf32(0xF1001);
 
       EnumerateTextElements(strCombining);
       EnumerateTextElements(strSurrogates);

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Numerics;
@@ -21,10 +21,10 @@ public class BinaryFormatter : IFormatProvider, ICustomFormatter
       // Handle format string.
       int baseNumber;
       // Handle null or empty format string, string with precision specifier.
-      string thisFmt = String.Empty;
+      string thisFmt = string.Empty;
       // Extract first character of format string (precision specifiers
       // are not supported).
-      if (! String.IsNullOrEmpty(format))
+      if (! string.IsNullOrEmpty(format))
          thisFmt = format.Length > 1 ? format.Substring(0, 1) : format;
 
       // Get a byte array representing the numeric value.
@@ -63,7 +63,7 @@ public class BinaryFormatter : IFormatProvider, ICustomFormatter
             return HandleOtherFormats(format, arg);
          }
          catch (FormatException e) {
-            throw new FormatException(String.Format("The format of '{0}' is invalid.", format), e);
+            throw new FormatException(string.Format("The format of '{0}' is invalid.", format), e);
          }
       }
 
@@ -85,22 +85,22 @@ public class BinaryFormatter : IFormatProvider, ICustomFormatter
             return HandleOtherFormats(format, arg);
          }
          catch (FormatException e) {
-            throw new FormatException(String.Format("The format of '{0}' is invalid.", format), e);
+            throw new FormatException(string.Format("The format of '{0}' is invalid.", format), e);
          }
       }
 
       // Return a formatted string.
-      string numericString = String.Empty;
+      string numericString = string.Empty;
       for (int ctr = bytes.GetUpperBound(0); ctr >= bytes.GetLowerBound(0); ctr--)
       {
          string byteString = Convert.ToString(bytes[ctr], baseNumber);
          if (baseNumber == 2)
-            byteString = new String('0', 8 - byteString.Length) + byteString;
+            byteString = new string('0', 8 - byteString.Length) + byteString;
          else if (baseNumber == 8)
-            byteString = new String('0', 4 - byteString.Length) + byteString;
+            byteString = new string('0', 4 - byteString.Length) + byteString;
          // Base is 16.
          else
-            byteString = new String('0', 2 - byteString.Length) + byteString;
+            byteString = new string('0', 2 - byteString.Length) + byteString;
 
          numericString +=  byteString + " ";
       }
@@ -116,7 +116,7 @@ public class BinaryFormatter : IFormatProvider, ICustomFormatter
          return arg.ToString();
       // </Snippet3>
       else
-         return String.Empty;
+         return string.Empty;
    }
 }
 // </Snippet1>
@@ -130,21 +130,21 @@ public class Example
 
       byte byteValue = 124;
       // <Snippet4>
-      Console.WriteLine(String.Format(new BinaryFormatter(),
+      Console.WriteLine(string.Format(new BinaryFormatter(),
                                       "{0} (binary: {0:B}) (hex: {0:H})", byteValue));
       // </Snippet4>
 
       int intValue = 23045;
-      Console.WriteLine(String.Format(new BinaryFormatter(),
+      Console.WriteLine(string.Format(new BinaryFormatter(),
                                       "{0} (binary: {0:B}) (hex: {0:H})", intValue));
 
       ulong ulngValue = 31906574882;
-      Console.WriteLine(String.Format(new BinaryFormatter(),
+      Console.WriteLine(string.Format(new BinaryFormatter(),
                                       "{0}\n   (binary: {0:B})\n   (hex: {0:H})",
                                       ulngValue));
 
       BigInteger bigIntValue = BigInteger.Multiply(Int64.MaxValue, 2);
-      Console.WriteLine(String.Format(new BinaryFormatter(),
+      Console.WriteLine(string.Format(new BinaryFormatter(),
                                       "{0}\n   (binary: {0:B})\n   (hex: {0:H})",
                                       bigIntValue));
    }

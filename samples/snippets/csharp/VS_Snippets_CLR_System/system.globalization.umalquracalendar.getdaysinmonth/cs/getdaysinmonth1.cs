@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -9,7 +9,7 @@ public class Example
    {
       UmAlQuraCalendar cal = new UmAlQuraCalendar();
       List<string> months = new List<string>();
-      string output = String.Empty;
+      string output = string.Empty;
 
       // Get the current year in the UmAlQura calendar.
       int startYear = cal.GetYear(DateTime.Now);
@@ -27,9 +27,9 @@ public class Example
          {
             days = cal.GetDaysInMonth(year, month,
                                       UmAlQuraCalendar.UmAlQuraEra);
-            output = String.Format("{0}     ", days);
+            output = string.Format("{0}     ", days);
             if (months.Count < month)
-               months.Add(String.Format("{0,4}        {1}",
+               months.Add(string.Format("{0,4}        {1}",
                                         month, output));
             else
                months[month - 1] += "  " + output;
