@@ -1,4 +1,4 @@
-﻿//Types:System.Runtime.InteropServices.ClassInterfaceType
+//Types:System.Runtime.InteropServices.ClassInterfaceType
 //<snippet1>
 using System;
 using System.Runtime.InteropServices;
@@ -10,7 +10,7 @@ public class AClassUsableViaCOM
 {
     public AClassUsableViaCOM() { }
 
-    public Int32 Add(Int32 x, Int32 y) { return x + y; }
+    public int Add(int x, int y) { return x + y; }
 }
 
 // The CLR does not expose a class interface for this type.
@@ -20,6 +20,6 @@ public class AnotherClassUsableViaCOM : IComparable
 {
     public AnotherClassUsableViaCOM() { }
 
-    Int32 IComparable.CompareTo(Object o) { return 0; }
+    int IComparable.CompareTo(Object o) { return 0; }
 }
 //</snippet1>

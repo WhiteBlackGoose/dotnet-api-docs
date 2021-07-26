@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.CodeDom;
 
@@ -11,7 +11,7 @@ namespace CodeDomSamples
             //<Snippet2>
             // Declare a method that accepts a string parameter named text.
             CodeMemberMethod cmm = new CodeMemberMethod();
-            cmm.Parameters.Add( new CodeParameterDeclarationExpression("String", "text") );
+            cmm.Parameters.Add( new CodeParameterDeclarationExpression("string", "text") );
             cmm.Name = "WriteString";
             cmm.ReturnType = new CodeTypeReference("System.Void");
 
@@ -22,7 +22,7 @@ namespace CodeDomSamples
             cmm.Statements.Add( cmie );
 
             // A C# code generator produces the following source code for the preceeding example code:
-            //        private void WriteString(String text)
+            //        private void WriteString(string text)
             //        {
             //            Console.WriteLine(text);
             //        }

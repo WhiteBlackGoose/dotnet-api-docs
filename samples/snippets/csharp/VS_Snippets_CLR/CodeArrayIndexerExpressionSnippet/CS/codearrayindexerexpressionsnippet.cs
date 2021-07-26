@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
@@ -52,10 +52,10 @@ namespace CodeDOMSamples
             // Create an entry point method
             CodeEntryPointMethod cm = new CodeEntryPointMethod();
 
-            // Create the initialization expression for an array of type Int32 with 10 indices
+            // Create the initialization expression for an array of type int with 10 indices
             CodeArrayCreateExpression ca1 = new CodeArrayCreateExpression("System.Int32", 10);
 
-            // Declare an array of type Int32, using the CodeArrayCreateExpression ca1 as the initialization expression
+            // Declare an array of type int, using the CodeArrayCreateExpression ca1 as the initialization expression
             CodeVariableDeclarationStatement cv1 = new CodeVariableDeclarationStatement("System.Int32[]", "x", ca1);
 
             // Add the array declaration and initialization statement to the entry point method class member
@@ -70,7 +70,7 @@ namespace CodeDOMSamples
             // x[5]
             // </Snippet1>
 
-            // Declare a variable of type Int32 and adds it to the entry point method
+            // Declare a variable of type int and adds it to the entry point method
             CodeVariableDeclarationStatement cv2 = new CodeVariableDeclarationStatement("System.Int32", "y");
             cm.Statements.Add(cv2);
 

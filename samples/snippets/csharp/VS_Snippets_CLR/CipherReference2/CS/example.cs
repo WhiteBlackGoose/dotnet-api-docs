@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Security.Cryptography.Xml;
 using System.Xml;
@@ -14,7 +14,7 @@ namespace CipherReference2
 		static void Main(string[] args)
 		{
 			//Create a URI string.
-			String uri = "http://www.woodgrovebank.com/document.xml";
+			string uri = "http://www.woodgrovebank.com/document.xml";
 
 			// Create a Base64 transform. The input content retrieved from the
 			// URI should be Base64-decoded before other processing.

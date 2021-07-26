@@ -1,4 +1,4 @@
-﻿// The following example builds a CodeDom source graph for a simple
+// The following example builds a CodeDom source graph for a simple
 // class that represents document properties.  The source for the
 // graph is generated, saved to a file, compiled into an executable,
 // and run.
@@ -256,7 +256,7 @@ CodePropertyReferenceExpression(new CodeThisReferenceExpression(), "docAuthor"
             CodePropertyReferenceExpression thisDate = new
 CodePropertyReferenceExpression(new CodeThisReferenceExpression(), "docDate");
             CodeTypeReferenceExpression stringType = new
-CodeTypeReferenceExpression(typeof(String));
+CodeTypeReferenceExpression(typeof(string));
             CodePrimitiveExpression trueConst = new CodePrimitiveExpression(
 true);
             CodePrimitiveExpression falseConst = new CodePrimitiveExpression(
@@ -381,8 +381,8 @@ docPropUnit)
 
             // ------Declare the internal class fields------
 
-            baseClass.Members.Add(new CodeMemberField("String", "docTitle"));
-            baseClass.Members.Add(new CodeMemberField("String", "docAuthor"));
+            baseClass.Members.Add(new CodeMemberField("string", "docTitle"));
+            baseClass.Members.Add(new CodeMemberField("string", "docAuthor"));
             baseClass.Members.Add(new CodeMemberField("DateTime", "docDate"));
 
             // ------Build the DocumentProperty constructor------
@@ -390,9 +390,9 @@ docPropUnit)
             CodeConstructor docPropCtor = new CodeConstructor();
             docPropCtor.Attributes = MemberAttributes.Public;
             docPropCtor.Parameters.Add(new CodeParameterDeclarationExpression(
-"String", "title"));
+"string", "title"));
             docPropCtor.Parameters.Add(new CodeParameterDeclarationExpression(
-"String", "author"));
+"string", "author"));
             docPropCtor.Parameters.Add(new CodeParameterDeclarationExpression(
 "DateTime", "publishDate"));
 
@@ -428,7 +428,7 @@ myDate, inDate);
             docTitleProp.HasGet = true;
             docTitleProp.HasSet = true;
             docTitleProp.Name = "Title";
-            docTitleProp.Type = new CodeTypeReference("String");
+            docTitleProp.Type = new CodeTypeReference("string");
             docTitleProp.Attributes = MemberAttributes.Public;
             docTitleProp.GetStatements.Add(new CodeMethodReturnStatement(new
 CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "docTitle")));
@@ -442,7 +442,7 @@ new CodePropertySetValueReferenceExpression()));
             docAuthorProp.HasGet = true;
             docAuthorProp.HasSet = true;
             docAuthorProp.Name = "Author";
-            docAuthorProp.Type = new CodeTypeReference("String");
+            docAuthorProp.Type = new CodeTypeReference("string");
             docAuthorProp.Attributes = MemberAttributes.Public;
             docAuthorProp.GetStatements.Add(new CodeMethodReturnStatement(new
 CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "docAuthor")));
@@ -467,12 +467,12 @@ new CodePropertySetValueReferenceExpression()));
             baseClass.Members.Add(docDateProp);
         }
 
-        public static String GenerateCode(CodeDomProvider provider,
+        public static string GenerateCode(CodeDomProvider provider,
                                           CodeCompileUnit compileUnit)
         {
             // Build the source file name with the language
             // extension (vb, cs, js).
-            String sourceFile = "";
+            string sourceFile = "";
 
             // Write the source out in the selected language if
             // the code generator supports partial type declarations.
@@ -502,8 +502,8 @@ null);
 
         //<Snippet1>
         public static bool CompileCode(CodeDomProvider provider,
-            String sourceFile,
-            String exeFile)
+            string sourceFile,
+            string exeFile)
         {
 
             CompilerParameters cp = new CompilerParameters();
@@ -576,10 +576,10 @@ sourceFile);
         static void Main()
         {
             CodeDomProvider provider = null;
-            String exeName = "DocProp.exe";
+            string exeName = "DocProp.exe";
 
             Console.WriteLine("Enter the source language for DocumentProperties class (cs, vb, etc):");
-            String inputLang = Console.ReadLine();
+            string inputLang = Console.ReadLine();
             Console.WriteLine();
 
             if (CodeDomProvider.IsDefinedLanguage(inputLang))
@@ -597,9 +597,9 @@ sourceFile);
 
                 DocumentPropertyGraphExpand(ref docPropertyUnit);
 
-                String sourceFile = GenerateCode(provider, docPropertyUnit);
+                string sourceFile = GenerateCode(provider, docPropertyUnit);
 
-                if (!String.IsNullOrEmpty(sourceFile))
+                if (!string.IsNullOrEmpty(sourceFile))
                 {
                     Console.WriteLine("Document property class code generated.");
 

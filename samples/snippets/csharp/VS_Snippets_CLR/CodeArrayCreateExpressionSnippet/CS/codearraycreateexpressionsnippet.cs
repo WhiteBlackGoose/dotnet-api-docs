@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
@@ -53,10 +53,10 @@ namespace CodeDOMSamples
             CodeEntryPointMethod cm = new CodeEntryPointMethod();
 
             // <Snippet1>
-            // Create an initialization expression for a new array of type Int32 with 10 indices
+            // Create an initialization expression for a new array of type int with 10 indices
             CodeArrayCreateExpression ca1 = new CodeArrayCreateExpression("System.Int32", 10);
 
-            // Declare an array of type Int32, using the CodeArrayCreateExpression ca1 as the initialization expression
+            // Declare an array of type int, using the CodeArrayCreateExpression ca1 as the initialization expression
             CodeVariableDeclarationStatement cv1 = new CodeVariableDeclarationStatement("System.Int32[]", "x", ca1);
 
             // A C# code generator produces the following source code for the preceeding example code:

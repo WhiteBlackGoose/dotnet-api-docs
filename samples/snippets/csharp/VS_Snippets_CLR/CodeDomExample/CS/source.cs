@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
@@ -86,7 +86,7 @@ namespace CodeDOMExample
         {
             // Build the source file name with the appropriate
             // language extension.
-            String sourceFile;
+            string sourceFile;
             if (provider.FileExtension[0] == '.')
             {
                 sourceFile = "TestGraph" + provider.FileExtension;
@@ -108,8 +108,8 @@ namespace CodeDOMExample
 
         //<Snippet4>
         public static CompilerResults CompileCode(CodeDomProvider provider,
-                                                  String sourceFile,
-                                                  String exeFile)
+                                                  string sourceFile,
+                                                  string exeFile)
         {
             // Configure a CompilerParameters that links System.dll
             // and produces the specified executable file.
@@ -143,7 +143,7 @@ namespace CodeDOMExample
 
             // Build the source file name with the appropriate
             // language extension.
-            String sourceFile;
+            string sourceFile;
             if (provider.FileExtension[0] == '.')
             {
                 sourceFile = "TestGraph" + provider.FileExtension;
@@ -166,7 +166,7 @@ namespace CodeDOMExample
 
             // Build the source file name with the appropriate
             // language extension.
-            String sourceFile;
+            string sourceFile;
             if (provider.FileExtension[0] == '.')
             {
                 sourceFile = "TestGraph" + provider.FileExtension;

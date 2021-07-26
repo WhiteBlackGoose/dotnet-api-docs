@@ -1,4 +1,4 @@
-﻿// The following example illustrates using the C# or Visual Basic
+// The following example illustrates using the C# or Visual Basic
 // code providers to compile a source file.  The example program takes
 // a source file as input and attempts to compile the code into an executable.
 // If the source file has a .vb extension, it is compiled with the Visual Basic
@@ -41,7 +41,7 @@ namespace CodeProviders
         }
 
         //<Snippet2>
-        public static bool CompileExecutable(String sourceName)
+        public static bool CompileExecutable(string sourceName)
         {
             FileInfo sourceFile = new FileInfo(sourceName);
             CodeDomProvider provider = null;
@@ -68,7 +68,7 @@ namespace CodeProviders
                 // Build the output assembly path using the current directory
                 // and <source>_cs.exe or <source>_vb.exe.
 
-                String exeName = String.Format(@"{0}\{1}.exe",
+                string exeName = string.Format(@"{0}\{1}.exe",
                     System.Environment.CurrentDirectory,
                     sourceFile.Name.Replace(".", "_"));
 

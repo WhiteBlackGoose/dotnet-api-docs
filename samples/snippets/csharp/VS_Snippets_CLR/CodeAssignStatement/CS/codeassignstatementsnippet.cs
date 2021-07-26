@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
@@ -52,7 +52,7 @@ namespace CodeDOMSamples
             // Create a new entry point method
             CodeEntryPointMethod cm = new CodeEntryPointMethod();
 
-            // Declare a variable of type Int32 named "i"
+            // Declare a variable of type int named "i"
             CodeVariableDeclarationStatement cv1 = new CodeVariableDeclarationStatement("System.Int32", "i");
 
             // Add the variable declaration statement to the entry point method

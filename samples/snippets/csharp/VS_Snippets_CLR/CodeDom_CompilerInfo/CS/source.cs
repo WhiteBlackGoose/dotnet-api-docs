@@ -1,4 +1,4 @@
-﻿// System.CodeDom.Compiler.CompilerInfo
+// System.CodeDom.Compiler.CompilerInfo
 //
 // Requires .NET Framework version 2.0 or higher.
 //
@@ -36,8 +36,8 @@ namespace CodeDomCompilerInfoSample
         [STAThread]
         static void Main(string[] args)
         {
-            String queryCommand = "";
-            String queryArg = "";
+            string queryCommand = "";
+            string queryArg = "";
             int iNumArguments = args.Length;
 
             // Get input command-line arguments.
@@ -165,7 +165,7 @@ namespace CodeDomCompilerInfoSample
             if (CodeDomProvider.IsDefinedExtension(fileExtension))
             {
                 CodeDomProvider provider;
-                String language = CodeDomProvider.GetLanguageFromExtension(fileExtension);
+                string language = CodeDomProvider.GetLanguageFromExtension(fileExtension);
 
                 Console.WriteLine("The language \"{0}\" is associated with file extension \"{1}\"",
                     language, fileExtension);
@@ -285,8 +285,8 @@ namespace CodeDomCompilerInfoSample
             CompilerInfo [] allCompilerInfo = CodeDomProvider.GetAllCompilerInfo();
             foreach (CompilerInfo info in allCompilerInfo)
             {
-                String defaultLanguage;
-                String defaultExtension;
+                string defaultLanguage;
+                string defaultExtension;
 
                 CodeDomProvider provider = info.CreateProvider();
 
@@ -297,7 +297,7 @@ namespace CodeDomCompilerInfoSample
                 Console.WriteLine();
 
                 Console.WriteLine("  Supported file extension(s):");
-                foreach(String extension in info.GetExtensions())
+                foreach(string extension in info.GetExtensions())
                 {
                     Console.WriteLine("    {0}", extension);
                 }
@@ -312,7 +312,7 @@ namespace CodeDomCompilerInfoSample
                 Console.WriteLine();
 
                 Console.WriteLine("  Supported language(s):");
-                foreach(String language in info.GetLanguages())
+                foreach(string language in info.GetLanguages())
                 {
                     Console.WriteLine("    {0}", language);
                 }
