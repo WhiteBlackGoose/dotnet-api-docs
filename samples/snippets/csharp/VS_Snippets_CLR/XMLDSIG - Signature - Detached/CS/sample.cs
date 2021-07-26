@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 //
 // This example signs a URL using an
 // envelope signature. It then verifies the
@@ -105,7 +105,7 @@ public class SignVerifyEnvelope
     }
 
     // Verify the signature of an XML file and return the result.
-    public static Boolean VerifyXmlFile(String Name)
+    public static Boolean VerifyXmlFile(string Name)
     {
         // Check the arguments.
         if (Name == null)

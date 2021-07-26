@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Runtime.Remoting.Contexts;
 
@@ -35,6 +35,6 @@ public class Example
 //    The IsContextful property for the ContextBoundClass type is True.
 //    The IsMarshalByRef property of Example is False.
 //    The IsMarshalByRef property of ContextBoundClass is True.
-//    Int32 is a primitive data type: True.
-//    String is a primitive data type: False.
+//    int is a primitive data type: True.
+//    string is a primitive data type: False.
 // </Snippet1>

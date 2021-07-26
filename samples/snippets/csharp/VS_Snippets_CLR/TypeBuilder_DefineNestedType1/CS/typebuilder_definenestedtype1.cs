@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.TypeBuilder.DefineNestedType(string, TypeAttributes, Type, Type[])
+// System.Reflection.Emit.TypeBuilder.DefineNestedType(string, TypeAttributes, Type, Type[])
 // System.Reflection.Emit.TypeBuilder.DefineMethodOverride(MethodInfo, MethodInfo)
 // System.Reflection.Emit.TypeBuilder.DefineMethod(string, MethodAttributes,Type,Type[])
 
@@ -20,7 +20,7 @@ using System.Security.Permissions;
 
 public interface IMyInterface
 {
-   String HelloMethod(String parameter);
+   string HelloMethod(string parameter);
 }
 
 public class Example
@@ -59,13 +59,13 @@ public class Example
       MethodBuilder myHelloMethod =
          myNestedClassType.DefineMethod("HelloMethod",
             MethodAttributes.Public | MethodAttributes.Virtual,
-            typeof(String), new Type[]{typeof(String)});
+            typeof(string), new Type[]{typeof(string)});
       // Generate IL for 'GetGreeting' method.
       ILGenerator myMethodIL = myHelloMethod.GetILGenerator();
       myMethodIL.Emit(OpCodes.Ldstr, "Hi! ");
       myMethodIL.Emit(OpCodes.Ldarg_1);
       MethodInfo infoMethod =
-         typeof(String).GetMethod("Concat",new Type[]{typeof(string),typeof(string)});
+         typeof(string).GetMethod("Concat",new Type[]{typeof(string),typeof(string)});
       myMethodIL.Emit(OpCodes.Call, infoMethod);
       myMethodIL.Emit(OpCodes.Ret);
 

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // This sample demonstrates the use of the WindowsIdentity class to impersonate a user.
 // IMPORTANT NOTES:
 // This sample requests the user to enter a password on the console screen.
@@ -17,7 +17,7 @@ using System.Security;
 public class ImpersonationDemo
 {
     [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-    public static extern bool LogonUser(String lpszUsername, String lpszDomain, String lpszPassword,
+    public static extern bool LogonUser(string lpszUsername, string lpszDomain, string lpszPassword,
         int dwLogonType, int dwLogonProvider, out SafeTokenHandle phToken);
 
     [DllImport("kernel32.dll", CharSet = CharSet.Auto)]

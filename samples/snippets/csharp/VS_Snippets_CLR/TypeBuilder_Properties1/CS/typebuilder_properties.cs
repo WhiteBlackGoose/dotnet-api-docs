@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.TypeBuilder.FullName
+// System.Reflection.Emit.TypeBuilder.FullName
 // System.Reflection.Emit.TypeBuilder.GetConstructors
 // System.Reflection.Emit.TypeBuilder.DefineTypeInitializer
 
@@ -45,8 +45,8 @@ public class MyApplication
 
       // Define a public class named "HelloWorld" in the assembly.
       TypeBuilder helloWorldClass = myModule.DefineType("HelloWorld", TypeAttributes.Public);
-      // Define a private String field named "Greeting" in the type.
-      FieldBuilder greetingField = helloWorldClass.DefineField("Greeting", typeof(String),
+      // Define a private string field named "Greeting" in the type.
+      FieldBuilder greetingField = helloWorldClass.DefineField("Greeting", typeof(string),
          FieldAttributes.Private);
 
       // Create the constructor.

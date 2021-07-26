@@ -1,11 +1,11 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Reflection;
 
 class MyClass1
 {
-    String myMessage="Hello World.";
+    string myMessage="Hello World.";
     public string MyProperty1
     {
         get

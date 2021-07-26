@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -11,7 +11,7 @@ public class Sample
     //Define the order data.  They will be converted to string
     //before being written out.
     Int16 custID = 32632;
-    String orderID = "367A54";
+    string orderID = "367A54";
     DateTime orderDate = new DateTime();
     orderDate = DateTime.Now;
     Double price = 19.95;

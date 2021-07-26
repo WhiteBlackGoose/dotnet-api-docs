@@ -1,4 +1,4 @@
-﻿// FxCop Exception:
+// FxCop Exception:
 // This sample generates FxCop violation SecureLateBindingMethods for
 // Activator.CreateInstance, Type.GetType, etc..
 // The violation can be ignored, because:
@@ -73,12 +73,12 @@ public class MyTypeBuilder
 // </Snippet4>
       // Define 'myGreetingField' field.
       FieldBuilder myGreetingField =
-         helloWorldTypeBuilder.DefineField("myGreeting", typeof(String),
+         helloWorldTypeBuilder.DefineField("myGreeting", typeof(string),
                                                 FieldAttributes.Public);
 // </Snippet1>
 // <Snippet2>
       // Define the constructor.
-      Type[] constructorArgs = { typeof(String) };
+      Type[] constructorArgs = { typeof(string) };
       ConstructorBuilder myConstructorBuilder =
          helloWorldTypeBuilder.DefineConstructor(MethodAttributes.Public,
                             CallingConventions.Standard, constructorArgs);
