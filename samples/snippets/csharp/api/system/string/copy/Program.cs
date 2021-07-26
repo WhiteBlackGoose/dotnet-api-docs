@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 namespace copy
@@ -71,11 +71,11 @@ namespace copy
                 Marshal.FreeHGlobal(ptr);
             }
             Console.WriteLine($"Original string: {original}");
-            Console.WriteLine($"String from interop: '{result}'");
+            Console.WriteLine($"stringfrom interop: '{result}'");
         }
         // The example displays the following output:
         //    Original string: This is a single sentence.
-        //    String from interop: 'Uijt!jt!b!tjohmf!tfoufodf/'      
+        //    stringfrom interop: 'Uijt!jt!b!tjohmf!tfoufodf/'      
         // </Snippet3>
     }
 }

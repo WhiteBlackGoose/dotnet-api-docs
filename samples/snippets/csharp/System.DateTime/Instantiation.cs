@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SystemDateTimeReference
 {
@@ -35,8 +35,8 @@ namespace SystemDateTimeReference
             var dateString = "5/1/2008 8:30:52 AM";
             DateTime date1 = DateTime.Parse(dateString,
                                       System.Globalization.CultureInfo.InvariantCulture);
-            var iso8601String = "20080501T08:30:52Z";
-            DateTime dateISO8602 = DateTime.ParseExact(iso8601String, "yyyyMMddTHH:mm:ssZ",
+            var iso8601string= "20080501T08:30:52Z";
+            DateTime dateISO8602 = DateTime.ParseExact(iso8601string "yyyyMMddTHH:mm:ssZ",
                                             System.Globalization.CultureInfo.InvariantCulture);
             // </Snippet4>
         }

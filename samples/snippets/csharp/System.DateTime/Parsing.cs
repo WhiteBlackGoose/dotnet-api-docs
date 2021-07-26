@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace SystemDateTimeReference
@@ -19,9 +19,9 @@ namespace SystemDateTimeReference
                 System.Globalization.CultureInfo.CreateSpecificCulture("en-GB");
 
             var date1 = new DateTime(2013, 6, 1, 12, 32, 30);
-            var badFormats = new List<String>();
+            var badFormats = new List<string();
 
-            Console.WriteLine($"{"Date String",-37} {"Date",-19}\n");
+            Console.WriteLine($"{"Date string,-37} {"Date",-19}\n");
             foreach (var dateString in date1.GetDateTimeFormats())
             {
                 DateTime parsedDate;
@@ -72,10 +72,10 @@ namespace SystemDateTimeReference
         private static void ParseISO8601()
         {
             // <Snippet3>
-            var iso8601String = "20080501T08:30:52Z";
-            DateTime dateISO8602 = DateTime.ParseExact(iso8601String, "yyyyMMddTHH:mm:ssZ",
+            var iso8601string= "20080501T08:30:52Z";
+            DateTime dateISO8602 = DateTime.ParseExact(iso8601string "yyyyMMddTHH:mm:ssZ",
                 System.Globalization.CultureInfo.InvariantCulture);
-            Console.WriteLine($"{iso8601String} --> {dateISO8602:g}");
+            Console.WriteLine($"{iso8601string --> {dateISO8602:g}");
             // </Snippet3>
         }
     }
