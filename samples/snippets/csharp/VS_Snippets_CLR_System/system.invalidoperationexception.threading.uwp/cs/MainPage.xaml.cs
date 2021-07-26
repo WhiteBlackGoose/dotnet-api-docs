@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -31,7 +31,7 @@ namespace UWPCrossThreadSolutionCS
 
         private async void threadExampleBtn_Click(object sender, RoutedEventArgs e)
         {
-            textBox1.Text = String.Empty;
+            textBox1.Text = string.Empty;
 
             textBox1.Text = "Simulating work on UI thread.\n";
             DoSomeWork(20);
@@ -50,8 +50,8 @@ namespace UWPCrossThreadSolutionCS
 
             // Report completion.
             bool uiAccess = textBox1.Dispatcher.HasThreadAccess;
-            String msg = String.Format("Some work completed in {0} ms. on {1}UI thread\n",
-                                       milliseconds, uiAccess ? String.Empty : "non-");
+            string msg = string.Format("Some work completed in {0} ms. on {1}UI thread\n",
+                                       milliseconds, uiAccess ? string.Empty : "non-");
             if (uiAccess)
                 textBox1.Text += msg;
             else

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,12 +17,12 @@ namespace WFCrossThreadSolutionCS
             InitializeComponent();
         }
 
-        List<String> lines = new List<String>();
+        List<string> lines = new List<string>();
 
         private async void threadExampleBtn_Click(object sender, EventArgs e)
         {
 
-            textBox1.Text = String.Empty;
+            textBox1.Text = string.Empty;
             lines.Clear();
 
             lines.Add("Simulating work on UI thread.");
@@ -45,8 +45,8 @@ namespace WFCrossThreadSolutionCS
 
             // Report completion.
             bool uiMarshal = textBox1.InvokeRequired;
-            String msg = String.Format("Some work completed in {0} ms. on {1}UI thread\n",
-                                       milliseconds, uiMarshal ? String.Empty : "non-");
+            string msg = string.Format("Some work completed in {0} ms. on {1}UI thread\n",
+                                       milliseconds, uiMarshal ? string.Empty : "non-");
             lines.Add(msg);
 
             if (uiMarshal) {
