@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -11,7 +11,7 @@ public class Example
    {
       string value = null;
       // <Snippet2>
-      return String.IsNullOrEmpty(value) || value.Trim().Length == 0;
+      return string.IsNullOrEmpty(value) || value.Trim().Length == 0;
       // </Snippet2>
    }
 }

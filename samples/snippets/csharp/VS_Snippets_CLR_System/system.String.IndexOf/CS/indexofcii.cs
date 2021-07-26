@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Example for the String.IndexOf( char, int, int ) method.
+//<snippet1>
+// Example for the string.IndexOf( char, int, int ) method.
 using System;
 
 class IndexOfCII 
@@ -17,7 +17,7 @@ class IndexOfCII
             "ABCDEFGHI abcdefghi ABCDEFGHI";
 
         Console.WriteLine( 
-            "This example of String.IndexOf( char, int, int )\n" +
+            "This example of string.IndexOf( char, int, int )\n" +
             "generates the following output." );
         Console.WriteLine( 
             "{0}{1}{0}{2}{0}{3}{0}", 
@@ -31,7 +31,7 @@ class IndexOfCII
         FindAllChar( ' ', str );
     }
 
-    static void FindAllChar( Char target, String searched )
+    static void FindAllChar( char target, string searched )
     {
         Console.Write( 
             "The character '{0}' occurs at position(s): ", 
@@ -60,7 +60,7 @@ class IndexOfCII
 }
 
 /*
-This example of String.IndexOf( char, int, int )
+This example of string.IndexOf( char, int, int )
 generates the following output.
 
 0----+----1----+----2----+----3----+----4----+----5----+----6----+----7

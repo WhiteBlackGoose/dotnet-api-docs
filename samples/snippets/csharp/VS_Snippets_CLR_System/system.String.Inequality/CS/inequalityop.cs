@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Example for the String Inequality operator.
+//<snippet1>
+// Example for the string Inequality operator.
 using System;
 
 class InequalityOp 
@@ -7,7 +7,7 @@ class InequalityOp
     public static void Main() 
     {
         Console.WriteLine( 
-            "This example of the String Inequality operator\n" +
+            "This example of the string Inequality operator\n" +
             "generates the following output.\n" );
 
         CompareAndDisplay( "ijkl" );
@@ -15,9 +15,9 @@ class InequalityOp
         CompareAndDisplay( "abcd" );
     }
 
-    static void CompareAndDisplay( String Comparand )
+    static void CompareAndDisplay( string Comparand )
     {
-        String  Lower = "abcd";
+        string  Lower = "abcd";
 
         Console.WriteLine( 
             "\"{0}\" != \"{1}\" ?  {2}",
@@ -26,7 +26,7 @@ class InequalityOp
 }
 
 /*
-This example of the String Inequality operator
+This example of the string Inequality operator
 generates the following output.
 
 "abcd" != "ijkl" ?  True

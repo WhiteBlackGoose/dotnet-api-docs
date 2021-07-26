@@ -1,13 +1,13 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
 {
    public static void Main()
    {
-      String original = "aaabbb";
+      string original = "aaabbb";
       Console.WriteLine("The original string: '{0}'", original);
-      String modified = original.Insert(3, " ");
+      string modified = original.Insert(3, " ");
       Console.WriteLine("The modified string: '{0}'", modified);
    }
 }

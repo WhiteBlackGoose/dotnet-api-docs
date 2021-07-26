@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -9,11 +9,11 @@ public class Example
       string str2 = str1 + "b";
       string str3 = str2 + "c";
       string[] strings = { "value", "part1" + "_" + "part2", str3, 
-                           String.Empty, null };
+                           string.Empty, null };
       foreach (var value in strings) {
          if (value == null) continue;
          
-         bool interned = String.IsInterned(value) != null;
+         bool interned = string.IsInterned(value) != null;
          if (interned)
             Console.WriteLine("'{0}' is in the string intern pool.", 
                               value);

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -7,7 +7,7 @@ public class Example
    {
       char[] chars = { 'a', 'e', 'i', 'o', 'u', 'y', 
                        'A', 'E', 'I', 'O', 'U', 'Y' };
-      String s = "The long and winding road...";
+      string s = "The long and winding road...";
       Console.WriteLine("The first vowel in \n   {0}\nis found at position {1}", 
                         s, s.IndexOfAny(chars) + 1);                         
    }
