@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 
@@ -9,7 +9,7 @@ public class Page1: Page
 // <Snippet1>
 HttpFileCollection MyFileColl = Request.Files;
  HttpPostedFile MyPostedFile = MyFileColl.Get(0);
- String MyFileName = MyPostedFile.FileName;
+ string MyFileName = MyPostedFile.FileName;
 
 // </Snippet1>
  }

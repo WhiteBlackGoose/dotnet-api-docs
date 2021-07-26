@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Web.Caching;
@@ -9,7 +9,7 @@ protected  CacheItemRemovedCallback onRemove;
 
  private void Page_Load(Object sender, EventArgs e)
  {
- String connectionString = "";
+ string connectionString = "";
 // <Snippet1>
 Cache.Insert("DSN", connectionString, null, DateTime.Now.AddMinutes(2), TimeSpan.Zero, CacheItemPriority.High, onRemove);
 

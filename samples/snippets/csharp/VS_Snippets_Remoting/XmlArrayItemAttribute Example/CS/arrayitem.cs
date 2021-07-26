@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Xml;
@@ -59,7 +59,7 @@ public class Test
       PurchaseOrder po=new PurchaseOrder();
       po.Months = new string[]{ "March", "May", "August"};
       po.Items= new Item[]{new Item("a1"), new NewItem("b1", "book")};
-      po.Things= new object[] {"String", 2003.31, new NewItem("Item100", "book")};
+      po.Things= new object[] {"string", 2003.31, new NewItem("Item100", "book")};
       
       // Serialize the purchase order, and close the TextWriter.
       serializer.Serialize(writer, po);

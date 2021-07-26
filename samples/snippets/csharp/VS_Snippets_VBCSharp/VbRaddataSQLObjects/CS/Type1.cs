@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //<Snippet5>
 using System;
 using System.Data.SqlTypes;
@@ -8,11 +8,11 @@ using Microsoft.SqlServer.Server;
 [SqlUserDefinedType(Format.Native)]
 public struct Point : INullable
 {
-    private Int32 m_x;
-    private Int32 m_y;
+    private int m_x;
+    private int m_y;
     private bool is_Null;
 
-    public Int32 X
+    public int X
     {
         get
         {
@@ -24,7 +24,7 @@ public struct Point : INullable
         }
     }
 
-    public Int32 Y
+    public int Y
     {
         get
         {

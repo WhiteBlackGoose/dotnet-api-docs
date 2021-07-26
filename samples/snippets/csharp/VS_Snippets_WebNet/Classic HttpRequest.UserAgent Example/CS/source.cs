@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 
@@ -7,7 +7,7 @@ public class Page1: Page
  private void Page_Load(Object sender, EventArgs e)
  {
 // <Snippet1>
-String userAgent;
+string userAgent;
 userAgent = Request.UserAgent;
 if (userAgent.IndexOf("MSIE 6.0") > -1)
 {

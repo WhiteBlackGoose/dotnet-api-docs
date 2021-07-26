@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 
@@ -8,7 +8,7 @@ public class Page1: Page
  {
  HttpCookieCollection MyCookieCollection = Response.Cookies;
 // <Snippet1>
-String CookieName = MyCookieCollection[0].Name;
+string CookieName = MyCookieCollection[0].Name;
 
 // </Snippet1>
  }

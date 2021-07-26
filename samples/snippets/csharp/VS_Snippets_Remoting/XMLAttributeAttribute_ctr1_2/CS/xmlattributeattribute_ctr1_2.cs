@@ -1,5 +1,5 @@
-﻿// System.Xml.Serialization.XmlAttributeAttribute.XmlAttributeAttribute()
-// System.Xml.Serialization.XmlAttributeAttribute.XmlAttributeAttribute(String)
+// System.Xml.Serialization.XmlAttributeAttribute.XmlAttributeAttribute()
+// System.Xml.Serialization.XmlAttributeAttribute.XmlAttributeAttribute(string)
 
 /*  The following example demonstrates the constructor of XmlAttributeAttribute .
  *  This sample serializes a class named 'Student'. The StudentName property is
