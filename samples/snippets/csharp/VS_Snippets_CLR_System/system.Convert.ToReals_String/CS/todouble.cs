@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 
@@ -19,7 +19,7 @@ class Example
 
         Console.WriteLine("Default Culture: {0}\n",
                           CultureInfo.CurrentCulture.Name);
-        Console.WriteLine("{0,-22} {1,-20} {2,-20}\n", "String to Convert",
+        Console.WriteLine("{0,-22} {1,-20} {2,-20}\n", "string to Convert",
                           "Default/Exception", "Provider/Exception");
 
         // Convert each string to a Double with and without the provider.
@@ -43,7 +43,7 @@ class Example
 // The example displays the following output:
 //       Default Culture: en-US
 //
-//       String to Convert      Default/Exception    Provider/Exception
+//       string to Convert      Default/Exception    Provider/Exception
 //
 //       123456789              123456789            123456789
 //       12345.6789             12345.6789           123456789

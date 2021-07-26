@@ -1,6 +1,6 @@
-﻿//<Snippet1>
-// Example of the Convert.ToDecimal( String ) and
-// Convert.ToDecimal( String, IFormatProvider ) methods.
+//<Snippet1>
+// Example of the Convert.ToDecimal( string ) and
+// Convert.ToDecimal( string, IFormatProvider ) methods.
 using System;
 using System.Globalization;
 
@@ -57,15 +57,15 @@ class ToDecimalProviderDemo
         provider.NumberGroupSizes = new int[ ] { 3 };
 
         Console.WriteLine(
-            "This example of\n  Convert.ToDecimal( String ) and \n" +
-            "  Convert.ToDecimal( String, IFormatProvider ) \n" +
+            "This example of\n  Convert.ToDecimal( string ) and \n" +
+            "  Convert.ToDecimal( string, IFormatProvider ) \n" +
             "generates the following output when run in the " +
             "[{0}] culture.",
             CultureInfo.CurrentCulture.Name );
         Console.WriteLine( "\nSeveral " +
             "strings are converted to decimal values, using \n" +
             "default formatting and a NumberFormatInfo object.\n");
-        Console.WriteLine( formatter, "String to convert",
+        Console.WriteLine( formatter, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( formatter, "-----------------",
             "-----------------", "------------------" );
@@ -83,14 +83,14 @@ class ToDecimalProviderDemo
 
 /*
 This example of
-  Convert.ToDecimal( String ) and
-  Convert.ToDecimal( String, IFormatProvider )
+  Convert.ToDecimal( string ) and
+  Convert.ToDecimal( string, IFormatProvider )
 generates the following output when run in the [en-US] culture.
 
 Several strings are converted to decimal values, using
 default formatting and a NumberFormatInfo object.
 
-String to convert     Default/exception   Provider/exception
+string to convert     Default/exception   Provider/exception
 -----------------     -----------------   ------------------
 123456789             123456789           123456789
 12345.6789            12345.6789          123456789

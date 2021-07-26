@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -194,7 +194,7 @@ public class Class1
    private static void ConvertInt32()
    {
       // <Snippet7>
-      int[] numbers = { Int32.MinValue, -1, 0, 121, 340, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1, 0, 121, 340, int.MaxValue };
       sbyte result;
 
       foreach (int number in numbers)
@@ -211,12 +211,12 @@ public class Class1
          }
       }
       // The example displays the following output:
-      //    The Int32 value -2147483648 is outside the range of the SByte type.
-      //    Converted the Int32 value -1 to the SByte value -1.
-      //    Converted the Int32 value 0 to the SByte value 0.
-      //    Converted the Int32 value 121 to the SByte value 121.
-      //    The Int32 value 340 is outside the range of the SByte type.
-      //    The Int32 value 2147483647 is outside the range of the SByte type.
+      //    The int value -2147483648 is outside the range of the SByte type.
+      //    Converted the int value -1 to the SByte value -1.
+      //    Converted the int value 0 to the SByte value 0.
+      //    Converted the int value 121 to the SByte value 121.
+      //    The int value 340 is outside the range of the SByte type.
+      //    The int value 2147483647 is outside the range of the SByte type.
       // </Snippet7>
    }
 
@@ -278,15 +278,15 @@ public class Class1
       }
       // The example displays the following output:
       //    Converted the Boolean value true to the SByte value 1.
-      //    Converted the Int32 value -12 to the SByte value -12.
-      //    The Int32 value 163 is outside the range of the SByte type.
-      //    The Int32 value 935 is outside the range of the SByte type.
-      //    Converted the Char value x to the SByte value 120.
-      //    Converted the String value 104 to the SByte value 104.
-      //    The String value 103.0 is not in a recognizable format.
-      //    Converted the String value -1 to the SByte value -1.
-      //    The String value 1.00e2 is not in a recognizable format.
-      //    The String value One is not in a recognizable format.
+      //    Converted the int value -12 to the SByte value -12.
+      //    The int value 163 is outside the range of the SByte type.
+      //    The int value 935 is outside the range of the SByte type.
+      //    Converted the char value x to the SByte value 120.
+      //    Converted the string value 104 to the SByte value 104.
+      //    The string value 103.0 is not in a recognizable format.
+      //    Converted the string value -1 to the SByte value -1.
+      //    The string value 1.00e2 is not in a recognizable format.
+      //    The string value One is not in a recognizable format.
       //    Converted the Double value 100 to the SByte value 100.
       // </Snippet9>
    }

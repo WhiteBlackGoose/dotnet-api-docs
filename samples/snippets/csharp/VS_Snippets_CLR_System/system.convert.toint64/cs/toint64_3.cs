@@ -1,4 +1,4 @@
-﻿// <Snippet16>
+// <Snippet16>
 using System;
 using System.Globalization;
 
@@ -7,7 +7,7 @@ public class Example
    public static void Main()
    {
       // Create a NumberFormatInfo object and set the properties that
-      // affect conversions using Convert.ToInt64(String, IFormatProvider).
+      // affect conversions using Convert.ToInt64(string, IFormatProvider).
       NumberFormatInfo customProvider = new NumberFormatInfo();
       customProvider.NegativeSign = "neg ";
       customProvider.PositiveSign = "pos ";

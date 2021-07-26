@@ -1,5 +1,5 @@
-﻿//<Snippet1>
-// Example of Convert.ToDateTime( String, IFormatProvider ).
+//<Snippet1>
+// Example of Convert.ToDateTime( string, IFormatProvider ).
 using System;
 using System.Globalization;
 
@@ -52,12 +52,12 @@ class StringToDateTimeDemo
     public static void Main( )
     {
         Console.WriteLine( "This example of " +
-            "Convert.ToDateTime( String, IFormatProvider ) " +
+            "Convert.ToDateTime( string, IFormatProvider ) " +
             "\ngenerates the following output. Several strings are " +
             "converted \nto DateTime objects using formatting " +
             "information from different \ncultures, and then the " +
             "strings are displayed in a \nculture-invariant form.\n" );
-        Console.WriteLine( lineFmt, "Date String", "Culture",
+        Console.WriteLine( lineFmt, "Date string", "Culture",
             "DateTime or Exception" );
         Console.WriteLine( lineFmt, "-----------", "-------",
             "---------------------" );
@@ -69,13 +69,13 @@ class StringToDateTimeDemo
 }
 
 /*
-This example of Convert.ToDateTime( String, IFormatProvider )
+This example of Convert.ToDateTime( string, IFormatProvider )
 generates the following output. Several strings are converted
 to DateTime objects using formatting information from different
 cultures, and then the strings are displayed in a
 culture-invariant form.
 
-Date String       Culture     DateTime or Exception
+Date string       Culture     DateTime or Exception
 -----------       -------     ---------------------
 
 01/02/03          en-US       2003-Jan-02

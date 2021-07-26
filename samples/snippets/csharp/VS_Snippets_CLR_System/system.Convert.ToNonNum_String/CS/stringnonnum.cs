@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 using System;
 using System.Globalization;
 
@@ -38,7 +38,7 @@ class ConvertNonNumericProviderDemo
         string CharA    = "$";
 
         Console.WriteLine( "This example of selected " +
-            "Convert.To<Type>( String, IFormatProvider ) \nmethods " +
+            "Convert.To<Type>( string, IFormatProvider ) \nmethods " +
             "generates the following output. The example displays " +
             "the \nprovider type if the IFormatProvider is called." );
         Console.WriteLine( "\nNote: For the " +
@@ -66,7 +66,7 @@ class ConvertNonNumericProviderDemo
 }
 
 /*
-This example of selected Convert.To<Type>( String, IFormatProvider )
+This example of selected Convert.To<Type>( string, IFormatProvider )
 methods generates the following output. The example displays the
 provider type if the IFormatProvider is called.
 

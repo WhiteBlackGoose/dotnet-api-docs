@@ -1,6 +1,6 @@
-﻿//<Snippet3>
-// Example of the Convert.ToSingle( String ) and
-// Convert.ToSingle( String, IFormatProvider ) methods.
+//<Snippet3>
+// Example of the Convert.ToSingle( string ) and
+// Convert.ToSingle( string, IFormatProvider ) methods.
 using System;
 using System.Globalization;
 
@@ -57,15 +57,15 @@ class ToSingleProviderDemo
         provider.NumberGroupSizes = new int[ ] { 3 };
 
         Console.WriteLine(
-            "This example of\n  Convert.ToSingle( String ) and \n" +
-            "  Convert.ToSingle( String, IFormatProvider ) \n" +
+            "This example of\n  Convert.ToSingle( string ) and \n" +
+            "  Convert.ToSingle( string, IFormatProvider ) \n" +
             "generates the following output when run in the " +
             "[{0}] culture.",
             CultureInfo.CurrentCulture.Name );
         Console.WriteLine( "\nSeveral " +
             "strings are converted to float values, using \n" +
             "default formatting and a NumberFormatInfo object.\n");
-        Console.WriteLine( formatter, "String to convert",
+        Console.WriteLine( formatter, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( formatter, "-----------------",
             "-----------------", "------------------" );
@@ -83,14 +83,14 @@ class ToSingleProviderDemo
 
 /*
 This example of
-  Convert.ToSingle( String ) and
-  Convert.ToSingle( String, IFormatProvider )
+  Convert.ToSingle( string ) and
+  Convert.ToSingle( string, IFormatProvider )
 generates the following output when run in the [en-US] culture.
 
 Several strings are converted to float values, using
 default formatting and a NumberFormatInfo object.
 
-String to convert     Default/exception   Provider/exception
+string to convert     Default/exception   Provider/exception
 -----------------     -----------------   ------------------
 1234567               1234567             1234567
 1234.567              1234.567            1234567
