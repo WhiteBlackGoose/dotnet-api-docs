@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -6,7 +6,7 @@ public class Example
    {
       // <Snippet27>
       decimal value = 16309.5436m;
-      string result = String.Format("{0,12:#.00000} {0,12:0,000.00} {0,12:000.00#}", 
+      string result = string.Format("{0,12:#.00000} {0,12:0,000.00} {0,12:000.00#}", 
                                     value);
       Console.WriteLine(result);
       // The example displays the following output:

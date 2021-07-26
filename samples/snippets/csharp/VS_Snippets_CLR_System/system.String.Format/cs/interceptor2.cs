@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Globalization;
 
@@ -12,26 +12,26 @@ public class InterceptProvider : IFormatProvider, ICustomFormatter
          return null;
    }
    
-   public string Format(String format, Object obj, IFormatProvider provider) 
+   public string Format(string format, Object obj, IFormatProvider provider) 
    {
       // Display information about method call.
       string formatString = format ?? "<null>";
-      Console.WriteLine("Provider: {0}, Object: {1}, Format String: {2}",
+      Console.WriteLine("Provider: {0}, Object: {1}, Format string: {2}",
                         provider.GetType().Name, obj ?? "<null>", formatString);
                         
-      if (obj == null) return String.Empty;
+      if (obj == null) return string.Empty;
             
       // If this is a byte and the "R" format string, format it with Roman numerals.
       if (obj is Byte && formatString.ToUpper().Equals("R")) {
          Byte value = (Byte) obj;
          int remainder;
          int result;
-         String returnString = String.Empty;
+         string returnString = string.Empty;
 
          // Get the hundreds digit(s)
          result = Math.DivRem(value, 100, out remainder);
          if (result > 0)  
-            returnString = new String('C', result);
+            returnString = new string('C', result);
          value = (Byte) remainder;
          // Get the 50s digit
          result = Math.DivRem(value, 50, out remainder);
@@ -41,7 +41,7 @@ public class InterceptProvider : IFormatProvider, ICustomFormatter
          // Get the tens digit.
          result = Math.DivRem(value, 10, out remainder);
          if (result > 0)
-            returnString += new String('X', result);
+            returnString += new string('X', result);
          value = (Byte) remainder; 
          // Get the fives digit.
          result = Math.DivRem(value, 5, out remainder);
@@ -50,7 +50,7 @@ public class InterceptProvider : IFormatProvider, ICustomFormatter
          value = (Byte) remainder;
          // Add the ones digit.
          if (remainder > 0) 
-            returnString += new String('I', remainder);
+            returnString += new string('I', remainder);
          
          // Check whether we have too many X characters.
          int pos = returnString.IndexOf("XXXX");
@@ -88,32 +88,32 @@ public class Example
       double value = 16.935;
       DateTime day = DateTime.Now;
       InterceptProvider provider = new InterceptProvider();
-      Console.WriteLine(String.Format(provider, "{0:N0}: {1:C2} on {2:d}\n", n, value, day));
-      Console.WriteLine(String.Format(provider, "{0}: {1:F}\n", "Today: ", 
+      Console.WriteLine(string.Format(provider, "{0:N0}: {1:C2} on {2:d}\n", n, value, day));
+      Console.WriteLine(string.Format(provider, "{0}: {1:F}\n", "Today: ", 
                                       (DayOfWeek) DateTime.Now.DayOfWeek));
-      Console.WriteLine(String.Format(provider, "{0:X}, {1}, {2}\n", 
+      Console.WriteLine(string.Format(provider, "{0:X}, {1}, {2}\n", 
                                       (Byte) 2, (Byte) 12, (Byte) 199));
-      Console.WriteLine(String.Format(provider, "{0:R}, {1:R}, {2:R}\n", 
+      Console.WriteLine(string.Format(provider, "{0:R}, {1:R}, {2:R}\n", 
                                       (Byte) 2, (Byte) 12, (Byte) 199));
    }
 }
 // The example displays the following output:
-//    Provider: InterceptProvider, Object: 10, Format String: N0
-//    Provider: InterceptProvider, Object: 16.935, Format String: C2
-//    Provider: InterceptProvider, Object: 1/31/2013 6:10:28 PM, Format String: d
+//    Provider: InterceptProvider, Object: 10, Format string: N0
+//    Provider: InterceptProvider, Object: 16.935, Format string: C2
+//    Provider: InterceptProvider, Object: 1/31/2013 6:10:28 PM, Format string: d
 //    10: $16.94 on 1/31/2013
 //    
-//    Provider: InterceptProvider, Object: Today: , Format String: <null>
-//    Provider: InterceptProvider, Object: Thursday, Format String: F
+//    Provider: InterceptProvider, Object: Today: , Format string: <null>
+//    Provider: InterceptProvider, Object: Thursday, Format string: F
 //    Today: : Thursday
 //    
-//    Provider: InterceptProvider, Object: 2, Format String: X
-//    Provider: InterceptProvider, Object: 12, Format String: <null>
-//    Provider: InterceptProvider, Object: 199, Format String: <null>
+//    Provider: InterceptProvider, Object: 2, Format string: X
+//    Provider: InterceptProvider, Object: 12, Format string: <null>
+//    Provider: InterceptProvider, Object: 199, Format string: <null>
 //    2, 12, 199
 //    
-//    Provider: InterceptProvider, Object: 2, Format String: R
-//    Provider: InterceptProvider, Object: 12, Format String: R
-//    Provider: InterceptProvider, Object: 199, Format String: R
+//    Provider: InterceptProvider, Object: 2, Format string: R
+//    Provider: InterceptProvider, Object: 12, Format string: R
+//    Provider: InterceptProvider, Object: 199, Format string: R
 //    II, XII, CXCIX
 // </Snippet11>

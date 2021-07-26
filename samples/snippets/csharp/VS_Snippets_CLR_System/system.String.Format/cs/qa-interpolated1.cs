@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -12,7 +12,7 @@ public class Example
     
       output += "\n";  
       var date = DateTime.Now;
-      output += String.Format("It is {0:t} on {0:d}. The day of the week is {1}.", 
+      output += string.Format("It is {0:t} on {0:d}. The day of the week is {1}.", 
                               date, date.DayOfWeek);
       Console.WriteLine(output);                           
       // The example displays the following output:
