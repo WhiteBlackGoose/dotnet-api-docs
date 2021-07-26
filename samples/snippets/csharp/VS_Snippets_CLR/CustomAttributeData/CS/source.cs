@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -60,9 +60,9 @@ public class ExampleAttribute : Attribute
 // The example attribute is applied to the test class.
 //
 [Example(ExampleKind.SecondKind,
-         new string[] { "String array argument, line 1",
-                        "String array argument, line 2",
-                        "String array argument, line 3" },
+         new string[] { "string array argument, line 1",
+                        "string array argument, line 2",
+                        "string array argument, line 3" },
          Note="This is a note on the class.",
          Numbers = new int[] { 53, 57, 59 })]
 public class Test
@@ -145,8 +145,8 @@ public class Test
 /* This code example produces output similar to the following:
 
 Attributes for assembly: 'source, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null'
-   [System.Runtime.CompilerServices.CompilationRelaxationsAttribute((Int32)8)]
-      Constructor: 'Void .ctor(Int32)'
+   [System.Runtime.CompilerServices.CompilationRelaxationsAttribute((int)8)]
+      Constructor: 'Void .ctor(int)'
       Constructor arguments:
          Type: 'System.Int32'  Value: '8'
       Named arguments:
@@ -165,14 +165,14 @@ Attributes for assembly: 'source, Version=0.0.0.0, Culture=neutral, PublicKeyTok
          Type: 'System.String'  Value: 'This is a note on the assembly.'
 
 Attributes for type: 'Test'
-   [ExampleAttribute((ExampleKind)1, new String[3] { "String array argument, line 1", "String array argument, line 2", "String array argument, line 3" }, Note = "This is a note on the class.", Numbers = new Int32[3] { 53, 57, 59 })]
+   [ExampleAttribute((ExampleKind)1, new String[3] { "string array argument, line 1", "string array argument, line 2", "string array argument, line 3" }, Note = "This is a note on the class.", Numbers = new Int32[3] { 53, 57, 59 })]
       Constructor: 'Void .ctor(ExampleKind, System.String[])'
       Constructor arguments:
          Type: 'ExampleKind'  Value: '1'
          Array of 'System.String[]':
-             Type: 'System.String'  Value: 'String array argument, line 1'
-             Type: 'System.String'  Value: 'String array argument, line 2'
-             Type: 'System.String'  Value: 'String array argument, line 3'
+             Type: 'System.String'  Value: 'string array argument, line 1'
+             Type: 'System.String'  Value: 'string array argument, line 2'
+             Type: 'System.String'  Value: 'string array argument, line 3'
       Named arguments:
          MemberInfo: 'System.String Note'
          Type: 'System.String'  Value: 'This is a note on the class.'

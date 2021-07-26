@@ -1,4 +1,4 @@
-﻿// System.Web.UI.DataBinding.Expression
+// System.Web.UI.DataBinding.Expression
 // System.Web.UI.DataBindingCollection.Remove(string)
 // System.Web.UI.DataBindingCollection.Item
 // System.Web.UI.DataBinding.DataBinding
@@ -80,7 +80,7 @@ namespace DataBindingTest
             {
                return myBinding.Expression;
             }
-            return String.Empty;
+            return string.Empty;
 // </Snippet1>
          }
          set
@@ -127,9 +127,9 @@ namespace DataBindingTest
          IHtmlControlDesignerBehavior myHtmlControlDesignBehavior = Behavior;
          DataBindingCollection myDataBindingCollection;
          DataBinding myDataBinding1,myDataBinding2;
-         String myStringReplace1,myDataBindingExpression1,removedBinding,removedBindingAfterReplace,myDataBindingExpression2,myStringReplace2;
+         string myStringReplace1,myDataBindingExpression1,removedBinding,removedBindingAfterReplace,myDataBindingExpression2,myStringReplace2;
          string[] removedBindings1,removedBindings2;
-         Int32 temp;
+         int temp;
          IEnumerator myEnumerator;
 
          if ( myHtmlControlDesignBehavior == null)
@@ -149,7 +149,7 @@ namespace DataBindingTest
                return;
             }
             // DataBinding is not null.
-            myDataBindingExpression1 = String.Concat("<%#",myDataBinding1.Expression,"%>");
+            myDataBindingExpression1 = string.Concat("<%#",myDataBinding1.Expression,"%>");
             myHtmlControlDesignBehavior.SetAttribute(myStringReplace1,myDataBindingExpression1,true);
             int index = myStringReplace1.IndexOf("-");
          }
@@ -175,14 +175,14 @@ namespace DataBindingTest
 // <Snippet11>
 // <Snippet12>
                myDataBinding2 = (DataBinding)myEnumerator.Current;
-               String dataBindingOutput1,dataBindingOutput2,dataBindingOutput3;
-               dataBindingOutput1=String.Concat("The property name is ",myDataBinding2.PropertyName);
-               dataBindingOutput2=String.Concat("The property type is ",myDataBinding2.PropertyType.ToString(),"-",dataBindingOutput1);
-               dataBindingOutput3=String.Concat("The expression is ",myDataBinding2.Expression,"-",dataBindingOutput2);
+               string dataBindingOutput1,dataBindingOutput2,dataBindingOutput3;
+               dataBindingOutput1=string.Concat("The property name is ",myDataBinding2.PropertyName);
+               dataBindingOutput2=string.Concat("The property type is ",myDataBinding2.PropertyType.ToString(),"-",dataBindingOutput1);
+               dataBindingOutput3=string.Concat("The expression is ",myDataBinding2.Expression,"-",dataBindingOutput2);
                WriteToFile(dataBindingOutput3);
 // </Snippet12>
 // </Snippet11>
-               myDataBindingExpression2 = String.Concat("<%#",myDataBinding2.Expression,"%>");
+               myDataBindingExpression2 = string.Concat("<%#",myDataBinding2.Expression,"%>");
                myStringReplace2 = myDataBinding2.PropertyName.Replace(".","-");
                myHtmlControlDesignBehavior.SetAttribute(myStringReplace2,myDataBindingExpression2,true);
                int index = myStringReplace2.IndexOf('-');
@@ -192,9 +192,9 @@ namespace DataBindingTest
 // <Snippet14>
 // <Snippet15>
             string dataBindingOutput4,dataBindingOutput5,dataBindingOutput6,dataBindingOutput7,dataBindingOutput8;
-            dataBindingOutput4=String.Concat("The Count of the collection is ",myDataBindingCollection1.Count);
-            dataBindingOutput5=String.Concat("The IsSynchronized property of the collection is ",myDataBindingCollection1.IsSynchronized,"-",dataBindingOutput4);
-            dataBindingOutput6=String.Concat("The IsReadOnly property of the collection is ",myDataBindingCollection1.IsReadOnly,"-",dataBindingOutput5);
+            dataBindingOutput4=string.Concat("The Count of the collection is ",myDataBindingCollection1.Count);
+            dataBindingOutput5=string.Concat("The IsSynchronized property of the collection is ",myDataBindingCollection1.IsSynchronized,"-",dataBindingOutput4);
+            dataBindingOutput6=string.Concat("The IsReadOnly property of the collection is ",myDataBindingCollection1.IsReadOnly,"-",dataBindingOutput5);
             WriteToFile(dataBindingOutput6);
 // </Snippet15>
 // </Snippet14>
@@ -203,7 +203,7 @@ namespace DataBindingTest
 // <Snippet16>
             System.Array dataBindingCollectionArray =Array.CreateInstance(typeof(object),myDataBindingCollection1.Count);
             myDataBindingCollection1.CopyTo(dataBindingCollectionArray,0);
-            dataBindingOutput7=String.Concat("The count of DataBindingArray is  ",dataBindingCollectionArray.Length);
+            dataBindingOutput7=string.Concat("The count of DataBindingArray is  ",dataBindingCollectionArray.Length);
             WriteToFile(dataBindingOutput7);
 // </Snippet16>
             IEnumerator myEnumerator1 =myDataBindingCollection1.GetEnumerator();
@@ -212,11 +212,11 @@ namespace DataBindingTest
 // <Snippet17>
 
                myDataBinding1 = (DataBinding)myEnumerator1.Current;
-               dataBindingOutput8=String.Concat("The HashCode is",myDataBinding1.GetHashCode().ToString());
+               dataBindingOutput8=string.Concat("The HashCode is",myDataBinding1.GetHashCode().ToString());
                WriteToFile(dataBindingOutput8);
 // <Snippet18>
                myDataBindingCollection1.Remove(myDataBinding1);
-               dataBindingOutput8=String.Concat("The Count of the collection after DataBinding is removed is  ",myDataBindingCollection1.Count);
+               dataBindingOutput8=string.Concat("The Count of the collection after DataBinding is removed is  ",myDataBindingCollection1.Count);
                WriteToFile(dataBindingOutput8);
 // </Snippet18>
 // </Snippet17>
@@ -226,12 +226,12 @@ namespace DataBindingTest
                myDataBinding1 = (DataBinding)myEnumerator1.Current;
 // <Snippet19>
                myDataBindingCollection1.Remove("Text",true);
-               dataBindingOutput8=String.Concat("The Count of the collection after DataBinding is removed is  ",myDataBindingCollection1.Count);
+               dataBindingOutput8=string.Concat("The Count of the collection after DataBinding is removed is  ",myDataBindingCollection1.Count);
                WriteToFile(dataBindingOutput8);
 // </Snippet19>
 // <Snippet20>
                myDataBindingCollection1.Clear();
-               dataBindingOutput8=String.Concat("The Count of the collection after clear method is called  ",myDataBindingCollection1.Count);
+               dataBindingOutput8=string.Concat("The Count of the collection after clear method is called  ",myDataBindingCollection1.Count);
                WriteToFile(dataBindingOutput8);
 // </Snippet20>
             }
