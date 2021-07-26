@@ -1,4 +1,4 @@
-﻿ // Snippet for: F:System.Drawing.Imaging.Encoder.Transformation
+ // Snippet for: F:System.Drawing.Imaging.Encoder.Transformation
         // <snippet5>
 using System;
 using System.Drawing;
@@ -36,7 +36,7 @@ class Example_RotateJPEG
         myEncoderParameters.Param[0] = myEncoderParameter;
         myBitmap.Save("ShapesR90.jpg", myImageCodecInfo, myEncoderParameters);
     }
-    private static ImageCodecInfo GetEncoderInfo(String mimeType)
+    private static ImageCodecInfo GetEncoderInfo(string mimeType)
     {
         int j;
         ImageCodecInfo[] encoders;

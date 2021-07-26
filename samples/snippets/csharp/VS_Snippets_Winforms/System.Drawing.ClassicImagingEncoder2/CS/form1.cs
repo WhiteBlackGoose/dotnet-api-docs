@@ -1,4 +1,4 @@
-﻿// Snippet for: F:System.Drawing.Imaging.Encoder.Compression
+// Snippet for: F:System.Drawing.Imaging.Encoder.Compression
 // <snippet2>
 using System;
 using System.Drawing;
@@ -36,7 +36,7 @@ class Example_SetTIFFCompression
         myEncoderParameters.Param[0] = myEncoderParameter;
         myBitmap.Save("ShapesLZW.tif", myImageCodecInfo, myEncoderParameters);
     }
-    private static ImageCodecInfo GetEncoderInfo(String mimeType)
+    private static ImageCodecInfo GetEncoderInfo(string mimeType)
     {
         int j;
         ImageCodecInfo[] encoders;

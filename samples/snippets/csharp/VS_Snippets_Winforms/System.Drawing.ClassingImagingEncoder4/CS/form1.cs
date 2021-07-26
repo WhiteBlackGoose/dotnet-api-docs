@@ -1,4 +1,4 @@
-﻿// Snippet for: F:System.Drawing.Imaging.Encoder.SaveFlag
+// Snippet for: F:System.Drawing.Imaging.Encoder.SaveFlag
         // <snippet4>
 using System;
 using System.Drawing;
@@ -61,7 +61,7 @@ class Example_MultiFrame
         myEncoderParameters.Param[0] = myEncoderParameter;
         multi.SaveAdd(myEncoderParameters);
     }
-    private static ImageCodecInfo GetEncoderInfo(String mimeType)
+    private static ImageCodecInfo GetEncoderInfo(string mimeType)
     {
         int j;
         ImageCodecInfo[] encoders;

@@ -1,4 +1,4 @@
-﻿ // Snippet for: F:System.Drawing.Imaging.Encoder.ColorDepth
+ // Snippet for: F:System.Drawing.Imaging.Encoder.ColorDepth
         // Snippet for: F:System.Drawing.Imaging.Encoder.Compression
         // Snippet for: F:System.Drawing.Imaging.Encoder.Quality
         // <snippet1>
@@ -38,7 +38,7 @@ class Example_SetColorDepth
         myBitmap.Save("Shapes24bpp.tiff", myImageCodecInfo, myEncoderParameters);
     }
 
-    private static ImageCodecInfo GetEncoderInfo(String mimeType)
+    private static ImageCodecInfo GetEncoderInfo(string mimeType)
     {
         int j;
         ImageCodecInfo[] encoders;

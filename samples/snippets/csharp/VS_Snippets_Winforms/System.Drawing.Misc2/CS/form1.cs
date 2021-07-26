@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 using System.Drawing;
 using System.Drawing.Drawing2D;
@@ -218,7 +218,7 @@ public class Form1:
         // and if so print out their x and y values.
         if (Point1 == Point2)
         {
-            formGraphics.DrawString(String.Format("Point1.X: " +
+            formGraphics.DrawString(string.Format("Point1.X: " +
                 "{0},Point2.X: {1}, Point1.Y: {2}, Point2.Y {3}",
                 new object[]{Point1.X, Point2.X, Point1.Y, Point2.Y}),
                 this.Font, Brushes.Black, new PointF(10, 70));

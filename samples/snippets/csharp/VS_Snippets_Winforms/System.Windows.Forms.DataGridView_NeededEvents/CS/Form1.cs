@@ -1,4 +1,4 @@
-﻿//<snippet00>
+//<snippet00>
 #region Using directives
 
 using System;
@@ -157,32 +157,32 @@ class Form1 : Form
             DataGridViewRow dataGridViewRow1 = dataGridView1.Rows[e.RowIndex];
 
             // Add the employee's ID to the ToolTipText.
-            e.ToolTipText = String.Format("EmployeeID {0}:{1}",
+            e.ToolTipText = string.Format("EmployeeID {0}:{1}",
                 dataGridViewRow1.Cells["EmployeeID"].Value, newLine);
 
             // Add the employee's name to the ToolTipText.
-            e.ToolTipText += String.Format("{0} {1} {2}{3}",
+            e.ToolTipText += string.Format("{0} {1} {2}{3}",
                 dataGridViewRow1.Cells["TitleOfCourtesy"].Value.ToString(),
                 dataGridViewRow1.Cells["FirstName"].Value.ToString(),
                 dataGridViewRow1.Cells["LastName"].Value.ToString(),
                 newLine);
 
             // Add the employee's title to the ToolTipText.
-            e.ToolTipText += String.Format("{0}{1}{2}",
+            e.ToolTipText += string.Format("{0}{1}{2}",
                 dataGridViewRow1.Cells["Title"].Value.ToString(),
                 newLine, newLine);
 
             // Add the employee's contact information to the ToolTipText.
-            e.ToolTipText += String.Format("{0}{1}{2}, ",
+            e.ToolTipText += string.Format("{0}{1}{2}, ",
                 dataGridViewRow1.Cells["Address"].Value.ToString(), newLine,
                 dataGridViewRow1.Cells["City"].Value.ToString());
-            if (!String.IsNullOrEmpty(
+            if (!string.IsNullOrEmpty(
                 dataGridViewRow1.Cells["Region"].Value.ToString()))
             {
-                e.ToolTipText += String.Format("{0}, ",
+                e.ToolTipText += string.Format("{0}, ",
                     dataGridViewRow1.Cells["Region"].Value.ToString());
             }
-            e.ToolTipText += String.Format("{0}, {1}{2}{3} EXT:{4}{5}{6}",
+            e.ToolTipText += string.Format("{0}, {1}{2}{3} EXT:{4}{5}{6}",
                 dataGridViewRow1.Cells["Country"].Value.ToString(),
                 dataGridViewRow1.Cells["PostalCode"].Value.ToString(),
                 newLine, dataGridViewRow1.Cells["HomePhone"].Value.ToString(),
@@ -193,7 +193,7 @@ class Form1 : Form
             DateTime HireDate =
                 (DateTime)dataGridViewRow1.Cells["HireDate"].Value;
             e.ToolTipText +=
-                String.Format("Employee since: {0}/{1}/{2}{3}Manager: {4}",
+                string.Format("Employee since: {0}/{1}/{2}{3}Manager: {4}",
                 HireDate.Month.ToString(), HireDate.Day.ToString(),
                 HireDate.Year.ToString(), newLine,
                 dataGridViewRow1.Cells["Manager"].Value.ToString());
@@ -206,7 +206,7 @@ class Form1 : Form
         DataGridViewRow dataGridViewRow1 =
             dataGridView1.Rows[contextMenuRowIndex];
 
-        MessageBox.Show(String.Format(
+        MessageBox.Show(string.Format(
             "Sales Report for {0} {1}{2}{3}Reporting not implemented.",
             dataGridViewRow1.Cells["FirstName"].Value.ToString(),
             dataGridViewRow1.Cells["LastName"].Value.ToString(),
@@ -217,7 +217,7 @@ class Form1 : Form
     {
         DataGridViewRow dataGridViewRow1 =
             dataGridView1.Rows[contextMenuRowIndex];
-        MessageBox.Show(String.Format(
+        MessageBox.Show(string.Format(
             "Sales Report for {0} {1}'s Team{2}{3}Reporting not implemented.",
             dataGridViewRow1.Cells["FirstName"].Value.ToString(),
             dataGridViewRow1.Cells["LastName"].Value.ToString(),
@@ -228,7 +228,7 @@ class Form1 : Form
     {
         DataGridViewRow dataGridViewRow1 =
             dataGridView1.Rows[contextMenuRowIndex];
-        MessageBox.Show(String.Format(
+        MessageBox.Show(string.Format(
             "Company Sales Ranking Report:{0}{1}Reporting not implemented.",
             Environment.NewLine, Environment.NewLine));
     }

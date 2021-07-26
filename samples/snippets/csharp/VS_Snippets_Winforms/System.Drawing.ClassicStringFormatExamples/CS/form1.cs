@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -164,7 +164,7 @@ namespace System.Drawing.ClassicStringFormatExamplesCS
             // measures the character ranges.
             Region[]     charRegions = new Region[charRanges.Length];
                      
-            // String to be displayed.
+            // string to be displayed.
             string  str =
                 "The quick, brown fox easily jumps over the lazy dog.";
                      
@@ -262,7 +262,7 @@ namespace System.Drawing.ClassicStringFormatExamplesCS
             Font         myFont = new Font("Times New Roman", 14);
             StringFormat myStringFormat = new StringFormat();
                      
-            // String variable to hold the values of the StringFormat object.
+            // string variable to hold the values of the StringFormat object.
             string    strFmtString;
                      
             // Convert the string format object to a string (only certain information

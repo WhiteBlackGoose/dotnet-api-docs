@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // <snippet2>
 using System;
 using System.Collections.Generic;
@@ -102,9 +102,9 @@ public class DemoCustomer
 {
     // These fields hold the values for the public properties.
     private Guid idValue = Guid.NewGuid();
-    private string customerName = String.Empty;
-    private string companyNameValue = String.Empty;
-    private string phoneNumberValue = String.Empty;
+    private string customerName = string.Empty;
+    private string companyNameValue = string.Empty;
+    private string phoneNumberValue = string.Empty;
 
     // The constructor is private to enforce the factory pattern.
     private DemoCustomer()

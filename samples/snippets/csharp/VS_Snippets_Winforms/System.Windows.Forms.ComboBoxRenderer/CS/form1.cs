@@ -1,4 +1,4 @@
-﻿// This sample can go in ComboBoxRenderer class overview.
+// This sample can go in ComboBoxRenderer class overview.
 // - Snippet2 can go in IsSupported
 // - Snippet4 can go in DrawTextBox and DrawDropDownButton
 
@@ -43,7 +43,7 @@ namespace ComboBoxRendererSample
         private Rectangle bottomTextBoxRectangle;
         private ComboBoxState textBoxState = ComboBoxState.Normal;
         private ComboBoxState arrowState = ComboBoxState.Normal;
-        private String bottomText = "Using ComboBoxRenderer";
+        private string bottomText = "Using ComboBoxRenderer";
         private bool isActivated = false;
         private const int minHeight = 38;
         private const int minWidth = 40;

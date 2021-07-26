@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows.Forms;
 
 public class Form1 : Form
@@ -8,7 +8,7 @@ public class Form1 : Form
     public class Customer
     {
         private string nameValue = string.Empty;
-        public Customer(String name)
+        public Customer(string name)
         {
             nameValue = name;
         }
@@ -85,7 +85,7 @@ public class Form1 : Form
 
     //<snippet10>
     // Demonstrates SetData, ContainsData, and GetData.
-    public Object SwapClipboardFormattedData(String format, Object data)
+    public Object SwapClipboardFormattedData(string format, Object data)
     {
         Object returnObject = null;
         if (Clipboard.ContainsData(format))
@@ -146,9 +146,9 @@ public class Form1 : Form
 
     //<snippet50>
     // Demonstrates SetText, ContainsText, and GetText.
-    public String SwapClipboardHtmlText(String replacementHtmlText)
+    public string SwapClipboardHtmlText(string replacementHtmlText)
     {
-        String returnHtmlText = null;
+        string returnHtmlText = null;
         if (Clipboard.ContainsText(TextDataFormat.Html))
         {
             returnHtmlText = Clipboard.GetText(TextDataFormat.Html);
