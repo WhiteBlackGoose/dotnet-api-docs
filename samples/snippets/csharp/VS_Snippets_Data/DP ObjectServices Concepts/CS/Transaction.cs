@@ -1,4 +1,4 @@
-﻿//<snippetEnlistTransaction>
+//<snippetEnlistTransaction>
 using System;
 using System.Linq;
 using System.Data;
@@ -73,7 +73,7 @@ namespace ObjectServicesConceptsCS
                         using (MessageQueue q = new MessageQueue(queueName))
                         {
                             System.Messaging.Message msg =
-                                new System.Messaging.Message(String.Format(
+                                new System.Messaging.Message(string.Format(
                                     "<order customerId='{0}'>" +
                                     "<orderLine product='{1}' quantity='{2}' />" +
                                     "</order>", order.Contact.ContactID,

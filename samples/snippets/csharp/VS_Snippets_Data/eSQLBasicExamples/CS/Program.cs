@@ -1,4 +1,4 @@
-﻿//<snippetNamespaces>
+//<snippetNamespaces>
 using System;
 using System.Collections.Generic;
 using System.Collections;
@@ -531,9 +531,9 @@ namespace eSQLExamplesCS
 
                 try
                 {
-                    ObjectQuery<Int32> productQuery =
-                        new ObjectQuery<Int32>(queryString, advWorksContext, MergeOption.NoTracking);
-                    foreach (Int32 result in productQuery)
+                    ObjectQuery<int> productQuery =
+                        new ObjectQuery<int>(queryString, advWorksContext, MergeOption.NoTracking);
+                    foreach (int result in productQuery)
                         Console.WriteLine("{0}", result);
                 }
                 catch (EntityException ex)
@@ -626,7 +626,7 @@ namespace eSQLExamplesCS
             using (AdventureWorksEntities advWorksContext =
                 new AdventureWorksEntities())
             {
-                String esqlQuery = @"SELECT P2.Name, P2.ListPrice
+                string esqlQuery = @"SELECT P2.Name, P2.ListPrice
                     FROM ((SELECT P1.Name, P1.ProductID as Pid, P1.ListPrice
                         FROM AdventureWorksEntities.Product as P1
                         where P1.Name like 'A%')
