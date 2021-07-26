@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.Intern(String)
+//<snippet1>
+// Sample for string.Intern(string)
 using System;
 using System.Text;
 
@@ -9,7 +9,7 @@ class Sample
     {
         string s1 = "MyTest";
         string s2 = new StringBuilder().Append("My").Append("Test").ToString();
-        string s3 = String.Intern(s2);
+        string s3 = string.Intern(s2);
         Console.WriteLine($"s1 == {s1}");
         Console.WriteLine($"s2 == {s2}");
         Console.WriteLine($"s3 == {s3}");

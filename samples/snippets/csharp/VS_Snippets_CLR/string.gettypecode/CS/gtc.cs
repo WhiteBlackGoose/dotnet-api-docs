@@ -1,12 +1,12 @@
-﻿//<snippet1>
-// Sample for String.GetTypeCode()
+//<snippet1>
+// Sample for string.GetTypeCode()
 using System;
 
 class Sample
 {
     public static void Main()
     {
-    String str = "abc";
+    string str = "abc";
     TypeCode tc = str.GetTypeCode();
     Console.WriteLine("The type code for '{0}' is {1}, which represents {2}.",
                          str, tc.ToString("D"), tc.ToString("F"));
@@ -14,6 +14,6 @@ class Sample
 }
 /*
 This example produces the following results:
-The type code for 'abc' is 18, which represents String.
+The type code for 'abc' is 18, which represents string.
 */
 //</snippet1>

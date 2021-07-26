@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.IsInterned(String)
+//<snippet1>
+// Sample for string.IsInterned(string)
 using System;
 using System.Text;
 using System.Runtime.CompilerServices;
@@ -12,20 +12,20 @@ class Sample
 {
     public static void Main()
     {
-        // String str1 is known at compile time, and is automatically interned.
-        String str1 = "abcd";
+        // string str1 is known at compile time, and is automatically interned.
+        string str1 = "abcd";
 
         // Constructed string, str2, is not explicitly or automatically interned.
-        String str2 = new StringBuilder().Append("wx").Append("yz").ToString();
+        string str2 = new StringBuilder().Append("wx").Append("yz").ToString();
         Console.WriteLine();
         Test(1, str1);
         Test(2, str2);
     }
 
-    public static void Test(int sequence, String str)
+    public static void Test(int sequence, string str)
     {
         Console.Write("{0}) The string, '", sequence);
-        String strInterned = String.IsInterned(str);
+        string strInterned = string.IsInterned(str);
         if (strInterned == null)
             Console.WriteLine("{0}', is not interned.", str);
         else

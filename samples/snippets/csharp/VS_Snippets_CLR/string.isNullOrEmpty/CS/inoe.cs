@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Sample
 {
@@ -9,22 +9,22 @@ class Sample
     string s2 = "";
     string s3 = null;
 
-    Console.WriteLine("String s1 {0}.", Test(s1));
-    Console.WriteLine("String s2 {0}.", Test(s2));
-    Console.WriteLine("String s3 {0}.", Test(s3));
+    Console.WriteLine("string s1 {0}.", Test(s1));
+    Console.WriteLine("string s2 {0}.", Test(s2));
+    Console.WriteLine("string s3 {0}.", Test(s3));
 
-    String Test(string s)
+    string Test(string s)
     {
-    if (String.IsNullOrEmpty(s))
+    if (string.IsNullOrEmpty(s))
         return "is null or empty";
     else
-        return String.Format("(\"{0}\") is neither null nor empty", s);
+        return string.Format("(\"{0}\") is neither null nor empty", s);
     }
 
     // The example displays the following output:
-    //       String s1 ("abcd") is neither null nor empty.
-    //       String s2 is null or empty.
-    //       String s3 is null or empty.
+    //       string s1 ("abcd") is neither null nor empty.
+    //       string s2 is null or empty.
+    //       string s3 is null or empty.
     // </snippet1>
     }
 }

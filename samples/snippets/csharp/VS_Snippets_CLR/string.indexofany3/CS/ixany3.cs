@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.IndexOfAny(Char[], Int32, Int32)
+//<snippet1>
+// Sample for string.IndexOfAny(Char[], int, int)
 using System;
 
 class Sample {
