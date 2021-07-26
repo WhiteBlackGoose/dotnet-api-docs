@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 
 public class Example
@@ -11,7 +11,7 @@ public class Example
 }
 // The example displays the following output:
 //    Unhandled Exception: System.FormatException:
-//       Format String can be only "D", "d", "N", "n", "P", "p", "B", "b", "X" or "x".
-//       at System.Guid.ParseExact(String input, String format)
+//       Format string can be only "D", "d", "N", "n", "P", "p", "B", "b", "X" or "x".
+//       at System.Guid.ParseExact(string input, string format)
 //       at Example.Main()
 // </Snippet9>

@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Collections.Generic;
 
@@ -22,8 +22,8 @@ public class Example
 //    Unhandled Exception:
 //    System.FormatException:
 //       Index (zero based) must be greater than or equal to zero and less than the size of the argument list.
-//       at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
-//       at System.IO.TextWriter.WriteLine(String format, Object arg0)
-//       at System.IO.TextWriter.SyncTextWriter.WriteLine(String format, Object arg0)
+//       at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, string format, Object[] args)
+//       at System.IO.TextWriter.WriteLine(string format, Object arg0)
+//       at System.IO.TextWriter.SyncTextWriter.WriteLine(string format, Object arg0)
 //       at Example.Main()
 // </Snippet5>

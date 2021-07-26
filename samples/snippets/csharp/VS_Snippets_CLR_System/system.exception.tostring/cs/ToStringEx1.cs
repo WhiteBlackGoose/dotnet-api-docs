@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 
 public class TestClass
@@ -31,14 +31,14 @@ public class Example
 }
 // The example displays the following output:
 //     Bad argument: TestClass (type TestClass)
-//     Exception information: System.ArgumentException: Object must be of type String.
+//     Exception information: System.ArgumentException: Object must be of type string.
 //        at System.String.CompareTo(Object value)
 //        at Example.Main()
 //
 //     Comparing 'some text' with 'TestClass': -1
 //
-//     Bad argument: 123 (type Int32)
-//     Exception information: System.ArgumentException: Object must be of type String.
+//     Bad argument: 123 (type int)
+//     Exception information: System.ArgumentException: Object must be of type string.
 //        at System.String.CompareTo(Object value)
 //        at Example.Main()
 //

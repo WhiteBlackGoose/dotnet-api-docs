@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -8,18 +8,18 @@ public class Example
 
    public static void Main()
    {
-      String info = GetCurrentTemperature();
+      string info = GetCurrentTemperature();
       Console.WriteLine(info);
    }
 
-   private static String GetCurrentTemperature()
+   private static string GetCurrentTemperature()
    {
       DateTime dat = DateTime.Now;
       Decimal temp = 20.6m;
       TemperatureScale scale = TemperatureScale.Celsius;
-      String result;
+      string result;
 
-      result = String.Format("At {0:t} on {0:D}, the temperature is {1:F1} {2:G}",
+      result = string.Format("At {0:t} on {0:D}, the temperature is {1:F1} {2:G}",
                              dat, temp, scale);
       return result;
    }
