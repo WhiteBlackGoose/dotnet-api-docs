@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -7,8 +7,8 @@ using System.Xml.XPath;
 
 public class Sample
 {
-  private const String filename = "books.xml";
-  private const String stylesheet = "output.xsl";
+  private const string filename = "books.xml";
+  private const string stylesheet = "output.xsl";
 
   public static void Main()
   {

@@ -1,11 +1,11 @@
-﻿// <Snippet1>
+// <Snippet1>
  using System;
  using System.IO;
  using System.Xml;
 
  public class Sample {
    private XmlNode currNode;
-   private const String filename="space.xml";
+   private const string filename="space.xml";
    XmlTextReader reader=null;
 
    public static void Main() {
@@ -40,10 +40,10 @@
    }
 
    // Parse the file and display each node.
-   public void ReadFile(String filename) {
+   public void ReadFile(string filename) {
      try {
        reader = new XmlTextReader(filename);
-       String sNodeType = null;
+       string sNodeType = null;
        while (reader.Read()) {
         sNodeType = NodeTypeToString(reader.NodeType);
         // Print the node type, name, and value.
@@ -58,8 +58,8 @@
      }
     }
 
-    public static String NodeTypeToString(XmlNodeType nodetype) {
-       String sNodeType = null;
+    public static string NodeTypeToString(XmlNodeType nodetype) {
+       string sNodeType = null;
        switch (nodetype) {
          case XmlNodeType.None:
            sNodeType = "None";

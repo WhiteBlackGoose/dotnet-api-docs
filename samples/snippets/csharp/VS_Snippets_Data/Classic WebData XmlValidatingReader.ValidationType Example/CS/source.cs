@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -6,9 +6,9 @@ using System.Xml.Schema;
 
 public class Sample
 {
-  private const String doc1 = "notValid.xml";
-  private const String doc2 = "cdDTD.xml";
-  private const String doc3 = "book1.xml";
+  private const string doc1 = "notValid.xml";
+  private const string doc2 = "cdDTD.xml";
+  private const string doc3 = "book1.xml";
 
   private XmlTextReader txtreader = null;
   private XmlValidatingReader reader = null;
@@ -27,7 +27,7 @@ public class Sample
       Sample validation = new Sample();
   }
 
-  private void Validate(String filename, ValidationType vt)
+  private void Validate(string filename, ValidationType vt)
   {
     try
     {
