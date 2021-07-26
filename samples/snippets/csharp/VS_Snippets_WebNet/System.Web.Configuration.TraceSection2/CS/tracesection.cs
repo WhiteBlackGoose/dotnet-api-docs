@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Collections.Specialized;
@@ -60,7 +60,7 @@ traceSection.MostRecent = true;
 // <Snippet5>
 
 // Get the current RequestLimit property value.
-Int32 requestLimitValue = traceSection.RequestLimit;
+int requestLimitValue = traceSection.RequestLimit;
 
 // Set the RequestLimit property to 256.
 traceSection.RequestLimit = 256;

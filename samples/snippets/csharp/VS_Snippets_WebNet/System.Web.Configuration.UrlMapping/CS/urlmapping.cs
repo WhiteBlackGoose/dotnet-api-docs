@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
@@ -15,10 +15,10 @@ namespace Samples.AspNet
 
     static void Main(string[] args)
     {
-      string inputStr = String.Empty;
-      string optionStr = String.Empty;
-      string parm1 = String.Empty;
-      string parm2 = String.Empty;
+      string inputStr = string.Empty;
+      string optionStr = string.Empty;
+      string parm1 = string.Empty;
+      string parm2 = string.Empty;
     
       // Define a regular expression to allow only 
       // alphanumeric inputs that are at most 20 character 
@@ -112,7 +112,7 @@ namespace Samples.AspNet
             shownUrl = urlMapping.Url;
             mappedUrl = urlMapping.MappedUrl;
 
-            msg = String.Format(
+            msg = string.Format(
             "Shown URL: {0}\nMapped URL:  {1}\n",
             shownUrl, mappedUrl);
 
@@ -140,7 +140,7 @@ namespace Samples.AspNet
             {
               if (!urlMappingSection.IsReadOnly())
                 configuration.Save();
-              msg = String.Format(
+              msg = string.Format(
               "Default modality, EmitClear:      {0}",
               urlMappings.EmitClear.ToString());
             }
@@ -155,7 +155,7 @@ namespace Samples.AspNet
               if (!urlMappingSection.IsReadOnly())
                 configuration.Save(saveMode);
 
-              msg = String.Format(
+              msg = string.Format(
                "Save modality:      {0}",
                saveMode.ToString());
             }
@@ -187,7 +187,7 @@ namespace Samples.AspNet
             shownUrl = urlMapping.Url;
             mappedUrl = urlMapping.MappedUrl;
 
-            msg = String.Format(
+            msg = string.Format(
             "Shown URL:      {0}\nMapped URL: {1}\n",
             shownUrl, mappedUrl);
 
@@ -245,7 +245,7 @@ namespace Samples.AspNet
               mappedUrl = url_Mapping.MappedUrl;
               // </Snippet10>
 
-              msg = String.Format(
+              msg = string.Format(
                     "Shown URL:  {0}\nMapped URL: {1}\n",
                     shownUrl, mappedUrl);
 

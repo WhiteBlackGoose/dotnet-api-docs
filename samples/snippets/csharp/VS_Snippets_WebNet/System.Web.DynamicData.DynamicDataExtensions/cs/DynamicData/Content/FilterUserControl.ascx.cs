@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Collections;
@@ -57,7 +57,7 @@ public partial class FilterUserControl : System.Web.DynamicData.FilterUserContro
             }
 
             // Set the initial value if there is one
-            if (!String.IsNullOrEmpty(InitialValue))
+            if (!string.IsNullOrEmpty(InitialValue))
                 DropDownList1.SelectedValue = InitialValue;
         }
     }

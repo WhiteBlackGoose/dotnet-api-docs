@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
@@ -29,7 +29,7 @@ namespace Samples.AspNet
             string clientScriptLocation =
                 webControlsSection.ClientScriptsLocation;
 
-            string msg = String.Format(
+            string msg = string.Format(
             "Client script location: {0}\n",
             clientScriptLocation);
 
