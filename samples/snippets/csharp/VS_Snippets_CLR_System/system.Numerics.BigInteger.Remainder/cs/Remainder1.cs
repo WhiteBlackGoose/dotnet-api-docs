@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -8,7 +8,7 @@ public class Example
    {
       BigInteger dividend1 = BigInteger.Pow(Int64.MaxValue, 3);
       BigInteger dividend2 = dividend1 * BigInteger.MinusOne;
-      BigInteger divisor1 = Int32.MaxValue;
+      BigInteger divisor1 = int.MaxValue;
       BigInteger divisor2 = divisor1 * BigInteger.MinusOne;
       BigInteger remainder1, remainder2;
       BigInteger divRem1 = BigInteger.Zero;

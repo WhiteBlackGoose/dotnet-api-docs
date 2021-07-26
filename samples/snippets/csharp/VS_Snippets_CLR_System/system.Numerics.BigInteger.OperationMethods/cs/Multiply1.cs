@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Class1
@@ -26,10 +26,10 @@ public class Class1
    {
       // <Snippet2>
       // The statement:
-      //    BigInteger number = Int64.MaxValue + Int32.MaxValue;
+      //    BigInteger number = Int64.MaxValue + int.MaxValue;
       // produces compiler error CS0220: The operation overflows at compile time in checked mode.
       // The alternative:
-      BigInteger number = BigInteger.Add(Int64.MaxValue, Int32.MaxValue);
+      BigInteger number = BigInteger.Add(Int64.MaxValue, int.MaxValue);
       // </Snippet2>
    }
 

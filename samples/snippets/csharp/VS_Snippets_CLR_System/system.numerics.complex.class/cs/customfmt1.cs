@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -20,10 +20,10 @@ public class ComplexFormatter :IFormatProvider, ICustomFormatter
          Complex c1 = (Complex) arg;
          // Check if the format string has a precision specifier.
          int precision;
-         string fmtString = String.Empty;
+         string fmtString = string.Empty;
          if (format.Length > 1) {
             try {
-               precision = Int32.Parse(format.Substring(1));
+               precision = int.Parse(format.Substring(1));
             }
             catch (FormatException) {
                precision = 0;
@@ -44,7 +44,7 @@ public class ComplexFormatter :IFormatProvider, ICustomFormatter
          else if (arg != null)
             return arg.ToString();
          else
-            return String.Empty;
+            return string.Empty;
       }
    }
 }
@@ -61,9 +61,9 @@ public class Example
       Console.WriteLine("Formatting with ToString(format): " +
                         c1.ToString("N2"));
       Console.WriteLine("Custom formatting with I0:        " +
-                        String.Format(new ComplexFormatter(), "{0:I0}", c1));
+                        string.Format(new ComplexFormatter(), "{0:I0}", c1));
       Console.WriteLine("Custom formatting with J3:        " +
-                        String.Format(new ComplexFormatter(), "{0:J3}", c1));
+                        string.Format(new ComplexFormatter(), "{0:J3}", c1));
    }
 }
 // The example displays the following output:

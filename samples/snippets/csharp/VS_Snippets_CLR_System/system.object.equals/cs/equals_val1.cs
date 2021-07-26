@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -17,7 +17,7 @@ public class Example
                         object1.Equals(object2));
 
       // The example displays the following output:
-      //        12 (Byte) = 12 (Int32): False
+      //        12 (Byte) = 12 (int): False
       // </Snippet3>
    }
 }

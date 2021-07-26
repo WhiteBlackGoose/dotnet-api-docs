@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Class1
@@ -40,7 +40,7 @@ public class Class1
    private static void BitwiseAnd()
    {
       // <Snippet1>
-      BigInteger number1 = BigInteger.Add(Int64.MaxValue, Int32.MaxValue);
+      BigInteger number1 = BigInteger.Add(Int64.MaxValue, int.MaxValue);
       BigInteger number2 = BigInteger.Pow(Byte.MaxValue, 10);
       BigInteger result = number1 & number2;
       // </Snippet1>
@@ -58,7 +58,7 @@ public class Class1
    private static void Decrement()
    {
       // <Snippet3>
-      BigInteger number1 = BigInteger.Pow(Int32.MaxValue, 2);
+      BigInteger number1 = BigInteger.Pow(int.MaxValue, 2);
       number1 = BigInteger.Subtract(number1, BigInteger.One);
       // </Snippet3>
    }
@@ -123,7 +123,7 @@ public class Class1
    private static void GreaterThan64B()
    {
       // <Snippet9>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 4);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 4);
       long number = Int64.MaxValue;
       if (number > bigNumber) {
          // Do something;
@@ -137,7 +137,7 @@ public class Class1
    private static void GreaterThanB64()
    {
       // <Snippet11>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 4);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 4);
       long number = Int64.MaxValue;
       if (bigNumber > number) {
          // Do something;
@@ -151,7 +151,7 @@ public class Class1
    private static void GreaterThanBU64()
    {
       // <Snippet13>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 2);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 2);
       ulong number = UInt64.MaxValue;
       if (bigNumber > number) {
          // Do something
@@ -162,7 +162,7 @@ public class Class1
    private static void GreaterThanU64B()
    {
       // <Snippet15>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 2);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 2);
       ulong number = UInt64.MaxValue;
       if (number > bigNumber) {
          // Do something
@@ -173,7 +173,7 @@ public class Class1
    private static void GreaterThanOrEqual64B()
    {
       // <Snippet17>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 4);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 4);
       long number = Int64.MaxValue;
       if (number >= bigNumber) {
          // Do something;
@@ -184,7 +184,7 @@ public class Class1
    private static void GreaterThanOrEqualB64()
    {
       // <Snippet19>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 4);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 4);
       long number = Int64.MaxValue;
       if (bigNumber >= number) {
          // Do something;
@@ -195,7 +195,7 @@ public class Class1
    private static void GreaterThanOrEqualBU64()
    {
       // <Snippet21>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 2);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 2);
       ulong number = UInt64.MaxValue;
       if (bigNumber >= number) {
          // Do something
@@ -206,7 +206,7 @@ public class Class1
    private static void GreaterThanOrEqualU64B()
    {
       // <Snippet23>
-      BigInteger bigNumber = BigInteger.Pow(Int32.MaxValue, 2);
+      BigInteger bigNumber = BigInteger.Pow(int.MaxValue, 2);
       ulong number = UInt64.MaxValue;
       if (number >= bigNumber) {
          // Do something

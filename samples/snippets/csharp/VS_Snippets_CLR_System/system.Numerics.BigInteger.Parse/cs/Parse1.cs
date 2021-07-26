@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Numerics;
 
@@ -6,10 +6,10 @@ public class ParseModule
 {
     public static void Main()
     {
-      Console.WriteLine("BigInteger.Parse(String)-------------");
+      Console.WriteLine("BigInteger.Parse(string)-------------");
       ParseString();
       Console.WriteLine("----------");
-      Console.WriteLine("BigInteger.Parse(String, NumberStyles, IFormatProvider)----------");
+      Console.WriteLine("BigInteger.Parse(string, NumberStyles, IFormatProvider)----------");
       ParseWithStyleAndProvider();
       Console.WriteLine();
    }
@@ -17,7 +17,7 @@ public class ParseModule
    private static void ParseString()
    {
       // <Snippet1>
-      string stringToParse = String.Empty;
+      string stringToParse = string.Empty;
       try
       {
          // Parse two strings.

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using Microsoft.Win32.SafeHandles;
 using System;
 using System.ComponentModel;
@@ -8,15 +8,15 @@ using System.Runtime.InteropServices;
 public class FileAssociationInfo : IDisposable
 {
    // Private variables.
-   private String ext;
-   private String openCmd;
-   private String args;
+   private string ext;
+   private string openCmd;
+   private string args;
    private SafeRegistryHandle hExtHandle, hAppIdHandle;
 
    // Windows API calls.
    [DllImport("advapi32.dll", CharSet= CharSet.Auto, SetLastError=true)]
    private static extern int RegOpenKeyEx(IntPtr hKey,
-                  String lpSubKey, int ulOptions, int samDesired,
+                  string lpSubKey, int ulOptions, int samDesired,
                   out IntPtr phkResult);
    [DllImport("advapi32.dll", CharSet= CharSet.Unicode, EntryPoint = "RegQueryValueExW",
               SetLastError=true)]
@@ -41,7 +41,7 @@ public class FileAssociationInfo : IDisposable
 
    private const int MAX_PATH = 260;
 
-   public FileAssociationInfo(String fileExtension)
+   public FileAssociationInfo(string fileExtension)
    {
       int retVal = 0;
       uint lpType = 0;
@@ -60,7 +60,7 @@ public class FileAssociationInfo : IDisposable
 
       string appId = new string(' ', MAX_PATH);
       uint appIdLength = (uint) appId.Length;
-      retVal = RegQueryValueEx(hExtHandle.DangerousGetHandle(), String.Empty, 0, out lpType, appId, ref appIdLength);
+      retVal = RegQueryValueEx(hExtHandle.DangerousGetHandle(), string.Empty, 0, out lpType, appId, ref appIdLength);
       if (retVal != ERROR_SUCCESS)
          throw new Win32Exception(retVal);
       // We no longer need the hExtension handle.
@@ -84,7 +84,7 @@ public class FileAssociationInfo : IDisposable
       // Get the executable name for this file type.
       string exePath = new string(' ', MAX_PATH);
       uint exePathLength = (uint) exePath.Length;
-      retVal = RegQueryValueEx(hAppIdHandle.DangerousGetHandle(), String.Empty, 0, out lpType, exePath, ref exePathLength);
+      retVal = RegQueryValueEx(hAppIdHandle.DangerousGetHandle(), string.Empty, 0, out lpType, exePath, ref exePathLength);
       if (retVal != ERROR_SUCCESS)
          throw new Win32Exception(retVal);
 
@@ -102,20 +102,20 @@ public class FileAssociationInfo : IDisposable
       openCmd = exePath;
    }
 
-   public String Extension
+   public string Extension
    { get { return ext; } }
 
-   public String Open
+   public string Open
    { get { return openCmd; }
      set {
         if (hAppIdHandle.IsInvalid | hAppIdHandle.IsClosed)
            throw new InvalidOperationException("Cannot write to registry key.");
         if (! File.Exists(value)) {
-           string message = String.Format("'{0}' does not exist", value);
+           string message = string.Format("'{0}' does not exist", value);
            throw new FileNotFoundException(message);
         }
         string cmd = value + " %1";
-        int retVal = RegSetValueEx(hAppIdHandle.DangerousGetHandle(), String.Empty, 0,
+        int retVal = RegSetValueEx(hAppIdHandle.DangerousGetHandle(), string.Empty, 0,
                                    REG_SZ, value, value.Length + 1);
         if (retVal != ERROR_SUCCESS)
            throw new Win32Exception(retVal);
