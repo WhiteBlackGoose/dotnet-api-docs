@@ -1,4 +1,4 @@
-﻿//AppSettingsSample C# sample, flattened to one file for Parsnip.
+//AppSettingsSample C# sample, flattened to one file for Parsnip.
 
 using System;
 using System.Collections.Generic;
@@ -155,7 +155,7 @@ namespace AppSettingsSample
              this.Size = frmSettings1.FormSize;
 
             //For more complex associations, manually assign associations.
-            String savedText = frmSettings1.FormText;
+            string savedText = frmSettings1.FormText;
             //Since there is no default value for FormText.
             if (savedText != null)
                 this.Text = savedText;
@@ -226,9 +226,9 @@ namespace AppSettingsSample
     sealed class FormSettings : ApplicationSettingsBase
     {
         [UserScopedSettingAttribute()]
-        public String FormText
+        public string FormText
         {
-            get { return (String)this["FormText"]; }
+            get { return (string)this["FormText"]; }
             set { this["FormText"] = value; }
         }
 

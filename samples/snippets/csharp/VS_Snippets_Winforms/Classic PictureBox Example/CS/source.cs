@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -8,7 +8,7 @@ public class Form1: Form
  protected PictureBox pictureBox1;
 // <Snippet1>
  private Bitmap MyImage ;
- public void ShowMyImage(String fileToDisplay, int xSize, int ySize)
+ public void ShowMyImage(string fileToDisplay, int xSize, int ySize)
  {
     // Sets up an image object to be displayed.
     if (MyImage != null)

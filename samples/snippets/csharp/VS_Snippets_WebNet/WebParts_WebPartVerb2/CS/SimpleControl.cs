@@ -1,4 +1,4 @@
-﻿//<SNIPPET2>
+//<SNIPPET2>
 using System;
 using System.Data;
 using System.Configuration;
@@ -22,7 +22,7 @@ namespace Samples.AspNet.CS.Controls
 	public class SimpleControl : WebPart
 	{
 
-		private String _text = "Simple control text";
+		private string _text = "Simple control text";
 
 		public string Text
 		{

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -13,7 +13,7 @@ DataGrid dataGrid1 = new DataGrid();
 private void AddColumn(DataTable myTable){
     // Add a new DataColumn to the DataTable.
     DataColumn myColumn = new DataColumn("myTextBoxColumn");
-    myColumn.DataType = typeof(String);
+    myColumn.DataType = typeof(string);
     myColumn.DefaultValue="default string";
     myTable.Columns.Add(myColumn);
     // Get the ListManager for the DataTable.

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.ComponentModel;
 using System.Windows.Forms;
@@ -25,7 +25,7 @@ private void button2_Click(object sender, System.EventArgs e) {
     // Determines whether the data is in a format you can use.
     if(iData.GetDataPresent(DataFormats.Text)) {
        // Yes it is, so display it in a text box.
-       textBox2.Text = (String)iData.GetData(DataFormats.Text); 
+       textBox2.Text = (string)iData.GetData(DataFormats.Text); 
     }
     else {
        // No it is not.

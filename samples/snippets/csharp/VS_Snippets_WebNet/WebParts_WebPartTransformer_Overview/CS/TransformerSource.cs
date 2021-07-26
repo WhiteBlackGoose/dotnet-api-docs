@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.ComponentModel;
 using System.Data;
@@ -147,7 +147,7 @@ namespace Samples.AspNet.CS.Controls
             PropertyDescriptorCollection props = _provider.Schema;
             if (props != null && props.Count > 0 && rowData != null)
             {
-                string returnValue = String.Empty;
+                string returnValue = string.Empty;
                 foreach (PropertyDescriptor prop in props)
                 {
                     if (prop != props[0])
@@ -235,7 +235,7 @@ namespace Samples.AspNet.CS.Controls
             }
         }
 
-        [ConnectionConsumer("String")]
+        [ConnectionConsumer("string")]
         public void SetConnectionInterface(IString provider)
         {
             _provider = provider;

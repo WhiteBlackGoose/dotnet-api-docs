@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Drawing;
@@ -24,7 +24,7 @@ using System.Windows.Forms;
          int count = 0;
          float leftMargin = ev.MarginBounds.Left;
          float topMargin = ev.MarginBounds.Top;
-         String line=null;
+         string line=null;
              
          // Calculate the number of lines per page.
          linesPerPage = ev.MarginBounds.Height  / 

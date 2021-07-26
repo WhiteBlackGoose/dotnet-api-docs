@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Printing;
@@ -48,7 +48,7 @@ public class Form1: Form
          int count = 0;
          float leftMargin = ev.MarginBounds.Left;
          float topMargin = ev.MarginBounds.Top;
-         String line=null;
+         string line=null;
              
          // Calculate the number of lines per page.
          linesPerPage = ev.MarginBounds.Height  / 

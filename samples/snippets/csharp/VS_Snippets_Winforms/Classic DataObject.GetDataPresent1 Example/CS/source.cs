@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
@@ -22,7 +22,7 @@ private void GetIfPresent3() {
 
         // Prints the string in a text box with autoconvert = true.
         textBox1.Text += "With autoconvert = true, you can convert text to string format. " +
-       "String is: " + myDataObject.GetData("System.String", true).ToString();
+       "string is: " + myDataObject.GetData("System.String", true).ToString();
  }
  
 // </Snippet1>

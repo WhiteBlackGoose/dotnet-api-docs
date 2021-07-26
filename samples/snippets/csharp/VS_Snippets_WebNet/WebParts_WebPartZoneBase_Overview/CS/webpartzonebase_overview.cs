@@ -1,4 +1,4 @@
-﻿// <snippet4>
+// <snippet4>
 using System;
 using System.Text;
 using System.Web;
@@ -12,7 +12,7 @@ public partial class WebPartZoneBase_overview : System.Web.UI.Page
   protected void Page_Load(Object sender, EventArgs e)
   {
     Label1.Text = DateTime.Now.ToLongDateString();
-    Label2.Text = String.Empty;
+    Label2.Text = string.Empty;
   }
   // </snippet5>
 

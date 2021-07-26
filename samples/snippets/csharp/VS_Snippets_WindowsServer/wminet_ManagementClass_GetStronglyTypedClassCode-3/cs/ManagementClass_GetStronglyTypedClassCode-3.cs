@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Management;
 using System.CodeDom;
@@ -17,7 +17,7 @@ namespace ManagementSample
             cls1.GetStronglyTypedClassCode(
                 CodeLanguage.CSharp,
                 "C:\\temp\\Logicaldisk.cs",
-                String.Empty);
+                string.Empty);
         }
     }
 }

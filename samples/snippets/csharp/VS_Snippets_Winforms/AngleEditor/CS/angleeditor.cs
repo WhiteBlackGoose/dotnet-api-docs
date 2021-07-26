@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.ComponentModel;
 using System.Drawing;
@@ -8,7 +8,7 @@ using System.Windows.Forms.Design;
 
 namespace AngleEditor
 {
-    // This UITypeEditor can be associated with Int32, Double and Single
+    // This UITypeEditor can be associated with int, Double and Single
     // properties to provide a design-mode angle selection interface.
     [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
     public class AngleEditor : System.Drawing.Design.UITypeEditor
@@ -27,7 +27,7 @@ namespace AngleEditor
         // Displays the UI for value selection.
         public override object EditValue(System.ComponentModel.ITypeDescriptorContext context, System.IServiceProvider provider, object value)
         {
-            // Return the value if the value is not of type Int32, Double and Single.
+            // Return the value if the value is not of type int, Double and Single.
             if( value.GetType() != typeof(double) && value.GetType() != typeof(float) && value.GetType() != typeof(int) )
                 return value;
 

@@ -1,4 +1,4 @@
-﻿//<SNIPPET3>
+//<SNIPPET3>
 using System;
 using System.Data;
 using System.Configuration;
@@ -48,7 +48,7 @@ public class ZoneWithAddedVerb : WebPartZone
     Level = AspNetHostingPermissionLevel.Minimal)]
   internal class CopyWebPartVerb : WebPartVerb
   {
-    private const String _copyWebPartImageUrl = "~/CopyVerb.ico";
+    private const string _copyWebPartImageUrl = "~/CopyVerb.ico";
 
     internal CopyWebPartVerb(WebPartEventHandler serverClickHandler) :  
        base("MyVerb", serverClickHandler)
