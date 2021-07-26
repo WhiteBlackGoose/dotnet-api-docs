@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -124,7 +124,7 @@ namespace ErrorProvider
             if(IsNameValid())
             {
                 // Clear the error, if any, in the error provider.
-                nameErrorProvider.SetError(this.nameTextBox1, String.Empty);
+                nameErrorProvider.SetError(this.nameTextBox1, string.Empty);
             }
             else
             {
@@ -148,7 +148,7 @@ namespace ErrorProvider
             else 
             {
                 // Clear the error, if any, in the error provider.
-                ageErrorProvider.SetError(this.ageUpDownPicker, String.Empty);
+                ageErrorProvider.SetError(this.ageUpDownPicker, string.Empty);
             }
         }
 
@@ -162,7 +162,7 @@ namespace ErrorProvider
             else
             {
                 // Clear the error, if any, in the error provider.
-                favoriteColorErrorProvider.SetError(this.favoriteColorComboBox, String.Empty);
+                favoriteColorErrorProvider.SetError(this.favoriteColorComboBox, string.Empty);
             }
         }
         //</Snippet3>

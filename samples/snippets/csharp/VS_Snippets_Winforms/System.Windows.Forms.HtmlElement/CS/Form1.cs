@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,13 +30,13 @@ namespace HtmlElementProjectCSharp
 				if (doc != null)
 				{
 					elemColl = doc.GetElementsByTagName("HTML");
-					String str = PrintDom(elemColl, new System.Text.StringBuilder(), 0);
+					string str = PrintDom(elemColl, new System.Text.StringBuilder(), 0);
 					webBrowser1.DocumentText = str;
 				}
 			}
 		}
 
-		private string PrintDom(HtmlElementCollection elemColl, System.Text.StringBuilder returnStr, Int32 depth)
+		private string PrintDom(HtmlElementCollection elemColl, System.Text.StringBuilder returnStr, int depth)
 		{
 			System.Text.StringBuilder str = new System.Text.StringBuilder();
 
@@ -175,7 +175,7 @@ namespace HtmlElementProjectCSharp
 		{
 			HtmlElement elem = webBrowser1.Document.GetElementById("div1");
 
-			String htmlMenu = "<DIV id=\"menu1\" style=\"width:200px;position:absolute;\">";
+			string htmlMenu = "<DIV id=\"menu1\" style=\"width:200px;position:absolute;\">";
 			htmlMenu += "<DIV id=\"menu1_1\" style=\"background:#999999;color:white;font-weight:bold;\">";
 			htmlMenu += "<SPAN id=\"menu1_0_cue\" style=\"border-style:solid;border-width:1px;color:white;background:999999;\">+</SPAN>First Level<BR>";
 			htmlMenu += "<DIV id=\"menu1_1_0\" style=\"margin-left:20px;color:white;font-weight:normal;display:none;\">";
@@ -212,7 +212,7 @@ namespace HtmlElementProjectCSharp
 		//<SNIPPET6>
 		private void GetOffsets()
 		{
-			String str = "";
+			string str = "";
 			HtmlDocument doc = webBrowser1.Document;
 
 			foreach (HtmlElement elem in doc.GetElementsByTagName("SPAN"))
@@ -239,7 +239,7 @@ namespace HtmlElementProjectCSharp
 				{
 					if (elem.Parent.TagName.Equals("A"))
 					{
-						String altStr = elem.GetAttribute("ALT");
+						string altStr = elem.GetAttribute("ALT");
 						if (!(altStr == null) && (altStr.Length != 0))
 						{
 							elem.SetAttribute("ALT", altStr + " - points to " + elem.Parent.GetAttribute("HREF"));
@@ -277,7 +277,7 @@ namespace HtmlElementProjectCSharp
 		public void AddDivMessage()
 		{
 			Uri currentUri = new Uri(webBrowser1.Url.ToString());
-			String hostName = null;
+			string hostName = null;
 
 			// Ensure we have a host name, and not just an IP, against which to test.
 			if (!(currentUri.HostNameType == UriHostNameType.Dns))
@@ -299,7 +299,7 @@ namespace HtmlElementProjectCSharp
 			}
 		}
 
-		private void AddTopPageMessage(String message)
+		private void AddTopPageMessage(string message)
 		{
 			if (webBrowser1.Document != null) 
 			{
@@ -328,7 +328,7 @@ namespace HtmlElementProjectCSharp
 		}
 
 		//<SNIPPET10>
-		private void SubmitForm(String formName)
+		private void SubmitForm(string formName)
 		{
 			HtmlElementCollection elems = null;
 			HtmlElement elem = null;
@@ -355,7 +355,7 @@ namespace HtmlElementProjectCSharp
 		}
 
 		//<SNIPPET11>
-		private void ShiftRows(String tableName)
+		private void ShiftRows(string tableName)
 		{
 			if (webBrowser1.Document != null)
 			{
@@ -377,7 +377,7 @@ namespace HtmlElementProjectCSharp
 		//</SNIPPET11>
 
 		//<SNIPPET12>
-		private void ScrollToElement(String elemName)
+		private void ScrollToElement(string elemName)
 		{
 			if (webBrowser1.Document != null)
 			{
@@ -450,7 +450,7 @@ namespace HtmlElementProjectCSharp
 		private void TargetFormElement_Focus(Object sender, HtmlElementEventArgs e)
 		{
 			HtmlElement textElement = e.FromElement;
-			String elementText = textElement.GetAttribute("value");
+			string elementText = textElement.GetAttribute("value");
 
 			// Check that this value is at least five characters long.
 			if (elementText.Length < 5)
@@ -505,9 +505,9 @@ namespace HtmlElementProjectCSharp
 
         void elem_KeyDown(object sender, HtmlElementEventArgs e)
         {
-            Char c = (char)e.KeyPressedCode;
+            char c = (char)e.KeyPressedCode;
 
-            if (Char.IsLetterOrDigit(c))
+            if (char.IsLetterOrDigit(c))
             {
                 lastKeystrokeOn++;
             }

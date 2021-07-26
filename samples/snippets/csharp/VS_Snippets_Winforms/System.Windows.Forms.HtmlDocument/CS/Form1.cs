@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -84,9 +84,9 @@ namespace HtmlDocumentProjectCSharp
         }
 
         //<SNIPPET5>
-        private Int32 GetTableRowCount(string tableID)
+        private int GetTableRowCount(string tableID)
         {
-            Int32 count = 0;
+            int count = 0;
 
             if (webBrowser1.Document != null)
             {
@@ -116,10 +116,10 @@ namespace HtmlDocumentProjectCSharp
                 HtmlElementCollection elems = webBrowser1.Document.GetElementsByTagName("META");
                 foreach (HtmlElement elem in elems)
                 {
-                    String nameStr = elem.GetAttribute("name");
+                    string nameStr = elem.GetAttribute("name");
                     if (nameStr != null && nameStr.Length != 0)
                     {
-                        String contentStr = elem.GetAttribute("content");
+                        string contentStr = elem.GetAttribute("content");
                         MessageBox.Show("Document: " + webBrowser1.Url.ToString() + "\nDescription: " + contentStr);
                     }
                 }
@@ -160,7 +160,7 @@ namespace HtmlDocumentProjectCSharp
         //</SNIPPET8>
 
         //<SNIPPET9>
-        private void InvokeTestMethod(String name, String address)
+        private void InvokeTestMethod(string name, string address)
         {
             if (webBrowser1.Document != null)
             {
@@ -243,7 +243,7 @@ namespace HtmlDocumentProjectCSharp
             if (webBrowser1.Document != null)
             {
                 HtmlDocument doc = webBrowser1.Document;
-                String str = doc.InvokeScript("test").ToString() ;
+                string str = doc.InvokeScript("test").ToString() ;
                 Object jscriptObj = doc.InvokeScript("testJScriptObject");
                 Object domOb = doc.InvokeScript("testElement");
             }
@@ -251,7 +251,7 @@ namespace HtmlDocumentProjectCSharp
         //</SNIPPET12>
 
         //<SNIPPET13>
-        private void AppendText(String text)
+        private void AppendText(string text)
         {
             if (webBrowser1.Document != null)
             {
@@ -269,7 +269,7 @@ namespace HtmlDocumentProjectCSharp
             if (webBrowser1.Document != null)
             {
                 HtmlDocument doc = webBrowser1.Document;
-                String link = "<A HREF=\"" + webBrowser1.Document.Url.ToString() + "\">" + webBrowser1.Document.Title + "</A>";
+                string link = "<A HREF=\"" + webBrowser1.Document.Url.ToString() + "\">" + webBrowser1.Document.Title + "</A>";
 
                 IDataObject dataObj = Clipboard.GetDataObject();
                 dataObj.SetData("HTML", true, (object)link);

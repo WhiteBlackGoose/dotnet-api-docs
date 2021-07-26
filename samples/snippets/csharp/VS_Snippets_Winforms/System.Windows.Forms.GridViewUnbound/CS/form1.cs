@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -272,16 +272,16 @@ public class Form1 : Form
 
     private static void CheckTrack(DataGridViewCellValidatingEventArgs newValue)
     {
-        Int32 ignored = new Int32();
-        if (String.IsNullOrEmpty(newValue.FormattedValue.ToString()))
+        int ignored = new int();
+        if (string.IsNullOrEmpty(newValue.FormattedValue.ToString()))
         {
             NotifyUserAndForceRedo("Please enter a track", newValue);
         }
-        else if (!Int32.TryParse(newValue.FormattedValue.ToString(), out ignored))
+        else if (!int.TryParse(newValue.FormattedValue.ToString(), out ignored))
         {
             NotifyUserAndForceRedo("A Track must be a number", newValue);
         }
-        else if (Int32.Parse(newValue.FormattedValue.ToString()) < 1)
+        else if (int.Parse(newValue.FormattedValue.ToString()) < 1)
         {
             NotifyUserAndForceRedo("Not a valid track", newValue);
         }
@@ -298,7 +298,7 @@ public class Form1 : Form
         try
         {
             DateTime.Parse(newValue.FormattedValue.ToString()).ToLongDateString();
-            AnnotateCell(String.Empty, newValue);
+            AnnotateCell(string.Empty, newValue);
         }
         catch (FormatException)
         {
