@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // Sample for Environment class summary
 using System;
 using System.Collections;
@@ -17,7 +17,7 @@ class Sample
         Console.WriteLine("CommandLine: {0}", Environment.CommandLine);
 
         string[] arguments = Environment.GetCommandLineArgs();
-        Console.WriteLine("GetCommandLineArgs: {0}", String.Join(", ", arguments));
+        Console.WriteLine("GetCommandLineArgs: {0}", string.Join(", ", arguments));
 
         //  <-- Keep this information secure! -->
         Console.WriteLine("CurrentDirectory: {0}", Environment.CurrentDirectory);
@@ -74,7 +74,7 @@ class Sample
                      Environment.GetFolderPath(Environment.SpecialFolder.System));
 
         string[] drives = Environment.GetLogicalDrives();
-        Console.WriteLine("GetLogicalDrives: {0}", String.Join(", ", drives));
+        Console.WriteLine("GetLogicalDrives: {0}", string.Join(", ", drives));
     }
 }
 /*

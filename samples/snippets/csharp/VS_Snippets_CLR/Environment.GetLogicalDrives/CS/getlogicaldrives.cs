@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // Sample for the Environment.GetLogicalDrives method
 using System;
 
@@ -8,7 +8,7 @@ class Sample
     {
     Console.WriteLine();
     String[] drives = Environment.GetLogicalDrives();
-    Console.WriteLine("GetLogicalDrives: {0}", String.Join(", ", drives));
+    Console.WriteLine("GetLogicalDrives: {0}", string.Join(", ", drives));
     }
 }
 /*

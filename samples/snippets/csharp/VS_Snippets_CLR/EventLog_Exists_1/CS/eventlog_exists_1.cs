@@ -1,7 +1,7 @@
-﻿// System.Diagnostics.EventLog.Exists(String)
+// System.Diagnostics.EventLog.Exists(string)
 
 /*
-   The following sample demonstrates the 'Exists(String)'method of
+   The following sample demonstrates the 'Exists(string)'method of
    'EventLog' class. It checks for the existence of a log and displays
    the result accordingly.
 */
