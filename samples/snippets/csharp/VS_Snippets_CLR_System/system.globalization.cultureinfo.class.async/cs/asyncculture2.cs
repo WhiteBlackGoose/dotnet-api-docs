@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Runtime.Versioning;
@@ -11,11 +11,11 @@ public class Example
    {
        decimal[] values = { 163025412.32m, 18905365.59m };
        string formatString = "C2";
-       Func<String> formatDelegate = () => { string output = String.Format("Formatting using the {0} culture on thread {1}.\n",
+       Func<string> formatDelegate = () => { string output = string.Format("Formatting using the {0} culture on thread {1}.\n",
                                                                            CultureInfo.CurrentCulture.Name,
                                                                            Thread.CurrentThread.ManagedThreadId);
                                              foreach (var value in values)
-                                                output += String.Format("{0}   ", value.ToString(formatString));
+                                                output += string.Format("{0}   ", value.ToString(formatString));
 
                                              output += Environment.NewLine;
                                              return output;
@@ -44,7 +44,7 @@ public class Example
        Console.WriteLine(t1.Result);
 
        Console.WriteLine("Executing a task synchronously:");
-       var t2 = new Task<String>(formatDelegate);
+       var t2 = new Task<string>(formatDelegate);
        t2.RunSynchronously();
        Console.WriteLine(t2.Result);
    }

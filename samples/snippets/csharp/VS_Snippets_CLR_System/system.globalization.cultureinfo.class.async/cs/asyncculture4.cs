@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 using System.Runtime.Versioning;
@@ -48,7 +48,7 @@ public class Example
 
 public class DataRetriever : MarshalByRefObject
 {
-   public string GetFormattedNumber(String format)
+   public string GetFormattedNumber(string format)
    {
       Thread thread = Thread.CurrentThread;
       Console.WriteLine("Current culture is {0}", thread.CurrentCulture);

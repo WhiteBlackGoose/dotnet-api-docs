@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -42,7 +42,7 @@ public class NamePropertyComparer<T> : IComparer<T>
 
       PropertyInfo pX = x.GetType().GetProperty("Name");
       PropertyInfo pY = y.GetType().GetProperty("Name");
-      return String.Compare((string) pX.GetValue(x, null), (string) pY.GetValue(y, null));
+      return string.Compare((string) pX.GetValue(x, null), (string) pY.GetValue(y, null));
    }
 }
 // The example displays the following output on a Windows system.  This output has been cropped for brevity.

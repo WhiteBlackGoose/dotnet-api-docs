@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Globalization;
 
@@ -18,7 +18,7 @@ public class Example
       Console.WriteLine();
 
       // We don't want to change the FullDateTimePattern, so we need to save it.
-      String originalFullDateTimePattern = dtfi.FullDateTimePattern;
+      string originalFullDateTimePattern = dtfi.FullDateTimePattern;
 
       // Modify day name abbreviations and long date pattern.
       dtfi.AbbreviatedDayNames = new String[] { "Su", "M", "Tu", "W", "Th", "F", "Sa" };

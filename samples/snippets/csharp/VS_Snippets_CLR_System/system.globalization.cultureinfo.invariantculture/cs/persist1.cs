@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Globalization;
@@ -21,7 +21,7 @@ public class Example
 
       // Restore the date and time data.
       StreamReader sr = new StreamReader(@".\DateData.dat");
-      String input;
+      string input;
       while ((input = sr.ReadLine()) != null)
       {
          Console.WriteLine("Stored data: {0}\n" , input);

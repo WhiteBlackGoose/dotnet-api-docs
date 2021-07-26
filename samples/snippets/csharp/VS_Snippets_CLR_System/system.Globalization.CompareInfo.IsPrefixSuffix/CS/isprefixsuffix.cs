@@ -1,4 +1,4 @@
-﻿// The following code example determines whether a string is the prefix or suffix of another string.
+// The following code example determines whether a string is the prefix or suffix of another string.
 
 // <snippet1>
 using System;
@@ -9,9 +9,9 @@ public class SamplesCompareInfo  {
    public static void Main()  {
 
       // Defines the strings to compare.
-      String myStr1 = "calle";
-      String myStr2 = "llegar";
-      String myXfix = "lle";
+      string myStr1 = "calle";
+      string myStr2 = "llegar";
+      string myXfix = "lle";
 
       // Uses the CompareInfo property of the InvariantCulture.
       CompareInfo myComp = CultureInfo.InvariantCulture.CompareInfo;

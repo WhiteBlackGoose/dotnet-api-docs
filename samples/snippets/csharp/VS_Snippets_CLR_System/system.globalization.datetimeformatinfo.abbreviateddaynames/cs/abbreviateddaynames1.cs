@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -13,7 +13,7 @@ public class Example
       DateTime dat = new DateTime(2014, 5, 28);
 
       for (int ctr = 0; ctr <= 6; ctr++) {
-         String output = String.Format(ci, "{0:ddd MMM dd, yyyy}", dat.AddDays(ctr));
+         string output = string.Format(ci, "{0:ddd MMM dd, yyyy}", dat.AddDays(ctr));
          Console.WriteLine(output);
       }
    }
