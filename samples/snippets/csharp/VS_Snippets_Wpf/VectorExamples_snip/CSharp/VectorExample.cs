@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -616,13 +616,13 @@ namespace Microsoft.Samples.VectorExamples
         // </SnippetSubtractExample>
 
         // <SnippetToStringExample>
-        private String toStringExample()
+        private string toStringExample()
         {
 
             Vector vector1 = new Vector(20, 30);
 
             // vectorString is equal to "20,30".
-            String stringResult = vector1.ToString();
+            string stringResult = vector1.ToString();
 
             return stringResult;
         }

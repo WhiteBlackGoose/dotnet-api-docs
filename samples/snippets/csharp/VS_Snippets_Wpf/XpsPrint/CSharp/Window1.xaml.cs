@@ -1,4 +1,4 @@
-﻿// XpsPrint SDK Sample - Window1.xaml.cs
+// XpsPrint SDK Sample - Window1.xaml.cs
 // Copyright (c) Microsoft Corporation. All rights reserved. 
 
 using System;
@@ -69,7 +69,7 @@ namespace SDKSample
         // ----------------------- ContentDir getter --------------------------
         /// <summary>
         ///   Gets the string to the \Content directory.</summary>
-        public String ContentDir
+        public string ContentDir
         {
             get
                 { return _contentDir; }
@@ -342,7 +342,7 @@ namespace SDKSample
 
         private XpsDocument _xpsPackage = null; // Reference to the XPS package.
 
-        private String _contentDir;     // Path to the \Content directory
+        private string _contentDir;     // Path to the \Content directory
 
         private eGuiMode currentMode;   // Current DocumentViewer content mode
 

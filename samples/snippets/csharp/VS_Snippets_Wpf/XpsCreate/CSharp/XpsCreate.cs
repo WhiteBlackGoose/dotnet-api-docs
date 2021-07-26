@@ -1,4 +1,4 @@
-﻿// XpsCreate SDK Sample - XpsCreate.cs
+// XpsCreate SDK Sample - XpsCreate.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -337,7 +337,7 @@ public class XpsCreate
                 xmlWriter.WriteAttributeString("OriginX", "120");
                 xmlWriter.WriteAttributeString("OriginY", "130");
                 xmlWriter.WriteAttributeString(
-                    "UnicodeString", "Test String in Arial");
+                    "UnicodeString", "Test string in Arial");
             xmlWriter.WriteEndElement();
 
             xmlWriter.WriteStartElement("Path");

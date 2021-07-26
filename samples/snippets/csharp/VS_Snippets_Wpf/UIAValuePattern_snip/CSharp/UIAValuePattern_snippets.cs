@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Automation;
@@ -127,7 +127,7 @@ namespace UIAValuePattern_snip
             // Validate arguments / initial setup
             if (value == null)
                 throw new ArgumentNullException(
-                    "String parameter must not be null.");
+                    "string parameter must not be null.");
 
             if (targetControl == null)
                 throw new ArgumentNullException(

@@ -1,4 +1,4 @@
-﻿// XpsPrint SDK Sample - XpsPrintHelper.cs
+// XpsPrint SDK Sample - XpsPrintHelper.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -22,10 +22,10 @@ namespace SDKSampleHelper
     ///   Event arguments class for asynchronous print events.</summary>
     public class AsyncPrintEventArgs : EventArgs
     {
-        private String _status;
+        private string _status;
         private bool _completed;
 
-        public String Status
+        public string Status
         {
             get { return _status; }
         }
@@ -35,7 +35,7 @@ namespace SDKSampleHelper
             get { return _completed; }
         }
 
-        public AsyncPrintEventArgs(String status, bool completed)
+        public AsyncPrintEventArgs(string status, bool completed)
         {
             _completed = completed;
             _status = status;
@@ -51,7 +51,7 @@ namespace SDKSampleHelper
         internal event AsyncPrintChangeHandler OnAsyncPrintChange;
 
         #region Constructors
-        public XpsPrintHelper(String contentPath)
+        public XpsPrintHelper(string contentPath)
         {
             _wpfContent = new WPFContent(contentPath);
             _contentDir = contentPath;
@@ -502,7 +502,7 @@ namespace SDKSampleHelper
 
             if (OnAsyncPrintChange != null)
             {
-                String progress = String.Format("{0} - {1}",
+                string progress = string.Format("{0} - {1}",
                     e.WritingLevel.ToString(), e.Number.ToString());
                 AsyncPrintEventArgs asyncInfo =
                     new AsyncPrintEventArgs(progress, false);
@@ -705,7 +705,7 @@ namespace SDKSampleHelper
         #region Private Data
         private int                   _batchProgress = 0;
         private int                   _firstDocumentPrintTicket = 0;
-        private String                _contentDir = null;
+        private string                _contentDir = null;
         private WPFContent            _wpfContent = null;
         private VisualsToXpsDocument  _activeVtoXPSD = null;
         private XpsDocumentWriter     _xpsdwActive = null;

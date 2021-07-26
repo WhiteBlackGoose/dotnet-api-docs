@@ -1,4 +1,4 @@
-﻿//This is a list of commonly used namespaces for a window.
+//This is a list of commonly used namespaces for a window.
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,7 +29,7 @@ namespace Vector3DSample
 			RadioButton li = (sender as RadioButton);
 			
             // Strings used to display results
-            String syntaxString, resultType, operationString;
+            string syntaxString, resultType, operationString;
 					
 			///The local variables point1, point2, vector2, etc are defined in each
 			///case block for readability reasons. Each variable is contained within
@@ -695,7 +695,7 @@ namespace Vector3DSample
                         //<SnippetMil3dVectorSample3DN32>
                         // Gets a string representation of the structure
                         Vector3D vector1 = new Vector3D(20, 30, 40);
-                        String vectorString;
+                        string vectorString;
 
                         vectorString = vector1.ToString();
                         // vectorString is equal to 20, 30, 40
@@ -703,7 +703,7 @@ namespace Vector3DSample
 
                         // Displaying Results
                         syntaxString = "vectorString = vector1.ToString();";
-                        resultType = "String";
+                        resultType = "string";
                         operationString = "Getting the string representation of a Vector3D";
                         ShowResults(vectorString.ToString(), syntaxString, resultType, operationString);
                         break;
@@ -768,7 +768,7 @@ namespace Vector3DSample
 		}
 
         // Method to display the results of the operations
-		private void ShowResults(String resultValue, String syntax, String resultType, String opString)	
+		private void ShowResults(string resultValue, string syntax, string resultType, string opString)	
 		{
 			// Displays the results of the operation
 			txtResultValue.Text = resultValue;
