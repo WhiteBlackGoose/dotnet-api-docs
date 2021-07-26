@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebRequest.ContentLength;System.Net.FileWebRequest.RequestUri;
+// System.Net.FileWebRequest.ContentLength;System.Net.FileWebRequest.RequestUri;
 
 /*
   This program demonstrates 'ContentLength'and 'RequestUri' property of 'FileWebRequest' class.
@@ -29,7 +29,7 @@ using System.Text;
 
                      // Create an 'Uri' object.
                   Uri myUrl=new Uri("file://"+args[0]);
-                  String fileName = "file://"+args[0];
+                  string fileName = "file://"+args[0];
                   FileWebRequest myFileWebRequest =null;
 
 // <Snippet1>
@@ -37,7 +37,7 @@ using System.Text;
                   myFileWebRequest = (FileWebRequest)WebRequest.Create(myUrl);
 
                   Console.WriteLine("Enter the string you want to write into the file:");
-                  String userInput = Console.ReadLine();
+                  string userInput = Console.ReadLine();
                   ASCIIEncoding encoder = new ASCIIEncoding();
                   byte[] byteArray = encoder.GetBytes(userInput);
 
@@ -58,7 +58,7 @@ using System.Text;
                      readStream.Close();
                   }
 
-                  Console.WriteLine("\nThe String you entered was successfully written into the file.");
+                  Console.WriteLine("\nThe string you entered was successfully written into the file.");
                   Console.WriteLine("The content length sent to the server is "+myFileWebRequest.ContentLength+".");
 
 // </Snippet2>

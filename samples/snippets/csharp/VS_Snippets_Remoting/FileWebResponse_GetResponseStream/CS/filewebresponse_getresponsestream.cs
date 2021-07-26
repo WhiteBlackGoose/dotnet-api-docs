@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebResponse.GetResponseStream.
+// System.Net.FileWebResponse.GetResponseStream.
 
 /* This program demonstrates the 'GetResponseStream' method of the 'FileWebResponse' class.
    It creates a 'FileWebRequest' object and queries for a response.
@@ -27,7 +27,7 @@ class FileWebResponseSnippet
             Console.ReadLine();
         return;
     }
-   public static void GetPage(String url)
+   public static void GetPage(string url)
     {
         try
          {
@@ -53,7 +53,7 @@ class FileWebResponseSnippet
             while (count > 0)
             {
                 // Dump the 256 characters on a string and display the string onto the console.
-                String str = new String(read, 0, count);
+                string str = new string(read, 0, count);
                 Console.Write(str);
                 count = readStream.Read(read, 0, 256);
             }

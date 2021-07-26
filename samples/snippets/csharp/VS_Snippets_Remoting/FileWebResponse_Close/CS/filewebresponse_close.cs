@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebResponse.Close
+// System.Net.FileWebResponse.Close
 
 /*This program demontrates the 'Close' method of 'FileWebResponse' class.
 It takes an Uri from console and creates a 'FileWebRequest' object for the Uri. It then gets back
@@ -29,7 +29,7 @@ class FileWebResponseSnippet
     }
 
 // <Snippet1>
-   public static void GetPage(String url)
+   public static void GetPage(string url)
     {
         try
         {

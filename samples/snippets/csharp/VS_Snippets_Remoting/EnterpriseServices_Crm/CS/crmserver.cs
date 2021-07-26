@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 using System;
 using System.EnterpriseServices;
 using System.EnterpriseServices.CompensatingResourceManager;
@@ -35,7 +35,7 @@ internal static class AccountManager
         {
             StreamReader reader = new StreamReader(filename);
             string line = reader.ReadLine();
-            balance = Int32.Parse(line);
+            balance = int.Parse(line);
             reader.Close();
         }
         return(balance);

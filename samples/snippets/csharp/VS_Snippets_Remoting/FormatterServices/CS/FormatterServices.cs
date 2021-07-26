@@ -1,4 +1,4 @@
-﻿//Types:System.Runtime.Serialization.FormatterServices
+//Types:System.Runtime.Serialization.FormatterServices
 //Types:System.Runtime.Serialization.SerializationInfoEnumerator
 //<snippet1>
 using System;
@@ -13,16 +13,16 @@ using System.Security.Permissions;
 [Serializable]
 public class Person
 {
-    private String title;
+    private string title;
 
-    public Person(String title)
+    public Person(string title)
     {
         this.title = title;
     }
 
-    public override String ToString()
+    public override string ToString()
     {
-        return String.Format("{0}", title);
+        return string.Format("{0}", title);
     }
 }
 
@@ -30,16 +30,16 @@ public class Person
 [Serializable]
 public class Employee : Person
 {
-    private String title;
+    private string title;
 
-    public Employee(String title) : base("Person")
+    public Employee(string title) : base("Person")
     {
         this.title = title;
     }
 
-    public override String ToString()
+    public override string ToString()
     {
-        return String.Format("{0} -> {1}", title, base.ToString());
+        return string.Format("{0} -> {1}", title, base.ToString());
     }
 }
 
@@ -47,7 +47,7 @@ public class Employee : Person
 [Serializable]
 public class Manager : Employee, ISerializable
 {
-    private String title;
+    private string title;
 
     public Manager() : base("Employee")
     {
@@ -67,7 +67,7 @@ public class Manager : Employee, ISerializable
         MemberInfo[] mi = FormatterServices.GetSerializableMembers(thisType, context);
 
         // Serialize the base class's fields to the info object.
-        for (Int32 i = 0; i < mi.Length; i++)
+        for (int i = 0; i < mi.Length; i++)
         {
             // Do not serialize fields for this class.
             if (mi[i].DeclaringType == thisType) continue;
@@ -105,7 +105,7 @@ public class Manager : Employee, ISerializable
         MemberInfo[] mi = FormatterServices.GetSerializableMembers(thisType, context);
 
         // Deserialize the base class's fields from the info object.
-        for (Int32 i = 0; i < mi.Length; i++)
+        for (int i = 0; i < mi.Length; i++)
         {
             // Do not deserialize fields for this class.
             if (mi[i].DeclaringType == thisType) continue;
@@ -124,9 +124,9 @@ public class Manager : Employee, ISerializable
         title = info.GetString("title");
     }
 
-    public override String ToString()
+    public override string ToString()
     {
-        return String.Format("{0} -> {1}", title, base.ToString());
+        return string.Format("{0} -> {1}", title, base.ToString());
     }
 }
 

@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebRequest.BeginGetRequestStream;System.Net.FileWebRequest.EndGetRequestStream;
+// System.Net.FileWebRequest.BeginGetRequestStream;System.Net.FileWebRequest.EndGetRequestStream;
 // Snippet1 and Snippet2 go together
 
 /*
@@ -20,7 +20,7 @@ using System.Threading;
 	public class RequestDeclare
 	{
 		 public FileWebRequest myFileWebRequest;	
-		 public String userinput;
+		 public string userinput;
 
  		public RequestDeclare()
 		{
@@ -86,7 +86,7 @@ using System.Threading;
 			  // State of the request is asynchronous.
 			  RequestDeclare requestDeclare=(RequestDeclare) ar.AsyncState;
 			  FileWebRequest myFileWebRequest=requestDeclare.myFileWebRequest;
-			  String sendToFile = requestDeclare.userinput;
+			  string sendToFile = requestDeclare.userinput;
 
 			  // End the Asynchronus request by calling the 'EndGetRequestStream()' method.
 			  Stream readStream=myFileWebRequest.EndGetRequestStream(ar);
@@ -101,7 +101,7 @@ using System.Threading;
 			  readStream.Close();
 			  allDone.Set();
 				
-			  Console.WriteLine("\nThe String you entered was successfully written into the file.");
+			  Console.WriteLine("\nThe string you entered was successfully written into the file.");
 	   	  Console.WriteLine("\nPress Enter to continue.");	
          }
         catch(ApplicationException e)

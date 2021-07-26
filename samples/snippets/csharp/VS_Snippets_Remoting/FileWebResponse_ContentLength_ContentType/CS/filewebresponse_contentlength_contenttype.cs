@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebResponse.ContentLength;System.Net.FileWebResponse.ContentType.
+// System.Net.FileWebResponse.ContentLength;System.Net.FileWebResponse.ContentType.
 
 /* This program demonstrates the 'ContentLength' and 'ContentType' properties of the 'FileWebResponse' class.
 It creates a web request and queries for a response. It then prints the content length
@@ -26,7 +26,7 @@ class FileWebResponseSnippet
     }
 // <Snippet1>
 // <Snippet2>
-   public static void GetPage(String url)
+   public static void GetPage(string url)
     {
       try
         {

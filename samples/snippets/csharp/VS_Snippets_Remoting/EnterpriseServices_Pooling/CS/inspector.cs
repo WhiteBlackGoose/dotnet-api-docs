@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 using System;
 using System.EnterpriseServices;
 using System.Windows.Forms;
@@ -30,7 +30,7 @@ public class ObjectInspector : ServicedComponent
     // <snippet3>
     protected override void Activate()
     {
-        MessageBox.Show( String.Format("Now entering...\nApplication: {0}\nInstance: {1}\nContext: {2}\n",
+        MessageBox.Show( string.Format("Now entering...\nApplication: {0}\nInstance: {1}\nContext: {2}\n",
                                        ContextUtil.ApplicationId.ToString(), ContextUtil.ApplicationInstanceId.ToString(),
                                        ContextUtil.ContextId.ToString() ) );
     }

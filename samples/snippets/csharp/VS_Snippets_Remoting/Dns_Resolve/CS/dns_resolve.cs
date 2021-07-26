@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demonstrates 'Resolve' method of 'Dns' class.
    It takes a URL or IP address string from commandline or uses default value and obtains the 'IPHostEntry'
    object by calling 'Resolve' method of 'Dns' class. Then prints host name, IP address list and aliases.
@@ -12,7 +12,7 @@ class DnsResolve
 {
    public static void Main()
    {
-      String hostString = "";
+      string hostString = "";
       DnsResolve myDnsResolve = new DnsResolve();
       Console.Write("Type a URL or IP address (press Enter for default, default is '207.46.131.199') : ");
       hostString = Console.ReadLine();
@@ -22,7 +22,7 @@ class DnsResolve
          myDnsResolve.DisplayHostAddress("207.46.131.199");
    }
 
-   public void DisplayHostAddress(String hostString)
+   public void DisplayHostAddress(string hostString)
    {
       // Call the Resolve method passing a DNS style host name or an IP address in dotted-quad notation
       // (for example, "www.contoso.com" or "207.46.131.199") to obtain an IPHostEntry instance that contains

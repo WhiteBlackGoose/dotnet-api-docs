@@ -1,4 +1,4 @@
-﻿// System.Net.FileWebResponse.ResponseUri
+// System.Net.FileWebResponse.ResponseUri
 /* This program demonstrates the 'ResponseUri' property of the 'FileWebResponse' class.
 It creates a 'FileWebRequest' object and queries for a response. It then displays the Uri of the file
 system resource that provided the response.*/
@@ -22,7 +22,7 @@ class FileWebResponseSnippet
     }
 
 // <Snippet1>
-    public static void GetPage (String url)
+    public static void GetPage (string url)
     {
         try
         {
