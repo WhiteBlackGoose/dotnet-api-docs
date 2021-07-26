@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace Snippets {
@@ -43,10 +43,10 @@ namespace Snippets {
 		public string ToString(string format, IFormatProvider provider) {
 			if( format != null ) {
 				if( format.Equals("F") ) {
-					return String.Format("{0}'F", this.Value.ToString());
+					return string.Format("{0}'F", this.Value.ToString());
 				}
 				if( format.Equals("C") ) {
-					return String.Format("{0}'C", this.Celsius.ToString());
+					return string.Format("{0}'C", this.Celsius.ToString());
 				}
 			}
 
@@ -180,10 +180,10 @@ namespace Snippets4 {
 		public string ToString(string format, IFormatProvider provider) {
 			if( format != null ) {
 				if( format.Equals("F") ) {
-					return String.Format("{0}'F", this.Value.ToString());
+					return string.Format("{0}'F", this.Value.ToString());
 				}
 				if( format.Equals("C") ) {
-					return String.Format("{0}'C", this.Celsius.ToString());
+					return string.Format("{0}'C", this.Celsius.ToString());
 				}
 			}
 

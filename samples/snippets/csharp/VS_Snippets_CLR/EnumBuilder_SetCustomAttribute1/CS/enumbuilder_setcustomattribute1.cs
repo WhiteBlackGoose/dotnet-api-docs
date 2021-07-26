@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.EnumBuilder
+// System.Reflection.Emit.EnumBuilder
 // System.Reflection.Emit.EnumBuilder.IsDefined()
 // System.Reflection.Emit.EnumBuilder.GetCustomAttributes(Type, bool)
 // System.Reflection.Emit.EnumBuilder.SetCustomAttribute(CustomAttributeBuilder)
@@ -22,10 +22,10 @@ using System.Reflection.Emit;
 [AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
 public class MyAttribute : Attribute
 {
-   public String myString;
+   public string myString;
    public int myInteger;
 
-   public MyAttribute(String myString1, int myInteger1)
+   public MyAttribute(string myString1, int myInteger1)
    {
       this.myString = myString1;
       this.myInteger = myInteger1;
@@ -79,7 +79,7 @@ class MyApplication
       myAssemblyBuilder = domain.DefineDynamicAssembly(myAssemblyName, AssemblyBuilderAccess.Run);
 
       Type myType = typeof(MyAttribute);
-      ConstructorInfo myInfo = myType.GetConstructor(new Type[2]{typeof(String), typeof(int)});
+      ConstructorInfo myInfo = myType.GetConstructor(new Type[2]{typeof(string), typeof(int)});
       CustomAttributeBuilder myCustomAttributeBuilder =
                                     new CustomAttributeBuilder(myInfo, new object[2]{"Hello", 2});
 
@@ -87,7 +87,7 @@ class MyApplication
       ModuleBuilder myModuleBuilder = myAssemblyBuilder.DefineDynamicModule("EmittedModule");
 
       // Create a dynamic Enum.
-      myEnumBuilder = myModuleBuilder.DefineEnum("MyNamespace.MyEnum", TypeAttributes.Public, typeof(Int32));
+      myEnumBuilder = myModuleBuilder.DefineEnum("MyNamespace.MyEnum", TypeAttributes.Public, typeof(int));
 
       FieldBuilder myFieldBuilder1 = myEnumBuilder.DefineLiteral("FieldOne", 1);
       FieldBuilder myFieldBuilder2 = myEnumBuilder.DefineLiteral("FieldTwo", 2);

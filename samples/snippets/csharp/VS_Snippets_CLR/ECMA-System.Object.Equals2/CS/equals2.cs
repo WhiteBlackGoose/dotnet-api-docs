@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class Point
@@ -34,7 +34,7 @@ class Point
 
     public override string ToString()
     {
-        return String.Format("Point({0}, {1})", x, y);
+        return string.Format("Point({0}, {1})", x, y);
     }
 }
 
@@ -61,9 +61,9 @@ sealed class Point3D: Point
       return (base.GetHashCode() << 2) ^ z;
    }
 
-   public override String ToString()
+   public override string ToString()
    {
-        return String.Format("Point({0}, {1}, {2})", x, y, z);
+        return string.Format("Point({0}, {1}, {2})", x, y, z);
     }
 }
 

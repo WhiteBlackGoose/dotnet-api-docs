@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class Rectangle
@@ -25,9 +25,9 @@ class Rectangle
       return Tuple.Create(a, b).GetHashCode();
    }
 
-    public override String ToString()
+    public override string ToString()
     {
-       return String.Format("Rectangle({0}, {1}, {2}, {3})",
+       return string.Format("Rectangle({0}, {1}, {2}, {3})",
                             a.x, a.y, b.x, b.y);
     }
 }

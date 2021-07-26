@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.EnumBuilder.TypeToken
+// System.Reflection.Emit.EnumBuilder.TypeToken
 // System.Reflection.Emit.EnumBuilder.UnderlyingField
 // System.Reflection.Emit.EnumBuilder.UnderlyingSystemType
 // System.Reflection.Emit.EnumBuilder.GUID
@@ -73,7 +73,7 @@ public class MyEnumBuilderSample
                                                          "EmittedModule.mod");
       // Create a dynamic Enum.
       myEnumBuilder = myModuleBuilder.DefineEnum("MyNamespace.MyEnum",
-                                 TypeAttributes.Public, typeof(Int32));
+                                 TypeAttributes.Public, typeof(int));
 
       FieldBuilder myFieldBuilder1 = myEnumBuilder.DefineLiteral("FieldOne", 1);
       FieldBuilder myFieldBuilder2 = myEnumBuilder.DefineLiteral("FieldTwo", 2);

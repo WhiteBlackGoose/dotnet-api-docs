@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public struct Complex
@@ -25,9 +25,9 @@ public struct Complex
       return !(x == y);
    }
 
-    public override String ToString()
+    public override string ToString()
     {
-       return String.Format("({0}, {1})", re, im);
+       return string.Format("({0}, {1})", re, im);
     }
 }
 

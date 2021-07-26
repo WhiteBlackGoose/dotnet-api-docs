@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -62,7 +62,7 @@ public class Example
             new Type[] {typeof(string)}
         );
         MethodInfo rByte = str.GetMethod("ReadByte");
-        // Use the overload of WriteLine that writes an Int32.
+        // Use the overload of WriteLine that writes an int.
         MethodInfo write = typeof(Console).GetMethod(
             "WriteLine",
             new Type[] {typeof(int)}

@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.EnumBuilder.Assembly
+// System.Reflection.Emit.EnumBuilder.Assembly
 // System.Reflection.Emit.EnumBuilder.AssemblyQualifiedName
 // System.Reflection.Emit.EnumBuilder.Module
 // System.Reflection.Emit.EnumBuilder.Name
@@ -77,7 +77,7 @@ public class MyEnumBuilderSample
 
       // Create a dynamic Enum.
       myEnumBuilder = myModuleBuilder.DefineEnum("MyNamespace.MyEnum",
-                                 TypeAttributes.Public, typeof(Int32));
+                                 TypeAttributes.Public, typeof(int));
 
       FieldBuilder myFieldBuilder1 = myEnumBuilder.DefineLiteral("FieldOne", 1);
       FieldBuilder myFieldBuilder2 = myEnumBuilder.DefineLiteral("FieldTwo", 2);

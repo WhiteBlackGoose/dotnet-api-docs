@@ -1,4 +1,4 @@
-﻿//Types:System.Collections.DictionaryEntry
+//Types:System.Collections.DictionaryEntry
 //Types:System.Collections.IDictionary
 //Types:System.Collections.IDictionaryEnumerator
 //<snippet1>
@@ -11,11 +11,11 @@ public class SimpleDictionary : IDictionary
 {
     // The array of items
     private DictionaryEntry[] items;
-    private Int32 ItemsInUse = 0;
+    private int ItemsInUse = 0;
 
     // Construct the SimpleDictionary with the desired number of items.
     // The number of items cannot change for the life time of this SimpleDictionary.
-    public SimpleDictionary(Int32 numItems)
+    public SimpleDictionary(int numItems)
     {
         items = new DictionaryEntry[numItems];
     }
@@ -27,7 +27,7 @@ public class SimpleDictionary : IDictionary
     //<snippet5>	
     public bool Contains(object key)
     {
-       Int32 index;
+       int index;
        return TryGetIndexOfKey(key, out index);
     }
     //</snippet5>
@@ -39,7 +39,7 @@ public class SimpleDictionary : IDictionary
     {
         if (key == null) throw new ArgumentNullException("key");
         // Try to find the key in the DictionaryEntry array
-        Int32 index;
+        int index;
         if (TryGetIndexOfKey(key, out index))
         {
             // If the key is found, slide all the items up.
@@ -71,7 +71,7 @@ public class SimpleDictionary : IDictionary
         {
             // Return an array where each item is a key.
             Object[] keys = new Object[ItemsInUse];
-            for (Int32 n = 0; n < ItemsInUse; n++)
+            for (int n = 0; n < ItemsInUse; n++)
                 keys[n] = items[n].Key;
             return keys;
         }
@@ -84,7 +84,7 @@ public class SimpleDictionary : IDictionary
         {
             // Return an array where each item is a value.
             Object[] values = new Object[ItemsInUse];
-            for (Int32 n = 0; n < ItemsInUse; n++)
+            for (int n = 0; n < ItemsInUse; n++)
                 values[n] = items[n].Value;
             return values;
         }
@@ -96,7 +96,7 @@ public class SimpleDictionary : IDictionary
         get
         {
             // If this key is in the dictionary, return its value.
-            Int32 index;
+            int index;
             if (TryGetIndexOfKey(key, out index))
             {
                 // The key was found; return its value.
@@ -112,7 +112,7 @@ public class SimpleDictionary : IDictionary
         set
         {
             // If this key is in the dictionary, change its value.
-            Int32 index;
+            int index;
             if (TryGetIndexOfKey(key, out index))
             {
                 // The key was found; change its value.
@@ -126,7 +126,7 @@ public class SimpleDictionary : IDictionary
         }
     }
     //</snippet13>
-    private Boolean TryGetIndexOfKey(Object key, out Int32 index)
+    private Boolean TryGetIndexOfKey(Object key, out int index)
     {
         for (index = 0; index < ItemsInUse; index++)
         {
@@ -142,7 +142,7 @@ public class SimpleDictionary : IDictionary
     {
         // A copy of the SimpleDictionary object's key/value pairs.
         DictionaryEntry[] items;
-        Int32 index = -1;
+        int index = -1;
 
         public SimpleDictionaryEnumerator(SimpleDictionary sd)
         {
@@ -243,11 +243,11 @@ public sealed class App
         d.Remove("Max");
 
         // Show the names (keys) of the people in the dictionary.
-        foreach (String s in d.Keys)
+        foreach (string s in d.Keys)
             Console.WriteLine(s);
 
         // Show the ages (values) of the people in the dictionary.
-        foreach (Int32 age in d.Values)
+        foreach (int age in d.Values)
             Console.WriteLine(age);
     }
 }

@@ -1,4 +1,4 @@
-﻿// All four permutations of instance/static with open/closed.
+// All four permutations of instance/static with open/closed.
 //
 //<Snippet1>
 using System;
@@ -101,7 +101,7 @@ public class Example
         d2("Hello, World!");
         d2("Hi, Mom!");
 
-        Console.WriteLine("\nA static method closed over the first argument (String).");
+        Console.WriteLine("\nA static method closed over the first argument (string).");
         // The delegate must omit the first argument of the method.
         // A string is passed as the firstArgument parameter, and
         // the delegate is bound to this string. Use delegate type
@@ -130,7 +130,7 @@ An open static method.
 Static method M2 on C:  s = Hello, World!
 Static method M2 on C:  s = Hi, Mom!
 
-A static method closed over the first argument (String).
+A static method closed over the first argument (string).
 Static method M2 on C:  s = Hello, World!
  */
 //</Snippet1>

@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for Enum.ToString(String)
+//<snippet1>
+// Sample for Enum.ToString(string)
 using System;
 
 class Sample
