@@ -1,4 +1,4 @@
-﻿// <snippet9>
+// <snippet9>
 using System;
 using System.Security.Permissions;
 using System.Web;
@@ -13,7 +13,7 @@ namespace Samples.AspNet.CS.Controls
     Level=AspNetHostingPermissionLevel.Minimal)]
   public class TextDisplayWebPart : WebPart
   {
-    private String _contentText = null;
+    private string _contentText = null;
     TextBox input;
     Label DisplayContent;
     const string _subTitle = "Contoso, Ltd";
@@ -27,7 +27,7 @@ namespace Samples.AspNet.CS.Controls
       Personalizable(PersonalizationScope.User, true),
       WebBrowsable()
     ]
-    public String ContentText
+    public string ContentText
     {
       get { return _contentText; }
       set { _contentText = value; }
@@ -57,7 +57,7 @@ namespace Samples.AspNet.CS.Controls
       {
         this.ContentText = Page.Server.HtmlEncode(input.Text) + @"<br />";
         // Clear the input textbox.
-        input.Text = String.Empty;
+        input.Text = string.Empty;
         DisplayContent.Text = this.ContentText;
       }
     }
