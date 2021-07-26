@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class GetHashCode 
@@ -20,7 +20,7 @@ class GetHashCode
         DisplayHashCode( "Abcdei" );
     }
 
-    static void DisplayHashCode( String Operand )
+    static void DisplayHashCode( string Operand )
     {
         int     HashCode = Operand.GetHashCode( );
         Console.WriteLine("The hash code for \"{0}\" is: 0x{1:X8}, {1}",

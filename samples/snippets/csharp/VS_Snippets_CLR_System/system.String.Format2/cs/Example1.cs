@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -9,7 +9,7 @@ public class Example
       Console.WriteLine("{0,10}  {1,10}\n", "Decimal", "Hex");
       foreach (short value in values)
       {
-         string formatString = String.Format("{0,10:G}: {0,10:X}", value);
+         string formatString = string.Format("{0,10:G}: {0,10:X}", value);
          Console.WriteLine(formatString);
       }   
       // The example displays the following output:

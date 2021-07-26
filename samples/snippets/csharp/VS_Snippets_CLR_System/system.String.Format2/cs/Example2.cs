@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
@@ -15,7 +15,7 @@ public class Example
       foreach (string cultureName in cultureNames)
       {
          System.Globalization.CultureInfo culture = new System.Globalization.CultureInfo(cultureName);
-         string output = String.Format(culture, "{0,-11} {1,-35:D} {2:N}", 
+         string output = string.Format(culture, "{0,-11} {1,-35:D} {2:N}", 
                                        culture.Name, dateToDisplay, value);
          Console.WriteLine(output);
       }    

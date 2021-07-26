@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 class Example
 {
@@ -6,12 +6,12 @@ class Example
     {
         // <Snippet5>
         // Create a Unicode string with 5 Greek Alpha characters.
-        String szGreekAlpha = new String('\u0391',5);
+        string szGreekAlpha = new string('\u0391',5);
 
         // Create a Unicode string with 3 Greek Omega characters.
-        String szGreekOmega = "\u03A9\u03A9\u03A9";
+        string szGreekOmega = "\u03A9\u03A9\u03A9";
 
-        String szGreekLetters = String.Concat(szGreekOmega, szGreekAlpha, 
+        string szGreekLetters = string.Concat(szGreekOmega, szGreekAlpha, 
                                             szGreekOmega.Clone());
 
         // Display the entire string.

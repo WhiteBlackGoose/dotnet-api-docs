@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -19,18 +19,18 @@ public class Example
 
 public class DisplayString : MarshalByRefObject
 {
-   private String s = "This is a string.";
+   private string s = "This is a string.";
    
    public override bool Equals(Object obj)
    {
-      String s2 = obj as String; 
+      string s2 = obj as string; 
       if (s2 == null)
          return false;
       else
          return s == s2; 
    }
 
-   public bool Equals(String str)
+   public bool Equals(string str)
    {
       return s == str;
    }    
@@ -40,14 +40,14 @@ public class DisplayString : MarshalByRefObject
       return s.GetHashCode();
    }
    
-   public override String ToString() 
+   public override string ToString() 
    {
       return s;
    }
 
    public void ShowStringHashCode()
    {
-      Console.WriteLine("String '{0}' in domain '{1}': {2:X8}",
+      Console.WriteLine("string '{0}' in domain '{1}': {2:X8}",
                         s, AppDomain.CurrentDomain.FriendlyName, 
                         s.GetHashCode());
    }

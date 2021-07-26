@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -6,7 +6,7 @@ public class Example
    {
       // <Snippet35>
       Decimal pricePerOunce = 17.36m;
-      String s = String.Format("The current price is {0} per ounce.",
+      string s = string.Format("The current price is {0} per ounce.",
                                pricePerOunce);
       Console.WriteLine(s);
       // Result: The current price is 17.36 per ounce.
@@ -18,7 +18,7 @@ public class Example
    {
       // <Snippet36>
       Decimal pricePerOunce = 17.36m;
-      String s = String.Format("The current price is {0:C2} per ounce.",
+      string s = string.Format("The current price is {0:C2} per ounce.",
                                pricePerOunce);
       Console.WriteLine(s);
       // Result if current culture is en-US:

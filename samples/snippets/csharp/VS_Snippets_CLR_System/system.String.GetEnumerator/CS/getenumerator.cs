@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 
 class Example
@@ -11,7 +11,7 @@ class Example
       EnumerateAndDisplay("Two\nnew\nlines");
    }
 
-   static void EnumerateAndDisplay(String phrase)
+   static void EnumerateAndDisplay(string phrase)
    {
       Console.WriteLine("The characters in the string \"{0}\" are:",
                         phrase);
@@ -22,13 +22,13 @@ class Example
       int punctuation = 0;
 
       foreach (var ch in phrase) {
-         Console.Write(Char.IsControl(ch) ? $"{ch}" : $"0x{(ushort)ch:X4}");
+         Console.Write(char.IsControl(ch) ? $"{ch}" : $"0x{(ushort)ch:X4}");
 
-         if (Char.IsLetterOrDigit(ch)) 
+         if (char.IsLetterOrDigit(ch)) 
             alphanumeric++;
-         else if (Char.IsControl(ch)) 
+         else if (char.IsControl(ch)) 
             controlChars++;
-         else if (Char.IsPunctuation(ch)) 
+         else if (char.IsPunctuation(ch)) 
             punctuation++;             
          CharCount++;
       }
