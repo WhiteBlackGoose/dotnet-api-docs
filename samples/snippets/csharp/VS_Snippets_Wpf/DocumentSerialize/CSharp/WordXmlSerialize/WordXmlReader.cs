@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 //
 // WordXmlReader.cs
 //
@@ -580,9 +580,9 @@ namespace SdkSample
                     return null;
                 }
 
-                red = Int32.Parse(xmlValue.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
-                green = Int32.Parse(xmlValue.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
-                blue = Int32.Parse(xmlValue.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
+                red = int.Parse(xmlValue.Substring(0, 2), System.Globalization.NumberStyles.HexNumber);
+                green = int.Parse(xmlValue.Substring(2, 2), System.Globalization.NumberStyles.HexNumber);
+                blue = int.Parse(xmlValue.Substring(4, 2), System.Globalization.NumberStyles.HexNumber);
                 color = Color.FromRgb((byte)red, (byte)green, (byte)blue);
                 return new SolidColorBrush(color);
             }
@@ -593,7 +593,7 @@ namespace SdkSample
             /// </summary>
             private static object CalculateFontSizeValue(XmlReader reader)
             {
-                string xmlValue;        // String value of attribute.
+                string xmlValue;        // string value of attribute.
                 int sizeInHalfPoints;   // Size of font, in half-points.
                 double sizeInPixels;    // Size of font, in device-independent pixels.
 
@@ -609,7 +609,7 @@ namespace SdkSample
                     return null;
                 }
 
-                sizeInHalfPoints = Int32.Parse(xmlValue, CultureInfo.InvariantCulture);
+                sizeInHalfPoints = int.Parse(xmlValue, CultureInfo.InvariantCulture);
                 sizeInPixels = ((double)sizeInHalfPoints / 2) * 96.0 / 72.0;
                 return sizeInPixels;
             }
@@ -620,7 +620,7 @@ namespace SdkSample
             /// </summary>
             private static object CalculateFontFamilyValue(XmlReader reader)
             {
-                string xmlValue;        // String value of attribute.
+                string xmlValue;        // string value of attribute.
 
                 xmlValue = reader.GetAttribute(WordXmlSerializer.WordAuxiliaryValue);
                 if (xmlValue == null)

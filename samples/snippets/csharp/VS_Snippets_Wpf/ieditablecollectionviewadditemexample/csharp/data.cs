@@ -1,4 +1,4 @@
-﻿//<SnippetData>
+//<SnippetData>
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
@@ -29,7 +29,7 @@ namespace IEditableCollectionViewAddItemExample
 
         public override string ToString()
         {
-            return String.Format("{0}, {1:c}, {2:D}", Title, CallNumber, DueDate);
+            return string.Format("{0}, {1:c}, {2:D}", Title, CallNumber, DueDate);
         }
 
         public string Title
@@ -75,7 +75,7 @@ namespace IEditableCollectionViewAddItemExample
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        protected void NotifyPropertyChanged(String info)
+        protected void NotifyPropertyChanged(string info)
         {
             if (PropertyChanged != null)
             {
@@ -241,7 +241,7 @@ namespace IEditableCollectionViewAddItemExample
 
         public override string ToString()
         {
-            return String.Format(
+            return string.Format(
                 "Title: {0}\nAuthor: {1}\nGenre: {2}\nDue Date: {3:d}\nCall Number: {4}",
                 this.Title, this.Author, this.Genre, this.DueDate, this.CallNumber);
         }
@@ -326,7 +326,7 @@ namespace IEditableCollectionViewAddItemExample
 
         public override string  ToString()
         {
-            return String.Format("Title: {0}\nDirector: {1}\nGenre: {2}\nLength: {3}\nDue Date: {4:d}\nCall Number: {5}",
+            return string.Format("Title: {0}\nDirector: {1}\nGenre: {2}\nLength: {3}\nDue Date: {4:d}\nCall Number: {5}",
                 this.Title, this.Director, this.Genre, this.Length, this.DueDate, this.CallNumber);
         }
     }

@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 //
 // File: HtmlXamlConverter.cs
 //
@@ -93,7 +93,7 @@ namespace SdkSample
         /// XmlElement in which we are trying to find the specified attribute
         /// </param>
         /// <param name="attributeName">
-        /// String representing the attribute name to be searched for
+        /// string representing the attribute name to be searched for
         /// </param>
         /// <returns></returns>
         internal static string GetAttribute(XmlElement element, string attributeName)
@@ -115,7 +115,7 @@ namespace SdkSample
         /// Returns string extracted from quotation marks
         /// </summary>
         /// <param name="value">
-        /// String representing value enclosed in quotation marks
+        /// string representing value enclosed in quotation marks
         /// </param>
         internal static string UnQuote(string value)
         {
@@ -599,7 +599,7 @@ namespace SdkSample
             // Remove control characters
             for (int i = 0; i < textData.Length; i++)
             {
-                if (Char.IsControl(textData[i]))
+                if (char.IsControl(textData[i]))
                 {
                     textData = textData.Remove(i--, 1);  // decrement i to compensate for character removal
                 }
@@ -1732,7 +1732,7 @@ namespace SdkSample
             rowSpanAsString = GetAttribute((XmlElement)htmlTDElement, "rowspan");
             if (rowSpanAsString != null)
             {
-                if (!Int32.TryParse(rowSpanAsString, out rowSpan))
+                if (!int.TryParse(rowSpanAsString, out rowSpan))
                 {
                     // Ignore invalid value of rowspan; treat it as 1
                     rowSpan = 1;

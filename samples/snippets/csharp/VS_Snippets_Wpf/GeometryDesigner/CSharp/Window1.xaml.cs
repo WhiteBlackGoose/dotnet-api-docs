@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Windows;
 using System.Windows.Controls;
@@ -120,7 +120,7 @@ namespace SampleApp
                                 continue;
                             }
 
-                            if (b is Button && ((Button)b).Content is string && ((String)((Button)b).Content == "Insert" || (String)((Button)b).Content == "Update"))
+                            if (b is Button && ((Button)b).Content is string && ((string)((Button)b).Content == "Insert" || (string)((Button)b).Content == "Update"))
                             {
                                 ((Button)b).IsEnabled = true;
                                 ((Button)b).Content = "Insert";
@@ -132,7 +132,7 @@ namespace SampleApp
                     {
                         foreach (object b in c.Children)
                         {
-                           if (b is Button && ((Button)b).Content is string && (String)((Button)b).Content == "Insert")
+                           if (b is Button && ((Button)b).Content is string && (string)((Button)b).Content == "Insert")
                            {
                                 ((Button)b).IsEnabled = false;
                            }
@@ -1540,7 +1540,7 @@ namespace SampleApp
                     )
                 );                
 
-                largearc = Boolean.Parse(((String)((ComboBoxItem)cb_largearc.SelectedItem).Content));
+                largearc = Boolean.Parse(((string)((ComboBoxItem)cb_largearc.SelectedItem).Content));
                 controlPoints.Add(startpoint);
                 controlPoints.Add(point);
             }

@@ -1,4 +1,4 @@
-﻿/*****************************************************************************************
+/*****************************************************************************************
  * File: FindText.cs
  *
  * Description: 
@@ -79,7 +79,7 @@ namespace SDKSample
         private Label targetResult;
         // Layout grid for client controls.
         private Grid infoGrid;
-        // String to search for in the target text control.
+        // string to search for in the target text control.
         private TextBox searchString;
         // Depending on the location of the selection in the target text
         // control, the client can search forward or backward for the 

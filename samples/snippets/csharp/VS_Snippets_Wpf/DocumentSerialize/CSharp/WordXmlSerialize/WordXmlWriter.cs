@@ -1,4 +1,4 @@
-﻿//////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////
 //
 // WordXmlWriter.cs
 //
@@ -248,7 +248,7 @@ namespace SdkSample
                     color = brush.Color;
                     _writer.WriteStartElement(WordXmlSerializer.WordColorTag);
                     _writer.WriteAttributeString(WordXmlSerializer.WordValue,
-                        String.Format( "{0:x2}{1:x2}{2:x2}",
+                        string.Format( "{0:x2}{1:x2}{2:x2}",
                         color.R, color.G, color.B));
                     _writer.WriteEndElement();
                 }

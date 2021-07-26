@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -149,7 +149,7 @@ namespace DragDropMiscCode
                 // <Snippet_DragDrop_QueryDataFormats_Type>
                 DataObject dataObject = new DataObject("Some string data to store...");
 
-                // Query for the presence of String data in the data object, by type.  In this overload 
+                // Query for the presence of string data in the data object, by type.  In this overload 
                 // of GetDataPresent, the method will return true both for native data formats
                 // and when the data can automatically be converted to the specifed format.
 

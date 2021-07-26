@@ -1,4 +1,4 @@
-﻿/*****************************************************************************************
+/*****************************************************************************************
  * File: Window1.xaml.cs
  *
  * Description: 
@@ -73,7 +73,7 @@ namespace SDKSample
                     }
                     catch (XamlParseException e)
                     {
-                        String error = "There was a problem parsing the specified file:\n\n";
+                        string error = "There was a problem parsing the specified file:\n\n";
                         error += openFile.FileName;
                         error += "\n\nException details:\n\n";
                         error += e.Message;
@@ -82,7 +82,7 @@ namespace SDKSample
                     }
                     catch (Exception e)
                     {
-                        String error = "There was a problem loading the specified file:\n\n";
+                        string error = "There was a problem loading the specified file:\n\n";
                         error += openFile.FileName;
                         error += "\n\nException details:\n\n";
                         error += e.Message;
@@ -109,7 +109,7 @@ namespace SDKSample
                 }
                 catch (Exception e)
                 {
-                    String error = "There was a opening the file:\n\n";
+                    string error = "There was a opening the file:\n\n";
                     error += saveFile.FileName;
                     error += "\n\nException details:\n\n";
                     error += e.Message;

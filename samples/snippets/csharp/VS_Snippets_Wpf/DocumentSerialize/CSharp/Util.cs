@@ -1,4 +1,4 @@
-﻿// DocumentSerialize SDK Sample - Util.cs
+// DocumentSerialize SDK Sample - Util.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -447,7 +447,7 @@ namespace SdkSample
                 // We use invariant culture because we don't globalize our color names
                 string colorUpper = colorString.ToUpper(System.Globalization.CultureInfo.InvariantCulture);
 
-                // Use String.Equals because it does explicit equality
+                // Use string.Equals because it does explicit equality
                 // StartsWith/EndsWith are culture sensitive and are 4-7 times slower than Equals
 
                 switch (colorUpper.Length)
