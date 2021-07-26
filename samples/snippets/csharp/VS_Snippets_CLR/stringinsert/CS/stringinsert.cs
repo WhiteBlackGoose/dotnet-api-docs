@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example {
@@ -7,7 +7,7 @@ public class Example {
         string animal1 = "fox";
         string animal2 = "dog";
 
-        string strTarget = String.Format("The {0} jumps over the {1}.",
+        string strTarget = string.Format("The {0} jumps over the {1}.",
                                          animal1, animal2);
 
         Console.WriteLine("The original string is:{0}{1}{0}",

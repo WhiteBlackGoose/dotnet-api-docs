@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 
 public class JoinTest
@@ -16,9 +16,9 @@ public class JoinTest
         string [] sArr = new string [10];
 
         for (int i = initVal; i < initVal + 10; i++)
-            sArr[i - initVal] = String.Format("{0,-3}", i * multVal);
+            sArr[i - initVal] = string.Format("{0,-3}", i * multVal);
 
-        return String.Join(sep, sArr);
+        return string.Join(sep, sArr);
     }
 }
 // The example displays the following output:

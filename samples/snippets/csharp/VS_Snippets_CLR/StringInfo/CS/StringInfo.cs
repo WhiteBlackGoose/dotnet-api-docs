@@ -1,4 +1,4 @@
-﻿//Types:System.Globalization.StringInfo
+//Types:System.Globalization.StringInfo
 //<snippet1>
 using System;
 using System.Text;
@@ -7,7 +7,7 @@ using System.Globalization;
 public sealed class App {
    static void Main() {
       // The string below contains combining characters.
-      String s = "a\u0304\u0308bc\u0327";
+      string s = "a\u0304\u0308bc\u0327";
 
       // Show each 'character' in the string.
       EnumTextElements(s);
@@ -17,7 +17,7 @@ public sealed class App {
    }
 
    // Show how to enumerate each real character (honoring surrogates) in a string.
-   static void EnumTextElements(String s) {
+   static void EnumTextElements(string s) {
       // This StringBuilder holds the output results.
       StringBuilder sb = new StringBuilder();
 
@@ -37,7 +37,7 @@ public sealed class App {
    }
 
    // Show how to discover the index of each real character (honoring surrogates) in a string.
-   static void EnumTextElementIndexes(String s) {
+   static void EnumTextElementIndexes(string s) {
       // This StringBuilder holds the output results.
       StringBuilder sb = new StringBuilder();
 
@@ -46,7 +46,7 @@ public sealed class App {
       Int32[] textElemIndex = StringInfo.ParseCombiningCharacters(s);
 
       // Iterate through each real character showing the character and the index where it was found.
-      for (Int32 i = 0; i < textElemIndex.Length; i++) {
+      for (int i = 0; i < textElemIndex.Length; i++) {
          sb.AppendFormat(
             "Character {0} starts at index {1}{2}",
             i, textElemIndex[i], Environment.NewLine);

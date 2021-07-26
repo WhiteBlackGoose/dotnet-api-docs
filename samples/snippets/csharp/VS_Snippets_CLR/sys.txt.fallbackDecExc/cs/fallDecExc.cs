@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the DecoderExceptionFallback class.
 
 using System;
@@ -120,15 +120,15 @@ Encoded bytes in hexadecimal (3 bytes):
 Compare the decoded bytes to the input string...
 System.Text.DecoderFallbackException: Unable to translate bytes [FF] at index 0 from speci
 fied code page to Unicode.
-   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)
-   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index
+   at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, int index)
+   at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, int index
 )
    at System.Text.DecoderFallbackBuffer.InternalFallback(Byte[] bytes, Byte* pBytes)
-   at System.Text.ASCIIEncoding.GetCharCount(Byte* bytes, Int32 count, DecoderNLS decoder)
+   at System.Text.ASCIIEncoding.GetCharCount(Byte* bytes, int count, DecoderNLS decoder)
 
-   at System.String.CreateStringFromEncoding(Byte* bytes, Int32 byteLength, Encoding encod
+   at System.String.CreateStringFromEncoding(Byte* bytes, int byteLength, Encoding encod
 ing)
-   at System.Text.ASCIIEncoding.GetString(Byte[] bytes, Int32 byteIndex, Int32 byteCount)
+   at System.Text.ASCIIEncoding.GetString(Byte[] bytes, int byteIndex, int byteCount)
    at System.Text.Encoding.GetString(Byte[] bytes)
    at Sample.Main()
 

@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the EncoderExceptionFallback class.
 
 using System;
@@ -82,12 +82,12 @@ Input string in hexadecimal: 0xAB 0x58 0xBB
 Encode the input string...
 System.Text.EncoderFallbackException: Unable to translate Unicode character \u00AB at inde
 x 0 to specified code page.
-   at System.Text.EncoderExceptionFallbackBuffer.Fallback(Char charUnknown, Int32 index)
-   at System.Text.EncoderFallbackBuffer.InternalFallback(Char ch, Char*& chars)
-   at System.Text.ASCIIEncoding.GetBytes(Char* chars, Int32 charCount, Byte* bytes, Int32
+   at System.Text.EncoderExceptionFallbackBuffer.Fallback(char charUnknown, int index)
+   at System.Text.EncoderFallbackBuffer.InternalFallback(char ch, char*& chars)
+   at System.Text.ASCIIEncoding.GetBytes(char* chars, int charCount, Byte* bytes, int
 byteCount, EncoderNLS encoder)
-   at System.Text.ASCIIEncoding.GetBytes(String chars, Int32 charIndex, Int32 charCount, B
-yte[] bytes, Int32 byteIndex)
+   at System.Text.ASCIIEncoding.GetBytes(string chars, int charIndex, int charCount, B
+yte[] bytes, int byteIndex)
    at Sample.Main()
 
 *** THE CODE EXAMPLE TERMINATES HERE AS INTENDED. ***

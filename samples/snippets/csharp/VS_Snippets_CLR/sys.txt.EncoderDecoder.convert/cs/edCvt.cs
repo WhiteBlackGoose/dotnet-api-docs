@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the Encoder.Convert() and Decoder.Convert methods.
 // This example uses files for input and output, but any source that can be expressed
 // as a stream can be used instead.
@@ -30,7 +30,7 @@
 // --------------------------------------------------------------------------------------------
 // Use the Encoder.Convert() method to convert a file of characters to a file of encoded bytes.
 // --------------------------------------------------------------------------------------------
-        static void EncoderConvert(String inputFileName, String outputFileName, Encoding enc)
+        static void EncoderConvert(string inputFileName, string outputFileName, Encoding enc)
         {
 // Convert an input file of characters to an output file of encoded bytes.
 // StreamWriter could convert the input file for us, but we'll perform the conversion
@@ -94,7 +94,7 @@
 // --------------------------------------------------------------------------------------------
 // Use the Decoder.Convert() method to convert a file of encoded bytes to a file of characters.
 // --------------------------------------------------------------------------------------------
-        static void DecoderConvert(String inputFileName, String outputFileName, Encoding enc)
+        static void DecoderConvert(string inputFileName, string outputFileName, Encoding enc)
         {
 // Convert an input file of of encoded bytes to an output file characters.
 // StreamWriter could convert the input file for us, but we'll perform the conversion
@@ -160,7 +160,7 @@
 // --------------------------------------------------------------------------------------------
 // Create a large file of UTF-16 encoded Unicode characters.
 // --------------------------------------------------------------------------------------------
-        static void CreateTestFile(String FileName)
+        static void CreateTestFile(string FileName)
         {
 // StreamWriter defaults to UTF-8 encoding so explicitly specify Unicode, that is,
 // UTF-16, encoding.
