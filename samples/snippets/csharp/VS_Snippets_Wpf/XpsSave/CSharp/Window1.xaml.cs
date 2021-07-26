@@ -1,4 +1,4 @@
-﻿// XpsSyncAsyncSave SDK Sample - Window1.xaml.cs
+// XpsSyncAsyncSave SDK Sample - Window1.xaml.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -91,7 +91,7 @@ namespace SDKSample
         {
             // Display Save As... dialog for user to
             // choose path and container (file) name.
-            String newContainerPath = GetContainerPathFromDialog();
+            string newContainerPath = GetContainerPathFromDialog();
             if (newContainerPath == null)
                 return;
 
@@ -331,7 +331,7 @@ namespace SDKSample
 
         private XpsDocument _xpsPackage = null; // Reference to the XPS package.
 
-        private String _contentDir;     // Path to the \Content directory
+        private string _contentDir;     // Path to the \Content directory
 
         private SaveHelper _saveHelper; // Reference to SaveHelper class
 

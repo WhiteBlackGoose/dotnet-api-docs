@@ -1,4 +1,4 @@
-﻿// XpsSave SDK Sample - XpsSaveHelper.cs
+// XpsSave SDK Sample - XpsSaveHelper.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -21,10 +21,10 @@ namespace SDKSampleHelper
     ///   Event arg class for asynchronous save events.</summary>
     public class AsyncSaveEventArgs : EventArgs
     {
-        private String _status;
+        private string _status;
         private bool _completed;
 
-        public String Status
+        public string Status
         {
             get { return _status; }
         }
@@ -34,7 +34,7 @@ namespace SDKSampleHelper
             get { return _completed; }
         }
 
-        public AsyncSaveEventArgs(String status, bool completed)
+        public AsyncSaveEventArgs(string status, bool completed)
         {
             _completed = completed;
             _status = status;
@@ -49,14 +49,14 @@ namespace SDKSampleHelper
         internal event AsyncSaveChangeHandler OnAsyncSaveChange;
 
         #region Constructors
-        public SaveHelper(String contentPath)
+        public SaveHelper(string contentPath)
         {
             _xpfContent = new XPFContent(contentPath);
         }
         #endregion Constructors
 
         #region Save Interface
-        public void SaveSingleVisual(String containerName, bool async)
+        public void SaveSingleVisual(string containerName, bool async)
         {
             // Create Visual
             Visual v = _xpfContent.CreateFirstVisual(true);
@@ -375,8 +375,8 @@ namespace SDKSampleHelper
 
             if (OnAsyncSaveChange != null)
             {
-                String progress =
-                    String.Format("{0} - {1}", e.WritingLevel.ToString(),
+                string progress =
+                    string.Format("{0} - {1}", e.WritingLevel.ToString(),
                                   e.Number.ToString());
                 AsyncSaveEventArgs asyncInfo =
                     new AsyncSaveEventArgs(progress, false);

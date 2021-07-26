@@ -1,4 +1,4 @@
-﻿// XpsReadWriteSign SDK Sample - ReadingAndWritingXps.cs
+// XpsReadWriteSign SDK Sample - ReadingAndWritingXps.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -260,7 +260,7 @@ namespace SDKSample
             // Form the path data string.
             // M="Move To"(start), L="Line To", Z="Close shape"
             string pathData =
-                String.Format("M {0},{1} L {2},{3} {4},{5} {6},{7} z",
+                string.Format("M {0},{1} L {2},{3} {4},{5} {6},{7} z",
                 x, y,
                 x, y+height,
                 x+width, y+height,
@@ -271,12 +271,12 @@ namespace SDKSample
             writer.WriteStartElement("ImageBrush");
             writer.WriteAttributeString("ImageSource",
                 GetXpsImage(pageWriter, imgPath, imageType));
-            string viewPort = String.Format("{0},{1},{2},{3}",
+            string viewPort = string.Format("{0},{1},{2},{3}",
                                             0, 0, width, height );
 
             writer.WriteAttributeString("Viewport", viewPort);
             writer.WriteAttributeString( "ViewportUnits", "Absolute");
-            string viewBox = String.Format("{0},{1},{2},{3}",
+            string viewBox = string.Format("{0},{1},{2},{3}",
                                             x, y, x+width, y+height );
 
             writer.WriteAttributeString("Viewbox", viewBox);

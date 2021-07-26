@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Forms;
 using System.Windows.Controls;
@@ -107,7 +107,7 @@ namespace SDKSample
                 catch (UnauthorizedAccessException)
                 {
                     System.Windows.MessageBox.Show(
-                        String.Format("Unable to access {0}", dlg.FileName ) );
+                        string.Format("Unable to access {0}", dlg.FileName ) );
                     return;
                 }
                 // For optimal performance the XPS document should be remain
@@ -223,7 +223,7 @@ namespace SDKSample
                 }
                 catch(UnauthorizedAccessException)
                 {
-                    System.Windows.MessageBox.Show(String.Format(
+                    System.Windows.MessageBox.Show(string.Format(
                         "Unable to access {0}", saveDlg.FileName));
                     return;
                 }

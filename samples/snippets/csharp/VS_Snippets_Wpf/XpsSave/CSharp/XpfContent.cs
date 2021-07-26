@@ -1,4 +1,4 @@
-﻿// XpsSave SDK Sample - XpfContent.cs
+// XpsSave SDK Sample - XpfContent.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 //
 // This file provides the methods for creating the default
@@ -672,18 +672,18 @@ namespace SDKSampleHelper
 
         #region private members
 
-        private String _contentDir;     // Path to the \Content folder
+        private string _contentDir;     // Path to the \Content folder
 
         // Text strings for samples.
-        static String String1 =
+        static string String1 =
             "No scene from prehistory is quite so vivid as that of the mortal struggles";
-        static String String2 =
+        static string String2 =
             "of great beasts in the tar pits. In the mind's eye one sees dinosaurs,";
-        static String String3 =
+        static string String3 =
             " mammoths, and sabertoothed tigers struggling against the grip of the tar.";
-        static String String4 =
+        static string String4 =
             "The fiercer the struggle, the more entangling the tar, and no";
-        static String String5 =
+        static string String5 =
             "beast is so strong or so skillful but that he ultimately sinks.";
 
         static string _paragraphText =
