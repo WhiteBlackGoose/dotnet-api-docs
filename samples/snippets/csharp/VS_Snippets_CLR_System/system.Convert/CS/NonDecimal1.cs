@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       int[] baseValues = { 2, 8, 10, 16 };
       short value = Int16.MaxValue;
       foreach (var baseValue in baseValues) {
-         String s = Convert.ToString(value, baseValue);
+         string s = Convert.ToString(value, baseValue);
          short value2 = Convert.ToInt16(s, baseValue);
 
          Console.WriteLine("{0} --> {1} (base {2}) --> {3}",
