@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.Web;
 using System.Web.Security;
@@ -13,7 +13,7 @@ namespace Samples.AspNet.CS.Controls
   {
     public override bool IsAuthorized(Type type, string path, string authorizationFilter, bool isShared)
     {
-      if (!String.IsNullOrEmpty(authorizationFilter))
+      if (!string.IsNullOrEmpty(authorizationFilter))
       {
         if (authorizationFilter == "admin")
           return true;
