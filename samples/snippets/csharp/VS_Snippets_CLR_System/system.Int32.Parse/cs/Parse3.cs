@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 
@@ -29,7 +29,7 @@ public class ParseInt32
    {
       try
       {
-         int number = Int32.Parse(value, style, provider);
+         int number = int.Parse(value, style, provider);
          Console.WriteLine("Converted '{0}' to {1}.", value, number);
       }
       catch (FormatException)
@@ -38,7 +38,7 @@ public class ParseInt32
       }
       catch (OverflowException)
       {
-         Console.WriteLine("'{0}' is out of range of the Int32 type.", value);
+         Console.WriteLine("'{0}' is out of range of the int type.", value);
       }
    }
 }
@@ -48,7 +48,7 @@ public class ParseInt32
 //       Unable to convert '12,000'.
 //       Converted '12 425,00' to 12425.
 //       Converted '12,425.00' to 12425.
-//       '631,900' is out of range of the Int32 type.
+//       '631,900' is out of range of the int type.
 //       Unable to convert '631,900'.
 //       Converted '631,900' to 631900.
 // </Snippet3>

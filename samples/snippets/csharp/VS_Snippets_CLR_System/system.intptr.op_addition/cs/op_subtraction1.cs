@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 public class Example
@@ -13,7 +13,7 @@ public class Example
             IntPtr ptr = new IntPtr(parr);
             for (int ctr = 0; ctr <= arr.GetUpperBound(0); ctr++)
             {
-               IntPtr newPtr = ptr - ctr * sizeof(Int32);
+               IntPtr newPtr = ptr - ctr * sizeof(int);
                Console.Write("{0}   ", Marshal.ReadInt32(newPtr));
             }
          }

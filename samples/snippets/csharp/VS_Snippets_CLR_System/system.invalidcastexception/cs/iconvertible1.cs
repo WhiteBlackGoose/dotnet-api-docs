@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -8,23 +8,23 @@ public class Example
       bool flag = true;
       try {
          IConvertible conv = flag;
-         Char ch = conv.ToChar(null);
+         char ch = conv.ToChar(null);
          Console.WriteLine("Conversion succeeded.");
       }
       catch (InvalidCastException) {
-         Console.WriteLine("Cannot convert a Boolean to a Char.");
+         Console.WriteLine("Cannot convert a Boolean to a char.");
       }
 
       try {
-         Char ch = Convert.ToChar(flag);
+         char ch = Convert.ToChar(flag);
          Console.WriteLine("Conversion succeeded.");
       }
       catch (InvalidCastException) {
-         Console.WriteLine("Cannot convert a Boolean to a Char.");
+         Console.WriteLine("Cannot convert a Boolean to a char.");
       }
    }
 }
 // The example displays the following output:
-//       Cannot convert a Boolean to a Char.
-//       Cannot convert a Boolean to a Char.
+//       Cannot convert a Boolean to a char.
+//       Cannot convert a Boolean to a char.
 // </Snippet2>

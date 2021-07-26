@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -56,7 +56,7 @@ public class Example
 //       112 (Int64) = 112 (Int16): False
 //
 //       value = int1:              True
-//       112 (Int64) = 112 (Int32): False
+//       112 (Int64) = 112 (int): False
 //
 //       value = sbyte1:            True
 //       112 (Int64) = 112 (SByte): False

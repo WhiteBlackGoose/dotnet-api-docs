@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class ParseInt64
@@ -10,7 +10,7 @@ public class ParseInt64
       Convert(" +8091522 ");
       Convert("   1064.0   ");
       Convert("  178.3");
-      Convert(String.Empty);
+      Convert(string.Empty);
       Convert(((decimal) Int64.MaxValue) + 1.ToString());
    }
 

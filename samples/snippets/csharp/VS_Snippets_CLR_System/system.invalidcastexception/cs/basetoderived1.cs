@@ -1,11 +1,11 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Person
 {
-   String _name;
+   string _name;
 
-   public String Name
+   public string Name
    {
       get { return _name; }
       set { _name = value; }
@@ -14,7 +14,7 @@ public class Person
 
 public class PersonWithId : Person
 {
-   String _id;
+   string _id;
 
    public string Id
    {

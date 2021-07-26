@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 
@@ -20,7 +20,7 @@ public class ParseInt32
    {
       try
       {
-         int number = Int32.Parse(value, style);
+         int number = int.Parse(value, style);
          Console.WriteLine("Converted '{0}' to {1}.", value, number);
       }
       catch (FormatException)
@@ -29,14 +29,14 @@ public class ParseInt32
       }
       catch (OverflowException)
       {
-         Console.WriteLine("'{0}' is out of range of the Int32 type.", value);
+         Console.WriteLine("'{0}' is out of range of the int type.", value);
       }
    }
 }
 // The example displays the following output to the console:
 //       Converted '104.0' to 104.
-//       '104.9' is out of range of the Int32 type.
-//       ' $17,198,064.42' is out of range of the Int32 type.
+//       '104.9' is out of range of the int type.
+//       ' $17,198,064.42' is out of range of the int type.
 //       Converted '103E06' to 103000000.
 //       Unable to convert '-1,345,791'.
 //       Converted '(1,345,791)' to -1345791.

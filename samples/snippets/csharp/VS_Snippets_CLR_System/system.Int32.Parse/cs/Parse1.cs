@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -12,7 +12,7 @@ public class Example
       foreach (string value in values)
       {
          try {
-            int number = Int32.Parse(value);
+            int number = int.Parse(value);
             Console.WriteLine("{0} --> {1}", value, number);
          }
          catch (FormatException) {

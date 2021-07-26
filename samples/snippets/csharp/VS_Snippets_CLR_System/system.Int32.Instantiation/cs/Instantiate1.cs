@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -32,7 +32,7 @@ public class Example
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", lNumber);
+         Console.WriteLine("{0} is out of range of an int.", lNumber);
       }
 
       double dbl2 = 35901.997;
@@ -41,7 +41,7 @@ public class Example
          Console.WriteLine(number2);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", dbl2);
+         Console.WriteLine("{0} is out of range of an int.", dbl2);
       }
 
       BigInteger bigNumber = 132451;
@@ -50,7 +50,7 @@ public class Example
          Console.WriteLine(number3);
       }
       catch (OverflowException) {
-         Console.WriteLine("{0} is out of range of an Int32.", bigNumber);
+         Console.WriteLine("{0} is out of range of an int.", bigNumber);
       }
       // The example displays the following output:
       //       163245617
@@ -64,7 +64,7 @@ public class Example
       // <Snippet3>
       string string1 = "244681";
       try {
-         int number1 = Int32.Parse(string1);
+         int number1 = int.Parse(string1);
          Console.WriteLine(number1);
       }
       catch (OverflowException) {
@@ -76,7 +76,7 @@ public class Example
 
       string string2 = "F9A3C";
       try {
-         int number2 = Int32.Parse(string2,
+         int number2 = int.Parse(string2,
                                   System.Globalization.NumberStyles.HexNumber);
          Console.WriteLine(number2);
       }

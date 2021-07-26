@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Class1
@@ -9,21 +9,21 @@ public class Class1
       int newNumber;
       foreach (long number in numbersToConvert)
       {
-         if (number >= Int32.MinValue && number <= Int32.MaxValue)
+         if (number >= int.MinValue && number <= int.MaxValue)
          {
             newNumber = Convert.ToInt32(number);
-            Console.WriteLine($"Successfully converted {newNumber} to an Int32.");
+            Console.WriteLine($"Successfully converted {newNumber} to an int.");
          }
          else
          {
-            Console.WriteLine($"Unable to convert {number} to an Int32.");
+            Console.WriteLine($"Unable to convert {number} to an int.");
          }
       }
    }
 }
 // The example displays the following output to the console:
-//    Successfully converted 162345 to an Int32.
-//    Successfully converted 32183 to an Int32.
-//    Successfully converted -54000 to an Int32.
-//    Unable to convert 4611686018427387903 to an Int32.
+//    Successfully converted 162345 to an int.
+//    Successfully converted 32183 to an int.
+//    Successfully converted -54000 to an int.
+//    Unable to convert 4611686018427387903 to an int.
 // </Snippet1>
