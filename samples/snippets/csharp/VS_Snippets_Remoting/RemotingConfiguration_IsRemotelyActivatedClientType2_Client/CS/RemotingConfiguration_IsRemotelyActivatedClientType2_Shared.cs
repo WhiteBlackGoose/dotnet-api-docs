@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
     public class MyServerImpl :MarshalByRefObject
       {
@@ -9,7 +9,7 @@
             Console.WriteLine("Server Activated...");
         }
 
-        public String MyMethod(String name)
+        public string MyMethod(string name)
         {
          i=i+1;
             return "The client requests to "+name +i+" time";

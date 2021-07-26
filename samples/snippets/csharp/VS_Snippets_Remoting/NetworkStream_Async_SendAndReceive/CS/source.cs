@@ -1,4 +1,4 @@
-﻿// The following sample is intended to demonstrate how to use a
+// The following sample is intended to demonstrate how to use a
 //NetworkStream for synchronous communcation with a remote host
 //This class uses several NetworkStream members that would be useful
 // in a synchronous communciation senario
@@ -104,12 +104,12 @@ public static void myReadCallBack(IAsyncResult ar ){
 
     NetworkStream myNetworkStream = (NetworkStream)ar.AsyncState;
     byte[] myReadBuffer = new byte[1024];
-    String myCompleteMessage = "";
+    string myCompleteMessage = "";
     int numberOfBytesRead;
 
     numberOfBytesRead = myNetworkStream.EndRead(ar);
     myCompleteMessage =
-        String.Concat(myCompleteMessage, Encoding.ASCII.GetString(myReadBuffer, 0, numberOfBytesRead));
+        string.Concat(myCompleteMessage, Encoding.ASCII.GetString(myReadBuffer, 0, numberOfBytesRead));
 
     // message received may be larger than buffer size so loop through until you have it all.
     while(myNetworkStream.DataAvailable){

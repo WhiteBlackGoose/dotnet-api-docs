@@ -1,4 +1,4 @@
-﻿// <snippet20>
+// <snippet20>
 using System;
 using System.Collections;
 using System.IO;
@@ -118,7 +118,7 @@ public class ClientSinkProvider : IClientChannelSinkProvider
 
 // <snippet33>
     [SecurityPermission(SecurityAction.LinkDemand, Flags = SecurityPermissionFlag.Infrastructure)]
-    public IClientChannelSink CreateSink (IChannelSender channel, String url, Object remoteChannelData)
+    public IClientChannelSink CreateSink (IChannelSender channel, string url, Object remoteChannelData)
     {
 
         Console.WriteLine("Creating ClientSink for {0}", url);

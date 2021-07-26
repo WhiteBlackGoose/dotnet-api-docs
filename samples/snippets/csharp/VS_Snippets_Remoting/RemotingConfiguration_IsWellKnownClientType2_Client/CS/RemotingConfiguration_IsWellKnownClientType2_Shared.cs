@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Remoting;
 
    public class MyServerImpl :MarshalByRefObject
@@ -8,7 +8,7 @@ using System.Runtime.Remoting;
          Console.WriteLine("Server Activated");
      }
 
-     public String MyMethod(String name)
+     public string MyMethod(string name)
      {
          Console.WriteLine(name);
          return "The string from server : " + name;

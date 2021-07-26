@@ -1,7 +1,7 @@
-﻿// System.Runtime.Remoting.RemotingConfiguration.IsRemotelyActivatedClientType(String,String)
+// System.Runtime.Remoting.RemotingConfiguration.IsRemotelyActivatedClientType(string,String)
 
 /*
-The following example demonstrates the 'IsRemotelyActivatedClientType(String,String)' method
+The following example demonstrates the 'IsRemotelyActivatedClientType(string,String)' method
 of 'RemotingConfiguration' class.
 It registers a 'TcpChannel' object with the channel services. Then registers the 'MyServerImpl'
 object as activated client type which can be activated at the server and displays it's

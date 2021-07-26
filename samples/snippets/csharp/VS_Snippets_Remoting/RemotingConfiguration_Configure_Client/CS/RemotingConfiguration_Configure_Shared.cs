@@ -1,4 +1,4 @@
-﻿// This is the implementation class for the remote object.
+// This is the implementation class for the remote object.
 
 using System;
 
@@ -8,7 +8,7 @@ using System;
         {
         }
 
-        public String MyMethod(String name)
+        public string MyMethod(string name)
         {
             return "The string from client is " + name;
         }

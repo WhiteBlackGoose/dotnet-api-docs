@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(Guid);
+// System.Runtime.Remoting.Proxies.RealProxy.SupportsInterface(Guid);
 // System.Runtime.Remoting.Proxies.RealProxy.GetCOMIUnknown(bool);
 // System.Runtime.Remoting.Proxies.RealProxy.SetCOMIUnknown(IntPtr);
 /* The following example demonstrates implementation of methods
@@ -27,7 +27,7 @@ namespace CustomProxySample
 {
    public class MyProxy : RealProxy
    {
-      String m_URI;
+      string m_URI;
       MarshalByRefObject myMarshalByRefObject;
       [SecurityPermission(SecurityAction.LinkDemand)]
       public MyProxy(): base()

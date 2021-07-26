@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 
 public class ListenerBasic
@@ -80,12 +80,12 @@ public class ListenerBasic
         string display;
         if (id.IsAuthenticated)
         {
-            display = String.Format("{0} was authenticated using {1}", id.Name,
+            display = string.Format("{0} was authenticated using {1}", id.Name,
                 id.AuthenticationType);
         }
         else
         {
-           display = String.Format("{0} was not authenticated", id.Name);
+           display = string.Format("{0} was not authenticated", id.Name);
         }
         return display;
     }
@@ -366,7 +366,7 @@ public class ListenerBasic
                 Console.WriteLine("Version: RFC {0}" , cook.Version == 1 ? "2109" : "2965");
 
                 // Show the string representation of the cookie.
-                Console.WriteLine ("String: {0}", cook.ToString());
+                Console.WriteLine ("string: {0}", cook.ToString());
             }
         }
         // </snippet18>
@@ -393,7 +393,7 @@ public class ListenerBasic
                 Console.WriteLine("Version: RFC {0}" , cook.Version == 1 ? "2109" : "2965");
 
                 // Show the string representation of the cookie.
-                Console.WriteLine ("String: {0}", cook.ToString());
+                Console.WriteLine ("string: {0}", cook.ToString());
             }
         }
         // </snippet19>

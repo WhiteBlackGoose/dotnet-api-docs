@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class HelloServiceClass : MarshalByRefObject {
@@ -15,7 +15,7 @@ public class HelloServiceClass : MarshalByRefObject {
         n_instance --;
     }
 
-    public String HelloMethod(String name) {
+    public string HelloMethod(string name) {
 
         // Reports that the method was called.
         Console.WriteLine();

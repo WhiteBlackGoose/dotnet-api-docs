@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.IO;
 using System.Net;
@@ -129,7 +129,7 @@ namespace NCLWebClientAsync
             // Block the main application thread. Real applications
             // can perform other tasks while waiting for the upload to complete.
             waiter.WaitOne();
-            Console.WriteLine("String upload is complete.");
+            Console.WriteLine("string upload is complete.");
         }
         //</Snippet8>
 

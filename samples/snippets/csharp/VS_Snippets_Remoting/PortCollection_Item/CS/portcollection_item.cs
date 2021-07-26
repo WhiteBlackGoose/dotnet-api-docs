@@ -1,7 +1,7 @@
-﻿// System.Web.Services.Description.PortCollection
+// System.Web.Services.Description.PortCollection
 // System.Web.Services.Description.PortCollection.Remove
-// System.Web.Services.Description.PortCollection.Item(String)
-// System.Web.Services.Description.PortCollection.Item(Int32)
+// System.Web.Services.Description.PortCollection.Item(string)
+// System.Web.Services.Description.PortCollection.Item(int)
 /*
   The following sample reads the contents of a file 'MathService_cs.wsdl'
   into a 'ServiceDescription' instance. It gets the collection of Service
