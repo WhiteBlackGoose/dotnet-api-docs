@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -46,7 +46,7 @@ public class Example
 
                EventLog log = new EventLog("RegexTimeouts");
                log.Source = "RegexTimeouts";
-               string msg = String.Format("Timeout after {0} matching '{1}' with '{2}.",
+               string msg = string.Format("Timeout after {0} matching '{1}' with '{2}.",
                                           e.MatchTimeout, e.Input, e.Pattern);
                log.WriteEntry(msg, EventLogEntryType.Error);
             }

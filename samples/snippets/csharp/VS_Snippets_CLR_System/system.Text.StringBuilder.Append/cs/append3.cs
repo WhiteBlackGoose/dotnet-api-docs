@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -41,7 +41,7 @@ public class Example
       // <Snippet11> 
       System.Text.StringBuilder sb = new 
              System.Text.StringBuilder("The range of a 32-bit integer: ");
-      sb.Append(Int32.MinValue).Append(" to ").Append(Int32.MaxValue);
+      sb.Append(int.MinValue).Append(" to ").Append(int.MaxValue);
       Console.WriteLine(sb);
       // The example displays the following output:
       //       The range of a 32-bit integer: -2147483648 to 2147483647

@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,11 +13,11 @@ public class Example
       Regex rgx = new Regex(pattern);
       string result = rgx.Replace(input, replacement);
       
-      Console.WriteLine("Original String: {0}", input);
-      Console.WriteLine("Replacement String: {0}", result);                             
+      Console.WriteLine("Original string: {0}", input);
+      Console.WriteLine("Replacement string: {0}", result);                             
    }
 }
 // The example displays the following output:
-//       Original String: This is   text with   far  too   much   white space.
-//       Replacement String: This is text with far too much white space.
+//       Original string: This is   text with   far  too   much   white space.
+//       Replacement string: This is text with far too much white space.
 // </Snippet5>

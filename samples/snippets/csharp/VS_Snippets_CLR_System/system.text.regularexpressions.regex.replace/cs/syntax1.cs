@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text.RegularExpressions;
 
 public class Example
@@ -11,6 +11,6 @@ public class Example
    public string MatchEvaluatorMethod(Match match)
    // </Snippet1>
    {
-      return String.Empty;
+      return string.Empty;
    }
 }

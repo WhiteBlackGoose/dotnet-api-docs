@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Collections;
 using System.Text.RegularExpressions;
@@ -44,7 +44,7 @@ public class Example
          letters[ctr] = match.Value[ctr];
       }         
       Array.Sort(keys, letters, 0, arraySize, Comparer.Default);      
-      return new String(letters);
+      return new string(letters);
    }
 }
 // The example displays output similar to the following:

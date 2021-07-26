@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Text.RegularExpressions;
 
@@ -13,7 +13,7 @@ public class Example
       string pattern = "^.*$";
       string replacement = "\n$&";
       Regex rgx = new Regex(pattern, RegexOptions.Multiline);
-      string result = String.Empty; 
+      string result = string.Empty; 
       
       Match match = rgx.Match(input);
       // Double space all but the first line.

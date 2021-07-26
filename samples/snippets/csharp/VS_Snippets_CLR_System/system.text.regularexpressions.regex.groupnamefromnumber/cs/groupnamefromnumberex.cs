@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -17,7 +17,7 @@ public class Example
       // Get group names.
       do {
          string name = rgx.GroupNameFromNumber(ctr);
-         if (! String.IsNullOrEmpty(name))
+         if (! string.IsNullOrEmpty(name))
          {
             ctr++;
             names.Add(name);

@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Text.RegularExpressions;
 
@@ -8,7 +8,7 @@ public class Example
    {
       // Get drives available on local computer and form into a single character expression.
       string[] drives = Environment.GetLogicalDrives();
-      string driveNames = String.Empty;
+      string driveNames = string.Empty;
       foreach (string drive in drives)
          driveNames += drive.Substring(0,1);
       // Create regular expression pattern dynamically based on local machine information.

@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Text.RegularExpressions;
 
@@ -12,11 +12,11 @@ public class Example
       Regex rgx = new Regex(pattern);
 
       string result = rgx.Replace(str, replacement, 5);
-      Console.WriteLine("Original String:    '{0}'", str);
-      Console.WriteLine("Replacement String: '{0}'", result); 
+      Console.WriteLine("Original string:    '{0}'", str);
+      Console.WriteLine("Replacement string: '{0}'", result); 
    }
 }
 // The example displays the following output:
-//       Original String:    'aabccdeefgghiijkklmm'
-//       Replacement String: 'abcdefghijkklmm'
+//       Original string:    'aabccdeefgghiijkklmm'
+//       Replacement string: 'abcdefghijkklmm'
 // </Snippet8>

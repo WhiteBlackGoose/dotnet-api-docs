@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -35,7 +35,7 @@ public class CustomerNumberFormatter : IFormatProvider, ICustomFormatter
    
    public string Format(string format, object arg, IFormatProvider provider)
    {
-      if (arg is Int32)
+      if (arg is int)
       {
          string custNumber = ((int) arg).ToString("D10");
          return custNumber.Substring(0, 4) + "-" + custNumber.Substring(4, 3) + 

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -13,9 +13,9 @@ public class Example
       
       for (int ctr = 0; ctr < sb.Length; ctr++) {
          char ch = sb[ctr];
-         if (Char.IsLetter(ch)) { nAlphabeticChars++;  continue; }
-         if (Char.IsWhiteSpace(ch)) { nWhitespace++;  continue; }
-         if (Char.IsPunctuation(ch)) nPunctuation++;  
+         if (char.IsLetter(ch)) { nAlphabeticChars++;  continue; }
+         if (char.IsWhiteSpace(ch)) { nWhitespace++;  continue; }
+         if (char.IsPunctuation(ch)) nPunctuation++;  
       }    
 
       Console.WriteLine("The sentence '{0}' has:", sb);
