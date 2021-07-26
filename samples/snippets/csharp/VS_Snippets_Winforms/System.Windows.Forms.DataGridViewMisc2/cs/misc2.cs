@@ -1,4 +1,4 @@
-﻿// for MISC snippets only; do not wrap entire file with a snippet tag.
+// for MISC snippets only; do not wrap entire file with a snippet tag.
 
 using System;
 using System.Drawing;
@@ -96,7 +96,7 @@ public class Form1 : Form
     private void dataGridView1_CellFormatting(object sender,
         DataGridViewCellFormattingEventArgs e)
     {
-        String value = e.Value as string;
+        string value = e.Value as string;
         if ((value != null) && value.Equals(e.CellStyle.DataSourceNullValue))
         {
             e.Value = e.CellStyle.NullValue;
@@ -109,7 +109,7 @@ public class Form1 : Form
     public DataGridViewRow CloneWithValues(DataGridViewRow row)
     {
         DataGridViewRow clonedRow = (DataGridViewRow)row.Clone();
-        for (Int32 index = 0; index < row.Cells.Count; index++)
+        for (int index = 0; index < row.Cells.Count; index++)
         {
             clonedRow.Cells[index].Value = row.Cells[index].Value;
         }

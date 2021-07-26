@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -79,7 +79,7 @@ class Form1 : Form
     //<snippet10>
     private void selectedCellsButton_Click(object sender, System.EventArgs e)
     {
-        Int32 selectedCellCount =
+        int selectedCellCount =
             dataGridView1.GetCellCount(DataGridViewElementStates.Selected);
         if (selectedCellCount > 0)
         {
@@ -114,7 +114,7 @@ class Form1 : Form
     //<snippet20>
     private void selectedRowsButton_Click(object sender, System.EventArgs e)
     {
-        Int32 selectedRowCount =
+        int selectedRowCount =
             dataGridView1.Rows.GetRowCount(DataGridViewElementStates.Selected);
         if (selectedRowCount > 0)
         {
@@ -136,7 +136,7 @@ class Form1 : Form
     //<snippet30>
     private void selectedColumnsButton_Click(object sender, System.EventArgs e)
     {
-        Int32 selectedColumnCount = dataGridView1.Columns
+        int selectedColumnCount = dataGridView1.Columns
             .GetColumnCount(DataGridViewElementStates.Selected);
         if (selectedColumnCount > 0)
         {

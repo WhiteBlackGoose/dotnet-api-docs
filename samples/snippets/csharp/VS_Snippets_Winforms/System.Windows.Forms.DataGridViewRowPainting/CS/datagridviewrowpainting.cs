@@ -1,4 +1,4 @@
-﻿//<Snippet00>
+//<Snippet00>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -6,8 +6,8 @@ using System.Windows.Forms;
 class DataGridViewRowPainting : Form
 {
     private DataGridView dataGridView1 = new DataGridView();
-    private Int32 oldRowIndex = 0;
-    private const Int32 CUSTOM_CONTENT_HEIGHT = 30;
+    private int oldRowIndex = 0;
+    private const int CUSTOM_CONTENT_HEIGHT = 30;
 
     [STAThreadAttribute()]
     public static void Main()
@@ -195,7 +195,7 @@ class DataGridViewRowPainting : Form
 
             if (recipe != null)
             {
-                String text = recipe.ToString();
+                string text = recipe.ToString();
 
                 // Calculate the bounds for the content that spans multiple 
                 // columns, adjusting for the horizontal scrolling position 
@@ -246,7 +246,7 @@ class DataGridViewRowPainting : Form
         DataGridViewRowEventArgs e)
     {
         // Calculate the new height of the normal cell content.
-        Int32 preferredNormalContentHeight =
+        int preferredNormalContentHeight =
             e.Row.GetPreferredHeight(e.Row.Index, 
             DataGridViewAutoSizeRowMode.AllCellsExceptHeader, true) -
             e.Row.DefaultCellStyle.Padding.Bottom;

@@ -1,4 +1,4 @@
-﻿//<Snippet00>
+//<Snippet00>
 //<Snippet01>
 using System;
 using System.Data;
@@ -63,7 +63,7 @@ public class Form1 : System.Windows.Forms.Form
             // Specify a connection string. Replace the given value with a 
             // valid connection string for a Northwind SQL Server sample
             // database accessible to your system.
-            String connectionString =
+            string connectionString =
                 "Integrated Security=SSPI;Persist Security Info=False;" +
                 "Initial Catalog=Northwind;Data Source=localhost";
             SqlConnection connection = new SqlConnection(connectionString);

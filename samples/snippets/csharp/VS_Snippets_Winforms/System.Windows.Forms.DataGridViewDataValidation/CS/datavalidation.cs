@@ -1,4 +1,4 @@
-﻿//<Snippet00>
+//<Snippet00>
 //<Snippet01>
 using System;
 using System.Data;
@@ -60,7 +60,7 @@ public class Form1 : System.Windows.Forms.Form
     void dataGridView1_CellEndEdit(object sender, DataGridViewCellEventArgs e)
     {
         // Clear the row error in case the user presses ESC.   
-        dataGridView1.Rows[e.RowIndex].ErrorText = String.Empty;
+        dataGridView1.Rows[e.RowIndex].ErrorText = string.Empty;
     }
     //</Snippet25>
     //</Snippet20>

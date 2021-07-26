@@ -1,4 +1,4 @@
-﻿//<Snippet00>
+//<Snippet00>
 using System;
 using System.Windows.Forms;
 
@@ -66,14 +66,14 @@ public class DataGridViewObjectBinding : Form
 
 public class Customer
 {
-    private String nameValue;
+    private string nameValue;
 
-    public Customer(String name)
+    public Customer(string name)
     {
         nameValue = name;
     }
 
-    public String Name
+    public string Name
     {
         get
         {

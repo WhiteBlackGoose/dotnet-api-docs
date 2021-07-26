@@ -1,4 +1,4 @@
-﻿//<snippet00>
+//<snippet00>
 using System;
 using System.ComponentModel;
 using System.Reflection;
@@ -69,13 +69,13 @@ public class Form1 : Form
             new DataGridViewCellEventHandler(dataGridView1_CellValueChanged);
     }
 
-    private void AddReadOnlyColumn(String dataPropertyName, String columnName)
+    private void AddReadOnlyColumn(string dataPropertyName, string columnName)
     {
         AddColumn(typeof(DataGridViewColumn), dataPropertyName, true,
             columnName);
     }
 
-    private void AddColumn(String dataPropertyName)
+    private void AddColumn(string dataPropertyName)
     {
         AddColumn(typeof(DataGridViewColumn), dataPropertyName, false,
             dataPropertyName);
@@ -86,9 +86,9 @@ public class Form1 : Form
     // property of the specified type and optionally making it read-only.
     private void AddColumn(
         Type type,
-        String dataPropertyName,
+        string dataPropertyName,
         Boolean readOnly,
-        String columnName)
+        string columnName)
     {
         // Retrieve information about the property through reflection.
         PropertyInfo property = type.GetProperty(dataPropertyName);
@@ -211,14 +211,14 @@ public class Form1 : Form
         object sender, DataGridViewCellEventArgs e)
     {
         // Retrieve the property to change.
-        String nameOfPropertyToChange =
+        string nameOfPropertyToChange =
             dataGridView1.Columns[e.ColumnIndex].Name;
         PropertyInfo propertyToChange =
             typeof(DataGridViewColumn).GetProperty(nameOfPropertyToChange);
 
         // Retrieve the column to change.
-        String nameOfColumnToChange =
-            (String)dataGridView1["Column", e.RowIndex].Value;
+        string nameOfColumnToChange =
+            (string)dataGridView1["Column", e.RowIndex].Value;
         DataGridViewColumn columnToChange =
             dataGridView1.Columns[nameOfColumnToChange];
 

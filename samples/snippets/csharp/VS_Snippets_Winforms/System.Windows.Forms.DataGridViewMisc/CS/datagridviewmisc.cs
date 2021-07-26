@@ -1,4 +1,4 @@
-﻿// This file is for miscellaneous, tiny snippets that do not need to exist within a wider scope.
+// This file is for miscellaneous, tiny snippets that do not need to exist within a wider scope.
 // Do not wrap the entire file in a snippet tag for use in any topic.
 
 #region Using directives
@@ -206,7 +206,7 @@ class DataGridViewMisc : Form
     //<Snippet080>
     private void getCurrentCellButton_Click(object sender, System.EventArgs e)
     {
-        string msg = String.Format("Row: {0}, Column: {1}",
+        string msg = string.Format("Row: {0}, Column: {1}",
             dataGridView1.CurrentCell.RowIndex,
             dataGridView1.CurrentCell.ColumnIndex);
         MessageBox.Show(msg, "Current Cell");
@@ -284,7 +284,7 @@ class DataGridViewMisc : Form
     private void dataGridView1_CellValueChanged(object sender,
         DataGridViewCellEventArgs e)
     {
-        string msg = String.Format(
+        string msg = string.Format(
             "Cell at row {0}, column {1} value changed",
             e.RowIndex, e.ColumnIndex);
         MessageBox.Show(msg, "Cell Value Changed");
@@ -297,7 +297,7 @@ class DataGridViewMisc : Form
         DataGridViewCellStateChangedEventArgs e)
     {
         DataGridViewElementStates state = e.StateChanged;
-        string msg = String.Format("Row {0}, Column {1}, {2}",
+        string msg = string.Format("Row {0}, Column {1}, {2}",
             e.Cell.RowIndex, e.Cell.ColumnIndex, e.StateChanged);
         MessageBox.Show(msg, "Cell State Changed");
     }
@@ -448,7 +448,7 @@ class DataGridViewMisc : Form
     private void dataGridView1_CellBeginEdit(object sender,
         DataGridViewCellCancelEventArgs e)
     {
-        string msg = String.Format("Editing Cell at ({0}, {1})",
+        string msg = string.Format("Editing Cell at ({0}, {1})",
             e.ColumnIndex, e.RowIndex);
         this.Text = msg;
     }
@@ -456,7 +456,7 @@ class DataGridViewMisc : Form
     private void dataGridView1_CellEndEdit(object sender,
         DataGridViewCellEventArgs e)
     {
-        string msg = String.Format("Finished Editing Cell at ({0}, {1})",
+        string msg = string.Format("Finished Editing Cell at ({0}, {1})",
             e.ColumnIndex, e.RowIndex);
         this.Text = msg;
     }
@@ -466,10 +466,10 @@ class DataGridViewMisc : Form
     {
         //<Snippet230>
         // Retrieve the cell value for the cell at column 3, row 7.
-        String testValue1 = (String)dataGridView1[3, 7].Value;
+        string testValue1 = (string)dataGridView1[3, 7].Value;
         
         // Retrieve the cell value for the cell in the Name column at row 4.
-        String testValue2 = (String)dataGridView1["Name", 4].Value;
+        string testValue2 = (string)dataGridView1["Name", 4].Value;
         //</Snippet230>
     }
 }
