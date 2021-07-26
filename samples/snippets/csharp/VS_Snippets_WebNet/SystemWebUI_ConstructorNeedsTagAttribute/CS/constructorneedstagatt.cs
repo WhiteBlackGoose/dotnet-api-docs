@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 /* File Name: constructorneedstagatt.cs. */
 
 using System;
@@ -13,9 +13,9 @@ namespace MyUserControl
   [ConstructorNeedsTagAttribute(true)]
   public class Simple : WebControl 
   {
-    private String NameTag = "";
+    private string NameTag = "";
 
-    public Simple(String tag)
+    public Simple(string tag)
     {
       this.NameTag = tag;
     } 

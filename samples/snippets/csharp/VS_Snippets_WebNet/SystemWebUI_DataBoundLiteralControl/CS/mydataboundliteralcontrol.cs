@@ -1,4 +1,4 @@
-﻿/*File name: myDataBoundLiteralControl.cs */
+/*File name: myDataBoundLiteralControl.cs */
 
 // <Snippet1>   
 
@@ -21,7 +21,7 @@ namespace Samples.AspNet.CS.Controls
         // Obtains the DataBoundLiteralControl instance.
         DataBoundLiteralControl boundLiteralControl = (DataBoundLiteralControl)Controls[0];
         // Retrieves the text in the boundLiteralControl object.
-        String text = boundLiteralControl.Text;
+        string text = boundLiteralControl.Text;
         output.Write("<h4>Your Message: " +text+"</h4>");
       }
     }

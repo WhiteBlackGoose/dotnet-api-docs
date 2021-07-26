@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Data;
 using System.Linq;
@@ -25,7 +25,7 @@ public partial class _Default : System.Web.UI.Page
     {
         DataContractSerializer dcs = new DataContractSerializer(typeof(Employee));
 
-        String xmlData = ViewState["OriginalEmployee"].ToString();
+        string xmlData = ViewState["OriginalEmployee"].ToString();
         XmlReader reader = XmlReader.Create(new StringReader(xmlData));
         Employee originalEmployee = (Employee)dcs.ReadObject(reader);
         reader.Close();

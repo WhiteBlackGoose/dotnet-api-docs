@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Web;
@@ -29,7 +29,7 @@ public partial class param1acs_aspx : System.Web.UI.Page
         // display anything on the first page load. This is because
         // on the first page load, the DropDownList has no
         // selected item, and the ControlParameter evaluates to
-        // String.Empty.
+        // string.Empty.
         country.DefaultValue = "USA";
 // </Snippet3>
 

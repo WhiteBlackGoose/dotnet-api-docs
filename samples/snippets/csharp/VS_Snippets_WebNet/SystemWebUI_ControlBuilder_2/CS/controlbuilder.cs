@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -58,7 +58,7 @@ namespace CustomControls
 		public override Type GetChildControlType(string tagName, IDictionary attribs)
 		{
 			// Allows TableRow without "runat=server" attribute to be added to the collection.
-			if (String.Compare(tagName, "mycell", true) == 0)
+			if (string.Compare(tagName, "mycell", true) == 0)
 				return typeof(MyCell);
 			return null;
 		}
@@ -81,7 +81,7 @@ namespace CustomControls
 		// Declares the custom control that must be built programmatically.
 		Table _table;
 
-		private String _title;
+		private string _title;
 		private int _rows;
 		private int _columns;
 

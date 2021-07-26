@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 
 /* File name: controlBuilderAttribute.cs. */
 
@@ -17,9 +17,9 @@ namespace CustomControls
    */
     {
 
-      private String _message;
+      private string _message;
 
-      public String Message 
+      public string Message 
       {
         get 
         {
@@ -39,9 +39,9 @@ namespace CustomControls
      */
     {
       [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")] 
-      public override Type GetChildControlType(String tagName, IDictionary attributes) 
+      public override Type GetChildControlType(string tagName, IDictionary attributes) 
       {
-        if (String.Compare(tagName, "customitem", true) == 0) 
+        if (string.Compare(tagName, "customitem", true) == 0) 
         {
            return typeof(MyCS_Item);
         }

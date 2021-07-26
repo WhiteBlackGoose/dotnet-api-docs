@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.IO;
 using System.Web;
@@ -41,7 +41,7 @@ namespace Samples.AspNet.CS
         {
             if (key == HtmlTextWriterAttribute.Size)
             {
-                if (String.Compare(value, "8pt") == 0)
+                if (string.Compare(value, "8pt") == 0)
                 {
                     return true;
                 }
@@ -67,7 +67,7 @@ namespace Samples.AspNet.CS
         {
             if (key == HtmlTextWriterStyle.Color)
             {
-                if (String.Compare(value, "purple") == 0)
+                if (string.Compare(value, "purple") == 0)
                 {
                     return false;
                 }

@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 namespace Samples.AspNet.CS {
 
 using System;
@@ -28,7 +28,7 @@ using System.Web.UI.WebControls;
     
     public static NorthwindEmployee GetEmployee(object anID) {
       ArrayList data = GetAllEmployees() as ArrayList;     
-      int empID = Int32.Parse(anID.ToString());      
+      int empID = int.Parse(anID.ToString());      
       return data[empID] as NorthwindEmployee;
     }
 

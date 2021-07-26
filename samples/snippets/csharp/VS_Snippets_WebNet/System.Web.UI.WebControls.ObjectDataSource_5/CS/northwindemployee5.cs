@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 namespace Samples.AspNet.CS {
 
 using System;
@@ -63,7 +63,7 @@ using System.Web.UI.WebControls;
       dc = new DataColumn("LastName",  typeof(string)); dt.Columns.Add(dc);
       dc = new DataColumn("Title",     typeof(string)); dt.Columns.Add(dc);
       dc = new DataColumn("Courtesy",  typeof(string)); dt.Columns.Add(dc);
-      dc = new DataColumn("Supervisor",typeof(Int32));  dt.Columns.Add(dc);
+      dc = new DataColumn("Supervisor",typeof(int));  dt.Columns.Add(dc);
 
       // Add rows to the DataTable.
       IEnumerator emplEnum = employees.GetEnumerator();
@@ -128,7 +128,7 @@ using System.Web.UI.WebControls;
                        " WHERE EmployeeID = @empId",
                        conn);
       // Add the employee ID parameter and set its value.
-      sc.Parameters.Add(new SqlParameter("@empId",SqlDbType.Int)).Value = Int32.Parse(anID.ToString());
+      sc.Parameters.Add(new SqlParameter("@empId",SqlDbType.Int)).Value = int.Parse(anID.ToString());
       SqlDataReader sdr = null;
 
       try {
@@ -184,7 +184,7 @@ using System.Web.UI.WebControls;
     }
 
     private string title;
-    public String Title {
+    public string Title {
       get { return title; }
       set { title = value; }
     }

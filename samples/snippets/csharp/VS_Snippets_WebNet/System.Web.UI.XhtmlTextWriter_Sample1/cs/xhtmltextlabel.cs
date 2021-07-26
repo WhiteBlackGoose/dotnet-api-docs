@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +12,7 @@ namespace AspNet.Samples
     // from the Label class.
 	public class TestLabel : Label
 	{
-		private String _textValue;
+		private string _textValue;
 
 		// Override the Text property.
 		public override string Text
@@ -50,7 +50,7 @@ namespace AspNet.Samples
 
 			// Create a string variable, named value, to hold
 			// the control's Text property value.
-			String value = Control.Text;
+			string value = Control.Text;
 
             // Create a Boolean variable, named attTest,
             // to test whether the Style attribute is 

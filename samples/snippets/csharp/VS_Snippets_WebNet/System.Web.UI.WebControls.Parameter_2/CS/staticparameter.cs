@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 namespace Samples.AspNet {
 
   using System;
@@ -66,7 +66,7 @@ namespace Samples.AspNet {
       get {
         object o = DataValue;
         if (o == null || !(o is string))
-          return String.Empty;
+          return string.Empty;
         return (string)o;
       }
       set {

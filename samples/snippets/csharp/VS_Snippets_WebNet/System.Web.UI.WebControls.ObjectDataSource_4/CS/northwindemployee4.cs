@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 namespace Samples.AspNet.CS {
 
 using System;
@@ -91,7 +91,7 @@ using System.Web.UI.WebControls;
                        " WHERE EmployeeID = @empId",
                        conn);
       // Add the employee ID parameter and set its value.
-      sc.Parameters.Add(new SqlParameter("@empId",SqlDbType.Int)).Value = Int32.Parse(anID.ToString());
+      sc.Parameters.Add(new SqlParameter("@empId",SqlDbType.Int)).Value = int.Parse(anID.ToString());
       SqlDataReader sdr = null;
 
       try {
@@ -147,7 +147,7 @@ using System.Web.UI.WebControls;
     }
 
     private string title;
-    public String Title {
+    public string Title {
       get { return title; }
       set { title = value; }
     }
