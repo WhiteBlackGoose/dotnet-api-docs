@@ -1,4 +1,4 @@
-﻿// System.ServiceProcess.ServiceController
+// System.ServiceProcess.ServiceController
 //
 // The following example application performs basic service queries/commands.
 
@@ -30,12 +30,12 @@ namespace ServiceControllerSample
             Console.WriteLine("Enter the desired option (or any other key to quit): ");
 
             // Get the input number.
-            String inputText = Console.ReadLine();
+            string inputText = Console.ReadLine();
             int option = 0;
 
             if (inputText.Length > 0)
             {
-               option = Int32.Parse(inputText);
+               option = int.Parse(inputText);
             }
 
             // Perform the requested option.

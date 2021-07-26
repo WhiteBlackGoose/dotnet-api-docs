@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Runtime.InteropServices;
 using System.IO;
@@ -48,7 +48,7 @@ namespace SafeHandleDemo
 
         // Allocate a file object in the kernel, then return a handle to it.
         [DllImport("kernel32", SetLastError = true, CharSet = CharSet.Unicode)]
-        internal extern static MySafeFileHandle CreateFile(String fileName,
+        internal extern static MySafeFileHandle CreateFile(string fileName,
            int dwDesiredAccess, System.IO.FileShare dwShareMode,
            IntPtr securityAttrs_MustBeZero, System.IO.FileMode dwCreationDisposition,
            int dwFlagsAndAttributes, IntPtr hTemplateFile_MustBeZero);
@@ -74,10 +74,10 @@ namespace SafeHandleDemo
         // _handle is set to null to indicate disposal of this instance.
         private MySafeFileHandle _handle;
 
-        public MyFileReader(String fileName)
+        public MyFileReader(string fileName)
         {
             // Security permission check.
-            String fullPath = Path.GetFullPath(fileName);
+            string fullPath = Path.GetFullPath(fileName);
             new FileIOPermission(FileIOPermissionAccess.Read, fullPath).Demand();
 
             // Open a file, and save its handle in _handle.
@@ -185,7 +185,7 @@ namespace SafeHandleDemo
         {
             _workerStarted = true;
             byte[] bytes;
-            using (MyFileReader reader = new MyFileReader((String)fileName))
+            using (MyFileReader reader = new MyFileReader((string)fileName))
             {
                 bytes = reader.ReadContents(20);
             }  // Using block calls Dispose() for us here.
@@ -210,7 +210,7 @@ namespace SafeHandleDemo
                 return;
             }
 
-            String fileName = args[0];
+            string fileName = args[0];
             bool injectFaultMode = args.Length > 1;
             if (!injectFaultMode)
             {

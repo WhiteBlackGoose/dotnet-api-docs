@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -9,7 +9,7 @@ class MainFunction
     Console.WriteLine("\nStringToGlobalAnsi\n");
 
     // Create a managed string.
-    String  managedString = "I am a managed String";
+    string  managedString = "I am a managed string";
     Console.WriteLine("1) managedString = " + managedString );
 
     // Marshal the managed string to unmanaged memory.
@@ -17,7 +17,7 @@ class MainFunction
     Console.WriteLine("2) stringPointer = {0}", stringPointer );
 
     // Get the string back from unmanaged memory
-    String RetrievedString = Marshal.PtrToStringAnsi( stringPointer);
+    string RetrievedString = Marshal.PtrToStringAnsi( stringPointer);
     Console.WriteLine("3) Retrieved from unmanaged memory = " + RetrievedString );
 
     // Always free the unmanaged string.
@@ -27,7 +27,7 @@ class MainFunction
     Console.WriteLine("4) stringPointer = " + stringPointer );
 
     // However, it contains no data after being freed:
-    String RetrievedString2 = Marshal.PtrToStringAnsi( stringPointer);
+    string RetrievedString2 = Marshal.PtrToStringAnsi( stringPointer);
     Console.WriteLine("5) RetrievedString2 = " + RetrievedString2 );
     }
 }

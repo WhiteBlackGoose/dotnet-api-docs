@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Security;
 
@@ -7,7 +7,7 @@ class Example
    public static void Main()
    {
       ConsoleKeyInfo cki;
-      String m = "\nEnter your password (up to 15 letters, numbers, and underscores)\n" +
+      string m = "\nEnter your password (up to 15 letters, numbers, and underscores)\n" +
                  "Press BACKSPACE to delete the last character entered. " +
                  "\nPress Enter when done, or ESCAPE to quit:";
       SecureString password = new SecureString();
@@ -42,7 +42,7 @@ class Example
          }
          else {
             if ((password.Length < 15) &&
-                 (Char.IsLetterOrDigit(cki.KeyChar) || cki.KeyChar == '_')) {
+                 (char.IsLetterOrDigit(cki.KeyChar) || cki.KeyChar == '_')) {
                password.AppendChar(cki.KeyChar);
                Console.SetCursorPosition(left+password.Length-1, top);
                Console.Write('*');

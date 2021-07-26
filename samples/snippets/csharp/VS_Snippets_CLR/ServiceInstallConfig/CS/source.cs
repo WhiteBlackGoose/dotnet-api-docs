@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Data;
 using System.ComponentModel;
@@ -21,9 +21,9 @@ namespace ServiceChangeSample
             ServiceController sc = new ServiceController();
 
             Console.WriteLine("Query by service name or display name [S|D]:");
-            String inputText = Console.ReadLine().ToUpper(CultureInfo.InvariantCulture);
+            string inputText = Console.ReadLine().ToUpper(CultureInfo.InvariantCulture);
 
-            String serviceInput = "";
+            string serviceInput = "";
 
             switch (inputText)
             {
@@ -48,7 +48,7 @@ namespace ServiceChangeSample
                     break;
             }
 
-            String scInfo;
+            string scInfo;
 
             if (QueryService(ref sc, out scInfo))
             {
@@ -70,7 +70,7 @@ namespace ServiceChangeSample
             }
         }
 
-        public static bool QueryService(ref ServiceController sc, out String scInfo)
+        public static bool QueryService(ref ServiceController sc, out string scInfo)
         {
             bool serviceValid = false;
             scInfo = "";
@@ -85,13 +85,13 @@ namespace ServiceChangeSample
 
                     // Display information about this service.
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Service name:\t{0}", sc.ServiceName);
+                    scInfo += string.Format("Service name:\t{0}", sc.ServiceName);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Display name:\t{0}", sc.DisplayName);
+                    scInfo += string.Format("Display name:\t{0}", sc.DisplayName);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Service type:\t{0}", sc.ServiceType);
+                    scInfo += string.Format("Service type:\t{0}", sc.ServiceType);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Status:\t\t{0}", sc.Status);
+                    scInfo += string.Format("Status:\t\t{0}", sc.Status);
                     scInfo += Environment.NewLine;
 
                     serviceValid = true;
@@ -100,13 +100,13 @@ namespace ServiceChangeSample
                     ManagementObject wmiService;
                     wmiService = new ManagementObject("Win32_Service.Name='" + sc.ServiceName + "'");
                     wmiService.Get();
-                    scInfo += String.Format("Start name:\t{0}", wmiService["StartName"]);
+                    scInfo += string.Format("Start name:\t{0}", wmiService["StartName"]);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Start mode:\t{0}", wmiService["StartMode"]);
+                    scInfo += string.Format("Start mode:\t{0}", wmiService["StartMode"]);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Service path:\t{0}", wmiService["PathName"]);
+                    scInfo += string.Format("Service path:\t{0}", wmiService["PathName"]);
                     scInfo += Environment.NewLine;
-                    scInfo += String.Format("Description:\t{0}", wmiService["Description"]);
+                    scInfo += string.Format("Description:\t{0}", wmiService["Description"]);
                     scInfo += Environment.NewLine;
                 }
             }
@@ -119,13 +119,13 @@ namespace ServiceChangeSample
             return serviceValid;
         }
 
-        public static bool ChangeServiceStartMode(ref ServiceController sc, String startMode, out String scInfo)
+        public static bool ChangeServiceStartMode(ref ServiceController sc, string startMode, out string scInfo)
         {
             bool startModeChanged = false;
             ManagementObject wmiService;
             wmiService = new ManagementObject("Win32_Service.Name='" + sc.ServiceName + "'");
             wmiService.Get();
-            String origStartMode = wmiService["StartMode"].ToString();
+            string origStartMode = wmiService["StartMode"].ToString();
 
             scInfo = "";
 
@@ -137,30 +137,30 @@ namespace ServiceChangeSample
             {
                 if (startMode.Equals(origStartMode.ToUpper(CultureInfo.InvariantCulture)))
                 {
-                    scInfo += String.Format("Requested mode is the same as the current mode; no change necessary.");
+                    scInfo += string.Format("Requested mode is the same as the current mode; no change necessary.");
                     scInfo += Environment.NewLine;
                 }
                 else {
 
                     // Change the start mode to requested value.
-                    scInfo += String.Format("Setting service start mode to {0}...",
+                    scInfo += string.Format("Setting service start mode to {0}...",
                         startMode);
                     scInfo += Environment.NewLine;
 
                     // See Win32_Service schema for ChangeStartMode input values.
-                    String [] startArgs = {startMode};
+                    string [] startArgs = {startMode};
 
                     Object retVal;
                     retVal = wmiService.InvokeMethod("ChangeStartMode", startArgs);
                     if (retVal.ToString() != "0")
                     {
-                        scInfo += String.Format("Warning:  Win32_Service.ChangeStartMode failed with return value {0}",
+                        scInfo += string.Format("Warning:  Win32_Service.ChangeStartMode failed with return value {0}",
                             retVal.ToString());
                         scInfo += Environment.NewLine;
                     }
                     else
                     {
-                        scInfo += String.Format("Service {0} start mode changed to {1}",
+                        scInfo += string.Format("Service {0} start mode changed to {1}",
                             sc.ServiceName, startMode);
                         scInfo += Environment.NewLine;
                     }
@@ -168,7 +168,7 @@ namespace ServiceChangeSample
             }
             else
             {
-                scInfo += String.Format("Invalid start mode.");
+                scInfo += string.Format("Invalid start mode.");
                 scInfo += Environment.NewLine;
             }
             return startModeChanged;
@@ -254,7 +254,7 @@ namespace ServiceChangeSample
         {
             textBox.Text = "Querying service configuration...";
 
-            String scInfo;
+            string scInfo;
             currentService.DisplayName = "TelNet";
 
             if (ServiceChange.QueryService(ref currentService, out scInfo))
@@ -276,8 +276,8 @@ namespace ServiceChangeSample
         private void startMode_button_Click(object sender,
             System.EventArgs e)
         {
-            String scInfo;
-            String wmiStartMode = "";
+            string scInfo;
+            string wmiStartMode = "";
 
             switch (this.modeComboBox.SelectedItem.ToString())
             {
@@ -317,7 +317,7 @@ namespace ServiceChangeSample
                 textBox.Text = "No change made to service account.";
             }
 
-            String scInfo;
+            string scInfo;
             if (ServiceChange.QueryService(ref currentService, out scInfo))
             {
                 textBox.Text += Environment.NewLine + scInfo;
