@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -6,13 +6,13 @@ public class Example
    public static void Main()
    {
       // Create array of 8-tuple objects containing prime numbers.
-      Tuple<Int32, Int32, Int32, Int32, Int32, Int32, Int32, Tuple<Int32>>[] primes = 
-                     { new Tuple<Int32, Int32, Int32, Int32, Int32, Int32, Int32, 
-                           Tuple<Int32>>(2, 3, 5, 7, 11, 13, 17, new Tuple<Int32>(19)),
-                       new Tuple<Int32, Int32, Int32, Int32, Int32, Int32, Int32, 
-                           Tuple<Int32>>(23, 29, 31, 37, 41, 43, 47, new Tuple<Int32>(55)), 
-                       new Tuple<Int32, Int32, Int32, Int32, Int32, Int32, Int32, 
-                           Tuple<Int32>>(3, 2, 5, 7, 11, 13, 17, new Tuple<Int32>(19)) };
+      Tuple<int, int, int, int, int, int, int, Tuple<int>>[] primes = 
+                     { new Tuple<int, int, int, int, int, int, int, 
+                           Tuple<int>>(2, 3, 5, 7, 11, 13, 17, new Tuple<int>(19)),
+                       new Tuple<int, int, int, int, int, int, int, 
+                           Tuple<int>>(23, 29, 31, 37, 41, 43, 47, new Tuple<int>(55)), 
+                       new Tuple<int, int, int, int, int, int, int, 
+                           Tuple<int>>(3, 2, 5, 7, 11, 13, 17, new Tuple<int>(19)) };
       // Display 8-tuples in unsorted order.
       foreach (var prime in primes)
          Console.WriteLine(prime.ToString());
