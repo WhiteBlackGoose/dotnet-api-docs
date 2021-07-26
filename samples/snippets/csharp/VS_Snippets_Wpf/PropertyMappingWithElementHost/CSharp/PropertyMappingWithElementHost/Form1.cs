@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -77,7 +77,7 @@ namespace PropertyMappingWithElementHost
         // The provided Padding value is used to construct 
         // a Thickness value for the hosted element's Margin
         // property.
-        private void OnMarginChange(object h, String propertyName, object value)
+        private void OnMarginChange(object h, string propertyName, object value)
         {
             ElementHost host = h as ElementHost;
             Padding p = (Padding)value;
@@ -113,7 +113,7 @@ namespace PropertyMappingWithElementHost
         // the hosted element's Clip property.
         private void OnRegionChange(
             object h, 
-            String propertyName, 
+            string propertyName, 
             object value)
         {
             ElementHost host = h as ElementHost;
@@ -150,7 +150,7 @@ namespace PropertyMappingWithElementHost
 
         // The OnBackColorChange method assigns a specific image 
         // to the hosted element's Background property.
-        private void OnBackColorChange(object h, String propertyName, object value)
+        private void OnBackColorChange(object h, string propertyName, object value)
         {
             ElementHost host = h as ElementHost;
             System.Windows.Controls.Button wpfButton = 

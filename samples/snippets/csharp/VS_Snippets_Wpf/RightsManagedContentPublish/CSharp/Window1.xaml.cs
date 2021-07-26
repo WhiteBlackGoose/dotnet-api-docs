@@ -1,4 +1,4 @@
-﻿// RightsManagedContentPublish Sample - Window1.xaml.cs
+// RightsManagedContentPublish Sample - Window1.xaml.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -444,7 +444,7 @@ namespace SdkSample
                             // as the first four bytes of the encrypted file.
                             cryptoTextStream.Write(
                                 BitConverter.GetBytes(clearTextStream.Length),
-                                0, sizeof(Int32));
+                                0, sizeof(int));
 
                             // Allocate clearText buffer.
                             byte[] clearTextBlock =
@@ -510,7 +510,7 @@ namespace SdkSample
 
             src.PropertiesToLoad.Add("mail");
 
-            src.Filter = String.Format("(&(objectCategory=person) " +
+            src.Filter = string.Format("(&(objectCategory=person) " +
                 "(objectClass=user) (SAMAccountName={0}))",
                 splitUserName[1]);
 
@@ -658,7 +658,7 @@ namespace SdkSample
         private string _rmContentFilepath=null; // RM content path and filename.
         private string _rmContentFilename=null; // RM content filename without path.
         private static SecureEnvironment _secureEnv = null;
-        private static String _currentUserId = GetDefaultWindowsUserName();
+        private static string _currentUserId = GetDefaultWindowsUserName();
         #endregion private fields
 
     }// end:partial class Window1

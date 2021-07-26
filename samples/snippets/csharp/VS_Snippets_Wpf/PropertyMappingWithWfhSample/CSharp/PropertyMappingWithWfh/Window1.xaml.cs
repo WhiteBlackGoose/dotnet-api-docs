@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -87,7 +87,7 @@ namespace PropertyMappingWithWfh
         // Windows Presentation Foundation FlowDirection value 
         // to a Windows Forms RightToLeft value and assigns
         // the result to the hosted control's RightToLeft property.
-        private void OnFlowDirectionChange(object h, String propertyName, object value)
+        private void OnFlowDirectionChange(object h, string propertyName, object value)
         {
             WindowsFormsHost host = h as WindowsFormsHost;
             System.Windows.FlowDirection fd = (System.Windows.FlowDirection)value;
@@ -132,7 +132,7 @@ namespace PropertyMappingWithWfh
 
         // The OnClipChange method assigns an elliptical clipping 
         // region to the hosted control's Region property.
-        private void OnClipChange(object h, String propertyName, object value)
+        private void OnClipChange(object h, string propertyName, object value)
         {
             WindowsFormsHost host = h as WindowsFormsHost;
             System.Windows.Forms.CheckBox cb = host.Child as System.Windows.Forms.CheckBox;
@@ -184,7 +184,7 @@ namespace PropertyMappingWithWfh
 
         // The OnBackgroundChange method assigns a specific image 
         // to the hosted control's BackgroundImage property.
-        private void OnBackgroundChange(object h, String propertyName, object value)
+        private void OnBackgroundChange(object h, string propertyName, object value)
         {
             WindowsFormsHost host = h as WindowsFormsHost;
             System.Windows.Forms.CheckBox cb = host.Child as System.Windows.Forms.CheckBox;

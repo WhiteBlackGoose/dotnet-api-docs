@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright (c) 1990 - 2005  Microsoft Corporation.
  * All Rights Reserved.
  *
@@ -145,8 +145,8 @@ namespace PrintTicketSample
                     //
                     // Change PrintTicket setting only for the specified remote printer.
                     //
-                    String serverName = args[1].Remove(args[1].LastIndexOf(@"\"));
-                    String printerName = args[1].Remove(0, args[1].LastIndexOf(@"\")+1);
+                    string serverName = args[1].Remove(args[1].LastIndexOf(@"\"));
+                    string printerName = args[1].Remove(0, args[1].LastIndexOf(@"\")+1);
                     PrintServer ps = new PrintServer(serverName);
                     PrintQueue queue = new PrintQueue(ps, printerName);
                     ChangePrintTicketSetting(queue);

@@ -1,4 +1,4 @@
-﻿// RightsManagedPackagePublish Sample - Window1.xaml.cs
+// RightsManagedPackagePublish Sample - Window1.xaml.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -591,7 +591,7 @@ namespace SdkSample
 
             src.PropertiesToLoad.Add("mail");
 
-            src.Filter = String.Format("(&(objectCategory=person) " +
+            src.Filter = string.Format("(&(objectCategory=person) " +
                 "(objectClass=user) (SAMAccountName={0}))",
                 splitUserName[1]);
 
@@ -702,7 +702,7 @@ namespace SdkSample
         private Package     _xpsPackage = null; // XPS document package.
         private XpsDocument _xpsDocument;       // XPS document within the package.
         private static SecureEnvironment _secureEnv = null;
-        private static String _currentUserId = GetDefaultWindowsUserName();
+        private static string _currentUserId = GetDefaultWindowsUserName();
         private readonly string _fixedDocumentSequenceContentType =
             "application/vnd.ms-package.xps-fixeddocumentsequence+xml";
         #endregion private fields

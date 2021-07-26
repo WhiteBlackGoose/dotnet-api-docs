@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Documents;
@@ -14,14 +14,14 @@ namespace RepeatButtons
         //<Snippet2>
         void Increase(object sender, RoutedEventArgs e)
         {
-            Int32 Num = Convert.ToInt32(valueText.Text);
+            int Num = Convert.ToInt32(valueText.Text);
 
             valueText.Text = ((Num + 1).ToString());
         }
 
         void Decrease(object sender, RoutedEventArgs e)
         {
-            Int32 Num = Convert.ToInt32(valueText.Text);
+            int Num = Convert.ToInt32(valueText.Text);
 
             valueText.Text = ((Num - 1).ToString());
         }

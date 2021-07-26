@@ -1,4 +1,4 @@
-﻿// RightsManagedContentViewer Sample - Window1.xaml.cs
+// RightsManagedContentViewer Sample - Window1.xaml.cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
 
 using System;
@@ -275,11 +275,11 @@ namespace SdkSample
                     byte[] imageBuffer;
                     using (Stream cipherTextStream = File.OpenRead(encryptedFile))
                     {
-                        byte[] contentLengthByteBuffer = new byte[sizeof(Int32)];
+                        byte[] contentLengthByteBuffer = new byte[sizeof(int];
                         // Read the length of the source content file
                         // from the first four bytes of the encrypted file.
                         ReliableRead(cipherTextStream, contentLengthByteBuffer,
-                                     0, sizeof(Int32));
+                                     0, sizeof(int));
 
                         // Allocate the clearText buffer.
                         int contentLength =
@@ -553,7 +553,7 @@ namespace SdkSample
 
             src.PropertiesToLoad.Add("mail");
 
-            src.Filter = String.Format("(&(objectCategory=person) " +
+            src.Filter = string.Format("(&(objectCategory=person) " +
                 "(objectClass=user) (SAMAccountName={0}))",
                 splitUserName[1]);
 
@@ -577,7 +577,7 @@ namespace SdkSample
         private string      _contentFile=null;  // content path and filename.
         private AuthenticationType _authentication = AuthenticationType.Windows;
         private static SecureEnvironment _secureEnv = null;
-        private static String _currentUserId = GetDefaultWindowsUserName();
+        private static string _currentUserId = GetDefaultWindowsUserName();
         #endregion private fields
 
     }// end:partial class Window1

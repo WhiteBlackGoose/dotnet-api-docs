@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Printing;
@@ -13,17 +13,17 @@ namespace PrinterStatusSurvey
         {
             // Obtain a list of print servers
             Console.Write("Enter path and file name of CRLF-delimited list of print servers: ");
-            String pathToListOfPrintServers = Console.ReadLine();
+            string pathToListOfPrintServers = Console.ReadLine();
             StreamReader fileOfPrintServers = new StreamReader(pathToListOfPrintServers);
 
             // Prompt user to determine the method of reading queue status that will be used
             Console.Write("Enter \"y\" to check queues using their QueueStatus attributes.\nOtherwise, press Return and they will be checked using their specific properties: ");
-            String useAttributesResponse = Console.ReadLine();
+            string useAttributesResponse = Console.ReadLine();
 
             //<SnippetSurveyQueues>
             // Survey queue status for every queue on every print server
-            String line;
-            String statusReport = "\n\nAny problem states are indicated below:\n\n";
+            string line;
+            string statusReport = "\n\nAny problem states are indicated below:\n\n";
             while ((line = fileOfPrintServers.ReadLine()) != null)
              {
                  PrintServer myPS = new PrintServer(line, PrintSystemDesiredAccess.AdministrateServer);
@@ -58,7 +58,7 @@ namespace PrinterStatusSurvey
     {
         // <SnippetSpotTroubleUsingQueueProperties>
         // Check for possible trouble states of a printer using its properties
-        internal static void SpotTroubleUsingProperties(ref String statusReport, PrintQueue pq)
+        internal static void SpotTroubleUsingProperties(ref string statusReport, PrintQueue pq)
         {
             if (pq.HasPaperProblem)
             {
@@ -121,7 +121,7 @@ namespace PrinterStatusSurvey
 
         // <SnippetSpotTroubleUsingQueueAttributes>
         // Check for possible trouble states of a printer using the flags of the QueueStatus property
-        internal static void SpotTroubleUsingQueueAttributes(ref String statusReport, PrintQueue pq)
+        internal static void SpotTroubleUsingQueueAttributes(ref string statusReport, PrintQueue pq)
         {
             if ((pq.QueueStatus & PrintQueueStatus.PaperProblem) == PrintQueueStatus.PaperProblem)
             {
@@ -183,12 +183,12 @@ namespace PrinterStatusSurvey
         // </SnippetSpotTroubleUsingQueueAttributes>
 
         // <SnippetUsingStartAndUntilTimes>
-        private static void ReportAvailabilityAtThisTime(ref String statusReport, PrintQueue pq)
+        private static void ReportAvailabilityAtThisTime(ref string statusReport, PrintQueue pq)
         {
             if (pq.StartTimeOfDay != pq.UntilTimeOfDay) // If the printer is not available 24 hours a day
             {
 		DateTime utcNow = DateTime.UtcNow;
-		Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
+		int utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
                 
                 // If now is not within the range of available times . . .
                 if (!((pq.StartTimeOfDay < utcNowAsMinutesAfterMidnight) 

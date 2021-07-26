@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -48,7 +48,7 @@ namespace PropertyMetadataAPIs
       public static readonly DependencyProperty SpecialProperty = DependencyProperty.Register(
           "Special",
           typeof(MyFeatureControl),
-          typeof(String),
+          typeof(string),
           new MyCustomPropertyMetadata("I am special",null,null,true)
       );
   }

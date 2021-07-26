@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.IO.Packaging;
@@ -26,7 +26,7 @@ public class PrintServerCreate
 
         // List the print server's queues
         PrintQueueCollection myPrintQueues = myPrintServer.GetPrintQueues();
-        String printQueueNames = "My Print Queues:\n\n";
+        string printQueueNames = "My Print Queues:\n\n";
         foreach (PrintQueue pq in myPrintQueues)
         {
             printQueueNames += "\t" + pq.Name + "\n";

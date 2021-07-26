@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,7 +27,7 @@ namespace RecycleItemContainerShippets
     }
 
     //<SnippetListBoxData>
-    public class LotsOfItems : ObservableCollection<String>
+    public class LotsOfItems : ObservableCollection<string>
     {
         public LotsOfItems()
         {
@@ -88,7 +88,7 @@ namespace RecycleItemContainerShippets
             string[] strings = itemString.Split(null);
             int value;
             
-            if (!Int32.TryParse(strings[strings.Length - 1], out value))
+            if (!int.TryParse(strings[strings.Length - 1], out value))
             {
                 return null;
             }
