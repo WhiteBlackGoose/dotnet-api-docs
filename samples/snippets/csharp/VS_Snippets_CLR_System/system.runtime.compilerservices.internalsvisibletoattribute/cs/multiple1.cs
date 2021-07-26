@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.CompilerServices;
 
 // <Snippet3>
@@ -13,9 +13,9 @@ public class StringUtilities
       string retval = null;
       for (int ctr = 0; ctr <= value.Length - 1; ctr++)
          if (ctr == 0)     
-            retval += Char.ToUpper(value[ctr]);
-         else if (ctr > 0 && Char.IsWhiteSpace(value[ctr - 1]))
-            retval += Char.ToUpper(value[ctr]);
+            retval += char.ToUpper(value[ctr]);
+         else if (ctr > 0 && char.IsWhiteSpace(value[ctr - 1]))
+            retval += char.ToUpper(value[ctr]);
          else
             retval += value[ctr];     
       return retval;            

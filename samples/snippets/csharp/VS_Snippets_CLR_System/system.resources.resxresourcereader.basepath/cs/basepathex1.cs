@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.ComponentModel.Design;
@@ -37,7 +37,7 @@ public class Example
    private static void CreateXMLResourceFile()
    {
       // Define an array of ResXFileRef objects for images.
-      String typeName = String.Format("{0}, {1}", typeof(Bitmap).FullName, 
+      string typeName = string.Format("{0}, {1}", typeof(Bitmap).FullName, 
                                       typeof(Bitmap).Assembly.FullName);
       ResXFileRef[] imageRefs =
          { new ResXFileRef(@"images\Akita.jpg", typeName),
@@ -53,7 +53,7 @@ public class Example
          // Add each ResXFileRef object to the resource file.
          foreach (var imageRef in imageRefs) {
             // Form resource name from name of image.
-            String name = imageRef.FileName;
+            string name = imageRef.FileName;
             name = name.Substring(name.IndexOf(@"\") + 1);
             name = name.Substring(0, name.IndexOf("."));
             ResXDataNode node = new ResXDataNode(name, imageRef); 

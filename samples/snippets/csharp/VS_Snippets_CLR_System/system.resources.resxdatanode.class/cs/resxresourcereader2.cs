@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.ComponentModel.Design;
@@ -22,7 +22,7 @@ public class Example
          Console.WriteLine("{0,-20} {1,-20} {2}", 
                            node.Name + ":", 
                            node.GetValue((ITypeResolutionService) null), 
-                           ! String.IsNullOrEmpty(node.Comment) ? "// " + node.Comment : "");
+                           ! string.IsNullOrEmpty(node.Comment) ? "// " + node.Comment : "");
       }
    }
 

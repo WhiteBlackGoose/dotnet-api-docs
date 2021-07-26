@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Resources;
 using System.IO;
@@ -14,9 +14,9 @@ public class WriteResources
        IResourceWriter writer = new ResourceWriter(fs);
     
        // Add resources to the resource writer.
-       writer.AddResource("String 1", "First String");
-       writer.AddResource("String 2", "Second String");
-       writer.AddResource("String 3", "Third String");
+       writer.AddResource("string 1", "First string");
+       writer.AddResource("string 2", "Second string");
+       writer.AddResource("string 3", "Third string");
 
        // Generate the resources, and close the writer.
        writer.Generate();

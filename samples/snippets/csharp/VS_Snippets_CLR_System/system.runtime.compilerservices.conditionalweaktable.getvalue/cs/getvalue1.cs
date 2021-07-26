@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
@@ -27,7 +27,7 @@ public class ExampleInfo
    
    public override string ToString()
    {
-      return String.Format("{0}: {1} Methods, {2} Properties", 
+      return string.Format("{0}: {1} Methods, {2} Properties", 
                            this.Name, this.Methods, this.Properties);
    }
 }

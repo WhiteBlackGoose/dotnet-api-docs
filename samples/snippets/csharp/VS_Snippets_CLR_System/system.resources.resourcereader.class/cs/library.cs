@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 
 [Serializable] public struct DateTimeTZI
@@ -14,7 +14,7 @@ using System;
 
    public override string ToString()
    {
-     return String.Format("{0:dd/MM/yyyy hh:mm:ss tt} {1}", 
+     return string.Format("{0:dd/MM/yyyy hh:mm:ss tt} {1}", 
                           Date, TimeZone.StandardName);
    }
 }

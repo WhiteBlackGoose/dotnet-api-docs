@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Drawing;
 using System.Drawing.Imaging;
@@ -49,7 +49,7 @@ public class Example
 
    public override string ToString()
    {
-     return String.Format("{0:dd/MM/yyyy hh:mm:ss tt} {1}", 
+     return string.Format("{0:dd/MM/yyyy hh:mm:ss tt} {1}", 
                           Date, TimeZone.StandardName);
    }
 }
