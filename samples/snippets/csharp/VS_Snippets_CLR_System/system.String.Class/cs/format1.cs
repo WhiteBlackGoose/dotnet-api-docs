@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Globalization;
 
@@ -12,7 +12,7 @@ public class Example
                                  new CultureInfo("fr-FR") };
 
       foreach (var culture in cultures)
-         Console.WriteLine("{0,-12} {1}", String.IsNullOrEmpty(culture.Name) ?
+         Console.WriteLine("{0,-12} {1}", string.IsNullOrEmpty(culture.Name) ?
                            "Invariant" : culture.Name, 
                            date.ToString("d", culture));                                    
    }

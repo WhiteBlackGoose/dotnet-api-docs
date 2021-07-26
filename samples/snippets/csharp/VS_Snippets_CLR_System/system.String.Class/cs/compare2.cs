@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -34,7 +34,7 @@ public class Example
       // Display array values
       Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}\n", 
                         "Original", "Word Sort", "Invariant Word", 
-                        "Ordinal Sort", "String Sort");
+                        "Ordinal Sort", "string Sort");
       for (int ctr = 0; ctr < strings.Length; ctr++)
          Console.WriteLine("{0,13} {1,13} {2,15} {3,13} {4,13}", 
                            strings[ctr], current[ctr], invariant[ctr], 
@@ -42,8 +42,8 @@ public class Example
    }
 }
 
-// IComparer<String> implementation to perform string sort.
-internal class SCompare : IComparer<String>
+// IComparer<string> implementation to perform string sort.
+internal class SCompare : IComparer<string>
 {
    public int Compare(string x, string y)
    {
@@ -51,7 +51,7 @@ internal class SCompare : IComparer<String>
    }
 }
 // The example displays the following output:
-//         Original     Word Sort  Invariant Word  Ordinal Sort   String Sort
+//         Original     Word Sort  Invariant Word  Ordinal Sort   string Sort
 //    
 //             coop          cœur            cœur         co-op         co-op
 //            co-op         coeur           coeur         coeur          cœur

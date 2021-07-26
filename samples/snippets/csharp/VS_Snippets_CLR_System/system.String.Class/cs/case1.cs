@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Globalization;
 using System.IO;
@@ -16,7 +16,7 @@ public class Example
       foreach (var word in words) {
          sw.WriteLine("{0}:", word);
          foreach (var culture in cultures) {
-            string name = String.IsNullOrEmpty(culture.Name) ? 
+            string name = string.IsNullOrEmpty(culture.Name) ? 
                                  "Invariant" : culture.Name;
             string upperWord = word.ToUpper(culture);
             sw.WriteLine("   {0,10}: {1,7} {2, 38}", name, 
@@ -32,7 +32,7 @@ public class Example
       string retval = null;
       foreach (var ch in s) {
          byte[] bytes = BitConverter.GetBytes(ch);
-         retval += String.Format("{0:X2} {1:X2} ", bytes[1], bytes[0]);     
+         retval += string.Format("{0:X2} {1:X2} ", bytes[1], bytes[0]);     
       }
       return retval;
    } 

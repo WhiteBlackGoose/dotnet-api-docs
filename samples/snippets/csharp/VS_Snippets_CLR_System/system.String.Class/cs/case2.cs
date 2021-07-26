@@ -1,4 +1,4 @@
-﻿// <Snippet17>
+// <Snippet17>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -12,11 +12,11 @@ public class Example
       IsAccessAllowed(@"FILE:\\\c:\users\user001\documents\FinancialInfo.txt");
    }
 
-   private static void IsAccessAllowed(String resource)
+   private static void IsAccessAllowed(string resource)
    {
       CultureInfo[] cultures = { CultureInfo.CreateSpecificCulture("en-US"),
                                  CultureInfo.CreateSpecificCulture("tr-TR") };
-      String scheme = null;
+      string scheme = null;
       int index = resource.IndexOfAny( new Char[] { '\\', '/' } );
       if (index > 0) 
          scheme = resource.Substring(0, index - 1);
@@ -27,7 +27,7 @@ public class Example
          Console.WriteLine("Culture: {0}", CultureInfo.CurrentCulture.DisplayName);
          Console.WriteLine(resource);
          Console.WriteLine("Access allowed: {0}", 
-                           ! String.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase));      
+                           ! string.Equals(disallowed, scheme, StringComparison.CurrentCultureIgnoreCase));      
          Console.WriteLine();
       }   
    }

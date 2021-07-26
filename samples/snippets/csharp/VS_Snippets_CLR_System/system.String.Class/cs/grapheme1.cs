@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.IO;
@@ -15,13 +15,13 @@ public class Example
       sw.WriteLine(singleChar);
             
       sw.WriteLine("{0} = {1} (Culture-sensitive): {2}", grapheme, singleChar, 
-                   String.Equals(grapheme, singleChar, 
+                   string.Equals(grapheme, singleChar, 
                                  StringComparison.CurrentCulture));
       sw.WriteLine("{0} = {1} (Ordinal): {2}", grapheme, singleChar, 
-                   String.Equals(grapheme, singleChar, 
+                   string.Equals(grapheme, singleChar, 
                                  StringComparison.Ordinal));
       sw.WriteLine("{0} = {1} (Normalized Ordinal): {2}", grapheme, singleChar, 
-                   String.Equals(grapheme.Normalize(), 
+                   string.Equals(grapheme.Normalize(), 
                                  singleChar.Normalize(), 
                                  StringComparison.Ordinal));
       sw.Close(); 

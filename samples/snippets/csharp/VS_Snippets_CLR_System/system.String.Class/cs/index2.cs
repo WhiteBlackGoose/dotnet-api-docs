@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -10,7 +10,7 @@ public class Example
 
       s1 = s1.Trim();      
       foreach (var ch in s1) {
-         if (Char.IsPunctuation(ch) | Char.IsWhiteSpace(ch))
+         if (char.IsPunctuation(ch) | char.IsWhiteSpace(ch))
             nWords++;              
       }
       Console.WriteLine("The sentence\n   {0}\nhas {1} words.",

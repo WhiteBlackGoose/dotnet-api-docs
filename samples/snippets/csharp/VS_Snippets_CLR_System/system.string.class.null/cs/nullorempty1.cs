@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
@@ -14,7 +14,7 @@ public class Example
    {
       string str = "";
       // <Snippet1>
-      if (str == null || str.Equals(String.Empty))
+      if (str == null || str.Equals(string.Empty))
       // </Snippet1>   
          Console.WriteLine("Bad string!");      
       else
@@ -25,7 +25,7 @@ public class Example
    {
       string str = null;
       // <Snippet2>
-      if (str == null || str.Equals(String.Empty) || str.Trim().Equals(String.Empty))
+      if (str == null || str.Equals(string.Empty) || str.Trim().Equals(string.Empty))
       // </Snippet2>   
          Console.WriteLine("Bad string!");      
       else
@@ -55,7 +55,7 @@ public class Temperature  : IFormattable
    // <Snippet3>
    public string ToString(string format, IFormatProvider provider) 
    {
-      if (String.IsNullOrEmpty(format)) format = "G";  
+      if (string.IsNullOrEmpty(format)) format = "G";  
       if (provider == null) provider = CultureInfo.CurrentCulture;
       
       switch (format.ToUpperInvariant())
@@ -72,7 +72,7 @@ public class Temperature  : IFormattable
             return (temp + 273.15).ToString();
          default:
             throw new FormatException(
-                  String.Format("The {0} format string is not supported.", 
+                  string.Format("The {0} format string is not supported.", 
                                 format));
       }                                   
    }

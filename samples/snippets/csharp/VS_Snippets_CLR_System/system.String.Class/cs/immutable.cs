@@ -1,4 +1,4 @@
-﻿// <Snippet15>
+// <Snippet15>
 using System;
 using System.IO;
 using System.Text;
@@ -9,7 +9,7 @@ public class Example
    {
       Random rnd = new Random();
       
-      string str = String.Empty;
+      string str = string.Empty;
       StreamWriter sw = new StreamWriter(@".\StringFile.txt", 
                            false, Encoding.Unicode);
 

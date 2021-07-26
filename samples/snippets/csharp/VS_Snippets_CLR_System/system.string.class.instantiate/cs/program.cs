@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -104,7 +104,7 @@ public class Example
       // <Snippet5>
       DateTime dateAndTime = new DateTime(2011, 7, 6, 7, 32, 0);
       double temperature = 68.3;
-      string result = String.Format("At {0:t} on {0:D}, the temperature was {1:F1} degrees Fahrenheit.",
+      string result = string.Format("At {0:t} on {0:D}, the temperature was {1:F1} degrees Fahrenheit.",
                                     dateAndTime, temperature);
       Console.WriteLine(result);
       // The example displays the following output:
