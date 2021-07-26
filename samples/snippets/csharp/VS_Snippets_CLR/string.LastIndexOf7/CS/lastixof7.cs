@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.LastIndexOf(String, Int32)
+//<snippet1>
+// Sample for string.LastIndexOf(string, int)
 using System;
 
 class Sample {

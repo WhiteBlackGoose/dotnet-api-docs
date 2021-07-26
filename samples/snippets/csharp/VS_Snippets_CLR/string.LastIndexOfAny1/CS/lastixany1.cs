@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.LastIndexOfAny(Char[])
+//<snippet1>
+// Sample for string.LastIndexOfAny(Char[])
 using System;
 
 class Sample {

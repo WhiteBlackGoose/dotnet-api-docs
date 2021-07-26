@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Text;
 
@@ -7,10 +7,10 @@ class Example
     public static void Main()
     {
        // Character c; combining characters acute and cedilla; character 3/4
-       string s1 = new String( new char[] {'\u0063', '\u0301', '\u0327', '\u00BE'});
+       string s1 = new string( new char[] {'\u0063', '\u0301', '\u0327', '\u00BE'});
        string s2 = null;
-       string divider = new String('-', 80);
-       divider = String.Concat(Environment.NewLine, divider, Environment.NewLine);
+       string divider = new string('-', 80);
+       divider = string.Concat(Environment.NewLine, divider, Environment.NewLine);
 
        Show("s1", s1);
        Console.WriteLine();

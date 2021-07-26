@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// This example demonstrates the String.Remove() method.
+//<snippet1>
+// This example demonstrates the string.Remove() method.
 using System;
 
 class Sample
