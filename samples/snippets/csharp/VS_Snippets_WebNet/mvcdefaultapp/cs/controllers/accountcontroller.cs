@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -62,7 +62,7 @@ namespace MvcApplication1.Controllers
             }
 
             FormsAuth.SignIn(userName, rememberMe);
-            if (!String.IsNullOrEmpty(returnUrl))
+            if (!string.IsNullOrEmpty(returnUrl))
             {
                 return Redirect(returnUrl);
             }
@@ -174,19 +174,19 @@ namespace MvcApplication1.Controllers
 
         private bool ValidateChangePassword(string currentPassword, string newPassword, string confirmPassword)
         {
-            if (String.IsNullOrEmpty(currentPassword))
+            if (string.IsNullOrEmpty(currentPassword))
             {
                 ModelState.AddModelError("currentPassword", "You must specify a current password.");
             }
             if (newPassword == null || newPassword.Length < MembershipService.MinPasswordLength)
             {
                 ModelState.AddModelError("newPassword",
-                    String.Format(CultureInfo.CurrentCulture,
+                    string.Format(CultureInfo.CurrentCulture,
                          "You must specify a new password of {0} or more characters.",
                          MembershipService.MinPasswordLength));
             }
 
-            if (!String.Equals(newPassword, confirmPassword, StringComparison.Ordinal))
+            if (!string.Equals(newPassword, confirmPassword, StringComparison.Ordinal))
             {
                 ModelState.AddModelError("_FORM", "The new password and confirmation password do not match.");
             }
@@ -196,11 +196,11 @@ namespace MvcApplication1.Controllers
 
         private bool ValidateLogOn(string userName, string password)
         {
-            if (String.IsNullOrEmpty(userName))
+            if (string.IsNullOrEmpty(userName))
             {
                 ModelState.AddModelError("username", "You must specify a username.");
             }
-            if (String.IsNullOrEmpty(password))
+            if (string.IsNullOrEmpty(password))
             {
                 ModelState.AddModelError("password", "You must specify a password.");
             }
@@ -214,22 +214,22 @@ namespace MvcApplication1.Controllers
 
         private bool ValidateRegistration(string userName, string email, string password, string confirmPassword)
         {
-            if (String.IsNullOrEmpty(userName))
+            if (string.IsNullOrEmpty(userName))
             {
                 ModelState.AddModelError("username", "You must specify a username.");
             }
-            if (String.IsNullOrEmpty(email))
+            if (string.IsNullOrEmpty(email))
             {
                 ModelState.AddModelError("email", "You must specify an email address.");
             }
             if (password == null || password.Length < MembershipService.MinPasswordLength)
             {
                 ModelState.AddModelError("password",
-                    String.Format(CultureInfo.CurrentCulture,
+                    string.Format(CultureInfo.CurrentCulture,
                          "You must specify a password of {0} or more characters.",
                          MembershipService.MinPasswordLength));
             }
-            if (!String.Equals(password, confirmPassword, StringComparison.Ordinal))
+            if (!string.Equals(password, confirmPassword, StringComparison.Ordinal))
             {
                 ModelState.AddModelError("_FORM", "The new password and confirmation password do not match.");
             }

@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections;
 using System.Web;
@@ -13,19 +13,19 @@ namespace Samples.AspNet.CS.Controls
       Level=AspNetHostingPermissionLevel.Minimal)]
    public sealed class Employee
    {
-      private String name;
-      private String title;
-      private String alias;
+      private string name;
+      private string title;
+      private string alias;
 
       public Employee():this ("","",""){}
       
-      public Employee (String name, String title, String alias)
+      public Employee (string name, string title, string alias)
       {
          this.name = name;
          this.title = title;
          this.alias = alias;
       }
-      public String Name
+      public string Name
       {
          get
          {
@@ -37,7 +37,7 @@ namespace Samples.AspNet.CS.Controls
          }
       }
       
-      public String Title
+      public string Title
       {
          get
          {
@@ -49,7 +49,7 @@ namespace Samples.AspNet.CS.Controls
          }
       }
       
-      public String Alias
+      public string Alias
       {
          get
          {
@@ -74,10 +74,10 @@ namespace Samples.AspNet.CS.Controls
       Level=AspNetHostingPermissionLevel.Minimal)]
    public sealed class CollectionPropertyControl : Control
    {  
-      private String header;
+      private string header;
       private ArrayList employees = new ArrayList();
       
-      public String Header
+      public string Header
       {
          get
          {

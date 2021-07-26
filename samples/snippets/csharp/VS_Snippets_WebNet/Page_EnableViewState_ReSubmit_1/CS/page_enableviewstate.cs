@@ -1,4 +1,4 @@
-﻿// System.Web.UI.Page.EnableViewState
+// System.Web.UI.Page.EnableViewState
 /*
    The following program demonstrates the 'EnableViewState' property of 'Page' class.
    It displays a TextBox and a Button control on the page. On page load event it
@@ -56,8 +56,8 @@ namespace PageSample
       }
       private void Button_Click(object sender, EventArgs e)
       {
-         String temp = "<br>Name is " + textBoxObj.Text + "<br>";
-         temp += "Saved content of previous page is " + ViewState["name"] as String;
+         string temp = "<br>Name is " + textBoxObj.Text + "<br>";
+         temp += "Saved content of previous page is " + ViewState["name"] as string;
          label2.Text = temp;
       }
       protected override void LoadViewState(object viewState)

@@ -1,4 +1,4 @@
-﻿/*
+/*
    The following program demonstrates the 'RegisterViewStateHandler' method of 'Page' class.
    
    The program creates 'MyForm' derived from 'HtmlForm' and calls 'RegisterViewStateHandler'
@@ -63,8 +63,8 @@ namespace PageSample
       }
       private void Button_Click(object sender, EventArgs e)
       {
-         String temp = "<br>Name is " + textBoxObj.Text + "<br>";
-         temp += "Saved content of previous page is " + ViewState["name"] as String;
+         string temp = "<br>Name is " + textBoxObj.Text + "<br>";
+         temp += "Saved content of previous page is " + ViewState["name"] as string;
          label2.Text = temp;
       }
       
