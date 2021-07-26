@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Windows.Forms;
@@ -36,7 +36,7 @@ public class Form1: Form
         itemColumns[2].Delete();
         itemColumns[3].Delete();
         itemColumns[5].Delete();
-        Console.WriteLine(itemColumns[3].RowState.ToString());
+        Console.WriteLine(itemColumns[3].RowState.Tostring());
 
         // Reject changes on one deletion.
         itemColumns[3].RejectChanges();

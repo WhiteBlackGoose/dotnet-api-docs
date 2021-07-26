@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Windows.Forms;
@@ -20,9 +20,9 @@ public class Form1: Form
         else
         {
             Console.WriteLine("Name {0}",
-                columnMappings["Description"].ToString());
+                columnMappings["Description"].Tostring());
             Console.WriteLine("Index: {0}",
-                columnMappings.IndexOf("Description").ToString());
+                columnMappings.IndexOf("Description").Tostring());
         }
     }
     // </Snippet1>

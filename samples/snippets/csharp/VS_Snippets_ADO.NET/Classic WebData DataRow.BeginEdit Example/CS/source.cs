@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Windows.Forms;
@@ -73,7 +73,7 @@ public class Form1: Form
         System.Data.DataRowChangeEventArgs e)
     {
         DataTable table = (DataTable)  sender;
-        Console.WriteLine("RowChanged " + e.Action.ToString()
+        Console.WriteLine("RowChanged " + e.Action.Tostring()
             + "\table" + e.Row.ItemArray[0]);
     }
     // </Snippet1>

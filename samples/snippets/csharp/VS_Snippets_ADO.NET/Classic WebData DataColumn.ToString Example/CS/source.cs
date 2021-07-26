@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -12,7 +12,7 @@ public class Form1: Form
         // Print the default string of each column in a collection.
         foreach(DataColumn column in table.Columns)
         {
-            Console.WriteLine(column.ToString());
+            Console.WriteLine(column.Tostring());
         }
     }
     // </Snippet1>

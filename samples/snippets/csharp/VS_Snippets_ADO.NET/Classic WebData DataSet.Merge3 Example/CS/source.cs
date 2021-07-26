@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -74,7 +74,7 @@ public class Form1: Form
     private void Row_Changed(object sender,
         DataRowChangeEventArgs e)
     {
-        Console.WriteLine("Row Changed " + e.Action.ToString()
+        Console.WriteLine("Row Changed " + e.Action.Tostring()
             + "\table" + e.Row.ItemArray[0]);
     }
 

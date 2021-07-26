@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 
 public class Sample
@@ -35,7 +35,7 @@ public class Sample
             Console.WriteLine(table.TableName );
             foreach(DataColumn column in table.Columns )
             {
-                Console.WriteLine("{0}", column.ColumnName.ToString() );
+                Console.WriteLine("{0}", column.ColumnName.Tostring() );
             }
             Console.WriteLine();
         }
@@ -61,7 +61,7 @@ public class Sample
 
         // Display names of all relations.
         foreach (DataRelation relation in dataSet.Relations)
-            Console.WriteLine(relation.RelationName.ToString());
+            Console.WriteLine(relation.RelationName.Tostring());
     }
     // </Snippet1>
 }

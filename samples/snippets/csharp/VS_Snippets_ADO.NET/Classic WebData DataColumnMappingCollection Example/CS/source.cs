@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Windows.Forms;
@@ -21,7 +21,7 @@ public class Form1: Form
         for(int i=0;i < tableMapping.ColumnMappings.Count;i++)
         {
             Console.WriteLine("  {0} {1}", i,
-                tableMapping.ColumnMappings[i].ToString());
+                tableMapping.ColumnMappings[i].Tostring());
         }
     }
     // </Snippet1>

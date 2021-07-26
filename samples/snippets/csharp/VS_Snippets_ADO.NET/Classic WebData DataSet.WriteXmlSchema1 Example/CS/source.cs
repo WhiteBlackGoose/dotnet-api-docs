@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -10,19 +10,19 @@ public class Form1: Form
     protected DataGrid dataGrid1;
 
     // <Snippet1>
-    private void WriteSchemaWithStringWriter(DataSet thisDataSet)
+    private void WriteSchemaWithstringWriter(DataSet thisDataSet)
     {
-        // Create a new StringBuilder object.
-        System.Text.StringBuilder builder = new System.Text.StringBuilder();
+        // Create a new stringBuilder object.
+        System.Text.stringBuilder builder = new System.Text.stringBuilder();
 
-        // Create the StringWriter object with the StringBuilder object.
-        System.IO.StringWriter writer = new System.IO.StringWriter(builder);
+        // Create the stringWriter object with the stringBuilder object.
+        System.IO.stringWriter writer = new System.IO.stringWriter(builder);
 
-        // Write the schema into the StringWriter.
+        // Write the schema into the stringWriter.
         thisDataSet.WriteXmlSchema(writer);
 
         // Print the string to the console window.
-        Console.WriteLine(writer.ToString());
+        Console.WriteLine(writer.Tostring());
     }
     // </Snippet1>
 }

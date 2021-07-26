@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -9,15 +9,15 @@ namespace Microsoft.AdoNet.DataSetDemo
     {
         static void Main()
         {
-            string connectionString = GetConnectionString();
-            ConnectToData(connectionString);
+            string connectionstring = GetConnectionstring();
+            ConnectToData(connectionstring);
         }
 
-        private static void ConnectToData(string connectionString)
+        private static void ConnectToData(string connectionstring)
         {
             //Create a SqlConnection to the Northwind database.
             using (SqlConnection connection =
-                       new SqlConnection(connectionString))
+                       new SqlConnection(connectionstring))
             {
                 //Create a SqlDataAdapter for the Suppliers table.
                 SqlDataAdapter adapter = new SqlDataAdapter();
@@ -75,7 +75,7 @@ namespace Microsoft.AdoNet.DataSetDemo
             }
         }
 
-        static private string GetConnectionString()
+        static private string GetConnectionstring()
         {
             // To avoid storing the connection string in your code,
             // you can retrieve it from a configuration file.

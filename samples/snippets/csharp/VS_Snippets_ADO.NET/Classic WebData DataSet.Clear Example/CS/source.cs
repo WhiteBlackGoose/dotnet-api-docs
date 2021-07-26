@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -16,7 +16,7 @@ public class Form1: Form
         foreach(DataTable table in dataSet.Tables)
         {
             Console.WriteLine(table.TableName + "Rows.Count = "
-                + table.Rows.Count.ToString());
+                + table.Rows.Count.Tostring());
         }
         // Clear all rows of each table.
         dataSet.Clear();
@@ -25,7 +25,7 @@ public class Form1: Form
         foreach(DataTable table in dataSet.Tables)
         {
             Console.WriteLine(table.TableName + "Rows.Count = "
-                + table.Rows.Count.ToString());
+                + table.Rows.Count.Tostring());
         }
     }
     // </Snippet1>

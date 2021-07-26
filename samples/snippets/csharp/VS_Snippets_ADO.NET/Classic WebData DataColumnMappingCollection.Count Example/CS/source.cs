@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.Common;
 using System.Windows.Forms;
@@ -17,8 +17,8 @@ public class Form1: Form
         string message = "ColumnMappings:\n";
         for(int i=0;i < mappings.Count;i++)
         {
-            message += i.ToString() + " "
-                + mappings[i].ToString() + "\n";
+            message += i.Tostring() + " "
+                + mappings[i].Tostring() + "\n";
         }
         Console.WriteLine(message);
     }
