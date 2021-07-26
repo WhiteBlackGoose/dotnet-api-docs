@@ -1,4 +1,4 @@
-﻿// <Internal>
+// <Internal>
 // This program contains examples for the following types and methods:
 // System.Net.FileWebRequest.GetResponse;
 // </Internal>
@@ -78,7 +78,7 @@ namespace Mssc.PluggableProtocols.File
         // and display the data on the console.
         while (count > 0)
         {
-          String str = new String(readBuffer, 0, count);
+          string str = new string(readBuffer, 0, count);
           Console.WriteLine(str+"\n");
           count = readStream.Read(readBuffer, 0, 256);
         }

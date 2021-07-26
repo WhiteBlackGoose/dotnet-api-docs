@@ -1,4 +1,4 @@
-﻿// <Internal>
+// <Internal>
 // This program contains snippets applicable to the following:
 // System.Net.AuthenticationManger (Snippet1);
 // System.Net.AuthenticationManger.Register (Snippet2);
@@ -77,7 +77,7 @@ namespace Mssc.Services.Authentication
 
     // The getPage method accesses the selected page and displays its content
     // on the console.
-    private static void getPage(String url)
+    private static void getPage(string url)
     {
       try
       {
@@ -245,7 +245,7 @@ namespace Mssc.Services.Authentication
     {
       bool challengePasses = false;
 
-      String tempChallenge = Challenge.ToUpper();
+      string tempChallenge = Challenge.ToUpper();
 
       // Verify that this is a Basic authorization request and that the requested domain
       // is correct.
@@ -285,7 +285,7 @@ namespace Mssc.Services.Authentication
     // turn, calls the Authenticate method on each of the registered authentication
     // modules, in the order in which they were registered. When the authentication is
     // complete an Authorization object is returned to the WebRequest.
-    public Authorization Authenticate(String challenge, WebRequest request, ICredentials credentials)
+    public Authorization Authenticate(string challenge, WebRequest request, ICredentials credentials)
     {
       Encoding ASCII = Encoding.ASCII;
 

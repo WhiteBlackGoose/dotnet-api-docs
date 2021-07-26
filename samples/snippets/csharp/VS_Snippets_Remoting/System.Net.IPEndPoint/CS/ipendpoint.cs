@@ -1,4 +1,4 @@
-﻿// File name:ipendpoint.cs.
+// File name:ipendpoint.cs.
 
 // <Internal>
 // This program contains snippets applicable to the following:
@@ -39,7 +39,7 @@ namespace Mssc.Services.ConnectionManagement
         "\r\nConnection: Close\r\n\r\n";
       Byte[] ByteGet = ASCII.GetBytes(Get);
       Byte[] RecvBytes = new Byte[256];
-      String strRetPage = null;
+      string strRetPage = null;
 
       Socket socket = null;
 
@@ -80,7 +80,7 @@ namespace Mssc.Services.ConnectionManagement
       socket.Send(ByteGet, ByteGet.Length, 0);
 
       // Receive the server  home page content.
-      Int32 bytes = socket.Receive(RecvBytes, RecvBytes.Length, 0);
+      int bytes = socket.Receive(RecvBytes, RecvBytes.Length, 0);
 
       // Read the first 256 bytes.
       strRetPage = "Default HTML page on " + server + ":\r\n";
@@ -196,7 +196,7 @@ namespace Mssc.Services.ConnectionManagement
     // its content.
     private static string requestServerHomePage(string server, int port)
     {
-      String strRetPage = null;
+      string strRetPage = null;
 
       // Get a socket address using the specified server and port.
       SocketAddress socketAddress = getSocketAddress(server, port);

@@ -1,4 +1,4 @@
-﻿//Types:System.Runtime.Serialization.SerializationException
+//Types:System.Runtime.Serialization.SerializationException
 //Types:System.Runtime.Serialization.SurrogateSelector
 //<snippet1>
 using System;
@@ -10,9 +10,9 @@ using System.Runtime.Serialization.Formatters.Binary;
 // This class is not serializable.
 class Employee
     {
-    public String name, address;
+    public string name, address;
 
-    public Employee(String name, String address)
+    public Employee(string name, string address)
     {
         this.name = name;
         this.address = address;

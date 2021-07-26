@@ -1,4 +1,4 @@
-﻿// System.Net.Sockets.TcpListener
+// System.Net.Sockets.TcpListener
 
 /**
   * This program shows how to use the TcpListener class.
@@ -28,7 +28,7 @@ class MyTcpListener
     try
     {
       // Set the TcpListener on port 13000.
-      Int32 port = 13000;
+      int port = 13000;
       IPAddress localAddr = IPAddress.Parse("127.0.0.1");
 
       // TcpListener server = new TcpListener(port);
@@ -39,7 +39,7 @@ class MyTcpListener
 
       // Buffer for reading data
       Byte[] bytes = new Byte[256];
-      String data = null;
+      string data = null;
 
       // Enter the listening loop.
       while(true)

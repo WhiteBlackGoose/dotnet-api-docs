@@ -1,4 +1,4 @@
-﻿// File name:multicastOperations.cs
+// File name:multicastOperations.cs
 // This example shows how to join a multicast group and perform a muticast
 // data exchange. The OriginatorClient object starts the conversation while
 // the TargetClient responds. The two helper objects Receive and Send
@@ -31,8 +31,8 @@ namespace Mssc.TransportProtocols.Utilities
     // 3) Returns the received data in ASCII format.
     public static string ReceiveUntilStop(UdpClient c)
     {
-        String strData = "";
-        String Ret = "";
+        string strData = "";
+        string Ret = "";
         ASCIIEncoding ASCII = new ASCIIEncoding();
 
         // Establish the communication endpoint.
@@ -70,11 +70,11 @@ namespace Mssc.TransportProtocols.Utilities
       c.Send(GetByteArray(greetings), greetings.Length, ep);
       Thread.Sleep(1000);
 
-      Console.WriteLine(new String(nice));
+      Console.WriteLine(new string(nice));
       c.Send(GetByteArray(nice), nice.Length, ep);
 
       Thread.Sleep(1000);
-      Console.WriteLine(new String(eom));
+      Console.WriteLine(new string(eom));
       c.Send(GetByteArray(eom), eom.Length, ep);
     }
 
@@ -86,11 +86,11 @@ namespace Mssc.TransportProtocols.Utilities
       c.Send(GetByteArray(tGreetings), tGreetings.Length, ep);
       Thread.Sleep(1000);
 
-      Console.WriteLine(new String(tNice));
+      Console.WriteLine(new string(tNice));
       c.Send(GetByteArray(tNice), tNice.Length, ep);
 
       Thread.Sleep(1000);
-      Console.WriteLine(new String(eom));
+      Console.WriteLine(new string(eom));
       c.Send(GetByteArray(eom), eom.Length, ep);
     }
     // Internal utility

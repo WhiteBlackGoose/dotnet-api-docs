@@ -1,4 +1,4 @@
-﻿// System.Net.Sockets.TcpClient main functionality.
+// System.Net.Sockets.TcpClient main functionality.
 
 /**
   * This program shows how to use the TcpClient
@@ -25,8 +25,8 @@ class MyTcpClient
   public static void Main(String[] args)
   {
     // Parse arguments
-    String server;
-    String message;
+    string server;
+    string message;
     if(args.Length < 2)
     {
       message = "This is a test!";
@@ -56,7 +56,7 @@ class MyTcpClient
    * the input parameter.
    **/
 // <Snippet1>
-  static void Connect(String server, String message)
+  static void Connect(string server, string message)
   {
     try
     {
@@ -64,7 +64,7 @@ class MyTcpClient
       // Note, for this client to work you need to have a TcpServer
       // connected to the same address as specified by the server, port
       // combination.
-      Int32 port = 13000;
+      int port = 13000;
       TcpClient client = new TcpClient(server, port);
 
       // Translate the passed message into ASCII and store it as a Byte array.
@@ -85,11 +85,11 @@ class MyTcpClient
       // Buffer to store the response bytes.
       data = new Byte[256];
 
-      // String to store the response ASCII representation.
-      String responseData = String.Empty;
+      // string to store the response ASCII representation.
+      string responseData = string.Empty;
 
       // Read the first batch of the TcpServer response bytes.
-      Int32 bytes = stream.Read(data, 0, data.Length);
+      int bytes = stream.Read(data, 0, data.Length);
       responseData = System.Text.Encoding.ASCII.GetString(data, 0, bytes);
       Console.WriteLine("Received: {0}", responseData);
 

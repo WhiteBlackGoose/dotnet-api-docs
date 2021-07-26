@@ -1,4 +1,4 @@
-﻿// This program shows how to create your own Basic authentication module,
+// This program shows how to create your own Basic authentication module,
 // register it via the AuthenticationManager class and authorize allowed
 // users to access a page on a Web site.
 // Note: In order to run this program you must create a test Web site that performs
@@ -58,7 +58,7 @@ namespace Mssc.System.Net.Authentication
 
     // The getPage method accesses the selected page an displays its content
     // on the console.
-    private static void getPage(String url)
+    private static void getPage(string url)
     {
       try
       {
@@ -227,7 +227,7 @@ namespace Mssc.System.Net.Authentication
     {
       bool challengePasses = false;
 
-      String tempChallenge = Challenge.ToUpper();
+      string tempChallenge = Challenge.ToUpper();
 
       // Verify that this is a Basic authorization request and the requested domain
       // is correct.
@@ -268,7 +268,7 @@ namespace Mssc.System.Net.Authentication
     // modules, in the order they were registered. When the authentication is
     // complete an Authorization object is returned to the WebRequest, as the
     // retunr type of the following routine shows.
-    public Authorization Authenticate(String challenge, WebRequest request, ICredentials credentials)
+    public Authorization Authenticate(string challenge, WebRequest request, ICredentials credentials)
     {
       Encoding ASCII = Encoding.ASCII;
 

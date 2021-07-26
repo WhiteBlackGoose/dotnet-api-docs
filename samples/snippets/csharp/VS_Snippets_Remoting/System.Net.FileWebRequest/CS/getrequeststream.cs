@@ -1,4 +1,4 @@
-﻿// <Internal>
+// <Internal>
 // This program contains examples for the following types and methods:
 // System.Net.FileWebRequest (Snippet1); System.Net.FileWebRequest.Method (Snippet2);
 // System.Net.FileWebRequest.Timeout (Snippet3);
@@ -91,7 +91,7 @@ namespace Mssc.PluggableProtocols.File
                 // sharing of the folder containg the file.
                 // FileWebRequest.Credentials property cannot be used for this purpose.
                 readStream.Write (byteArray, 0, userInput.Length);
-                Console.WriteLine ("\nThe String you entered was successfully written to the file.");
+                Console.WriteLine ("\nThe string you entered was successfully written to the file.");
 
 // </Snippet5>
                 readStream.Close ();
