@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -56,12 +56,12 @@ public class Example
             Console.WriteLine("{0} converts to '{1}'.", number, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Char data type.",
+            Console.WriteLine("{0} is outside the range of the char data type.",
                               number);
          }
       }
       // The example displays the following output:
-      //       -32768 is outside the range of the Char data type.
+      //       -32768 is outside the range of the char data type.
       //       0 converts to ' '.
       //       40 converts to '('.
       //       160 converts to ' '.
@@ -76,7 +76,7 @@ public class Example
    {
       // <Snippet3>
       int[] numbers = { -1, 0, 40, 160, 255, 1028,
-                        2011, 30001, 207154, Int32.MaxValue };
+                        2011, 30001, 207154, int.MaxValue };
       char result;
       foreach (int number in numbers)
       {
@@ -85,11 +85,11 @@ public class Example
             Console.WriteLine("{0} converts to '{1}'.", number, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Char data type.",
+            Console.WriteLine("{0} is outside the range of the char data type.",
                               number);
          }
       }
-      //       -1 is outside the range of the Char data type.
+      //       -1 is outside the range of the char data type.
       //       0 converts to ' '.
       //       40 converts to '('.
       //       160 converts to ' '.
@@ -97,8 +97,8 @@ public class Example
       //       1028 converts to 'Є'.
       //       2011 converts to 'ߛ'.
       //       30001 converts to '由'.
-      //       207154 is outside the range of the Char data type.
-      //       2147483647 is outside the range of the Char data type.
+      //       207154 is outside the range of the char data type.
+      //       2147483647 is outside the range of the char data type.
       // </Snippet3>
    }
 
@@ -114,13 +114,13 @@ public class Example
             Console.WriteLine("{0} converts to '{1}'.", number, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Char data type.",
+            Console.WriteLine("{0} is outside the range of the char data type.",
                               number);
          }
       }
       // The example displays the following output:
-      //       -128 is outside the range of the Char data type.
-      //       -1 is outside the range of the Char data type.
+      //       -128 is outside the range of the char data type.
+      //       -1 is outside the range of the char data type.
       //       40 converts to '('.
       //       80 converts to 'P'.
       //       120 converts to 'x'.
@@ -142,18 +142,18 @@ public class Example
          }
          catch (FormatException)
          {
-            Console.WriteLine("'{0}' is not in the correct format for conversion to a Char.",
+            Console.WriteLine("'{0}' is not in the correct format for conversion to a char.",
                               strng);
          }
          catch (ArgumentNullException) {
-            Console.WriteLine("A null string cannot be converted to a Char.");
+            Console.WriteLine("A null string cannot be converted to a char.");
          }
       }
       // The example displays the following output:
       //       'A' converts to 'A'.
-      //       'This' is not in the correct format for conversion to a Char.
+      //       'This' is not in the correct format for conversion to a char.
       //       '       ' converts to ' '.
-      //       A null string cannot be converted to a Char.
+      //       A null string cannot be converted to a char.
       // </Snippet5>
    }
 
@@ -183,7 +183,7 @@ public class Example
    {
       // <Snippet7>
       uint[] numbers = { UInt32.MinValue, 40, 160, 255, 1028,
-                         2011, 30001, 207154, Int32.MaxValue };
+                         2011, 30001, 207154, int.MaxValue };
       char result;
       foreach (uint number in numbers)
       {
@@ -192,7 +192,7 @@ public class Example
             Console.WriteLine("{0} converts to '{1}'.", number, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Char data type.",
+            Console.WriteLine("{0} is outside the range of the char data type.",
                               number);
          }
       }
@@ -204,8 +204,8 @@ public class Example
       //       1028 converts to 'Є'.
       //       2011 converts to 'ߛ'.
       //       30001 converts to '由'.
-      //       207154 is outside the range of the Char data type.
-      //       2147483647 is outside the range of the Char data type.
+      //       207154 is outside the range of the char data type.
+      //       2147483647 is outside the range of the char data type.
       // </Snippet7>
    }
 
@@ -222,7 +222,7 @@ public class Example
             Console.WriteLine("{0} converts to '{1}'.", number, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Char data type.",
+            Console.WriteLine("{0} is outside the range of the char data type.",
                               number);
          }
       }
@@ -234,8 +234,8 @@ public class Example
       //       1028 converts to 'Є'.
       //       2011 converts to 'ߛ'.
       //       30001 converts to '由'.
-      //       207154 is outside the range of the Char data type.
-      //       9223372036854775807 is outside the range of the Char data type.
+      //       207154 is outside the range of the char data type.
+      //       9223372036854775807 is outside the range of the char data type.
       // </Snippet8>
    }
 
@@ -258,31 +258,31 @@ public class Example
             Console.WriteLine(e.Message);
          }
          catch (InvalidCastException) {
-            Console.WriteLine("Conversion of the {0} value {1} to a Char is not supported.",
+            Console.WriteLine("Conversion of the {0} value {1} to a char is not supported.",
                               value.GetType().Name, value);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Char data type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the char data type.",
                               value.GetType().Name, value);
          }
          catch (NullReferenceException) {
-            Console.WriteLine("Cannot convert a null reference to a Char.");
+            Console.WriteLine("Cannot convert a null reference to a char.");
          }
       }
       // The example displays the following output:
-      //       The Char value r converts to r.
-      //       The String value s converts to s.
-      //       String must be exactly one character long.
+      //       The char value r converts to r.
+      //       The string value s converts to s.
+      //       string must be exactly one character long.
       //       The Byte value 83 converts to S.
-      //       The Int32 value 77 converts to M.
-      //       The Int32 value 109324 is outside the range of the Char data type.
-      //       The Int32 value 335812911 is outside the range of the Char data type.
-      //       Conversion of the DateTime value 3/10/2009 12:00:00 AM to a Char is not supported.
+      //       The int value 77 converts to M.
+      //       The int value 109324 is outside the range of the char data type.
+      //       The int value 335812911 is outside the range of the char data type.
+      //       Conversion of the DateTime value 3/10/2009 12:00:00 AM to a char is not supported.
       //       The UInt32 value 1934 converts to ?.
-      //       The SByte value -17 is outside the range of the Char data type.
-      //       Conversion of the Double value 169.34 to a Char is not supported.
-      //       Conversion of the Decimal value 175.6 to a Char is not supported.
-      //       Cannot convert a null reference to a Char.
+      //       The SByte value -17 is outside the range of the char data type.
+      //       Conversion of the Double value 169.34 to a char is not supported.
+      //       Conversion of the Decimal value 175.6 to a char is not supported.
+      //       Cannot convert a null reference to a char.
       // </Snippet9>
    }
 }
