@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -15,7 +15,7 @@ public class Example
        // Display summary information about the array.
        Console.WriteLine("The original byte array:");
        Console.WriteLine("   Total elements: {0}", bytes.Length);
-       Console.WriteLine("   Length of String Representation: {0}",
+       Console.WriteLine("   Length of string Representation: {0}",
                          BitConverter.ToString(bytes).Length);
        Console.WriteLine("   Sum of elements: {0:N0}", originalTotal);
        Console.WriteLine();
@@ -33,7 +33,7 @@ public class Example
 
        // Display summary information about the restored array.
        Console.WriteLine("   Total elements: {0}", newBytes.Length);
-       Console.WriteLine("   Length of String Representation: {0}",
+       Console.WriteLine("   Length of string Representation: {0}",
                          BitConverter.ToString(newBytes).Length);
        Console.WriteLine("   Sum of elements: {0:N0}", newTotal);
    }
@@ -41,7 +41,7 @@ public class Example
 // The example displays the following output:
 //   The original byte array:
 //      Total elements: 100
-//      Length of String Representation: 299
+//      Length of string Representation: 299
 //      Sum of elements: 5,050
 //
 //   The base 64 string:
@@ -49,6 +49,6 @@ public class Example
 //   Ojs8PT4/QEFCQ0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZA==
 //
 //      Total elements: 100
-//      Length of String Representation: 299
+//      Length of string Representation: 299
 //      Sum of elements: 5,050
 // </Snippet3>

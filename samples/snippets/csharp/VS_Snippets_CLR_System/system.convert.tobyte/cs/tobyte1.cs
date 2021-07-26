@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -94,7 +94,7 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet4>
-      int[] numbers = { Int32.MinValue, -1, 0, 121, 340, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1, 0, 121, 340, int.MaxValue };
       byte result;
       foreach (int number in numbers)
       {
@@ -110,12 +110,12 @@ public class Example
          }
       }
       // The example displays the following output:
-      //       The Int32 value -2147483648 is outside the range of the Byte type.
-      //       The Int32 value -1 is outside the range of the Byte type.
-      //       Converted the Int32 value 0 to the Byte value 0.
-      //       Converted the Int32 value 121 to the Byte value 121.
-      //       The Int32 value 340 is outside the range of the Byte type.
-      //       The Int32 value 2147483647 is outside the range of the Byte type.
+      //       The int value -2147483648 is outside the range of the Byte type.
+      //       The int value -1 is outside the range of the Byte type.
+      //       Converted the int value 0 to the Byte value 0.
+      //       Converted the int value 121 to the Byte value 121.
+      //       The int value 340 is outside the range of the Byte type.
+      //       The int value 2147483647 is outside the range of the Byte type.
       // </Snippet4>
    }
 
@@ -179,15 +179,15 @@ public class Example
       }
       // The example displays the following output:
       //       Converted the Boolean value True to the Byte value 1.
-      //       The Int32 value -12 is outside the range of the Byte type.
-      //       Converted the Int32 value 163 to the Byte value 163.
-      //       The Int32 value 935 is outside the range of the Byte type.
-      //       Converted the Char value x to the Byte value 120.
-      //       Converted the String value 104 to the Byte value 104.
-      //       The String value 103.0 is not in a recognizable format.
-      //       The String value -1 is outside the range of the Byte type.
-      //       The String value 1.00e2 is not in a recognizable format.
-      //       The String value One is not in a recognizable format.
+      //       The int value -12 is outside the range of the Byte type.
+      //       Converted the int value 163 to the Byte value 163.
+      //       The int value 935 is outside the range of the Byte type.
+      //       Converted the char value x to the Byte value 120.
+      //       Converted the string value 104 to the Byte value 104.
+      //       The string value 103.0 is not in a recognizable format.
+      //       The string value -1 is outside the range of the Byte type.
+      //       The string value 1.00e2 is not in a recognizable format.
+      //       The string value One is not in a recognizable format.
       //       Converted the Double value 100 to the Byte value 100.
       // </Snippet6>
    }

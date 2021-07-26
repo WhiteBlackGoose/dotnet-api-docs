@@ -1,11 +1,11 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class BooleanConversion
 {
    public static void Main()
    {
-      String[] values = { null, String.Empty, "true", "TrueString",
+      String[] values = { null, string.Empty, "true", "TrueString",
                           "False", "    false    ", "-1", "0" };
       foreach (var value in values) {
          try

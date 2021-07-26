@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -95,8 +95,8 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet4>
-      int[] numbers = { Int32.MinValue, -201649, -68, 0, 612, 4038907,
-                        Int32.MaxValue };
+      int[] numbers = { int.MinValue, -201649, -68, 0, 612, 4038907,
+                        int.MaxValue };
       bool result;
 
       foreach (int number in numbers)
@@ -204,7 +204,7 @@ public class Example
    private static void ConvertUInt32()
    {
       // <Snippet9>
-      uint[] numbers = { UInt32.MinValue, 612, 4038907, Int32.MaxValue };
+      uint[] numbers = { UInt32.MinValue, 612, 4038907, int.MaxValue };
       bool result;
 
       foreach (uint number in numbers)
@@ -242,7 +242,7 @@ public class Example
    private static void ConvertObject()
    {
       // <Snippet11>
-      object[] objects = { 16.33, -24, 0, "12", "12.7", String.Empty,
+      object[] objects = { 16.33, -24, 0, "12", "12.7", string.Empty,
                            "1String", "True", "false", null,
                            new System.Collections.ArrayList() };
 
@@ -250,7 +250,7 @@ public class Example
       {
          Console.Write("{0,-40}  -->  ",
                        obj != null ?
-                       String.Format("{0} ({1})", obj, obj.GetType().Name) :
+                       string.Format("{0} ({1})", obj, obj.GetType().Name) :
                        "null");
          try {
             Console.WriteLine("{0}", Convert.ToBoolean(obj));
@@ -264,14 +264,14 @@ public class Example
       }
       // The example displays the following output:
       //       16.33 (Double)                            -->  True
-      //       -24 (Int32)                               -->  True
-      //       0 (Int32)                                 -->  False
-      //       12 (String)                               -->  Bad Format
-      //       12.7 (String)                             -->  Bad Format
-      //        (String)                                 -->  Bad Format
-      //       1String (String)                          -->  Bad Format
-      //       True (String)                             -->  True
-      //       false (String)                            -->  False
+      //       -24 (int)                               -->  True
+      //       0 (int)                                 -->  False
+      //       12 (string)                               -->  Bad Format
+      //       12.7 (string)                             -->  Bad Format
+      //        (string)                                 -->  Bad Format
+      //       1String (string)                          -->  Bad Format
+      //       True (string)                             -->  True
+      //       false (string)                            -->  False
       //       null                                      -->  False
       //       System.Collections.ArrayList (ArrayList)  -->  No Conversion
       // </Snippet11>
