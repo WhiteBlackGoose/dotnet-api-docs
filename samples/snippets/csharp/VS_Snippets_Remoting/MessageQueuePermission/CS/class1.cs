@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 
 using System;
 using System.Messaging;
@@ -50,7 +50,7 @@ public class MessageQueuePermissionExample
 
     // Demonstrates the following MessageQueuePermission constructor:
     // public #ctor (MessageQueuePermissionAccess permissionAccess,
-    //  String path)
+    //  string path)
     public void CreatePermission2()
     {
         // <snippet2>
@@ -63,7 +63,7 @@ public class MessageQueuePermissionExample
 
     // Demonstrates the following MessageQueuePermission constructor:
     // public #ctor (MessageQueuePermissionAccess permissionAccess,
-    //  String machineName, String label, String category)
+    //  string machineName, string label, string category)
     public void CreatePermission3()
     {
         // <snippet3>

@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 
 using System;
 using System.Messaging;
@@ -330,9 +330,9 @@ public class QueueExample
         // Send the message.
         queue.Send(msg, MessageQueueTransactionType.Single);
 
-        // Set the formatter to indicate the message body contains a String.
+        // Set the formatter to indicate the message body contains a string.
         queue.Formatter = new XmlMessageFormatter(new Type[]
-            {typeof(String)});
+            {typeof(string)});
 
         // Receive the message from the queue. Because the Id of the message
         // is not specified, it might not be the message just sent.
@@ -358,9 +358,9 @@ public class QueueExample
         // Simulate doing other work so the message has time to arrive.
         System.Threading.Thread.Sleep(TimeSpan.FromSeconds(10.0));
 
-        // Set the formatter to indicate the message body contains a String.
+        // Set the formatter to indicate the message body contains a string.
         queue.Formatter = new XmlMessageFormatter(new Type[]
-            {typeof(String)});
+            {typeof(string)});
 
         // Receive the message from the queue.  Because the Id of the message
         // , it might not be the message just sent.

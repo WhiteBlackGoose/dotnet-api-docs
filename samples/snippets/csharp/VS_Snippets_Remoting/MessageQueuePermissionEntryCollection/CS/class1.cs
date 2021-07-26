@@ -1,4 +1,4 @@
-﻿// <snippet0>
+// <snippet0>
 
 using System;
 using System.Messaging;
@@ -40,7 +40,7 @@ public class MessageQueuePermissionEntryCollectionExample
     }
 
     // Demonstrates:
-    // public Int32 Add (MessageQueuePermissionEntry value)
+    // public int Add (MessageQueuePermissionEntry value)
     public void AddExample()
     {
         // <snippet1>
@@ -190,7 +190,7 @@ public class MessageQueuePermissionEntryCollectionExample
     }
 
     // Demonstrates:
-    // public Void CopyTo (MessageQueuePermissionEntry[] array, Int32 index)
+    // public Void CopyTo (MessageQueuePermissionEntry[] array, int index)
     public void CopyToExample()
     {
         // <snippet5>
@@ -234,7 +234,7 @@ public class MessageQueuePermissionEntryCollectionExample
     }
 
     // Demonstrates:
-    // public Int32 IndexOf (MessageQueuePermissionEntry value)
+    // public int IndexOf (MessageQueuePermissionEntry value)
     public void IndexOfExample()
     {
         // <snippet6>
@@ -267,7 +267,7 @@ public class MessageQueuePermissionEntryCollectionExample
     }
 
     // Demonstrates:
-    // public Void Insert (Int32 index, MessageQueuePermissionEntry value)
+    // public Void Insert (int index, MessageQueuePermissionEntry value)
     public void InsertExample()
     {
         // <snippet7>

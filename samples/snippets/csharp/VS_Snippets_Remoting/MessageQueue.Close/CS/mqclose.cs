@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Messaging;
 
@@ -64,7 +64,7 @@ namespace MyProject
 
 			// Set the formatter to indicate body contains an Order.
 			myQueue.Formatter = new XmlMessageFormatter(new Type[]
-				{typeof(String)});
+				{typeof(string)});
 			
 			try
 			{

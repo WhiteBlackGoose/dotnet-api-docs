@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Messaging;
 
@@ -75,7 +75,7 @@ namespace MyProject
 
             // Set the formatter.
             myQueue.Formatter = new XmlMessageFormatter(new Type[]
-                {typeof(String)});
+                {typeof(string)});
 			
             // Create a transaction.
             MessageQueueTransaction myTransaction = new
@@ -91,7 +91,7 @@ namespace MyProject
                 Message myMessage =	myQueue.Receive(new
                     TimeSpan(0,0,5), myTransaction);
 				
-                String myOrder = (String)myMessage.Body;
+                string myOrder = (string)myMessage.Body;
 
                 // Display message information.
                 Console.WriteLine(myOrder);

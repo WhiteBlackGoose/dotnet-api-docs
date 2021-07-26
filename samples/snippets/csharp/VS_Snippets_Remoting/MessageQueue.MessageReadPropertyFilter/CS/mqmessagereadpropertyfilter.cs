@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Messaging;
 
@@ -45,14 +45,14 @@ namespace MyProject
 
 			// Set the formatter for the Message.
 			myQueue.Formatter = new XmlMessageFormatter(new Type[]
-				{typeof(String)});
+				{typeof(string)});
 
 			// Receive the first message in the queue.
 			Message myMessage = myQueue.Receive();
 
 			// Display selected properties.
 			Console.WriteLine("Label: " + myMessage.Label);
-			Console.WriteLine("Body: " + (String)myMessage.Body);
+			Console.WriteLine("Body: " + (string)myMessage.Body);
 	
 			return;
 		}
@@ -72,7 +72,7 @@ namespace MyProject
 
 			// Set the formatter for the Message.
 			myQueue.Formatter = new XmlMessageFormatter(new Type[]
-				{typeof(String)});
+				{typeof(string)});
 
 			// Receive the first message in the queue.
 			Message myMessage = myQueue.Receive();
@@ -80,7 +80,7 @@ namespace MyProject
 			// Display selected properties.
 			Console.WriteLine("Encryption algorithm: " +
 				myMessage.EncryptionAlgorithm.ToString());
-			Console.WriteLine("Body: " + (String)myMessage.Body);
+			Console.WriteLine("Body: " + (string)myMessage.Body);
 	
 			return;
 		}
@@ -108,7 +108,7 @@ namespace MyProject
 
 			// Set the formatter for the Message.
 			myQueue.Formatter = new XmlMessageFormatter(new Type[]
-				{typeof(String)});
+				{typeof(string)});
 
 			// Receive the first message in the queue.
 			Message myMessage = myQueue.Receive();
