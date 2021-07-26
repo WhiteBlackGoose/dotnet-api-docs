@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -19,7 +19,7 @@ public class Example
       //    Greek Small Letter Beta (U+03B2)
       //    a high-surrogate value (U+D8FF)
       //    an invalid low surrogate (U+01FF)
-      String s = "za\u0306\u01FD\u03B2";
+      string s = "za\u0306\u01FD\u03B2";
 
       // Encode the string using little-endian byte order.
       int index = encExc.GetByteCount(s);
@@ -55,13 +55,13 @@ public class Example
 //    Decoding with error detection:
 //    System.Text.DecoderFallbackException: Unable to translate bytes [FF][D8][FF][01] at index
 //    20 from specified code page to Unicode.
-//       at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, Int32 index)
-//       at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, Int32 index
+//       at System.Text.DecoderExceptionFallbackBuffer.Throw(Byte[] bytesUnknown, int index)
+//       at System.Text.DecoderExceptionFallbackBuffer.Fallback(Byte[] bytesUnknown, int index
 //    )
 //       at System.Text.DecoderFallbackBuffer.InternalFallback(Byte[] bytes, Byte* pBytes)
-//       at System.Text.UTF32Encoding.GetCharCount(Byte* bytes, Int32 count, DecoderNLS baseDeco
+//       at System.Text.UTF32Encoding.GetCharCount(Byte* bytes, int count, DecoderNLS baseDeco
 //    der)
-//       at System.Text.UTF32Encoding.GetString(Byte[] bytes, Int32 index, Int32 count)
+//       at System.Text.UTF32Encoding.GetString(Byte[] bytes, int index, int count)
 //       at Example.PrintDecodedString(Byte[] bytes, Encoding enc)
 //
 //    Decoding without error detection:

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -16,7 +16,7 @@ public class Example
       //    Combining Breve (U+0306)
       //    Latin Small Letter AE With Acute (U+01FD)
       //    Greek Small Letter Beta (U+03B2)
-      String str = "za\u0306\u01FD\u03B2";
+      string str = "za\u0306\u01FD\u03B2";
 
       // barrBE uses the big-endian byte order.
       byte[] barrBE = new byte[u32BE.GetByteCount(str)];

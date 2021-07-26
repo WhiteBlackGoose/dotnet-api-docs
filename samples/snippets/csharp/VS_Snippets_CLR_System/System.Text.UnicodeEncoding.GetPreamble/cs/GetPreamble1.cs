@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text;
@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      String s = "This is a string to write to a file using UTF-16 encoding.";
+      string s = "This is a string to write to a file using UTF-16 encoding.";
 
       // Write a file using a Unicode encoding object without a BOM.
       var enc = new UnicodeEncoding(! BitConverter.IsLittleEndian, false);
@@ -19,7 +19,7 @@ public class Example
       WriteToFile(@".\Preamble.txt", enc, bytes);
    }
 
-   private static void WriteToFile(String fn, Encoding enc, Byte[] bytes)
+   private static void WriteToFile(string fn, Encoding enc, Byte[] bytes)
    {
       var fs = new FileStream(fn, FileMode.Create);
       Byte[] preamble = enc.GetPreamble();

@@ -1,4 +1,4 @@
-﻿// The following code example encodes a string into an array of bytes, and then decodes the bytes into an array of characters.
+// The following code example encodes a string into an array of bytes, and then decodes the bytes into an array of characters.
 
 // <Snippet1>
 using System;
@@ -20,7 +20,7 @@ public class SamplesUTF32Encoding  {
       //    Greek Small Letter Beta (U+03B2)
       //    a high-surrogate value (U+D8FF)
       //    a low-surrogate value (U+DCFF)
-      String myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
+      string myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
 
       // barrBE uses the big-endian byte order.
       byte[] barrBE = new byte[u32BE.GetByteCount( myStr )];

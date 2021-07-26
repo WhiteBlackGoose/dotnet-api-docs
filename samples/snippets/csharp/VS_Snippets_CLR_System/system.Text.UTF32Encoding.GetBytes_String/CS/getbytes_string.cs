@@ -1,4 +1,4 @@
-﻿// The following code example determines the number of bytes required to encode a string,
+// The following code example determines the number of bytes required to encode a string,
 // then encodes the string and displays the resulting bytes.
 
 // <Snippet1>
@@ -17,7 +17,7 @@ public class SamplesUTF32Encoding  {
       //    Greek Small Letter Beta (U+03B2)
       //    a high-surrogate value (U+D8FF)
       //    a low-surrogate value (U+DCFF)
-      String myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
+      string myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
 
       // Create instances of different encodings.
       UTF7Encoding  u7       = new UTF7Encoding();
@@ -34,7 +34,7 @@ public class SamplesUTF32Encoding  {
       PrintCountsAndBytes( myStr, u32Bom );
    }
 
-   public static void PrintCountsAndBytes( String s, Encoding enc )  {
+   public static void PrintCountsAndBytes( string s, Encoding enc )  {
 
       // Display the name of the encoding used.
       Console.Write( "{0,-25} :", enc.ToString() );

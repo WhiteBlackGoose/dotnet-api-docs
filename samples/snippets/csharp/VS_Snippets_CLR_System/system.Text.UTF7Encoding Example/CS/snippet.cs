@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -8,7 +8,7 @@ class UTF7EncodingExample {
         UTF7Encoding utf7 = new UTF7Encoding();
         
         // A Unicode string with two characters outside a 7-bit code range.
-        String unicodeString =
+        string unicodeString =
             "This Unicode string contains two characters " +
             "with codes outside a 7-bit code range, " +
             "Pi (\u03a0) and Sigma (\u03a3).";
@@ -26,7 +26,7 @@ class UTF7EncodingExample {
         
         // Decode bytes back to string.
         // Notice Pi and Sigma characters are still present.
-        String decodedString = utf7.GetString(encodedBytes);
+        string decodedString = utf7.GetString(encodedBytes);
         Console.WriteLine();
         Console.WriteLine("Decoded bytes:");
         Console.WriteLine(decodedString);

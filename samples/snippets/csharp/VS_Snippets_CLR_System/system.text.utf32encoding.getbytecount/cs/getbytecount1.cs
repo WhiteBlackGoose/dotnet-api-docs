@@ -1,10 +1,10 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
 class UTF8EncodingExample {
     public static void Main() {
-        String chars = "UTF-32 Encoding Example";
+        string chars = "UTF-32 Encoding Example";
         Encoding enc = Encoding.UTF32;
 
         Console.WriteLine("Bytes needed to encode '{0}':", chars);

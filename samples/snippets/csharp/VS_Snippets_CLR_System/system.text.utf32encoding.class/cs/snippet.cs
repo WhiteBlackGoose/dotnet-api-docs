@@ -1,4 +1,4 @@
-﻿ // <Snippet1>
+ // <Snippet1>
 using System;
 using System.Text;
 
@@ -10,7 +10,7 @@ public class Example
         var enc = new UTF32Encoding();
         
         // Create a string.
-        String s = "This string contains two characters " +
+        string s = "This string contains two characters " +
                    "with codes outside the ASCII code range: " +
                    "Pi (\u03A0) and Sigma (\u03A3).";
         Console.WriteLine("Original string:");
@@ -29,7 +29,7 @@ public class Example
         
         // Decode bytes back to string.
         // Notice Pi and Sigma characters are still present.
-        String decodedString = enc.GetString(encodedBytes);
+        string decodedString = enc.GetString(encodedBytes);
         Console.WriteLine();
         Console.WriteLine("Decoded string:");
         Console.WriteLine("   {0}", decodedString);

@@ -1,11 +1,11 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
 class UnicodeEncodingExample {
     public static void Main() {
         Byte[] bytes;
-        String chars = "Unicode Encoding Example";
+        string chars = "Unicode Encoding Example";
         
         UnicodeEncoding Unicode = new UnicodeEncoding();
         

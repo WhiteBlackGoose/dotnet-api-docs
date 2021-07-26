@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text;
 
@@ -8,7 +8,7 @@ public class Example
    {
       var utf32 = new UTF32Encoding(! BitConverter.IsLittleEndian, true);
 
-      String s = "It was the best of times, it was the worst of times...";
+      string s = "It was the best of times, it was the worst of times...";
 
       // We need to dimension the array, since we'll populate it with 2 method calls.
       Byte[] bytes = new Byte[utf32.GetByteCount(s) + utf32.GetPreamble().Length];
@@ -17,7 +17,7 @@ public class Example
       utf32.GetBytes(s, 0, s.Length, bytes, utf32.GetPreamble().Length);
 
       // Decode the byte array.
-      String s2 = utf32.GetString(bytes, 0, bytes.Length);
+      string s2 = utf32.GetString(bytes, 0, bytes.Length);
       Console.WriteLine(s2);
    }
 }

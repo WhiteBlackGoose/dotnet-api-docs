@@ -1,4 +1,4 @@
-﻿// The following code example creates instances of the UTF32Encoding class using different parameter values and then checks them for equality.
+// The following code example creates instances of the UTF32Encoding class using different parameter values and then checks them for equality.
 
 // <Snippet1>
 using System;
@@ -23,7 +23,7 @@ public class SamplesUTF32Encoding  {
       CompareEncodings( u32ff, "u32ff" );
    }
 
-   public static void CompareEncodings( UTF32Encoding a, String name )  {
+   public static void CompareEncodings( UTF32Encoding a, string name )  {
 
       // Create different instances of UTF32Encoding using the ctor with three parameters.
       UTF32Encoding u32ttt = new UTF32Encoding( true, true, true );
