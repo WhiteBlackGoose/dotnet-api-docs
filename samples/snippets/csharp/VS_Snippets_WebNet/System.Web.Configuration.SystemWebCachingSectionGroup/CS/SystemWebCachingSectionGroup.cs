@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Configuration;
 using System.Web.Configuration;
@@ -12,7 +12,7 @@ namespace Samples.AspNet
 
         static void Main(string[] args)
         {
-            string inputStr = String.Empty;
+            string inputStr = string.Empty;
 
             // Define a regular expression to allow only 
             // alphanumeric inputs that are at most 20 character 
@@ -68,7 +68,7 @@ namespace Samples.AspNet
                             cachingSectionGroup.Cache;
                        
                         // Display one of its properties.
-                        msg = String.Format(
+                        msg = string.Format(
                         "Cache disable expiration: {0}\n",
                         cache.DisableExpiration);
 
@@ -87,7 +87,7 @@ namespace Samples.AspNet
                             cachingSectionGroup.OutputCache;
 
                         // Display one of its properties.
-                        msg = String.Format(
+                        msg = string.Format(
                         "Enable output cache: {0}\n",
                         outputCache.EnableOutputCache.ToString());
 
@@ -109,7 +109,7 @@ namespace Samples.AspNet
                         // profiles.
                         int profilesCount = 
                             outputCacheSettings.OutputCacheProfiles.Count;
-                        msg = String.Format(
+                        msg = string.Format(
                         "Number of profiles: {0}\n",
                         profilesCount.ToString());
 
@@ -128,7 +128,7 @@ namespace Samples.AspNet
                             cachingSectionGroup.SqlCacheDependency;
 
                         // Display one of its attributes.
-                        msg = String.Format(
+                        msg = string.Format(
                         "Sql cache dependency enabled: {0}\n",
                         sqlCacheDependency.Enabled.ToString());
 
@@ -159,7 +159,7 @@ namespace Samples.AspNet
                         // allSections.AppendLine();
                         // foreach (Object section in sections)
                         // {
-                        //    msg = String.Format(
+                        //    msg = string.Format(
                         //     "Section{0}:  {1}\n",
                         //    i, section.ToString());
                         //    allSections.AppendLine(msg);

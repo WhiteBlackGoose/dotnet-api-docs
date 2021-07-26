@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Specialized;
 using System.IO;
@@ -37,7 +37,7 @@ class UsingSqlCacheDependencyDatabase
 // <Snippet2>
 
         // Get the current PollTime property value.
-        Int32 pollTimeValue = sqlCdd.PollTime;
+        int pollTimeValue = sqlCdd.PollTime;
 
         // Set the PollTime property to 1000 milliseconds.
         sqlCdd.PollTime = 1000;

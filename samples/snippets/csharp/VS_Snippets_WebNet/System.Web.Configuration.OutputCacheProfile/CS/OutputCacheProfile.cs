@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Web.Configuration;
 
@@ -33,7 +33,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet2>
 
       // Get the current VaryByHeader.
-      String varyByHeaderValue = 
+      string varyByHeaderValue = 
           outputCacheProfile.VaryByHeader;
 
       // Set the VaryByHeader.
@@ -45,7 +45,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet3>
 
       // Get the current VaryByControl.
-      String varyByControlValue = 
+      string varyByControlValue = 
           outputCacheProfile.VaryByControl;
 
       // Set the VaryByControl.
@@ -80,7 +80,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet7>
 
       // Get the current SqlDependency.
-      String sqlDependencyValue = 
+      string sqlDependencyValue = 
           outputCacheProfile.SqlDependency;
 
       // Set the SqlDependency.
@@ -92,7 +92,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet8>
 
       // Get the current VaryByParam.
-      String varyByParamValue = 
+      string varyByParamValue = 
           outputCacheProfile.VaryByParam;
 
       // Set the VaryByParam.
@@ -104,7 +104,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet9>
 
       // Get the current VaryByCustom.
-      String varyByCustomValue = 
+      string varyByCustomValue = 
           outputCacheProfile.VaryByCustom;
 
       // Set the VaryByCustom.
@@ -116,7 +116,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet10>
 
       // Get the current Duration.
-      Int32 durationValue = 
+      int durationValue = 
           outputCacheProfile.Duration;
 
       // Set the Duration property to 0.
@@ -127,7 +127,7 @@ namespace Samples.Aspnet.SystemWebConfiguration
 // <Snippet11>
 
       // Get the current Name.
-      String nameValue = 
+      string nameValue = 
           outputCacheProfile.Name;
 
       // Set the Name.

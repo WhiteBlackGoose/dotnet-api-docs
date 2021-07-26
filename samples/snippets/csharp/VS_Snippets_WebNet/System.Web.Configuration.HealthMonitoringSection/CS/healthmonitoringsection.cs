@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Collections.Specialized;
@@ -174,7 +174,7 @@ healthMonitoringSection.EventMappings.Add(new EventMappingSettings(
 // Add an EventMappingsSettings object to the EventMappings collection property.
 healthMonitoringSection.EventMappings.Add(new EventMappingSettings(
     "Success Audits", "System.Web.Management.WebAuditEvent, System.Web",
-    512, Int32.MaxValue));
+    512, int.MaxValue));
 // </Snippet32>
 
 // <Snippet33>
@@ -256,7 +256,7 @@ ProfileSettings profileSetting = new ProfileSettings("Default");
 profileSetting.Name = "Custom";
 // </Snippet62>
 // <Snippet63>
-profileSetting.MaxLimit = Int32.MaxValue;
+profileSetting.MaxLimit = int.MaxValue;
 // </Snippet63>
 // <Snippet64>
 profileSetting.MinInstances = 1;
@@ -284,7 +284,7 @@ healthMonitoringSection.Profiles.Add(new ProfileSettings("Critical",
 // <Snippet53>
 // Add a ProfileSettings object to the Profiles collection property.
 healthMonitoringSection.Profiles.Add(new ProfileSettings("Targeted", 
-    1, Int32.MaxValue, new TimeSpan(0, 0, 10), 
+    1, int.MaxValue, new TimeSpan(0, 0, 10), 
     "MyEvaluators.MyTargetedEvaluator, MyCustom.dll"));
 // </Snippet53>
 
@@ -397,7 +397,7 @@ ruleSetting.Provider = "EventLogProvider";
 ruleSetting.Profile = "Custom";
 // </Snippet88>
 // <Snippet89>
-ruleSetting.MaxLimit = Int32.MaxValue;
+ruleSetting.MaxLimit = int.MaxValue;
 // </Snippet89>
 // <Snippet90>
 ruleSetting.MinInstances = 1;
@@ -420,14 +420,14 @@ healthMonitoringSection.Rules.Add(new RuleSettings("All Errors Default",
 // <Snippet75>
 // Add a RuleSettings object to the Rules collection property.
 healthMonitoringSection.Rules.Add(new RuleSettings("Failure Audits Default",
-    "Failure Audits", "EventLogProvider", "Default", 1, Int32.MaxValue,
+    "Failure Audits", "EventLogProvider", "Default", 1, int.MaxValue,
     new TimeSpan(0, 1, 0)));
 // </Snippet75>
 
 // <Snippet76>
 // Add a RuleSettings object to the Rules collection property.
 healthMonitoringSection.Rules.Add(new RuleSettings("Failure Audits Custom",
-    "Failure Audits", "EventLogProvider", "Custom", 1, Int32.MaxValue,
+    "Failure Audits", "EventLogProvider", "Custom", 1, int.MaxValue,
     new TimeSpan(0, 1, 0), "MyEvaluators.MyCustomeEvaluator2, MyCustom.dll"));
 // </Snippet76>
 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Web.Configuration;
 
@@ -34,7 +34,7 @@ class UsingSqlCacheDependencySection
     // <Snippet3>
 
         // Get the current PollTime property value.
-        Int32 pollTimeValue = sqlDs.PollTime;
+        int pollTimeValue = sqlDs.PollTime;
 
         // Set the PollTime property to 500 milliseconds.
         sqlDs.PollTime = 500;

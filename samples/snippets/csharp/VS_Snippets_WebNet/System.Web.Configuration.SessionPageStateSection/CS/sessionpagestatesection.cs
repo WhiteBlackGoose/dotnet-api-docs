@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Configuration;
 using System.Web.Configuration;
@@ -32,7 +32,7 @@ namespace Microsoft.Samples.AspNet.Configuration
             int historySize =
                 sessionPageState.HistorySize;
 
-            string msg = String.Format(
+            string msg = string.Format(
             "Current history size: {0}\n",
             historySize.ToString());
 
@@ -49,7 +49,7 @@ namespace Microsoft.Samples.AspNet.Configuration
                 historySize =
                     sessionPageState.HistorySize;
 
-                msg = String.Format(
+                msg = string.Format(
                 "New history size: {0}\n",
                 historySize.ToString());
 

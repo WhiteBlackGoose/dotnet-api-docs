@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
@@ -15,8 +15,8 @@ namespace Samples.AspNet
 
     static void Main(string[] args)
     {
-       string inputStr = String.Empty;
-       string option = String.Empty;
+       string inputStr = string.Empty;
+       string option = string.Empty;
 
       // Define a regular expression to allow only 
       // alphanumeric inputs that are at most 20 characters 
@@ -81,7 +81,7 @@ namespace Samples.AspNet
             // Get the alias.
             alias = clientTarget.Alias;
 
-            msg = String.Format(
+            msg = string.Format(
                   "Alias:      {0}\n",
                   alias);
             
@@ -102,7 +102,7 @@ namespace Samples.AspNet
             // Get he user agent.
             userAgent = clientTarget.UserAgent;
 
-            msg = String.Format(
+            msg = string.Format(
                   "User Agent: {0}\n",
                   userAgent);
 
@@ -133,7 +133,7 @@ namespace Samples.AspNet
             alias = clientTarget.Alias;
             userAgent = clientTarget.UserAgent;
 
-            msg = String.Format(
+            msg = string.Format(
                   "Alias:      {0}\nUser Agent: {1}\n",
                   alias, userAgent);
 
@@ -177,7 +177,7 @@ namespace Samples.AspNet
             alias = clientTarget.Alias;
             userAgent = clientTarget.UserAgent;
 
-            msg = String.Format(
+            msg = string.Format(
                   "Alias:      {0}\nUser Agent: {1}\n",
                   alias, userAgent);
 
@@ -226,7 +226,7 @@ namespace Samples.AspNet
               alias = clTarget.Alias;
               userAgent = clTarget.UserAgent;
 
-              msg = String.Format(
+              msg = string.Format(
                     "Alias:      {0}\nUser Agent: {1}\n",
                     alias, userAgent);
               

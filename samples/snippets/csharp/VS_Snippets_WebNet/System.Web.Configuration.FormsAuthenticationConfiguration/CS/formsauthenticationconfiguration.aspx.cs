@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -43,14 +43,14 @@ public partial class FormsAuthenticationConfiguration_Test : System.Web.UI.Page
             string cookieName = formsAuthentication.Name;
             // </Snippet21>
   
-            buffer.AppendLine(String.Format("Cookie name: {0} <br/>", cookieName));
+            buffer.AppendLine(string.Format("Cookie name: {0} <br/>", cookieName));
             
             // Display cookie name
             // Label1.Text = buffer.ToString();
         }
         catch (ConfigurationErrorsException e)
         {
-            buffer.AppendLine(String.Format("[Accessing AuthenticationSection: {0}]",
+            buffer.AppendLine(string.Format("[Accessing AuthenticationSection: {0}]",
                 e.ToString()));
             // Display error.
             // Label1.Text = buffer.ToString();
