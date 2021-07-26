@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Split
 {
@@ -58,7 +58,7 @@ namespace Split
             string s = "You win some. You lose some.";
             char[] separators = new char[] { ' ', '.' };
 
-            string[] subs = s.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            string[] subs = s.Split(separators, stringSplitOptions.RemoveEmptyEntries);
 
             foreach (var sub in subs)
             {

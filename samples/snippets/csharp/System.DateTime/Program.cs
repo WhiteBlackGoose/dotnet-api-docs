@@ -1,11 +1,11 @@
-﻿namespace SystemDateTimeReference
+namespace SystemDateTimeReference
 {
     class Program
     {
         static void Main(string[] args)
         {
             //Instantiation.Snippets();
-            //StringFormat.Snippets();
+            //stringFormat.Snippets();
             //Parsing.Snippets();
             //Resolution.Snippets();
             //CalendarSamples.Snippets();

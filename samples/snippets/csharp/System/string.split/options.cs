@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Split
 {
@@ -7,8 +7,8 @@ namespace Split
         public static void Main3()
         {
             //<snippet1>
-            // This example demonstrates the String.Split() methods that use
-            // the StringSplitOptions enumeration.
+            // This example demonstrates the string.Split() methods that use
+            // the stringSplitOptions enumeration.
             string s1 = ",ONE,,TWO,,,THREE,,";
             string s2 = "[stop]" +
                         "ONE[stop][stop]" +
@@ -29,27 +29,27 @@ namespace Split
             // Split a string delimited by characters and return all elements.
             Console.WriteLine("1b) Split a string delimited by characters and " +
                               "return all elements:");
-            result = s1.Split(charSeparators, StringSplitOptions.None);
+            result = s1.Split(charSeparators, stringSplitOptions.None);
             Show(result);
 
             // Split a string delimited by characters and return all non-empty elements.
             Console.WriteLine("1c) Split a string delimited by characters and " +
                               "return all non-empty elements:");
-            result = s1.Split(charSeparators, StringSplitOptions.RemoveEmptyEntries);
+            result = s1.Split(charSeparators, stringSplitOptions.RemoveEmptyEntries);
             Show(result);
 
             // Split the original string into the string and empty string before the
             // delimiter and the remainder of the original string after the delimiter.
             Console.WriteLine("1d) Split a string delimited by characters and " +
                               "return 2 elements:");
-            result = s1.Split(charSeparators, 2, StringSplitOptions.None);
+            result = s1.Split(charSeparators, 2, stringSplitOptions.None);
             Show(result);
 
             // Split the original string into the string after the delimiter and the
             // remainder of the original string after the delimiter.
             Console.WriteLine("1e) Split a string delimited by characters and " +
                               "return 2 non-empty elements:");
-            result = s1.Split(charSeparators, 2, StringSplitOptions.RemoveEmptyEntries);
+            result = s1.Split(charSeparators, 2, stringSplitOptions.RemoveEmptyEntries);
             Show(result);
 
             // ------------------------------------------------------------------------------
@@ -64,27 +64,27 @@ namespace Split
             // Split a string delimited by another string and return all elements.
             Console.WriteLine("2b) Split a string delimited by another string and " +
                               "return all elements:");
-            result = s2.Split(stringSeparators, StringSplitOptions.None);
+            result = s2.Split(stringSeparators, stringSplitOptions.None);
             Show(result);
 
             // Split the original string at the delimiter and return all non-empty elements.
             Console.WriteLine("2c) Split a string delimited by another string and " +
                               "return all non-empty elements:");
-            result = s2.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+            result = s2.Split(stringSeparators, stringSplitOptions.RemoveEmptyEntries);
             Show(result);
 
             // Split the original string into the empty string before the
             // delimiter and the remainder of the original string after the delimiter.
             Console.WriteLine("2d) Split a string delimited by another string and " +
                               "return 2 elements:");
-            result = s2.Split(stringSeparators, 2, StringSplitOptions.None);
+            result = s2.Split(stringSeparators, 2, stringSplitOptions.None);
             Show(result);
 
             // Split the original string into the string after the delimiter and the
             // remainder of the original string after the delimiter.
             Console.WriteLine("2e) Split a string delimited by another string and " +
                               "return 2 non-empty elements:");
-            result = s2.Split(stringSeparators, 2, StringSplitOptions.RemoveEmptyEntries);
+            result = s2.Split(stringSeparators, 2, stringSplitOptions.RemoveEmptyEntries);
             Show(result);
 
             // Display the array of separated strings using a local function
@@ -161,23 +161,23 @@ namespace Split
             Console.WriteLine();
 
             // Split a string delimited by another string and return all elements.
-            result = source.Split(stringSeparators, StringSplitOptions.None);
+            result = source.Split(stringSeparators, stringSplitOptions.None);
             Console.WriteLine($"Result including all elements ({result.Length} elements):");
             Console.Write("   ");
             foreach (string s in result)
             {
-                Console.Write("'{0}' ", String.IsNullOrEmpty(s) ? "<>" : s);
+                Console.Write("'{0}' ", string.IsNullOrEmpty(s) ? "<>" : s);
             }
             Console.WriteLine();
             Console.WriteLine();
 
             // Split delimited by another string and return all non-empty elements.
-            result = source.Split(stringSeparators, StringSplitOptions.RemoveEmptyEntries);
+            result = source.Split(stringSeparators, stringSplitOptions.RemoveEmptyEntries);
             Console.WriteLine($"Result including non-empty elements ({result.Length} elements):");
             Console.Write("   ");
             foreach (string s in result)
             {
-                Console.Write("'{0}' ", String.IsNullOrEmpty(s) ? "<>" : s);
+                Console.Write("'{0}' ", string.IsNullOrEmpty(s) ? "<>" : s);
             }
             Console.WriteLine();
 
@@ -201,7 +201,7 @@ namespace Split
             // <Snippet3>
             string[] separators = { ",", ".", "!", "?", ";", ":", " " };
             string value = "The handsome, energetic, young dog was playing with his smaller, more lethargic litter mate.";
-            string[] words = value.Split(separators, StringSplitOptions.RemoveEmptyEntries);
+            string[] words = value.Split(separators, stringSplitOptions.RemoveEmptyEntries);
             foreach (var word in words)
                 Console.WriteLine(word);
 
