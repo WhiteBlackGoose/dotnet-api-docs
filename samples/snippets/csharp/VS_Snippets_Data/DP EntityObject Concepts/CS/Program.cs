@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -35,14 +35,14 @@ namespace Microsoft.Samples.Edm
                     // in the orders that belong to the first contact.
                     foreach (Order order in query.Top("5").Execute(MergeOption.AppendOnly))
                     {
-                        Console.WriteLine(String.Format("PO Number: {0}",
+                        Console.WriteLine(string.Format("PO Number: {0}",
                             order.ExtendedInfo.PurchaseOrder));
-                        Console.WriteLine(String.Format("Order Date: {0}",
+                        Console.WriteLine(string.Format("Order Date: {0}",
                             order.OrderDate.ToString()));
                         Console.WriteLine("Order items:");
                         foreach (LineItem item in order.LineItem)
                         {
-                            Console.WriteLine(String.Format("Product: {0} "
+                            Console.WriteLine(string.Format("Product: {0} "
                                 + "Quantity: {1}", item.Product.ToString(),
                                 item.Quantity.ToString()));
                         }

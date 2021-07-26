@@ -1,4 +1,4 @@
-﻿
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -805,7 +805,7 @@ namespace L2E_ConceptualExamplesCS
 
         public class MyContact
         {
-            String _lastName;
+            string _lastName;
 
             public string LastName
             {
@@ -1068,10 +1068,10 @@ namespace L2E_ConceptualExamplesCS
             // <SnippetQueryReturnsPrimitiveValue>
             using (AdventureWorksEntities context = new AdventureWorksEntities())
             {
-                IQueryable<Int32> productQuery = from p in context.Products
+                IQueryable<int> productQuery = from p in context.Products
                                           select p.Name.Length;
 
-                foreach (Int32 result in productQuery)
+                foreach (int result in productQuery)
                 {
                     Console.WriteLine(result);
                 }
