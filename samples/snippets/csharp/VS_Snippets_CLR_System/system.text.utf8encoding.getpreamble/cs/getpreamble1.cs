@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text;
@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      String s = "This is a string to write to a file using UTF-8 encoding.";
+      string s = "This is a string to write to a file using UTF-8 encoding.";
 
       // Write a file using the default constructor without a BOM.
       var enc = new UTF8Encoding();
@@ -19,7 +19,7 @@ public class Example
       WriteToFile("Preamble.txt", enc, bytes);
    }
 
-   private static void WriteToFile(String fn, Encoding enc, Byte[] bytes)
+   private static void WriteToFile(string fn, Encoding enc, Byte[] bytes)
    {
       var fs = new FileStream(fn, FileMode.Create);
       Byte[] preamble = enc.GetPreamble();

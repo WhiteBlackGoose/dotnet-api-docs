@@ -1,4 +1,4 @@
-﻿// The following code example encodes a string into an array of bytes, and then decodes the bytes back into a string.
+// The following code example encodes a string into an array of bytes, and then decodes the bytes back into a string.
 
 // <Snippet1>
 using System;
@@ -17,7 +17,7 @@ public class SamplesUTF7Encoding  {
       //    Combining Breve (U+0306)
       //    Latin Small Letter AE With Acute (U+01FD)
       //    Greek Small Letter Beta (U+03B2)
-      String myStr = "za\u0306\u01FD\u03B2";
+      string myStr = "za\u0306\u01FD\u03B2";
 
       // Encode the string.
       byte[] myBArr = new byte[u7.GetByteCount( myStr )];

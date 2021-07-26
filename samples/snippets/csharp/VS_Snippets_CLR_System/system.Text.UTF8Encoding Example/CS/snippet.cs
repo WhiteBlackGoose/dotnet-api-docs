@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -10,7 +10,7 @@ class Example
         UTF8Encoding utf8 = new UTF8Encoding();
         
         // A Unicode string with two characters outside an 8-bit code range.
-        String unicodeString =
+        string unicodeString =
             "This Unicode string has 2 characters outside the " +
             "ASCII range:\n" +
             "Pi (\u03a0), and Sigma (\u03a3).";
@@ -29,7 +29,7 @@ class Example
         Console.WriteLine();
         
         // Decode bytes back to string.
-        String decodedString = utf8.GetString(encodedBytes);
+        string decodedString = utf8.GetString(encodedBytes);
         Console.WriteLine();
         Console.WriteLine("Decoded bytes:");
         Console.WriteLine(decodedString);

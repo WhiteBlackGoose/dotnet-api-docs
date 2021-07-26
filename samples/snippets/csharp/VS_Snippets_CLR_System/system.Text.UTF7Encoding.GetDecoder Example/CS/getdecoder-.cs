@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -20,7 +20,7 @@ class UTF7EncodingExample {
         );
 
         Console.Write("Decoded chars: ");
-        foreach (Char c in chars) {
+        foreach (char c in chars) {
             Console.Write("[{0}]", c);
         }
         Console.WriteLine();

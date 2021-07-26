@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Threading;
 
@@ -20,7 +20,7 @@ namespace InterlockedExchange_Example
             for(int i = 0; i < numThreads; i++)
             {
                 myThread = new Thread(new ThreadStart(MyThreadProc));
-                myThread.Name = String.Format("Thread{0}", i + 1);
+                myThread.Name = string.Format("Thread{0}", i + 1);
             
                 //Wait a random amount of time before starting next thread.
                 Thread.Sleep(rnd.Next(0, 1000));

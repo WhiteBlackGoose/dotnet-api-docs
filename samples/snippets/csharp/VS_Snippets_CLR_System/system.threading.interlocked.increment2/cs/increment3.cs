@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Threading;
 
@@ -55,9 +55,9 @@ public class Example
       Interlocked.Add(ref totalCount, total);
       Interlocked.Add(ref totalMidpoint, midpt);
       
-      string s = String.Format("Thread {0}:\n", Thread.CurrentThread.Name) +
-                 String.Format("   Random Numbers: {0:N0}\n", total) + 
-                 String.Format("   Midpoint values: {0:N0} ({1:P3})", midpt, 
+      string s = string.Format("Thread {0}:\n", Thread.CurrentThread.Name) +
+                 string.Format("   Random Numbers: {0:N0}\n", total) + 
+                 string.Format("   Midpoint values: {0:N0} ({1:P3})", midpt, 
                                ((double) midpt)/total);
       Console.WriteLine(s);
       cte.Signal();

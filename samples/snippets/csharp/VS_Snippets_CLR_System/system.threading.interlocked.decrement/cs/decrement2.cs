@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -41,9 +41,9 @@ public class Example
                                      Interlocked.Add(ref totalCount, total);
                                      Interlocked.Add(ref totalMidpoint, midpt);
                                           
-                                     string s = String.Format("Task {0}:\n", Task.CurrentId) +
-                                                String.Format("   Random Numbers: {0:N0}\n", total) + 
-                                                String.Format("   Midpoint values: {0:N0} ({1:P3})", midpt, 
+                                     string s = string.Format("Task {0}:\n", Task.CurrentId) +
+                                                string.Format("   Random Numbers: {0:N0}\n", total) + 
+                                                string.Format("   Midpoint values: {0:N0} ({1:P3})", midpt, 
                                                               ((double) midpt)/total);
                                      Console.WriteLine(s); 
                                    } ));
