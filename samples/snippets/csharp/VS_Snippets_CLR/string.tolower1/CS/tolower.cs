@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.ToLower(CultureInfo)
+//<snippet1>
+// Sample for string.ToLower(CultureInfo)
 
 using System;
 using System.Globalization;
@@ -8,17 +8,17 @@ class Sample
 {
     public static void Main()
     {
-    String str1 = "INDIGO";
+    string str1 = "INDIGO";
     // str2 = str1, except each 'I' is '\u0130' (Unicode LATIN CAPITAL I WITH DOT ABOVE).
-    String str2 = new String(new Char[] {'\u0130', 'N', 'D', '\u0130', 'G', 'O'});
-    String str3, str4;
+    string str2 = new string(new Char[] {'\u0130', 'N', 'D', '\u0130', 'G', 'O'});
+    string str3, str4;
 
     Console.WriteLine();
     Console.WriteLine("str1 = '{0}'", str1);
 
     Console.WriteLine();
     Console.WriteLine("str1 is {0} to str2.",
-         ((0 == String.CompareOrdinal(str1, str2)) ? "equal" : "not equal"));
+         ((0 == string.CompareOrdinal(str1, str2)) ? "equal" : "not equal"));
     CodePoints("str1", str1);
     CodePoints("str2", str2);
 
@@ -34,12 +34,12 @@ class Sample
     // Compare the code points in str3 and str4.
     Console.WriteLine();
     Console.WriteLine("str3 is {0} to str4.",
-         ((0 == String.CompareOrdinal(str3, str4)) ? "equal" : "not equal"));
+         ((0 == string.CompareOrdinal(str3, str4)) ? "equal" : "not equal"));
     CodePoints("str3", str3);
     CodePoints("str4", str4);
     }
 
-    public static void CodePoints(String title, String s)
+    public static void CodePoints(string title, string s)
     {
     Console.Write("{0}The code points in {1} are: {0}", Environment.NewLine, title);
     foreach (ushort u in s)

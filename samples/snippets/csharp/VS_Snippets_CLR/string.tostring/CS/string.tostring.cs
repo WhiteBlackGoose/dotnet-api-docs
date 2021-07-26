@@ -1,10 +1,10 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 
 class stringToString {
     public static void Main() {
-    String str1 = "123";
-    String str2 = "abc";
+    string str1 = "123";
+    string str2 = "abc";
 
     Console.WriteLine("Original str1: {0}", str1);
     Console.WriteLine("Original str2: {0}", str2);

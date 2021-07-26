@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// This example demonstrates the CopyTo(Int32, Char[], Int32, Int32) method.
+//<snippet1>
+// This example demonstrates the CopyTo(int, Char[], int, int) method.
 
 // Typically the destination array is small, preallocated, and global while
 // the StringBuilder is large with programmatically defined data.

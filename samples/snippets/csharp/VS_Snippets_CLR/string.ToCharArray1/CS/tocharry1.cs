@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Sample for String.ToCharArray(Int32, Int32)
+//<snippet1>
+// Sample for string.ToCharArray(int, int)
 using System;
 
 class Sample {

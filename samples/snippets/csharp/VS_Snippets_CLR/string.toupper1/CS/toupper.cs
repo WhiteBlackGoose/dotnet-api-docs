@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -20,7 +20,7 @@ class Example
        ShowCodePoints("str2", str2);
        ShowCodePoints("str3", str3);
        Console.WriteLine("str2 is {0} to str3.",
-            String.CompareOrdinal(str2, str3) == 0 ? "equal" : "not equal");
+            string.CompareOrdinal(str2, str3) == 0 ? "equal" : "not equal");
     }
 
     public static void ShowCodePoints(string varName, string s)
