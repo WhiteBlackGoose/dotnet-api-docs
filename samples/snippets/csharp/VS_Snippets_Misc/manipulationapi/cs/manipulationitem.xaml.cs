@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------
+//---------------------------------------------------------------------
 // <copyright file="ManipulableItem.xaml.cs" company="Microsoft">
 //    Copyright (c) Microsoft Corporation.  All rights reserved.
 // </copyright>
@@ -133,7 +133,7 @@ namespace ManipulationAPI
             {
                 pivot.X = (float)value.X;
                 pivot.Y = (float)value.Y;
-                LabelCenter.Content = String.Format("{0} x {1}", (int)value.X, (int)value.Y);
+                LabelCenter.Content = string.Format("{0} x {1}", (int)value.X, (int)value.Y);
             }
         }
 
@@ -299,7 +299,7 @@ namespace ManipulationAPI
         /// <param name="e"></param>
         private void OnManipulationDelta(object sender, Manipulation2DDeltaEventArgs e)
         {
-            ScreenMessage(String.Format("Delta: Rotation: {0}", e.Delta.Rotation));
+            ScreenMessage(string.Format("Delta: Rotation: {0}", e.Delta.Rotation));
             Move(
                 e.Delta.TranslationX,
                 e.Delta.TranslationY,
@@ -472,7 +472,7 @@ namespace ManipulationAPI
         #region Test
         private void OnManipulationStarted2(object sender, Manipulation2DStartedEventArgs e)
         {
-            ScreenMessage(String.Format("Started: Origin: {0}x{1} {2}", e.OriginX, e.OriginY, Timestamp));
+            ScreenMessage(string.Format("Started: Origin: {0}x{1} {2}", e.OriginX, e.OriginY, Timestamp));
         }
 
         #endregion

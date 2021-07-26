@@ -1,4 +1,4 @@
-﻿/*System.Net.HttpWebRequest.AddRange(int,int)
+/*System.Net.HttpWebRequest.AddRange(int,int)
 This program demonstrates the 'AddRange(int,int)' method of the 'HttpWebRequest class.
 A new 'HttpWebRequest' object is created. The number of characters of the response to be received can be
 restricted by the 'AddRange' method. By calling 'AddRange(50,150)' on the 'HttpWebRequest' object, the content
@@ -39,7 +39,7 @@ class HttpWebRequest_AddRange_int_int
 			Console.WriteLine("\nThe HTML contents of the page from 50th to 150 characters are :\n  ");	
 			while (count > 0)
 			{
-				String outputData = new String(readBuffer, 0, count);
+				string outputData = new string(readBuffer, 0, count);
 				Console.WriteLine(outputData);
 				count = streamRead.Read(readBuffer, 0, 256);
 			}

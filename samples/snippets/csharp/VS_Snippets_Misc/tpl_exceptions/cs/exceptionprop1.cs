@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 // <Snippet7>
 using System.Threading;
@@ -20,7 +20,7 @@ public class Example
 
 public class CustomException : Exception
 {
-   public CustomException(String message) : base(message)
+   public CustomException(string message) : base(message)
    {}
 }
 // The example displays output like the following:

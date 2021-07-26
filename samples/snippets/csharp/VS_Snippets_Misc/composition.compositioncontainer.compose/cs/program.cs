@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,7 +12,7 @@ namespace ConsoleApplication5
     [Export]
     class Part1
     {
-        public String data = "This is the example data!";
+        public string data = "This is the example data!";
     }
 
     [Export]

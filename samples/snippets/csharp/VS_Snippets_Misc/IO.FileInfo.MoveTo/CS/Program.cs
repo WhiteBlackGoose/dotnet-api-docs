@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 
 using System;
 using System.Runtime.CompilerServices;
@@ -125,7 +125,7 @@ namespace Microsoft.Samples.MoveTo.CS
 				elem = doc.CreateElement("MyElement");
 				elem.SetAttribute("Index", index.ToString());
 				elem.AppendChild(doc.CreateWhitespace("\r\n"));
-				elem.AppendChild(doc.CreateTextNode(String.Format
+				elem.AppendChild(doc.CreateTextNode(string.Format
 					("MyElement at position {0}.", index)));
 				elem.AppendChild(doc.CreateWhitespace("\r\n"));
 				root.AppendChild(elem);

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.IO;
 using System.Security;
@@ -29,7 +29,7 @@ namespace MyLoggers
 			string[] parameters = Parameters.Split(';');
 			
 			string logFile = parameters[0];
-			if (String.IsNullOrEmpty(logFile))
+			if (string.IsNullOrEmpty(logFile))
 			{
 				throw new LoggerException("Log file was not set.");
 			}
@@ -80,14 +80,14 @@ namespace MyLoggers
 		void eventSource_ErrorRaised(object sender, BuildErrorEventArgs e)
 		{
 			// BuildErrorEventArgs adds LineNumber, ColumnNumber, File, amongst other parameters
-			string line = String.Format(": ERROR {0}({1},{2}): ", e.File, e.LineNumber, e.ColumnNumber);
+			string line = string.Format(": ERROR {0}({1},{2}): ", e.File, e.LineNumber, e.ColumnNumber);
 			WriteLineWithSenderAndMessage(line, e);
 		}
 		
 		void eventSource_WarningRaised(object sender, BuildWarningEventArgs e)
 		{
 			// BuildWarningEventArgs adds LineNumber, ColumnNumber, File, amongst other parameters
-			string line = String.Format(": Warning {0}({1},{2}): ", e.File, e.LineNumber, e.ColumnNumber);
+			string line = string.Format(": Warning {0}({1},{2}): ", e.File, e.LineNumber, e.ColumnNumber);
 			WriteLineWithSenderAndMessage(line, e);
 		}
 
@@ -100,7 +100,7 @@ namespace MyLoggers
 				|| (e.Importance == MessageImportance.Low && IsVerbosityAtLeast(LoggerVerbosity.Detailed))				
 				)
 			{
-				WriteLineWithSenderAndMessage(String.Empty, e);
+				WriteLineWithSenderAndMessage(string.Empty, e);
 			}
 		}
 
@@ -114,7 +114,7 @@ namespace MyLoggers
 		{
 			// ProjectStartedEventArgs adds ProjectFile, TargetNames
 			// Just the regular message string is good enough here, so just display that.
-			WriteLine(String.Empty, e);
+			WriteLine(string.Empty, e);
 			indent++;
 		}
 
@@ -122,7 +122,7 @@ namespace MyLoggers
 		{
 			// The regular message string is good enough here too.
 			indent--;
-			WriteLine(String.Empty, e);
+			WriteLine(string.Empty, e);
 		}
 		
 		/// <summary>
@@ -131,7 +131,7 @@ namespace MyLoggers
 		/// </summary>
 		private void WriteLineWithSenderAndMessage(string line, BuildEventArgs e)
 		{
-			if (0 == String.Compare(e.SenderName, "MSBuild", true /*ignore case*/))
+			if (0 == string.Compare(e.SenderName, "MSBuild", true /*ignore case*/))
 			{
 				// Well, if the sender name is MSBuild, let's leave it out for prettiness
 				WriteLine(line, e);

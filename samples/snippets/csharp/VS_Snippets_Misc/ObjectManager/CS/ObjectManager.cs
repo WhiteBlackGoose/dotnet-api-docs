@@ -1,4 +1,4 @@
-﻿//Types:System.Runtime.Serialization.ObjectManager
+//Types:System.Runtime.Serialization.ObjectManager
 //<snippet1>
 using System;
 using System.Text;
@@ -72,14 +72,14 @@ public sealed class ObjectWalker : IEnumerable, IEnumerator {
    // Returns true if the object has no data fields with information of interest.
    private Boolean IsTerminalObject(Object data) {
       Type t = data.GetType();
-      return t.IsPrimitive || t.IsEnum || t.IsPointer || data is String;
+      return t.IsPrimitive || t.IsEnum || t.IsPointer || data is string;
    }
 }
 
 public sealed class App {
    // Define some fields in the class to test the ObjectWalker.
-   public String name = "Fred";
-   public Int32 Age = 40;
+   public string name = "Fred";
+   public int Age = 40;
 
    static void Main() {
       // Build an object graph using an array that refers to various objects.

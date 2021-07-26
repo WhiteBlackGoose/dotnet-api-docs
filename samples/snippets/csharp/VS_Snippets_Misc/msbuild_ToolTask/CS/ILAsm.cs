@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections;
 using System.Text;
@@ -80,11 +80,11 @@ namespace MSBuildTasks
             // Be explicit with our switches
             if (targetType != null)
             {
-                if (String.Compare(targetType, "DLL", true) == 0)
+                if (string.Compare(targetType, "DLL", true) == 0)
                 {
                     builder.AppendSwitch("/DLL");
                 }
-                else if (String.Compare(targetType, "EXE", true) == 0)
+                else if (string.Compare(targetType, "EXE", true) == 0)
                 {
                     builder.AppendSwitch("/EXE");
                 }
