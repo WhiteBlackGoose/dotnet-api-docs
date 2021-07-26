@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder.SetImplementationFlags()
+// System.Reflection.Emit.ConstructorBuilder.SetImplementationFlags()
 
 /* The following program demonstrates the 'SetImplementationFlags'
    method of ConstructorBuilder class. It creates an assembly in the
@@ -39,8 +39,8 @@ internal class MyConstructorBuilder
          // Create a type in the module.
          TypeBuilder myTypeBuilder = myModuleBuilder.DefineType("TempClass",TypeAttributes.Public);
          FieldBuilder myGreetingField = myTypeBuilder.DefineField("Greeting",
-            typeof(String), FieldAttributes.Public);
-         Type[] myConstructorArgs = { typeof(String) };
+            typeof(string), FieldAttributes.Public);
+         Type[] myConstructorArgs = { typeof(string) };
          // Define a constructor of the dynamic class.
          ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
             MethodAttributes.Public, CallingConventions.Standard, myConstructorArgs);
@@ -59,7 +59,7 @@ internal class MyConstructorBuilder
          Console.WriteLine("The Field info names of the MethodImplAttributes for the constructor are:");
          for (int i = 0; i < myFieldInfo.Length; i++)
          {
-            int myFieldValue = (Int32)myFieldInfo[i].GetValue(null);
+            int myFieldValue = (int)myFieldInfo[i].GetValue(null);
             if ((myFieldValue & myAttribValue) == myFieldValue)
             {
                Console.WriteLine("   " + myFieldInfo[i].Name);

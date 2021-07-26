@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder
+// System.Reflection.Emit.ConstructorBuilder
 // System.Reflection.Emit.ConstructorBuilder.Name
 // System.Reflection.Emit.ConstructorBuilder.ReflectedType
 // System.Reflection.Emit.ConstructorBuilder.Signature
@@ -42,8 +42,8 @@ public class MyConstructorBuilder
       // Create a type in the module.
       TypeBuilder myTypeBuilder = myModuleBuilder.DefineType("TempClass",TypeAttributes.Public);
       FieldBuilder myGreetingField = myTypeBuilder.DefineField("Greeting",
-                                          typeof(String), FieldAttributes.Public);
-      Type[] myConstructorArgs = { typeof(String) };
+                                          typeof(string), FieldAttributes.Public);
+      Type[] myConstructorArgs = { typeof(string) };
       // Define a constructor of the dynamic class.
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
       MethodAttributes.Public, CallingConventions.Standard, myConstructorArgs);

@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(CustomAttributeBuilder)
+// System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(CustomAttributeBuilder)
 /*
    The following program demonstrates the 'SetCustomAttribute(CustomAttributeBuilder)'
    method of 'ConstructorBuilder' class. It defines a 'MyAttribute' class which is derived
@@ -15,9 +15,9 @@ using System.Reflection.Emit;
 [AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
 public class MyAttribute : Attribute
 {
-   public String myString;
+   public string myString;
    public int myInteger;
-   public MyAttribute(String myString, int myInteger)
+   public MyAttribute(string myString, int myInteger)
    {
       this.myString = myString;
       this.myInteger = myInteger;
@@ -29,7 +29,7 @@ public class MyConstructorBuilder
    public static void Main()
    {
       Type myHelloworld = MyCreateCallee(Thread.GetDomain());
-      ConstructorInfo myConstructor = myHelloworld.GetConstructor(new Type[]{typeof(String)});
+      ConstructorInfo myConstructor = myHelloworld.GetConstructor(new Type[]{typeof(string)});
       object[] myAttributes1 = myConstructor.GetCustomAttributes(true);
       Console.WriteLine("MyAttribute custom attribute contains  ");
       for(int index=0; index < myAttributes1.Length; index++)
@@ -58,7 +58,7 @@ public class MyConstructorBuilder
          TypeAttributes.Public);
       // Define a constructor of the dynamic class.
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
-               MethodAttributes.Public, CallingConventions.Standard, new Type[]{typeof(String)});
+               MethodAttributes.Public, CallingConventions.Standard, new Type[]{typeof(string)});
       ILGenerator myILGenerator = myConstructor.GetILGenerator();
       myILGenerator.Emit(OpCodes.Ldstr, "Constructor is invoked");
       myILGenerator.Emit(OpCodes.Ldarg_1);
@@ -67,7 +67,7 @@ public class MyConstructorBuilder
       myILGenerator.Emit(OpCodes.Call, myMethodInfo);
       myILGenerator.Emit(OpCodes.Ret);
       Type myType = typeof(MyAttribute);
-      ConstructorInfo myConstructorInfo = myType.GetConstructor(new Type[2]{typeof(String), typeof(int)});
+      ConstructorInfo myConstructorInfo = myType.GetConstructor(new Type[2]{typeof(string), typeof(int)});
       CustomAttributeBuilder attributeBuilder =
          new CustomAttributeBuilder(myConstructorInfo, new object[2]{"Hello", 2});
       try

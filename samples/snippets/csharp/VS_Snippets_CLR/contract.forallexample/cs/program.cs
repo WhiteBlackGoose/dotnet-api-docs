@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Diagnostics.Contracts;
 using System.Collections.Generic;
@@ -19,7 +19,7 @@ namespace AssumeEx
             numbers.Push(null);
             numbers.Push("four");
             numbers.Push("five");
-            Contract.Requires(numbers != null && !Contract.ForAll(numbers, (String x) => x != null));
+            Contract.Requires(numbers != null && !Contract.ForAll(numbers, (string x) => x != null));
             // test the ForAll generic overload.  This is only for purpose of demonstrating how ForAll works.
             CheckTypeArray(numbers);
         }
@@ -38,11 +38,11 @@ namespace AssumeEx
                 return false;
             }
         }
-        private static bool CheckTypeArray(IEnumerable<String> xs)
+        private static bool CheckTypeArray(IEnumerable<string> xs)
         {
             try
             {
-                if (xs != null && !Contract.ForAll(xs, (String x) => x != null))
+                if (xs != null && !Contract.ForAll(xs, (string x) => x != null))
                     throw new ArgumentException("The parameter array has a null element", "indexes");
                 return true;
             }

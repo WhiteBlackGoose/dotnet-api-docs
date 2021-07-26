@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder.AddDeclarativeSecurity()
+// System.Reflection.Emit.ConstructorBuilder.AddDeclarativeSecurity()
 // System.Reflection.Emit.ConstructorBuilder.Attributes
 // System.Reflection.Emit.ConstructorBuilder.DeclaringType
 // System.Reflection.Emit.ConstructorBuilder.DefineParameter()
@@ -45,8 +45,8 @@ internal class MyConstructorBuilder
       // Create a type in the module
       TypeBuilder myTypeBuilder = myModuleBuilder.DefineType("TempClass",TypeAttributes.Public);
       FieldBuilder myGreetingField = myTypeBuilder.DefineField("Greeting",
-         typeof(String), FieldAttributes.Public);
-      Type[] myConstructorArgs = { typeof(String) };
+         typeof(string), FieldAttributes.Public);
+      Type[] myConstructorArgs = { typeof(string) };
       // Define a constructor of the dynamic class.
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
          MethodAttributes.Public, CallingConventions.Standard, myConstructorArgs);
@@ -68,7 +68,7 @@ internal class MyConstructorBuilder
       Console.WriteLine("The Field info names of the Attributes for the constructor are:");
       for (int i = 0; i < myFieldInfo1.Length; i++)
       {
-         int myFieldValue = (Int32)myFieldInfo1[i].GetValue(null);
+         int myFieldValue = (int)myFieldInfo1[i].GetValue(null);
          if ((myFieldValue & myAttribValue) == myFieldValue)
          {
             Console.WriteLine("   " + myFieldInfo1[i].Name);

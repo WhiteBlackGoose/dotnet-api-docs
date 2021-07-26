@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(ConstructorInfo, byte[])
+// System.Reflection.Emit.ConstructorBuilder.SetCustomAttribute(ConstructorInfo, byte[])
 /*
    The following program demonstrates the 'SetCustomAttribute(ConstructorInfo, byte[])'
    method of 'ConstructorBuilder' class. It defines a 'MyAttribute' class which is derived
@@ -28,7 +28,7 @@ public class MyConstructorBuilder
    public static void Main()
    {
       Type myHelloworld = MyCreateCallee(Thread.GetDomain());
-      ConstructorInfo myConstructor = myHelloworld.GetConstructor(new Type[]{typeof(String)});
+      ConstructorInfo myConstructor = myHelloworld.GetConstructor(new Type[]{typeof(string)});
       object[] myAttributes1 = myConstructor.GetCustomAttributes(true);
       Console.WriteLine("MyAttribute custom attribute contains  ");
       for(int index=0; index < myAttributes1.Length; index++)
@@ -54,7 +54,7 @@ public class MyConstructorBuilder
          TypeAttributes.Public);
       // Define a constructor of the dynamic class.
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
-               MethodAttributes.Public, CallingConventions.Standard, new Type[]{typeof(String)});
+               MethodAttributes.Public, CallingConventions.Standard, new Type[]{typeof(string)});
       ILGenerator myILGenerator = myConstructor.GetILGenerator();
       myILGenerator.Emit(OpCodes.Ldstr, "Constructor is invoked");
       myILGenerator.Emit(OpCodes.Ldarg_1);

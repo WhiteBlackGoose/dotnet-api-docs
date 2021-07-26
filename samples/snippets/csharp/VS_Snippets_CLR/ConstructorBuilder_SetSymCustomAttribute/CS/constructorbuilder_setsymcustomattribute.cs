@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ConstructorBuilder.SetSymCustomAttribute()
+// System.Reflection.Emit.ConstructorBuilder.SetSymCustomAttribute()
 
 /* The following program demonstrates the 'SetSymCustomAttribute' method
    of ConstructorBuilder class. It creates an assembly in the current
@@ -37,8 +37,8 @@ internal class MyConstructorBuilder
       // Create a type in the module.
       TypeBuilder myTypeBuilder = myModuleBuilder.DefineType("TempClass",TypeAttributes.Public);
       FieldBuilder myGreetingField = myTypeBuilder.DefineField("Greeting",
-                                          typeof(String), FieldAttributes.Public);
-      Type[] myConstructorArgs = { typeof(String) };
+                                          typeof(string), FieldAttributes.Public);
+      Type[] myConstructorArgs = { typeof(string) };
       // Define a constructor of the dynamic class.
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
       MethodAttributes.Public, CallingConventions.Standard, myConstructorArgs);

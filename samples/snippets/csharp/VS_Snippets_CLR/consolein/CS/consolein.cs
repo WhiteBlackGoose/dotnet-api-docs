@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 
@@ -10,7 +10,7 @@ class InTest {
 
         tOut.WriteLine("Hola Mundo!");
         tOut.Write("What is your name: ");
-        String name = tIn.ReadLine();
+        string name = tIn.ReadLine();
 
         tOut.WriteLine("Buenos Dias, {0}!", name);
     }

@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Threading;
 using System.Globalization;
@@ -7,8 +7,8 @@ public class SortKeySample
 {
    public static void Main(String[] args)
    {
-      String str1 = "Apple";
-      String str2 = "Æble";
+      string str1 = "Apple";
+      string str2 = "Æble";
 
       // Set the CurrentCulture to "da-DK".
       CultureInfo dk = new CultureInfo("da-DK");

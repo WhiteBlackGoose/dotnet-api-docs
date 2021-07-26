@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// This example demonstrates the Console.Beep(Int32, Int32) method
+//<snippet1>
+// This example demonstrates the Console.Beep(int, int) method
 using System;
 using System.Threading;
 

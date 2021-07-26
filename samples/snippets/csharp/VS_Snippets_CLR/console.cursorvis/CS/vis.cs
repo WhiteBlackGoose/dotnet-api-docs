@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the Console.CursorVisible property.
 
 using System;
@@ -26,7 +26,7 @@ class Sample
                          ((Console.CursorVisible == true) ?
                            "VISIBLE" : "HIDDEN"));
         s = Console.ReadLine();
-        if (String.IsNullOrEmpty(s) == false)
+        if (string.IsNullOrEmpty(s) == false)
             if (s[0] == '+')
                 Console.CursorVisible = true;
             else if (s[0] == '-')

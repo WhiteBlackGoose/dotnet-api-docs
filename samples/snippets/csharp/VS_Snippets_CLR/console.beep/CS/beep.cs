@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the Console.Beep() method.
 using System;
 
@@ -9,7 +9,7 @@ class Sample
     int x = 0;
 //
     if ((args.Length == 1) &&
-        (Int32.TryParse(args[0], out x) == true) &&
+        (int.TryParse(args[0], out x) == true) &&
         ((x >= 1) && (x <= 9)))
         {
         for (int i = 1; i <= x; i++)

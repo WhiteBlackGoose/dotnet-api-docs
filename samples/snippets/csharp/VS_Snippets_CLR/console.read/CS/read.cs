@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the Console.Read() method.
 using System;
 
@@ -20,7 +20,7 @@ class Sample
         try
             {
             ch = Convert.ToChar(x);
-            if (Char.IsWhiteSpace(ch))
+            if (char.IsWhiteSpace(ch))
                {
                Console.WriteLine(m3, x);
                if (ch == 0x0a)
@@ -34,7 +34,7 @@ class Sample
         catch (OverflowException e)
             {
             Console.WriteLine("{0} Value read = {1}.", e.Message, x);
-            ch = Char.MinValue;
+            ch = char.MinValue;
             Console.WriteLine(m1);
             }
         } while (ch != '+');
