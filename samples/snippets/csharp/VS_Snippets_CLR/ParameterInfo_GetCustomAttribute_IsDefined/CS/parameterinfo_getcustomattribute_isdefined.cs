@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
@@ -76,7 +76,7 @@ public class MemberInfo_GetCustomAttributes
 
 /* This code example produces the following output:
 
-The following parameters of Void MyMethod(Int32, Int32, Int32) have MyAttribute or a derived type:
+The following parameters of Void MyMethod(int, int, int) have MyAttribute or a derived type:
 Parameter 0, name = i, type = System.Int32
 Parameter 1, name = j, type = System.Int32
 

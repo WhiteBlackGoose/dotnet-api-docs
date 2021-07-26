@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the OperatingSystem.ServicePack property.
 using System;
 
@@ -7,7 +7,7 @@ class Sample
     public static void Main()
     {
     OperatingSystem os = Environment.OSVersion;
-    String sp = os.ServicePack;
+    string sp = os.ServicePack;
     Console.WriteLine("Service pack version = \"{0}\"", sp);
     }
 }

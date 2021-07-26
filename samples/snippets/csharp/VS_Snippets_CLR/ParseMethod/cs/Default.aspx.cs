@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Collections;
@@ -24,14 +24,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
       // Instantiate CultureInfo object for the user's locale
@@ -63,14 +63,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale
@@ -102,14 +102,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale
@@ -141,14 +141,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale
@@ -157,7 +157,7 @@ public partial class Default2 : System.Web.UI.Page
       // Convert user input from a string to a number
       try
       {
-         number = Int32.Parse(this.inputNumber.Text, culture.NumberFormat);
+         number = int.Parse(this.inputNumber.Text, culture.NumberFormat);
       }
       catch (FormatException)
       {
@@ -180,14 +180,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale
@@ -219,14 +219,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale
@@ -258,14 +258,14 @@ public partial class Default2 : System.Web.UI.Page
       CultureInfo culture;
 
       // Return if string is empty
-      if (String.IsNullOrEmpty(this.inputNumber.Text))
+      if (string.IsNullOrEmpty(this.inputNumber.Text))
          return;
 
       // Get locale of web request to determine possible format of number
       if (Request.UserLanguages.Length == 0)
          return;
       locale = Request.UserLanguages[0];
-      if (String.IsNullOrEmpty(locale))
+      if (string.IsNullOrEmpty(locale))
          return;
 
      // Instantiate CultureInfo object for the user's locale

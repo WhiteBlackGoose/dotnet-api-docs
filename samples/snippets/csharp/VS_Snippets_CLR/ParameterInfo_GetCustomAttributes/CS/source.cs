@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
@@ -71,7 +71,7 @@ public class MemberInfo_GetCustomAttributes
 }
 /* This code example produces the following output:
 
-The parameters for the method Void MyMethod(Int32) that have custom attributes are :
+The parameters for the method Void MyMethod(int) that have custom attributes are :
 Parameter 0, name = i, type = System.Int32 has attributes:
         MyAttribute
 

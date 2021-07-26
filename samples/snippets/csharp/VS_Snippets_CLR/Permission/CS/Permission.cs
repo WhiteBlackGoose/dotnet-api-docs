@@ -1,4 +1,4 @@
-﻿// Types:System.Security.IPermission Vendor:Richter
+// Types:System.Security.IPermission Vendor:Richter
 // Types:System.Security.ISecurityEncodable Vendor:Richter
 //<snippet1>
 using System;
@@ -45,13 +45,13 @@ public sealed class SoundPermission : CodeAccessPermission, IPermission,
     }
 
     // For debugging, return the state of this object as XML.
-    public override String ToString() { return ToXml().ToString(); }
+    public override string ToString() { return ToXml().ToString(); }
 
     // Private method to cast (if possible) an IPermission to the type.
     private SoundPermission VerifyTypeMatch(IPermission target)
     {
         if (GetType() != target.GetType())
-            throw new ArgumentException(String.Format("target must be of the {0} type",
+            throw new ArgumentException(string.Format("target must be of the {0} type",
                 GetType().FullName));
         return (SoundPermission)target;
     }
@@ -82,7 +82,7 @@ public sealed class SoundPermission : CodeAccessPermission, IPermission,
 
         // Calculate the intersected permissions. If there are none, return null.
         SoundPermissionState val = (SoundPermissionState)
-            Math.Min((Int32)m_flags, (Int32)soundPerm.m_flags);
+            Math.Min((int)m_flags, (int)soundPerm.m_flags);
         if (val == 0) return null;
 
         // Return a new object with the intersected permission value.
@@ -133,7 +133,7 @@ public sealed class SoundPermission : CodeAccessPermission, IPermission,
 
         // Return a new object with the calculated, unioned permission value.
         return Clone(false, (SoundPermissionState)
-            Math.Max((Int32)m_flags, (Int32)soundPerm.m_flags));
+            Math.Max((int)m_flags, (int)soundPerm.m_flags));
     }
     //</snippet5>
     #endregion
@@ -147,7 +147,7 @@ public sealed class SoundPermission : CodeAccessPermission, IPermission,
         m_flags = 0;
 
         // If XML indicates an unrestricted permission, make this permission unrestricted.
-        String s = (String)e.Attributes["Unrestricted"];
+        string s = (string)e.Attributes["Unrestricted"];
         if (s != null)
         {
             m_specifiedAsUnrestricted = Convert.ToBoolean(s);
@@ -158,7 +158,7 @@ public sealed class SoundPermission : CodeAccessPermission, IPermission,
         // If XML indicates a restricted permission, parse the flags.
         if (!m_specifiedAsUnrestricted)
         {
-            s = (String)e.Attributes["Flags"];
+            s = (string)e.Attributes["Flags"];
             if (s != null)
             {
                 m_flags = (SoundPermissionState)

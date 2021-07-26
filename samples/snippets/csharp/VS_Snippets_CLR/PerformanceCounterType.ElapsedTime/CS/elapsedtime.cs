@@ -1,4 +1,4 @@
-﻿// Notice that the sample is conditionally compiled for Everett vs.
+// Notice that the sample is conditionally compiled for Everett vs.
 // Whidbey builds.  Whidbey introduced new APIs that are not available
 // in Everett.  Snippet IDs do not overlap between Whidbey and Everett;
 // Snippet #1 is Everett, Snippet #2 and #3 are Whidbey.
@@ -143,8 +143,8 @@ public class App
 
     public static void CollectSamples()
     {
-        const String categoryName = "ElapsedTimeSampleCategory";
-        const String counterName = "ElapsedTimeSample";
+        const string categoryName = "ElapsedTimeSampleCategory";
+        const string counterName = "ElapsedTimeSample";
 
         // If the category does not exist, create the category and exit.
         // Performance counters should not be created and immediately used.

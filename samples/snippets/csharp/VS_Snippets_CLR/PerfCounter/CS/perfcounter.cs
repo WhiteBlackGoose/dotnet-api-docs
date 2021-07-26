@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -85,7 +85,7 @@ namespace PerfCounter
 			// <snippet2>
 			
 		        Array PerfCat = PerformanceCounterCategory.GetCategories();
-                        MessageBox.Show(String.Concat("The number of performance counter categories in the local machine is ",PerfCat.Length.ToString()));
+                        MessageBox.Show(string.Concat("The number of performance counter categories in the local machine is ",PerfCat.Length.ToString()));
 			// </snippet2>
 		}
 	}

@@ -1,4 +1,4 @@
-﻿//  System.Reflection.ParameterInfo.IsIn
+//  System.Reflection.ParameterInfo.IsIn
 //  System.Reflection.ParameterInfo.IsOptional
 //  System.Reflection.ParameterInfo.IsOut
 
@@ -62,7 +62,7 @@ public class ParameterInfo_IsIn_IsOut_IsOptional
       Assembly myAssembly = null;
       // Get the assembly named MyAssembly.
       for(int i = 0; i < myAssemblies.Length; i++)
-         if(String.Compare(myAssemblies[i].GetName(false).Name, "MyAssembly") == 0)
+         if(string.Compare(myAssemblies[i].GetName(false).Name, "MyAssembly") == 0)
             myAssembly = myAssemblies[i];
 
       if(myAssembly != null)

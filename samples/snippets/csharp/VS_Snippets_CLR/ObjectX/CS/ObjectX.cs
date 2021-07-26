@@ -35,7 +35,7 @@ class Point
 
     //<snippet4>
     // Return the point's value as a string.
-    public override String ToString()
+    public override string ToString()
     {
         return $"({x}, {y})";
     }

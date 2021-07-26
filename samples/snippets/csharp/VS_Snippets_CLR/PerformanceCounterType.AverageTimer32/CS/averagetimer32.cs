@@ -1,4 +1,4 @@
-﻿// Notice that the sample is conditionally compiled for Everett vs.
+// Notice that the sample is conditionally compiled for Everett vs.
 // Whidbey builds.  Whidbey introduced new APIs that are not available
 // in Everett.  Snippet IDs do not overlap between Whidbey and Everett;
 // Snippet #1 is Everett, Snippet #2 and #3 are Whidbey.
@@ -203,9 +203,9 @@ public class App
     private static PerformanceCounter PC;
     private static PerformanceCounter BPC;
 
-    private const String categoryName = "AverageTimer32SampleCategory";
-    private const String counterName = "AverageTimer32Sample";
-    private const String baseCounterName = "AverageTimer32SampleBase";
+    private const string categoryName = "AverageTimer32SampleCategory";
+    private const string counterName = "AverageTimer32Sample";
+    private const string baseCounterName = "AverageTimer32SampleBase";
 
     public static void Main()
     {

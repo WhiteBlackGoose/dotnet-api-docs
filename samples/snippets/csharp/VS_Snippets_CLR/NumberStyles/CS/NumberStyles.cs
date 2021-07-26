@@ -1,4 +1,4 @@
-﻿//Types:System.Globalization.NumberStyles (enum)
+//Types:System.Globalization.NumberStyles (enum)
 //<snippet1>
 using System;
 using System.Text;
@@ -9,7 +9,7 @@ public sealed class App
     static void Main()
     {
         // Parse the string as a hex value and display the value as a decimal.
-        String num = "A";
+        string num = "A";
         int val = int.Parse(num, NumberStyles.HexNumber);
         Console.WriteLine("{0} in hex = {1} in decimal.", num, val);
 
