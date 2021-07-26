@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,7 +19,7 @@ namespace ClickOnceOnDemand
         // Maintain a dictionary mapping DLL names to download file groups. This is trivial for this sample,
         // but will be important in real-world applications where a feature is spread across multiple DLLs,
         // and you want to download all DLLs for that feature in one shot. 
-        Dictionary<String, String> DllMapping = new Dictionary<String, String>();
+        Dictionary<string, string> DllMapping = new Dictionary<string, string>();
 
         public static void Main()
         {

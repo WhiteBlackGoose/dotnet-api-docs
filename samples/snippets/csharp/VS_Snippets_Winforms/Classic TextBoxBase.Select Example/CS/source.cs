@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.ComponentModel;
 using System.Windows.Forms;
@@ -10,7 +10,7 @@ public class Form1: Form
 public void SelectMyString()
  {
     // Create a string to search for the word "fox".
-    String searchString = "fox";
+    string searchString = "fox";
     // Determine the starting location of the word "fox".
     int index = textBox1.Text.IndexOf(searchString, 16, 3);
     // Determine if the word has been found and select it if it was.

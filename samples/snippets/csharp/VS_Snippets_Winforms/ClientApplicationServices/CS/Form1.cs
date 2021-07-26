@@ -1,4 +1,4 @@
-﻿//<snippet000>
+//<snippet000>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -70,7 +70,7 @@ namespace ClientAppServicesDemo
                 // Call ValidateUser with empty strings in order to display the 
                 // login dialog box configured as a credentials provider.
                 isAuthorized = Membership.ValidateUser(
-                    String.Empty, String.Empty);
+                    string.Empty, string.Empty);
             }
             catch (System.Net.WebException)
             {
@@ -82,7 +82,7 @@ namespace ClientAppServicesDemo
                 {
                     ConnectivityStatus.IsOffline = true;
                     isAuthorized = Membership.ValidateUser(
-                        String.Empty, String.Empty);
+                        string.Empty, string.Empty);
                 }
             }
 
@@ -160,7 +160,7 @@ namespace ClientAppServicesDemo
                         // Call ValidateUser with empty strings in order to 
                         // display the login dialog box configured as a 
                         // credentials provider.
-                        if (!Membership.ValidateUser(String.Empty, String.Empty))
+                        if (!Membership.ValidateUser(string.Empty, string.Empty))
                         {
                             MessageBox.Show("Unable to authenticate. " +
                                 "Settings were not saved on the remote service.",
@@ -262,11 +262,11 @@ namespace ClientAppServicesDemo
             // If any settings were not saved, display a list of them.
             if (e.FailedSettingsList.Count > 0)
             {
-                String failedSettings = String.Join(
+                string failedSettings = string.Join(
                     Environment.NewLine,
                     e.FailedSettingsList.ToArray());
 
-                String message = String.Format("{0}{1}{1}{2}",
+                string message = string.Format("{0}{1}{1}{2}",
                     "The following setting(s) were not saved:",
                     Environment.NewLine, failedSettings);
 

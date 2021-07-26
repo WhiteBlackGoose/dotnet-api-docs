@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -63,11 +63,11 @@ namespace ClientAppServicesDemo
             // If any settings were not saved, display a list of them.
             if (e.FailedSettingsList.Count > 0)
             {
-                String failedSettings = String.Join(
+                string failedSettings = string.Join(
                     Environment.NewLine,
                     e.FailedSettingsList.ToArray());
 
-                String message = String.Format("{0}{1}{1}{2}",
+                string message = string.Format("{0}{1}{1}{2}",
                     "The following setting(s) were not saved:",
                     Environment.NewLine, failedSettings);
 
@@ -77,7 +77,7 @@ namespace ClientAppServicesDemo
         }
         //</snippet304>
 
-        public String Text
+        public string Text
         {
             get { return string.Empty; }
             set { }
@@ -87,7 +87,7 @@ namespace ClientAppServicesDemo
         private ClientFormsAuthenticationMembershipProvider formsMembershipProvider =
             (ClientFormsAuthenticationMembershipProvider)
             System.Web.Security.Membership.Provider;
-        private String appName = "ClientAppServicesDemo";
+        private string appName = "ClientAppServicesDemo";
 
         private void AttachUserValidatedEventHandler()
         {
@@ -98,7 +98,7 @@ namespace ClientAppServicesDemo
         private void Form1_UserValidated(object sender, UserValidatedEventArgs e)
         {
             // Set the form's title bar to the application name and the user name.
-            this.Text = String.Format("{0} ({1})", appName, e.UserName);
+            this.Text = string.Format("{0} ({1})", appName, e.UserName);
         }
         //</snippet305>
 
@@ -114,7 +114,7 @@ namespace ClientAppServicesDemo
 
                 // Call ValidateUser with empty strings in order to display the 
                 // login dialog box configured as a credentials provider.
-                isAuthorized = authProvider.ValidateUser(String.Empty, String.Empty);
+                isAuthorized = authProvider.ValidateUser(string.Empty, string.Empty);
             }
             catch (System.Net.WebException)
             {
@@ -165,7 +165,7 @@ namespace ClientAppServicesDemo
         //</snippet307>
 
         //<snippet308>
-        private bool ValidateUsingServiceUri(String serviceUri)
+        private bool ValidateUsingServiceUri(string serviceUri)
         {
             bool isAuthorized = false;
             try
@@ -335,7 +335,7 @@ namespace ClientAppServicesDemo
         {
             //<snippet317>
             if (!System.Web.Security.Membership.ValidateUser(
-                String.Empty, String.Empty))
+                string.Empty, string.Empty))
             {
                 MessageBox.Show("Unable to authenticate.", "Not logged in",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -355,7 +355,7 @@ namespace ClientAppServicesDemo
 
             //<snippet319>
             System.Web.Security.Membership.ValidateUser(
-                String.Empty, String.Empty);
+                string.Empty, string.Empty);
             //</snippet319>
         }
 
@@ -384,7 +384,7 @@ namespace ClientAppServicesDemo
             {
                 ClientRoleProvider provider =
                     (ClientRoleProvider)System.Web.Security.Roles.Provider;
-                String userName = identity.Name;
+                string userName = identity.Name;
 
                 // Determine whether the user login has expired by attempting
                 // to retrieve roles from the service. Call the ResetCache method
@@ -403,7 +403,7 @@ namespace ClientAppServicesDemo
                     // display the login dialog box configured as a 
                     // credentials provider.
                     if (!System.Web.Security.Membership.ValidateUser(
-                        String.Empty, String.Empty))
+                        string.Empty, string.Empty))
                     {
                         MessageBox.Show("Unable to authenticate. " +
                             "Cannot retrieve user roles.", "Not logged in",

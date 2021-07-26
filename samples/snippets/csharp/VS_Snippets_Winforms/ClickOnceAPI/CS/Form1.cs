@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -42,7 +42,7 @@ namespace ClickOnceAPI
 
         void  ad_CheckForUpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
-            downloadStatus.Text = String.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted/1024, e.BytesTotal/1024);   
+            downloadStatus.Text = string.Format("Downloading: {0}. {1:D}K of {2:D}K downloaded.", GetProgressString(e.State), e.BytesCompleted/1024, e.BytesTotal/1024);   
         }
 
         string GetProgressString(DeploymentProgressState state)
@@ -107,7 +107,7 @@ namespace ClickOnceAPI
 
         void ad_UpdateProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
-            String progressText = String.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
+            string progressText = string.Format("{0:D}K out of {1:D}K downloaded - {2:D}% complete", e.BytesCompleted / 1024, e.BytesTotal / 1024, e.ProgressPercentage);
             downloadStatus.Text = progressText;
         }
 
@@ -350,7 +350,7 @@ namespace ClickOnceAPI
 
         void deployment_DownloadFileGroupProgressChanged(object sender, DeploymentProgressChangedEventArgs e)
         {
-            downloadStatus.Text = String.Format("Downloading file group {0}; {1:D}K of {2:D}K completed.", e.Group, e.BytesCompleted / 1024, e.BytesTotal / 1024);               
+            downloadStatus.Text = string.Format("Downloading file group {0}; {1:D}K of {2:D}K completed.", e.Group, e.BytesCompleted / 1024, e.BytesTotal / 1024);               
         }
 
         void deployment_DownloadFileGroupCompleted(object sender, DownloadFileGroupCompletedEventArgs e)
@@ -366,7 +366,7 @@ namespace ClickOnceAPI
                 return;
             }
 
-            downloadStatus.Text = String.Format("Download of file group {0} complete.", e.Group);
+            downloadStatus.Text = string.Format("Download of file group {0} complete.", e.Group);
         }
         //</SNIPPET8>
 
@@ -392,7 +392,7 @@ namespace ClickOnceAPI
                         return;
                     }
 
-                    downloadStatus.Text = String.Format("Download of file group {0} complete.", fileGroup);
+                    downloadStatus.Text = string.Format("Download of file group {0} complete.", fileGroup);
                 }
             }            
         }
