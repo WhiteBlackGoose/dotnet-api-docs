@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +45,7 @@ namespace N1
             employee.Name = "John Smith";
             employee.Age = 33;
 
-            foreach (var property in (IDictionary<String, Object>)employee)
+            foreach (var property in (IDictionary<string, Object>)employee)
             {
                 Console.WriteLine(property.Key + ": " + property.Value);
             }
@@ -60,7 +60,7 @@ namespace N1
             //<Snippet6>
             dynamic employee = new ExpandoObject();
             employee.Name = "John Smith";
-            ((IDictionary<String, Object>)employee).Remove("Name");
+            ((IDictionary<string, Object>)employee).Remove("Name");
             //</Snippet6>
         }
     }

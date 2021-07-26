@@ -1,4 +1,4 @@
-﻿//<snippet4>
+//<snippet4>
 using System;
 using System.Diagnostics;
 using Microsoft.VisualBasic;
@@ -40,7 +40,7 @@ class TWTLConStringNameMod
                 "\r\n    \""+args[0]+"\"");
 
             // Write a message to all trace listeners.
-            Trace.WriteLine(String.Format("This trace message written {0} to all listeners.", DateTime.Now));
+            Trace.WriteLine(string.Format("This trace message written {0} to all listeners.", DateTime.Now));
 
             // Flush and close the output.
             Trace.Flush();

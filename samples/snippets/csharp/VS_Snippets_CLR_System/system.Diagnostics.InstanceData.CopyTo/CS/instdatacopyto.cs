@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Diagnostics;
 
@@ -42,7 +42,7 @@ class InstDataCopyToMod
             categoryNum = int.Parse(catNumStr);
             if (categoryNum<1||categoryNum>categories.Length)
             {
-                throw new Exception(String.Format("The category number must be in the " +
+                throw new Exception(string.Format("The category number must be in the " +
                     "range 1..{0}.", categories.Length));
             }
             categoryName = categoryNames[(categoryNum-1)];

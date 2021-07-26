@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Threading;
 using System.Security.Permissions;
@@ -33,7 +33,7 @@ class ProcessDemo
 
             try
             {
-                using (Process chosen = Process.GetProcessById(Int32.Parse(id)))
+                using (Process chosen = Process.GetProcessById(int.Parse(id)))
                 {
                     if (chosen.ProcessName == "notepad")
                     {

@@ -1,14 +1,14 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Runtime.InteropServices;
 
 public class Example
 {
    [DllImport("user32.dll", CharSet = CharSet.Unicode, ExactSpelling = true )]
-   public static extern int MessageBox(IntPtr hwnd, String text, String caption, uint type);
+   public static extern int MessageBox(IntPtr hwnd, string text, string caption, uint type);
 
    [DllImport("user32.dll", CharSet = CharSet.Unicode, ExactSpelling = true )]
-   public static extern int MessageBoxW(IntPtr hwnd, String text, String caption, uint type);
+   public static extern int MessageBoxW(IntPtr hwnd, string text, string caption, uint type);
 
    public static void Main()
    {

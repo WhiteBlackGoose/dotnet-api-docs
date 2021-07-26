@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -259,7 +259,7 @@ namespace n3
             ConvertBinder binder, out object result)
         {
             // Converting to string.
-            if (binder.Type == typeof(String))
+            if (binder.Type == typeof(string))
             {
                 result = dictionary["Textual"];
                 return true;
@@ -296,7 +296,7 @@ namespace n3
             int testImplicit = number;
 
             // Explicit conversion to string.
-            string testExplicit = (String)number;
+            string testExplicit = (string)number;
 
             Console.WriteLine(testImplicit);
             Console.WriteLine(testExplicit);
@@ -436,7 +436,7 @@ namespace N5
             // The first one is integer and the second one is string.
             if ((args.Length == 2) &&
                 (args[0].GetType() == typeof(int)) &&
-                (args[1].GetType() == typeof(String)))
+                (args[1].GetType() == typeof(string)))
             {
                 // If the property already exists,
                 // its value is changed.

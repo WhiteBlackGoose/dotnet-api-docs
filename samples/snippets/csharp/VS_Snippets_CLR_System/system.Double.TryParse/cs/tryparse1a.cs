@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -7,7 +7,7 @@ public class Example
    {
       string[] values = { "1,643.57", "$1,643.57", "-1.643e6",
                           "-168934617882109132", "123AE6",
-                          null, String.Empty, "ABCDEF" };
+                          null, string.Empty, "ABCDEF" };
       double number;
 
       foreach (var value in values) {

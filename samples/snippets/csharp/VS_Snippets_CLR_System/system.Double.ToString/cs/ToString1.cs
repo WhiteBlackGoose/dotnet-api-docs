@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Class1
@@ -96,7 +96,7 @@ public class Class1
             // Add precision specifiers from 0 to 3.
             if (specifier.Length == 1 & ! specifier.Equals("R")) {
                for (int precision = 0; precision <= 3; precision++) {
-                  string pSpecifier = String.Format("{0}{1}", specifier, precision);
+                  string pSpecifier = string.Format("{0}{1}", specifier, precision);
                   Console.WriteLine("   {0,-22} {1}",
                                     pSpecifier + ":", number.ToString(pSpecifier));
                }

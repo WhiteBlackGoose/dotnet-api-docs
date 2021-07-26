@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 
 public class Example
@@ -7,7 +7,7 @@ public class Example
    {
       dynamic[] values = { Byte.MinValue, Byte.MaxValue, Decimal.MinValue,
                            Decimal.MaxValue, Int16.MinValue, Int16.MaxValue,
-                           Int32.MinValue, Int32.MaxValue, Int64.MinValue,
+                           int.MinValue, int.MaxValue, Int64.MinValue,
                            Int64.MaxValue, SByte.MinValue, SByte.MaxValue,
                            Single.MinValue, Single.MaxValue, UInt16.MinValue,
                            UInt16.MaxValue, UInt32.MinValue, UInt32.MaxValue,
@@ -31,8 +31,8 @@ public class Example
 //    79228162514264337593543950335 (Decimal) --> 7.9228162514264338E+28 (Double)
 //    -32768 (Int16) --> -32768 (Double)
 //    32767 (Int16) --> 32767 (Double)
-//    -2147483648 (Int32) --> -2147483648 (Double)
-//    2147483647 (Int32) --> 2147483647 (Double)
+//    -2147483648 (int) --> -2147483648 (Double)
+//    2147483647 (int) --> 2147483647 (Double)
 //    -9223372036854775808 (Int64) --> -9.2233720368547758E+18 (Double)
 //    9223372036854775807 (Int64) --> 9.2233720368547758E+18 (Double)
 //    -128 (SByte) --> -128 (Double)
