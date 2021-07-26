@@ -1,60 +1,60 @@
-﻿//<snippet1>
-// Sample for String.Equals(Object)
-//            String.Equals(String)
-//            String.Equals(String, String)
+//<snippet1>
+// Sample for string.Equals(Object)
+//            string.Equals(string)
+//            string.Equals(string, string)
 using System;
 using System.Text;
 
 class Sample {
     public static void Main() {
     StringBuilder sb = new StringBuilder("abcd");
-    String      str1 = "abcd";
-    String      str2 = null;
+    string      str1 = "abcd";
+    string      str2 = null;
     Object	o2   = null;
 
     Console.WriteLine();
-    Console.WriteLine(" *  The value of String str1 is '{0}'.", str1);
+    Console.WriteLine(" *  The value of string str1 is '{0}'.", str1);
     Console.WriteLine(" *  The value of StringBuilder sb is '{0}'.", sb.ToString());
 
     Console.WriteLine();
-    Console.WriteLine("1a) String.Equals(Object). Object is a StringBuilder, not a String.");
+    Console.WriteLine("1a) string.Equals(Object). Object is a StringBuilder, not a string.");
     Console.WriteLine("    Is str1 equal to sb?: {0}", str1.Equals(sb));
 
     Console.WriteLine();
-    Console.WriteLine("1b) String.Equals(Object). Object is a String.");
+    Console.WriteLine("1b) string.Equals(Object). Object is a string.");
     str2 = sb.ToString();
     o2   = str2;
     Console.WriteLine(" *  The value of Object o2 is '{0}'.", o2);
     Console.WriteLine("    Is str1 equal to o2?: {0}", str1.Equals(o2));
 
     Console.WriteLine();
-    Console.WriteLine(" 2) String.Equals(String)");
-    Console.WriteLine(" *  The value of String str2 is '{0}'.", str2);
+    Console.WriteLine(" 2) string.Equals(string)");
+    Console.WriteLine(" *  The value of string str2 is '{0}'.", str2);
     Console.WriteLine("    Is str1 equal to str2?: {0}", str1.Equals(str2));
 
     Console.WriteLine();
-    Console.WriteLine(" 3) String.Equals(String, String)");
-    Console.WriteLine("    Is str1 equal to str2?: {0}", String.Equals(str1, str2));
+    Console.WriteLine(" 3) string.Equals(string, string)");
+    Console.WriteLine("    Is str1 equal to str2?: {0}", string.Equals(str1, str2));
     }
 }
 /*
 This example produces the following results:
 
- *  The value of String str1 is 'abcd'.
+ *  The value of string str1 is 'abcd'.
  *  The value of StringBuilder sb is 'abcd'.
 
-1a) String.Equals(Object). Object is a StringBuilder, not a String.
+1a) string.Equals(Object). Object is a StringBuilder, not a string.
     Is str1 equal to sb?: False
 
-1b) String.Equals(Object). Object is a String.
+1b) string.Equals(Object). Object is a string.
  *  The value of Object o2 is 'abcd'.
     Is str1 equal to o2?: True
 
- 2) String.Equals(String)
- *  The value of String str2 is 'abcd'.
+ 2) string.Equals(string)
+ *  The value of string str2 is 'abcd'.
     Is str1 equal to str2?: True
 
- 3) String.Equals(String, String)
+ 3) string.Equals(string, string)
     Is str1 equal to str2?: True
 */
 //</snippet1>
