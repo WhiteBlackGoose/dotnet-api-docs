@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Runtime.Serialization;
 
@@ -12,7 +12,7 @@ public class NotPrimeException : Exception
    { }
 
    public NotPrimeException(int value) :
-      base(String.Format("{0} is not a prime number.", value))
+      base(string.Format("{0} is not a prime number.", value))
    {
       notAPrime = value;
    }

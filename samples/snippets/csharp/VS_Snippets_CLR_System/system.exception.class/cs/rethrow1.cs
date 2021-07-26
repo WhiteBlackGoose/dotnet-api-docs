@@ -1,11 +1,11 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 
 public static class Library
 {
-   public static int[] FindOccurrences(this String s, String f)
+   public static int[] FindOccurrences(this string s, string f)
    {
       var indexes = new List<int>();
       int currentIndex = 0;
@@ -33,12 +33,12 @@ public class Example
 {
    public static void Main()
    {
-      String s = "It was a cold day when...";
+      string s = "It was a cold day when...";
       int[] indexes = s.FindOccurrences("a");
       ShowOccurrences(s, "a", indexes);
       Console.WriteLine();
 
-      String toFind = null;
+      string toFind = null;
       try {
          indexes = s.FindOccurrences(toFind);
          ShowOccurrences(s, toFind, indexes);
@@ -51,7 +51,7 @@ public class Example
       }
    }
 
-   private static void ShowOccurrences(String s, String toFind, int[] indexes)
+   private static void ShowOccurrences(string s, string toFind, int[] indexes)
    {
       Console.Write("'{0}' occurs at the following character positions: ",
                     toFind);
@@ -71,8 +71,8 @@ public class Example
 //    Parameter name: value
 //
 //    Stack Trace:
-//          at System.String.IndexOf(String value, Int32 startIndex, Int32 count, Stri
+//          at System.String.IndexOf(string value, int startIndex, int count, Stri
 //    ngComparison comparisonType)
-//       at Library.FindOccurrences(String s, String f)
+//       at Library.FindOccurrences(string s, string f)
 //       at Example.Main()
 // </Snippet7>

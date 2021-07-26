@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       var os = Environment.OSVersion;
       Console.WriteLine("Current OS Information:\n");
       Console.WriteLine("Platform: {0:G}", os.Platform);
-      Console.WriteLine("Version String: {0}", os.VersionString);
+      Console.WriteLine("Version string: {0}", os.VersionString);
       Console.WriteLine("Version Information:");
       Console.WriteLine("   Major: {0}", os.Version.Major);
       Console.WriteLine("   Minor: {0}", os.Version.Minor);
@@ -19,7 +19,7 @@ public class Example
 //       Current OS Information:
 //
 //       Platform: Win32NT
-//       Version String: Microsoft Windows NT 6.2.9200.0
+//       Version string: Microsoft Windows NT 6.2.9200.0
 //       Version Information:
 //          Major: 6
 //          Minor: 2
@@ -28,7 +28,7 @@ public class Example
 //       Current OS Information:
 //
 //       Platform: Win32NT
-//       Version String: Microsoft Windows NT 6.1.7601 Service Pack 1
+//       Version string: Microsoft Windows NT 6.1.7601 Service Pack 1
 //       Version Information:
 //          Major: 6
 //          Minor: 1

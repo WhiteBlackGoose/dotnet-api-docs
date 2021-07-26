@@ -1,12 +1,12 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
 {
    public static void Main()
    {
-      String envName = "AppDomain";
-      String envValue = "True";
+      string envName = "AppDomain";
+      string envValue = "True";
 
       // Determine whether the environment variable exists.
       if (Environment.GetEnvironmentVariable(envName) == null)

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -15,7 +15,7 @@ public class PrimeNumberGenerator
    {
       if (upperBound > maxUpperBound)
       {
-         string message = String.Format(
+         string message = string.Format(
                            "{0} exceeds the maximum upper bound of {1}.",
                            upperBound, maxUpperBound);
          throw new ArgumentOutOfRangeException(message);
@@ -57,7 +57,7 @@ public class PrimeNumberGenerator
    {
       int start = primes.FindIndex((value) => value == prime);
       if (start < 0)
-         throw new NotPrimeException(prime, String.Format("{0} is not a prime number.", prime));
+         throw new NotPrimeException(prime, string.Format("{0} is not a prime number.", prime));
       else
          return primes.FindAll((value) => value >= prime).ToArray();
    }

@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 
 public enum ArrivalStatus { Unknown=-3, Late=-1, OnTime=0, Early=1 };
@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      int[] values = { -3, -1, 0, 1, 5, Int32.MaxValue };
+      int[] values = { -3, -1, 0, 1, 5, int.MaxValue };
       foreach (var value in values)
       {
          ArrivalStatus status;

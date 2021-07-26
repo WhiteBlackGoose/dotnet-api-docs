@@ -1,11 +1,11 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public static class StringUtilities
 {
-   public static String SayGoodMorning(String name)
+   public static string SayGoodMorning(string name)
    {
-      return String.Format("A top of the morning to you, {0}!", name);
+      return string.Format("A top of the morning to you, {0}!", name);
    }
 }
 // </Snippet3>

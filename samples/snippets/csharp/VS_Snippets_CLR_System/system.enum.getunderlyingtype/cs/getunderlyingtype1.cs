@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -25,10 +25,10 @@ public class Example
 // The example displays the following output:
 //       Member            Enumeration   Underlying Type
 //
-//       Red              ConsoleColor             Int32
-//       Monday              DayOfWeek             Int32
-//       ToEven       MidpointRounding             Int32
-//       Win32NT            PlatformID             Int32
-//       Utc              DateTimeKind             Int32
-//       Ordinal      StringComparison             Int32
+//       Red              ConsoleColor             int
+//       Monday              DayOfWeek             int
+//       ToEven       MidpointRounding             int
+//       Win32NT            PlatformID             int
+//       Utc              DateTimeKind             int
+//       Ordinal      StringComparison             int
 // </Snippet1>

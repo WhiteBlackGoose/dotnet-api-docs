@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -17,7 +17,7 @@ public class Example
       else {
          BigInteger value = 0;
          if (BigInteger.TryParse(args[1], out value))
-            if (value <= Int32.MinValue || value >= Int32.MaxValue)
+            if (value <= int.MinValue || value >= int.MaxValue)
                Environment.ExitCode = ERROR_ARITHMETIC_OVERFLOW;
             else
                Console.WriteLine("Result: {0}", value * 2);
