@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 namespace Samples.AspNet.CS.Controls
 {
   using System;
@@ -28,7 +28,7 @@ namespace Samples.AspNet.CS.Controls
     Level = AspNetHostingPermissionLevel.Minimal)]
   public class ZipCodeWebPart : WebPart, IZipCode
   {
-    string zipCodeText = String.Empty;
+    string zipCodeText = string.Empty;
     TextBox input;
     Button send;
 
@@ -68,7 +68,7 @@ namespace Samples.AspNet.CS.Controls
       if (!string.IsNullOrEmpty(input.Text))
       {
         zipCodeText = Page.Server.HtmlEncode(input.Text);
-        input.Text = String.Empty;
+        input.Text = string.Empty;
       }
     }
   }
