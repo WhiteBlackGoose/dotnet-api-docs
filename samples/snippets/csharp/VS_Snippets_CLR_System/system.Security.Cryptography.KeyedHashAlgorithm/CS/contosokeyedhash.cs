@@ -1,4 +1,4 @@
-﻿// This sample demonstrates how to extend the KeyedHashAlgorithm class.
+// This sample demonstrates how to extend the KeyedHashAlgorithm class.
 //<Snippet3>
 using System;
 using System.Security.Cryptography;
@@ -14,7 +14,7 @@ namespace Contoso
         {
         }
 
-        public ContosoKeyedHash(String keyedHashName, byte[] rgbKey)
+        public ContosoKeyedHash(string keyedHashName, byte[] rgbKey)
         {
             // Make sure we know which algorithm to use
             if (rgbKey != null) 

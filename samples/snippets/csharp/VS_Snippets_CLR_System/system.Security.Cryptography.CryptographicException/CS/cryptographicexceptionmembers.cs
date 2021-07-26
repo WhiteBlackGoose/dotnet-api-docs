@@ -1,4 +1,4 @@
-﻿// This sample demonstrates how to use each member of the
+// This sample demonstrates how to use each member of the
 // CryptographicException class.
 //<Snippet2>
 using System;
@@ -215,7 +215,7 @@ class CryptographicExceptionMembers
 // System.Security.Cryptography.CryptographicException: CryptoAPI
 // cryptographic service provider (CSP) for this implementation could not be
 // acquired. 
-//  at System.Security.Cryptography.DSACryptoServiceProvider..ctor(Int32
+//  at System.Security.Cryptography.DSACryptoServiceProvider..ctor(int
 // dwKeySize, CspParameters parameters)
 //  at System.Security.Cryptography.DSACryptoServiceProvider..ctor(
 // CspParametersparameters)
@@ -229,7 +229,7 @@ class CryptographicExceptionMembers
 // Source: mscorlib
 // Stack trace:    
 //  at System.Security.Cryptography.DSACryptoServiceProvider..ctor(
-// Int32 dwKeySize, CspParameters parameters) 
+// int dwKeySize, CspParameters parameters) 
 //  at System.Security.Cryptography.DSACryptoServiceProvider..ctor(
 // CspParameters parameters)
 //  at CryptographicExceptionMembers.ShowProperties() in c:\inetpub\

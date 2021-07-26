@@ -1,4 +1,4 @@
-﻿// This sample demonstrates how to derive from the MaskGenerationMethod class.
+// This sample demonstrates how to derive from the MaskGenerationMethod class.
 //<Snippet1>
 using System;
 using System.Security.Cryptography;
@@ -8,7 +8,7 @@ namespace Contoso
     //<Snippet2>
     class MaskGenerator : System.Security.Cryptography.MaskGenerationMethod
     {
-        private String HashNameValue;
+        private string HashNameValue;
 
         // Initialize a mask to encrypt using the SHA256 algorithm.
         public MaskGenerator() 

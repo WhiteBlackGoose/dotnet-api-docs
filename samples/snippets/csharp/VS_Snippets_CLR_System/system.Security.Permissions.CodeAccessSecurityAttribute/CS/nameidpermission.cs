@@ -1,4 +1,4 @@
-﻿#define debug
+#define debug
 //#define debug
 // This custom permission is intended only for the purposes of illustration.
 // The following code shows how to create a custom permission that inherits
@@ -18,10 +18,10 @@ namespace MyPermission
 {
     [Serializable()] sealed public class   NameIdPermission : CodeAccessPermission, IUnrestrictedPermission
     {
-        private String m_Name;
+        private string m_Name;
         private bool m_Unrestricted;
 
-        public  NameIdPermission(String name)
+        public  NameIdPermission(string name)
         {
             m_Name = name;
         }
@@ -43,7 +43,7 @@ namespace MyPermission
             }
         }
 
-        public String Name
+        public string Name
         {
             set{m_Name = value;}
             get{ return m_Name;}
@@ -126,7 +126,7 @@ namespace MyPermission
             }
             catch (InvalidCastException)
             {
-                throw new ArgumentException (String.Format ("Argument_WrongType", this.GetType ().FullName));
+                throw new ArgumentException (string.Format ("Argument_WrongType", this.GetType ().FullName));
             }
         }
 
@@ -143,7 +143,7 @@ namespace MyPermission
 #endif
             if (!VerifyType(target))
             {
-                throw new ArgumentException (String.Format ("Argument is wrong type.", this.GetType ().FullName));
+                throw new ArgumentException (string.Format ("Argument is wrong type.", this.GetType ().FullName));
             }
 
              NameIdPermission operand = ( NameIdPermission)target;
@@ -169,7 +169,7 @@ namespace MyPermission
 #endif
             if (!VerifyType(target))
             {
-                throw new ArgumentException (String.Format ("Argument_WrongType", this.GetType ().FullName));
+                throw new ArgumentException (string.Format ("Argument_WrongType", this.GetType ().FullName));
             }
 
              NameIdPermission operand = ( NameIdPermission)target;
@@ -184,14 +184,14 @@ namespace MyPermission
         {
             // The following code for unrestricted permission is only included as an example for
             // permissions that allow the unrestricted state. It is of no value for this permission.
-            String elUnrestricted = e.Attribute("Unrestricted");
+            string elUnrestricted = e.Attribute("Unrestricted");
             if (null != elUnrestricted)
             {
                 m_Unrestricted = bool.Parse(elUnrestricted);
                 return;
             }
 
-            String elName = e.Attribute( "Name" );
+            string elName = e.Attribute( "Name" );
             m_Name = elName == null ? null : elName;
         }
 
@@ -199,7 +199,7 @@ namespace MyPermission
         {
             // Use the SecurityElement class to encode the permission to XML.
             SecurityElement esd = new SecurityElement("IPermission");
-            String name = typeof( NameIdPermission).AssemblyQualifiedName;
+            string name = typeof( NameIdPermission).AssemblyQualifiedName;
             esd.AddAttribute("class", name);
             esd.AddAttribute("version", "1.0");
 

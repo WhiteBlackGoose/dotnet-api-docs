@@ -1,4 +1,4 @@
-﻿// This class creates a custom crytographic object based on the asymmetric
+// This class creates a custom crytographic object based on the asymmetric
 // algorithm by extending the abstract base class AsymmetricAlgorithm.
 //<Snippet2>
 using System;
@@ -124,7 +124,7 @@ namespace Contoso
                 string keyNumber = nodeList.Item(0).InnerText;
                 if (keyNumber != null) 
                 {
-                    cspParameters.KeyNumber = Int32.Parse(keyNumber);
+                    cspParameters.KeyNumber = int.Parse(keyNumber);
                 }
 
                 // ProviderName is optional.
@@ -140,7 +140,7 @@ namespace Contoso
                 string providerType = nodeList.Item(0).InnerText;
                 if (providerType != null) 
                 {
-                    cspParameters.ProviderType = Int32.Parse(providerType);
+                    cspParameters.ProviderType = int.Parse(providerType);
                 }
             }
             else
@@ -264,7 +264,7 @@ namespace Contoso
         //    </cryptoNameMapping>
         //  </cryptographySettings>
         //</mscorlib>
-        new static public CustomCrypto Create(String algorithmName) 
+        new static public CustomCrypto Create(string algorithmName) 
         {
             return (CustomCrypto) CryptoConfig.CreateFromName(algorithmName);
         }

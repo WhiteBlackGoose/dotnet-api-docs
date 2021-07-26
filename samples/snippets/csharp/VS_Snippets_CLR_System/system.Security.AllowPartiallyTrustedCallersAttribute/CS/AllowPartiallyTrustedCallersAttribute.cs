@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // The following HTML code can be used to call the user control in this sample.
 //
 //<HTML>
@@ -83,7 +83,7 @@ namespace UserControl
 				StreamReader sr = new StreamReader(fsIn);
 			
 				// Process every line in the file
-				for (String Line = sr.ReadLine(); Line != null; Line = sr.ReadLine()) 
+				for (string Line = sr.ReadLine(); Line != null; Line = sr.ReadLine()) 
 				{
 					listBox1.Items.Add(Line);
 				}

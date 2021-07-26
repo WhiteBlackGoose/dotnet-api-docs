@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.IO;
 using System.Runtime.Remoting;
@@ -15,14 +15,14 @@ namespace MyPermissionAttribute
     [Serializable]
     sealed public class  NameIdPermissionAttribute : CodeAccessSecurityAttribute
     {
-        private String m_Name = null;
+        private string m_Name = null;
         private bool m_unrestricted = false;
 
         public  NameIdPermissionAttribute (SecurityAction action): base( action )
         {
         }
 
-        public String Name
+        public string Name
         {
             get { return m_Name; }
             set { m_Name = value; }

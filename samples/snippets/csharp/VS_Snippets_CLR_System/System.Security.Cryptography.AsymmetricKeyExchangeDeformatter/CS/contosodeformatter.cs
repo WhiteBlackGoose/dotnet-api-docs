@@ -1,4 +1,4 @@
-﻿// This class demonstrates how to extend the AsymmetricKeyExchangeDeformatter
+// This class demonstrates how to extend the AsymmetricKeyExchangeDeformatter
 // abstract class.
 //<Snippet1>
 using System;
@@ -37,7 +37,7 @@ namespace Contoso
 
         // Disallow access to the parameters of the formatter.
         //<Snippet3>
-        public override String Parameters 
+        public override string Parameters 
         {
             get { return null; }
             set { ; }

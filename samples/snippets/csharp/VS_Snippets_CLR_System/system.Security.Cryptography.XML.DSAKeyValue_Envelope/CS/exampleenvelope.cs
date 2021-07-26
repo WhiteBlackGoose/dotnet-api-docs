@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 //
 // This example signs an XML file using an
 // envelope signature. It then verifies the 
@@ -113,7 +113,7 @@ public class SignVerifyEnvelope
     // </Snippet2>
     // <Snippet3>
     // Verify the signature of an XML file and return the result.
-    public static Boolean VerifyXmlFile(String Name)
+    public static Boolean VerifyXmlFile(string Name)
     {
         // Create a new XML document.
         XmlDocument xmlDocument = new XmlDocument();

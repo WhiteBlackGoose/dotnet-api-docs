@@ -1,4 +1,4 @@
-﻿// This sample demonstrates how to use each member of the
+// This sample demonstrates how to use each member of the
 // CryptographicUnexpectedOperationException class.
 //<Snippet2>
 using System;
@@ -209,14 +209,14 @@ class Members
 // Caught an expected exception:
 // System.Security.Cryptography.CryptographicUnexpectedOperationException: 
 // Encoded OID length is too large (greater than 0x7f bytes).
-//  at System.Security.Cryptography.CryptoConfig.EncodeOID(String str)
+//  at System.Security.Cryptography.CryptoConfig.EncodeOID(string str)
 //  at Members.ShowProperties() in c:\consoleapplication1\class1.cs:line 106
 // 
 // Properties of the exception are as follows:
 // Message: Encoded OID length is too large (greater than 0x7f bytes).
 // Source: mscorlib
 // Stack trace:    at System.Security.Cryptography.CryptoConfig.EncodeOID(
-// String str)
+// string str)
 //  at Members.ShowProperties() in c:\consoleapplication1\class1.cs:line 106
 // Help link:
 // Target site's name: EncodeOID
