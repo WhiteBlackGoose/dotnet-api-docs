@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 using System;
 
 class Example
@@ -18,9 +18,9 @@ class Example
     }
 }
 // The example displays the following output:
-//    -2147483648 (Int32) --> -2147483648 (Decimal)
-//    2147483647 (Int32) --> 2147483647 (Decimal)
-//    16777215 (Int32) --> 16777215 (Decimal)
-//    123456789 (Int32) --> 123456789 (Decimal)
-//    -1000000000 (Int32) --> -1000000000 (Decimal)
+//    -2147483648 (int) --> -2147483648 (Decimal)
+//    2147483647 (int) --> 2147483647 (Decimal)
+//    16777215 (int) --> 16777215 (Decimal)
+//    123456789 (int) --> 123456789 (Decimal)
+//    -1000000000 (int) --> -1000000000 (Decimal)
 //</Snippet2>

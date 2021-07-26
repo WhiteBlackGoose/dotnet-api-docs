@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Class1
@@ -16,31 +16,31 @@ public class Class1
       DateTimeOffset parsedDate;
       string dateString;
 
-      // String with date only
+      // string with date only
       dateString = "05/01/2008";
       if (DateTimeOffset.TryParse(dateString, out parsedDate))
          Console.WriteLine("{0} was converted to {1}.",
                            dateString, parsedDate);
 
-      // String with time only
+      // string with time only
       dateString = "11:36 PM";
       if (DateTimeOffset.TryParse(dateString, out parsedDate))
          Console.WriteLine("{0} was converted to {1}.",
                            dateString, parsedDate);
 
-      // String with date and offset
+      // string with date and offset
       dateString = "05/01/2008 +7:00";
       if (DateTimeOffset.TryParse(dateString, out parsedDate))
          Console.WriteLine("{0} was converted to {1}.",
                            dateString, parsedDate);
 
-      // String with day abbreviation
+      // string with day abbreviation
       dateString = "Thu May 01, 2008";
       if (DateTimeOffset.TryParse(dateString, out parsedDate))
          Console.WriteLine("{0} was converted to {1}.",
                            dateString, parsedDate);
 
-      // String with date, time with AM/PM designator, and offset
+      // string with date, time with AM/PM designator, and offset
       dateString = "5/1/2008 10:00 AM -07:00";
       if (DateTimeOffset.TryParse(dateString, out parsedDate))
          Console.WriteLine("{0} was converted to {1}.",

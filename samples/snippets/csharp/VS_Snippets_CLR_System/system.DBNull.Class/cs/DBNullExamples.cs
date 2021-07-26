@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.OleDb;
 
@@ -39,7 +39,7 @@ public class DBNullExample
       foreach (DataRow row in dt.Rows)
       {
          int labelLen;
-         label = String.Empty;
+         label = string.Empty;
          label += AddFieldValue(label, row, "Title");
          label += AddFieldValue(label, row, "FirstName");
          label += AddFieldValue(label, row, "MiddleInitial");
@@ -67,7 +67,7 @@ public class DBNullExample
       if (! DBNull.Value.Equals(row[fieldName]))
          return (string) row[fieldName] + " ";
       else
-         return String.Empty;
+         return string.Empty;
    }
    // </Snippet1>
 }

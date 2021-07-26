@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the decimal.CompareTo and decimal.Equals instance
 // methods.
 using System;
@@ -61,7 +61,7 @@ class DecCompToEqualsObjDemo
             "decimal( 987654000, 0, 0, false, 6 )" );
         CompDecimalToObject( Left, 9.8765400E+2,
             "Double 9.8765400E+2" );
-        CompDecimalToObject( Left, "987.654", "String \"987.654\"" );
+        CompDecimalToObject( Left, "987.654", "string \"987.654\"" );
     }
 }
 
@@ -93,7 +93,7 @@ object: Double 9.8765400E+2                   987.654
 Left.Equals( object )                         False
 Left.CompareTo( object )                      ArgumentException
 
-object: String "987.654"                      987.654
+object: string "987.654"                      987.654
 Left.Equals( object )                         False
 Left.CompareTo( object )                      ArgumentException
 */

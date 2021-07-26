@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.IO;
 
@@ -159,7 +159,7 @@ public class Class1
       TextReader conIn = Console.In;
       TextWriter conOut = Console.Out;
       int tries = 0;
-      string input = String.Empty;
+      string input = string.Empty;
       string[] formats = new string[] {@"@M/dd/yyyy HH:m zzz", @"MM/dd/yyyy HH:m zzz",
                                        @"M/d/yyyy HH:m zzz", @"MM/d/yyyy HH:m zzz",
                                        @"M/dd/yy HH:m zzz", @"MM/dd/yy HH:m zzz",

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -13,7 +13,7 @@ public class Example
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
       Console.WriteLine("Displaying short date for {0} culture:",
                         Thread.CurrentThread.CurrentCulture.Name);
-      Console.WriteLine("   {0} (Short Date String)",
+      Console.WriteLine("   {0} (Short Date string)",
                         dateToDisplay.ToShortDateString());
       // Display using 'd' standard format specifier to illustrate it is
       // identical to the string returned by ToShortDateString.
@@ -40,7 +40,7 @@ public class Example
 }
 // The example displays the following output:
 //       Displaying short date for en-US culture:
-//          6/1/2009 (Short Date String)
+//          6/1/2009 (Short Date string)
 //          6/1/2009 ('d' standard format specifier)
 //
 //       Displaying short date for fr-FR culture:
