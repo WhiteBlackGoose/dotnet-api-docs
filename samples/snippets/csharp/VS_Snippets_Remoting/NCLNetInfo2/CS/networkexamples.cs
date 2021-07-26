@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.NetworkInformation;
 using System.Net.Sockets;
@@ -75,7 +75,7 @@ using System.Net.Sockets;
             {
                 Console.WriteLine();
                 Console.WriteLine(adapter.Description);
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 Console.WriteLine("  Interface type .......................... : {0}",
                     adapter.NetworkInterfaceType);
             }
@@ -792,7 +792,7 @@ using System.Net.Sockets;
                 }
                 Console.WriteLine(adapter.Description);
                 // Underline the description.
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 IPInterfaceProperties adapterProperties = adapter.GetIPProperties();
                 // Try to get the IPv4 interface properties.
                 IPv4InterfaceProperties p = adapterProperties.GetIPv4Properties();
@@ -842,7 +842,7 @@ using System.Net.Sockets;
                 Console.WriteLine();
                 Console.WriteLine(adapter.Description);
                 // Underline the description.
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
 
                 IPInterfaceProperties adapterProperties = adapter.GetIPProperties();
                 // Try to get the IPv6 interface properties.
@@ -902,7 +902,7 @@ using System.Net.Sockets;
             {
                 IPInterfaceProperties properties = adapter.GetIPProperties();
                 Console.WriteLine(adapter.Description);
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 Console.WriteLine("  Interface type .......................... : {0}", adapter.NetworkInterfaceType);
                 Console.WriteLine("  Physical Address ........................ : {0}",
                            adapter.GetPhysicalAddress().ToString());

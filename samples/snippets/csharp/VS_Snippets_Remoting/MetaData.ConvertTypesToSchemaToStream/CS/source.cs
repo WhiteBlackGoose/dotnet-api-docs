@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Runtime.Remoting.Metadata;
 using System.Runtime.Remoting.MetadataServices;
@@ -24,7 +24,7 @@ public class Test {
 
       Type[] types = new Type[4];
 
-      String s = "a";
+      string s = "a";
       int i = -5;
       double d = 3.1415;
       TestClass tc = new TestClass();

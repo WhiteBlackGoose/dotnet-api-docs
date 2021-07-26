@@ -44,7 +44,7 @@ namespace Examples.System.Net.Cookies
 
                     //<Snippet4>
                     // Show the string representation of the cookie.
-                    Console.WriteLine($"String: {cook}");
+                    Console.WriteLine($"string: {cook}");
                     // </Snippet4>
                 }
             }
@@ -69,7 +69,7 @@ Don't save: False
 Comment:
 Uri for comments:
 Version: RFC 2965
-String: CustomerID = 13xyz
+string: CustomerID = 13xyz
 */
 
 // </Snippet1>

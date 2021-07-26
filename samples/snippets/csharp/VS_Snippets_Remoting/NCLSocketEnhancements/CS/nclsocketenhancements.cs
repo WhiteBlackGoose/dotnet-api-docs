@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -35,7 +35,7 @@ namespace Example
              new ManualResetEvent(false);
 
         // The response from the remote device.
-        private static string response = String.Empty;
+        private static string response = string.Empty;
 
         // Thread signal.
         public static ManualResetEvent allDone = new ManualResetEvent(false);
@@ -205,7 +205,7 @@ namespace Example
 
         public static void ReadCallback(IAsyncResult ar)
         {
-            String content = String.Empty;
+            string content = string.Empty;
 
             // Retrieve the state object and the handler socket
             // from the asynchronous state object.
@@ -242,7 +242,7 @@ namespace Example
             }
         }
 
-        private static void Send(Socket handler, String data)
+        private static void Send(Socket handler, string data)
         {
             // Convert the string data to byte data using ASCII encoding.
             byte[] byteData = Encoding.ASCII.GetBytes(data);
@@ -367,11 +367,11 @@ namespace Example
 
             // Send a file fileName to the remote device with preBuffer and postBuffer data.
             // Create the preBuffer data.
-            string string1 = String.Format("This is text data that precedes the file.{0}", Environment.NewLine);
+            string string1 = string.Format("This is text data that precedes the file.{0}", Environment.NewLine);
             byte[] preBuf = Encoding.ASCII.GetBytes(string1);
 
             // Create the postBuffer data.
-            string string2 = String.Format("This is text data that will follow the file.{0}", Environment.NewLine);
+            string string2 = string.Format("This is text data that will follow the file.{0}", Environment.NewLine);
             byte[] postBuf = Encoding.ASCII.GetBytes(string2);
 
             // There is a file test.txt in the root directory.
@@ -655,11 +655,11 @@ namespace Example
             string fileName = "C:\\test.txt";
 
             // Create the preBuffer data.
-            string string1 = String.Format("This is text data that precedes the file.{0}", Environment.NewLine);
+            string string1 = string.Format("This is text data that precedes the file.{0}", Environment.NewLine);
             byte[] preBuf = Encoding.ASCII.GetBytes(string1);
 
             // Create the postBuffer data.
-            string string2 = String.Format("This is text data that will follow the file.{0}", Environment.NewLine);
+            string string2 = string.Format("This is text data that will follow the file.{0}", Environment.NewLine);
             byte[] postBuf = Encoding.ASCII.GetBytes(string2);
 
             //Send file fileName with buffers and default flags to the remote device.

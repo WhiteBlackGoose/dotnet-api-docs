@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -32,7 +32,7 @@ namespace Example
         private static void SampleTryCreate()
         {
             //<snippet1>
-            // String to create.
+            // string to create.
             string addressString = "catalog/shownew.htm?date=today";
             // Parse the string and create a new Uri instance, if possible.
             Uri result = null;

@@ -1,4 +1,4 @@
-﻿// NclMailSync
+// NclMailSync
 
 using System;
 using System.Net;
@@ -445,7 +445,7 @@ namespace Examples.SmtpExamples.Sync
                 errors++;
             }
             // The email message summarizes the data found in the log.
-            message.Body = String.Format("{0} errors in log as of {1}",
+            message.Body = string.Format("{0} errors in log as of {1}",
                 errors, DateTime.Now);
             // Close the stream reader. This also closes the file.
             s.Close();
@@ -503,7 +503,7 @@ namespace Examples.SmtpExamples.Sync
                 errors++;
             }
             // The email message summarizes the data found in the log.
-            message.Body = String.Format("{0} errors in log as of {1}",
+            message.Body = string.Format("{0} errors in log as of {1}",
                 errors, DateTime.Now);
             // Close the stream reader. This also closes the file.
             s.Close();
@@ -561,7 +561,7 @@ namespace Examples.SmtpExamples.Sync
                 errors++;
             }
             // The email message summarizes the data found in the log.
-            message.Body = String.Format("{0} errors in log as of {1}",
+            message.Body = string.Format("{0} errors in log as of {1}",
                 errors, DateTime.Now);
             // Close the stream reader. This also closes the file.
             s.Close();
@@ -597,7 +597,7 @@ namespace Examples.SmtpExamples.Sync
         public static Attachment SendAttachedMessage(string server)
         {
             // Set up the sender information.
-            String from = Environment.UserDomainName + "." +
+            string from = Environment.UserDomainName + "." +
                 Environment.UserName +
                 "@contoso.com";
             Console.WriteLine("From: {0}", from);

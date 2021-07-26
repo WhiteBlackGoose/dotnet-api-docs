@@ -1,4 +1,4 @@
-﻿//NclMailASync
+//NclMailASync
 
 //<snippet1>
 
@@ -16,7 +16,7 @@ namespace Examples.SmtpExamples.Async
         private static void SendCompletedCallback(object sender, AsyncCompletedEventArgs e)
         {
             // Get the unique identifier for this asynchronous operation.
-             String token = (string) e.UserState;
+             string token = (string) e.UserState;
 
             if (e.Cancelled)
             {

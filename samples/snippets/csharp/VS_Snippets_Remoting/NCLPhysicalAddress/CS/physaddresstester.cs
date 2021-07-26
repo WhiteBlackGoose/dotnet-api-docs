@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.NetworkInformation;
 
 namespace Examples.System.Net.Networking
@@ -40,7 +40,7 @@ namespace Examples.System.Net.Networking
                 IPInterfaceProperties properties = adapter.GetIPProperties(); //  .GetIPInterfaceProperties();
                 Console.WriteLine();
                 Console.WriteLine(adapter.Description);
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 Console.WriteLine("  Interface type .......................... : {0}", adapter.NetworkInterfaceType);
                 Console.Write("  Physical address ........................ : ");
                 PhysicalAddress address = adapter.GetPhysicalAddress();

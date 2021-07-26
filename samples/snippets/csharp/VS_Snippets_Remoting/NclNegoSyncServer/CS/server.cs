@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Net.Security;
 using System.Net.Sockets;
@@ -53,7 +53,7 @@ namespace Examples.NegotiateStreamExamples
             // Read a message from the client.
             byte [] buffer = new byte[2048];
             int charLength = authStream.Read(buffer, 0, buffer.Length);
-            string messageData = new String(Encoding.UTF8.GetChars(buffer, 0, buffer.Length));
+            string messageData = new string(Encoding.UTF8.GetChars(buffer, 0, buffer.Length));
 
             Console.WriteLine("READ {0}", messageData);
             // Finished with the current client.

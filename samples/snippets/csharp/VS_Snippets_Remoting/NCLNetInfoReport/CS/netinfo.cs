@@ -1,4 +1,4 @@
-﻿// Sample NCLNetInfoReport
+// Sample NCLNetInfoReport
 
 using System;
 using System.Net;
@@ -461,7 +461,7 @@ namespace Examples
                 IPInterfaceProperties properties = adapter.GetIPProperties();
                 Console.WriteLine();
                 Console.WriteLine(adapter.Description);
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 Console.WriteLine("  Interface type .......................... : {0}", adapter.NetworkInterfaceType);
                 Console.WriteLine("  Physical Address ........................ : {0}",
                            adapter.GetPhysicalAddress().ToString());
@@ -535,7 +535,7 @@ namespace Examples
             {
                 Console.WriteLine ("Name: {0}", adapter.Name);
                 Console.WriteLine(adapter.Description);
-                Console.WriteLine(String.Empty.PadLeft(adapter.Description.Length,'='));
+                Console.WriteLine(string.Empty.PadLeft(adapter.Description.Length,'='));
                 Console.WriteLine("  Interface type .......................... : {0}", adapter.NetworkInterfaceType);
                 Console.WriteLine("  Operational status ...................... : {0}",
                     adapter.OperationalStatus);

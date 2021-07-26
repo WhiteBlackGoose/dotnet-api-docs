@@ -1,4 +1,4 @@
-﻿// RegisterPeerName.cs
+// RegisterPeerName.cs
 //
 // Description:
 //
@@ -22,7 +22,7 @@ namespace PNRPSample
 {
     class RegisterPeerName
     {
-        static string peerNameClassifier = String.Empty;        // command line argument: args[0]
+        static string peerNameClassifier = string.Empty;        // command line argument: args[0]
         static PeerNameType peerNameType = (PeerNameType)(-1);  // command line argument: args[1]
         static int portNumber = -1;                             // command line argument: args[2]
         static string comment = string.Empty;                   // command line argument: args[3]
@@ -43,10 +43,10 @@ namespace PNRPSample
         // The parameters used to register the name are static types that are set
         // from user input (command-line or user dialog).
         // These parameters include the following:
-        //   static String peerName
+        //   static string peerName
         //   static PeerNameType peerNameType
         //   static int portNumber
-        //   static String comment
+        //   static string comment
         //   static Cloud cloudName
 
         public static void CreateAndPublishPeerName()

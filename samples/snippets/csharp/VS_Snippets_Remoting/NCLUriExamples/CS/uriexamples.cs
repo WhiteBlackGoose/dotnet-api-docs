@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Text;
 using System.Threading;
@@ -201,7 +201,7 @@ namespace Example
 
           //<snippet17>
             string address = "www.contoso.com";
-            string uriString = String.Format("{0}{1}{2}/", Uri.UriSchemeHttp, Uri.SchemeDelimiter, address);
+            string uriString = string.Format("{0}{1}{2}/", Uri.UriSchemeHttp, Uri.SchemeDelimiter, address);
  #if OLDMETHOD
             Uri result;
             if (Uri.TryParse(uriString, false, false, out result) == true)
@@ -229,10 +229,10 @@ namespace Example
         private static void UnescapeUriWithPlusConversion()
         {
          //<snippet19>
-            String DataString = Uri.UnescapeDataString(".NET+Framework");
+            string DataString = Uri.UnescapeDataString(".NET+Framework");
             Console.WriteLine("Unescaped string: {0}", DataString);
 
-            String PlusString = DataString.Replace('+',' ');
+            string PlusString = DataString.Replace('+',' ');
             Console.WriteLine("plus to space string: {0}", PlusString);
         //</snippet19>
         }
