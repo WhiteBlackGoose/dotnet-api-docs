@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // This control renders values stored in view state for Text and FontSize properties.
 using System;
 using System.Web;
@@ -14,12 +14,12 @@ namespace ViewStateControlSamples
         // <snippet2>        
         // Add property values to view state with set;
         // retrieve them from view state with get.
-        public String Text
+        public string Text
         {
             get 
             { 
                 object o = ViewState["Text"]; 
-                return (o == null)? String.Empty : (string)o;
+                return (o == null)? string.Empty : (string)o;
             }
 
             set

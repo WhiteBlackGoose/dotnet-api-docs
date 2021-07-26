@@ -1,4 +1,4 @@
-﻿namespace Samples.AspNet.CS.Controls {
+namespace Samples.AspNet.CS.Controls {
 // <Snippet1>
     using System;
     using System.Collections;
@@ -19,12 +19,12 @@
         // The comma-separated value file to retrieve data from.
         public string FileName {
             get {
-                return ((CsvDataSourceView)this.GetView(String.Empty)).SourceFile;
+                return ((CsvDataSourceView)this.GetView(string.Empty)).SourceFile;
             }
             set {
                 // Only set if it is different.
-                if ( ((CsvDataSourceView)this.GetView(String.Empty)).SourceFile != value) {
-                    ((CsvDataSourceView)this.GetView(String.Empty)).SourceFile = value;
+                if ( ((CsvDataSourceView)this.GetView(string.Empty)).SourceFile != value) {
+                    ((CsvDataSourceView)this.GetView(string.Empty)).SourceFile = value;
                     RaiseDataSourceChangedEvent(EventArgs.Empty);
                 }
             }
@@ -34,12 +34,12 @@
         // not include column names.
         public bool IncludesColumnNames {
             get {
-                return ((CsvDataSourceView)this.GetView(String.Empty)).IncludesColumnNames;
+                return ((CsvDataSourceView)this.GetView(string.Empty)).IncludesColumnNames;
             }
             set {
                 // Only set if it is different.
-                if ( ((CsvDataSourceView)this.GetView(String.Empty)).IncludesColumnNames != value) {
-                    ((CsvDataSourceView)this.GetView(String.Empty)).IncludesColumnNames = value;
+                if ( ((CsvDataSourceView)this.GetView(string.Empty)).IncludesColumnNames != value) {
+                    ((CsvDataSourceView)this.GetView(string.Empty)).IncludesColumnNames = value;
                     RaiseDataSourceChangedEvent(EventArgs.Empty);
                 }
             }
@@ -50,7 +50,7 @@
         private CsvDataSourceView view = null;
         protected override DataSourceView GetView(string viewName) {
             if (null == view) {
-                view = new CsvDataSourceView(this, String.Empty);
+                view = new CsvDataSourceView(this, string.Empty);
             }
             return view;
         }
@@ -83,7 +83,7 @@
         public static string DefaultViewName = "CommaSeparatedView";
 
         // The location of the .csv file.
-        private string sourceFile = String.Empty;
+        private string sourceFile = string.Empty;
         internal string SourceFile {
             get {
                 return sourceFile;

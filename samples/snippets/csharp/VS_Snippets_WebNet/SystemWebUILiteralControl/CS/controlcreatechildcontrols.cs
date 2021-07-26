@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -10,7 +10,7 @@ namespace CompositionSampleControls {
         public int Value {
            get {
                this.EnsureChildControls();
-               return Int32.Parse(((TextBox)Controls[1]).Text);
+               return int.Parse(((TextBox)Controls[1]).Text);
            }
            set {
                this.EnsureChildControls();

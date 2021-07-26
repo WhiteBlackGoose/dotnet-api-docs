@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -11,7 +11,7 @@ namespace Samples.AspNet.CS.Controls
 	public class TemplatedFirstControl : Control, INamingContainer
 	{
 		private ITemplate firstTemplate;
-		private String text = null;
+		private string text = null;
 		private Control myTemplateContainer;
 
 		[System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
@@ -34,7 +34,7 @@ namespace Samples.AspNet.CS.Controls
 			}
 		}
 
-		public String Text
+		public string Text
 		{
 			get
 			{
@@ -46,7 +46,7 @@ namespace Samples.AspNet.CS.Controls
 			}
 		}
 
-		public String DateTime
+		public string DateTime
 		{
 			get
 			{
@@ -86,7 +86,7 @@ namespace Samples.AspNet.CS.Controls
         this.parent = parent;
       }
             
-      public String Text
+      public string Text
       {
         get
         {
@@ -94,7 +94,7 @@ namespace Samples.AspNet.CS.Controls
         }
       }
      
-      public String DateTime
+      public string DateTime
       {
         get 
         {
