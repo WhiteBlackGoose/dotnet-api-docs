@@ -1,4 +1,4 @@
-﻿// <Snippet9>
+// <Snippet9>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -19,7 +19,7 @@ public class Example
          Console.WriteLine("\n{0}!", greeting);
          Console.Write(rm.GetString("Prompt", CultureInfo.CurrentCulture));
          string name = Console.ReadLine();
-         if (! String.IsNullOrEmpty(name))
+         if (! string.IsNullOrEmpty(name))
             Console.WriteLine("{0}, {1}!", greeting, name);
       }
       Console.WriteLine();

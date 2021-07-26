@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.CodeDom;
 
@@ -10,7 +10,7 @@ namespace CodeDomSamples
         {
             //<Snippet2>
             // Represents a string.
-            CodePrimitiveExpression stringPrimitive = new CodePrimitiveExpression("Test String");
+            CodePrimitiveExpression stringPrimitive = new CodePrimitiveExpression("Test string");
             // Represents an integer.
             CodePrimitiveExpression intPrimitive = new CodePrimitiveExpression(10);
             // Represents a floating point number.

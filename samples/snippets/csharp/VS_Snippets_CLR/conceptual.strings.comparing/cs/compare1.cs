@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -13,7 +13,7 @@ public class CompareStringSample
       // Sets the CurrentCulture to Danish in Denmark.
       Thread.CurrentThread.CurrentCulture = new CultureInfo("da-DK");
       // Compares the two strings.
-      int result1 = String.Compare(str1, str2);
+      int result1 = string.Compare(str1, str2);
       Console.WriteLine("\nWhen the CurrentCulture is \"da-DK\",\nthe " +
                         "result of comparing {0} with {1} is: {2}", str1, str2,
                         result1);
@@ -21,7 +21,7 @@ public class CompareStringSample
       // Sets the CurrentCulture to English in the U.S.
       Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
       // Compares the two strings.
-      int result2 = String.Compare(str1, str2);
+      int result2 = string.Compare(str1, str2);
       Console.WriteLine("\nWhen the CurrentCulture is \"en-US\",\nthe " +
                         "result of comparing {0} with {1} is: {2}", str1, str2,
                         result2);

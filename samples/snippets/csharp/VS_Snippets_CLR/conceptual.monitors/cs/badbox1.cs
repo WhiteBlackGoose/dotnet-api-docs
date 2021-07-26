@@ -1,4 +1,4 @@
-﻿//<Snippet3>
+//<Snippet3>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -30,7 +30,7 @@ public class Example
          Console.WriteLine("{0} tasks started and executed.", nTasks);
       }
       catch (AggregateException e) {
-         String msg = String.Empty;
+         string msg = string.Empty;
          foreach (var ie in e.InnerExceptions) {
             Console.WriteLine("{0}", ie.GetType().Name);
             if (! msg.Contains(ie.Message))

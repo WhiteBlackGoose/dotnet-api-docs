@@ -1,4 +1,4 @@
-﻿// The following example builds a CodeDom source graph for a simple
+// The following example builds a CodeDom source graph for a simple
 // Hello World program.  The source is then saved to a file,
 // compiled into an executable, and run.
 
@@ -72,12 +72,12 @@ namespace CompilerParametersExample
             return compileUnit;
         }
 
-        public static String GenerateCode(CodeDomProvider provider,
+        public static string GenerateCode(CodeDomProvider provider,
                                           CodeCompileUnit compileunit)
         {
             // Build the source file name with the language
             // extension (vb, cs, js).
-            String sourceFile;
+            string sourceFile;
             if (provider.FileExtension[0] == '.')
             {
                 sourceFile = "HelloWorld" + provider.FileExtension;
@@ -99,8 +99,8 @@ namespace CompilerParametersExample
 
         //<Snippet2>
         public static bool CompileCode(CodeDomProvider provider,
-            String sourceFile,
-            String exeFile)
+            string sourceFile,
+            string exeFile)
         {
 
             CompilerParameters cp = new CompilerParameters();
@@ -198,10 +198,10 @@ namespace CompilerParametersExample
         static void Main()
         {
             CodeDomProvider provider = null;
-            String exeName = "HelloWorld.exe";
+            string exeName = "HelloWorld.exe";
 
             Console.WriteLine("Enter the source language for Hello World (cs, vb, etc):");
-            String inputLang = Console.ReadLine();
+            string inputLang = Console.ReadLine();
             Console.WriteLine();
 
             if (CodeDomProvider.IsDefinedLanguage(inputLang))
@@ -217,7 +217,7 @@ namespace CompilerParametersExample
             {
                 CodeCompileUnit helloWorld = BuildHelloWorldGraph();
 
-                String sourceFile = GenerateCode(provider, helloWorld);
+                string sourceFile = GenerateCode(provider, helloWorld);
 
                 Console.WriteLine("HelloWorld source code generated.");
 

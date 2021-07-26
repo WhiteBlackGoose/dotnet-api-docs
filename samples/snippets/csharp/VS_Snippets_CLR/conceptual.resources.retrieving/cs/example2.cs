@@ -1,4 +1,4 @@
-﻿// <Snippet8>
+// <Snippet8>
 using System;
 using System.Resources;
 
@@ -8,12 +8,12 @@ public class Example
 {
    public static void Main()
    {
-      string fmtString = String.Empty;
+      string fmtString = string.Empty;
       ResourceManager rm = new ResourceManager("UIResources", typeof(Example).Assembly);
       string title = rm.GetString("TableName");
       PersonTable tableInfo = (PersonTable) rm.GetObject("Employees");
 
-      if (! String.IsNullOrEmpty(title)) {
+      if (! string.IsNullOrEmpty(title)) {
          fmtString = "{0," + ((Console.WindowWidth + title.Length) / 2).ToString() + "}";
          Console.WriteLine(fmtString, title);
          Console.WriteLine();

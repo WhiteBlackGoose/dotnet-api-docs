@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.CodeDom;
 
@@ -12,7 +12,7 @@ namespace CodeDomSamples
             // Declares a type to contain a field and a constructor method.
             CodeTypeDeclaration type1 = new CodeTypeDeclaration("FieldTest");
 
-            // Declares a field of type String named testStringField.
+            // Declares a field of type string named testStringField.
             CodeMemberField field1 = new CodeMemberField("System.String", "TestStringField");
             type1.Members.Add( field1 );
 

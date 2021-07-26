@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.CodeDom;
 
@@ -26,7 +26,7 @@ namespace CodeDomSamples
             param1.Direction = FieldDirection.Ref;
             method1.Parameters.Add(param1);
 
-            // Declares a Int32 parameter passed by incoming field.
+            // Declares a int parameter passed by incoming field.
             CodeParameterDeclarationExpression param2 = new CodeParameterDeclarationExpression("System.Int32", "intParam");
             param2.Direction = FieldDirection.Out;
             method1.Parameters.Add(param2);

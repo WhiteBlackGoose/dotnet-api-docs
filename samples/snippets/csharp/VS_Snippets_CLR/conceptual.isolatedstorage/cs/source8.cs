@@ -1,4 +1,4 @@
-﻿//<snippet9>
+//<snippet9>
 using System;
 using System.IO;
 using System.IO.IsolatedStorage;
@@ -41,7 +41,7 @@ public class FindingExistingFilesAndDirectories
     } // End of Main.
 
     // Method to retrieve all directories, recursively, within a store.
-    public static List<String> GetAllDirectories(string pattern, IsolatedStorageFile storeFile)
+    public static List<string> GetAllDirectories(string pattern, IsolatedStorageFile storeFile)
     {
         // Get the root of the search string.
         string root = Path.GetDirectoryName(pattern);
@@ -52,13 +52,13 @@ public class FindingExistingFilesAndDirectories
         }
 
         // Retrieve directories.
-        List<String> directoryList = new List<String>(storeFile.GetDirectoryNames(pattern));
+        List<string> directoryList = new List<string>(storeFile.GetDirectoryNames(pattern));
 
         // Retrieve subdirectories of matches.
         for (int i = 0, max = directoryList.Count; i < max; i++)
         {
             string directory = directoryList[i] + "/";
-            List<String> more = GetAllDirectories(root + directory + "*", storeFile);
+            List<string> more = GetAllDirectories(root + directory + "*", storeFile);
 
             // For each subdirectory found, add in the base path.
             for (int j = 0; j < more.Count; j++)
@@ -76,12 +76,12 @@ public class FindingExistingFilesAndDirectories
         return directoryList;
     }
 
-    public static List<String> GetAllFiles(string pattern, IsolatedStorageFile storeFile)
+    public static List<string> GetAllFiles(string pattern, IsolatedStorageFile storeFile)
     {
         // Get the root and file portions of the search string.
         string fileString = Path.GetFileName(pattern);
 
-        List<String> fileList = new List<String>(storeFile.GetFileNames(pattern));
+        List<string> fileList = new List<string>(storeFile.GetFileNames(pattern));
 
         // Loop through the subdirectories, collect matches,
         // and make separators consistent.

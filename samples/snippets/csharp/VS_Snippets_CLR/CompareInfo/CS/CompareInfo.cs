@@ -1,4 +1,4 @@
-﻿// Types:System.Globalization.CompareInfo
+// Types:System.Globalization.CompareInfo
 //<snippet1>
 using System;
 using System.Text;
@@ -12,7 +12,7 @@ public sealed class App
 
         // The code below demonstrates how strings compare
         // differently for different cultures.
-        String s1 = "Coté", s2 = "coté", s3 = "côte";
+        string s1 = "Coté", s2 = "coté", s3 = "côte";
 
         // Set sort order of strings for French in France.
         CompareInfo ci = new CultureInfo("fr-FR").CompareInfo;

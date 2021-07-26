@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -18,7 +18,7 @@ public class Example
          CultureInfo newCulture = new CultureInfo(cultures[cultureNdx]);
          Thread.CurrentThread.CurrentCulture = newCulture;
          Thread.CurrentThread.CurrentUICulture = newCulture;
-         string greeting = String.Format("The current culture is {0}.\n{1}",
+         string greeting = string.Format("The current culture is {0}.\n{1}",
                                          Thread.CurrentThread.CurrentUICulture.Name,
                                          rm.GetString("HelloString"));
          Console.WriteLine(greeting);
