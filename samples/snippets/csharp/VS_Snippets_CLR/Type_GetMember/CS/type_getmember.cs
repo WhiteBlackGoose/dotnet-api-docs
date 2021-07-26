@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Security;
@@ -43,7 +43,7 @@ public class MyMemberSample
 
     public void GetMemberInfo()
     {
-        String myString = "GetMember_String";
+        string myString = "GetMember_String";
 
         Type myType = myString.GetType();
         // Get the members for myString starting with the letter C.
@@ -64,7 +64,7 @@ public class MyMemberSample
     // <Snippet2>
     public void GetPublicStaticMemberInfo()
     {
-        String myString = "GetMember_String_BindingFlag";
+        string myString = "GetMember_String_BindingFlag";
         Type myType = myString.GetType();
         // Get the public static members for the class myString starting with the letter C.
         MemberInfo[] myMembers = myType.GetMember("C*",
@@ -85,7 +85,7 @@ public class MyMemberSample
     // <Snippet3>
     public void GetPublicInstanceMethodMemberInfo()
     {
-        String myString = "GetMember_String_MemberType_BindingFlag";
+        string myString = "GetMember_String_MemberType_BindingFlag";
         Type myType = myString.GetType();
         // Get the public instance methods for myString starting with the letter C.
         MemberInfo[] myMembers = myType.GetMember("C*", MemberTypes.Method,

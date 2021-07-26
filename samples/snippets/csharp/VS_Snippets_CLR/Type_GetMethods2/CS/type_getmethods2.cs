@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Reflection;
@@ -14,7 +14,7 @@ public class MyTypeClass
     {
         return 3;
     }
-    protected String MyMethods2()
+    protected string MyMethods2()
     {
         return "hello";
     }

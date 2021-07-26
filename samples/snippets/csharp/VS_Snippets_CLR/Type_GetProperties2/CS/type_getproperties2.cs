@@ -1,36 +1,36 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
 // Create a class having six properties.
 public class PropertyClass
 {
-    public String Property1
+    public string Property1
     {
         get { return "hello"; }
     }
 
-    public String Property2
+    public string Property2
     {
         get { return "hello"; }
     }
 
-    protected String Property3
+    protected string Property3
     {
         get { return "hello"; }
     }
 
-    private Int32 Property4
+    private int Property4
     {
         get { return 32; }
     }
 
-    internal String Property5
+    internal string Property5
     {
        get { return "value"; }
     }
 
-    protected internal String Property6
+    protected internal string Property6
     {
        get { return "value"; }
     }
@@ -80,7 +80,7 @@ public class Example
         }
     }
 
-    public static String GetVisibility(MethodInfo accessor)
+    public static string GetVisibility(MethodInfo accessor)
     {
        if (accessor.IsPublic)
           return "Public";

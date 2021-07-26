@@ -1,6 +1,6 @@
-﻿/*
-   System.Type.GetInterface(String)
-   System.Type.GetInterface(String, bool)
+/*
+   System.Type.GetInterface(string)
+   System.Type.GetInterface(string, bool)
    System.Type.GetInterfaceMap
 
    The following program get the type of Hashtable class and searches for the interface

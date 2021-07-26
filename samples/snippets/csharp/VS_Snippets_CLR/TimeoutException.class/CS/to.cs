@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the use of the TimeoutException
 // exception in conjunction with the SerialPort class.
 
@@ -45,9 +45,9 @@ read operation completes successfully before the specified timeout period
 expires. Otherwise, a timeout exception like the following is thrown.)
 
 System.TimeoutException: The operation has timed-out.
-   at System.IO.Ports.SerialStream.ReadByte(Int32 timeout)
-   at System.IO.Ports.SerialPort.ReadOneChar(Int32 timeout)
-   at System.IO.Ports.SerialPort.ReadTo(String value)
+   at System.IO.Ports.SerialStream.ReadByte(int timeout)
+   at System.IO.Ports.SerialPort.ReadOneChar(int timeout)
+   at System.IO.Ports.SerialPort.ReadTo(string value)
    at System.IO.Ports.SerialPort.ReadLine()
    at Sample.Main()
 */

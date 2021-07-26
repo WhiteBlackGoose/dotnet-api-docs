@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates overloads of the TryParse method for
 // several base types, and the TryParseExact method for DateTime.
 
@@ -28,13 +28,13 @@ class Sample
 
 // Non-numeric types.
     Boolean  booleanVal;
-    Char     charVal;
+    char     charVal;
     DateTime datetimeVal;
 
 // Numeric types.
     Byte     byteVal;
     Int16    int16Val;
-    Int32    int32Val;
+    int    int32Val;
     Int64    int64Val;
     Decimal  decimalVal;
     Single   singleVal;
@@ -79,9 +79,9 @@ class Sample
 // Boolean
     success = Boolean.TryParse("true", out booleanVal);
     Show(success, "Boolean", booleanVal.ToString());
-// Char
-    success = Char.TryParse("A", out charVal);
-    Show(success, "Char", charVal.ToString());
+// char
+    success = char.TryParse("A", out charVal);
+    Show(success, "char", charVal.ToString());
 
 // Numeric types:
     Console.WriteLine(msg3, nl);
@@ -91,9 +91,9 @@ class Sample
 // Int16
     success = Int16.TryParse("-2", NumberStyles.Integer, null, out int16Val);
     Show(success, "Int16", int16Val.ToString());
-// Int32
-    success = Int32.TryParse("3", NumberStyles.Integer, null, out int32Val);
-    Show(success, "Int32", int32Val.ToString());
+// int
+    success = int.TryParse("3", NumberStyles.Integer, null, out int32Val);
+    Show(success, "int", int32Val.ToString());
 // Int64
     success = Int64.TryParse("4", NumberStyles.Integer, null, out int64Val);
     Show(success, "Int64", int64Val.ToString());
@@ -157,13 +157,13 @@ Parse for DateTime #3 = 7/4/2004 12:34:56 PM
 Parse for DateTime #4 = 7/4/2004 12:34:56 PM
 
 Parse for Boolean = True
-Parse for Char = A
+Parse for char = A
 
 Numeric types:
 
 Parse for Byte = 1
 Parse for Int16 = -2
-Parse for Int32 = 3
+Parse for int = 3
 Parse for Int64 = 4
 Parse for Decimal = -5.5
 Parse for Single = 6.6

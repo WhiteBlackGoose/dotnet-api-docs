@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Reflection;
@@ -7,7 +7,7 @@ using System.IO;
 [DefaultMemberAttribute("Age")]
 public class MyClass
 {
-    public void Name(String s) {}
+    public void Name(string s) {}
     public int Age
     {
         get
