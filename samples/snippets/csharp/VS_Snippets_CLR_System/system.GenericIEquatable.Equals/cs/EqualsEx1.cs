@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -19,7 +19,7 @@ public class Person : IEquatable<Person>
       get { return this.uniqueSsn; }
       set {
          if (Regex.IsMatch(value, @"\d{9}"))
-            uniqueSsn = String.Format("{0}-(1}-{2}", value.Substring(0, 3),
+            uniqueSsn = string.Format("{0}-(1}-{2}", value.Substring(0, 3),
                                                      value.Substring(3, 2),
                                                      value.Substring(5, 4));
          else if (Regex.IsMatch(value, @"\d{3}-\d{2}-\d{4}"))
@@ -33,7 +33,7 @@ public class Person : IEquatable<Person>
    {
       get { return this.lName; }
       set {
-         if (String.IsNullOrEmpty(value))
+         if (string.IsNullOrEmpty(value))
             throw new ArgumentException("The last name cannot be null or empty.");
          else
             this.lName = value;

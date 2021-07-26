@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -13,7 +13,7 @@ public class Example
    {
       // <Snippet1>
       int utf32 = 0x10380;       // UGARITIC LETTER ALPA
-      string surrogate = Char.ConvertFromUtf32(utf32);
+      string surrogate = char.ConvertFromUtf32(utf32);
       foreach (var ch in surrogate)
          Console.WriteLine($"U+{(ushort)ch:X4}: {System.Globalization.CharUnicodeInfo.GetUnicodeCategory(ch):G}",);
       // The example displays the following output:
@@ -26,7 +26,7 @@ public class Example
    {
       // <Snippet2>
       int utf32 = 0x10380;       // UGARITIC LETTER ALPA
-      string surrogate = Char.ConvertFromUtf32(utf32);
+      string surrogate = char.ConvertFromUtf32(utf32);
       for (int ctr = 0; ctr < surrogate.Length; ctr++)
          Console.WriteLine($"U+{(ushort)surrogate[ctr]:X4}: {System.Globalization.CharUnicodeInfo.GetUnicodeCategory(surrogate, ctr):G}");
       // The example displays the following output:

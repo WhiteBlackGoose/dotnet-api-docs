@@ -1,4 +1,4 @@
-﻿// The following code example compares two strings using different CompareOptions settings.
+// The following code example compares two strings using different CompareOptions settings.
 
 // <snippet1>
 using System;
@@ -9,8 +9,8 @@ public class SamplesCompareInfo  {
    public static void Main()  {
 
       // Defines the strings to compare.
-      String myStr1 = "My Uncle Bill's clients";
-      String myStr2 = "My uncle bills clients";
+      string myStr1 = "My Uncle Bill's clients";
+      string myStr2 = "My uncle bills clients";
 
       // Creates a CompareInfo that uses the InvariantCulture.
       CompareInfo myComp = CultureInfo.InvariantCulture.CompareInfo;

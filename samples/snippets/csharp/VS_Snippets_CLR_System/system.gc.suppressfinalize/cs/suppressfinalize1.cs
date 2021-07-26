@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
@@ -70,7 +70,7 @@ public class ConsoleMonitor : IDisposable
 
    private void Dispose(bool disposing)
    {
-      string output = String.Format("The Dispose({0}) method.\n", disposing);
+      string output = string.Format("The Dispose({0}) method.\n", disposing);
       uint written = 0;
       WriteConsole(handle, output, (uint) output.Length, out written, IntPtr.Zero);
 

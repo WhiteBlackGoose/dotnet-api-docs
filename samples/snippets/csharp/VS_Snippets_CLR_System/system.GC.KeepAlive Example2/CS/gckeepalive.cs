@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Threading;
 using System.Runtime.InteropServices;
@@ -34,7 +34,7 @@ public class MyApp
     // A private static handler function in the MyApp class.
     static Boolean Handler(MyWin32.CtrlTypes CtrlType)
     {
-        String message = "This message should never be seen!";
+        string message = "This message should never be seen!";
 
         // A switch to handle the event type.
         switch(CtrlType)

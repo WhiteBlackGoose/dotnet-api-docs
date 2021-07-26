@@ -1,4 +1,4 @@
-﻿// The following code example shows the values returned by each method for different types of characters.
+// The following code example shows the values returned by each method for different types of characters.
 
 // <snippet1>
 using System;
@@ -8,9 +8,9 @@ public class SamplesCharUnicodeInfo  {
 
    public static void Main()  {
 
-      // The String to get information for.
-      String s = "a9\u0393\u00B2\u00BC\u0BEF\u0BF0\u2788";
-      Console.WriteLine( "String: {0}", s );
+      // The string to get information for.
+      string s = "a9\u0393\u00B2\u00BC\u0BEF\u0BF0\u2788";
+      Console.WriteLine( "string: {0}", s );
 
       // Print the values for each of the characters in the string.
       Console.WriteLine( "index c  Num   Dig   Dec   UnicodeCategory" );
@@ -28,7 +28,7 @@ public class SamplesCharUnicodeInfo  {
 /*
 This code produces the following output.  Some characters might not display at the console.
 
-String: a9Γ²¼௯௰➈
+string: a9Γ²¼௯௰➈
 index c  Num   Dig   Dec   UnicodeCategory
 0     a   -1    -1    -1   LowercaseLetter
 1     9   9     9     9    DecimalDigitNumber

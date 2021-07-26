@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime;
 
 public class Example
@@ -20,8 +20,8 @@ public class Example
    {
        String[] str = new String[10000];
        for (int ctr = 0; ctr <= 99999; ctr++) {
-          String s1 = "word1";
-          String s2 = "word2";
+          string s1 = "word1";
+          string s2 = "word2";
           str[ctr] = s1 + " " + s2;
        }
    }

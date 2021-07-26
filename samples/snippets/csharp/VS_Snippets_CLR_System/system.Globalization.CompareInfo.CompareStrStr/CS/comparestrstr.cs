@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // The following code example compares two strings using the different CompareInfo instances:
 //    a CompareInfo instance associated with the "Spanish - Spain" culture with international sort,
 //    a CompareInfo instance associated with the "Spanish - Spain" culture with traditional sort, and
@@ -12,8 +12,8 @@ public class SamplesCompareInfo  {
    public static void Main()  {
 
       // Defines the strings to compare.
-      String myStr1 = "calle";
-      String myStr2 = "calor";
+      string myStr1 = "calle";
+      string myStr2 = "calor";
 
       // Uses GetCompareInfo to create the CompareInfo that uses the "es-ES" culture with international sort.
       CompareInfo myCompIntl = CompareInfo.GetCompareInfo( "es-ES" );

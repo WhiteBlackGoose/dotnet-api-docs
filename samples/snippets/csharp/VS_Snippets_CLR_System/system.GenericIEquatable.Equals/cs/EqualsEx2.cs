@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
@@ -29,7 +29,7 @@ public class Person : IEquatable<Person>
    {
       get { return this.lName; }
       set {
-         if (String.IsNullOrEmpty(value))
+         if (string.IsNullOrEmpty(value))
             throw new ArgumentException("The last name cannot be null or empty.");
          else
             this.lName = value;
