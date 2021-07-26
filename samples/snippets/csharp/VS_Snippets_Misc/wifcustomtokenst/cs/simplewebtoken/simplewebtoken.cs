@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -94,7 +94,7 @@ namespace SimpleWebToken
             get 
             {
                 string validFrom = _properties[SimpleWebTokenConstants.ValidFrom];
-                return GetTimeAsDateTime( String.IsNullOrEmpty( validFrom ) ? "0" : validFrom );
+                return GetTimeAsDateTime( string.IsNullOrEmpty( validFrom ) ? "0" : validFrom );
             }
         }
         //</Snippet6>
@@ -109,7 +109,7 @@ namespace SimpleWebToken
             get
             {
                 string expiryTime = _properties[SimpleWebTokenConstants.ExpiresOn];
-                return GetTimeAsDateTime( String.IsNullOrEmpty( expiryTime ) ? "0" : expiryTime );
+                return GetTimeAsDateTime( string.IsNullOrEmpty( expiryTime ) ? "0" : expiryTime );
             }
         }
         //</Snippet7>

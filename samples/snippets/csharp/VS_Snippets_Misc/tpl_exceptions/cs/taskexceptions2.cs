@@ -1,4 +1,4 @@
-﻿// <snippet13>
+// <snippet13>
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -19,8 +19,8 @@ public class Example
 
    static void ExecuteTasks()
    {
-        // Assume this is a user-entered String.
-        String path = @"C:\";
+        // Assume this is a user-entered string.
+        string path = @"C:\";
         List<Task> tasks = new List<Task>();
 
         tasks.Add(Task.Run(() => {

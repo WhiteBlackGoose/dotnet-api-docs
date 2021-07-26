@@ -1,4 +1,4 @@
-﻿// <snippet12>
+// <snippet12>
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -47,7 +47,7 @@ public class Example
                             }
                             return x is UnauthorizedAccessException;
                           });
-          return Array.Empty<String>();
+          return Array.Empty<string>();
        }
    }
 }

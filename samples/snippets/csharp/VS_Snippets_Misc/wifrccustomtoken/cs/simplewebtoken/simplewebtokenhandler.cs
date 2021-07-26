@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -208,7 +208,7 @@ namespace SimpleWebToken
         /// <returns>The parsed form of the token.</returns>
         protected SecurityToken ReadSecurityTokenFromString( string serializedToken )
         {
-            if (String.IsNullOrEmpty(serializedToken))
+            if (string.IsNullOrEmpty(serializedToken))
             {
                 throw new ArgumentException("The parameter 'serializedToken' cannot be null or empty string.");
             }
@@ -277,7 +277,7 @@ namespace SimpleWebToken
 
             string signedToken = null;
 
-            if ( String.IsNullOrEmpty( simpleWebToken.SerializedToken ) )
+            if ( string.IsNullOrEmpty( simpleWebToken.SerializedToken ) )
             {
                 StringBuilder strBuilder = new StringBuilder();
 
@@ -285,7 +285,7 @@ namespace SimpleWebToken
                 NameValueCollection tokenProperties = simpleWebToken.GetAllProperties();
 
                 // remove the signature if present
-                if ( String.IsNullOrEmpty( tokenProperties[SimpleWebTokenConstants.Signature] ) )
+                if ( string.IsNullOrEmpty( tokenProperties[SimpleWebTokenConstants.Signature] ) )
                 {
                     tokenProperties.Remove( SimpleWebTokenConstants.Signature );
                 }
@@ -299,7 +299,7 @@ namespace SimpleWebToken
                             strBuilder.Append( ParameterSeparator );
                         }
 
-                        strBuilder.Append( String.Format(
+                        strBuilder.Append( string.Format(
                             CultureInfo.InvariantCulture,
                             "{0}={1}",
                             HttpUtility.UrlEncode( key ),
@@ -324,7 +324,7 @@ namespace SimpleWebToken
                
                 // append the signature
                 string signature = GenerateSignature( serializedToken, securityKey.GetSymmetricKey() );
-                strBuilder.Append( String.Format(
+                strBuilder.Append( string.Format(
                             CultureInfo.InvariantCulture,
                             "{0}{1}={2}",
                             ParameterSeparator,
@@ -380,7 +380,7 @@ namespace SimpleWebToken
                 throw new ArgumentNullException( "simpleWebToken" );
             }
 
-            if ( String.IsNullOrEmpty( simpleWebToken.SerializedToken ) || String.IsNullOrEmpty( simpleWebToken.Signature ) )
+            if ( string.IsNullOrEmpty( simpleWebToken.SerializedToken ) || string.IsNullOrEmpty( simpleWebToken.Signature ) )
             {
                 throw new SecurityTokenValidationException( "The token does not have a signature to verify" );
             }
@@ -433,7 +433,7 @@ namespace SimpleWebToken
         {
             if ( Configuration.AudienceRestriction.AudienceMode != AudienceUriMode.Never )
             {
-                if ( String.IsNullOrEmpty( tokenAudience ) )
+                if ( string.IsNullOrEmpty( tokenAudience ) )
                 {
                     throw new SecurityTokenValidationException("The incoming token does not have a valid audience Uri and the Audience Restriction is not set to 'None'.");
                 }
@@ -480,7 +480,7 @@ namespace SimpleWebToken
         /// <returns>A colleciton of all name-value pairs from the token.</returns>
         NameValueCollection ParseToken( string encodedToken )
         {
-            if ( String.IsNullOrEmpty( encodedToken ) )
+            if ( string.IsNullOrEmpty( encodedToken ) )
             {
                 throw new ArgumentException( "The parameter 'encodedToken' cannot be null or empty string.");
             }
@@ -490,7 +490,7 @@ namespace SimpleWebToken
             {
                 string[] keyValueArray = nameValue.Split( '=' );
 
-                if ( ( keyValueArray.Length < 2 ) || String.IsNullOrEmpty( keyValueArray[0] ) )
+                if ( ( keyValueArray.Length < 2 ) || string.IsNullOrEmpty( keyValueArray[0] ) )
                 {
                     throw new SecurityTokenException("The incoming token was not in an expected format.");
                 }
@@ -560,7 +560,7 @@ namespace SimpleWebToken
         /// <returns>True if the key is a reserved key name.</returns>
         protected virtual bool IsReservedKeyName( string keyName )
         {
-            if ( String.IsNullOrEmpty( keyName ) )
+            if ( string.IsNullOrEmpty( keyName ) )
             {
                 throw new ArgumentNullException( "keyName" );
             }

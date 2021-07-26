@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -23,7 +23,7 @@ namespace PassiveSTS
 
         protected void Login_Authenticate(object sender, AuthenticateEventArgs e)
         {
-            if (!String.IsNullOrEmpty(this.STSLogin.UserName))
+            if (!string.IsNullOrEmpty(this.STSLogin.UserName))
             {
                 FormsAuthentication.RedirectFromLoginPage(STSLogin.UserName, false);
             }
