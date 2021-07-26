@@ -1,4 +1,4 @@
-﻿// Example of the Random.Next() methods.
+// Example of the Random.Next() methods.
 using System;
 
 public class RandomNextDemo
@@ -17,12 +17,12 @@ public class RandomNextDemo
     	
         NoBoundsRandoms(234);
 
-        UpperBoundRandoms(234, Int32.MaxValue);
+        UpperBoundRandoms(234, int.MaxValue);
         UpperBoundRandoms(234, 2000000000);
         UpperBoundRandoms(234, 200000000);
 
-        BothBoundsRandoms(234, 0, Int32.MaxValue);
-        BothBoundsRandoms(234, Int32.MinValue, Int32.MaxValue);
+        BothBoundsRandoms(234, 0, int.MaxValue);
+        BothBoundsRandoms(234, int.MinValue, int.MaxValue);
         BothBoundsRandoms(234, -2000000000, 2000000000);
         BothBoundsRandoms(234, -200000000, 200000000);
         BothBoundsRandoms(234, -2000, 2000);

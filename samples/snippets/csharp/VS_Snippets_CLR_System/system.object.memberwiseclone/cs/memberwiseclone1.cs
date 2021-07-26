@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class IdInfo
@@ -26,7 +26,7 @@ public class Person
     {
        Person other = (Person) this.MemberwiseClone();
        other.IdInfo = new IdInfo(IdInfo.IdNumber);
-       other.Name = String.Copy(Name);
+       other.Name = string.Copy(Name);
        return other;
     }
 }

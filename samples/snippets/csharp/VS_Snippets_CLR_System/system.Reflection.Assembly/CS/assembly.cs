@@ -1,4 +1,4 @@
-﻿ using System;
+ using System;
  using System.Reflection;
 
  class Class1
@@ -23,7 +23,7 @@
      {
          Assembly SampleAssembly;
          // Instantiate a target object.
-         Int32 Integer1 = new Int32();
+         int Integer1 = new int();
          Type Type1;
          // Set the Type instance to the target class type.
          Type1 = Integer1.GetType();
@@ -38,7 +38,7 @@
          // <Snippet2>
          Assembly SampleAssembly;
          // Instantiate a target object.
-         Int32 Integer1 = new Int32();
+         int Integer1 = new int();
          Type Type1;
          // Set the Type instance to the target class type.
          Type1 = Integer1.GetType();
@@ -57,7 +57,7 @@
          // <Snippet3>
          Assembly SampleAssembly;
          // Instantiate a target object.
-         Int32 Integer1 = new Int32();
+         int Integer1 = new int();
          Type Type1;
          // Set the Type instance to the target class type.
          Type1 = Integer1.GetType();
@@ -77,7 +77,7 @@
          // <Snippet5>
          Assembly SampleAssembly;
          // Instantiate a target object.
-         Int32 Integer1 = new Int32();
+         int Integer1 = new int();
          Type Type1;
          // Set the Type instance to the target class type.
          Type1 = Integer1.GetType();
@@ -113,7 +113,7 @@
          Assembly SampleAssembly;
          // Load the assembly by providing the type name.
          SampleAssembly = Assembly.Load("MyAssembly");
-         foreach (String Resource in SampleAssembly.GetManifestResourceNames())
+         foreach (string Resource in SampleAssembly.GetManifestResourceNames())
          {
              Console.WriteLine(Resource);
          }

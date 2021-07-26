@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 
 // A class that represents an individual card in a playing deck.
@@ -7,9 +7,9 @@ public class Card
    public Suit Suit;
    public FaceValue FaceValue;
 
-   public override String ToString()
+   public override string ToString()
    {
-      return String.Format("{0:F} of {1:F}", this.FaceValue, this.Suit);
+      return string.Format("{0:F} of {1:F}", this.FaceValue, this.Suit);
    }
 }
 

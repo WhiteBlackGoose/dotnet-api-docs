@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public struct Number
@@ -40,7 +40,7 @@ public class Example
    {
       Random rnd = new Random();
       for (int ctr = 0; ctr <= 9; ctr++) {
-         int randomN = rnd.Next(Int32.MinValue, Int32.MaxValue);
+         int randomN = rnd.Next(int.MinValue, int.MaxValue);
          Number n = new Number(randomN);
          Console.WriteLine("n = {0,12}, hash code = {1,12}", n, n.GetHashCode());
       }

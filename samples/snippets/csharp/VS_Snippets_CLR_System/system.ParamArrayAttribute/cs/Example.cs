@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Temperature
@@ -17,7 +17,7 @@ public class Temperature
 
    public string ToString(string format)
    {
-      if (String.IsNullOrEmpty(format))
+      if (string.IsNullOrEmpty(format))
          format = "G";
 
       switch (format.ToUpper())
@@ -30,7 +30,7 @@ public class Temperature
          case "K":
             return (temp + 273.15m).ToString("N") + "  °K";
          default:
-            throw new FormatException(String.Format("The '{0}' format specifier is not supported",
+            throw new FormatException(string.Format("The '{0}' format specifier is not supported",
                                                     format));
       }
    }

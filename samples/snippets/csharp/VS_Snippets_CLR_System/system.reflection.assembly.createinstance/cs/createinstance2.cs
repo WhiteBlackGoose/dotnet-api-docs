@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Reflection;
 using Contoso.Libraries;
@@ -32,7 +32,7 @@ public class Example
 {
    public static void Main()
    {
-      String fullName = "contoso.libraries.person";
+      string fullName = "contoso.libraries.person";
       Assembly assem = typeof(Person).Assembly;
       Person p = (Person) assem.CreateInstance(fullName);
       if (! (p == null)) {
@@ -42,7 +42,7 @@ public class Example
       }
       else {
          Console.WriteLine("Unable to instantiate a Person object " +
-                           "with Assembly.CreateInstance(String)");
+                           "with Assembly.CreateInstance(string)");
          // Try case-insensitive type name comparison.
          p = (Person) assem.CreateInstance(fullName, true);
          if (! (p == null)) {
@@ -58,6 +58,6 @@ public class Example
    }
 }
 // The example displays the following output:
-//    Unable to instantiate a Person object with Assembly.CreateInstance(String)
+//    Unable to instantiate a Person object with Assembly.CreateInstance(string)
 //    Instantiated a Person object whose value is 'John'
 // </Snippet2>

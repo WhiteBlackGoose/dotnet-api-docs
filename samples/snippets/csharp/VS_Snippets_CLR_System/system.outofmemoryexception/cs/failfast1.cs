@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -15,14 +15,14 @@ public class Example
             throw new OutOfMemoryException();
          }
          catch (ArgumentException) {
-            Console.WriteLine("ArgumentException in String.Insert");
+            Console.WriteLine("ArgumentException in string.Insert");
          }
 
          // Execute program logic.
       }
       catch (OutOfMemoryException e) {
          Console.WriteLine("Terminating application unexpectedly...");
-         Environment.FailFast(String.Format("Out of Memory: {0}",
+         Environment.FailFast(string.Format("Out of Memory: {0}",
                                             e.Message));
       }
    }
