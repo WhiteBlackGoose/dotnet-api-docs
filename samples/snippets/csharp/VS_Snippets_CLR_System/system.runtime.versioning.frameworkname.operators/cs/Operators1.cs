@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Versioning;
 
 public class Example
@@ -13,7 +13,7 @@ public class Example
    {
       // <Snippet1>
       FrameworkName supportedVer1 = new FrameworkName(".NET Framework, Version=4.0");
-      FrameworkName actualVersion = new FrameworkName(String.Format(
+      FrameworkName actualVersion = new FrameworkName(string.Format(
                                                  ".NET Framework, Version={0}", 
                                                  Environment.Version.ToString()));
                                                  
@@ -34,7 +34,7 @@ public class Example
    {
       // <Snippet2>
       FrameworkName supportedVer1 = new FrameworkName(".NET Framework, Version=4.0");
-      FrameworkName actualVersion = new FrameworkName(String.Format(
+      FrameworkName actualVersion = new FrameworkName(string.Format(
                                                  ".NET Framework, Version={0}", 
                                                  Environment.Version.ToString()));
                                                  

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 public class InteropCharSet
@@ -7,8 +7,8 @@ public class InteropCharSet
     [StructLayout(LayoutKind.Sequential, CharSet=CharSet.Ansi)]
     public struct MyPerson
     {
-        public String first;
-        public String last;
+        public string first;
+        public string last;
     }
     // </Snippet1>
 

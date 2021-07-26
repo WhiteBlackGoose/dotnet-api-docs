@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -6,7 +6,7 @@ class Example
 {
     // Use DllImport to import the Win32 MessageBox function.
     [DllImport("user32.dll", CharSet = CharSet.Unicode)]
-    public static extern int MessageBox(IntPtr hWnd, String text, String caption, uint type);
+    public static extern int MessageBox(IntPtr hWnd, string text, string caption, uint type);
     
     static void Main()
     {

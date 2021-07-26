@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Runtime.CompilerServices;
 
@@ -8,7 +8,7 @@ namespace Utilities.StringUtilities
 {
    public class StringLib
    {
-      internal static bool IsFirstLetterUpperCase(String s)
+      internal static bool IsFirstLetterUpperCase(string s)
       {
          string first = s.Substring(0, 1);
          return first == first.ToUpper();

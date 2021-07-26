@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -107,7 +107,7 @@ class Example
         // Set the 10 elements of the C-style unmanagedArray
         for (int i = 0; i < 10; i++)
         {
-            Marshal.WriteInt32(unmanagedArray, i * elementSize, ((Int32)(i + 1)));
+            Marshal.WriteInt32(unmanagedArray, i * elementSize, ((int)(i + 1)));
         }
         Console.WriteLine("Unmanaged memory written.");
 

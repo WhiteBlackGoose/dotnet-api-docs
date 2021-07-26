@@ -1,4 +1,4 @@
-﻿// Convert.cs
+// Convert.cs
 //<snippet1>
 using System;
 using System.Reflection;
@@ -15,7 +15,7 @@ public class App
 	}
 	
 	[ DllImport( "oleaut32.dll", CharSet = CharSet.Unicode, PreserveSig = false )]
-	private static extern void LoadTypeLibEx( String strTypeLibName, RegKind regKind, 
+	private static extern void LoadTypeLibEx( string strTypeLibName, RegKind regKind, 
 		[ MarshalAs( UnmanagedType.Interface )] out Object typeLib );
 	
 	public static void Main()

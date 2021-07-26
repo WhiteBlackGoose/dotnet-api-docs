@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the SByte.Parse( ) methods.
 using System;
 using System.Globalization;
@@ -20,7 +20,7 @@ class SByteParseDemo
                 
             // Display the first part of the output line.
             Console.Write( "  Parse of {0,-12}", 
-                String.Format( "\"{0}\"", sbyteString ) );
+                string.Format( "\"{0}\"", sbyteString ) );
 
             try
             {
@@ -91,10 +91,10 @@ class SByteParseDemo
     static void Main( )
     {
         Console.WriteLine( "This example of\n" +
-            "  SByte.Parse( String ),\n" +
-            "  SByte.Parse( String, NumberStyles ),\n" +
-            "  SByte.Parse( String, IFormatProvider ), and\n" +
-            "  SByte.Parse( String, NumberStyles, IFormatProvider )" +
+            "  SByte.Parse( string ),\n" +
+            "  SByte.Parse( string, NumberStyles ),\n" +
+            "  SByte.Parse( string, IFormatProvider ), and\n" +
+            "  SByte.Parse( string, NumberStyles, IFormatProvider )" +
             "\ngenerates the following output when parsing " +
             "string representations\nof SByte values with each " +
             "of these forms of SByte.Parse( )." );
@@ -105,10 +105,10 @@ class SByteParseDemo
 
 /*
 This example of
-  SByte.Parse( String ),
-  SByte.Parse( String, NumberStyles ),
-  SByte.Parse( String, IFormatProvider ), and
-  SByte.Parse( String, NumberStyles, IFormatProvider )
+  SByte.Parse( string ),
+  SByte.Parse( string, NumberStyles ),
+  SByte.Parse( string, IFormatProvider ), and
+  SByte.Parse( string, NumberStyles, IFormatProvider )
 generates the following output when parsing string representations
 of SByte values with each of these forms of SByte.Parse( ).
 

@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -8,7 +8,7 @@ class Example
     // Specify the method to import using the EntryPoint field and 
     // then change the name to MyNewMessageBoxMethod.
     [DllImport("user32.dll", CharSet = CharSet.Unicode, EntryPoint = "MessageBox")]
-    public static extern int MyNewMessageBoxMethod(IntPtr hWnd, String text, String caption, uint type);
+    public static extern int MyNewMessageBoxMethod(IntPtr hWnd, string text, string caption, uint type);
     
     static void Main()
     {

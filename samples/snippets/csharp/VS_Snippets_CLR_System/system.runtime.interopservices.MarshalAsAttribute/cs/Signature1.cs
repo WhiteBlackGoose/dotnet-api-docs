@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
    }
 
    // <Snippet2>
-   public void SomeMethod([MarshalAs(UnmanagedType.LPStr)] String s)
+   public void SomeMethod([MarshalAs(UnmanagedType.LPStr)] string s)
    // </Snippet2>
    {
    }
