@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Data;
 using System.Configuration;
@@ -61,7 +61,7 @@ public partial class _Default : System.Web.UI.Page
             // Get the company's name from the appropriate cell.
             // In this example, the company name is in the second cell  
             // (index 1) of the row.
-            String name = row.Cells[1].Text;
+            string name = row.Cells[1].Text;
 
             // Create a ListItem object with the company name.
             ListItem item = new ListItem(name);

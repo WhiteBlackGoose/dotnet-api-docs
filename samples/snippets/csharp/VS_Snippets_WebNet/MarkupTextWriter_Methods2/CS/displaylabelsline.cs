@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Security.Permissions;
 using System.Web;
 using System.Web.UI;
@@ -9,9 +9,9 @@ namespace Samples.AspNet.CS
 
     // <summary>
     // This example demonstrates the following overloads of
-    // the HtmlTextWriter.WriteLine method: WriteLine(String, Object),
-    // WriteLine(String, Object[]), WriteLine(String, Object, Object),
-    // and WriteLine(Char[], Int32, Int32).
+    // the HtmlTextWriter.WriteLine method: WriteLine(string, Object),
+    // WriteLine(string, Object[]), WriteLine(string, Object, Object),
+    // and WriteLine(Char[], int, int).
     // </summary>
     [AspNetHostingPermission(SecurityAction.Demand,
         Level=AspNetHostingPermissionLevel.Minimal)]

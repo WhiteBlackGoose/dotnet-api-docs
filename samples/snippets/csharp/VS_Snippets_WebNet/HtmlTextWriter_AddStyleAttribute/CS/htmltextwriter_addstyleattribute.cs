@@ -1,4 +1,4 @@
-﻿/* 
+/* 
  * The following example demonstrates the 'AddStyleAttribute(string, string)' method 
  * of 'HtmlTextWriter' class.
  * 
@@ -29,10 +29,10 @@ namespace CustomControls
     public class FirstControl : WebControl
     {
         // The message property.
-        private String message = "Hello";
+        private string message = "Hello";
 
         // Accessors for the message property.
-        public virtual String Message
+        public virtual string Message
         {
             get
             {

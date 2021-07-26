@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using System.Web.UI;
@@ -14,10 +14,10 @@ namespace Samples.AspNet.CS
     public class FirstControl : WebControl
     {
         // The message property.
-        private String myMessage = "Hello";
+        private string myMessage = "Hello";
 
         // Accessors for the message property.
-        public virtual String Message
+        public virtual string Message
         {
             get
             {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using System.Web.UI;
@@ -47,7 +47,7 @@ namespace Samples.AspNet.CS
             // the opening tag of the Font element, with a Color
             // style attribute set to red, is added before
             // the Label.
-            if (String.Compare(TagName, "label") == 0)
+            if (string.Compare(TagName, "label") == 0)
             {
                 return "<font color=\"red\">";
             }
@@ -71,7 +71,7 @@ namespace Samples.AspNet.CS
             // be rendered is a Label. If it is a Label,
             // the closing tag of a Font element is rendered
             // after the closing tag of the Label element.
-            if (String.Compare(TagName, "label") == 0)
+            if (string.Compare(TagName, "label") == 0)
             {
                 return "</font>";
             }
@@ -92,10 +92,10 @@ namespace Samples.AspNet.CS
     public class ctlMessage : WebControl
     {
         // The message property.
-        private String myMessage = "Hello";
+        private string myMessage = "Hello";
 
         // Accessors for the message property.
-        public virtual String Message
+        public virtual string Message
         {
             get
             {

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // The following class creates a custom ASP.NET server control that implements
 // the IAttributeAccessor interface. It creates a MyTextBox class that contains
 // Width and Text properties that get and set their values from view state.
@@ -19,11 +19,11 @@ namespace AttributeAccessor
    public sealed class MyTextBox : Control, IAttributeAccessor
    {
       // Declare the Width property.
-      public String Width
+      public string Width
       {
          get
          {
-            return (String)ViewState["Width"];
+            return (string)ViewState["Width"];
          }
          set
          {
@@ -32,11 +32,11 @@ namespace AttributeAccessor
       }
 
       // Declare the Text property.
-      public String Text
+      public string Text
       {
          get
          {
-            return (String)ViewState["Text"];
+            return (string)ViewState["Text"];
          }
          set
          {
@@ -47,7 +47,7 @@ namespace AttributeAccessor
       // Implement the SetAttribute method for the control. When
       // this method is called from a page, the control's properties
       // are set to values defined in the page.
-      public void SetAttribute(String name, String value1)
+      public void SetAttribute(string name, string value1)
       {
          ViewState[name] = value1;
       }
@@ -57,9 +57,9 @@ namespace AttributeAccessor
       // Implement the GetAttribute method for the control. When
       // this method is called from a page, the values for the control's
       // properties can be displayed in the page.
-      public String GetAttribute(String name)
+      public string GetAttribute(string name)
       {
-         return (String)ViewState[name];
+         return (string)ViewState[name];
       }
       // </snippet3>
 
