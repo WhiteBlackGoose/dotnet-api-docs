@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 class Program
@@ -9,12 +9,12 @@ class Program
         var jaJp = new CultureInfo("ja-JP");
         jaJp.DateTimeFormat.Calendar = cal;
         var date1 = cal.ToDateTime(2,1,1,0,0,0,0,JapaneseCalendar.CurrentEra);
-        Console.WriteLine($"Japanese calendar date: {date1.ToString("D", jaJp)}, " +
-                          $"Gregorian calendar date: {date1.ToString("D", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Japanese calendar date: {date1.Tostring("D", jaJp)}, " +
+                          $"Gregorian calendar date: {date1.Tostring("D", CultureInfo.InvariantCulture)}");
 
         var date2 = cal.ToDateTime(6,11,7,0,0,0,0,GetEraIndex("大正"));
-        Console.WriteLine($"Japanese calendar date: {date2.ToString("D", jaJp)}, " +
-                          $"Gregorian calendar date: {date2.ToString("D", CultureInfo.InvariantCulture)}");
+        Console.WriteLine($"Japanese calendar date: {date2.Tostring("D", jaJp)}, " +
+                          $"Gregorian calendar date: {date2.Tostring("D", CultureInfo.InvariantCulture)}");
 
         int GetEraIndex(string eraName)
         {

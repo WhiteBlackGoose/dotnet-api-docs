@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the 
-// System.String.Compare(String, String, StringComparison) method.
+// string.Compare(String, String, StringComparison) method.
 
 using System;
 using System.Threading;

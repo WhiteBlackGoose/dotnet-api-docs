@@ -1,17 +1,17 @@
-﻿using System;
+using System;
 using System.IO;
 
 class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Path.Combine(String[])");
+        Console.WriteLine("Path.Combine(string[])");
         Combine1();
-        Console.WriteLine("\nPath.Combine(String,String)");
+        Console.WriteLine("\nPath.Combine(string,string)");
         Combine2();
-        Console.WriteLine("\nPath.Combine(String,String,String)");
+        Console.WriteLine("\nPath.Combine(string,string,string)");
         Combine3();
-        Console.WriteLine("\nPath.Combine(String,String,String,String)");
+        Console.WriteLine("\nPath.Combine(string,string,string,string)");
         Combine4();
     }
 

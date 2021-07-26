@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the 
-// System.String.EndsWith(String, StringComparison) method.
+// string.EndsWith(String, StringComparison) method.
 
 using System;
 using System.Threading;
