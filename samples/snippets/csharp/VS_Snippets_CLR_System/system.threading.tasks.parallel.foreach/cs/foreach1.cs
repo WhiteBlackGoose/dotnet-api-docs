@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -7,8 +7,8 @@ public class Example
 {
    public static void Main()
    {
-      Task<String> task = ReadCharacters(@".\CallOfTheWild.txt");
-      String text = task.Result;
+      Task<string> task = ReadCharacters(@".\CallOfTheWild.txt");
+      string text = task.Result;
       
       int nVowels = 0;
       int nNonWhiteSpace = 0;
@@ -16,13 +16,13 @@ public class Example
 
       ParallelLoopResult result = Parallel.ForEach(text, 
                                                    (ch) => {
-                                                      Char uCh = Char.ToUpper(ch);
+                                                      char uCh = char.ToUpper(ch);
                                                       if ("AEIOUY".IndexOf(uCh) >= 0) {
                                                          lock (obj) {
                                                             nVowels++;
                                                          }
                                                       }
-                                                      if (! Char.IsWhiteSpace(uCh)) {
+                                                      if (! char.IsWhiteSpace(uCh)) {
                                                          lock (obj) {
                                                             nNonWhiteSpace++;
                                                          }   
@@ -33,9 +33,9 @@ public class Example
       Console.WriteLine("Total non-white-space:  {0,10:N0}", nNonWhiteSpace);
    }
 
-   private static async Task<String> ReadCharacters(String fn)
+   private static async Task<string> ReadCharacters(string fn)
    {
-      String text;
+      string text;
       using (StreamReader sr = new StreamReader(fn)) {
          text = await sr.ReadToEndAsync();
       }

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Threading.Tasks;
 
@@ -15,7 +15,7 @@ public class Example
                                                                 Console.WriteLine("Iteration {0,2}: {1:N0}", ctr, sum);
                                                               });
       Console.WriteLine("Result: {0}", result.IsCompleted ? "Completed Normally" : 
-                                                             String.Format("Completed to {0}", result.LowestBreakIteration));
+                                                             string.Format("Completed to {0}", result.LowestBreakIteration));
    }
 }
 // The following is a portion of the output displayed by the example:

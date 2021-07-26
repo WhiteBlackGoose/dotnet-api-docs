@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Threading;
 
@@ -15,7 +15,7 @@ class Test
         for(int i = 0; i < numThreads; i++)
         {
             Thread myThread = new Thread(new ThreadStart(MyThreadProc));
-            myThread.Name = String.Format("Thread{0}", i + 1);
+            myThread.Name = string.Format("Thread{0}", i + 1);
             myThread.Start();
         }
 

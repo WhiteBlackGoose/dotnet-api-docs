@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -164,7 +164,7 @@ public class Example
          tasks.Add(Task.Run( () => { int start, last, step;
                                      int items;
                                      do {
-                                        String output = String.Empty;
+                                        string output = string.Empty;
                                         items = sc.Count;
                                         if (! desc) {
                                            start = 1;
@@ -178,7 +178,7 @@ public class Example
                                         }
 
                                         for (int index = start; desc ? index >= last : index <= last; index += step)
-                                           output += String.Format("[{0}] ", sc.Read(index));
+                                           output += string.Format("[{0}] ", sc.Read(index));
 
                                         Console.WriteLine("Task {0} read {1} items: {2}\n",
                                                           Task.CurrentId, items, output);
@@ -188,7 +188,7 @@ public class Example
       // Execute a red/update task.
       tasks.Add(Task.Run( () => { Thread.Sleep(100);
                                   for (int ctr = 1; ctr <= sc.Count; ctr++) {
-                                     String value = sc.Read(ctr);
+                                     string value = sc.Read(ctr);
                                      if (value == "cucumber")
                                         if (sc.AddOrUpdate(ctr, "green bean") != SynchronizedCache.AddOrUpdateStatus.Unchanged)
                                            Console.WriteLine("Changed 'cucumber' to 'green bean'");

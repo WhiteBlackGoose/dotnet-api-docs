@@ -1,4 +1,4 @@
-﻿// When you run this, Ignore each of the 3 asserts. At the end, go
+// When you run this, Ignore each of the 3 asserts. At the end, go
 // check the event log for the 4 entries this generates.
 //
 using System;
@@ -35,14 +35,14 @@ public class Dummy
            int readCt = rwLock.CurrentReadCount;
            if (readCt > READ_THRESHOLD)
            {
-               performanceLog.WriteEntry(String.Format(
+               performanceLog.WriteEntry(string.Format(
                    "{0} reader threads; exceeds recommended maximum.", readCt));
            }
            //</Snippet11>
    
            //<Snippet21>
            Debug.Assert(!rwLock.IsReadLockHeld,
-               String.Format("Thread {0} already held the read lock when MyFunction began executing.",
+               string.Format("Thread {0} already held the read lock when MyFunction began executing.",
                              Thread.CurrentThread.ManagedThreadId));
            //</Snippet21>
            rwLock.ExitReadLock();
@@ -50,7 +50,7 @@ public class Dummy
            rwLock.EnterUpgradeableReadLock();
            //<Snippet22>
            Debug.Assert(!rwLock.IsUpgradeableReadLockHeld,
-               String.Format("Thread {0} has entered the upgradeable read lock while MyFunction is still executing.",
+               string.Format("Thread {0} has entered the upgradeable read lock while MyFunction is still executing.",
                              Thread.CurrentThread.ManagedThreadId));
            //</Snippet22>
            rwLock.ExitUpgradeableReadLock();
@@ -58,7 +58,7 @@ public class Dummy
            rwLock.EnterWriteLock();
            //<Snippet23>
            Debug.Assert(!rwLock.IsWriteLockHeld, 
-               String.Format("Thread {0} is still holding the write lock after MyFunction has finished.", 
+               string.Format("Thread {0} is still holding the write lock after MyFunction has finished.", 
                              Thread.CurrentThread.ManagedThreadId));
            //</Snippet23>
            rwLock.ExitWriteLock();
@@ -86,7 +86,7 @@ public class Dummy
            int waitingReadCt = rwLock.WaitingReadCount;
            if (waitingReadCt > READ_THRESHOLD)
            {
-               performanceLog.WriteEntry(String.Format(
+               performanceLog.WriteEntry(string.Format(
                    "{0} blocked reader threads; exceeds recommended maximum.", 
                    waitingReadCt));
            }
@@ -96,7 +96,7 @@ public class Dummy
            int waitingWriteCt = rwLock.WaitingWriteCount;
            if (waitingWriteCt > WRITE_THRESHOLD)
            {
-               performanceLog.WriteEntry(String.Format(
+               performanceLog.WriteEntry(string.Format(
                    "{0} blocked writer threads; exceeds recommended maximum.", 
                    waitingWriteCt));
            }
@@ -106,7 +106,7 @@ public class Dummy
            int waitingUpgradeableReadCt = rwLock.WaitingUpgradeCount;
            if (waitingUpgradeableReadCt > UPGRADEABLEREAD_THRESHOLD)
            {
-               performanceLog.WriteEntry(String.Format(
+               performanceLog.WriteEntry(string.Format(
                    "{0} blocked upgradeable reader threads; exceeds recommended maximum.", 
                    waitingUpgradeableReadCt));
            }

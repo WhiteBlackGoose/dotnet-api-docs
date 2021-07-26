@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 //<Snippet2>
 // The complete code is located in the ReaderWriterLock class topic.
 using System;
@@ -27,7 +27,7 @@ public class Example
       Thread[] t = new Thread[numThreads];
       for (int i = 0; i < numThreads; i++){
          t[i] = new Thread(new ThreadStart(ThreadProc));
-         t[i].Name = new String((char)(i + 65), 1);
+         t[i].Name = new string((char)(i + 65), 1);
          t[i].Start();
          if (i > 10)
             Thread.Sleep(300);

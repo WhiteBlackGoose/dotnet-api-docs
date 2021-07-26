@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 
 public class MonitorExamples
@@ -49,7 +49,7 @@ public class MonitorExamples
       // </Snippet2>   
    }   
 
-   // TryEnter(Object, Int32)
+   // TryEnter(Object, int)
    public static void Overload3()
    {
       // <Snippet3>
@@ -71,7 +71,7 @@ public class MonitorExamples
       // </Snippet3>   
    }
    
-   // TryEnter(Object, Int32, Boolean)
+   // TryEnter(Object, int, Boolean)
    public static void Overload4()
    {
       // <Snippet4>
