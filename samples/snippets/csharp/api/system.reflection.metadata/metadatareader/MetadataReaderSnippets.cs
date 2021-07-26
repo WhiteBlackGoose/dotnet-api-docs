@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
@@ -20,8 +20,8 @@ namespace MetadataReaderSnippets
             {
                 TypeDefinition tdef = mr.GetTypeDefinition(tdefh);
 
-                string ns = mr.GetString(tdef.Namespace);
-                string name = mr.GetString(tdef.Name);
+                string ns = mr.Getstring(tdef.Namespace);
+                string name = mr.Getstring(tdef.Name);
                 Console.WriteLine($"{ns}.{name}");
             }
             //</SnippetMetadataReader>
