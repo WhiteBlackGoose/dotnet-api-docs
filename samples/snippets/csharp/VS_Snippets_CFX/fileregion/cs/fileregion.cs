@@ -1,4 +1,4 @@
-﻿using System.IO.Log;
+using System.IO.Log;
 using System.IO;
 using System.Xml;
 //<snippet0>
@@ -27,7 +27,7 @@ class LogBackup
                     byte[] data = new byte[dataStream.Length];
                     dataStream.Read(data, 0, data.Length);
 
-                    writer.WriteElementString("data", System.Convert.ToBase64String(data));
+                    writer.WriteElementString("data", System.Convert.ToBase64stringdata));
                 }
 
                 writer.WriteEndElement();
@@ -52,7 +52,7 @@ class LogBackup
                 length = System.Int64.Parse(reader.ReadElementString("length"));
                 offset = System.Int64.Parse(reader.ReadElementString("offset"));
                 string dataString = reader.ReadElementString("data");
-                byte[] data = System.Convert.FromBase64String(dataString);
+                byte[] data = System.Convert.FromBase64stringdataString);
                 FileStream fileStream;
                 using (fileStream = new FileStream(path,
                                               FileMode.OpenOrCreate,
