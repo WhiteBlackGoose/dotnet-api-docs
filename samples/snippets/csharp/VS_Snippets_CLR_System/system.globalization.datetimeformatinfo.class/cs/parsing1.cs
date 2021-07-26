@@ -1,4 +1,4 @@
-﻿// <Snippet15>
+// <Snippet15>
 using System;
 using System.Globalization;
 
@@ -15,7 +15,7 @@ public class Example
                            culture.Name);
          foreach (var dateStr in dateStrings) {
             try {
-               Console.WriteLine(String.Format(culture,
+               Console.WriteLine(string.Format(culture,
                                  "   '{0}' --> {1:D}", dateStr,
                                  DateTime.Parse(dateStr, culture)));
             }

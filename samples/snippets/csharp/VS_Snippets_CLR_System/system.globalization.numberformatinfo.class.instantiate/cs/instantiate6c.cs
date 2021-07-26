@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ public class Example
    public static void Main()
    {
       // Get all the neutral cultures
-      List<String> names = new List<String>();
+      List<string> names = new List<string>();
       Array.ForEach(CultureInfo.GetCultures(CultureTypes.NeutralCultures),
                     culture => names.Add(culture.Name));
       names.Sort();

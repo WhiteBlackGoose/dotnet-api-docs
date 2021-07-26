@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.IO;
@@ -28,7 +28,7 @@ public class Example
       calName = cal.GetType().Name.Substring(0, cal.GetType().Name.IndexOf("Cal"));
       if (calName.Equals("Gregorian")) {
          GregorianCalendar grCal = cal as GregorianCalendar;
-         calName += String.Format("-{0}", grCal.CalendarType);
+         calName += string.Format("-{0}", grCal.CalendarType);
       }
       return calName;
    }

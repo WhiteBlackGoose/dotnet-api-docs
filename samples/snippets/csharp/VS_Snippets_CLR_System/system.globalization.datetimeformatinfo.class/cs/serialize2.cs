@@ -1,4 +1,4 @@
-﻿// <Snippet18>
+// <Snippet18>
 using System;
 using System.Globalization;
 using System.IO;
@@ -9,7 +9,7 @@ public class Example
    {
       // Open the file and retrieve the date string.
       StreamReader sr = new StreamReader(@".\DateData.dat");
-      String dateValue = sr.ReadToEnd();
+      string dateValue = sr.ReadToEnd();
 
       // Parse the date.
       DateTime parsedDate = DateTime.ParseExact(dateValue, "o",

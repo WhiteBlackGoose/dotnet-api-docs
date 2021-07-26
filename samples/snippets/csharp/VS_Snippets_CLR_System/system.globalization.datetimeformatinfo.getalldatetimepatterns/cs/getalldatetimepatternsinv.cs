@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 
@@ -10,13 +10,13 @@ public class Example
       DateTimeFormatInfo invDTF = new DateTimeFormatInfo();
       String[] formats = invDTF.GetAllDateTimePatterns();
 
-      Console.WriteLine("{0,-40} {1}\n", "Pattern", "Result String");
+      Console.WriteLine("{0,-40} {1}\n", "Pattern", "Result string");
       foreach (var fmt in formats)
          Console.WriteLine("{0,-40} {1}", fmt, date.ToString(fmt));
    }
 }
 // The example displays the following output:
-//    Pattern                                  Result String
+//    Pattern                                  Result string
 //
 //    MM/dd/yyyy                               08/28/2014
 //    yyyy-MM-dd                               2014-08-28

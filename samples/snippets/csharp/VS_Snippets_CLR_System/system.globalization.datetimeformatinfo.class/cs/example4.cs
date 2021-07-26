@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Globalization;
 
@@ -11,7 +11,7 @@ public class Example
 
       CultureInfo enUS = CultureInfo.CreateSpecificCulture("en-US");
       DateTimeFormatInfo dtfi = enUS.DateTimeFormat;
-      String originalLongDatePattern = dtfi.LongDatePattern;
+      string originalLongDatePattern = dtfi.LongDatePattern;
 
       // Display the default form of three long date formats.
       foreach (var fmt in formats)

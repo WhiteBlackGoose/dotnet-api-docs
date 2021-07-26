@@ -1,4 +1,4 @@
-﻿// The following code example shows that DTFI ignores the punctuation in the era name only if the calendar is Gregorian and the culture uses the era name "A.D.".
+// The following code example shows that DTFI ignores the punctuation in the era name only if the calendar is Gregorian and the culture uses the era name "A.D.".
 
 // <snippet1>
 using System;
@@ -9,10 +9,10 @@ public class SamplesGregorianCalendar  {
    public static void Main()  {
 
       // Creates strings with punctuation and without.
-      String strADPunc = "A.D.";
-      String strADNoPunc = "AD";
-      String strCEPunc = "C.E.";
-      String strCENoPunc = "CE";
+      string strADPunc = "A.D.";
+      string strADNoPunc = "AD";
+      string strCEPunc = "C.E.";
+      string strCENoPunc = "CE";
 
       // Calls DTFI.GetEra for each culture that uses GregorianCalendar as the default calendar.
       Console.WriteLine( "            ----- AD -----  ----- CE -----" );

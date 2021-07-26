@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 
@@ -13,10 +13,10 @@ public class Example
       while (end >= 0) {
          start = email.IndexOf("@", end);
          end = email.IndexOf(" ", start);
-         string domain = String.Empty;
+         string domain = string.Empty;
 
          try {
-            string punyCode = String.Empty;
+            string punyCode = string.Empty;
             if (start >= 0 && end >= 0) {
                domain = email.Substring(start + 1, end - start - 1);
                punyCode = idn.GetAscii(email, start + 1, end - start - 1);

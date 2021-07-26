@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -25,7 +25,7 @@ public class Example
       string value = amount.ToString("C2", new CurrentCultureFormatProvider());
       Console.WriteLine(value);
       Console.WriteLine();
-      string composite = String.Format(new CurrentCultureFormatProvider(),
+      string composite = string.Format(new CurrentCultureFormatProvider(),
                                        "Date: {0}   Amount: {1}   Description: {2}",
                                        DateTime.Now, 1264.03m, "Service Charge");
       Console.WriteLine(composite);

@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Globalization;
 
@@ -12,7 +12,7 @@ public class Example
       foreach (var value in values) {
          foreach (var cultureName in cultureNames) {
             CultureInfo culture = CultureInfo.CreateSpecificCulture(cultureName);
-            String name = culture.Name == "" ? "Invariant" : culture.Name;
+            string name = culture.Name == "" ? "Invariant" : culture.Name;
             try {
                Decimal amount = Decimal.Parse(value, culture);
                Console.WriteLine("'{0}' --> {1} ({2})", value, amount, name);

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -22,7 +22,7 @@ public class Example
       foreach (var value in values) {
          try {
             DateTime dat = DateTime.ParseExact(value, "Y", enUS);
-            Console.WriteLine(String.Format(enUS, "   Parsed {0} as {1:Y}", value, dat));
+            Console.WriteLine(string.Format(enUS, "   Parsed {0} as {1:Y}", value, dat));
          }
          catch (FormatException) {
             Console.WriteLine("   Cannot parse {0}", value);
@@ -43,7 +43,7 @@ public class Example
       foreach (var value in values) {
          try {
             DateTime dat = DateTime.ParseExact(value, "Y", enUS);
-            Console.WriteLine(String.Format(enUS, "   Parsed {0} as {1:Y}", value, dat));
+            Console.WriteLine(string.Format(enUS, "   Parsed {0} as {1:Y}", value, dat));
          }
          catch (FormatException) {
             Console.WriteLine("   Cannot parse {0}", value);

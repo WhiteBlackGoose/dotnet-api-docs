@@ -1,4 +1,4 @@
-﻿// The following code example displays the value of FullDateTimePattern for selected cultures.
+// The following code example displays the value of FullDateTimePattern for selected cultures.
 
 // <snippet1>
 using System;
@@ -15,7 +15,7 @@ public class SamplesDTFI  {
       PrintPattern( "fr-FR" );
    }
 
-   public static void PrintPattern( String myCulture )  {
+   public static void PrintPattern( string myCulture )  {
 
       DateTimeFormatInfo myDTFI = new CultureInfo( myCulture, false ).DateTimeFormat;
       Console.WriteLine( "  {0}     {1}", myCulture, myDTFI.FullDateTimePattern );
