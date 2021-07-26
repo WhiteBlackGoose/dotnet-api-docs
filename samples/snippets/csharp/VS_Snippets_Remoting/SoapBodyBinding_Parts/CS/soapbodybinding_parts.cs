@@ -1,4 +1,4 @@
-﻿// System.Web.Services.Description.SoapBinding.Namespace
+// System.Web.Services.Description.SoapBinding.Namespace
 // System.Web.Services.Description.SoapBodyBinding.Parts
 
 /*
@@ -34,7 +34,7 @@ using System.Xml;
          mySoapBinding.Transport = "http://schemas.xmlsoap.org/soap/http";
          mySoapBinding.Style = SoapBindingStyle.Document;
          // Get the URI for XML namespace of the SoapBinding class.
-         String myNameSpace = SoapBinding.Namespace;
+         string myNameSpace = SoapBinding.Namespace;
          Console.WriteLine("The URI of the XML Namespace is :"+myNameSpace);
 // </Snippet1>
 

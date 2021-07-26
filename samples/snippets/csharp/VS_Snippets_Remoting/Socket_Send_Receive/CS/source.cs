@@ -1,4 +1,4 @@
-﻿ //<Snippet1>
+ //<Snippet1>
 using System;
 using System.Text;
 using System.IO;
@@ -10,13 +10,13 @@ public class Sample
 
   public static string DoSocketGet(string server)
   {
-    //Set up variables and String to write to the server.
+    //Set up variables and string to write to the server.
     Encoding ASCII = Encoding.ASCII;
     string Get = "GET / HTTP/1.1\r\nHost: " + server +
                  "\r\nConnection: Close\r\n\r\n";
     Byte[] ByteGet = ASCII.GetBytes(Get);
     Byte[] RecvBytes = new Byte[256];
-    String strRetPage = null;
+    string strRetPage = null;
 
     // IPAddress and IPEndPoint represent the endpoint that will
     //   receive the request.
@@ -72,7 +72,7 @@ public class Sample
 //<Snippet4>
 
       // Receive the host home page content and loop until all the data is received.
-      Int32 bytes = s.Receive(RecvBytes, RecvBytes.Length, 0);
+      int bytes = s.Receive(RecvBytes, RecvBytes.Length, 0);
       strRetPage = "Default HTML page on " + server + ":\r\n";
       strRetPage = strRetPage + ASCII.GetString(RecvBytes, 0, bytes);
 

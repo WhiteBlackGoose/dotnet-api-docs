@@ -1,4 +1,4 @@
-﻿/* This is supporting program for the 'SoapClientFormatterSinkProvider_CreateSink_Client'.
+/* This is supporting program for the 'SoapClientFormatterSinkProvider_CreateSink_Client'.
  */
 using System;
 
@@ -9,7 +9,7 @@ public class HelloService : MarshalByRefObject
       Console.WriteLine("Server Started ");
    }
 
-   public String HelloMethod(String name)
+   public string HelloMethod(string name)
    {
         return "Hi, " + name ;
     }

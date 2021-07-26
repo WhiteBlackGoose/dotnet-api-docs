@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.CreateSink
+// System.Runtime.Remoting.Channels.SoapServerFormatterSinkProvider.CreateSink
 
 using System;
 using System.Collections;
@@ -16,7 +16,7 @@ public class MyClientProvider : IClientChannelSinkProvider
    public MyClientProvider(IDictionary properties, ICollection providerData)
    {
    }
-   public IClientChannelSink CreateSink(IChannelSender channel, String myUrl,
+   public IClientChannelSink CreateSink(IChannelSender channel, string myUrl,
                                        Object remoteChannelData)
    {
       IClientChannelSink nextSink = null;
@@ -50,7 +50,7 @@ internal class MyClientChannelSink : BaseChannelObjectWithProperties, IClientCha
    {
       nextClientSink = nextSink;
    }
-   public MyClientChannelSink(IChannelSender channel, String url, Object remoteChannelData,
+   public MyClientChannelSink(IChannelSender channel, string url, Object remoteChannelData,
                                     IClientChannelSink nextSink) : base()
    {
       nextClientSink = nextSink;

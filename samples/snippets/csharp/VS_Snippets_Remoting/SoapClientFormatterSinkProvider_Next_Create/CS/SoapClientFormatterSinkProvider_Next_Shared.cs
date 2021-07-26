@@ -1,4 +1,4 @@
-﻿/* Supporting program for the 'SoapClientFormatterSinkProvider_Next_Server.cs' and
+/* Supporting program for the 'SoapClientFormatterSinkProvider_Next_Server.cs' and
   'SoapClientFormatterSinkProvider_Next_Client.cs'
  */
 using System;
@@ -20,7 +20,7 @@ public class HelloService : MarshalByRefObject
       n_instances--;
    }
 
-   public String HelloMethod(String name)
+   public string HelloMethod(string name)
    {
         Console.WriteLine("HelloMethod called on HelloService instance {0}.", n_instances);
         return "Hi, " + name + ".";

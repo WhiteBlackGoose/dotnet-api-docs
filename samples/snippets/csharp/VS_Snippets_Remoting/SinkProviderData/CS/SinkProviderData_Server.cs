@@ -1,4 +1,4 @@
-﻿/* The following program is the supporting program for demonstration of
+/* The following program is the supporting program for demonstration of
    'System.Runtime.Remoting.Channels.SinkProviderData' class and its
    properties 'Children', 'Name', 'Properties'.
 */
@@ -22,8 +22,8 @@ public class Server
       // Obtain filter interface.
       IDictionary myIDictionary =
          ((HttpServerChannel)ChannelServices.GetChannel("MyHttpChannel")).Properties;
-      String keyState = "";
-      while (String.Compare(keyState,"0", true) != 0)
+      string keyState = "";
+      while (string.Compare(keyState,"0", true) != 0)
       {
          Console.WriteLine("***** Press 0 to exit this service *****");
          keyState = Console.ReadLine();

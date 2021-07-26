@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Net;
@@ -217,7 +217,7 @@ public static void Read_Callback(IAsyncResult ar){
 	          //All of the data has been read, so displays it to the console
 	          string strContent;
 	          strContent = so.sb.ToString();
-	          Console.WriteLine(String.Format("Read {0} byte from socket" +
+	          Console.WriteLine(string.Format("Read {0} byte from socket" +
 	          	               "data = {1} ", strContent.Length, strContent));
 	     }
 	     s.Close();
@@ -260,7 +260,7 @@ public static void ReceiveFrom_Callback(IAsyncResult ar){
 	          //All the data has been read, so displays it to the console.
 	          string strContent;
 	          strContent = so.sb.ToString();
-	          Console.WriteLine(String.Format("Read {0} byte from socket" +
+	          Console.WriteLine(string.Format("Read {0} byte from socket" +
 	          	               "data = {1} ", strContent.Length, strContent));
 	     }
 	     s.Close();

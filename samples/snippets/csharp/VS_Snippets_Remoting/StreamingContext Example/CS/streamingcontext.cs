@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // Note: You must compile this file using the C# /unsafe switch.
 using System;
 using System.IO;
@@ -20,11 +20,11 @@ internal class Win32
     [DllImport("Kernel32",CharSet=CharSet.Unicode)]
     public static extern IntPtr CreateFileMapping(IntPtr hFile,
         IntPtr pAttributes, UInt32 flProtect,
-        UInt32 dwMaximumSizeHigh, UInt32 dwMaximumSizeLow, String pName);
+        UInt32 dwMaximumSizeHigh, UInt32 dwMaximumSizeLow, string pName);
 
     [DllImport("Kernel32",CharSet=CharSet.Unicode)]
     public static extern IntPtr OpenFileMapping(UInt32 dwDesiredAccess,
-        Boolean bInheritHandle, String name);
+        Boolean bInheritHandle, string name);
 
     [DllImport("Kernel32",CharSet=CharSet.Unicode)]
     public static extern Boolean CloseHandle(IntPtr handle);
@@ -58,7 +58,7 @@ public sealed class SharedMemory : ISerializable, IDisposable
     // The handle and string that identify
     // the Windows file-mapping object.
     private IntPtr m_hFileMap = IntPtr.Zero;
-    private String m_name;
+    private string m_name;
 
     // The address of the memory-mapped file-mapping object.
     private IntPtr m_address;
@@ -69,9 +69,9 @@ public sealed class SharedMemory : ISerializable, IDisposable
     }
 
     // The constructors.
-    public SharedMemory(Int32 size) : this(size, null) { }
+    public SharedMemory(int size) : this(size, null) { }
 
-    public SharedMemory(Int32 size, String name)
+    public SharedMemory(int size, string name)
     {
         m_hFileMap = Win32.CreateFileMapping(Win32.InvalidHandleValue,
             IntPtr.Zero, Win32.PAGE_READWRITE,
@@ -104,12 +104,12 @@ public sealed class SharedMemory : ISerializable, IDisposable
     }
 
     // Private helper methods.
-    private static Boolean AllFlagsSet(Int32 flags, Int32 flagsToTest)
+    private static Boolean AllFlagsSet(int flags, int flagsToTest)
     {
         return (flags & flagsToTest) == flagsToTest;
     }
 
-    private static Boolean AnyFlagsSet(Int32 flags, Int32 flagsToTest)
+    private static Boolean AnyFlagsSet(int flags, int flagsToTest)
     {
         return (flags & flagsToTest) != 0;
     }
@@ -130,7 +130,7 @@ public sealed class SharedMemory : ISerializable, IDisposable
                   StreamingContextStates.Other |
                   StreamingContextStates.Persistence |
                   StreamingContextStates.Remoting;
-        if (AnyFlagsSet((Int32)context.State, (Int32)InvalidDestinations))
+        if (AnyFlagsSet((int)context.State, (int)InvalidDestinations))
             throw new SerializationException("The SharedMemory object " +
                 "cannot be serialized to any of the following streaming contexts: " +
                 InvalidDestinations);
@@ -139,18 +139,18 @@ public sealed class SharedMemory : ISerializable, IDisposable
                   StreamingContextStates.Clone |
             // The same process.
                   StreamingContextStates.CrossAppDomain;
-        if (AnyFlagsSet((Int32)context.State, (Int32)DeserializableByHandle))
+        if (AnyFlagsSet((int)context.State, (int)DeserializableByHandle))
             info.AddValue("hFileMap", m_hFileMap);
 
         const StreamingContextStates DeserializableByName =
             // The same computer.
                   StreamingContextStates.CrossProcess;
-        if (AnyFlagsSet((Int32)context.State, (Int32)DeserializableByName))
+        if (AnyFlagsSet((int)context.State, (int)DeserializableByName))
         {
             if (m_name == null)
                 throw new SerializationException("The SharedMemory object " +
                     "cannot be serialized CrossProcess because it was not constructed " +
-                    "with a String name.");
+                    "with a string name.");
             info.AddValue("name", m_name);
         }
     }
@@ -169,7 +169,7 @@ public sealed class SharedMemory : ISerializable, IDisposable
                   StreamingContextStates.Other |
                   StreamingContextStates.Persistence |
                   StreamingContextStates.Remoting;
-        if (AnyFlagsSet((Int32)context.State, (Int32)InvalidSources))
+        if (AnyFlagsSet((int)context.State, (int)InvalidSources))
             throw new SerializationException("The SharedMemory object " +
                 "cannot be deserialized from any of the following stream contexts: " +
                 InvalidSources);
@@ -178,7 +178,7 @@ public sealed class SharedMemory : ISerializable, IDisposable
                   StreamingContextStates.Clone |
             // The same process.
                   StreamingContextStates.CrossAppDomain;
-        if (AnyFlagsSet((Int32)context.State, (Int32)SerializedByHandle))
+        if (AnyFlagsSet((int)context.State, (int)SerializedByHandle))
         {
             try
             {
@@ -198,7 +198,7 @@ public sealed class SharedMemory : ISerializable, IDisposable
         const StreamingContextStates SerializedByName =
             // The same computer.
                   StreamingContextStates.CrossProcess;
-        if (AnyFlagsSet((Int32)context.State, (Int32)SerializedByName))
+        if (AnyFlagsSet((int)context.State, (int)SerializedByName))
         {
             try
             {
@@ -239,11 +239,11 @@ class App
     {
         // Create a hashtable of values that will eventually be serialized.
         SharedMemory sm = new SharedMemory(1024, "JeffMemory");
-        for (Int32 x = 0; x < 100; x++)
+        for (int x = 0; x < 100; x++)
             *(sm.Address + x) = (Byte)x;
 
         Byte[] b = new Byte[10];
-        for (Int32 x = 0; x < b.Length; x++) b[x] = *(sm.Address + x);
+        for (int x = 0; x < b.Length; x++) b[x] = *(sm.Address + x);
         Console.WriteLine(BitConverter.ToString(b));
 
         // To serialize the SharedMemory object,
@@ -299,7 +299,7 @@ class App
         // To prove that the SharedMemory object deserialized correctly,
         // display some of its bytes to the console.
         Byte[] b = new Byte[10];
-        for (Int32 x = 0; x < b.Length; x++) b[x] = *(sm.Address + x);
+        for (int x = 0; x < b.Length; x++) b[x] = *(sm.Address + x);
         Console.WriteLine(BitConverter.ToString(b));
     }
 }
