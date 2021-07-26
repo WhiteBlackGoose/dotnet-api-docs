@@ -1,4 +1,4 @@
-﻿// System.Diagnostics.Stopwatch
+// System.Diagnostics.Stopwatch
 
 //<Snippet1>
 using System;
@@ -49,10 +49,10 @@ namespace StopWatchSample
             const long numIterations = 10000;
 
             // Define the operation title names.
-            String [] operationNames = {"Operation: Int32.Parse(\"0\")",
-                                           "Operation: Int32.TryParse(\"0\")",
-                                           "Operation: Int32.Parse(\"a\")",
-                                           "Operation: Int32.TryParse(\"a\")"};
+            string [] operationNames = {"Operation: int.Parse(\"0\")",
+                                           "Operation: int.TryParse(\"0\")",
+                                           "Operation: int.Parse(\"a\")",
+                                           "Operation: int.TryParse(\"a\")"};
 
             // Time four different implementations for parsing
             // an integer from a string.
@@ -93,7 +93,7 @@ namespace StopWatchSample
 
                             try
                             {
-                                inputNum = Int32.Parse("0");
+                                inputNum = int.Parse("0");
                             }
                             catch (FormatException)
                             {
@@ -113,7 +113,7 @@ namespace StopWatchSample
                             // Start a new stopwatch timer.
                             timePerParse = Stopwatch.StartNew();
 
-                            if (!Int32.TryParse("0", out inputNum))
+                            if (!int.TryParse("0", out inputNum))
                             {
                                 inputNum = 0;
                             }
@@ -132,7 +132,7 @@ namespace StopWatchSample
 
                             try
                             {
-                                inputNum = Int32.Parse("a");
+                                inputNum = int.Parse("a");
                             }
                             catch (FormatException)
                             {
@@ -151,7 +151,7 @@ namespace StopWatchSample
                             // Start a new stopwatch timer.
                             timePerParse = Stopwatch.StartNew();
 
-                            if (!Int32.TryParse("a", out inputNum))
+                            if (!int.TryParse("a", out inputNum))
                             {
                                 inputNum = 0;
                             }

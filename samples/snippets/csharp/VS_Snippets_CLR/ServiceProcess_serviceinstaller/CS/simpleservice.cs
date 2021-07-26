@@ -1,4 +1,4 @@
-﻿// The following example illustrates deriving a service implementation from
+// The following example illustrates deriving a service implementation from
 // the System.ServiceProcess.ServiceBase class.  This simple service starts
 // a worker thread, and handles various service commands.
 // The main service thread and the worker thread write their trace output
@@ -24,7 +24,7 @@ namespace SimpleServiceSample
     // Define a simple service implementation.
     public class SimpleService : System.ServiceProcess.ServiceBase
 	{
-        private const String logFile = @"C:\service_log.txt";
+        private const string logFile = @"C:\service_log.txt";
         private static TextWriterTraceListener serviceTraceListener = null;
         private Thread workerThread = null;
 
