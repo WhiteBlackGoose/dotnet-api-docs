@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -6,13 +6,13 @@ using System.Web.UI;
 namespace TemplateControlSamples {
 
     public class TemplateItem : Control, INamingContainer {
-        private String     _message         = null;
+        private string     _message         = null;
 
-        public TemplateItem(String message) {
+        public TemplateItem(string message) {
             _message = message;
         }
 
-        public String Message {
+        public string Message {
 
            get {
               return _message;
@@ -28,9 +28,9 @@ namespace TemplateControlSamples {
     public class Template1 : Control, INamingContainer {
 
         private ITemplate  _messageTemplate = null;
-        private String     _message         = null;
+        private string     _message         = null;
 
-        public String Message {
+        public string Message {
 
            get {
               return _message;

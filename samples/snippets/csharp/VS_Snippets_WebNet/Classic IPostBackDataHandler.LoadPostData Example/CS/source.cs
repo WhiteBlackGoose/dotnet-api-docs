@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Specialized;
 
 public class Sample {
@@ -9,8 +9,8 @@ public class Sample {
  public virtual bool LoadPostData(string postDataKey,
     NameValueCollection postCollection) {
 
-    String presentValue = Text;
-    String postedValue = postCollection[postDataKey];
+    string presentValue = Text;
+    string postedValue = postCollection[postDataKey];
 
     if (presentValue == null || !presentValue.Equals(postedValue)){
        Text = postedValue;

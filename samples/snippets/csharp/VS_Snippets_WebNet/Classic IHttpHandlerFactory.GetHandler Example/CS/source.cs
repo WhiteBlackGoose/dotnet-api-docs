@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // Name this C# file HandlerFactoryTest.cs and compile it with the
 // command line: csc /t:Library /r:System.Web.dll HandlerFactoryTest.cs.
 // Copy HandlerFactoryTest.dll to your \bin directory.
@@ -14,13 +14,13 @@ namespace test
    {
       [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name = "FullTrust")]
       public virtual IHttpHandler GetHandler(HttpContext context,
-                                             String requestType,
-                                             String url,
-                                             String pathTranslated)
+                                             string requestType,
+                                             string url,
+                                             string pathTranslated)
       {
-         String fname = url.Substring(url.LastIndexOf('/')+1);
-         String cname = fname.Substring(0, fname.IndexOf('.'));
-         String className = "test." + cname;
+         string fname = url.Substring(url.LastIndexOf('/')+1);
+         string cname = fname.Substring(0, fname.IndexOf('.'));
+         string className = "test." + cname;
 
          Object h = null;
 

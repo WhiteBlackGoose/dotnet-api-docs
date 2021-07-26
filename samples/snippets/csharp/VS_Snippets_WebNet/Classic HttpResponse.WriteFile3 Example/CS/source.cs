@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using System.Web.UI;
@@ -8,7 +8,7 @@ public class Page1: Page
  private void Page_Load(Object sender, EventArgs e)
  {
 // <Snippet1>
-String FileName;
+string FileName;
  FileStream MyFileStream;
  IntPtr FileHandle;
  long StartPos = 0, FileSize;

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Web;
 using System.Web.UI;
@@ -12,7 +12,7 @@ public class Page1: Page
 // <Snippet1>
 StringWriter writer = new StringWriter();
 Server.UrlDecode(EncodedString, writer);
-String DecodedString = writer.ToString();
+string DecodedString = writer.ToString();
 
 // </Snippet1>
  }

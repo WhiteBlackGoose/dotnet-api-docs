@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -10,9 +10,9 @@ namespace CustomWebFormsControls {
    [System.Security.Permissions.PermissionSet(System.Security.Permissions.SecurityAction.Demand, Name="FullTrust")]
    public class MyTextBox: Control, IPostBackDataHandler {
 
-      public String Text {
+      public string Text {
          get {
-            return (String) ViewState["Text"];
+            return (string) ViewState["Text"];
          }
 
          set {
@@ -25,8 +25,8 @@ namespace CustomWebFormsControls {
       public virtual bool LoadPostData(string postDataKey,
          NameValueCollection postCollection) {
 
-         String presentValue = Text;
-         String postedValue = postCollection[postDataKey];
+         string presentValue = Text;
+         string postedValue = postCollection[postDataKey];
 
          if (presentValue == null || !presentValue.Equals(postedValue)) {
             Text = postedValue;
