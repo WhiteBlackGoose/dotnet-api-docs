@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 // Example of Convert.ToString( non-numeric types, IFormatProvider ).
 using System;
 using System.Globalization;
@@ -43,7 +43,7 @@ class ConvertNonNumericProviderDemo
             "generates the following output. The provider type, " +
             "argument type, \nand argument value are displayed." );
         Console.WriteLine( "\nNote: The IFormatProvider object is " +
-            "not called for Boolean, String, \nChar, TimeSpan, " +
+            "not called for Boolean, string, \nChar, TimeSpan, " +
             "and non-numeric Object." );
 
         // The format provider is called for these conversions.
@@ -77,8 +77,8 @@ This example of Convert.ToString( non-numeric, IFormatProvider )
 generates the following output. The provider type, argument type,
 and argument value are displayed.
 
-Note: The IFormatProvider object is not called for Boolean, String,
-Char, TimeSpan, and non-numeric Object.
+Note: The IFormatProvider object is not called for Boolean, string,
+char, TimeSpan, and non-numeric Object.
 
 System.Globalization.NumberFormatInfo   int      -252645135
 System.Globalization.NumberFormatInfo   double   61680.3855

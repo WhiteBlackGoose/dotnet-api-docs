@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -37,9 +37,9 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the DateTime value 7/14/2009 12:00:00 AM to a String value 7/14/2009 12:00:00 AM.
-      //    Converted the DateTime value 1/1/0001 06:32:00 PM to a String value 1/1/0001 06:32:00 PM.
-      //    Converted the DateTime value 2/12/2009 07:16:00 AM to a String value 2/12/2009 07:16:00 AM.
+      //    Converted the DateTime value 7/14/2009 12:00:00 AM to a string value 7/14/2009 12:00:00 AM.
+      //    Converted the DateTime value 1/1/0001 06:32:00 PM to a string value 1/1/0001 06:32:00 PM.
+      //    Converted the DateTime value 2/12/2009 07:16:00 AM to a string value 2/12/2009 07:16:00 AM.
       // </Snippet1>
    }
 
@@ -57,11 +57,11 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Int16 value -32768 to the String value -32768.
-      //    Converted the Int16 value -138 to the String value -138.
-      //    Converted the Int16 value 0 to the String value 0.
-      //    Converted the Int16 value 19 to the String value 19.
-      //    Converted the Int16 value 32767 to the String value 32767.
+      //    Converted the Int16 value -32768 to the string value -32768.
+      //    Converted the Int16 value -138 to the string value -138.
+      //    Converted the Int16 value 0 to the string value 0.
+      //    Converted the Int16 value 19 to the string value 19.
+      //    Converted the Int16 value 32767 to the string value 32767.
       // </Snippet2>
    }
 
@@ -69,7 +69,7 @@ public class Example
    {
       // <Snippet3>
       object[] values = { false, 12.63m, new DateTime(2009, 6, 1, 6, 32, 15), 16.09e-12,
-                          'Z', 15.15322, SByte.MinValue, Int32.MaxValue };
+                          'Z', 15.15322, SByte.MinValue, int.MaxValue };
       string result;
 
       foreach (object value in values)
@@ -80,14 +80,14 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Boolean value False to the String value False.
-      //    Converted the Decimal value 12.63 to the String value 12.63.
-      //    Converted the DateTime value 6/1/2009 06:32:15 AM to the String value 6/1/2009 06:32:15 AM.
-      //    Converted the Double value 1.609E-11 to the String value 1.609E-11.
-      //    Converted the Char value Z to the String value Z.
-      //    Converted the Double value 15.15322 to the String value 15.15322.
-      //    Converted the SByte value -128 to the String value -128.
-      //    Converted the Int32 value 2147483647 to the String value 2147483647.
+      //    Converted the Boolean value False to the string value False.
+      //    Converted the Decimal value 12.63 to the string value 12.63.
+      //    Converted the DateTime value 6/1/2009 06:32:15 AM to the string value 6/1/2009 06:32:15 AM.
+      //    Converted the Double value 1.609E-11 to the string value 1.609E-11.
+      //    Converted the char value Z to the string value Z.
+      //    Converted the Double value 15.15322 to the string value 15.15322.
+      //    Converted the SByte value -128 to the string value -128.
+      //    Converted the int value 2147483647 to the string value 2147483647.
       // </Snippet3>
    }
 
@@ -105,11 +105,11 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the SByte value -128 to the String value -128.
-      //    Converted the SByte value -12 to the String value -12.
-      //    Converted the SByte value 0 to the String value 0.
-      //    Converted the SByte value 16 to the String value 16.
-      //    Converted the SByte value 127 to the String value 127.
+      //    Converted the SByte value -128 to the string value -128.
+      //    Converted the SByte value -12 to the string value -12.
+      //    Converted the SByte value 0 to the string value 0.
+      //    Converted the SByte value 16 to the string value 16.
+      //    Converted the SByte value 127 to the string value 127.
       // </Snippet4>
    }
 
@@ -128,15 +128,15 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Single value -3.402823E+38 to the String value -3.402823E+38.
-      //    Converted the Single value -1011.351 to the String value -1011.351.
-      //    Converted the Single value -17.45 to the String value -17.45.
-      //    Converted the Single value -3E-16 to the String value -3E-16.
-      //    Converted the Single value 0 to the String value 0.
-      //    Converted the Single value 4.56E-12 to the String value 4.56E-12.
-      //    Converted the Single value 16.0001 to the String value 16.0001.
-      //    Converted the Single value 10345.12 to the String value 10345.12.
-      //    Converted the Single value 3.402823E+38 to the String value 3.402823E+38.
+      //    Converted the Single value -3.402823E+38 to the string value -3.402823E+38.
+      //    Converted the Single value -1011.351 to the string value -1011.351.
+      //    Converted the Single value -17.45 to the string value -17.45.
+      //    Converted the Single value -3E-16 to the string value -3E-16.
+      //    Converted the Single value 0 to the string value 0.
+      //    Converted the Single value 4.56E-12 to the string value 4.56E-12.
+      //    Converted the Single value 16.0001 to the string value 16.0001.
+      //    Converted the Single value 10345.12 to the string value 10345.12.
+      //    Converted the Single value 3.402823E+38 to the string value 3.402823E+38.
       // </Snippet5>
    }
 
@@ -154,10 +154,10 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the UInt16 value 0 to the String value 0.
-      //    Converted the UInt16 value 103 to the String value 103.
-      //    Converted the UInt16 value 1045 to the String value 1045.
-      //    Converted the UInt16 value 65535 to the String value 65535.
+      //    Converted the UInt16 value 0 to the string value 0.
+      //    Converted the UInt16 value 103 to the string value 103.
+      //    Converted the UInt16 value 1045 to the string value 1045.
+      //    Converted the UInt16 value 65535 to the string value 65535.
       // </Snippet6>
    }
 
@@ -175,11 +175,11 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the UInt32 value 0 to the String value 0.
-      //    Converted the UInt32 value 103 to the String value 103.
-      //    Converted the UInt32 value 1045 to the String value 1045.
-      //    Converted the UInt32 value 119543 to the String value 119543.
-      //    Converted the UInt32 value 4294967295 to the String value 4294967295.
+      //    Converted the UInt32 value 0 to the string value 0.
+      //    Converted the UInt32 value 103 to the string value 103.
+      //    Converted the UInt32 value 1045 to the string value 1045.
+      //    Converted the UInt32 value 119543 to the string value 119543.
+      //    Converted the UInt32 value 4294967295 to the string value 4294967295.
       // </Snippet7>
    }
 
@@ -197,10 +197,10 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the UInt64 value 0 to the String value 0.
-      //    Converted the UInt64 value 1031 to the String value 1031.
-      //    Converted the UInt64 value 189045 to the String value 189045.
-      //    Converted the UInt64 value 18446744073709551615 to the String value 18446744073709551615.
+      //    Converted the UInt64 value 0 to the string value 0.
+      //    Converted the UInt64 value 1031 to the string value 1031.
+      //    Converted the UInt64 value 189045 to the string value 189045.
+      //    Converted the UInt64 value 18446744073709551615 to the string value 18446744073709551615.
       // </Snippet8>
    }
 }

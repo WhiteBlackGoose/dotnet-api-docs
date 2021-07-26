@@ -1,4 +1,4 @@
-﻿//<Snippet3>
+//<Snippet3>
 // Example of the Convert.ToInt16( string ) and
 // Convert.ToInt16( string, IFormatProvider ) methods.
 using System;
@@ -69,7 +69,7 @@ class ToInt16ProviderDemo
             "\ngenerates the following output. It converts " +
             "several strings to \nshort values, using " +
             "default formatting or a NumberFormatInfo object.\n" );
-        Console.WriteLine( format, "String to convert",
+        Console.WriteLine( format, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( format, "-----------------",
             "-----------------", "------------------" );
@@ -95,7 +95,7 @@ This example of
 generates the following output. It converts several strings to
 short values, using default formatting or a NumberFormatInfo object.
 
-String to convert   Default/exception   Provider/exception
+string to convert   Default/exception   Provider/exception
 -----------------   -----------------   ------------------
 12345               12345               12345
 +12345              12345               FormatException

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the Convert.ToInt64( string ) and
 // Convert.ToInt64( string, IFormatProvider ) methods.
 using System;
@@ -69,7 +69,7 @@ class ToInt64ProviderDemo
             "\ngenerates the following output. It converts " +
             "several strings to \nlong values, using " +
             "default formatting or a NumberFormatInfo object.\n" );
-        Console.WriteLine( format, "String to convert",
+        Console.WriteLine( format, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( format, "-----------------",
             "-----------------", "------------------" );
@@ -95,7 +95,7 @@ This example of
 generates the following output. It converts several strings to
 long values, using default formatting or a NumberFormatInfo object.
 
-String to convert     Default/exception   Provider/exception
+string to convert     Default/exception   Provider/exception
 -----------------     -----------------   ------------------
 123456789             123456789           123456789
 +123456789            123456789           FormatException

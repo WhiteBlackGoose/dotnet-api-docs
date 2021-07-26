@@ -1,4 +1,4 @@
-﻿//<Snippet4>
+//<Snippet4>
 // Example of the Convert.ToSByte( string ) and
 // Convert.ToSByte( string, IFormatProvider ) methods.
 using System;
@@ -67,7 +67,7 @@ class ToSByteProviderDemo
             "\ngenerates the following output. It converts " +
             "several strings to \nSByte values, using " +
             "default formatting or a NumberFormatInfo object.\n" );
-        Console.WriteLine( format, "String to convert",
+        Console.WriteLine( format, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( format, "-----------------",
             "-----------------", "------------------" );
@@ -92,7 +92,7 @@ This example of
 generates the following output. It converts several strings to
 SByte values, using default formatting or a NumberFormatInfo object.
 
-String to convert   Default/exception   Provider/exception
+string to convert   Default/exception   Provider/exception
 -----------------   -----------------   ------------------
 123                 123                 123
 +123                123                 FormatException

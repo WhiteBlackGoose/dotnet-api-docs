@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the Convert.ToString( DateTime ) and
 // Convert.ToString( DateTime, IFormatProvider ) methods.
 using System;
@@ -16,7 +16,7 @@ class DateTimeIFormatProviderDemo
 
         // Bracket the culture name, and display the name and date.
         Console.WriteLine("   {0,-12}{1}",
-            String.Concat( "[", cultureName, "]" ), dateString );
+            string.Concat( "[", cultureName, "]" ), dateString );
     }
 
     static void Main( )
@@ -37,7 +37,7 @@ class DateTimeIFormatProviderDemo
         Console.WriteLine( "   {0,-12}{1}",
             null, "------------------" );
         Console.WriteLine( "   {0,-12}{1}\n",
-            String.Concat( "[", CultureInfo.CurrentCulture.Name, "]" ),
+            string.Concat( "[", CultureInfo.CurrentCulture.Name, "]" ),
             Convert.ToString( tDate ) );
 
         // Format the date with IFormatProvider for several cultures.

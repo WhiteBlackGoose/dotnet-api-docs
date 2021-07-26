@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 // Example of the Convert.ToInt32( string ) and
 // Convert.ToInt32( string, IFormatProvider ) methods.
 using System;
@@ -22,7 +22,7 @@ class ToInt32ProviderDemo
         object defaultValue;
         object providerValue;
 
-        // Convert numericStr to Int32 without a format provider.
+        // Convert numericStr to int without a format provider.
         try
         {
             defaultValue = Convert.ToInt32( numericStr );
@@ -32,7 +32,7 @@ class ToInt32ProviderDemo
             defaultValue = GetExceptionType( ex );
         }
 
-        // Convert numericStr to Int32 with a format provider.
+        // Convert numericStr to int with a format provider.
         try
         {
             providerValue = Convert.ToInt32( numericStr, provider );
@@ -69,7 +69,7 @@ class ToInt32ProviderDemo
             "\ngenerates the following output. It converts " +
             "several strings to \nint values, using " +
             "default formatting or a NumberFormatInfo object.\n" );
-        Console.WriteLine( format, "String to convert",
+        Console.WriteLine( format, "string to convert",
             "Default/exception", "Provider/exception" );
         Console.WriteLine( format, "-----------------",
             "-----------------", "------------------" );
@@ -95,7 +95,7 @@ This example of
 generates the following output. It converts several strings to
 int values, using default formatting or a NumberFormatInfo object.
 
-String to convert   Default/exception   Provider/exception
+string to convert   Default/exception   Provider/exception
 -----------------   -----------------   ------------------
 123456789           123456789           123456789
 +123456789          123456789           FormatException

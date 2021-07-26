@@ -1,4 +1,4 @@
-﻿// <Snippet16>
+// <Snippet16>
 using System;
 using System.Globalization;
 
@@ -15,7 +15,7 @@ public class Example
 
       foreach (CultureInfo culture in cultures)
       {
-         Console.WriteLine("String -> Single Conversion Using the {0} Culture",
+         Console.WriteLine("string -> Single Conversion Using the {0} Culture",
                            culture.Name);
          foreach (string value in values)
          {
@@ -35,7 +35,7 @@ public class Example
    }
 }
 // The example displays the following output:
-//    String -> Single Conversion Using the en-US Culture
+//    string -> Single Conversion Using the en-US Culture
 //                 123456789  ->  1.234568E+08
 //                12345.6789  ->  12345.68
 //               12 345,6789  ->  FormatException
@@ -47,7 +47,7 @@ public class Example
 //               1.03221e-05  ->  1.03221E-05
 //     1.79769313486232E+308  ->  Overflow
 //
-//    String -> Single Conversion Using the fr-FR Culture
+//    string -> Single Conversion Using the fr-FR Culture
 //                 123456789  ->  1.234568E+08
 //                12345.6789  ->  FormatException
 //               12 345,6789  ->  12345.68

@@ -1,4 +1,4 @@
-﻿// <Snippet30>
+// <Snippet30>
 using System;
 
 public class Temperature : IFormattable
@@ -19,19 +19,19 @@ public class Temperature : IFormattable
    public decimal Fahrenheit
    {  get { return Math.Round(this.m_Temp * 9m / 5m + 32m, 2); } }
 
-   public override String ToString()
+   public override string ToString()
    {
       return ToString("G", null);
    }
 
-   public String ToString(String fmt, IFormatProvider provider)
+   public string ToString(string fmt, IFormatProvider provider)
    {
       TemperatureProvider formatter = null;
       if (provider != null)
          formatter = provider.GetFormat(typeof(TemperatureProvider))
                                        as TemperatureProvider;
 
-      if (String.IsNullOrWhiteSpace(fmt)) {
+      if (string.IsNullOrWhiteSpace(fmt)) {
          if (formatter != null)
             fmt = formatter.Format;
          else
@@ -47,7 +47,7 @@ public class Temperature : IFormattable
          case "K":
             return Kelvin.ToString("N2") + " K";
          default:
-            throw new FormatException(String.Format("'{0}' is not a valid format specifier.", fmt));
+            throw new FormatException(string.Format("'{0}' is not a valid format specifier.", fmt));
       }
    }
 }
@@ -62,7 +62,7 @@ public class TemperatureProvider : IFormatProvider
       return this;
    }
 
-   public String Format
+   public string Format
    { get { return fmtStrings[rnd.Next(0, fmtStrings.Length)]; } }
 }
 
