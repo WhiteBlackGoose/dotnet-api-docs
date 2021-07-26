@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 #define CODE_ANALYSIS
 using System;
 using System.Diagnostics.CodeAnalysis;
@@ -14,7 +14,7 @@ namespace CodeAnalysisSample
         {
             string fileIdentifier = name;
             string fileName = name;
-            string version = String.Empty;
+            string version = string.Empty;
         }
         //</Snippet2>
     }

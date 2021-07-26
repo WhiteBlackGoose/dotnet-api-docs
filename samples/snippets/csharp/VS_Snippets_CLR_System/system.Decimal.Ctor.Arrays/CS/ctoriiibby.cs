@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 // Example of the decimal( int, int, int, bool, byte ) constructor.
 using System;
 
@@ -17,7 +17,7 @@ class DecimalCtorIIIBByDemo
         bool isNeg, byte scale )
     {
         // Format the constructor for display.
-        string ctor = String.Format(
+        string ctor = string.Format(
             "decimal( {0}, {1}, {2}, {3}, {4} )",
             low, mid, high, isNeg, scale );
         string valOrExc;

@@ -1,4 +1,4 @@
-﻿//<Snippet4>
+//<Snippet4>
 // Example of the decimal( ulong ) constructor.
 using System;
 
@@ -10,7 +10,7 @@ class DecimalCtorLDemo
         decimal decimalNum = new decimal( value );
 
         // Format the constructor for display.
-        string ctor = String.Format( "decimal( {0} )", valToStr );
+        string ctor = string.Format( "decimal( {0} )", valToStr );
 
         // Display the constructor and its value.
         Console.WriteLine( "{0,-35}{1,22}", ctor, decimalNum );

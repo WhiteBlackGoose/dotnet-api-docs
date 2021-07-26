@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the decimal( float ) constructor.
 using System;
 
@@ -17,7 +17,7 @@ class DecimalCtorSDemo
     {
         // Format and display the constructor.
         Console.Write( "{0,-27}",
-            String.Format( "decimal( {0} )", valToStr ) );
+            string.Format( "decimal( {0} )", valToStr ) );
 
         try
         {

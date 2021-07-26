@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Reflection;
@@ -8,14 +8,14 @@ public class Example
 {
    public static void Main()
    {
-      Action<String> outputMessage = null;
+      Action<string> outputMessage = null;
       outputMessage += Console.WriteLine;
       outputMessage += OutputToFile;
       outputMessage += ShowMessageBox;
 
-//       Dim output1 As Action(Of String) = AddressOf Console.WriteLine
-//       Dim output2 As Action(Of String) = AddressOf OutputToFile
-//       Dim output3 As Action(Of String) = AddressOf MessageBox.Show
+//       Dim output1 As Action(Of string) = AddressOf Console.WriteLine
+//       Dim output2 As Action(Of string) = AddressOf OutputToFile
+//       Dim output3 As Action(Of string) = AddressOf MessageBox.Show
 //
 //       outputMessage = [Delegate].Combine( { output1, output2, output3 } )
       Console.WriteLine("Invocation list has {0} methods.",
@@ -42,14 +42,14 @@ public class Example
       }
    }
 
-   private static void OutputToFile(String s)
+   private static void OutputToFile(string s)
    {
       var sw = new StreamWriter(@".\output.txt");
       sw.WriteLine(s);
       sw.Close();
    }
 
-   private static void ShowMessageBox(String s)
+   private static void ShowMessageBox(string s)
    {
       MessageBox.Show(s);
    }

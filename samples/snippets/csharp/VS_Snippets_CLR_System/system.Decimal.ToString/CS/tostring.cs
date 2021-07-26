@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example for the Decimal.ToString( ) methods.
 using System;
 using System.Globalization;
@@ -12,9 +12,9 @@ class DecimalToStringDemo
 
         Console.WriteLine( "This example of\n" +
             "   Decimal.ToString( ), \n" +
-            "   Decimal.ToString( String ),\n" +
+            "   Decimal.ToString( string ),\n" +
             "   Decimal.ToString( IFormatProvider ), and \n" +
-            "   Decimal.ToString( String, IFormatProvider )\n" +
+            "   Decimal.ToString( string, IFormatProvider )\n" +
             "generates the following output when run in the " +
             "[{0}] culture.\nDecimal numbers are formatted " +
             "with various combinations \nof format strings " +
@@ -69,9 +69,9 @@ class DecimalToStringDemo
 /*
 This example of
    Decimal.ToString( ),
-   Decimal.ToString( String ),
+   Decimal.ToString( string ),
    Decimal.ToString( IFormatProvider ), and
-   Decimal.ToString( String, IFormatProvider )
+   Decimal.ToString( string, IFormatProvider )
 generates the following output when run in the [en-US] culture.
 Decimal numbers are formatted with various combinations
 of format strings and IFormatProvider.

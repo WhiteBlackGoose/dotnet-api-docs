@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -64,7 +64,7 @@ public class Example
 //       112 (Decimal) = 112 (Int16): False
 //
 //       value = int1:                True
-//       112 (Decimal) = 112 (Int32): False
+//       112 (Decimal) = 112 (int): False
 //
 //       value = long1:               True
 //       112 (Decimal) = 112 (Int64): False

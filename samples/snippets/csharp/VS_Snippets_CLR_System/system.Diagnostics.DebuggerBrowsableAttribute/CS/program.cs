@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections;
 using System.Diagnostics;
@@ -12,7 +12,7 @@ class DebugViewTest
     // The following DebuggerBrowsableAttribute prevents the property following it
     // from appearing in the debug window for the class.
     [DebuggerBrowsable(DebuggerBrowsableState.Never)]
-    public static string y = "Test String";
+    public static string y = "Test string";
     //</Snippet2>
 
     static void Main()

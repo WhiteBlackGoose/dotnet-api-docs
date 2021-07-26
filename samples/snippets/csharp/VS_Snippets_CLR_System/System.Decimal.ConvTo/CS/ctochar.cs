@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 
 class Example
@@ -9,7 +9,7 @@ class Example
       decimal[] values = { 3.33m, 55.5m, 77.7m, 123m, 123.999m, 170m,
                            188.88m, 222m, 244m, 8217m, 8250m, 65536m,
                            -1m };
-      // Convert each value to a Char.
+      // Convert each value to a char.
       foreach (decimal value in values) {
          try {
             char charValue = (char) value;

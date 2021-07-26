@@ -1,4 +1,4 @@
-﻿//<Snippet2>
+//<Snippet2>
 // Example of the decimal( double ) constructor.
 using System;
 
@@ -17,7 +17,7 @@ class DecimalCtorDoDemo
     {
         // Format and display the constructor.
         Console.Write( "{0,-34}",
-            String.Format( "decimal( {0} )", valToStr ) );
+            string.Format( "decimal( {0} )", valToStr ) );
 
         try
         {

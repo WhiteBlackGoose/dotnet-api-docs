@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // <Snippet11>
 using System;
 using System.Diagnostics;
@@ -48,13 +48,13 @@ class Binomial
                 possibilities = Decimal.Parse(args[0]);
                 if (possibilities<0||possibilities>MAX_POSSIBILITIES)
                 {
-                    throw new Exception(String.Format("The number of possibilities must " +
+                    throw new Exception(string.Format("The number of possibilities must " +
                         "be in the range 0..{0}.", MAX_POSSIBILITIES));
                 }
             }
             catch(Exception ex)
             {
-                string failMessage = String.Format("\"{0}\" " +
+                string failMessage = string.Format("\"{0}\" " +
                     "is not a valid number of possibilities.", args[0]);
                 defaultListener.Fail(failMessage, ex.Message);
                 if (!defaultListener.AssertUiEnabled)
@@ -96,7 +96,7 @@ class Binomial
             }
             catch(Exception ex)
             {
-                string failMessage = String.Format("An exception was raised when " +
+                string failMessage = string.Format("An exception was raised when " +
                     "calculating Binomial( {0}, {1} ).", possibilities, iter);
                 defaultListener.Fail(failMessage, ex.Message);
                 if (!defaultListener.AssertUiEnabled)
@@ -109,7 +109,7 @@ class Binomial
             // <Snippet10>
 
             // Format the trace and console output.
-            binomial = String.Format("Binomial( {0}, {1} ) = ", possibilities, iter);
+            binomial = string.Format("Binomial( {0}, {1} ) = ", possibilities, iter);
             defaultListener.Write(binomial);
             defaultListener.WriteLine(result.ToString());
             Console.WriteLine("{0} {1}", binomial, result);

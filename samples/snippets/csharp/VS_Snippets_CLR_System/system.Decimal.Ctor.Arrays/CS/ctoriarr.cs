@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the decimal( int[ ] ) constructor.
 using System;
 
@@ -16,12 +16,12 @@ class DecimalCtorIArrDemo
     public static void CreateDecimal( int[ ] bits )
     {
         // Format the constructor for display.
-        string ctor = String.Format(
+        string ctor = string.Format(
             "decimal( {{ 0x{0:X}", bits[ 0 ] );
         string valOrExc;
 
         for( int index = 1; index < bits.Length; index++ )
-            ctor += String.Format( ", 0x{0:X}", bits[ index ] );
+            ctor += string.Format( ", 0x{0:X}", bits[ index ] );
         ctor += " } )";
 
         try

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the decimal( int ) constructor.
 using System;
 
@@ -10,7 +10,7 @@ class DecimalCtorIDemo
         decimal decimalNum = new decimal( value );
 
         // Format the constructor for display.
-        string ctor = String.Format( "decimal( {0} )", valToStr );
+        string ctor = string.Format( "decimal( {0} )", valToStr );
 
         // Display the constructor and its value.
         Console.WriteLine( "{0,-30}{1,16}", ctor, decimalNum );
