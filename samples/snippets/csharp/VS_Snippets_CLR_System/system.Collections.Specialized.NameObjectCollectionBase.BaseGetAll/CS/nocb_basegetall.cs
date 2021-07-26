@@ -1,4 +1,4 @@
-﻿// The following example uses BaseGetAllKeys and BaseGetAllValues to get an array of the keys or an array of the values.
+// The following example uses BaseGetAllKeys and BaseGetAllValues to get an array of the keys or an array of the values.
 // For an expanded version of this example, see the NameObjectCollectionBase class topic.
 
 // <snippet1>
@@ -43,7 +43,7 @@ public class MyCollection : NameObjectCollectionBase  {
    // Gets a String array that contains all the values in the collection.
    public String[] AllStringValues  {
       get  {
-         return( (String[]) this.BaseGetAllValues( typeof(System.String) ) );
+         return( (String[]) this.BaseGetAllValues( typeof(string) ) );
       }
    }
 }

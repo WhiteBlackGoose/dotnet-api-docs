@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System.CodeDom;
 using System.CodeDom.Compiler;
 using System.Collections;
@@ -131,7 +131,7 @@ namespace System.CodeDom
             kType.Constraints.Add(iComparableT);
 
             CodeTypeParameter vType = new CodeTypeParameter("TValue");
-            vType.Constraints.Add(new CodeTypeReference(typeof(IList<System.String>)));
+            vType.Constraints.Add(new CodeTypeReference(typeof(IList<string>)));
             vType.CustomAttributes.Add(new CodeAttributeDeclaration(
                 "System.ComponentModel.DescriptionAttribute",
                     new CodeAttributeArgument(new CodePrimitiveExpression("ValueType"))));
@@ -176,7 +176,7 @@ namespace System.CodeDom
                     new CodeTypeReference(typeof(int)),
                     new CodeTypeReference("List",
                        new CodeTypeReference[]
-                            {new CodeTypeReference("System.String") })});
+                            {new CodeTypeReference("string") })});
 
             methodMain.Statements.Add(
                   new CodeVariableDeclarationStatement(myClass,
@@ -196,7 +196,7 @@ namespace System.CodeDom
                              "Print",
                                  new CodeTypeReference[] {
                                     new CodeTypeReference("System.Decimal"),
-                                       new CodeTypeReference("System.Int32"),}),
+                                       new CodeTypeReference("int"),}),
                                            new CodeExpression[0])));
 
 //</Snippet9>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Reflection.Emit;
 
@@ -17,7 +17,7 @@ class MoreMethodBuilderSnippets
 	MethodBuilder myMthdBuilder = myType1.DefineMethod("AddToRefValue",
 					MethodAttributes.Public,
 					typeof(void),
-					new Type[] { Type.GetType("System.Int32&"),
+					new Type[] { Type.GetType("int&"),
 						     typeof(int) });
 	ParameterBuilder myParam1 = myMthdBuilder.DefineParameter(1,
 					ParameterAttributes.Out,

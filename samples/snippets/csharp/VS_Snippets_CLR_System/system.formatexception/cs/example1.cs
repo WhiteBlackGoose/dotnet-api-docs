@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -29,6 +29,6 @@ public class Example
 //       at System.Number.FormatDecimal(Decimal value, String format, NumberFormatInfo info)
 //       at System.Decimal.ToString(String format, IFormatProvider provider)
 //       at System.Text.StringBuilder.AppendFormat(IFormatProvider provider, String format, Object[] args)
-//       at System.String.Format(IFormatProvider provider, String format, Object[] args)
+//       at string.Format(IFormatProvider provider, String format, Object[] args)
 //       at Example.Main()
 // </Snippet1>

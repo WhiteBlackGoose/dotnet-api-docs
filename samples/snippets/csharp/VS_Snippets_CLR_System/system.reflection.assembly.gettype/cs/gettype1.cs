@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
@@ -41,7 +41,7 @@ namespace Transportation
 // The example displays the following output:
 //    Virtual properties in type Transportation.MeansOfTransportation:
 //       HasWheels (type System.Boolean)
-//       Wheels (type System.Int32)
+//       Wheels (type int)
 //       ConsumesFuel (type System.Boolean)
 //       Living (type System.Boolean)
 // </Snippet1>

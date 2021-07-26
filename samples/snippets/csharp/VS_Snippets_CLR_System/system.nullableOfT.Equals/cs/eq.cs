@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the Nullable<T>.Equals
 // methods.
 
@@ -12,7 +12,7 @@ class Sample
     int? nullInt2 = 200;
     object myObj;
 
-// Determine if two nullable of System.Int32 values are equal.
+// Determine if two nullable of int values are equal.
 // The nullable objects have different values.
     Console.Write("1) nullInt1 and nullInt2 ");
     if (nullInt1.Equals(nullInt2))
@@ -21,7 +21,7 @@ class Sample
         Console.Write("are not");
     Console.WriteLine(" equal.");
 
-// Determine if a nullable of System.Int32 and an object
+// Determine if a nullable of int and an object
 // are equal. The object contains the boxed value of the
 // nullable object.
 

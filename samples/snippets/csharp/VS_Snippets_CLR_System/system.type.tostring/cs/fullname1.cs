@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -40,9 +40,9 @@ public class Example
 }
 // The example displays output like the following:
 //    Name: String
-//    Full Name: System.String
-//    ToString:  System.String
-//    Assembly Qualified Name: System.String, mscorlib, Version=4.0.0.0, Culture=neutr
+//    Full Name: string
+//    ToString:  string
+//    Assembly Qualified Name: string, mscorlib, Version=4.0.0.0, Culture=neutr
 //    al, PublicKeyToken=b77a5c561934e089
 //
 //    Name: List`1
@@ -52,17 +52,17 @@ public class Example
 //    0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 //
 //    Name: List`1
-//    Full Name: System.Collections.Generic.List`1[[System.String, mscorlib, Version=4
+//    Full Name: System.Collections.Generic.List`1[[string, mscorlib, Version=4
 //    .0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]
-//    ToString:  System.Collections.Generic.List`1[System.String]
-//    Assembly Qualified Name: System.Collections.Generic.List`1[[System.String, mscor
+//    ToString:  System.Collections.Generic.List`1[string]
+//    Assembly Qualified Name: System.Collections.Generic.List`1[[string, mscor
 //    lib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorl
 //    ib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 //
 //    Name: Int32
-//    Full Name: System.Int32
-//    ToString:  System.Int32
-//    Assembly Qualified Name: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutra
+//    Full Name: int
+//    ToString:  int
+//    Assembly Qualified Name: int, mscorlib, Version=4.0.0.0, Culture=neutra
 //    l, PublicKeyToken=b77a5c561934e089
 //
 //    Name: IFormatProvider

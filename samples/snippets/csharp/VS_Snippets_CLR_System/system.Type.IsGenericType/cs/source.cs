@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -72,14 +72,14 @@ Derived<V>
                IsGenericParameter: False
 
 Base type of Derived<V>
-    Type: Base`2[System.String,V]
+    Type: Base`2[string,V]
                     IsGenericType: True
           IsGenericTypeDefinition: False
         ContainsGenericParameters: True
                IsGenericParameter: False
 
 Array of Derived<int>
-    Type: Derived`1[System.Int32][]
+    Type: Derived`1[int][]
                     IsGenericType: False
           IsGenericTypeDefinition: False
         ContainsGenericParameters: False

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -18,7 +18,7 @@ public class Example
    }
 }
 // The example displays the following output:
-//       System.Int32[]: 1 dimension(s)
-//       System.Int32[,]: 2 dimension(s)
-//       System.Int32[][]: 1 dimension(s)
+//       int[]: 1 dimension(s)
+//       int[,]: 2 dimension(s)
+//       int[][]: 1 dimension(s)
 // </Snippet1>

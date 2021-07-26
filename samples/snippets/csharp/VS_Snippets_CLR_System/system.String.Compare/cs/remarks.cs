@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
@@ -9,7 +9,7 @@ public class Example
     }
 }
 
-// System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)
+// string.Compare(string,int,string,int,int)
 public class CompareSample1_1
 {
     //<Snippet2>
@@ -20,7 +20,7 @@ public class CompareSample1_1
     //</Snippet2>
 }
 
-// System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32)
+// string.Compare(string,int,string,int,int)
 public class CompareSample1_2
 {
     //<Snippet3>
@@ -31,7 +31,7 @@ public class CompareSample1_2
     //</Snippet3>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)
+//string.Compare(string,int,string,int,int,System.Boolean)
 public class CompareSample2_1
 {
     //<Snippet4>
@@ -42,7 +42,7 @@ public class CompareSample2_1
     //</Snippet4>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,System.Boolean)
+//string.Compare(string,int,string,int,int,System.Boolean)
 public class CompareSample2_2
 {
     //<Snippet5>
@@ -53,7 +53,7 @@ public class CompareSample2_2
     //</Snippet5>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,
+//string.Compare(string,int,string,int,int,
 //  System.Boolean,System.Globalization.CultureInfo)
 public class CompareSample3_1
 {
@@ -65,7 +65,7 @@ public class CompareSample3_1
     //</Snippet6>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,System.Int32,
+//string.Compare(string,int,string,int,int,
 //  System.Boolean,System.Globalization.CultureInfo)
 public class CompareSample3_2
 {
@@ -77,8 +77,8 @@ public class CompareSample3_2
     //</Snippet7>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,
-//  System.Int32,System.StringComparison)
+//string.Compare(string,int,string,int,
+//  int,stringComparison)
 public class CompareSample4_1
 {
     //<Snippet8>
@@ -89,8 +89,8 @@ public class CompareSample4_1
     //</Snippet8>
 }
 
-//System.String.Compare(System.String,System.Int32,System.String,System.Int32,
-//  System.Int32,System.StringComparison)
+//string.Compare(string,int,string,int,
+//  int,stringComparison)
 public class CompareSample4_2
 {
     //<Snippet9>
@@ -101,7 +101,7 @@ public class CompareSample4_2
     //</Snippet9>
 }
 
-//System.String.Compare(System.String,System.String)
+//string.Compare(string,string)
 public class CompareSample5_1
 {
     //<Snippet10>
@@ -112,7 +112,7 @@ public class CompareSample5_1
     //</Snippet10>
 }
 
-//System.String.Compare(System.String,System.String)
+//string.Compare(string,string)
 public class CompareSample5_2
 {
     //<Snippet11>
@@ -123,7 +123,7 @@ public class CompareSample5_2
     //</Snippet11>
 }
 
-//System.String.Compare(System.String,System.String,System.Boolean)
+//string.Compare(string,string,System.Boolean)
 public class CompareSample6_1
 {
     //<Snippet12>
@@ -134,7 +134,7 @@ public class CompareSample6_1
     //</Snippet12>
 }
 
-//System.String.Compare(System.String,System.String,System.Boolean)
+//string.Compare(string,string,System.Boolean)
 public class CompareSample6_2
 {
     //<Snippet13>
@@ -145,7 +145,7 @@ public class CompareSample6_2
     //</Snippet13>
 }
 
-//System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)
+//string.Compare(string,string,System.Boolean,System.Globalization.CultureInfo)
 public class CompareSample7_1
 {
     //<Snippet14>
@@ -156,7 +156,7 @@ public class CompareSample7_1
     //</Snippet14>
 }
 
-//System.String.Compare(System.String,System.String,System.Boolean,System.Globalization.CultureInfo)
+//string.Compare(string,string,System.Boolean,System.Globalization.CultureInfo)
 public class CompareSample7_2
 {
     //<Snippet15>
@@ -167,7 +167,7 @@ public class CompareSample7_2
     //</Snippet15>
 }
 
-//System.String.Compare(System.String,System.String,System.StringComparison)
+//string.Compare(string,string,stringComparison)
 public class CompareSample8_1
 {
     //<Snippet16>
@@ -178,7 +178,7 @@ public class CompareSample8_1
     //</Snippet16>
 }
 
-//System.String.Compare(System.String,System.String,System.StringComparison)
+//string.Compare(string,string,stringComparison)
 public class CompareSample8_2
 {
     //<Snippet17>

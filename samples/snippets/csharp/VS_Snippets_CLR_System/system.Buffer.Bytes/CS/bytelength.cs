@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the Buffer.ByteLength method.
 using System;
 
@@ -52,7 +52,7 @@ Array name          Array type   Length  ByteLength
 ----------          ----------   ------  ----------
      bytes       System.Byte[]       10          10
      bools    System.Boolean[]        5           5
-     chars       System.Char[]        5          10
+     chars       char[]        5          10
     shorts      System.Int16[]        6          12
    singles     System.Single[]        5          20
    doubles     System.Double[]        4          32

@@ -1,4 +1,4 @@
-﻿// The following code example demonstrates the behavior of UnicodeEncoding with error detection enabled and without.
+// The following code example demonstrates the behavior of UnicodeEncoding with error detection enabled and without.
 
 // <Snippet1>
 using System;
@@ -63,7 +63,7 @@ This code produces the following output.
 Decoding with error detection:
 System.ArgumentException: Invalid byte was found at byte index 3.
    at System.Text.UnicodeEncoding.GetCharCount(Byte* bytes, Int32 count, DecoderNLS baseDecoder)
-   at System.String.CreateStringFromEncoding(Byte* bytes, Int32 byteLength, Encoding encoding)
+   at string.CreateStringFromEncoding(Byte* bytes, Int32 byteLength, Encoding encoding)
    at System.Text.UnicodeEncoding.GetString(Byte[] bytes, Int32 index, Int32 count)
    at SamplesUnicodeEncoding.PrintDecodedString(Byte[] bytes, Encoding enc)
 

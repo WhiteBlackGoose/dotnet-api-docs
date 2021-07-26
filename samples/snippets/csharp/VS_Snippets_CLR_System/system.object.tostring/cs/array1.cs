@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example
@@ -13,8 +13,8 @@ public class Example
       Console.WriteLine(list.ToString());
 
       // The example displays the following output:
-      //       System.Int32[]
-      //       System.Collections.Generic.List`1[System.Int32]
+      //       int[]
+      //       System.Collections.Generic.List`1[int]
       // </Snippet6>
    }
 }

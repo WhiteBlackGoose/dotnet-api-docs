@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.CodeDom;
 using System.CodeDom.Compiler;
@@ -22,7 +22,7 @@ public class CodeGenExample
                 "Init",
                 new CodeTypeReference[] {
                     new CodeTypeReference("System.Decimal"),
-                    new CodeTypeReference("System.Int32")});
+                    new CodeTypeReference("int")});
 
         // Invokes the dict.Init method from the constructor.
         CodeMethodInvokeExpression invoke1 = new CodeMethodInvokeExpression( methodRef1, new CodeParameterDeclarationExpression[] {} );

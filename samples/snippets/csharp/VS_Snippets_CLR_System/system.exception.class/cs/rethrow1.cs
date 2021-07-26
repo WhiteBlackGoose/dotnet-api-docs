@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
@@ -71,7 +71,7 @@ public class Example
 //    Parameter name: value
 //
 //    Stack Trace:
-//          at System.String.IndexOf(String value, Int32 startIndex, Int32 count, Stri
+//          at string.IndexOf(String value, Int32 startIndex, Int32 count, Stri
 //    ngComparison comparisonType)
 //       at Library.FindOccurrences(String s, String f)
 //       at Example.Main()

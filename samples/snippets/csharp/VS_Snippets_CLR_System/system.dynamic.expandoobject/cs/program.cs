@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,7 +21,7 @@ namespace N1
             Console.WriteLine(sampleObject.test.GetType());
             // This code example produces the following output:
             // Dynamic Property
-            // System.String
+            // string
             //</Snippet2>
 
             //<Snippet3>

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Threading;
@@ -113,7 +113,7 @@ class PropertyBuilderDemo
 // --- O U T P U T ---
 // The output should be as follows:
 // -------------------
-// Property 'System.String CustomerName' created!
+// Property 'string CustomerName' created!
 // ---
 // The customerName field of instance custData has been set to 'Joe User'.
 // -------------------

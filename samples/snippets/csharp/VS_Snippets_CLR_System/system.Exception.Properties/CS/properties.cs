@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example for the Exception.HelpLink, Exception.Source,
 // Exception.StackTrace, and Exception.TargetSite properties.
 using System;
@@ -110,6 +110,6 @@ StackTrace ---
    at NDP_UE_CS.OverflowDemo.Main()
 
 TargetSite ---
-Int32 AddRecord(System.String)
+Int32 AddRecord(string)
 */
 //</Snippet1>

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -92,12 +92,12 @@ Derived`1[V]
         List type arguments (1):
                 V  (unassigned - parameter position 0)
 
-Base`2[System.Int32,V]
+Base`2[int,V]
         Is this a generic type definition? False
         Is it a generic type? True
         Does it have unassigned generic parameters? True
         List type arguments (2):
-                System.Int32
+                int
                 V  (unassigned - parameter position 0)
  */
 //</Snippet1>

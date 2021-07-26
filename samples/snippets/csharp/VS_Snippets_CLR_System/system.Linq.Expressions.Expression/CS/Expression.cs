@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -62,7 +62,7 @@ namespace CodeSnippets
 
             // This code produces the following output:
             //
-            // new System.String[,](3, 2)
+            // new string[,](3, 2)
             // </Snippet2>
         }
 
@@ -88,7 +88,7 @@ namespace CodeSnippets
 
             // This code produces the following output:
             //
-            // value(System.String[,]).Get(0, 2)
+            // value(string[,]).Get(0, 2)
             // </Snippet3>
         }
 
@@ -111,7 +111,7 @@ namespace CodeSnippets
 
             // This code produces the following output:
             //
-            // Void Add(Int32, System.String)(5,"maple")
+            // Void Add(Int32, string)(5,"maple")
             // </Snippet4>
         }
 
@@ -180,8 +180,8 @@ namespace CodeSnippets
 
             // This code produces the following output:
             //
-            // new Dictionary`2() {Void Add(Int32, System.String)(5,"maple"),
-            // Void Add(Int32, System.String)(3,"oak")}
+            // new Dictionary`2() {Void Add(Int32, string)(5,"maple"),
+            // Void Add(Int32, string)(3,"oak")}
             // </Snippet7>
         }
 

@@ -1,4 +1,4 @@
-﻿ using System;
+ using System;
  using System.Reflection;
 
  class Class1
@@ -150,7 +150,7 @@
          // Display information about public properties of assembly type.
          // Prop = Prop1
          //    DeclaringType = Sample.Assembly.Class1
-         //    Type = System.String
+         //    Type = string
          //    Readable = True
          //    Writable = False
          foreach (PropertyInfo Prop in Props)
@@ -193,7 +193,7 @@
          ParameterInfo[] Params = Method.GetParameters();
          // Display information about method parameters.
          // Param = sParam1
-         //   Type = System.String
+         //   Type = string
          //   Position = 0
          //   Optional=False
          foreach (ParameterInfo Param in Params)

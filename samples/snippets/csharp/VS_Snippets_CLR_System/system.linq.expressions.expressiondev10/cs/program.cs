@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -1232,9 +1232,9 @@ namespace ExpressionTreesCSharp
             // This code example produces the following output:
             //
             // NodeType: Constant
-            // Type: System.Int32
+            // Type: int
             // NodeType: Add
-            // Type: System.Int32
+            // Type: int
             //</Snippet36>
         }
 

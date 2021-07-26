@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the
 // Nullable.GetUnderlyingType() method.
 
@@ -39,8 +39,8 @@ class Sample
 /*
 This code example produces the following results:
 
-Return value type ... System.Nullable`1[System.Int32]
-Underlying type ..... System.Int32
+Return value type ... System.Nullable`1[int]
+Underlying type ..... int
 
 */
 //</snippet1>

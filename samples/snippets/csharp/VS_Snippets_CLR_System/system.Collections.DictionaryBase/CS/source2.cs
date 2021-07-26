@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 
 public class ShortStringDictionary : DictionaryBase  {
@@ -37,7 +37,7 @@ public class ShortStringDictionary : DictionaryBase  {
    }
 
    protected override void OnInsert( Object key, Object value )  {
-      if ( key.GetType() != typeof(System.String) )
+      if ( key.GetType() != typeof(string) )
         {
             throw new ArgumentException( "key must be of type String.", "key" );
         }
@@ -47,7 +47,7 @@ public class ShortStringDictionary : DictionaryBase  {
             throw new ArgumentException( "key must be no more than 5 characters in length.", "key" );
       }
 
-      if ( value.GetType() != typeof(System.String) )
+      if ( value.GetType() != typeof(string) )
         {
             throw new ArgumentException( "value must be of type String.", "value" );
         }
@@ -59,7 +59,7 @@ public class ShortStringDictionary : DictionaryBase  {
    }
 
    protected override void OnRemove( Object key, Object value )  {
-      if ( key.GetType() != typeof(System.String) )
+      if ( key.GetType() != typeof(string) )
         {
             throw new ArgumentException( "key must be of type String.", "key" );
         }
@@ -71,7 +71,7 @@ public class ShortStringDictionary : DictionaryBase  {
    }
 
    protected override void OnSet( Object key, Object oldValue, Object newValue )  {
-      if ( key.GetType() != typeof(System.String) )
+      if ( key.GetType() != typeof(string) )
         {
             throw new ArgumentException( "key must be of type String.", "key" );
         }
@@ -81,7 +81,7 @@ public class ShortStringDictionary : DictionaryBase  {
             throw new ArgumentException( "key must be no more than 5 characters in length.", "key" );
       }
 
-      if ( newValue.GetType() != typeof(System.String) )
+      if ( newValue.GetType() != typeof(string) )
         {
             throw new ArgumentException( "newValue must be of type String.", "newValue" );
         }
@@ -93,7 +93,7 @@ public class ShortStringDictionary : DictionaryBase  {
    }
 
    protected override void OnValidate( Object key, Object value )  {
-      if ( key.GetType() != typeof(System.String) )
+      if ( key.GetType() != typeof(string) )
         {
             throw new ArgumentException( "key must be of type String.", "key" );
         }
@@ -103,7 +103,7 @@ public class ShortStringDictionary : DictionaryBase  {
             throw new ArgumentException( "key must be no more than 5 characters in length.", "key" );
       }
 
-      if ( value.GetType() != typeof(System.String) )
+      if ( value.GetType() != typeof(string) )
         {
             throw new ArgumentException( "value must be of type String.", "value" );
         }
