@@ -1,4 +1,4 @@
-﻿//<Snippet0>
+//<Snippet0>
 using System;
 using System.Windows.Forms;
 using System.Security.Permissions;
@@ -94,9 +94,9 @@ public class Form1 : Form
     }
 
     // Navigates to the given URL if it is valid.
-    private void Navigate(String address)
+    private void Navigate(string address)
     {
-        if (String.IsNullOrEmpty(address)) return;
+        if (string.IsNullOrEmpty(address)) return;
         if (address.Equals("about:blank")) return;
         if (!address.StartsWith("http://") &&
             !address.StartsWith("https://"))

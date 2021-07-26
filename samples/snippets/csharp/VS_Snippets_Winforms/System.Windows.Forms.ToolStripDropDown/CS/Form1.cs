@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -133,7 +133,7 @@ namespace ToolStripDropDownCS
         // ToolStripStatusLabel control.
         void contextMenuStrip_Closed(object sender, ToolStripDropDownClosedEventArgs e)
         {
-            string msg = String.Format(
+            string msg = string.Format(
                 "DropDown closed - CloseReason: {0}", 
                 e.CloseReason.ToString());
 

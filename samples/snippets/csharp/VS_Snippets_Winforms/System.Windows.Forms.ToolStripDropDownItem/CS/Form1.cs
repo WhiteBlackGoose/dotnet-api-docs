@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -63,7 +63,7 @@ namespace ToolStripDropDownItemCS
         {
             ToolStripDropDownItem item = sender as ToolStripDropDownItem;
 
-            string msg = String.Format("Item opened: {0}", item.Text);
+            string msg = string.Format("Item opened: {0}", item.Text);
             this.toolStripStatusLabel1.Text = msg;
         }
         // </snippet3>
@@ -74,7 +74,7 @@ namespace ToolStripDropDownItemCS
         // item's Text property in the form's StatusStrip control.
         void toolStripDropDownItem_DropDownItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
-            string msg = String.Format("Item clicked: {0}", e.ClickedItem.Text);
+            string msg = string.Format("Item clicked: {0}", e.ClickedItem.Text);
             this.toolStripStatusLabel1.Text = msg;
         }
         // </snippet4>
@@ -87,7 +87,7 @@ namespace ToolStripDropDownItemCS
         {
             ToolStripDropDownItem item = sender as ToolStripDropDownItem;
 
-            string msg = String.Format("Item closed: {0}", item.Text);
+            string msg = string.Format("Item closed: {0}", item.Text);
             this.toolStripStatusLabel1.Text = msg;
         }
         // </snippet5>

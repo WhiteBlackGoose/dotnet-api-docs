@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
    
 using System.Drawing;
 using System.Windows.Forms;
@@ -201,7 +201,7 @@ public class Form1:
 		// If the character is not a digit, period, or backspace then
 		// ignore it by setting the KeyPressEventArgs.Handled
 		// property to true.
-		if (!(Char.IsDigit(e.KeyChar) || e.KeyChar == '.' || 
+		if (!(char.IsDigit(e.KeyChar) || e.KeyChar == '.' || 
 			e.KeyChar == (char)(Keys.Back)))
 		{
 			e.Handled = true;

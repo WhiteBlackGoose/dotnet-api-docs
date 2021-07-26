@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.TreeNode.TreeNode()
+// System.Windows.Forms.TreeNode.TreeNode()
 // System.Windows.Forms.TreeNode.TreeNode(string,TreeNode[])
 // System.Windows.Forms.TreeNode.Bounds
 // System.Windows.Forms.TreeNode.ForeColor
@@ -121,7 +121,7 @@ public void AddRootNodes()
 
       // Get the font size from combobox.
       string selectedString = myComboBox.SelectedItem.ToString();
-      int myNodeFontSize = Int32.Parse(selectedString);
+      int myNodeFontSize = int.Parse(selectedString);
 
       // Set the font of root node.
       myTreeView.SelectedNode.NodeFont = new Font("Arial",myNodeFontSize);

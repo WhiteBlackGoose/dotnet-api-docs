@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -24,11 +24,11 @@ public class TreeViewOwnerDraw : Form
         for (int x = 1; x < 4; ++x)
         {
             // Add a root node to the TreeView control.
-            node = myTreeView.Nodes.Add(String.Format("Task {0}", x));
+            node = myTreeView.Nodes.Add(string.Format("Task {0}", x));
             for (int y = 1; y < 4; ++y)
             {
                 // Add a child node to the root node.
-                node.Nodes.Add(String.Format("Subtask {0}", y));
+                node.Nodes.Add(string.Format("Subtask {0}", y));
             }
         }
         myTreeView.ExpandAll();

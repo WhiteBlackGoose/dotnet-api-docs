@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,7 +69,7 @@ namespace HtmlWindowProjectCSharp
 			{
 				HtmlWindow frame = webBrowser1.Document.Window;
 
-				String dialogArguments = "dialogHeight: 250px; dialogWidth: 300px; dialogTop: 300px;" + 
+				string dialogArguments = "dialogHeight: 250px; dialogWidth: 300px; dialogTop: 300px;" + 
 					"dialogLeft: 300px; edge: Sunken; center: Yes; help: Yes; resizable: No; status: No;";
 
 				// Show the dialog.
@@ -136,7 +136,7 @@ namespace HtmlWindowProjectCSharp
 				foreach (HtmlWindow frameWindow in docWindow.Frames)
 				{
 					frameElement = frameWindow.WindowFrameElement;
-					String originalUrl = frameElement.GetAttribute("SRC");
+					string originalUrl = frameElement.GetAttribute("SRC");
 
 					if (!originalUrl.Equals(frameWindow.Url.ToString())) 
 					{

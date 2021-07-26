@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,7 +40,7 @@ namespace TestOpenFileDialogMultiSelect
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
                 // Read the files
-                foreach (String file in openFileDialog1.FileNames) 
+                foreach (string file in openFileDialog1.FileNames) 
                 {
                     // Create a PictureBox.
                     try

@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -108,7 +108,7 @@ namespace RolloverItemDemoLib
         {
             base.OnDoubleClick(e);
 
-            string msg = String.Format("Item: {0}", this.Text);
+            string msg = string.Format("Item: {0}", this.Text);
 
             MessageBox.Show(msg);
         }

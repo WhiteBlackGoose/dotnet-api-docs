@@ -1,4 +1,4 @@
-﻿// This sample can go in the VisualStyleElement class overview or a conceptual topic
+// This sample can go in the VisualStyleElement class overview or a conceptual topic
 // to give the new user a chance to view what each of the defined elements looks like. 
 // This sample also gives them the ability to preview each element at three different sizes.
 
@@ -294,7 +294,7 @@ namespace VisualStyleElementViewer
 
                 // Get the element that corresponds to the selected  
                 // node's name.
-                String key = e.Node.Name;
+                string key = e.Node.Name;
                 element = elementDictionary[key];
 
                 // Disable resizing if the element is not defined.

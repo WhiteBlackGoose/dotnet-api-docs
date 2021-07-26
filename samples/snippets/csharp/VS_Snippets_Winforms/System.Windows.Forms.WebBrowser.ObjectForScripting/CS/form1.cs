@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Windows.Forms;
 using System.Security.Permissions;
@@ -57,7 +57,7 @@ public class Form1 : Form
     }
 
     //<snippet5>
-    public void Test(String message)
+    public void Test(string message)
     {
         MessageBox.Show(message, "client code");
     }

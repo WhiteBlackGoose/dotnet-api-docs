@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 
 using System;
 using System.Collections;
@@ -219,7 +219,7 @@ namespace SoundApiExample
         private void player_LoadCompleted(object sender, 
             AsyncCompletedEventArgs e)
         {   
-            string message = String.Format("LoadCompleted: {0}", 
+            string message = string.Format("LoadCompleted: {0}", 
                 this.filepathTextbox.Text);
             ReportStatus(message);
             EnablePlaybackControls(true);
@@ -230,7 +230,7 @@ namespace SoundApiExample
         // Handler for the SoundLocationChanged event.
         private void player_LocationChanged(object sender, EventArgs e)
         {   
-            string message = String.Format("SoundLocationChanged: {0}", 
+            string message = string.Format("SoundLocationChanged: {0}", 
                 player.SoundLocation);
             ReportStatus(message);
         }

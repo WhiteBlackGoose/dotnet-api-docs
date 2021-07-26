@@ -1,4 +1,4 @@
-﻿//<snippet000>
+//<snippet000>
 //<snippet100>
 using System;
 using System.Drawing;
@@ -155,7 +155,7 @@ public class ToolStripRadioButtonMenuItem : ToolStripMenuItem
         }
 
         // Calculate the position at which to display the RadioButton.
-        Int32 offset = (ContentRectangle.Height -
+        int offset = (ContentRectangle.Height -
             RadioButtonRenderer.GetGlyphSize(
             e.Graphics, buttonState).Height) / 2;
         Point imageLocation = new Point(

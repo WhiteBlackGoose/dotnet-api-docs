@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -119,7 +119,7 @@ class FibonacciNumber : Form
 	private void backgroundWorker1_ProgressChanged(object sender, ProgressChangedEventArgs e)
 	{
 		toolStripProgressBar.Value = e.ProgressPercentage;
-		toolStripStatusLabel.Text = e.UserState as String;
+		toolStripStatusLabel.Text = e.UserState as string;
 	}
 
 	private void backgroundWorker1_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)

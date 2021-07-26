@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections; 
 using System.Windows.Forms;
@@ -215,7 +215,7 @@ public class ListViewGroupsExample : Form
         // order to return the correct value.
         public int Compare(object x, object y)
         {
-            int result = String.Compare(
+            int result = string.Compare(
                 ((ListViewGroup)x).Header,
                 ((ListViewGroup)y).Header
             );

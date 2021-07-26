@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Windows.Forms;
@@ -30,11 +30,11 @@ public class Form1 : Form
         for (int x = 0; x < 3; ++x)
         {
             // Add a root node.
-            node = treeView1.Nodes.Add(String.Format("Node{0}", x*4));
+            node = treeView1.Nodes.Add(string.Format("Node{0}", x*4));
             for (int y = 1; y < 4; ++y)
             {
                 // Add a node as a child of the previously added node.
-                node = node.Nodes.Add(String.Format("Node{0}", x*4 + y));
+                node = node.Nodes.Add(string.Format("Node{0}", x*4 + y));
             }
         }
 

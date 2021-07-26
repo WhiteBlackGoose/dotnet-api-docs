@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,7 +23,7 @@ namespace TextRendering
         //<snippet1>
         private void MeasureText1(PaintEventArgs e)
         {
-            String text1 = "Measure this text";
+            string text1 = "Measure this text";
             Font arialBold = new Font("Arial", 12.0F);
             Size textSize = TextRenderer.MeasureText(text1, arialBold);
             TextRenderer.DrawText(e.Graphics, text1, arialBold, 
@@ -33,7 +33,7 @@ namespace TextRendering
         //<snippet10>
         private void MeasureText2(PaintEventArgs e)
         {
-            String text1 = "How big is this text?";
+            string text1 = "How big is this text?";
             Font arialBold = new Font("Arial", 12.0F);
             
             // Indicate a size taller than it is wide.
