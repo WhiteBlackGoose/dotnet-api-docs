@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Reflection;
 using System.Security;
@@ -41,8 +41,8 @@ namespace CustAttrs4CS
     // Create a class for an imported Win32 unmanaged function.
     public class Win32 {
         [DllImport("user32.dll", CharSet = CharSet.Unicode)]
-        public static extern int MessageBox(int hWnd, String text,
-            String caption, uint type);
+        public static extern int MessageBox(int hWnd, string text,
+            string caption, uint type);
     }
 
     public class AClass {
@@ -83,7 +83,7 @@ namespace CustAttrs4CS
                         Console.WriteLine(
                             "This method calls unmanaged code.");
                         Console.WriteLine(
-                            String.Format("The Unmanaged attribute type is {0}.",
+                            string.Format("The Unmanaged attribute type is {0}.",
                                           ((UnmanagedAttribute)attr).Win32Type));
                         AClass myCls = new AClass();
                         myCls.Win32CallMethod();

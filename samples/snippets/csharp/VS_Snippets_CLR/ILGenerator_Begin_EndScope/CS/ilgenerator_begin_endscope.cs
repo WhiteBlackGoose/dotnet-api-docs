@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ILGenerator
+// System.Reflection.Emit.ILGenerator
 // System.Reflection.Emit.ILGenerator.BeginScope()
 // System.Reflection.Emit.ILGenerator.EndScope()
 
@@ -41,9 +41,9 @@ public class ILGenerator_Begin_EndScope
                                           TypeAttributes.Public);
          // Define a public string field.
          FieldBuilder myField = myTypeBuilder.DefineField("MyDynamicField",
-                                  typeof(String), FieldAttributes.Public);
+                                  typeof(string), FieldAttributes.Public);
          // Create the constructor.
-         Type[] myConstructorArgs = {typeof(String)};
+         Type[] myConstructorArgs = {typeof(string)};
          ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
             MethodAttributes.Public, CallingConventions.Standard, myConstructorArgs);
 
@@ -60,7 +60,7 @@ public class ILGenerator_Begin_EndScope
 
          // Define a dynamic method named 'MyDynamicMethod'.
          MethodBuilder myMethod = myTypeBuilder.DefineMethod("MyDynamicMethod",
-            MethodAttributes.Public, typeof(String), null);
+            MethodAttributes.Public, typeof(string), null);
          // Generate IL for 'myMethod'.
          ILGenerator myMethodIL = myMethod.GetILGenerator();
 

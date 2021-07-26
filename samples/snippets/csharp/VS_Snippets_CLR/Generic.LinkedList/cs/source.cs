@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -112,7 +112,7 @@ public class Example
         Display(sentence, "Test 14: Remove node that has the value 'old':");
 
         // <Snippet9>
-        // When the linked list is cast to ICollection(Of String),
+        // When the linked list is cast to ICollection(Of string),
         // the Add method adds a node to the end of the list.
         sentence.RemoveLast();
         ICollection<string> icoll = sentence;

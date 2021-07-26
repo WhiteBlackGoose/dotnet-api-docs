@@ -1,4 +1,4 @@
-﻿// System.Configuration.Install.InstallerCollection
+// System.Configuration.Install.InstallerCollection
 // System.Configuration.Install.InstallerCollection.Add(Installer)
 
 /*
@@ -25,7 +25,7 @@ public class InstallerCollection_Add
    public static void Main(String[] args)
    {
       ArrayList options = new ArrayList();
-      String myOption;
+      string myOption;
       bool toUnInstall = false;
       bool toPrintHelp = false;
       TransactedInstaller myTransactedInstaller = new TransactedInstaller();
@@ -41,15 +41,15 @@ public class InstallerCollection_Add
             {
                myOption = args[i].Substring(1);
                // Determine whether the option is to 'uninstall' a assembly.
-               if(String.Compare(myOption, "u", true) == 0 ||
-                  String.Compare(myOption, "uninstall", true) == 0)
+               if(string.Compare(myOption, "u", true) == 0 ||
+                  string.Compare(myOption, "uninstall", true) == 0)
                {
                   toUnInstall = true;
                   continue;
                }
                // Determine whether the option is for printing help information.
-               if(String.Compare(myOption, "?", true) == 0 ||
-                  String.Compare(myOption, "help", true) == 0)
+               if(string.Compare(myOption, "?", true) == 0 ||
+                  string.Compare(myOption, "help", true) == 0)
                {
                   toPrintHelp = true;
                   continue;

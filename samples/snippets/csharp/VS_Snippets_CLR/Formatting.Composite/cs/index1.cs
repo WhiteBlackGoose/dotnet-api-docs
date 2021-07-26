@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -6,7 +6,7 @@ public class Example
    {
    // <Snippet7>
    string primes;
-   primes = String.Format("Prime numbers less than 10: {0}, {1}, {2}, {3}",
+   primes = string.Format("Prime numbers less than 10: {0}, {1}, {2}, {3}",
                           2, 3, 5, 7 );
    Console.WriteLine(primes);
    // The example displays the following output:
@@ -15,7 +15,7 @@ public class Example
    Console.WriteLine();
 
    // <Snippet10>
-   string multiple = String.Format("0x{0:X} {0:E} {0:N}",
+   string multiple = string.Format("0x{0:X} {0:E} {0:N}",
                                    Int64.MaxValue);
    Console.WriteLine(multiple);
    // The example displays the following output:

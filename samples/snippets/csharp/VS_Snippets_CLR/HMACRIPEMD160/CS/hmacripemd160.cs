@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -55,7 +55,7 @@ public class HMACRIPEMD160example
     }  //end main
     // Computes a keyed hash for a source file and creates a target file with the keyed hash
     // prepended to the contents of the source file.
-    public static void SignFile(byte[] key, String sourceFile, String destFile)
+    public static void SignFile(byte[] key, string sourceFile, string destFile)
     {
         // Initialize the keyed hash object.
         using (HMACRIPEMD160 hmac = new HMACRIPEMD160(key))
@@ -88,7 +88,7 @@ public class HMACRIPEMD160example
 
     // Compares the key in the source file with a new key created for the data portion of the file. If the keys
     // compare the data has not been tampered with.
-    public static bool VerifyFile(byte[] key, String sourceFile)
+    public static bool VerifyFile(byte[] key, string sourceFile)
     {
         bool err = false;
         // Initialize the keyed hash object.

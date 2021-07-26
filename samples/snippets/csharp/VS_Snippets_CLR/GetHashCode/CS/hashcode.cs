@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -66,7 +66,7 @@ class Example
       Type clsType = typeof(TestClass);
 
       // Store author information in a list of tuples.
-      var authorsInfo = new List<Tuple<String, AuthorsAttribute>>();
+      var authorsInfo = new List<Tuple<string, AuthorsAttribute>>();
 
       // Iterate through all the methods of the class.
       foreach(var method in clsType.GetMethods())

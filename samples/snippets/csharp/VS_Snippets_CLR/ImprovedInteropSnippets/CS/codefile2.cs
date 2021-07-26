@@ -1,4 +1,4 @@
-﻿// System.Runtime.InteropServices.ComImportAttribute
+// System.Runtime.InteropServices.ComImportAttribute
 // System.Runtime.InteropServices.InAttribute
 // System.Runtime.InteropServices.OutAttribute
 // System.Runtime.InteropServices.UnmanagedType
@@ -41,15 +41,15 @@ namespace MyModule
 	{
 		[DispId(1)]
 		[return : MarshalAs( UnmanagedType.Interface )]
-		Object GetItem( [In, MarshalAs( UnmanagedType.BStr )] String bstrName );
+		Object GetItem( [In, MarshalAs( UnmanagedType.BStr )] string bstrName );
 
 		[DispId(2)]
-		void GetItems( [In, MarshalAs( UnmanagedType.BStr )] String bstrLocation,
+		void GetItems( [In, MarshalAs( UnmanagedType.BStr )] string bstrLocation,
 			[Out, MarshalAs( UnmanagedType.SafeArray,
 					  SafeArraySubType = VarEnum.VT_VARIANT )] out Object[] Items );
 
 		[DispId(3)]
-		void GetItemDescriptions( [In] String bstrLocation,
+		void GetItemDescriptions( [In] string bstrLocation,
 			[In, Out, MarshalAs( UnmanagedType.SafeArray )] ref Object[] varDescriptions );
 
 		bool IsEmpty
