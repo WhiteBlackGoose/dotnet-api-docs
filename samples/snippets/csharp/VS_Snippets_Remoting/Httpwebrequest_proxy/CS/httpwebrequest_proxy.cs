@@ -1,4 +1,4 @@
-﻿/*System.Net.HttpWebRequest.Proxy
+/*System.Net.HttpWebRequest.Proxy
 This program demonstrates the 'Proxy' property of the 'HttpWebRequest' class.
 A 'HttpWebRequest' object and a 'Proxy' object is created. The Proxy Object is then assigned to
 the 'Proxy' Property of the 'HttpWebRequest' object and printed onto the console(this is the default
@@ -74,7 +74,7 @@ class HttpWebRequest_Proxy
             Console.WriteLine("\nThe contents of the HTML pages are :");	
             while (count > 0)
             {
-                String outputData = new String(readBuff, 0, count);
+                string outputData = new string(readBuff, 0, count);
                 Console.Write(outputData);
                 count = streamRead.Read(readBuff, 0, 256);
             }

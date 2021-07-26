@@ -1,4 +1,4 @@
-﻿/* System.Net.HttpWebRequest.AllowAutoRedirect System.Net.HttpWebRequest.Address
+/* System.Net.HttpWebRequest.AllowAutoRedirect System.Net.HttpWebRequest.Address
  This program demonstrates the 'AllowAutoRedirect' and 'Address' properties of the 'HttpWebRequest' class.
  A new 'HttpWebRequest' object is created. The 'AllowAutoredirect' property, which redirects a page automatically
  to the new Uri, is set to true. Using the 'Address' property, the address of the 'Responding Uri' is printed to
@@ -31,7 +31,7 @@ class HttpWebRequest_AllowAutoRedirect
 			Console.WriteLine("\nThe contents of Html Page are :  ");	
 			while (count > 0)
 			{			
-				String outputData = new String(readBuff, 0, count);
+				string outputData = new string(readBuff, 0, count);
 				Console.Write(outputData);
 				count = streamRead.Read(readBuff, 0, 256);
 			}

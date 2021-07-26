@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
 using System.Runtime.Remoting.Channels.Tcp;
@@ -38,7 +38,7 @@ namespace SampleNamespace {
 
             // Fire Event
             if (SomethingHappened != null) {
-                // Package String in TimerServiceEventArgs
+                // Package string in TimerServiceEventArgs
                 SampleServiceEventArgs sampleEventArgs = new SampleServiceEventArgs("Something happened");
                 Console.WriteLine("Firing SomethingHappened Event");
                 SomethingHappened(this, sampleEventArgs);

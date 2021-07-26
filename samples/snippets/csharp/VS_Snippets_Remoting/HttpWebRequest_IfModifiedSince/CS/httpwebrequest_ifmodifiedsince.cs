@@ -1,4 +1,4 @@
-﻿/*
+/*
   System.Net.HttpWebRequest.IfModifiedSince
 This program demonstrates the 'IfModifiedSince' property of the 'HttpWebRequest' class .
 A new 'HttpWebrequest' object is created.
@@ -46,7 +46,7 @@ class HttpWebRequest_IfModifiedSince
 
       while (count > 0)
       {
-        String outputData = new String(readBuff, 0, count);
+        string outputData = new string(readBuff, 0, count);
         Console.Write(outputData);
         count = streamRead.Read(readBuff, 0, 256);
       }

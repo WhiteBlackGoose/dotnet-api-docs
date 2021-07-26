@@ -1,4 +1,4 @@
-﻿/*Sytem.Net.HttpWebRequest.PipeLined
+/*Sytem.Net.HttpWebRequest.PipeLined
  This program demonstrates the 'Pipelined' property of the 'HttpWebRequest' class.
   A new 'HttpWebRequest' object is created. The 'Pipelined' property is displayed to the console.
   HTTP Request and Response Headers are displayed to the console. The contents of the page of the
@@ -39,7 +39,7 @@ class HttpWebRequest_Pipelined
 			Console.WriteLine("Message :{0}" , e.Message);
 		}
 	}
-	public static void GetPage(String myUri)
+	public static void GetPage(string myUri)
 	{
 		try
 		{
@@ -56,7 +56,7 @@ class HttpWebRequest_Pipelined
 			Console.WriteLine("\nThe contents of HTML page are.......");	
 			while (count > 0)
 			{
-				String outputData = new String(readBuffer, 0, count);
+				string outputData = new string(readBuffer, 0, count);
 				Console.Write(outputData);
 				count = streamRead.Read(readBuffer, 0, 256);
 			}

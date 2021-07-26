@@ -1,4 +1,4 @@
-﻿// System.Web.Services.Protocols.HttpGetClientProtocol.HttpGetClientProtocol
+// System.Web.Services.Protocols.HttpGetClientProtocol.HttpGetClientProtocol
 
 /* The following example demonstrates 'Constructor' of 'HttpGetClientProtocol' class
    A variable of type 'HttpGetClientProtocol' is used to set proxy information ,
@@ -67,7 +67,7 @@ public class HttpGetClientProtocolClass
         HttpGetClientProtocol myHttpGetClientProtocol = new Math();
 
         // Obtain password from a secure store.
-        String SecurelyStoredPassword = String.Empty;
+        string SecurelyStoredPassword = string.Empty;
 
         // Set the client-side credentials using the Credentials property.
         ICredentials credentials =

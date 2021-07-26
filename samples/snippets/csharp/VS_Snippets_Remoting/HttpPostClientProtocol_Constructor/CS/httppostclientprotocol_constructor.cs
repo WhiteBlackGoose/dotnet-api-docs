@@ -1,4 +1,4 @@
-﻿// System.Web.Services.Protocols.HttpPostClientProtocol.HttpPostClientProtocol
+// System.Web.Services.Protocols.HttpPostClientProtocol.HttpPostClientProtocol
 
 /* The following example demonstrates 'Constructor' of 'HttpPostClientProtocol' class
    A variable of type 'HttpPostClientProtocol' is used to set proxy information ,
@@ -64,7 +64,7 @@ public class HttpPostClientProtocolClass
         HttpPostClientProtocol myHttpPostClientProtocol = new Math();
 
         // Obtain password from a secure store.
-        String SecurelyStoredPassword = String.Empty;
+        string SecurelyStoredPassword = string.Empty;
 
         // Set the client-side credentials using the Credentials property.
         myHttpPostClientProtocol.Credentials = System.Net.CredentialCache.DefaultCredentials;

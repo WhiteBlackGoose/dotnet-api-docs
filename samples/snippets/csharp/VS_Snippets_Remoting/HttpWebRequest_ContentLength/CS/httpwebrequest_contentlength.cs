@@ -1,4 +1,4 @@
-﻿/*
+/*
    System.Net.HttpWebRequest.Method,System.Net.HttpWebRequest.ContentLength,System.Net.HttpWebRequest.ContentType
     System.Net.HttpWebRequest.GetRequestStream
     This program demonstrates the 'Method', 'ContentLength', and 'ContentType' properties and the 'GetRequestStream'
@@ -75,7 +75,7 @@ class HttpWebRequest_ContentLength
             Console.WriteLine ("\nThe contents of the HTML page are :  ");
             while (count > 0)
             {
-                String outputData = new String (readBuff, 0, count);
+                string outputData = new string (readBuff, 0, count);
 
                 Console.WriteLine (outputData);
                 count = streamRead.Read (readBuff, 0, 256);

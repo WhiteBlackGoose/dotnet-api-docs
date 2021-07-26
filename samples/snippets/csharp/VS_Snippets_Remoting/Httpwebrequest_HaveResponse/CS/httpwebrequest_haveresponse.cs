@@ -1,4 +1,4 @@
-﻿/*System.Net.HttpWebRequest.HaveResponse
+/*System.Net.HttpWebRequest.HaveResponse
 
 This program demonstrates 'HaveResponse' property of 'HttpWebRequest' Class.
 A new 'HttpWebRequest' is created.
@@ -41,7 +41,7 @@ class HttpWebRequest_HaveResponse
 				Console.WriteLine("\nThe contents of Html Page are :  \n");	
 				while (count > 0)
 				{
-					String outputData = new String(readBuff, 0, count);
+					string outputData = new string(readBuff, 0, count);
 					Console.Write(outputData);
 					count = streamRead.Read(readBuff, 0, 256);
 				}

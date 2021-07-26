@@ -1,4 +1,4 @@
-﻿/* System.Net.HttpWebRequest.Accept
+/* System.Net.HttpWebRequest.Accept
 This program demonstrates the 'Accept' property of the 'HttpWebRequest' class.
 A new 'HttpWebRequest' object is created. The 'Accept' property of 'HttpWebRequest'
 class is set to 'image/*' that in turn sets the 'Accept' field of HTTP Request Headers to
@@ -43,7 +43,7 @@ class HttpWebRequest_Accept
          Console.WriteLine("Message :{0}" , e.Message);
       }
    }
-   public static void GetPage(String myUri)
+   public static void GetPage(string myUri)
    {
       try
       {
@@ -67,7 +67,7 @@ class HttpWebRequest_Accept
          Console.WriteLine("\nThe contents of HTML page are.......");
          while (count > 0)
          {
-            String outputData = new String(readBuffer, 0, count);
+            string outputData = new string(readBuffer, 0, count);
             Console.Write(outputData);
             count = streamRead.Read(readBuffer, 0, 256);
          }
