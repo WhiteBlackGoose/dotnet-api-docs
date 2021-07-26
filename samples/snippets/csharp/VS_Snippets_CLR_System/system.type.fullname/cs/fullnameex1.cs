@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -10,7 +10,7 @@ public class Example
       Console.WriteLine(t.FullName);
       Console.WriteLine();
 
-      List<String> list = new List<String>();
+      List<string> list = new List<string>();
       t = list.GetType();
       Console.WriteLine(t.FullName);
    }

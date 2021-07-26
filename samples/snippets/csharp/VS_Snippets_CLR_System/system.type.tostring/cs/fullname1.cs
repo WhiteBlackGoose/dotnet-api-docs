@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -7,13 +7,13 @@ public class Example
 {
     public static void Main()
     {
-        Type t = typeof(String);
+        Type t = typeof(string);
         ShowTypeInfo(t);
 
         t = typeof(List<>);
         ShowTypeInfo(t);
 
-        var list = new List<String>();
+        var list = new List<string>();
         t = list.GetType();
         ShowTypeInfo(t);
 
@@ -39,7 +39,7 @@ public class Example
     }
 }
 // The example displays output like the following:
-//    Name: String
+//    Name: string
 //    Full Name: System.String
 //    ToString:  System.String
 //    Assembly Qualified Name: System.String, mscorlib, Version=4.0.0.0, Culture=neutr
@@ -59,7 +59,7 @@ public class Example
 //    lib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]], mscorl
 //    ib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
 //
-//    Name: Int32
+//    Name: int
 //    Full Name: System.Int32
 //    ToString:  System.Int32
 //    Assembly Qualified Name: System.Int32, mscorlib, Version=4.0.0.0, Culture=neutra

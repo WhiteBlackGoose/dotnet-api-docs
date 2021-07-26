@@ -1,13 +1,13 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Reflection;
 
 public class Person
 {
-   public String FirstName;
-   public String LastName;
+   public string FirstName;
+   public string LastName;
    
-   public override String ToString()
+   public override string ToString()
    {
       return (FirstName + " " + LastName).Trim();
    }
@@ -20,11 +20,11 @@ public class Example
       Type t = typeof(Person);
       RetrieveMethod(t, "ToString");
       
-      t = typeof(Int32);
+      t = typeof(int);
       RetrieveMethod(t, "ToString");
    }
 
-   private static void RetrieveMethod(Type t, String name)
+   private static void RetrieveMethod(Type t, string name)
    {   
       try {
          MethodInfo m = t.GetMethod(name);
@@ -42,5 +42,5 @@ public class Example
 }
 // The example displays the following output:
 //       Person.ToString: Instance method
-//       Int32.ToString has multiple public overloads.
+//       int.ToString has multiple public overloads.
 // </Snippet3>

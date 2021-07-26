@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ public class Example
       // Get a Type object that represents a non-generic type.
       GetAddMethod(typeof(ArrayList));
 
-      var list = new List<String>();
+      var list = new List<string>();
       // Get a Type object that represents a constructed generic type.
       Type closed = list.GetType();
       GetAddMethod(closed);
@@ -56,6 +56,6 @@ public class Example
 }
 // The example displays the following output:
 //       System.Collections.ArrayList.Add(Object)
-//       System.Collections.Generic.List`1.Add(String)
+//       System.Collections.Generic.List`1.Add(string)
 //       System.Collections.Generic.List`1.Add(T)
 // </Snippet1>

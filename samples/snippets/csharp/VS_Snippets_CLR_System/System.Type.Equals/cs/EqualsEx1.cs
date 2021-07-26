@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Reflection;
@@ -11,7 +11,7 @@ public class Example
       Object obj1 = typeof(int).GetTypeInfo();
       IsEqualTo(t, obj1);
 
-      Object obj2 = typeof(String);
+      Object obj2 = typeof(string);
       IsEqualTo(t, obj2);
       
       t = typeof(Object);
@@ -19,7 +19,7 @@ public class Example
       IsEqualTo(t, obj3);
       
       t = typeof(List<>);
-      Object obj4 = (new List<String>()).GetType();
+      Object obj4 = (new List<string>()).GetType();
       IsEqualTo(t, obj4);
       
       t = typeof(Type);
@@ -40,9 +40,9 @@ public class Example
    }
 }
 // The example displays the following output:
-//       Int32 = Int32: True
+//       int = int: True
 //       
-//       Int32 = String: False
+//       int = string: False
 //       
 //       Object = Object: True
 //       

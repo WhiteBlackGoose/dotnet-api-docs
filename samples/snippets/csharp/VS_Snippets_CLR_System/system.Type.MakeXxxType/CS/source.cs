@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -64,7 +64,7 @@ Array of Example: Example[]
 Two-dimensional array of Example: Example[,]
 
 System.IndexOutOfRangeException: Index was outside the bounds of the array.
-   at System.RuntimeType.MakeArrayType(Int32 rank) in c:\vbl\ndp\clr\src\BCL\System\RtType.cs:line 2999
+   at System.RuntimeType.MakeArrayType(int rank) in c:\vbl\ndp\clr\src\BCL\System\RtType.cs:line 2999
    at Example.Main()
 
 ByRef Example: Example&

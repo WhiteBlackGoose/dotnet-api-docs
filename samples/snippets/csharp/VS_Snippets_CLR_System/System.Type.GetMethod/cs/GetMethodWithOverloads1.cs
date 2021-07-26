@@ -1,15 +1,15 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Reflection;
 
 public class TestClass
 {
-   public void DisplayValue(String s)
+   public void DisplayValue(string s)
    {
       Console.WriteLine(s);
    }
    
-   public void DisplayValue(String s, params Object[] values)
+   public void DisplayValue(string s, params Object[] values)
    {
       Console.WriteLine(s, values);
    }
@@ -40,7 +40,7 @@ public class Example
       RetrieveMethod(t, "Equals", BindingFlags.Public | BindingFlags.Static);
    }
    
-   private static void RetrieveMethod(Type t, String name, BindingFlags flags)
+   private static void RetrieveMethod(Type t, string name, BindingFlags flags)
    {
       try {
          MethodInfo m = t.GetMethod(name, flags);
@@ -79,8 +79,8 @@ public class Example
 }
 // The example displays the following output:
 //       The following duplicate matches were found:
-//          TestClass.DisplayValue(String)
-//          TestClass.DisplayValue(String, Object[])
+//          TestClass.DisplayValue(string)
+//          TestClass.DisplayValue(string, Object[])
 //       
 //       The following duplicate matches were found:
 //          TestClass.Equals(TestClass)

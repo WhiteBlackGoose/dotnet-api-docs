@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -30,7 +30,7 @@ public class Test
         // obtained using typeof() and GetGenericTypeDefinition().
         Console.WriteLine("\r\n--- Compare types obtained by different methods:");
 
-        Type t = typeof(Dictionary<String, Test>);
+        Type t = typeof(Dictionary<string, Test>);
         Console.WriteLine("\tAre the constructed types equal? {0}", t == constructed);
         Console.WriteLine("\tAre the generic types equal? {0}", 
             t.GetGenericTypeDefinition() == generic);

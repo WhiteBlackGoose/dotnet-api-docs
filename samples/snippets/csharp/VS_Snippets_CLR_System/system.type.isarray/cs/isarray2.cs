@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -7,17 +7,17 @@ public class Example
 {
    public static void Main()
    {
-      Type[] types = { typeof(String), typeof(int[]),
+      Type[] types = { typeof(string), typeof(int[]),
                        typeof(ArrayList), typeof(Array),
-                       typeof(List<String>),
-                       typeof(IEnumerable<Char>) };
+                       typeof(List<string>),
+                       typeof(IEnumerable<char>) };
       foreach (var t in types)
          Console.WriteLine("{0,-15} IsArray = {1}", t.Name + ":",
                            t.IsArray);
    }
 }
 // The example displays the following output:
-//       String:         IsArray = False
+//       string:         IsArray = False
 //       Int32[]:        IsArray = True
 //       ArrayList:      IsArray = False
 //       Array:          IsArray = False
