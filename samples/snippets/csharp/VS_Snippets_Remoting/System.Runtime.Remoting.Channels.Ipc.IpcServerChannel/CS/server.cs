@@ -1,12 +1,12 @@
-﻿/// Class: System.Runtime.Remoting.Channels.Ipc.IpcServerChannel
+/// Class: System.Runtime.Remoting.Channels.Ipc.IpcServerChannel
 /// 41 #ctor(IDictionary,IServerChannelSinkProvider)
-/// 42 #ctor(String,String)
-/// 43 #ctor(String,String,IServerChannelSinkProvider)
+/// 42 #ctor(string,String)
+/// 43 #ctor(string,String,IServerChannelSinkProvider)
 /// 15 ChannelData
 /// 12 ChannelName
 /// 13 ChannelPriority
 /// 19 GetUrlsForUri
-/// 19 Parse(String,String@)
+/// 19 Parse(string,String@)
 /// !  StartListening(Object)
 /// !  StopListening(Object)
 

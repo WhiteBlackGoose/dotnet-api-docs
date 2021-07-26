@@ -1,4 +1,4 @@
-﻿/// Class: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonthDay
+/// Class: System.Runtime.Remoting.Metadata.W3cXsd2001.SoapMonthDay
 ///    10    class
 ///    21    #ctor()
 ///    22    #ctor(DateTime)
@@ -11,7 +11,7 @@
 ///    Bugs in SoapMonthDay:
 ///    1. SoapMonthDay.Parse throws exception when the time zone is "Z":
 ///    SoapMonthDay.Parse throws the following exception,
-///        System.FormatException: String was not recognized
+///        System.FormatException: string was not recognized
 ///        as a valid DateTime.
 /// when invoked as follows,
 ///        SoapMonthDay.Parse("--02--Z");    // Throws exception.

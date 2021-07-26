@@ -1,4 +1,4 @@
-﻿/// Class: System.Runtime.Remoting.SoapServices
+/// Class: System.Runtime.Remoting.SoapServices
 ///    100    class
 ///    101    CodeXmlNamespaceForClrTypeNamespace()
 ///    102    DecodeXmlNamespaceForClrTypeNamespace()
@@ -19,7 +19,7 @@
 ///    180    RegisterInteropXmlElement()
 ///    190    RegisterInteropXmlType()
 ///    170    RegisterSoapActionForMethodBase(MethodBase)
-///    170    RegisterSoapActionForMethodBase(MethodBase,String)
+///    170    RegisterSoapActionForMethodBase(MethodBase,string)
 ///    130    XmlNsForClrType
 ///    131    XmlNsForClrTypeWithAssembly
 ///    132    XmlNsForClrTypeWithNs
@@ -401,7 +401,7 @@ public class Demo
         SoapServices.RegisterInteropXmlElement(
             registeredXmlElementName,
             registeredXmlNamespace, 
-            typeof(String));
+            typeof(string));
 
         // Get the currently registered type for the given XML element 
         // and namespace.
@@ -433,7 +433,7 @@ public class Demo
         SoapServices.RegisterInteropXmlType(
             registeredXmlTypeName,
             registeredXmlTypeNamespace, 
-            typeof(String));
+            typeof(string));
 
         // Get the currently registered type for the given XML element 
         // and namespace.

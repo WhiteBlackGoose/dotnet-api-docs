@@ -1,9 +1,9 @@
-﻿/// Class: System.Web.Services.Description.WebReferenceCollection
+/// Class: System.Web.Services.Description.WebReferenceCollection
 /// 10 Item[Int32]
 /// 10 Contains(WebReference)
-/// 10 CopyTo(WebReference[],Int32)
+/// 10 CopyTo(WebReference[],int)
 /// 10 IndexOf(WebReference)
-/// 10 Insert(Int32,WebReference)
+/// 10 Insert(int,WebReference)
 /// 10 Remove(WebReference)
 
 /// Temporary URL for testing:

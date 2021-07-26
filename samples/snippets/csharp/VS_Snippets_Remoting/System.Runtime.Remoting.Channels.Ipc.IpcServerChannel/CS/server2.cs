@@ -1,7 +1,7 @@
-﻿/// Class: System.Runtime.Remoting.Channels.Ipc.IpcServerChannel
+/// Class: System.Runtime.Remoting.Channels.Ipc.IpcServerChannel
 /// 41 #ctor(IDictionary,IServerChannelSinkProvider)
-/// 42 #ctor(String,String)
-/// 43 #ctor(String,String,IServerChannelSinkProvider)
+/// 42 #ctor(string,String)
+/// 43 #ctor(string,String,IServerChannelSinkProvider)
 
 using System;
 using System.Runtime.Remoting;

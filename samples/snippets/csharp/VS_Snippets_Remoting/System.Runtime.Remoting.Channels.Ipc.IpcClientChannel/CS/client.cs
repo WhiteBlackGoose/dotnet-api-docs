@@ -1,10 +1,10 @@
-﻿/// Class: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel
+/// Class: System.Runtime.Remoting.Channels.Ipc.IpcClientChannel
 /// 41 #ctor(IDictionary,IClientChannelSinkProvider)
-/// 42 #ctor(String,IClientChannelSinkProvider)
+/// 42 #ctor(string,IClientChannelSinkProvider)
 /// 21 ChannelName
 /// 23 ChannelPriority
-/// 22 CreateMessageSink(String,Object,String@)
-/// 24 Parse(String,String@)
+/// 22 CreateMessageSink(string,Object,string@)
+/// 24 Parse(string,String@)
 
 using System;
 using System.Runtime.Remoting.Channels.Ipc;
