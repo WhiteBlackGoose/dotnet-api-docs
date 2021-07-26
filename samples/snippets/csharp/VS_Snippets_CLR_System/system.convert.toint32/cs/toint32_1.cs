@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -63,10 +63,10 @@ public class Example
                            result.GetType().Name, result);
       }
       // The example displays the following output:
-      //       Converted the Byte value 0 to the Int32 value 0.
-      //       Converted the Byte value 14 to the Int32 value 14.
-      //       Converted the Byte value 122 to the Int32 value 122.
-      //       Converted the Byte value 255 to the Int32 value 255.
+      //       Converted the Byte value 0 to the int value 0.
+      //       Converted the Byte value 14 to the int value 14.
+      //       Converted the Byte value 122 to the int value 122.
+      //       Converted the Byte value 255 to the int value 255.
       // </Snippet2>
    }
 
@@ -86,17 +86,17 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("Unable to convert u+{0} to an Int32.",
+            Console.WriteLine("Unable to convert u+{0} to an int.",
                               ((int)ch).ToString("X4"));
          }
       }
       // The example displays the following output:
-      //       Converted the Char value 'a' to the Int32 value 97.
-      //       Converted the Char value 'z' to the Int32 value 122.
-      //       Converted the Char value '' to the Int32 value 7.
-      //       Converted the Char value 'Ͽ' to the Int32 value 1023.
-      //       Converted the Char value '翿' to the Int32 value 32767.
-      //       Converted the Char value '￾' to the Int32 value 65534.
+      //       Converted the char value 'a' to the int value 97.
+      //       Converted the char value 'z' to the int value 122.
+      //       Converted the char value '' to the int value 7.
+      //       Converted the char value 'Ͽ' to the int value 1023.
+      //       Converted the char value '翿' to the int value 32767.
+      //       Converted the char value '￾' to the int value 65534.
       // </Snippet3>
    }
 
@@ -116,19 +116,19 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.",
+            Console.WriteLine("{0} is outside the range of the int type.",
                               value);
          }
       }
       // The example displays the following output:
-      //    -79228162514264337593543950335 is outside the range of the Int32 type.
-      //    Converted the Decimal value '-1034.23' to the Int32 value -1034.
-      //    Converted the Decimal value '-12' to the Int32 value -12.
-      //    Converted the Decimal value '0' to the Int32 value 0.
-      //    Converted the Decimal value '147' to the Int32 value 147.
-      //    Converted the Decimal value '199.55' to the Int32 value 200.
-      //    Converted the Decimal value '9214.16' to the Int32 value 9214.
-      //    79228162514264337593543950335 is outside the range of the Int32 type.
+      //    -79228162514264337593543950335 is outside the range of the int type.
+      //    Converted the Decimal value '-1034.23' to the int value -1034.
+      //    Converted the Decimal value '-12' to the int value -12.
+      //    Converted the Decimal value '0' to the int value 0.
+      //    Converted the Decimal value '147' to the int value 147.
+      //    Converted the Decimal value '199.55' to the int value 200.
+      //    Converted the Decimal value '9214.16' to the int value 9214.
+      //    79228162514264337593543950335 is outside the range of the int type.
       // </Snippet4>
    }
 
@@ -148,18 +148,18 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine("{0} is outside the range of the int type.", value);
          }
       }
-      //    -1.79769313486232E+308 is outside the range of the Int32 type.
-      //    -13800000000 is outside the range of the Int32 type.
-      //    Converted the Double value '-1023.299' to the Int32 value -1023.
-      //    Converted the Double value '-12.98' to the Int32 value -13.
-      //    Converted the Double value '0' to the Int32 value 0.
-      //    Converted the Double value '9.113E-16' to the Int32 value 0.
-      //    Converted the Double value '103.919' to the Int32 value 104.
-      //    Converted the Double value '17834.191' to the Int32 value 17834.
-      //    1.79769313486232E+308 is outside the range of the Int32 type.
+      //    -1.79769313486232E+308 is outside the range of the int type.
+      //    -13800000000 is outside the range of the int type.
+      //    Converted the Double value '-1023.299' to the int value -1023.
+      //    Converted the Double value '-12.98' to the int value -13.
+      //    Converted the Double value '0' to the int value 0.
+      //    Converted the Double value '9.113E-16' to the int value 0.
+      //    Converted the Double value '103.919' to the int value 104.
+      //    Converted the Double value '17834.191' to the int value 17834.
+      //    1.79769313486232E+308 is outside the range of the int type.
       // </Snippet5>
    }
 
@@ -177,12 +177,12 @@ public class Example
                               result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Int16 value -32768 to a Int32 value -32768.
-      //    Converted the Int16 value -1 to a Int32 value -1.
-      //    Converted the Int16 value 0 to a Int32 value 0.
-      //    Converted the Int16 value 121 to a Int32 value 121.
-      //    Converted the Int16 value 340 to a Int32 value 340.
-      //    Converted the Int16 value 32767 to a Int32 value 32767.
+      //    Converted the Int16 value -32768 to a int value -32768.
+      //    Converted the Int16 value -1 to a int value -1.
+      //    Converted the Int16 value 0 to a int value 0.
+      //    Converted the Int16 value 121 to a int value 121.
+      //    Converted the Int16 value 340 to a int value 340.
+      //    Converted the Int16 value 32767 to a int value 32767.
       // </Snippet6>
    }
 
@@ -200,17 +200,17 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the int type.",
                               number.GetType().Name, number);
          }
       }
       // The example displays the following output:
-      //    The Int64 value -9223372036854775808 is outside the range of the Int32 type.
-      //    Converted the Int64 value -1 to the Int32 value -1.
-      //    Converted the Int64 value 0 to the Int32 value 0.
-      //    Converted the Int64 value 121 to the Int32 value 121.
-      //    Converted the Int64 value 340 to the Int32 value 340.
-      //    The Int64 value 9223372036854775807 is outside the range of the Int32 type.
+      //    The Int64 value -9223372036854775808 is outside the range of the int type.
+      //    Converted the Int64 value -1 to the int value -1.
+      //    Converted the Int64 value 0 to the int value 0.
+      //    Converted the Int64 value 121 to the int value 121.
+      //    Converted the Int64 value 340 to the int value 340.
+      //    The Int64 value 9223372036854775807 is outside the range of the int type.
       // </Snippet7>
    }
 
@@ -231,7 +231,7 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the int type.",
                               value.GetType().Name, value);
          }
          catch (FormatException) {
@@ -239,24 +239,24 @@ public class Example
                               value.GetType().Name, value);
          }
          catch (InvalidCastException) {
-            Console.WriteLine("No conversion to an Int32 exists for the {0} value {1}.",
+            Console.WriteLine("No conversion to an int exists for the {0} value {1}.",
                               value.GetType().Name, value);
          }
       }
       // The example displays the following output:
-      //    Converted the Boolean value True to the Int32 value 1.
-      //    Converted the Int32 value -12 to the Int32 value -12.
-      //    Converted the Int32 value 163 to the Int32 value 163.
-      //    Converted the Int32 value 935 to the Int32 value 935.
-      //    Converted the Char value x to the Int32 value 120.
-      //    No conversion to an Int32 exists for the DateTime value 5/12/2009 12:00:00 AM.
-      //    Converted the String value 104 to the Int32 value 104.
-      //    The String value 103.0 is not in a recognizable format.
-      //    Converted the String value -1 to the Int32 value -1.
-      //    The String value 1.00e2 is not in a recognizable format.
-      //    The String value One is not in a recognizable format.
-      //    Converted the Double value 100 to the Int32 value 100.
-      //    The Double value 1.63E+43 is outside the range of the Int32 type.
+      //    Converted the Boolean value True to the int value 1.
+      //    Converted the int value -12 to the int value -12.
+      //    Converted the int value 163 to the int value 163.
+      //    Converted the int value 935 to the int value 935.
+      //    Converted the char value x to the int value 120.
+      //    No conversion to an int exists for the DateTime value 5/12/2009 12:00:00 AM.
+      //    Converted the string value 104 to the int value 104.
+      //    The string value 103.0 is not in a recognizable format.
+      //    Converted the string value -1 to the int value -1.
+      //    The string value 1.00e2 is not in a recognizable format.
+      //    The string value One is not in a recognizable format.
+      //    Converted the Double value 100 to the int value 100.
+      //    The Double value 1.63E+43 is outside the range of the int type.
       // </Snippet8>
    }
 
@@ -274,11 +274,11 @@ public class Example
                            result.GetType().Name, result);
       }
       // The example displays the following output:
-      //       Converted the SByte value -128 to the Int32 value -128.
-      //       Converted the SByte value -1 to the Int32 value -1.
-      //       Converted the SByte value 0 to the Int32 value 0.
-      //       Converted the SByte value 10 to the Int32 value 10.
-      //       Converted the SByte value 127 to the Int32 value 127.
+      //       Converted the SByte value -128 to the int value -128.
+      //       Converted the SByte value -1 to the int value -1.
+      //       Converted the SByte value 0 to the int value 0.
+      //       Converted the SByte value 10 to the int value 10.
+      //       Converted the SByte value 127 to the int value 127.
       // </Snippet9>
    }
 
@@ -297,19 +297,19 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine("{0} is outside the range of the int type.", value);
          }
       }
       // The example displays the following output:
-      //    -3.40282346638529E+38 is outside the range of the Int32 type.
-      //    -13799999488 is outside the range of the Int32 type.
-      //    Converted the Double value -1023.29901123047 to the Int32 value -1023.
-      //    Converted the Double value -12.9799995422363 to the Int32 value -13.
-      //    Converted the Double value 0 to the Int32 value 0.
-      //    Converted the Double value 9.11299983940444E-16 to the Int32 value 0.
-      //    Converted the Double value 103.918998718262 to the Int32 value 104.
-      //    Converted the Double value 17834.19140625 to the Int32 value 17834.
-      //    3.40282346638529E+38 is outside the range of the Int32 type.
+      //    -3.40282346638529E+38 is outside the range of the int type.
+      //    -13799999488 is outside the range of the int type.
+      //    Converted the Double value -1023.29901123047 to the int value -1023.
+      //    Converted the Double value -12.9799995422363 to the int value -13.
+      //    Converted the Double value 0 to the int value 0.
+      //    Converted the Double value 9.11299983940444E-16 to the int value 0.
+      //    Converted the Double value 103.918998718262 to the int value 104.
+      //    Converted the Double value 17834.19140625 to the int value 17834.
+      //    3.40282346638529E+38 is outside the range of the int type.
       // </Snippet10>
    }
 
@@ -317,7 +317,7 @@ public class Example
    {
       // <Snippet11>
       string[] values = { "One", "1.34e28", "-26.87", "-18", "-6.00",
-                          " 0", "137", "1601.9", Int32.MaxValue.ToString() };
+                          " 0", "137", "1601.9", int.MaxValue.ToString() };
       int result;
 
       foreach (string value in values)
@@ -328,7 +328,7 @@ public class Example
                               value.GetType().Name, value, result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("{0} is outside the range of the Int32 type.", value);
+            Console.WriteLine("{0} is outside the range of the int type.", value);
          }
          catch (FormatException) {
             Console.WriteLine("The {0} value '{1}' is not in a recognizable format.",
@@ -336,15 +336,15 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    The String value 'One' is not in a recognizable format.
-      //    The String value '1.34e28' is not in a recognizable format.
-      //    The String value '-26.87' is not in a recognizable format.
-      //    Converted the String value '-18' to the Int32 value -18.
-      //    The String value '-6.00' is not in a recognizable format.
-      //    Converted the String value ' 0' to the Int32 value 0.
-      //    Converted the String value '137' to the Int32 value 137.
-      //    The String value '1601.9' is not in a recognizable format.
-      //    Converted the String value '2147483647' to the Int32 value 2147483647.
+      //    The string value 'One' is not in a recognizable format.
+      //    The string value '1.34e28' is not in a recognizable format.
+      //    The string value '-26.87' is not in a recognizable format.
+      //    Converted the string value '-18' to the int value -18.
+      //    The string value '-6.00' is not in a recognizable format.
+      //    Converted the string value ' 0' to the int value 0.
+      //    Converted the string value '137' to the int value 137.
+      //    The string value '1601.9' is not in a recognizable format.
+      //    Converted the string value '2147483647' to the int value 2147483647.
       // </Snippet11>
    }
 
@@ -362,15 +362,15 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the int type.",
                               number.GetType().Name, number);
          }
       }
       // The example displays the following output:
-      //    Converted the UInt16 value 0 to the Int32 value 0.
-      //    Converted the UInt16 value 121 to the Int32 value 121.
-      //    Converted the UInt16 value 340 to the Int32 value 340.
-      //    Converted the UInt16 value 65535 to the Int32 value 65535.
+      //    Converted the UInt16 value 0 to the int value 0.
+      //    Converted the UInt16 value 121 to the int value 121.
+      //    Converted the UInt16 value 340 to the int value 340.
+      //    Converted the UInt16 value 65535 to the int value 65535.
       // </Snippet12>
    }
 
@@ -388,15 +388,15 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the int type.",
                               number.GetType().Name, number);
          }
       }
       // The example displays the following output:
-      //    Converted the UInt32 value 0 to the Int32 value 0.
-      //    Converted the UInt32 value 121 to the Int32 value 121.
-      //    Converted the UInt32 value 340 to the Int32 value 340.
-      //    The UInt32 value 4294967295 is outside the range of the Int32 type.
+      //    Converted the UInt32 value 0 to the int value 0.
+      //    Converted the UInt32 value 121 to the int value 121.
+      //    Converted the UInt32 value 340 to the int value 340.
+      //    The UInt32 value 4294967295 is outside the range of the int type.
       // </Snippet13>
    }
 
@@ -414,15 +414,15 @@ public class Example
                               result.GetType().Name, result);
          }
          catch (OverflowException) {
-            Console.WriteLine("The {0} value {1} is outside the range of the Int32 type.",
+            Console.WriteLine("The {0} value {1} is outside the range of the int type.",
                               number.GetType().Name, number);
          }
       }
       // The example displays the following output:
-      //    Converted the UInt64 value 0 to a Int32 value 0.
-      //    Converted the UInt64 value 121 to a Int32 value 121.
-      //    Converted the UInt64 value 340 to a Int32 value 340.
-      //    The UInt64 value 18446744073709551615 is outside the range of the Int32 type.
+      //    Converted the UInt64 value 0 to a int value 0.
+      //    Converted the UInt64 value 121 to a int value 121.
+      //    Converted the UInt64 value 340 to a int value 340.
+      //    The UInt64 value 18446744073709551615 is outside the range of the int type.
       // </Snippet14>
    }
 }

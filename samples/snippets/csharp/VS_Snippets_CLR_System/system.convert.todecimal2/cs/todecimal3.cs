@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Globalization;
 
@@ -14,7 +14,7 @@ public class Example
 
       foreach (CultureInfo culture in cultures)
       {
-         Console.WriteLine("String -> Decimal Conversion Using the {0} Culture",
+         Console.WriteLine("string -> Decimal Conversion Using the {0} Culture",
                            culture.Name);
          foreach (string value in values)
          {
@@ -31,7 +31,7 @@ public class Example
    }
 }
 // The example displays the following output:
-//       String -> Decimal Conversion Using the en-US Culture
+//       string -> Decimal Conversion Using the en-US Culture
 //                  123456789  ->  123456789
 //                 12345.6789  ->  12345.6789
 //                12 345,6789  ->  FormatException
@@ -40,7 +40,7 @@ public class Example
 //           123,456,789.0123  ->  123456789.0123
 //           123 456 789,0123  ->  FormatException
 //
-//       String -> Decimal Conversion Using the fr-FR Culture
+//       string -> Decimal Conversion Using the fr-FR Culture
 //                  123456789  ->  123456789
 //                 12345.6789  ->  FormatException
 //                12 345,6789  ->  12345.6789

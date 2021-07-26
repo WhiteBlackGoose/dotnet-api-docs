@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -158,7 +158,7 @@ public class Class1
    private static void ConvertInt32()
    {
       // <Snippet6>
-      int[] numbers = { Int32.MinValue, -1, 0, 121, 340, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1, 0, 121, 340, int.MaxValue };
       short result;
 
       foreach (int number in numbers)
@@ -175,12 +175,12 @@ public class Class1
          }
       }
       // The example displays the following output:
-      //    The Int32 value -2147483648 is outside the range of the Int16 type.
-      //    Converted the Int32 value -1 to a Int16 value -1.
-      //    Converted the Int32 value 0 to a Int16 value 0.
-      //    Converted the Int32 value 121 to a Int16 value 121.
-      //    Converted the Int32 value 340 to a Int16 value 340.
-      //    The Int32 value 2147483647 is outside the range of the Int16 type.
+      //    The int value -2147483648 is outside the range of the Int16 type.
+      //    Converted the int value -1 to a Int16 value -1.
+      //    Converted the int value 0 to a Int16 value 0.
+      //    Converted the int value 121 to a Int16 value 121.
+      //    Converted the int value 340 to a Int16 value 340.
+      //    The int value 2147483647 is outside the range of the Int16 type.
       // </Snippet6>
    }
 
@@ -243,16 +243,16 @@ public class Class1
       }
       // The example displays the following output:
       //    Converted the Boolean value True to the Int16 value 1.
-      //    Converted the Int32 value -12 to the Int16 value -12.
-      //    Converted the Int32 value 163 to the Int16 value 163.
-      //    Converted the Int32 value 935 to the Int16 value 935.
-      //    Converted the Char value x to the Int16 value 120.
+      //    Converted the int value -12 to the Int16 value -12.
+      //    Converted the int value 163 to the Int16 value 163.
+      //    Converted the int value 935 to the Int16 value 935.
+      //    Converted the char value x to the Int16 value 120.
       //    No conversion to an Int16 exists for the DateTime value 5/12/2009 12:00:00 AM.
-      //    Converted the String value 104 to the Int16 value 104.
-      //    The String value 103.0 is not in a recognizable format.
-      //    Converted the String value -1 to the Int16 value -1.
-      //    The String value 1.00e2 is not in a recognizable format.
-      //    The String value One is not in a recognizable format.
+      //    Converted the string value 104 to the Int16 value 104.
+      //    The string value 103.0 is not in a recognizable format.
+      //    Converted the string value -1 to the Int16 value -1.
+      //    The string value 1.00e2 is not in a recognizable format.
+      //    The string value One is not in a recognizable format.
       //    Converted the Double value 100 to the Int16 value 100.
       // </Snippet8>
    }
