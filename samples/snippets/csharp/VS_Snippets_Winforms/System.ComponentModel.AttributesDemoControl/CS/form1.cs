@@ -1,4 +1,4 @@
-﻿// <snippet100>
+// <snippet100>
 // <snippet101>
 using System;
 using System.Collections.Generic;
@@ -53,7 +53,7 @@ namespace AttributesDemoControlTest
 		private void attributesDemoControl1_ThresholdExceeded(
             ThresholdExceededEventArgs e)
         {
-			string msg = String.Format(
+			string msg = string.Format(
                 "{0}: Value {1} exceeded threshold {2}", 
 				this.attributesDemoControl1.CurrentLogTime, 
 				e.ExceedingValue, 
@@ -89,7 +89,7 @@ namespace AttributesDemoControlTest
             this.attributesDemoControl1.Threshold = 
                 (float)this.numericUpDown1.Value;
 
-            string msg = String.Format(
+            string msg = string.Format(
                 "Threshold changed to {0}", 
                 this.attributesDemoControl1.Threshold);
 

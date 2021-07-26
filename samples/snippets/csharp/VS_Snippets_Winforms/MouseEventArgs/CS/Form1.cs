@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -77,7 +77,7 @@ namespace MouseEventArgs
 
         void Form1_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
         {
-            String tipText = String.Format("({0}, {1})", e.X, e.Y);
+            string tipText = string.Format("({0}, {1})", e.X, e.Y);
             trackTip.Show(tipText, this, e.Location);
         }
         //</SNIPPET3>

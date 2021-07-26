@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Drawing.Imaging;
 using System.Drawing.Drawing2D;
@@ -712,7 +712,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -732,7 +732,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -756,7 +756,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -784,7 +784,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -816,7 +816,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);
@@ -837,7 +837,7 @@ namespace System.Drawing.ClassicGraphicsExamples2CS
         {
                      
             // Create string to draw.
-            String drawString = "Sample Text";
+            string drawString = "Sample Text";
                      
             // Create font and brush.
             Font drawFont = new Font("Arial", 16);

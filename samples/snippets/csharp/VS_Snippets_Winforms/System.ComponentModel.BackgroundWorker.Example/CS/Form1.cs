@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // <snippet7>
 using System;
 using System.ComponentModel;
@@ -54,13 +54,13 @@ namespace BackgroundWorkerExample
             else if (e.Error != null)
             {
                 // There was an error during the operation.
-                string msg = String.Format("An error occurred: {0}", e.Error.Message);
+                string msg = string.Format("An error occurred: {0}", e.Error.Message);
                 MessageBox.Show(msg);
             }
             else
             {
                 // The operation completed normally.
-                string msg = String.Format("Result = {0}", e.Result);
+                string msg = string.Format("Result = {0}", e.Result);
                 MessageBox.Show(msg);
             }
         }

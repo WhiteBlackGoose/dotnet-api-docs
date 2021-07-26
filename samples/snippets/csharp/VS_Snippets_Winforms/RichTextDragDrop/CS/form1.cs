@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -69,7 +69,7 @@ private void richTextBox1_DragEnter(object sender, DragEventArgs e)
 private void richTextBox1_DragDrop(object sender, DragEventArgs e) 
 {
    // Loads the file into the control. 
-   richTextBox1.LoadFile((String)e.Data.GetData("Text"), System.Windows.Forms.RichTextBoxStreamType.RichText);
+   richTextBox1.LoadFile((string)e.Data.GetData("Text"), System.Windows.Forms.RichTextBoxStreamType.RichText);
 }
 
 //</snippet1>

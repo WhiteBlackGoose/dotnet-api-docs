@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -123,7 +123,7 @@ namespace OwnerDrawnStatusBarPanel
       {
          // Create a StringFormat object to align text in the panel.
          StringFormat sf = new StringFormat();
-         // Format the String of the StatusBarPanel to be centered.
+         // Format the string of the StatusBarPanel to be centered.
          sf.Alignment = StringAlignment.Center;
          sf.LineAlignment = StringAlignment.Center;
 

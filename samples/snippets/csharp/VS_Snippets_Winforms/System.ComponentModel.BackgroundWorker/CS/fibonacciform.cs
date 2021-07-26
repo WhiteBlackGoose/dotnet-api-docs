@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // <snippet2>
 using System;
 using System.Collections;
@@ -50,7 +50,7 @@ namespace BackgroundWorkerExample
             System.EventArgs e)
         {
             // Reset the text in the result label.
-            resultLabel.Text = String.Empty;
+            resultLabel.Text = string.Empty;
 
             // Disable the UpDown control until 
             // the asynchronous operation is done.

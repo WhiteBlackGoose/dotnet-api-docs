@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Drawing;
 using System.Drawing.Printing;
@@ -99,7 +99,7 @@ namespace WindowsApplication3
         {
             // Add list of installed printers found to the combo box.
             // The pkInstalledPrinters string will be used to provide the display string.
-            String pkInstalledPrinters;
+            string pkInstalledPrinters;
             for (int i = 0; i < PrinterSettings.InstalledPrinters.Count; i++){
                 pkInstalledPrinters = PrinterSettings.InstalledPrinters[i];
                 comboInstalledPrinters.Items.Add(pkInstalledPrinters);

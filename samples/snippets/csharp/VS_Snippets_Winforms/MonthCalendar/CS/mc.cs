@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Collections;
@@ -407,7 +407,7 @@ namespace MonthCalender
         
         private void loadDates()
         {
-            String myInput ;
+            string myInput ;
             try
             {
                 StreamReader myInputStream = File.OpenText("myDates.txt");

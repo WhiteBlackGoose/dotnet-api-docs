@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Windows.Forms;
 using System.Drawing;
@@ -92,7 +92,7 @@ namespace ListViewSortFormNamespace
         }
         public int Compare(object x, object y)
         {
-            return String.Compare(((ListViewItem)x).SubItems[col].Text, ((ListViewItem)y).SubItems[col].Text);
+            return string.Compare(((ListViewItem)x).SubItems[col].Text, ((ListViewItem)y).SubItems[col].Text);
         }
     }
 }

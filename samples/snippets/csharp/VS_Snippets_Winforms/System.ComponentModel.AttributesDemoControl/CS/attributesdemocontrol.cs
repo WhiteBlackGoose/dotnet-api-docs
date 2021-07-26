@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // <snippet2>
 using System;
 using System.Collections.Generic;
@@ -614,7 +614,7 @@ namespace AttributesDemoControlLibrary
                     LogEntry<T> le = value as LogEntry<T>;
 
                     string stringRepresentation =
-                        String.Format("{0} | {1}",
+                        string.Format("{0} | {1}",
                         le.Entry,
                         le.EntryTime);
 

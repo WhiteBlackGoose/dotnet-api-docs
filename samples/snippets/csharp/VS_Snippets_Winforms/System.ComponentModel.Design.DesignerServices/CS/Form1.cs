@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // <snippet2>
 using System;
 using System.Collections;
@@ -526,7 +526,7 @@ public class DemoControlDesigner : ControlDesigner
         object sender,
         ComponentChangedEventArgs e)
     {
-        string msg = String.Format(
+        string msg = string.Format(
             "{0}, {1}", e.Component, e.Member);
 
         MessageBox.Show(msg, "ComponentChanged");

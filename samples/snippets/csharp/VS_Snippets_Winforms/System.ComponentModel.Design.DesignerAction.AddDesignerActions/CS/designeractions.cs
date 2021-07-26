@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 /////////////////////////////////////////////////////////////////////
 // Pull model designer action example.
 // Need references to System.dll, System.Windows.Forms.dll, 
@@ -176,7 +176,7 @@ public class ColorLabelActionList :
 
     // Helper method to retrieve control properties. Use of 
     // GetProperties enables undo and menu updates to work properly.
-    private PropertyDescriptor GetPropertyByName(String propName)
+    private PropertyDescriptor GetPropertyByName(string propName)
     {
         PropertyDescriptor prop;
         prop = TypeDescriptor.GetProperties(colLabel)[propName];
@@ -234,7 +234,7 @@ public class ColorLabelActionList :
     }
     //</snippet11>
 
-    public String Text
+    public string Text
     {
         get
         {
@@ -297,7 +297,7 @@ public class ColorLabelActionList :
                               true));
         }
         items.Add(new DesignerActionPropertyItem("Text",
-                         "Text String", "Appearance",
+                         "Text string", "Appearance",
                          "Sets the display text."));
 
         //Create entries for static Information section.

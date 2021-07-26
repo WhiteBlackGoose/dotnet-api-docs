@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGrid.ResetHeaderBackColor
+// System.Windows.Forms.DataGrid.ResetHeaderBackColor
 // System.Windows.Forms.DataGrid.ResetHeaderForeColor
 // System.Windows.Forms.DataGrid.ResetHeaderFont
 // System.Windows.Forms.DataGrid.Select
@@ -340,7 +340,7 @@ namespace MyDataGridClass
       // Get the width of row header.
       private void button9_Click(object sender, EventArgs e)
       {
-         Int32 myRowHeaderWidth = myDataGrid.RowHeaderWidth;
+         int myRowHeaderWidth = myDataGrid.RowHeaderWidth;
          MessageBox.Show("Width of row headers is: "+ 
                   myRowHeaderWidth.ToString(), "Message",
                   MessageBoxButtons.OK,MessageBoxIcon.Exclamation);

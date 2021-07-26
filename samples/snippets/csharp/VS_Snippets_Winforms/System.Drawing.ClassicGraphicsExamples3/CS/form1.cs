@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -693,7 +693,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Measure string.
@@ -714,7 +714,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set point for upper-left corner of string.
@@ -744,7 +744,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set maximum layout size.
@@ -768,7 +768,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set maximum layout size.
@@ -796,7 +796,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set maximum layout size.
@@ -830,7 +830,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set maximum width of string.
@@ -854,7 +854,7 @@ namespace System.Drawing.ClassicGraphicsExamples3CS
         {
 
             // Set up string.
-            string measureString = "Measure String";
+            string measureString = "Measure string";
             Font stringFont = new Font("Arial", 16);
 
             // Set maximum width of string.
