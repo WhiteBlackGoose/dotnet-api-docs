@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.SetCustomAttribute(CustomAttributeBuilder)
+// System.Reflection.Emit.SetCustomAttribute(CustomAttributeBuilder)
 /*
    The following program demonstrates the 'SetCustomAttribute(CustomAttributeBuilder)'
    method of 'AssemblyBuilder' class. It defines a 'MyAttribute' class which is derived
@@ -16,10 +16,10 @@ using System.Reflection.Emit;
 [AttributeUsage(AttributeTargets.All, AllowMultiple = false)]
 public class MyAttribute : Attribute
 {
-   public String s;
+   public string s;
    public int x;
 
-   public MyAttribute(String s, int x)
+   public MyAttribute(string s, int x)
    {
       this.s = s;
       this.x = x;
@@ -51,7 +51,7 @@ class MyApplication
       AssemblyBuilder myAssembly = domain.DefineDynamicAssembly(myAssemblyName,
          AssemblyBuilderAccess.Run);
       Type myType = typeof(MyAttribute);
-      ConstructorInfo infoConstructor = myType.GetConstructor(new Type[2]{typeof(String), typeof(int)});
+      ConstructorInfo infoConstructor = myType.GetConstructor(new Type[2]{typeof(string), typeof(int)});
       CustomAttributeBuilder attributeBuilder =
          new CustomAttributeBuilder(infoConstructor, new object[2]{"Hello", 2});
       myAssembly.SetCustomAttribute(attributeBuilder);

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -30,7 +30,7 @@ public class Example
     }
 
     // Search predicate returns true if a string ends in "saurus".
-    private static bool EndsWithSaurus(String s)
+    private static bool EndsWithSaurus(string s)
     {
         if ((s.Length > 5) &&
             (s.Substring(s.Length - 6).ToLower() == "saurus"))

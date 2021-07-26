@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.AssemblyBuilder.DefineResource(string, string, string)
+// System.Reflection.Emit.AssemblyBuilder.DefineResource(string, string, string)
 // System.Reflection.Emit.AssemblyBuilder.DefineVersionInfoResource(string, string, string, string, string)
 
 /*
@@ -52,7 +52,7 @@ public class MyEmitTest
          myModule.DefineType("HelloWorld", TypeAttributes.Public);
       // Define the Display method.
       MethodBuilder myMethod = helloWorldClass.DefineMethod("Display",
-         MethodAttributes.Public, typeof(String), null);
+         MethodAttributes.Public, typeof(string), null);
 
       // Generate IL for GetGreeting.
       ILGenerator methodIL = myMethod.GetILGenerator();

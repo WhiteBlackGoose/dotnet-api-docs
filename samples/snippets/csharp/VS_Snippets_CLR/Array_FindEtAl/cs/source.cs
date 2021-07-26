@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class DinoDiscoverySet
@@ -98,7 +98,7 @@ public class DinoDiscoverySet
     }
 
     // Search predicate returns true if a string ends in "raptor".
-    private bool EndsWithRaptor(String s)
+    private bool EndsWithRaptor(string s)
     {
         if ((s.Length > 5) &&
             (s.Substring(s.Length - 6).ToLower() == "raptor"))
@@ -112,7 +112,7 @@ public class DinoDiscoverySet
     }
 
     // Search predicate returns true if a string ends in "tops".
-    private bool EndsWithTops(String s)
+    private bool EndsWithTops(string s)
     {
         if ((s.Length > 3) &&
             (s.Substring(s.Length - 4).ToLower() == "tops"))

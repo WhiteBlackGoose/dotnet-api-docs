@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -16,7 +16,7 @@ static void Main(string[] args)
 
     // <Snippet2>
     // In this example, the pipeline root is the current directory.
-    String pipeRoot = Environment.CurrentDirectory;
+    string pipeRoot = Environment.CurrentDirectory;
 
     // Rebuild the cache of pipeline and add-in information.
     string[] warnings = AddInStore.Update(pipeRoot);
@@ -98,9 +98,9 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
     }
     // </Snippet5>
     Console.WriteLine("Select add-in by number:");
-    String line = Console.ReadLine();
+    string line = Console.ReadLine();
     int selection;
-    if (Int32.TryParse(line, out selection))
+    if (int.TryParse(line, out selection))
     {
         if (selection <= tokens.Count)
         {

@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.AssemblyBuilder
+// System.Reflection.Emit.AssemblyBuilder
 // System.Reflection.Emit.AssemblyBuilder.DefineResource(string, string, string, ResourceAttribute)
 // System.Reflection.Emit.AssemblyBuilder.DefineUnmanagedResource(string)
 
@@ -53,7 +53,7 @@ public class MyAssemblyResource
 
       // Define the Display method.
       MethodBuilder myMethod = myEmitClass.DefineMethod("Display",
-         MethodAttributes.Public, typeof(String), null);
+         MethodAttributes.Public, typeof(string), null);
 
       // Generate IL for Display method.
       ILGenerator methodIL = myMethod.GetILGenerator();

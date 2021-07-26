@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -17,7 +17,7 @@ namespace MathHost
 // Get path for the pipeline root.
 // Assumes that the current directory is the
 // pipeline directory structure root directory.
-String pipeRoot = Environment.CurrentDirectory;
+string pipeRoot = Environment.CurrentDirectory;
 
 // <Snippet3>
 // Update the cache files of the
@@ -179,7 +179,7 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
     int tokNumber = 1;
 	foreach (AddInToken tok in tokens)
 	{
-		Console.WriteLine(String.Format("\t[{0}]: {1} - {2}\n\t{3}\n\t\t {4}\n\t\t {5} - {6}",
+		Console.WriteLine(string.Format("\t[{0}]: {1} - {2}\n\t{3}\n\t\t {4}\n\t\t {5} - {6}",
 			tokNumber.ToString(),
 			tok.Name,
 			tok.AddInFullName,
@@ -192,9 +192,9 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
 	// </Snippet7>
 
     Console.WriteLine("Which calculator do you want to use?");
-    String line = Console.ReadLine();
+    string line = Console.ReadLine();
     int selection;
-    if (Int32.TryParse(line, out selection))
+    if (int.TryParse(line, out selection))
     {
         if (selection <= tokens.Count)
         {
@@ -216,7 +216,7 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
             }
             Console.WriteLine("Available operations: " + calc.Operations);
             Console.WriteLine("Type \"exit\" to exit");
-            String line = Console.ReadLine();
+            string line = Console.ReadLine();
             while (!line.Equals("exit"))
             {
                 // The Parser class parses the user's input.
@@ -238,7 +238,7 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
 
     internal class Parser
     {
-        internal Parser(String line)
+        internal Parser(string line)
         {
             String[] parts = line.Trim().Split(' ');
             a = Double.Parse(parts[0]);
@@ -258,9 +258,9 @@ private static AddInToken ChooseAddIn(Collection<AddInToken> tokens)
         {
             get { return b; }
         }
-        String action;
+        string action;
 
-        public String Action
+        public string Action
         {
             get { return action; }
         }

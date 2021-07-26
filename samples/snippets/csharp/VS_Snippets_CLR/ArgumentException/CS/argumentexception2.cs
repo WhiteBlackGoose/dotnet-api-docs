@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -22,7 +22,7 @@ public class Example
     {
         // If num is an odd number, throw an ArgumentException.
         if ((num & 1) == 1)
-            throw new ArgumentException(String.Format("{0} is not an even number", num),
+            throw new ArgumentException(string.Format("{0} is not an even number", num),
                                       "num");
 
         // num is even, return half of its value.

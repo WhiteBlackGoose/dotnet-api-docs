@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -54,7 +54,7 @@ class DemoAssemblyBuilder
             "MyDynamicType",
              TypeAttributes.Public);
 
-        // Add a private field of type int (Int32).
+        // Add a private field of type int (int).
         FieldBuilder fbNumber = tb.DefineField(
             "m_number",
             typeof(int),
@@ -137,7 +137,7 @@ class DemoAssemblyBuilder
         numberGetIL.Emit(OpCodes.Ret);
 
         // Define the "set" accessor method for Number, which has no return
-        // type and takes one argument of type int (Int32).
+        // type and takes one argument of type int (int).
         MethodBuilder mbNumberSetAccessor = tb.DefineMethod(
             "set_Number",
             getSetAttr,

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -70,7 +70,7 @@ public class Example : MarshalByRefObject
          AppDomain.CurrentDomain.DefineDynamicAssembly(
             asmName, AssemblyBuilderAccess.Save, location);
 
-      String moduleName = asmName.Name + ".exe";
+      string moduleName = asmName.Name + ".exe";
       ModuleBuilder mb = ab.DefineDynamicModule(asmName.Name, moduleName);
 
       // Define the "HelloWorld" type, with one static method.
@@ -85,7 +85,7 @@ public class Example : MarshalByRefObject
       il.Emit(OpCodes.Call, typeof(AppDomain).GetProperty("CurrentDomain").GetGetMethod());
       il.Emit(OpCodes.Call, typeof(AppDomain).GetProperty("FriendlyName").GetGetMethod());
       il.Emit(OpCodes.Call, typeof(Console).GetMethod("WriteLine",
-                             new Type[] { typeof(String), typeof(String) }));
+                             new Type[] { typeof(string), typeof(string) }));
       il.Emit(OpCodes.Ret);
 
       // Complete the HelloWorld type and save the assembly. The assembly

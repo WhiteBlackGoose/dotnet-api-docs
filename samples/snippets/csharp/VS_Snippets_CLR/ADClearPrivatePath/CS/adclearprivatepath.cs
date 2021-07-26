@@ -1,4 +1,4 @@
-﻿//  <SNIPPET1>
+//  <SNIPPET1>
 using System;
 using System.Reflection;
 using System.Security.Policy;
@@ -17,7 +17,7 @@ class ADAppendPrivatePath
 		Console.WriteLine("Relative search path is: " + domain.RelativeSearchPath);
 
 		//Append the relative path.
-		String Newpath = "www.code.microsoft.com";
+		string Newpath = "www.code.microsoft.com";
 		domain.AppendPrivatePath(Newpath);
 
 		//Display the new relative search path.

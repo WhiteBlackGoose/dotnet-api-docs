@@ -1,4 +1,4 @@
-﻿//<snippet7>
+//<snippet7>
 using System;
 using System.Text;
 using System.Collections;
@@ -56,7 +56,7 @@ public class ReverseStringComparer : IComparer {
 	   string s1 = x as string;
 	   string s2 = y as string;	
 	   //negate the return value to get the reverse order
-	   return - String.Compare (s1,s2);
+	   return - string.Compare (s1,s2);
    }
 }
 //</snippet6>
