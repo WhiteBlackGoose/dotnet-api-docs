@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -350,8 +350,8 @@ namespace QueryableExamples
         // Not currently used in docs.
         static void CastEx1()
         {
-            // Get a list of the methods available on the String type.
-            List<System.Reflection.MethodInfo> methods = typeof(String).GetMethods().ToList();
+            // Get a list of the methods available on the string type.
+            List<System.Reflection.MethodInfo> methods = typeof(string).GetMethods().ToList();
 
             // Cast each MethodInfo object to a MemberInfo object.
             // Then select the names of those methods whose names
@@ -732,7 +732,7 @@ namespace QueryableExamples
             Console.WriteLine(
                 "The name chosen at index {0} is '{1}'.",
                 index,
-                String.IsNullOrEmpty(name) ? "[NONE AT THIS INDEX]" : name);
+                string.IsNullOrEmpty(name) ? "[NONE AT THIS INDEX]" : name);
 
             /*
                 This code produces the following output:
@@ -1325,7 +1325,7 @@ namespace QueryableExamples
             string last = fruits.AsQueryable().LastOrDefault();
 
             Console.WriteLine(
-                String.IsNullOrEmpty(last) ? "[STRING IS NULL OR EMPTY]" : last);
+                string.IsNullOrEmpty(last) ? "[STRING IS NULL OR EMPTY]" : last);
 
             /*
                 This code produces the following output:
@@ -1557,7 +1557,7 @@ namespace QueryableExamples
         {
             // <Snippet69>
             // Create a list of MemberInfo objects.
-            List<System.Reflection.MemberInfo> members = typeof(String).GetMembers().ToList();
+            List<System.Reflection.MemberInfo> members = typeof(string).GetMembers().ToList();
 
             // Return only those items that can be cast to type PropertyInfo.
             IQueryable<System.Reflection.PropertyInfo> propertiesOnly =
@@ -1792,7 +1792,7 @@ namespace QueryableExamples
             class PetOwner
             {
                 public string Name { get; set; }
-                public List<String> Pets { get; set; }
+                public List<string> Pets { get; set; }
             }
 
             public static void SelectManyEx1()
@@ -1817,14 +1817,14 @@ namespace QueryableExamples
                     Console.WriteLine(pet);
 
                 // This code shows how to use Select() instead of SelectMany().
-                IEnumerable<List<String>> query2 =
+                IEnumerable<List<string>> query2 =
                     petOwners.AsQueryable().Select(petOwner => petOwner.Pets);
 
                 Console.WriteLine("\nUsing Select():");
 
                 // Notice that two foreach loops are required to iterate through
                 // the results because the query returns a collection of arrays.
-                foreach (List<String> petList in query2)
+                foreach (List<string> petList in query2)
                 {
                     foreach (string pet in petList)
                     {
@@ -2145,7 +2145,7 @@ namespace QueryableExamples
             // the default value for type string (null).
             string fruit2 = fruits2.AsQueryable().SingleOrDefault();
             Console.WriteLine("Second Query: " +
-                (String.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2));
+                (string.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2));
 
             /*
                 This code produces the following output:
@@ -2174,7 +2174,7 @@ namespace QueryableExamples
             string fruit2 =
                fruits.AsQueryable().SingleOrDefault(fruit => fruit.Length > 15);
             Console.WriteLine("Second Query: " +
-                (String.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2));
+                (string.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2));
 
             /*
                 This code produces the following output:
@@ -2411,7 +2411,7 @@ namespace QueryableExamples
             // that is equal to "orange" is found.
             IEnumerable<string> query =
                 fruits.AsQueryable()
-                .TakeWhile(fruit => String.Compare("orange", fruit, true) != 0);
+                .TakeWhile(fruit => string.Compare("orange", fruit, true) != 0);
 
             foreach (string fruit in query)
                 Console.WriteLine(fruit);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -342,7 +342,7 @@ namespace ExpressionTreesCSharp
             // using System.Linq.Expressions;
 
             // To demonstrate the assignment operation, we create a variable.
-            ParameterExpression variableExpr = Expression.Variable(typeof(String), "sampleVar");
+            ParameterExpression variableExpr = Expression.Variable(typeof(string), "sampleVar");
 
             // This expression represents the assignment of a value
             // to a variable expression.
@@ -366,7 +366,7 @@ namespace ExpressionTreesCSharp
 
             // The following statement first creates an expression tree,
             // then compiles it, and then executes it.
-            Console.WriteLine(Expression.Lambda<Func<String>>(blockExpr).Compile()());
+            Console.WriteLine(Expression.Lambda<Func<string>>(blockExpr).Compile()());
 
             // This code example produces the following output:
             //
@@ -389,12 +389,12 @@ namespace ExpressionTreesCSharp
             BlockExpression blockExpr = Expression.Block(
                 Expression.Call(
                     null,
-                    typeof(Console).GetMethod("Write", new Type[] { typeof(String) }),
+                    typeof(Console).GetMethod("Write", new Type[] { typeof(string) }),
                     Expression.Constant("Hello ")
                    ),
                 Expression.Call(
                     null,
-                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                     Expression.Constant("World!")
                     ),
                 Expression.Constant(42)
@@ -478,14 +478,14 @@ namespace ExpressionTreesCSharp
 
             // This expression represents a call to an instance method without arguments.
             Expression callExpr = Expression.Call(
-                Expression.Constant("sample string"), typeof(String).GetMethod("ToUpper", new Type[] { }));
+                Expression.Constant("sample string"), typeof(string).GetMethod("ToUpper", new Type[] { }));
 
             // Print out the expression.
             Console.WriteLine(callExpr.ToString());
 
             // The following statement first creates an expression tree,
             // then compiles it, and then executes it.
-            Console.WriteLine(Expression.Lambda<Func<String>>(callExpr).Compile()());
+            Console.WriteLine(Expression.Lambda<Func<string>>(callExpr).Compile()());
 
             // This code example produces the following output:
             //
@@ -1071,7 +1071,7 @@ namespace ExpressionTreesCSharp
                 Expression.Constant(test),
                 Expression.Call(
                     null,
-                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                     Expression.Constant("The condition is true.")
                    )
             );
@@ -1099,12 +1099,12 @@ namespace ExpressionTreesCSharp
                 Expression.Constant(test),
                 Expression.Call(
                     null,
-                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                     Expression.Constant("The condition is true.")
                 ),
                 Expression.Call(
                     null,
-                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                    typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                     Expression.Constant("The condition is false.")
                 )
             );
@@ -1138,7 +1138,7 @@ namespace ExpressionTreesCSharp
                         Expression.SwitchCase(
                             Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("First")
                             ),
                             Expression.Constant(1)
@@ -1146,7 +1146,7 @@ namespace ExpressionTreesCSharp
                         Expression.SwitchCase(
                             Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("Second")
                             ),
                             Expression.Constant(2)
@@ -1181,14 +1181,14 @@ namespace ExpressionTreesCSharp
                     switchValue,
                     Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("Default")
                             ),
                     new SwitchCase[] {
                         Expression.SwitchCase(
                             Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("First")
                             ),
                             Expression.Constant(1)
@@ -1196,7 +1196,7 @@ namespace ExpressionTreesCSharp
                         Expression.SwitchCase(
                             Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("Second")
                             ),
                             Expression.Constant(2)
@@ -1595,7 +1595,7 @@ namespace ExpressionTreesCSharp
                     Expression.PreIncrementAssign(count),
                     Expression.Call(
                                 null,
-                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(String) }),
+                                typeof(Console).GetMethod("WriteLine", new Type[] { typeof(string) }),
                                 Expression.Constant("Loop")
                             ),
                     continueExpr,
