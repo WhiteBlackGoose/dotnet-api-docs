@@ -1,4 +1,4 @@
-﻿// The following code example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.
+// The following code example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.
 
 // <snippet1>
 using System;
@@ -16,12 +16,12 @@ public class SamplesCompareInfo  {
       // iL is the length of the substring.
       int iL = 18;
       // myT1 and myT2 are the strings used for padding.
-      String myT1 = new String( '-', iS );
-      String myT2;
+      string myT1 = new string( '-', iS );
+      string myT2;
 
       // Searches for the ligature Æ.
-      String myStr = "Is AE or ae the same as Æ or æ?";
-      myT2 = new String( '-', myStr.Length - iS - iL );
+      string myStr = "Is AE or ae the same as Æ or æ?";
+      myT2 = new string( '-', myStr.Length - iS - iL );
       Console.WriteLine();
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}{2}", myT1, myStr.Substring( iS, iL ), myT2 );
@@ -42,7 +42,7 @@ public class SamplesCompareInfo  {
 
       // Searches for the combining character sequence Latin capital letter U with diaeresis or Latin small letter u with diaeresis.
       myStr = "Is \u0055\u0308 or \u0075\u0308 the same as \u00DC or \u00FC?";
-      myT2 = new String( '-', myStr.Length - iS - iL );
+      myT2 = new string( '-', myStr.Length - iS - iL );
       Console.WriteLine();
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}{2}", myT1, myStr.Substring( iS, iL ), myT2 );
@@ -62,7 +62,7 @@ public class SamplesCompareInfo  {
       PrintMarker( "            ü : ", myComp.IndexOf( myStr, 'ü', iS, iL, CompareOptions.IgnoreCase ), myComp.LastIndexOf( myStr, 'ü', iS + iL - 1, iL, CompareOptions.IgnoreCase ) );
    }
 
-   public static void PrintMarker( String Prefix, int First, int Last )  {
+   public static void PrintMarker( string Prefix, int First, int Last )  {
 
       // Determines the size of the array to create.
       int mySize;
@@ -73,7 +73,7 @@ public class SamplesCompareInfo  {
 
       if ( mySize > -1 )  {
 
-         // Creates an array of Char to hold the markers.
+         // Creates an array of char to hold the markers.
          Char[] myCharArr = new Char[mySize+1];
 
          // Inserts the appropriate markers.
@@ -84,8 +84,8 @@ public class SamplesCompareInfo  {
          if ( First == Last )
          myCharArr[First] = 'b';
 
-         // Displays the array of Char as a String.
-         Console.WriteLine( "{0}{1}", Prefix, new String( myCharArr ) );
+         // Displays the array of char as a string.
+         Console.WriteLine( "{0}{1}", Prefix, new string( myCharArr ) );
       }
       else
         {

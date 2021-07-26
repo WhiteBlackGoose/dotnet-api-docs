@@ -1,4 +1,4 @@
-﻿// The following code example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.
+// The following code example determines the indexes of the first and last occurrences of a character or a substring within a portion of a string.
 // Note that IndexOf and LastIndexOf are searching in different portions of the string, even with the same StartIndex parameter.
 
 // <snippet1>
@@ -15,14 +15,14 @@ public class SamplesCompareInfo  {
       // iS is the starting index of the substring.
       int iS = 20;
       // myT1 is the string used for padding.
-      String myT1;
+      string myT1;
 
       // Searches for the ligature Æ.
-      String myStr = "Is AE or ae the same as Æ or æ?";
+      string myStr = "Is AE or ae the same as Æ or æ?";
       Console.WriteLine();
 
-      myT1 = new String( '-', iS );
-      Console.WriteLine( "IndexOf( String, *, {0}, * )", iS );
+      myT1 = new string( '-', iS );
+      Console.WriteLine( "IndexOf( string, *, {0}, * )", iS );
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}", myT1, myStr.Substring( iS ) );
       PrintMarker( "           AE : ", myComp.IndexOf( myStr, "AE", iS ), -1 );
@@ -40,8 +40,8 @@ public class SamplesCompareInfo  {
       PrintMarker( "            Æ : ", myComp.IndexOf( myStr, 'Æ', iS, CompareOptions.IgnoreCase ), -1 );
       PrintMarker( "            æ : ", myComp.IndexOf( myStr, 'æ', iS, CompareOptions.IgnoreCase ), -1 );
 
-      myT1 = new String( '-', myStr.Length - iS - 1 );
-      Console.WriteLine( "LastIndexOf( String, *, {0}, * )", iS );
+      myT1 = new string( '-', myStr.Length - iS - 1 );
+      Console.WriteLine( "LastIndexOf( string, *, {0}, * )", iS );
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}", myStr.Substring( 0, iS + 1 ), myT1 );
       PrintMarker( "           AE : ", -1, myComp.LastIndexOf( myStr, "AE", iS ) );
@@ -63,8 +63,8 @@ public class SamplesCompareInfo  {
       myStr = "Is \u0055\u0308 or \u0075\u0308 the same as \u00DC or \u00FC?";
       Console.WriteLine();
 
-      myT1 = new String( '-', iS );
-      Console.WriteLine( "IndexOf( String, *, {0}, * )", iS );
+      myT1 = new string( '-', iS );
+      Console.WriteLine( "IndexOf( string, *, {0}, * )", iS );
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}", myT1, myStr.Substring( iS ) );
       PrintMarker( "           U\u0308 : ", myComp.IndexOf( myStr, "U\u0308", iS ), -1 );
@@ -82,8 +82,8 @@ public class SamplesCompareInfo  {
       PrintMarker( "            Ü : ", myComp.IndexOf( myStr, 'Ü', iS, CompareOptions.IgnoreCase ), -1 );
       PrintMarker( "            ü : ", myComp.IndexOf( myStr, 'ü', iS, CompareOptions.IgnoreCase ), -1 );
 
-      myT1 = new String( '-', myStr.Length - iS - 1 );
-      Console.WriteLine( "LastIndexOf( String, *, {0}, * )", iS );
+      myT1 = new string( '-', myStr.Length - iS - 1 );
+      Console.WriteLine( "LastIndexOf( string, *, {0}, * )", iS );
       Console.WriteLine( "Original      : {0}", myStr );
       Console.WriteLine( "No options    : {0}{1}", myStr.Substring( 0, iS + 1 ), myT1 );
       PrintMarker( "           U\u0308 : ", -1, myComp.LastIndexOf( myStr, "U\u0308", iS ) );
@@ -102,7 +102,7 @@ public class SamplesCompareInfo  {
       PrintMarker( "            ü : ", -1, myComp.LastIndexOf( myStr, 'ü', iS, CompareOptions.IgnoreCase ) );
    }
 
-   public static void PrintMarker( String Prefix, int First, int Last )  {
+   public static void PrintMarker( string Prefix, int First, int Last )  {
 
       // Determines the size of the array to create.
       int mySize;
@@ -113,7 +113,7 @@ public class SamplesCompareInfo  {
 
       if ( mySize > -1 )  {
 
-         // Creates an array of Char to hold the markers.
+         // Creates an array of char to hold the markers.
          Char[] myCharArr = new Char[mySize+1];
 
          // Inserts the appropriate markers.
@@ -124,8 +124,8 @@ public class SamplesCompareInfo  {
          if ( First == Last )
          myCharArr[First] = 'b';
 
-         // Displays the array of Char as a String.
-         Console.WriteLine( "{0}{1}", Prefix, new String( myCharArr ) );
+         // Displays the array of char as a string.
+         Console.WriteLine( "{0}{1}", Prefix, new string( myCharArr ) );
       }
       else
         {
@@ -138,7 +138,7 @@ public class SamplesCompareInfo  {
 /*
 This code produces the following output.
 
-IndexOf( String, *, 20, * )
+IndexOf( string, *, 20, * )
 Original      : Is AE or ae the same as Æ or æ?
 No options    : -------------------- as Æ or æ?
            AE :                         f
@@ -155,7 +155,7 @@ IgnoreCase    : -------------------- as Æ or æ?
            ae :                         f
             Æ :                         f
             æ :                         f
-LastIndexOf( String, *, 20, * )
+LastIndexOf( string, *, 20, * )
 Original      : Is AE or ae the same as Æ or æ?
 No options    : Is AE or ae the same ----------
            AE :    l
@@ -173,7 +173,7 @@ IgnoreCase    : Is AE or ae the same ----------
             Æ :          l
             æ :          l
 
-IndexOf( String, *, 20, * )
+IndexOf( string, *, 20, * )
 Original      : Is U" or u" the same as Ü or ü?
 No options    : -------------------- as Ü or ü?
            U" :                         f
@@ -190,7 +190,7 @@ IgnoreCase    : -------------------- as Ü or ü?
            u" :                         f
             Ü :                         f
             ü :                         f
-LastIndexOf( String, *, 20, * )
+LastIndexOf( string, *, 20, * )
 Original      : Is U" or u" the same as Ü or ü?
 No options    : Is U" or u" the same ----------
            U" :    l

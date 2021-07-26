@@ -1,4 +1,4 @@
-﻿// The following code example determines the indexes of the first and last occurrences of a character or a substring within a string.
+// The following code example determines the indexes of the first and last occurrences of a character or a substring within a string.
 
 // <snippet1>
 using System;
@@ -12,7 +12,7 @@ public class SamplesCompareInfo  {
       CompareInfo myComp = CultureInfo.InvariantCulture.CompareInfo;
 
       // Searches for the ligature Æ.
-      String myStr = "Is AE or ae the same as Æ or æ?";
+      string myStr = "Is AE or ae the same as Æ or æ?";
       Console.WriteLine();
       Console.WriteLine( "No options    : {0}", myStr );
       PrintMarker( "           AE : ", myComp.IndexOf( myStr, "AE" ), myComp.LastIndexOf( myStr, "AE" ) );
@@ -50,7 +50,7 @@ public class SamplesCompareInfo  {
       PrintMarker( "            ü : ", myComp.IndexOf( myStr, 'ü', CompareOptions.IgnoreCase ), myComp.LastIndexOf( myStr, 'ü', CompareOptions.IgnoreCase ) );
    }
 
-   public static void PrintMarker( String Prefix, int First, int Last )  {
+   public static void PrintMarker( string Prefix, int First, int Last )  {
 
       // Determines the size of the array to create.
       int mySize;
@@ -61,7 +61,7 @@ public class SamplesCompareInfo  {
 
       if ( mySize > -1 )  {
 
-         // Creates an array of Char to hold the markers.
+         // Creates an array of char to hold the markers.
          Char[] myCharArr = new Char[mySize+1];
 
          // Inserts the appropriate markers.
@@ -72,8 +72,8 @@ public class SamplesCompareInfo  {
          if ( First == Last )
          myCharArr[First] = 'b';
 
-         // Displays the array of Char as a String.
-         Console.WriteLine( "{0}{1}", Prefix, new String( myCharArr ) );
+         // Displays the array of char as a string.
+         Console.WriteLine( "{0}{1}", Prefix, new string( myCharArr ) );
       }
       else
         {
