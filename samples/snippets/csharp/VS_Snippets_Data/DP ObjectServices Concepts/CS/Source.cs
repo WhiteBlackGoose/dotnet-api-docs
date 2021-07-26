@@ -1,4 +1,4 @@
-﻿//<snippetUsingSerialization>
+//<snippetUsingSerialization>
 //<snippetUsing>
 using System;
 using System.Linq;
@@ -30,10 +30,10 @@ namespace ObjectServicesConceptsCS
         public class DepartmentInfo
         {
             private DateTime _startDate;
-            private String _name;
-            private Int32 _departmentID;
+            private string _name;
+            private int _departmentID;
 
-            public Int32 DepartmentID
+            public int DepartmentID
             {
                 get
                 {
@@ -44,7 +44,7 @@ namespace ObjectServicesConceptsCS
                     _departmentID = value;
                 }
             }
-            public String Name
+            public string Name
             {
                 get
                 {
@@ -524,10 +524,10 @@ namespace ObjectServicesConceptsCS
                     new ObjectQuery<Product>(queryString,
                         context, MergeOption.NoTracking);
 
-                ObjectQuery<Int32> productQuery2 =
-                    productQuery1.SelectValue<Int32>("it.ProductID");
+                ObjectQuery<int> productQuery2 =
+                    productQuery1.SelectValue<int>("it.ProductID");
 
-                foreach (Int32 result in productQuery2)
+                foreach (int result in productQuery2)
                 {
                     Console.WriteLine("{0}", result);
                 }
@@ -1002,8 +1002,8 @@ namespace ObjectServicesConceptsCS
                     //<snippetObjectQuery_ScalarTypeExceptionShort>
                     // Define a query projection that returns
                     // a collection with a single scalar result.
-                    ObjectQuery<Int32> scalarQuery =
-                        new ObjectQuery<Int32>("100", context);
+                    ObjectQuery<int> scalarQuery =
+                        new ObjectQuery<int>("100", context);
 
                     // Calling an extension method that requires a collection
                     // will result in an exception.
@@ -1606,14 +1606,14 @@ namespace ObjectServicesConceptsCS
                     // in the orders that belong to the first contact.
                     foreach (SalesOrderHeader order in contact.SalesOrderHeaders)
                     {
-                        Console.WriteLine(String.Format("PO Number: {0}",
+                        Console.WriteLine(string.Format("PO Number: {0}",
                             order.PurchaseOrderNumber));
-                        Console.WriteLine(String.Format("Order Date: {0}",
+                        Console.WriteLine(string.Format("Order Date: {0}",
                             order.OrderDate.ToString()));
                         Console.WriteLine("Order items:");
                         foreach (SalesOrderDetail item in order.SalesOrderDetails)
                         {
-                            Console.WriteLine(String.Format("Product: {0} "
+                            Console.WriteLine(string.Format("Product: {0} "
                                 + "Quantity: {1}", item.ProductID.ToString(),
                                 item.OrderQty.ToString()));
                         }
@@ -2013,15 +2013,15 @@ namespace ObjectServicesConceptsCS
 
                 foreach (SalesOrderHeader order in customer.SalesOrderHeaders)
                 {
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
                     Console.WriteLine("Order items:");
 
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -2050,20 +2050,20 @@ namespace ObjectServicesConceptsCS
                 // in the orders that belong to the first contact.
                 foreach (SalesOrderHeader order in query.Top("10"))
                 {
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
-                    Console.WriteLine(String.Format("Bill to city and postal code: {0}, {1}",
+                    Console.WriteLine(string.Format("Bill to city and postal code: {0}, {1}",
                         order.Address.City.ToString(),
                         order.Address.PostalCode.ToString()));
-                    Console.WriteLine(String.Format("Ship to city and postal code: {0}, {1}",
+                    Console.WriteLine(string.Format("Ship to city and postal code: {0}, {1}",
                         order.Address1.City.ToString(),
                         order.Address1.PostalCode.ToString()));
                     Console.WriteLine("Order items:");
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -2751,14 +2751,14 @@ namespace ObjectServicesConceptsCS
                 foreach (SalesOrderHeader order in contact
                     .SalesOrderHeaders)
                 {
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
                     Console.WriteLine("Order items:");
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -2786,14 +2786,14 @@ namespace ObjectServicesConceptsCS
                 foreach (SalesOrderHeader order in contacts
                     .SalesOrderHeaders)
                 {
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
                     Console.WriteLine("Order items:");
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -2829,14 +2829,14 @@ namespace ObjectServicesConceptsCS
                 foreach (SalesOrderHeader order in contact
                     .SalesOrderHeaders)
                 {
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
                     Console.WriteLine("Order items:");
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -2909,13 +2909,13 @@ namespace ObjectServicesConceptsCS
                 ObjectSet<SalesOrderHeader> orders
                     = context.SalesOrderHeaders;
 
-                IQueryable<Int32> orderQuery =
+                IQueryable<int> orderQuery =
                     from order in orders
                     where order.Contact.ContactID == contactId
                     select order.PurchaseOrderNumber.Length;
 
                 // Iterate through the collection of values.
-                foreach (Int32 result in orderQuery)
+                foreach (int result in orderQuery)
                 {
                     Console.WriteLine("{0}", result);
                 }
@@ -2959,14 +2959,14 @@ namespace ObjectServicesConceptsCS
                     WHERE order.CustomerID = @contactId";
 
                 // Use the SelectValue method to select a value.
-                ObjectQuery<Int32> orderQuery =
-                    new ObjectQuery<Int32>(orderQueryString,
+                ObjectQuery<int> orderQuery =
+                    new ObjectQuery<int>(orderQueryString,
                         context, MergeOption.NoTracking);
                 orderQuery.Parameters.Add(
                     new ObjectParameter("contactId", contactId));
 
                 // Iterate through the collection of values.
-                foreach (Int32 result in orderQuery)
+                foreach (int result in orderQuery)
                 {
                     Console.WriteLine("{0}", result);
                 }
@@ -3002,14 +3002,14 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 // Use the SelectValue method to select a value.
-                ObjectQuery<Int32> orderQuery =
+                ObjectQuery<int> orderQuery =
                     context.SalesOrderHeaders
                     .Where("it.CustomerID = @contactId",
                     new ObjectParameter("contactId", contactId))
-                    .SelectValue<Int32>("Length(it.PurchaseOrderNumber)");
+                    .SelectValue<int>("Length(it.PurchaseOrderNumber)");
 
                 // Iterate through the collection of values.
-                foreach (Int32 result in orderQuery)
+                foreach (int result in orderQuery)
                 {
                     Console.WriteLine("{0}", result);
                 }
@@ -3304,14 +3304,14 @@ namespace ObjectServicesConceptsCS
                     }
                     //</snippetLoad>
 
-                    Console.WriteLine(String.Format("PO Number: {0}",
+                    Console.WriteLine(string.Format("PO Number: {0}",
                         order.PurchaseOrderNumber));
-                    Console.WriteLine(String.Format("Order Date: {0}",
+                    Console.WriteLine(string.Format("Order Date: {0}",
                         order.OrderDate.ToString()));
                     Console.WriteLine("Order items:");
                     foreach (SalesOrderDetail item in order.SalesOrderDetails)
                     {
-                        Console.WriteLine(String.Format("Product: {0} "
+                        Console.WriteLine(string.Format("Product: {0} "
                             + "Quantity: {1}", item.ProductID.ToString(),
                             item.OrderQty.ToString()));
                     }
@@ -3417,7 +3417,7 @@ namespace ObjectServicesConceptsCS
                 new SchoolEntities())
             {
                 // name is an output parameter.
-                ObjectParameter name = new ObjectParameter("Name", typeof(String));
+                ObjectParameter name = new ObjectParameter("Name", typeof(string));
                 context.GetDepartmentName(1, name);
                 Console.WriteLine(name.Value);
             }
@@ -3432,7 +3432,7 @@ namespace ObjectServicesConceptsCS
                 new AdventureWorksEntities())
             {
                 ObjectParameter id = new ObjectParameter("ID", 1);
-                ObjectParameter name = new ObjectParameter("Name", typeof(String));
+                ObjectParameter name = new ObjectParameter("Name", typeof(string));
 
                 context.ExecuteFunction("GetProductName", id, name);
                 Console.WriteLine(name.Value);
@@ -3657,7 +3657,7 @@ namespace ObjectServicesConceptsCS
         {
             //<snippetDDL>
 			// Initialize the connection string.
-			String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
+			string connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
 			"provider connection string=\"Data Source=.;Initial Catalog=School;Integrated Security=True;MultipleActiveResultSets=True\"";
 
 			using (SchoolEntities context = new SchoolEntities(connectionString))
@@ -3708,7 +3708,7 @@ namespace ObjectServicesConceptsCS
         public static void DDLTest2()
         {
             //<snippetDDL2>
-            String connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
+            string connectionString = "metadata=res://*/School.csdl|res://*/School.ssdl|res://*/School.msl;provider=System.Data.SqlClient;" +
             "provider connection string=\"Data Source=.;Initial Catalog=SchoolTest;Integrated Security=True;MultipleActiveResultSets=True\"";
 
             ObjectContext context = new ObjectContext(connectionString);
@@ -4000,7 +4000,7 @@ namespace ObjectServicesConceptsCS
                         // If the validation method returns a problem string, raise an error.
                         if (!string.IsNullOrEmpty(textNotAllowed))
                         {
-                            throw new ArgumentException(String.Format("Changes cannot be "
+                            throw new ArgumentException(string.Format("Changes cannot be "
                                 + "saved because the {0} '{1}' object contains a "
                                 + "string that is not allowed in the property '{2}'.",
                                 entry.State, "SalesOrderHeader", "Comment"));
@@ -4053,7 +4053,7 @@ namespace ObjectServicesConceptsCS
                     // If the validation method returns a problem string, raise an error.
                     if (!string.IsNullOrEmpty(textNotAllowed))
                     {
-                        throw new ArgumentException(String.Format("Changes cannot be "
+                        throw new ArgumentException(string.Format("Changes cannot be "
                             + "saved because the {0} '{1}' object contains a "
                             + "string that is not allowed in the property '{2}'.",
                             entry.State, "SalesOrderHeader", "Comment"));
@@ -4134,7 +4134,7 @@ namespace ObjectServicesConceptsCS
                     Console.WriteLine(c.ContactID);
 
                 Console.WriteLine("Select a customer:");
-                Int32 contactID = Convert.ToInt32(Console.ReadLine());
+                int contactID = Convert.ToInt32(Console.ReadLine());
 
                 // Get a specified customer by contact ID.
                 var contact = context.Contacts.Where(c => c.ContactID == contactID).FirstOrDefault();
