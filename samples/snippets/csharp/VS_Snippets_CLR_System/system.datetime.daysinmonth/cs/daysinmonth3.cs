@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -16,7 +16,7 @@ public class Example
 
       foreach (var year in years) {
          for (int ctr = 0; ctr <= dtfi.MonthNames.Length - 1; ctr++) {
-            if (String.IsNullOrEmpty(dtfi.MonthNames[ctr]))
+            if (string.IsNullOrEmpty(dtfi.MonthNames[ctr]))
                continue;
 
             Console.WriteLine("{0,-10}{1,-15}{2,4}", year,
