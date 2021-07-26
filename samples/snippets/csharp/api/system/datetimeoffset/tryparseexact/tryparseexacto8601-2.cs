@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
 {
    public static void Main()
    {
-      string[] dateStrings = { "2018-08-18T12:45:16.0000000Z",
+      string[] datestrings = { "2018-08-18T12:45:16.0000000Z",
                                "2018/08/18T12:45:16.0000000Z",
                                "2018-18-08T12:45:16.0000000Z",
                                "2018-08-18T12:45:16.0000000",                               
@@ -13,29 +13,29 @@ public class Example
                                "2018-08-18T12:45:16.0000000+02:00",
                                "2018-08-18T12:45:16.0000000-07:00" }; 
       
-      ParseWithISO8601(dateStrings, DateTimeStyles.None);
+      ParseWithISO8601(datestrings, DateTimeStyles.None);
       Console.WriteLine("\n-----\n");
-      ParseWithISO8601(dateStrings, DateTimeStyles.AllowWhiteSpaces);
+      ParseWithISO8601(datestrings, DateTimeStyles.AllowWhiteSpaces);
       Console.WriteLine("\n-----\n");
-      ParseWithISO8601(dateStrings, DateTimeStyles.AdjustToUniversal);
+      ParseWithISO8601(datestrings, DateTimeStyles.AdjustToUniversal);
       Console.WriteLine("\n-----\n");
-      ParseWithISO8601(dateStrings, DateTimeStyles.AssumeLocal);
+      ParseWithISO8601(datestrings, DateTimeStyles.AssumeLocal);
       Console.WriteLine("\n-----\n");
-      ParseWithISO8601(dateStrings, DateTimeStyles.AssumeUniversal);   }
+      ParseWithISO8601(datestrings, DateTimeStyles.AssumeUniversal);   }
 
-   private static void ParseWithISO8601(string[] dateStrings, DateTimeStyles styles)
+   private static void ParseWithISO8601(string[] datestrings, DateTimeStyles styles)
    {   
       Console.WriteLine($"Parsing with {styles}:");
       DateTimeOffset date;
-      foreach (var dateString in dateStrings)
+      foreach (var datestring in datestrings)
       {
-         if (DateTimeOffset.TryParseExact(dateString, "O", null, styles, out date))
+         if (DateTimeOffset.TryParseExact(datestring, "O", null, styles, out date))
          {
-            Console.WriteLine($"   {dateString,-35} --> {date:yyyy-MM-dd HH:mm:ss.FF zzz}");
+            Console.WriteLine($"   {datestring,-35} --> {date:yyyy-MM-dd HH:mm:ss.FF zzz}");
          }
          else
          {
-            Console.WriteLine($"   Unable to convert '{dateString}'");
+            Console.WriteLine($"   Unable to convert '{datestring}'");
          }   
       } 
    }

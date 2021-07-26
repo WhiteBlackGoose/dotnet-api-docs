@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Runtime.InteropServices;
 
 namespace copy
@@ -7,14 +7,14 @@ namespace copy
     {
         static void Main()
         {
-            PerformStringOperation();
+            PerformstringOperation();
             Console.WriteLine("---");
             UseMutableBuffer();
             Console.WriteLine("---");
             UseUnmanaged();
         }
 
-        private static void PerformStringOperation()
+        private static void PerformstringOperation()
         {
             // <Snippet1>
             var original = "This is a sentence. This is a second sentence.";
@@ -31,19 +31,19 @@ namespace copy
         private static void UseMutableBuffer()
         {
             var original = "This is a sentence. This is a second sentence.";
-            var chars = original.ToCharArray();
+            var chars = original.TocharArray();
             var span = new Span<char>(chars);
             var slice = span.Slice(span.IndexOf('.'), 3);
             slice = MergeSentence(slice);
             Console.WriteLine($"Original string: {original}");
-            Console.WriteLine($"Modified string: {span.ToString()}");
+            Console.WriteLine($"Modified string: {span.Tostring()}");
 
             static Span<char> MergeSentence(Span<char> span)
             {
                 if (span.Length == 0) return Span<char>.Empty;
 
                 span[0] = ';';
-                span[2] = Char.ToLower(span[2]);
+                span[2] = char.ToLower(span[2]);
                 return span;
             }
         }
@@ -57,25 +57,25 @@ namespace copy
         {
             var original = "This is a single sentence.";
             var len = original.Length; 
-            var ptr = Marshal.StringToHGlobalUni(original);
+            var ptr = Marshal.stringToHGlobalUni(original);
             string result;
             unsafe 
             {
                 char *ch = (char *) ptr.ToPointer();
                 while (len-- > 0)
                 {
-                    char c = Convert.ToChar(Convert.ToUInt16(*ch) + 1);
+                    char c = Convert.Tochar(Convert.ToUInt16(*ch) + 1);
                     *ch++ = c;
                 } 
-                result = Marshal.PtrToStringUni(ptr);
+                result = Marshal.PtrTostringUni(ptr);
                 Marshal.FreeHGlobal(ptr);
             }
             Console.WriteLine($"Original string: {original}");
-            Console.WriteLine($"String from interop: '{result}'");
+            Console.WriteLine($"string from interop: '{result}'");
         }
         // The example displays the following output:
         //    Original string: This is a single sentence.
-        //    String from interop: 'Uijt!jt!b!tjohmf!tfoufodf/'      
+        //    string from interop: 'Uijt!jt!b!tjohmf!tfoufodf/'      
         // </Snippet3>
     }
 }

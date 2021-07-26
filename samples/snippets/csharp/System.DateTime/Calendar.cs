@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SystemDateTimeReference
 {
@@ -19,10 +19,10 @@ namespace SystemDateTimeReference
             var thTH = new System.Globalization.CultureInfo("th-TH");
             var value = new DateTime(2016, 5, 28);
 
-            Console.WriteLine(value.ToString(thTH));
+            Console.WriteLine(value.Tostring(thTH));
 
             thTH.DateTimeFormat.Calendar = new System.Globalization.GregorianCalendar();
-            Console.WriteLine(value.ToString(thTH));
+            Console.WriteLine(value.Tostring(thTH));
             // The example displays the following output:
             //       28/5/2559 0:00:00
             //       28/5/2016 0:00:00
@@ -34,10 +34,10 @@ namespace SystemDateTimeReference
             // <Snippet2>
             var thTH = new System.Globalization.CultureInfo("th-TH");
             var value = DateTime.Parse("28/05/2559", thTH);
-            Console.WriteLine(value.ToString(thTH));
+            Console.WriteLine(value.Tostring(thTH));
 
             thTH.DateTimeFormat.Calendar = new System.Globalization.GregorianCalendar();
-            Console.WriteLine(value.ToString(thTH));
+            Console.WriteLine(value.Tostring(thTH));
             // The example displays the following output:
             //       28/5/2559 0:00:00
             //       28/5/2016 0:00:00
@@ -49,7 +49,7 @@ namespace SystemDateTimeReference
             // <Snippet3>
             var thTH = new System.Globalization.CultureInfo("th-TH");
             var dat = new DateTime(2559, 5, 28, thTH.DateTimeFormat.Calendar);
-            Console.WriteLine($"Thai Buddhist era date: {dat.ToString("d", thTH)}");
+            Console.WriteLine($"Thai Buddhist era date: {dat.Tostring("d", thTH)}");
             Console.WriteLine($"Gregorian date:   {dat:d}");
             // The example displays the following output:
             //       Thai Buddhist Era Date:  28/5/2559
@@ -64,7 +64,7 @@ namespace SystemDateTimeReference
             var cal = thTH.DateTimeFormat.Calendar;
             var dat = new DateTime(2559, 5, 28, cal);
             Console.WriteLine("Using the Thai Buddhist Era calendar:");
-            Console.WriteLine($"Date: {dat.ToString("d", thTH)}");
+            Console.WriteLine($"Date: {dat.Tostring("d", thTH)}");
             Console.WriteLine($"Year: {cal.GetYear(dat)}");
             Console.WriteLine($"Leap year: {cal.IsLeapYear(cal.GetYear(dat))}\n");
 
@@ -92,7 +92,7 @@ namespace SystemDateTimeReference
             var thCalendar = thTH.DateTimeFormat.Calendar;
             var dat = new DateTime(1395, 8, 18, thCalendar);
             Console.WriteLine("Using the Thai Buddhist Era calendar:");
-            Console.WriteLine($"Date: {dat.ToString("d", thTH)}");
+            Console.WriteLine($"Date: {dat.Tostring("d", thTH)}");
             Console.WriteLine($"Day of Week: {thCalendar.GetDayOfWeek(dat)}");
             Console.WriteLine($"Week of year: {thCalendar.GetWeekOfYear(dat, System.Globalization.CalendarWeekRule.FirstDay, DayOfWeek.Sunday)}\n");
 
