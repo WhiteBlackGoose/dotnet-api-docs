@@ -1,8 +1,8 @@
-﻿// System.Diagnostics.Process.GetProcessesByName(String, String)
+// System.Diagnostics.Process.GetProcessesByName(string, string)
 // System.Diagnostics.Process.MachineName
 
 /*
-   The following program demonstrates the method 'GetProcessesByName(String, String)'
+   The following program demonstrates the method 'GetProcessesByName(string, string)'
    and property 'MachineName' of class 'Process'.
    It reads the remote computer name from commandline and gets all the notepad
    processes by name on remote computer and displays its properties to console.

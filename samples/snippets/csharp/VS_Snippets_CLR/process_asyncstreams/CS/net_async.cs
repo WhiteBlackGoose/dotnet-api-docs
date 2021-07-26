@@ -1,4 +1,4 @@
-﻿// System.Diagnostics
+// System.Diagnostics
 //
 // Requires .NET Framework version 1.2 or higher.
 
@@ -24,20 +24,20 @@ namespace ProcessAsyncStreamSamples
     {
         // Define static variables shared by class methods.
         private static StreamWriter streamError =null;
-        private static String netErrorFile = "";
+        private static string netErrorFile = "";
         private static StringBuilder netOutput = null;
         private static bool errorRedirect = false;
         private static bool errorsWritten = false;
 
         public static void RedirectNetCommandStreams()
         {
-            String netArguments;
+            string netArguments;
             Process netProcess;
 
             // Get the input computer name.
             Console.WriteLine("Enter the computer name for the net view command:");
             netArguments = Console.ReadLine().ToUpper(CultureInfo.InvariantCulture);
-            if (String.IsNullOrEmpty(netArguments))
+            if (string.IsNullOrEmpty(netArguments))
             {
                 // Default to the help command if there is not an input argument.
                 netArguments = "/?";
@@ -48,7 +48,7 @@ namespace ProcessAsyncStreamSamples
             Console.WriteLine("Enter a fully qualified path to an error log file");
             Console.WriteLine("  or just press Enter to write errors to console:");
             netErrorFile = Console.ReadLine().ToUpper(CultureInfo.InvariantCulture);
-            if (!String.IsNullOrEmpty(netErrorFile))
+            if (!string.IsNullOrEmpty(netErrorFile))
             {
                 errorRedirect = true;
             }
@@ -62,7 +62,7 @@ namespace ProcessAsyncStreamSamples
             netProcess.StartInfo.FileName = "Net.exe";
 
             // Build the net command argument list.
-            netProcess.StartInfo.Arguments = String.Format("view {0}",
+            netProcess.StartInfo.Arguments = string.Format("view {0}",
                 netArguments);
 
             // Set UseShellExecute to false for redirection.
@@ -135,12 +135,12 @@ namespace ProcessAsyncStreamSamples
             {
                 // Signal that the error file had something
                 // written to it.
-                String [] errorOutput = File.ReadAllLines(netErrorFile);
+                string [] errorOutput = File.ReadAllLines(netErrorFile);
                 if (errorOutput.Length > 0)
                 {
                     Console.WriteLine("\nThe following error output was appended to {0}.",
                         netErrorFile);
-                    foreach (String errLine in errorOutput)
+                    foreach (string errLine in errorOutput)
                     {
                         Console.WriteLine("  {0}", errLine);
                     }
@@ -155,7 +155,7 @@ namespace ProcessAsyncStreamSamples
             DataReceivedEventArgs outLine)
         {
             // Collect the net view command output.
-            if (!String.IsNullOrEmpty(outLine.Data))
+            if (!string.IsNullOrEmpty(outLine.Data))
             {
                 // Add the text to the collected output.
                 netOutput.Append(Environment.NewLine + "  " + outLine.Data);
@@ -168,7 +168,7 @@ namespace ProcessAsyncStreamSamples
             // Write the error text to the file if there is something
             // to write and an error file has been specified.
 
-            if (!String.IsNullOrEmpty(errLine.Data))
+            if (!string.IsNullOrEmpty(errLine.Data))
             {
                 if (!errorsWritten)
                 {

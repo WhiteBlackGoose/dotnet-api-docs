@@ -1,4 +1,4 @@
-﻿// System.Diagnostics
+// System.Diagnostics
 //
 // Requires .NET Framework version 1.2 or higher.
 
@@ -59,20 +59,20 @@ namespace ProcessAsyncStreamSamples
             // line to the redirected input stream of the sort command.
             Console.WriteLine("Ready to sort up to 50 lines of text");
 
-            String inputText;
+            string inputText;
             int numInputLines = 0;
             do
             {
                 Console.WriteLine("Enter a text line (or press the Enter key to stop):");
 
                 inputText = Console.ReadLine();
-                if (!String.IsNullOrEmpty(inputText))
+                if (!string.IsNullOrEmpty(inputText))
                 {
                     numInputLines++;
                     sortStreamWriter.WriteLine(inputText);
                 }
             }
-            while (!String.IsNullOrEmpty(inputText) && (numInputLines < 50));
+            while (!string.IsNullOrEmpty(inputText) && (numInputLines < 50));
             Console.WriteLine("<end of input stream>");
             Console.WriteLine();
 
@@ -101,7 +101,7 @@ namespace ProcessAsyncStreamSamples
             DataReceivedEventArgs outLine)
         {
             // Collect the sort command output.
-            if (!String.IsNullOrEmpty(outLine.Data))
+            if (!string.IsNullOrEmpty(outLine.Data))
             {
                 numOutputLines++;
 

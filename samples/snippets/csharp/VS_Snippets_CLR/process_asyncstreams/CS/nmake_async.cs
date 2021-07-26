@@ -1,4 +1,4 @@
-﻿// System.Diagnostics
+// System.Diagnostics
 //
 // Requires .NET Framework version 1.2 or higher.
 
@@ -23,23 +23,23 @@ namespace ProcessAsyncStreamSamples
 
         public static void RedirectNMakeCommandStreams()
         {
-            String nmakeArguments = null;
+            string nmakeArguments = null;
             Process nmakeProcess;
 
             // Get the input nmake command-line arguments.
             Console.WriteLine("Enter the NMake command line arguments " +
                 "(@commandfile or /f makefile, etc):");
-            String inputText = Console.ReadLine();
-            if (!String.IsNullOrEmpty(inputText))
+            string inputText = Console.ReadLine();
+            if (!string.IsNullOrEmpty(inputText))
             {
                 nmakeArguments = inputText;
             }
 
             Console.WriteLine("Enter max line limit for log file (default is 25):");
             inputText = Console.ReadLine();
-            if (!String.IsNullOrEmpty(inputText))
+            if (!string.IsNullOrEmpty(inputText))
             {
-                if (!Int32.TryParse(inputText, out maxLogLines))
+                if (!int.TryParse(inputText, out maxLogLines))
                 {
                     maxLogLines = 25;
                 }
@@ -52,7 +52,7 @@ namespace ProcessAsyncStreamSamples
             nmakeProcess.StartInfo.FileName = "NMake.exe";
 
             // Build the nmake command argument list.
-            if (!String.IsNullOrEmpty(nmakeArguments))
+            if (!string.IsNullOrEmpty(nmakeArguments))
             {
                 nmakeProcess.StartInfo.Arguments = nmakeArguments;
             }
@@ -74,7 +74,7 @@ namespace ProcessAsyncStreamSamples
             currentLogLines = 0;
 
             // Write a header to the log file.
-            const String buildLogFile = "NmakeCmd.Txt";
+            const string buildLogFile = "NmakeCmd.Txt";
             try
             {
                 buildLogStream = new StreamWriter(buildLogFile, true);
@@ -95,7 +95,7 @@ namespace ProcessAsyncStreamSamples
 
                 buildLogStream.WriteLine();
                 buildLogStream.WriteLine(DateTime.Now.ToString());
-                if (!String.IsNullOrEmpty(nmakeArguments))
+                if (!string.IsNullOrEmpty(nmakeArguments))
                 {
                     buildLogStream.Write("Command line = NMake {0}",
                         nmakeArguments);
@@ -137,7 +137,7 @@ namespace ProcessAsyncStreamSamples
             // logging it to the output file.  Cancel the read
             // operation when the maximum line limit is reached.
 
-            if (!String.IsNullOrEmpty(outLine.Data))
+            if (!string.IsNullOrEmpty(outLine.Data))
             {
                 logMutex.WaitOne();
 
@@ -177,7 +177,7 @@ namespace ProcessAsyncStreamSamples
             // logging it to the output file.  Cancel the error output
             // read operation when the maximum line limit is reached.
 
-            if (!String.IsNullOrEmpty(errLine.Data))
+            if (!string.IsNullOrEmpty(errLine.Data))
             {
                 logMutex.WaitOne();
 
@@ -211,18 +211,18 @@ namespace ProcessAsyncStreamSamples
             }
         }
 
-        private static void LogToFile(String logPrefix,
-            String logText, bool echoToConsole)
+        private static void LogToFile(string logPrefix,
+            string logText, bool echoToConsole)
         {
             // Write the specified line to the log file stream.
             StringBuilder logString = new StringBuilder();
 
-            if (!String.IsNullOrEmpty(logPrefix))
+            if (!string.IsNullOrEmpty(logPrefix))
             {
                 logString.AppendFormat("{0}> ", logPrefix);
             }
 
-            if (!String.IsNullOrEmpty(logText))
+            if (!string.IsNullOrEmpty(logText))
             {
                 logString.Append(logText);
             }

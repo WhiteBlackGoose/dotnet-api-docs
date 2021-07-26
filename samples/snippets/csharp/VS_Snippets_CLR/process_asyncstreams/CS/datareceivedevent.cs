@@ -1,4 +1,4 @@
-﻿//<Snippet4>
+//<Snippet4>
 using System;
 using System.IO;
 using System.Diagnostics;
@@ -18,7 +18,7 @@ class StandardAsyncOutputExample
         process.OutputDataReceived += new DataReceivedEventHandler((sender, e) =>
         {
             // Prepend line numbers to each line of the output.
-            if (!String.IsNullOrEmpty(e.Data))
+            if (!string.IsNullOrEmpty(e.Data))
             {
                 lineCount++;
                 output.Append("\n[" + lineCount + "]: " + e.Data);
