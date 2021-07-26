@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -85,12 +85,12 @@ public class Example
                            result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Char value 'a' to the UInt32 value 97.
-      //    Converted the Char value 'z' to the UInt32 value 122.
-      //    Converted the Char value '' to the UInt32 value 7.
-      //    Converted the Char value 'Ͽ' to the UInt32 value 1023.
-      //    Converted the Char value '翿' to the UInt32 value 32767.
-      //    Converted the Char value '￾' to the UInt32 value 65534.
+      //    Converted the char value 'a' to the UInt32 value 97.
+      //    Converted the char value 'z' to the UInt32 value 122.
+      //    Converted the char value '' to the UInt32 value 7.
+      //    Converted the char value 'Ͽ' to the UInt32 value 1023.
+      //    Converted the char value '翿' to the UInt32 value 32767.
+      //    Converted the char value '￾' to the UInt32 value 65534.
       // </Snippet3>
    }
 
@@ -191,7 +191,7 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet7>
-      int[] numbers = { Int32.MinValue, -1203, 0, 121, 1340, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1203, 0, 121, 1340, int.MaxValue };
       uint result;
       foreach (int number in numbers)
       {
@@ -207,12 +207,12 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    The Int32 value -2147483648 is outside the range of the UInt32 type.
-      //    The Int32 value -1203 is outside the range of the UInt32 type.
-      //    Converted the Int32 value 0 to the UInt32 value 0.
-      //    Converted the Int32 value 121 to the UInt32 value 121.
-      //    Converted the Int32 value 1340 to the UInt32 value 1340.
-      //    Converted the Int32 value 2147483647 to the UInt32 value 2147483647.
+      //    The int value -2147483648 is outside the range of the UInt32 type.
+      //    The int value -1203 is outside the range of the UInt32 type.
+      //    Converted the int value 0 to the UInt32 value 0.
+      //    Converted the int value 121 to the UInt32 value 121.
+      //    Converted the int value 1340 to the UInt32 value 1340.
+      //    Converted the int value 2147483647 to the UInt32 value 2147483647.
       // </Snippet7>
    }
 
@@ -275,16 +275,16 @@ public class Example
       }
       // The example displays the following output:
       //    Converted the Boolean value True to the UInt32 value 1.
-      //    The Int32 value '-12' is outside the range of the UInt32 type.
-      //    Converted the Int32 value 163 to the UInt32 value 163.
-      //    Converted the Int32 value 935 to the UInt32 value 935.
-      //    Converted the Char value x to the UInt32 value 120.
+      //    The int value '-12' is outside the range of the UInt32 type.
+      //    Converted the int value 163 to the UInt32 value 163.
+      //    Converted the int value 935 to the UInt32 value 935.
+      //    Converted the char value x to the UInt32 value 120.
       //    No conversion to a UInt32 exists for the DateTime value '5/12/2009 12:00:00 AM'.
-      //    Converted the String value 104 to the UInt32 value 104.
-      //    The String value 103.0 is not in a recognizable format.
-      //    The String value '-1' is outside the range of the UInt32 type.
-      //    The String value 1.00e2 is not in a recognizable format.
-      //    The String value One is not in a recognizable format.
+      //    Converted the string value 104 to the UInt32 value 104.
+      //    The string value 103.0 is not in a recognizable format.
+      //    The string value '-1' is outside the range of the UInt32 type.
+      //    The string value 1.00e2 is not in a recognizable format.
+      //    The string value One is not in a recognizable format.
       //    Converted the Double value 100 to the UInt32 value 100.
       //    The Double value '1.63E+43' is outside the range of the UInt32 type.
       // </Snippet9>
@@ -355,7 +355,7 @@ public class Example
    {
       // <Snippet12>
       string[] values = { "One", "1.34e28", "-26.87", "-18", "-6.00",
-                          " 0", "137", "1601.9", Int32.MaxValue.ToString() };
+                          " 0", "137", "1601.9", int.MaxValue.ToString() };
       uint result;
 
       foreach (string value in values)
@@ -376,15 +376,15 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    The String value 'One' is not in a recognizable format.
-      //    The String value '1.34e28' is not in a recognizable format.
-      //    The String value '-26.87' is not in a recognizable format.
-      //    The String value '-18' is outside the range of the UInt32 type.
-      //    The String value '-6.00' is not in a recognizable format.
-      //    Converted the String value ' 0' to the UInt32 value 0.
-      //    Converted the String value '137' to the UInt32 value 137.
-      //    The String value '1601.9' is not in a recognizable format.
-      //    Converted the String value '2147483647' to the UInt32 value 2147483647.
+      //    The string value 'One' is not in a recognizable format.
+      //    The string value '1.34e28' is not in a recognizable format.
+      //    The string value '-26.87' is not in a recognizable format.
+      //    The string value '-18' is outside the range of the UInt32 type.
+      //    The string value '-6.00' is not in a recognizable format.
+      //    Converted the string value ' 0' to the UInt32 value 0.
+      //    Converted the string value '137' to the UInt32 value 137.
+      //    The string value '1601.9' is not in a recognizable format.
+      //    Converted the string value '2147483647' to the UInt32 value 2147483647.
       // </Snippet12>
    }
 
