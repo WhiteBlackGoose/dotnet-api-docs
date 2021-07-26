@@ -1,4 +1,4 @@
-﻿// System.Web.Services.Description.ServiceDescriptionImportWarnings.NoCodeGenerated
+// System.Web.Services.Description.ServiceDescriptionImportWarnings.NoCodeGenerated
 // System.Web.Services.Description.ServiceDescriptionImportWarnings.NoMethodsGenerated
 // System.Web.Services.Description.ServiceDescriptionImportWarnings.UnsupportedOperationsIgnored
 // System.Web.Services.Description.ServiceDescriptionImportWarnings.OptionalExtensionsIgnored
@@ -31,7 +31,7 @@ public class ServiceDescriptionImportWarnings_Enum
    public static void DisplayWarning(string myWSDLFileName)
    {
 // <Snippet1>
-      String myDisplay;
+      string myDisplay;
       // Read wsdl file.
       ServiceDescription myServiceDescription = ServiceDescription.Read
          (myWSDLFileName);

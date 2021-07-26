@@ -1,6 +1,6 @@
-﻿// System.Web.Services.Description.ServiceDescriptionCollection.ServiceDescriptionCollection()
+// System.Web.Services.Description.ServiceDescriptionCollection.ServiceDescriptionCollection()
 // System.Web.Services.Description.ServiceDescriptionCollection.Add()
-// System.Web.Services.Description.ServiceDescriptionCollection.Item(Int32)
+// System.Web.Services.Description.ServiceDescriptionCollection.Item(int)
 
 /* The following program demonstrates 'Constructor', 'Add' method and
    'Item' property of 'ServiceDescriptionCollection' class. It creates an

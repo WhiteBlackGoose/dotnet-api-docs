@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Channels.SinkProviderData
+// System.Runtime.Remoting.Channels.SinkProviderData
 // System.Runtime.Remoting.Channels.SinkProviderData.Children
 // System.Runtime.Remoting.Channels.SinkProviderData.Name
 // System.Runtime.Remoting.Channels.SinkProviderData.Properties
@@ -39,11 +39,11 @@ namespace IPFilter
 
         public MySinkProviderData(IDictionary properties, ICollection providerData)
         {
-            String myMode = (String)properties["mode"];
-            if (String.Compare(myMode, "accept", true) == 0)
+            string myMode = (string)properties["mode"];
+            if (string.Compare(myMode, "accept", true) == 0)
                 myAcceptMode = true;
             else
-                if (String.Compare(myMode, "reject", true) == 0)
+                if (string.Compare(myMode, "reject", true) == 0)
                 myAcceptMode = false;
             myCollectionData = providerData;
         }
@@ -70,9 +70,9 @@ namespace IPFilter
                 myArrayList.Add(mySinkData.Children);
                 myArrayList.Add(mySinkData.Name);
 
-                String myMaskString = (String)mySinkData.Properties["mask"];
-                String myIPString = (String)mySinkData.Properties["ip"];
-                String myMachineString = (String)mySinkData.Properties["machine"];
+                string myMaskString = (string)mySinkData.Properties["mask"];
+                string myIPString = (string)mySinkData.Properties["ip"];
+                string myMachineString = (string)mySinkData.Properties["machine"];
 
                 IPAddress mask = null;
                 IPAddress ip = null;

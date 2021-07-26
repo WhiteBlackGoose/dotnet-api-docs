@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Runtime.Serialization;
@@ -84,14 +84,14 @@ class App
 [Serializable]
 class Version1Type
 {
-    public Int32 x;
+    public int x;
 }
 
 [Serializable]
 class Version2Type : ISerializable
 {
-    public Int32 x;
-    public String name;
+    public int x;
+    public string name;
 
     // The security attribute demands that code that calls
     // this method have permission to perform serialization.
@@ -130,8 +130,8 @@ sealed class Version1ToVersion2DeserializationBinder : SerializationBinder
 
         // For each assemblyName/typeName that you want to deserialize to
         // a different type, set typeToDeserialize to the desired type.
-        String assemVer1 = Assembly.GetExecutingAssembly().FullName;
-        String typeVer1 = "Version1Type";
+        string assemVer1 = Assembly.GetExecutingAssembly().FullName;
+        string typeVer1 = "Version1Type";
 
         if (assemblyName == assemVer1 && typeName == typeVer1)
         {
@@ -146,7 +146,7 @@ sealed class Version1ToVersion2DeserializationBinder : SerializationBinder
         }
 
         // The following line of code returns the type.
-        typeToDeserialize = Type.GetType(String.Format("{0}, {1}",
+        typeToDeserialize = Type.GetType(string.Format("{0}, {1}",
             typeName, assemblyName));
 
         return typeToDeserialize;

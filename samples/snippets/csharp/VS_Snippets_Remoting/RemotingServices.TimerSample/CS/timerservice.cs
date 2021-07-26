@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 
 using System;
 using System.Runtime.Remoting;
@@ -73,7 +73,7 @@ namespace TimerSample {
 
             // Fire Event
             if (TimerExpired != null) {
-                // Package String in TimerServiceEventArgs
+                // Package string in TimerServiceEventArgs
                 TimerServiceEventArgs timerEventArgs = new TimerServiceEventArgs("TimerServiceEventArgs: Timer Expired.");
                 Console.WriteLine("Firing TimerExpired Event");
                 TimerExpired(this, timerEventArgs);

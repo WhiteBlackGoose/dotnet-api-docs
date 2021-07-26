@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Runtime.Remoting;
 using System.Runtime.Remoting.Channels;
@@ -33,7 +33,7 @@ public class HelloServer : MarshalByRefObject {
         Console.WriteLine("Object Destroyed");
     }
 
-    public String HelloMethod(String name)  {
+    public string HelloMethod(string name)  {
         // Reports that the method was called.
         Console.WriteLine();
         Console.WriteLine("Hello.HelloMethod : {0}", name);

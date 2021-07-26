@@ -1,4 +1,4 @@
-﻿/* This file is a support file for demonstrating IClientChannelSinkProvider
+/* This file is a support file for demonstrating IClientChannelSinkProvider
 and ServerProcessing. */
 
 using System;
@@ -14,7 +14,7 @@ public class MyHelloService : MarshalByRefObject
       Console.WriteLine($"MyHelloService activated - instance # {myInstances}.");
    }
 
-   public String HelloMethod(String myString)
+   public string HelloMethod(string myString)
    {
       Console.WriteLine($"HelloMethod called on MyHelloService instance {myInstances}.");
       return $"Hi there {myString}.";

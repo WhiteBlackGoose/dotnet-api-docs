@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink()
+// System.Runtime.Remoting.Channels.IClientChannelSinkProvider.CreateSink()
 // System.Runtime.Remoting.Channels.IClientChannelSinkProvider.Next
 // System.Runtime.Remoting.Channels.ServerProcessing
 // System.Runtime.Remoting.Channels.ServerProcessing.Complete
@@ -45,7 +45,7 @@ namespace MyLogging
       {
       }
 
-      public IClientChannelSink CreateSink(IChannelSender myChannelSenderData, String url,
+      public IClientChannelSink CreateSink(IChannelSender myChannelSenderData, string url,
          Object myRemoteChannelData)
       {
          IClientChannelSink myClientChannelSinkNextSink = null;
@@ -86,7 +86,7 @@ namespace MyLogging
          myNewNextSink = myClientChannelSinkNextSink;
       }
 
-      public MyLoggingClientChannelSink(IChannelSender myChannelSenderData, String url, Object myRemoteChannelData,
+      public MyLoggingClientChannelSink(IChannelSender myChannelSenderData, string url, Object myRemoteChannelData,
          IClientChannelSink myClientChannelSinkNextSink) : base()
       {
          myNewNextSink = myClientChannelSinkNextSink;
@@ -339,7 +339,7 @@ namespace MyLogging
          PrintHeaders(output, requestHeaders);
 
          // Print request message.
-         String contentType = requestHeaders["Content-Type"] as String;
+         string contentType = requestHeaders["Content-Type"] as string;
          if ((contentType != null) && contentType.StartsWith("text"))
          {
             output.WriteLine("----------Request Message-----------");
@@ -356,7 +356,7 @@ namespace MyLogging
          PrintHeaders(output, responseHeaders);
 
          // Print response message.
-         String contentType = responseHeaders["Content-Type"] as String;
+         string contentType = responseHeaders["Content-Type"] as string;
          if ((contentType != null) && contentType.StartsWith("text"))
          {
             output.WriteLine("----------Response Message----------");
@@ -380,7 +380,7 @@ namespace MyLogging
             stream = CopyStream(stream);
          long startPosition = stream.Position;
          StreamReader sr = new StreamReader(stream);
-         String line;
+         string line;
          while ((line = sr.ReadLine()) != null)
          {
             output.WriteLine(line);

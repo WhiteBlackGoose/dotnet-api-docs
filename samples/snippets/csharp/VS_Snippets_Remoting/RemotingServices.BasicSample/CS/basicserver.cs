@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.IO;
 using System.Runtime.Remoting;
@@ -19,7 +19,7 @@ public class Server {
         Console.WriteLine("Listening...");
 
         string keyState = "";
-        while (String.Compare(keyState,"0", true) != 0) {
+        while (string.Compare(keyState,"0", true) != 0) {
             Console.WriteLine("***** Press 0 to exit this service *****");
             keyState = Console.ReadLine();
         }

@@ -1,5 +1,5 @@
-﻿// System.Web.Services.Description.ServiceDescriptionCollection.Insert()
-// System.Web.Services.Description.ServiceDescriptionCollection.Item(String)
+// System.Web.Services.Description.ServiceDescriptionCollection.Insert()
+// System.Web.Services.Description.ServiceDescriptionCollection.Item(string)
 // System.Web.Services.Description.ServiceDescriptionCollection.CopyTo()
 
 /* The following program demonstrates 'Item' property, 'Insert' and 'CopyTo'
