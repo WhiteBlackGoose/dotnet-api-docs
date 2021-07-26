@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -71,7 +71,7 @@ namespace GetDataPresent3
         private void GetDataPresent3() 
         {
             // Creates a new data object using a string and the Text format.
-            DataObject myDataObject = new DataObject(DataFormats.Text, "My String");
+            DataObject myDataObject = new DataObject(DataFormats.Text, "My string");
  
             // Checks whether the string can be displayed with autoConvert equal to false.
             if(myDataObject.GetDataPresent("System.String", false)) 

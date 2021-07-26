@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
     using System;
     using System.Data;
     using System.Windows.Forms;
@@ -171,7 +171,7 @@
         {
             get 
             {
-                return this.expressionColumn == null ? String.Empty : 
+                return this.expressionColumn == null ? string.Empty : 
                     this.expressionColumn.Expression;
             }
             set 
@@ -230,7 +230,7 @@
 
             hasExpression = this.expressionColumn != null && 
                 this.expressionColumn.Expression != null && 
-                !this.expressionColumn.Expression.Equals(String.Empty);
+                !this.expressionColumn.Expression.Equals(string.Empty);
 
             Console.WriteLine(string.Format("hasExpressionValue {0}",hasExpression));
             // Get the value from the expression column.

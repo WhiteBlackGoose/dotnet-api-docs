@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGrid.CaptionVisibleChanged
+// System.Windows.Forms.DataGrid.CaptionVisibleChanged
 // System.Windows.Forms.DataGrid.CurrentCellChanged
 // System.Windows.Forms.DataGrid.Scroll
 
@@ -176,7 +176,7 @@ public class MyDataGrid : Form
    // Raise the event when 'CaptionVisible' property is changed.
    private void Grid_CaptionVisibleChanged(object sender, EventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "CaptionVisibleChanged event raised, caption is";
       // Get the state of 'CaptionVisible' property.
       bool myBool = myDataGrid.CaptionVisible;
@@ -197,7 +197,7 @@ public class MyDataGrid : Form
    // Raise the event when focus on DataGrid cell changes.
    private void Grid_CurCellChange(object sender, EventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "CurrentCellChanged event raised, cell focus is at ";
       // Get the co-ordinates of the focussed cell.
       string myPoint  = myDataGrid.CurrentCell.ColumnNumber + "," +
@@ -219,7 +219,7 @@ public class MyDataGrid : Form
    // Raise the event when DataGrid is scrolled.
    private void Grid_Scroll(object sender, EventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "Scroll event raised, DataGrid is scrolled";
       // Show the message when scrolling is done.
       MessageBox.Show(myString, "Scroll information");

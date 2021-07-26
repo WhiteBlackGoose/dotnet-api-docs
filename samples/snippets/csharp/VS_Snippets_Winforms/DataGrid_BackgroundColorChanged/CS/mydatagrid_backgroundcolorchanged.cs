@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGrid.BackButtonClick
+// System.Windows.Forms.DataGrid.BackButtonClick
 // System.Windows.Forms.DataGrid.BackgroundColorChanged
 
 /* The following program demonstrates the 'BackButtonClick'
@@ -163,7 +163,7 @@ public class MyDataGrid : Form
    // Raise the event when 'BackButton' on child table is clicked.
    private void Grid_BackClick(object sender, EventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "BackButtonClick event raised, showing parent table";
       // Show information about Back button.
       MessageBox.Show(myString, "Back button information");
@@ -193,7 +193,7 @@ public class MyDataGrid : Form
    // Raise the event when 'Background' color of DataGrid changes.
    private void Grid_ColChange(object sender, EventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "BackgroundColorChanged event raised, changed to ";
       // Get the background color of DataGrid.
       Color myColor = myDataGrid.BackgroundColor;

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ namespace IResourceServiceExample
     {
         // Initializes a string array used to store strings that 
         // this control displays.
-        public string[] resource_strings = new string[] { "Initial Default String #1", "Initial Default String #2" };
+        public string[] resource_strings = new string[] { "Initial Default string #1", "Initial Default string #2" };
 
         public ResourceTestControl()
         {
@@ -30,7 +30,7 @@ namespace IResourceServiceExample
         protected override void OnPaint(System.Windows.Forms.PaintEventArgs e)
         {
             e.Graphics.DrawString("IResourceService Example Designer Control", new Font(FontFamily.GenericMonospace, 10), new SolidBrush(Color.Blue), 2, 2);
-            e.Graphics.DrawString("String list:  (use shortcut menu in design mode)", new Font(FontFamily.GenericMonospace, 8), new SolidBrush(Color.Black), 2, 20);
+            e.Graphics.DrawString("string list:  (use shortcut menu in design mode)", new Font(FontFamily.GenericMonospace, 8), new SolidBrush(Color.Black), 2, 20);
             
             for(int i=0; i<resource_strings.Length; i++)
             {
@@ -58,7 +58,7 @@ namespace IResourceServiceExample
                 return new DesignerVerbCollection( new DesignerVerb[] { 
                     new DesignerVerb("Load Strings from Default Resources File", new EventHandler(this.LoadResources)),
                     new DesignerVerb("Create Default Resources File", new EventHandler(this.CreateResources)),
-                    new DesignerVerb("Clear ResourceTestControl String List", new EventHandler(this.ClearStrings)) });
+                    new DesignerVerb("Clear ResourceTestControl string List", new EventHandler(this.ClearStrings)) });
             }
         }
 
@@ -114,7 +114,7 @@ namespace IResourceServiceExample
             if(this.Control.GetType() == typeof(ResourceTestControl))
             {
                 ResourceTestControl rtc = (ResourceTestControl)this.Control;
-                rtc.resource_strings = new string[] { "Test String #1", "Test String #2" };
+                rtc.resource_strings = new string[] { "Test string #1", "Test string #2" };
                 this.Control.Refresh();
             }
         }

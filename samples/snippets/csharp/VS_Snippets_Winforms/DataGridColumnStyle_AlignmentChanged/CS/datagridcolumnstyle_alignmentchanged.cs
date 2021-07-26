@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGridColumnStyle.AlignmentChanged
+// System.Windows.Forms.DataGridColumnStyle.AlignmentChanged
 
 /*
  The following example demonstrates the 'AlignmentChanged' event of 'DataGridColumnStyle' class. 
@@ -53,7 +53,7 @@ public class Form1 : Form
       {
          Application.Run(new Form1());
       }
-    String myMessage = null;
+    string myMessage = null;
 
       private void Button_Click(object sender, EventArgs e)
       {

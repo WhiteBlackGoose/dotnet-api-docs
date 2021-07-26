@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Collections;
@@ -100,7 +100,7 @@ namespace ISelectionServiceExample
         
         private string GetSelectedComponents()
         {
-            string selectedString = String.Empty;
+            string selectedString = string.Empty;
             object[] components = new object[((ICollection)selectionService.GetSelectedComponents()).Count];
             ((ICollection)selectionService.GetSelectedComponents()).CopyTo(components, 0);
 

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Collections;
@@ -104,7 +104,7 @@ namespace ServiceArchitectureExample
         
         // Parent form reference for main program function access.
         private ServiceForm parent;                 
-        // String for label displayed on the control to indicate 
+        // string for label displayed on the control to indicate 
         // the control's current service-related configuration state.
         public string label;  
         
@@ -276,7 +276,7 @@ namespace ServiceArchitectureExample
                 {
                     // Obtain string and provide text service.
                     using (StringInputDialog form =
-                        new StringInputDialog("Test String"))
+                        new StringInputDialog("Test string"))
                     {
                         form.StartPosition = FormStartPosition.CenterParent;
                         if (form.ShowDialog() == DialogResult.OK)
@@ -575,7 +575,7 @@ namespace ServiceArchitectureExample
                                                                           this.ok_button});
             this.MinimumSize = new System.Drawing.Size(350, 100);
             this.Name = "StringInputDialog";
-            this.Text = "Text Service Provide String Dialog";
+            this.Text = "Text Service Provide string Dialog";
             this.ResumeLayout(false);
         }
     }

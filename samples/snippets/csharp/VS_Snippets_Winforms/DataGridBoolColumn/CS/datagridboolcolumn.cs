@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGridBoolColumn.TrueValueChanged
+// System.Windows.Forms.DataGridBoolColumn.TrueValueChanged
 // System.Windows.Forms.DataGridBoolColumn.AllowNullChanged
 // System.Windows.Forms.DataGridBoolColumn.FalseValueChanged
 
@@ -65,7 +65,7 @@ public class MyForm : System.Windows.Forms.Form
       DataRow myDataRow;
 
       //Associate 'DataColumns' with the 'DataTable' object.
-      myDataTable.Columns.Add(new DataColumn("IntegerValue", typeof(Int32)));
+      myDataTable.Columns.Add(new DataColumn("IntegerValue", typeof(int)));
       myDataTable.Columns.Add(new DataColumn("StringValue", typeof(string)));
       myDataTable.Columns.Add(new DataColumn("CurrencyValue", typeof(double)));
       myDataTable.Columns.Add(new DataColumn("BooleanValue", typeof(Boolean)));

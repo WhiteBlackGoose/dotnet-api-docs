@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGridTableStyle.ResetLinkColor
+// System.Windows.Forms.DataGridTableStyle.ResetLinkColor
 
 /* The following program demonstrates the 'ResetLinkColor'
    of 'System.Windows.Forms.DataGridTableStyle' class.
@@ -231,7 +231,7 @@ namespace DataGridSample
       private void btnResetLinkColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet1>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Link color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGridTableStyle.LinkColor;

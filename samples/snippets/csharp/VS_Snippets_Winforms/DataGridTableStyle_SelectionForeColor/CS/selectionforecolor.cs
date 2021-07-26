@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGridTableStyle.SelectionForeColor
+// System.Windows.Forms.DataGridTableStyle.SelectionForeColor
 // System.Windows.Forms.DataGridTableStyle.ResetSelectionForeColor
 
 /* The following program demonstrates the use of 'SelectionForeColor' 
@@ -197,7 +197,7 @@ namespace MyDataGridNamespace
       private void button2_Click(object sender, System.EventArgs e)
       {
 // <Snippet2>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Fore color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = customersStyle.SelectionForeColor;

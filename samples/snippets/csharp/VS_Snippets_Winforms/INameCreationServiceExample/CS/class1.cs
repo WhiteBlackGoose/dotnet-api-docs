@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.ComponentModel.Design;
 using System.ComponentModel.Design.Serialization;
@@ -55,7 +55,7 @@ namespace NameCreationServiceExample
             for(int i = 0; i < name.Length; i++)
             {
                 char ch = name[i];
-                UnicodeCategory uc = Char.GetUnicodeCategory(ch);
+                UnicodeCategory uc = char.GetUnicodeCategory(ch);
                 switch (uc) 
                 {
                     case UnicodeCategory.UppercaseLetter:       
@@ -79,7 +79,7 @@ namespace NameCreationServiceExample
             for(int i = 0; i < name.Length; i++)
             {
                 char ch = name[i];
-                UnicodeCategory uc = Char.GetUnicodeCategory(ch);
+                UnicodeCategory uc = char.GetUnicodeCategory(ch);
                 switch (uc) 
                 {
                     case UnicodeCategory.UppercaseLetter:       

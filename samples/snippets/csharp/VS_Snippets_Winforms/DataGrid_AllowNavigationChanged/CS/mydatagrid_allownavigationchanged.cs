@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGrid.AllowNavigationChanged
+// System.Windows.Forms.DataGrid.AllowNavigationChanged
 // System.Windows.Forms.DataGrid.Navigate
 
 /* The following program demonstrates the 'AllowNavigationChanged'
@@ -189,7 +189,7 @@ public class MyDataGrid : Form
    // Raise the event when navigating to another table.
    private void Grid_Navigate(object sender, NavigateEventArgs e)
    {
-      // String variable used to show message.
+      // string variable used to show message.
       string myString = "Navigate event raised, moved to another table";
       // Show the message when navigating to another table.
       MessageBox.Show(myString, "Table navigation information");

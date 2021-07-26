@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.DataGrid.SelectionBackColor
+// System.Windows.Forms.DataGrid.SelectionBackColor
 // System.Windows.Forms.DataGrid.SelectionForeColor
 // System.Windows.Forms.DataGrid.ResetSelectionBackColor
 // System.Windows.Forms.DataGrid.ResetSelectionForeColor
@@ -438,7 +438,7 @@ namespace DataGridSample
       private void btnResetSelectionBkColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet2>
-         // String variable used to show message.
+         // string variable used to show message.
          string myString = "Selection backgound color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.SelectionBackColor;
@@ -471,7 +471,7 @@ namespace DataGridSample
       private void btnResetSelectionForeColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet4>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Selection foreground color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.SelectionForeColor;
@@ -504,7 +504,7 @@ namespace DataGridSample
       private void btnResetForeColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet6>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Foreground color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.ForeColor;
@@ -535,7 +535,7 @@ namespace DataGridSample
       private void btnResetBkColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet7>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Backgound color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.BackColor;
@@ -551,7 +551,7 @@ namespace DataGridSample
       private void btnResetGridLineColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet8>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Grid line color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.GridLineColor;
@@ -567,7 +567,7 @@ namespace DataGridSample
       private void btnResetLinkColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet9>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Link color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.LinkColor;
@@ -583,7 +583,7 @@ namespace DataGridSample
       private void btnResetAlternatingBackColor_Click(object sender, System.EventArgs e)
       {
 // <Snippet10>
-         // String variable used to show message.   
+         // string variable used to show message.   
          string myString = "Alternating back color changed from: ";
          // Store current foreground color of selected cells.
          Color myCurrentColor = myDataGrid.AlternatingBackColor;
