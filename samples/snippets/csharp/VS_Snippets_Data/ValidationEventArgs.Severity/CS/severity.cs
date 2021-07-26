@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -20,7 +20,7 @@ public class Sample
         Console.ReadLine();
     }
 
-    private static void Validate(String filename, XmlSchemaSet schemaSet)
+    private static void Validate(string filename, XmlSchemaSet schemaSet)
     {
         Console.WriteLine();
         Console.WriteLine("\r\nValidating XML file {0}...", filename.ToString());

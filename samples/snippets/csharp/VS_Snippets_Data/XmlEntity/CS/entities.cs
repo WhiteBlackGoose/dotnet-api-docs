@@ -1,11 +1,11 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
 
 public class Sample
 {
-  private const String filename = "doment.xml";
+  private const string filename = "doment.xml";
 
   public static void Main()
   {

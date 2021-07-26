@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Xml;
 
@@ -12,7 +12,7 @@ class Example
 
         // Convert the DateTimeObject to a string in a specified format and display the result.
         // The specified format must be a subset of the W3C Recommendation for the XML dateTime type.
-        String timeAsString = XmlConvert.ToString(dto, "yyyy-MM-ddTHH:mm:sszzzzzzz");
+        string timeAsString = XmlConvert.ToString(dto, "yyyy-MM-ddTHH:mm:sszzzzzzz");
         Console.WriteLine(timeAsString);
     }
 }

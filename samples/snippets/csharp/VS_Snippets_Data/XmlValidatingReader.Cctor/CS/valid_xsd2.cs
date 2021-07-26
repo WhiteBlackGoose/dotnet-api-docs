@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -23,7 +23,7 @@ public class Sample
       Sample validation = new Sample();
   }
 
-  private void Validate(String filename)
+  private void Validate(string filename)
   {
       m_success = true;
       Console.WriteLine("\r\n******");

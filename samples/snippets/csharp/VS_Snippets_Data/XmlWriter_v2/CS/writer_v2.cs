@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -77,7 +77,7 @@ class Whidbey_Write_Methods
             writer.WriteEndElement();
             writer.Flush();
 
-            String output = sw.ToString();
+            string output = sw.ToString();
         }
 
         //</snippet4>

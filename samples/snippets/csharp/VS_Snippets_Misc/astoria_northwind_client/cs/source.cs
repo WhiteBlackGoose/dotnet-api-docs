@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -1873,7 +1873,7 @@ namespace NorthwindClient
 
                     foreach (Order_Detail item in o.Order_Details)
                     {
-                        Console.WriteLine(String.Format("\tItem: {0}, quantity: {1}",
+                        Console.WriteLine(string.Format("\tItem: {0}, quantity: {1}",
                             item.ProductID, item.Quantity));
                     }
                 }
@@ -1911,7 +1911,7 @@ namespace NorthwindClient
 
                     foreach (Order_Detail item in o.Order_Details)
                     {
-                        Console.WriteLine(String.Format("\tItem: {0}, quantity: {1}",
+                        Console.WriteLine(string.Format("\tItem: {0}, quantity: {1}",
                             item.ProductID, item.Quantity));
                     }
                 }
@@ -2078,7 +2078,7 @@ namespace NorthwindClient
 
                     foreach (Order_Detail item in o.Order_Details)
                     {
-                        Console.WriteLine(String.Format("\tItem: {0}, quantity: {1}",
+                        Console.WriteLine(string.Format("\tItem: {0}, quantity: {1}",
                             item.ProductID, item.Quantity));
                     }
                 }
@@ -2130,7 +2130,7 @@ namespace NorthwindClient
 
                     foreach (Order_Detail item in o.Order_Details)
                     {
-                        Console.WriteLine(String.Format("\tItem: {0}, quantity: {1}",
+                        Console.WriteLine(string.Format("\tItem: {0}, quantity: {1}",
                             item.ProductID, item.Quantity));
                     }
                 }

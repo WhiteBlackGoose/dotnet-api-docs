@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Xsl;
 
  public class Sample
  {
-   private const String stylesheet = @"c:\tmp\output.xsl";
-   private const String myURL = @"http://localhost/data";
+   private const string stylesheet = @"c:\tmp\output.xsl";
+   private const string myURL = @"http://localhost/data";
 
    public static void Main () {
 
@@ -18,7 +18,7 @@ using System.Xml.Xsl;
    // a stylesheet and secureURI is a trusted URI that can be used to create Evidence.
 //<snippet1>
 
-   public static void TransformFile (XmlReader xsltReader, String secureURL) {
+   public static void TransformFile (XmlReader xsltReader, string secureURL) {
 
     // Load the stylesheet using a default XmlUrlResolver and Evidence
     // created using the trusted URL.

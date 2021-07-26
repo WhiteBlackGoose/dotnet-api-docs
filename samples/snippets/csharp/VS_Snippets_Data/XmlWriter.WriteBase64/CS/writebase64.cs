@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -52,7 +52,7 @@ public static class TestBase64
         var xw = new XmlTextWriter(xmlFileName, Encoding.UTF8);
         xw.WriteStartDocument();
         xw.WriteStartElement("root");
-        // Create a Char writer.
+        // Create a char writer.
         var br = new BinaryReader(fileOld);
         // Set the file pointer to the end.
 

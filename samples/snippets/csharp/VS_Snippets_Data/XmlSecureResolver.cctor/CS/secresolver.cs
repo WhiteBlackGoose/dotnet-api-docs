@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Xml;
 using System.Security;
@@ -8,7 +8,7 @@ using System.Net;
  public class Sample
  {
 
-   private const String filename = @"http://localhost/data/books.xml";
+   private const string filename = @"http://localhost/data/books.xml";
 
    public static void Main () {
 
@@ -20,7 +20,7 @@ using System.Net;
 
 //<snippet1>
 
-   public static Object GetFile (String fileURL, XmlResolver resolver) {
+   public static Object GetFile (string fileURL, XmlResolver resolver) {
 
      // Generate the default PermissionSet using the file URL.
      Evidence evidence = XmlSecureResolver.CreateEvidenceForUrl(fileURL);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Xml.Schema;
 using System.Xml.XPath;
@@ -102,7 +102,7 @@ class XPathNavigatorProperties
         // ValueAsDouble, ValueAsInt32, ValueAsInt64, ValueAsSingle
         navigator.MoveToNext("numberElement", "");
         Double doubleValue = navigator.ValueAsDouble;
-        Int32 int32Value = navigator.ValueAsInt;
+        int int32Value = navigator.ValueAsInt;
         Int64 int64Value = navigator.ValueAsLong;
         Console.WriteLine(navigator.LocalName + ": " + doubleValue);
         Console.WriteLine(navigator.LocalName + ": " + int32Value);

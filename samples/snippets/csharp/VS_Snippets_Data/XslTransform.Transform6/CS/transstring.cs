@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -10,7 +10,7 @@ public class Sample {
   public static void Main() {
 
     // Create a string containing the XSLT stylesheet.
-    String xsltString =
+    string xsltString =
     @"<xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transform' version='1.0'>
         <xsl:template match='bookstore'>
            <HTML>

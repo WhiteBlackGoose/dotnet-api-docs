@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.IO;
 using System.Xml;
@@ -158,7 +158,7 @@ XmlReader reader = XmlReader.Create("book2.xml");
 // namespace URI of each node.
 while (reader.Read()) {
   if (reader.IsStartElement()) {
-    if (reader.Prefix==String.Empty)
+    if (reader.Prefix==string.Empty)
                 {
                     Console.WriteLine("<{0}>", reader.LocalName);
                 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -72,7 +72,7 @@ namespace VerifyNames
             //<snippet3>
             XmlTextWriter writer3 = new XmlTextWriter("outFile.xml", null);
             char illegalChar = '\uFFFE';
-            string charsToVerify = "Test String ";
+            string charsToVerify = "Test string ";
 
             try
             {

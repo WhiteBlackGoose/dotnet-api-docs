@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Xml;
 using System.Xml.Xsl;
@@ -6,7 +6,7 @@ using System.Xml.XPath;
 
  public class Sample
  {
-   private const String stylesheet = @"c:\tmp\output.xsl";
+   private const string stylesheet = @"c:\tmp\output.xsl";
 
    public static void Main () {
 

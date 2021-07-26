@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Data;
@@ -14,10 +14,10 @@ public class Sample
 
      // Create a DataSet and load it with customer data.
      DataSet dsNorthwind = new DataSet();
-     String sConnect;
+     string sConnect;
      sConnect="Data Source=localhost;Integrated Security=SSPI;Initial Catalog=Northwind";
      SqlConnection nwconnect = new SqlConnection(sConnect);
-     String sCommand = "Select * from Customers where Region='WA'";
+     string sCommand = "Select * from Customers where Region='WA'";
      SqlDataAdapter myDataAdapter = new SqlDataAdapter(sCommand, nwconnect);
      myDataAdapter.Fill(dsNorthwind,"Customers");
 

@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -7,7 +7,7 @@ namespace Microsoft.Samples.Xml
 {
     public class Sample
     {
-        private const String filename = "book.xml";
+        private const string filename = "book.xml";
 
         public static void Main()
         {
@@ -15,7 +15,7 @@ namespace Microsoft.Samples.Xml
             mySample.Run(filename);
         }
 
-        public void Run(String args)
+        public void Run(string args)
         {
 
             // Create and load the XML document.

@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Xml;
 using System.Xml.Schema;
@@ -10,7 +10,7 @@ namespace Microsoft.Samples.Xml
         private XmlDocumentSample() { }
 
         static XmlReader reader;
-        static String filename = "bookdtd.xml";
+        static string filename = "bookdtd.xml";
 
         public static void Main()
         {
