@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Text;
 using System.Data.OleDb;
@@ -9,28 +9,28 @@ namespace DataAdapterIDataAdapterUpdateCS
     {
         static void Main()
         {
-            string connectionString = GetConnectionString();
-            string queryString = "SELECT CompanyName FROM dbo.Shippers;";
+            string connectionstring = GetConnectionstring();
+            string querystring = "SELECT CompanyName FROM dbo.Shippers;";
             DataSet dataSet = CreateCommandAndUpdate(
-                connectionString, queryString);
+                connectionstring, querystring);
             Console.ReadLine();
         }
 
         // <Snippet1>
         static private DataSet CreateCommandAndUpdate(
-            string connectionString,
-            string queryString)
+            string connectionstring,
+            string querystring)
         {
             DataSet dataSet = new DataSet();
 
             using (OleDbConnection connection =
-                       new OleDbConnection(connectionString))
+                       new OleDbConnection(connectionstring))
             {
                 connection.Open();
                 OleDbDataAdapter adapter =
                     new OleDbDataAdapter();
                 adapter.SelectCommand =
-                    new OleDbCommand(queryString, connection);
+                    new OleDbCommand(querystring, connection);
                 OleDbCommandBuilder builder =
                     new OleDbCommandBuilder(adapter);
 
@@ -46,7 +46,7 @@ namespace DataAdapterIDataAdapterUpdateCS
         }
         // </Snippet1>
 
-        static private string GetConnectionString()
+        static private string GetConnectionstring()
         {
             // To avoid storing the connection string in your code,
             // you can retrieve it from a configuration file.

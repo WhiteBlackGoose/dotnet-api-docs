@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -9,9 +9,9 @@ public class Form1: Form
     // <Snippet1>
     private void AddDataColumn(DataTable table)
     {
-        System.Type typeInt32 =
+        System.Type typeint =
             System.Type.GetType("System.Int32");
-        DataColumn column = new DataColumn("id", typeInt32);
+        DataColumn column = new DataColumn("id", typeint);
 
         // Set various properties.
         column.AutoIncrement = true;

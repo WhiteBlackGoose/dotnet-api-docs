@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
@@ -17,8 +17,8 @@ public class Form1: Form
     myDataAdapter.TableMappings.Add("Products","DataProducts");
     string myMessage = "Table Mappings:\n";
     for(int i=0;i < myDataAdapter.TableMappings.Count;i++) {
-       myMessage += i.ToString() + " "
-          + myDataAdapter.TableMappings[i].ToString() + "\n";
+       myMessage += i.Tostring() + " "
+          + myDataAdapter.TableMappings[i].Tostring() + "\n";
     }
     MessageBox.Show(myMessage);
  }

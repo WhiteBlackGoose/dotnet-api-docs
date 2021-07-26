@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -15,13 +15,13 @@ public DataTable MakeDataTable(){
     myTable = new DataTable("My Table");
 
     // Create DataColumn objects of data types.
-    DataColumn colString = new DataColumn("StringCol");
-    colString.DataType = System.Type.GetType("System.String");
-    myTable.Columns.Add(colString);
+    DataColumn colstring = new DataColumn("stringCol");
+    colstring.DataType = System.Type.GetType("System.String");
+    myTable.Columns.Add(colstring);
 
-    DataColumn colInt32 = new DataColumn("Int32Col");
-    colInt32.DataType = System.Type.GetType("System.Int32");
-    myTable.Columns.Add(colInt32);
+    DataColumn colint = new DataColumn("intCol");
+    colint.DataType = System.Type.GetType("System.Int32");
+    myTable.Columns.Add(colint);
 
     DataColumn colBoolean = new DataColumn("BooleanCol");
     colBoolean.DataType = System.Type.GetType("System.Boolean");
@@ -46,8 +46,8 @@ public DataTable MakeDataTable(){
     // Populate one row with values.
     myNewRow = myTable.NewRow();
 
-    myNewRow["StringCol"] = "Item Name";
-    myNewRow["Int32Col"] = 2147483647;
+    myNewRow["stringCol"] = "Item Name";
+    myNewRow["intCol"] = 2147483647;
     myNewRow["BooleanCol"] = true;
     myNewRow["TimeSpanCol"] = new TimeSpan(10,22,10,15,100);
     myNewRow["DateTimeCol"] = System.DateTime.Today;

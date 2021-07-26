@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Windows.Forms;
 
@@ -21,7 +21,7 @@ public class Form1: Form
             Console.WriteLine("Constraint Name: "
                 + constraint.ConstraintName);
             Console.WriteLine("Type: "
-                + constraint.GetType().ToString());
+                + constraint.GetType().Tostring());
 
             // If the constraint is a UniqueConstraint,
             // print its properties using a function below.

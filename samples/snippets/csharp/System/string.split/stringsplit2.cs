@@ -1,6 +1,6 @@
-﻿using System;
+using System;
 
-public class StringSplit2
+public class stringSplit2
 {
     public static void SplitWithCount()
     {
