@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example
@@ -20,7 +20,7 @@ public class Example
          // Skip the ' character.
          if (ch == '\u0027') continue;
               
-         if (Char.IsWhiteSpace(ch) | (Char.IsPunctuation(ch))) {
+         if (char.IsWhiteSpace(ch) | (char.IsPunctuation(ch))) {
             chars.Add(nChars);
             nChars = 0;
          }
@@ -35,7 +35,7 @@ public class Example
          string s = te.GetTextElement();   
          // Skip the ' character.
          if (s == "\u0027") continue;
-         if ( String.IsNullOrEmpty(s.Trim()) | (s.Length == 1 && Char.IsPunctuation(Convert.ToChar(s)))) {
+         if ( string.IsNullOrEmpty(s.Trim()) | (s.Length == 1 && char.IsPunctuation(Convert.ToChar(s)))) {
             elements.Add(nChars);         
             nChars = 0;
          }
@@ -46,12 +46,12 @@ public class Example
 
       // Display character counts.
       Console.WriteLine("{0,6} {1,20} {2,20}",
-                        "Word #", "Char Objects", "Characters"); 
+                        "Word #", "char Objects", "Characters"); 
       for (int ctr = 0; ctr < chars.Count; ctr++) 
          Console.WriteLine("{0,6} {1,20} {2,20}",
                            ctr, chars[ctr], elements[ctr]); 
       // The example displays the following output:
-      //       Word #         Char Objects           Characters
+      //       Word #         char Objects           Characters
       //            0                    2                    2
       //            1                    4                    4
       //            2                    3                    3

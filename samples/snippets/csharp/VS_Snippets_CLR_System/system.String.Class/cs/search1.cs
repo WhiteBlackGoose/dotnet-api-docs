@@ -1,4 +1,4 @@
-﻿// <Snippet22>
+// <Snippet22>
 using System;
 using System.Globalization;
 
@@ -8,8 +8,8 @@ public class Example
    {
       String[] cultureNames = { "da-DK", "en-US" };
       CompareInfo ci;
-      String str = "aerial";
-      Char ch = 'æ';  // U+00E6
+      string str = "aerial";
+      char ch = 'æ';  // U+00E6
       
       Console.Write("Ordinal comparison -- ");
       Console.WriteLine("Position of '{0}' in {1}: {2}", ch, str,

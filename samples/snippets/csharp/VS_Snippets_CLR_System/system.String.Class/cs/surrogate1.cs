@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -11,7 +11,7 @@ public class Example
 
       Console.WriteLine();
       Console.WriteLine("   Is Surrogate Pair: {0}", 
-                        Char.IsSurrogatePair(surrogate[0], surrogate[1]));
+                        char.IsSurrogatePair(surrogate[0], surrogate[1]));
       // The example displays the following output:
       //       U+D800 U+DC03
       //          Is Surrogate Pair: True

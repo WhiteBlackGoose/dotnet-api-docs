@@ -1,4 +1,4 @@
-﻿// <Snippet23>
+// <Snippet23>
 using System;
 using System.Globalization;
 
@@ -10,7 +10,7 @@ public class Example
         string s2 = "animal";
       
         Console.WriteLine("Comparison of '{0}' and '{1}': {2}", 
-                        s1, s2, String.Compare(s1, s2, true,
+                        s1, s2, string.Compare(s1, s2, true,
                         CultureInfo.InvariantCulture));
 
         // The example displays the following output:

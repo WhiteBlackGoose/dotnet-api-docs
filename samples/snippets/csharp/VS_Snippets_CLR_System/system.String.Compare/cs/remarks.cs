@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 public class Example
@@ -13,9 +13,9 @@ public class Example
 public class CompareSample1_1
 {
     //<Snippet2>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet2>
 }
@@ -24,9 +24,9 @@ public class CompareSample1_1
 public class CompareSample1_2
 {
     //<Snippet3>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet3>
 }
@@ -35,9 +35,9 @@ public class CompareSample1_2
 public class CompareSample2_1
 {
     //<Snippet4>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet4>
 }
@@ -46,9 +46,9 @@ public class CompareSample2_1
 public class CompareSample2_2
 {
     //<Snippet5>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet5>
 }
@@ -58,9 +58,9 @@ public class CompareSample2_2
 public class CompareSample3_1
 {
     //<Snippet6>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet6>
 }
@@ -70,9 +70,9 @@ public class CompareSample3_1
 public class CompareSample3_2
 {
     //<Snippet7>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet7>
 }
@@ -82,9 +82,9 @@ public class CompareSample3_2
 public class CompareSample4_1
 {
     //<Snippet8>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet8>
 }
@@ -94,9 +94,9 @@ public class CompareSample4_1
 public class CompareSample4_2
 {
     //<Snippet9>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet9>
 }
@@ -105,9 +105,9 @@ public class CompareSample4_2
 public class CompareSample5_1
 {
     //<Snippet10>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet10>
 }
@@ -116,9 +116,9 @@ public class CompareSample5_1
 public class CompareSample5_2
 {
     //<Snippet11>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet11>
 }
@@ -127,9 +127,9 @@ public class CompareSample5_2
 public class CompareSample6_1
 {
     //<Snippet12>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet12>
 }
@@ -138,9 +138,9 @@ public class CompareSample6_1
 public class CompareSample6_2
 {
     //<Snippet13>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet13>
 }
@@ -149,9 +149,9 @@ public class CompareSample6_2
 public class CompareSample7_1
 {
     //<Snippet14>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet14>
 }
@@ -160,9 +160,9 @@ public class CompareSample7_1
 public class CompareSample7_2
 {
     //<Snippet15>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet15>
 }
@@ -171,9 +171,9 @@ public class CompareSample7_2
 public class CompareSample8_1
 {
     //<Snippet16>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, true) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, true) == 0);
     }
     //</Snippet16>
 }
@@ -182,9 +182,9 @@ public class CompareSample8_1
 public class CompareSample8_2
 {
     //<Snippet17>
-    static bool IsFileURI(String path)
+    static bool IsFileURI(string path)
     {
-        return (String.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
+        return (string.Compare(path, 0, "file:", 0, 5, StringComparison.OrdinalIgnoreCase) == 0);
     }
     //</Snippet17>
 }

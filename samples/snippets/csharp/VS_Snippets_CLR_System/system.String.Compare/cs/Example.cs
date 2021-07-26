@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -12,7 +12,7 @@ public class Example
         int result;
 
         // Cultural (linguistic) comparison.
-        result = String.Compare(string1, string2, new CultureInfo("en-US"), 
+        result = string.Compare(string1, string2, new CultureInfo("en-US"), 
                               CompareOptions.None);
         if (result > 0)
             relation = "comes after";
@@ -25,7 +25,7 @@ public class Example
                         string1, relation, string2);
 
         // Cultural (linguistic) case-insensitive comparison.
-        result = String.Compare(string1, string2, new CultureInfo("en-US"), 
+        result = string.Compare(string1, string2, new CultureInfo("en-US"), 
                               CompareOptions.IgnoreCase);
         if (result > 0)
             relation = "comes after";
@@ -38,7 +38,7 @@ public class Example
                         string1, relation, string2);
  
         // Culture-insensitive ordinal comparison.
-        result = String.CompareOrdinal(string1, string2);
+        result = string.CompareOrdinal(string1, string2);
         if (result > 0)
             relation = "comes after";
         else if (result == 0)
