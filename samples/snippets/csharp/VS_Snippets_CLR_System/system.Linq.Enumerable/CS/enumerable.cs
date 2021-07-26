@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -512,7 +512,7 @@ namespace SequenceExamples
             }
             catch (OverflowException)
             {
-                Console.WriteLine("The count is too large to store as an Int32.");
+                Console.WriteLine("The count is too large to store as an int.");
                 Console.WriteLine("Try using the LongCount() method instead.");
             }
 
@@ -544,7 +544,7 @@ namespace SequenceExamples
                 }
                 catch (OverflowException)
                 {
-                    Console.WriteLine("The count is too large to store as an Int32.");
+                    Console.WriteLine("The count is too large to store as an int.");
                     Console.WriteLine("Try using the LongCount() method instead.");
                 }
             }
@@ -717,7 +717,7 @@ namespace SequenceExamples
             Console.WriteLine(
                 "The name chosen at index {0} is '{1}'.",
                 index,
-                String.IsNullOrEmpty(name) ? "<no name at this index>" : name);
+                string.IsNullOrEmpty(name) ? "<no name at this index>" : name);
 
             /*
              This code produces the following output:
@@ -1350,7 +1350,7 @@ namespace SequenceExamples
             string[] fruits = { };
             string last = fruits.LastOrDefault();
             Console.WriteLine(
-                String.IsNullOrEmpty(last) ? "<string is null or empty>" : last);
+                string.IsNullOrEmpty(last) ? "<string is null or empty>" : last);
 
             /*
              This code produces the following output:
@@ -1977,7 +1977,7 @@ namespace SequenceExamples
             IEnumerable<string> strings =
                 Enumerable.Repeat("I like programming.", 15);
 
-            foreach (String str in strings)
+            foreach (string str in strings)
             {
                 Console.WriteLine(str);
             }
@@ -2092,7 +2092,7 @@ namespace SequenceExamples
             class PetOwner
             {
                 public string Name { get; set; }
-                public List<String> Pets { get; set; }
+                public List<string> Pets { get; set; }
             }
 
             public static void SelectManyEx1()
@@ -2120,7 +2120,7 @@ namespace SequenceExamples
 
                 // This code shows how to use Select()
                 // instead of SelectMany().
-                IEnumerable<List<String>> query2 =
+                IEnumerable<List<string>> query2 =
                     petOwners.Select(petOwner => petOwner.Pets);
 
                 Console.WriteLine("\nUsing Select():");
@@ -2128,7 +2128,7 @@ namespace SequenceExamples
                 // Notice that two foreach loops are required to
                 // iterate through the results
                 // because the query returns a collection of arrays.
-                foreach (List<String> petList in query2)
+                foreach (List<string> petList in query2)
                 {
                     foreach (string pet in petList)
                     {
@@ -2433,7 +2433,7 @@ namespace SequenceExamples
             string fruit2 = fruits2.SingleOrDefault();
 
             Console.WriteLine(
-                String.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2);
+                string.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2);
 
             /*
              This code produces the following output:
@@ -2465,7 +2465,7 @@ namespace SequenceExamples
                 fruits.SingleOrDefault(fruit => fruit.Length > 15);
 
             Console.WriteLine(
-                String.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2);
+                string.IsNullOrEmpty(fruit2) ? "No such string!" : fruit2);
 
             /*
              This code produces the following output:
@@ -2685,7 +2685,7 @@ namespace SequenceExamples
                                   "passionfruit", "grape" };
 
             IEnumerable<string> query =
-                fruits.TakeWhile(fruit => String.Compare("orange", fruit, true) != 0);
+                fruits.TakeWhile(fruit => string.Compare("orange", fruit, true) != 0);
 
             foreach (string fruit in query)
             {

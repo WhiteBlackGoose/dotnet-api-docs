@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text;
@@ -57,7 +57,7 @@ class FStreamLock
                             fileStream.Seek(0, SeekOrigin.Begin);
                             fileStream.Read(
                                 readText, 0, (int)fileStream.Length);
-                            tempString = new String(
+                            tempString = new string(
                                 uniEncoding.GetChars(
                                 readText, 0, readText.Length));
                             Console.WriteLine(tempString);
@@ -87,7 +87,7 @@ class FStreamLock
                                 SeekOrigin.Begin);
                             fileStream.Read(
                                 readText, textLength - 1, byteCount);
-                            tempString = new String(
+                            tempString = new string(
                                 uniEncoding.GetChars(
                                 readText, textLength - 1, byteCount));
                             recordNumber = int.Parse(tempString) + 1;

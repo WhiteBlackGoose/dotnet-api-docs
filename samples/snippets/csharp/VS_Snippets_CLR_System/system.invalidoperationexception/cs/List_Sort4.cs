@@ -1,17 +1,17 @@
-﻿// <Snippet15>
+// <Snippet15>
 using System;
 using System.Collections.Generic;
 
 public class Person
 {
-   public Person(String fName, String lName)
+   public Person(string fName, string lName)
    {
       FirstName = fName;
       LastName = lName;
    }
 
-   public String FirstName { get; set; }
-   public String LastName { get; set; }
+   public string FirstName { get; set; }
+   public string LastName { get; set; }
 }
 
 public class Example
@@ -29,8 +29,8 @@ public class Example
 
    public static int PersonComparison(Person x, Person y)
    {
-      return String.Format("{0} {1}", x.LastName, x.FirstName).
-             CompareTo(String.Format("{0} {1}", y.LastName, y.FirstName));
+      return string.Format("{0} {1}", x.LastName, x.FirstName).
+             CompareTo(string.Format("{0} {1}", y.LastName, y.FirstName));
    }
 }
 // The example displays the following output:

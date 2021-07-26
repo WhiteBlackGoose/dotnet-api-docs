@@ -1,22 +1,22 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Collections.Generic;
 
 public class Person : IComparable<Person>
 {
-   public Person(String fName, String lName)
+   public Person(string fName, string lName)
    {
       FirstName = fName;
       LastName = lName;
    }
 
-   public String FirstName { get; set; }
-   public String LastName { get; set; }
+   public string FirstName { get; set; }
+   public string LastName { get; set; }
 
    public int CompareTo(Person other)
    {
-      return String.Format("{0} {1}", LastName, FirstName).
-             CompareTo(String.Format("{0} {1}", other.LastName, other.FirstName));
+      return string.Format("{0} {1}", LastName, FirstName).
+             CompareTo(string.Format("{0} {1}", other.LastName, other.FirstName));
    }
 }
 

@@ -1,4 +1,4 @@
-﻿// <Snippet51>
+// <Snippet51>
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -12,7 +12,7 @@ class Example
 
     static async Task ReadAndDisplayFilesAsync()
     {
-        String filename = "TestFile1.txt";
+        string filename = "TestFile1.txt";
         Char[] buffer;
 
         using (var sr = new StreamReader(filename)) {
@@ -20,7 +20,7 @@ class Example
             await sr.ReadAsync(buffer, 0, (int)sr.BaseStream.Length);
         }
 
-        Console.WriteLine(new String(buffer));
+        Console.WriteLine(new string(buffer));
     }
 }
 // The example displays the following output:

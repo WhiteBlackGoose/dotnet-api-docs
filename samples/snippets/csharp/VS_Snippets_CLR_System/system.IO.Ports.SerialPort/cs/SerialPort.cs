@@ -1,4 +1,4 @@
-﻿//<snippet10>
+//<snippet10>
 // Use this code inside a project created with the Visual C# > Windows Desktop > Console Application template.
 // Replace the code in Program.cs with this code.
 
@@ -54,7 +54,7 @@ public class PortChat
             else
             {
                 _serialPort.WriteLine(
-                    String.Format("<{0}>: {1}", name, message));
+                    string.Format("<{0}>: {1}", name, message));
             }
         }
 

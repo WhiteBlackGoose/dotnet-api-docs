@@ -1,4 +1,4 @@
-﻿//<snippet6>
+//<snippet6>
 using System;
 using System.IO;
 using System.Text;
@@ -41,10 +41,10 @@ public class DumpFileSample
         StringBuilder dumptext = new StringBuilder("        ", 16 * 4 + 8);
         for (i = 0; i < len; i++)
         {
-            dumptext.Insert(j * 3, String.Format("{0:X2} ", (int)bdata[i]));
+            dumptext.Insert(j * 3, string.Format("{0:X2} ", (int)bdata[i]));
             dchar = (char)bdata[i];
             //' replace 'non-printable' chars with a '.'.
-            if (Char.IsWhiteSpace(dchar) || Char.IsControl(dchar))
+            if (char.IsWhiteSpace(dchar) || char.IsControl(dchar))
             {
                 dchar = '.';
             }

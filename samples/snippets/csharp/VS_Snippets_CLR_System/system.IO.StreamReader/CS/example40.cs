@@ -1,4 +1,4 @@
-﻿// <Snippet40>
+// <Snippet40>
 using System;
 using System.IO;
 
@@ -13,7 +13,7 @@ namespace ConsoleApplication
 
         static async Task ReadCharacters()
         {
-            String result;
+            string result;
             using (StreamReader reader = File.OpenText("existingfile.txt"))
             {
                 Console.WriteLine("Opened file.");
