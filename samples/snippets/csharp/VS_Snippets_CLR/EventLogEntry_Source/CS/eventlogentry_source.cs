@@ -1,4 +1,4 @@
-﻿// System.Diagnostics.EventLogEntry.EntryType
+// System.Diagnostics.EventLogEntry.EntryType
 // System.Diagnostics.EventLogEntry.Source
 
 /*
@@ -16,7 +16,7 @@ using System.Diagnostics;
    {
       public static void Main()
       {
-         String myEventType=null;
+         string myEventType=null;
          // Associate the instance of 'EventLog' with local System Log.
          EventLog myEventLog = new EventLog("System", ".");
          Console.WriteLine("1:Error");

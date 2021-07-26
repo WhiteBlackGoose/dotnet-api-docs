@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -7,12 +7,12 @@ public class Class1
       // <Snippet1>
       string name = "Fred";
       // <Snippet9>
-      String.Format("Name = {0}, hours = {1:hh}", name, DateTime.Now);
+      string.Format("Name = {0}, hours = {1:hh}", name, DateTime.Now);
       // </Snippet9>
       // </Snippet1>
 
       // <Snippet3>
-      string FormatString1 = String.Format("{0:dddd MMMM}", DateTime.Now);
+      string FormatString1 = string.Format("{0:dddd MMMM}", DateTime.Now);
       string FormatString2 = DateTime.Now.ToString("dddd MMMM");
       // </Snippet3>
 
@@ -32,7 +32,7 @@ public class Class1
    {
       // <Snippet5>
       string myName = "Fred";
-      Console.WriteLine(String.Format("Name = {0}, hours = {1:hh}, minutes = {1:mm}",
+      Console.WriteLine(string.Format("Name = {0}, hours = {1:hh}, minutes = {1:mm}",
             myName, DateTime.Now));
       // Depending on the current time, the example displays output like the following:
       //    Name = Fred, hours = 11, minutes = 30
@@ -45,17 +45,17 @@ public class Class1
       string myFName = "Fred";
       string myLName = "Opals";
       int myInt = 100;
-      string FormatFName = String.Format("First Name = |{0,10}|", myFName);
-      string FormatLName = String.Format("Last Name = |{0,10}|", myLName);
-      string FormatPrice = String.Format("Price = |{0,10:C}|", myInt);
+      string FormatFName = string.Format("First Name = |{0,10}|", myFName);
+      string FormatLName = string.Format("Last Name = |{0,10}|", myLName);
+      string FormatPrice = string.Format("Price = |{0,10:C}|", myInt);
       Console.WriteLine(FormatFName);
       Console.WriteLine(FormatLName);
       Console.WriteLine(FormatPrice);
       Console.WriteLine();
 
-      FormatFName = String.Format("First Name = |{0,-10}|", myFName);
-      FormatLName = String.Format("Last Name = |{0,-10}|", myLName);
-      FormatPrice = String.Format("Price = |{0,-10:C}|", myInt);
+      FormatFName = string.Format("First Name = |{0,-10}|", myFName);
+      FormatLName = string.Format("Last Name = |{0,-10}|", myLName);
+      FormatPrice = string.Format("Price = |{0,-10:C}|", myInt);
       Console.WriteLine(FormatFName);
       Console.WriteLine(FormatLName);
       Console.WriteLine(FormatPrice);

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Reflection;
 using System.Reflection.Emit;
 
@@ -16,11 +16,11 @@ public class FieldBuilder_Sample
       // Define a public class named "DynamicClass" in the assembly.
       TypeBuilder typBuilder = modBuilder.DefineType("DynamicClass", TypeAttributes.Public);
 
-      // Define a private String field named "DynamicField" in the type.
+      // Define a private string field named "DynamicField" in the type.
       FieldBuilder fldBuilder = typBuilder.DefineField("DynamicField",
           typeof(string), FieldAttributes.Private | FieldAttributes.Static);
       // Create the constructor.
-      Type[] constructorArgs = { typeof(String) };
+      Type[] constructorArgs = { typeof(string) };
       ConstructorBuilder constructor = typBuilder.DefineConstructor(
          MethodAttributes.Public, CallingConventions.Standard, constructorArgs);
       ILGenerator constructorIL = constructor.GetILGenerator();
@@ -34,7 +34,7 @@ public class FieldBuilder_Sample
 
       // Create the DynamicMethod method.
       MethodBuilder methBuilder= typBuilder.DefineMethod("DynamicMethod",
-                           MethodAttributes.Public,typeof(String),null);
+                           MethodAttributes.Public,typeof(string),null);
       ILGenerator methodIL = methBuilder.GetILGenerator();
       methodIL.Emit(OpCodes.Ldarg_0);
       methodIL.Emit(OpCodes.Ldfld, fldBuilder);

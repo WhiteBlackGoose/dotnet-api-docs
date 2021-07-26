@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Diagnostics;
 
@@ -56,7 +56,7 @@ namespace EventLogSamples
 
                 // Use the default message dll.
 
-                messageFile =  String.Format("{0}\\{1}",
+                messageFile =  string.Format("{0}\\{1}",
                         System.Environment.CurrentDirectory,
                         "EventLogMsgs.dll");
             }
@@ -157,7 +157,7 @@ namespace EventLogSamples
                 // for the event log "myNewLog."  Use the resource file
                 // EventLogMsgs.dll in the current directory for message text.
 
-                string messageFile =  String.Format("{0}\\{1}",
+                string messageFile =  string.Format("{0}\\{1}",
                     System.Environment.CurrentDirectory,
                     "EventLogMsgs.dll");
 

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -13,12 +13,12 @@ public class Example
 {
     public static void Main()
     {
-        // Get type handles for Test<String> and its field.
+        // Get type handles for Test<string> and its field.
         RuntimeTypeHandle rth = typeof(Test<string>).TypeHandle;
         RuntimeFieldHandle rfh = typeof(Test<string>).GetField("TestField").FieldHandle;
 
         // When a field belongs to a constructed generic type,
-        // such as Test<String>, retrieving the field from the
+        // such as Test<string>, retrieving the field from the
         // field handle requires the type handle of the constructed
         // generic type. An exception is thrown if the type is not
         // included.

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text;
@@ -65,7 +65,7 @@ class Test
 //Writing was disallowed, as expected: System.NotSupportedException: Stream does
 //not support writing.
 //   at System.IO.__Error.WriteNotSupported()
-//   at System.IO.FileStream.Write(Byte[] array, Int32 offset, Int32 count)
+//   at System.IO.FileStream.Write(Byte[] array, int offset, int count)
 //   at Test.Main() in C:\Documents and Settings\My Computer\My Documents\
 //Visual Studio 2005\Projects\finfo open2\finfo open2\Program.cs:line 39
 

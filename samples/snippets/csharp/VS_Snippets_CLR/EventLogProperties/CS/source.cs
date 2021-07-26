@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 
 using System;
 using System.IO;
@@ -20,9 +20,9 @@ namespace EventLogSamples
             Console.WriteLine();
             Console.WriteLine("Enter the name of an event log to change the");
             Console.WriteLine("overflow policy (or press Enter to exit): ");
-            String input = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            if (!String.IsNullOrEmpty(input))
+            if (!string.IsNullOrEmpty(input))
             {
                 ChangeEventLogOverflowAction(input);
             }
@@ -30,7 +30,7 @@ namespace EventLogSamples
 
         // Prompt the user for the overflow policy setting.
         static void GetNewOverflowSetting(ref OverflowAction newOverflow,
-            ref Int32 numDays)
+            ref int numDays)
         {
 
             Console.Write("Enter the new overflow policy setting [");
@@ -39,9 +39,9 @@ namespace EventLogSamples
             Console.Write(" OverwriteAsNeeded");
             Console.WriteLine("] : ");
 
-            String input = Console.ReadLine();
+            string input = Console.ReadLine();
 
-            if (!String.IsNullOrEmpty(input))
+            if (!string.IsNullOrEmpty(input))
             {
                 switch (input.Trim().ToUpper(CultureInfo.InvariantCulture))
                 {
@@ -49,7 +49,7 @@ namespace EventLogSamples
                         newOverflow = OverflowAction.OverwriteOlder;
                         Console.WriteLine("Enter the number of days to retain events: ");
                         input = Console.ReadLine();
-                        if ((!Int32.TryParse(input, out numDays)) ||
+                        if ((!int.TryParse(input, out numDays)) ||
                             (numDays == 0))
                         {
                             Console.WriteLine("  Invalid input, defaulting to 7 days.");
@@ -142,7 +142,7 @@ namespace EventLogSamples
         // <Snippet3>
         // Display the current event log overflow settings, and
         // prompt the user to input a new overflow setting.
-        public static void ChangeEventLogOverflowAction(String logName)
+        public static void ChangeEventLogOverflowAction(string logName)
         {
             if (EventLog.Exists(logName))
             {
@@ -152,7 +152,7 @@ namespace EventLogSamples
                 Console.WriteLine("  Event log {0}", inputLog.Log);
 
                 OverflowAction logOverflow = inputLog.OverflowAction;
-                Int32 numDays = inputLog.MinimumRetentionDays;
+                int numDays = inputLog.MinimumRetentionDays;
 
                 Console.WriteLine("  Current overflow setting = {0}",
                     logOverflow.ToString());

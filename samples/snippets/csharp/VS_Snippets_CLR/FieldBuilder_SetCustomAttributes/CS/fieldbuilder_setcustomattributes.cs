@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.FieldBuilder.SetCustomAttribute(ConstructorInfo,byte[])
+// System.Reflection.Emit.FieldBuilder.SetCustomAttribute(ConstructorInfo,byte[])
 // System.Reflection.Emit.FieldBuilder.SetCustomAttribute(CustomAttributeBuilder)
 
 /*
@@ -55,9 +55,9 @@ namespace MySample
          // Define a public class named 'CustomClass' in the assembly.
          TypeBuilder myTypeBuilder = myModuleBuilder.DefineType("CustomClass",
             TypeAttributes.Public);
-         // Define a private String field named 'MyField' in the type.
+         // Define a private string field named 'MyField' in the type.
          FieldBuilder myFieldBuilder =
-            myTypeBuilder.DefineField("MyField", typeof(String), FieldAttributes.Public);
+            myTypeBuilder.DefineField("MyField", typeof(string), FieldAttributes.Public);
          Type myAttributeType1 = typeof(MyAttribute1);
          // Create a Constructorinfo object for attribute 'MyAttribute1'.
          ConstructorInfo myConstructorInfo = myAttributeType1.GetConstructor(

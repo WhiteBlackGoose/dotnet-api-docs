@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 
 public class TestClass
@@ -30,7 +30,7 @@ public class Example
 // The example displays the following output:
 //    Bad argument: TestClass (type TestClass)
 //    Comparing 'some text' with 'TestClass': -1
-//    Bad argument: 123 (type Int32)
+//    Bad argument: 123 (type int)
 //    Comparing 'some text' with '123': 1
 //    Comparing 'some text' with 'some text': 0
 //    Comparing 'some text' with 'Some Text': -1

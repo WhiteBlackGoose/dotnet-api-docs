@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.FieldBuilder.ReflectedType
+// System.Reflection.Emit.FieldBuilder.ReflectedType
 // System.Reflection.Emit.FieldBuilder.Attributes
 
 /*
@@ -30,11 +30,11 @@ public class FieldBuilder_Sample
       // Define a public class named "MyClass" in the assembly.
       TypeBuilder myTypeBuilder= myModuleBuilder.DefineType("MyClass",TypeAttributes.Public);
 
-      // Define a private String field named "MyField" in the type.
+      // Define a private string field named "MyField" in the type.
       FieldBuilder myFieldBuilder= myTypeBuilder.DefineField("MyField",
          typeof(string),FieldAttributes.Private|FieldAttributes.Static);
       // Create the constructor.
-      Type[] constructorArgs = { typeof(String) };
+      Type[] constructorArgs = { typeof(string) };
       ConstructorBuilder myConstructor = myTypeBuilder.DefineConstructor(
          MethodAttributes.Public, CallingConventions.Standard, constructorArgs);
       ILGenerator constructorIL = myConstructor.GetILGenerator();
@@ -48,7 +48,7 @@ public class FieldBuilder_Sample
 
       // Create the MyMethod method.
       MethodBuilder myMethodBuilder= myTypeBuilder.DefineMethod("MyMethod",
-         MethodAttributes.Public,typeof(String),null);
+         MethodAttributes.Public,typeof(string),null);
       ILGenerator methodIL = myMethodBuilder.GetILGenerator();
       methodIL.Emit(OpCodes.Ldarg_0);
       methodIL.Emit(OpCodes.Ldfld, myFieldBuilder);

@@ -1,8 +1,8 @@
-﻿// System.Diagnostics.EventLog.WriteEntry(String,EventLogEntryType,Int32,Int16,Byte[])
+// System.Diagnostics.EventLog.WriteEntry(string,EventLogEntryType,int,Int16,Byte[])
 
 /*
  The following sample demonstrates the
- 'WriteEntry(String, EventLogEntryType, Int32, Int16, Byte[])' method of
+ 'WriteEntry(string, EventLogEntryType, int, Int16, Byte[])' method of
  'EventLog' class. It writes an entry to a custom event log, "MyLog".
  It creates the source "MySource" if the source does not already exist.
  It creates an 'EventLog' object and calls 'WriteEntry' passing the
