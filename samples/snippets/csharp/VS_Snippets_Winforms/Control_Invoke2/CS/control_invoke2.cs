@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.Control.Invoke(Delegate);
+// System.Windows.Forms.Control.Invoke(Delegate);
 
 // <Snippet1>
 /*
@@ -48,7 +48,7 @@ using System.Threading;
       }
       public void AddListItemMethod()
       {
-         String myItem;
+         string myItem;
          for(int i=1;i<6;i++)
          {
             myItem = "MyListItem" + i.ToString();

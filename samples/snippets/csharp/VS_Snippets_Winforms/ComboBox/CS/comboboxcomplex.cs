@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Win32Form1Namespace {
 
@@ -62,12 +62,12 @@ namespace Win32Form1Namespace {
             this.radioButton1.Location = new System.Drawing.Point(8, 184);
             this.radioButton1.Size = new System.Drawing.Size(128, 24);
             this.radioButton1.TabIndex = 5;
-            this.radioButton1.Text = "String 1";
+            this.radioButton1.Text = "string 1";
             this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             this.radioButton2.Location = new System.Drawing.Point(8, 216);
             this.radioButton2.Size = new System.Drawing.Size(128, 24);
             this.radioButton2.TabIndex = 5;
-            this.radioButton2.Text = "String 2";
+            this.radioButton2.Text = "string 2";
             this.label2.Location = new System.Drawing.Point(0, 40);
             this.label2.Size = new System.Drawing.Size(48, 24);
             this.label2.TabIndex = 7;
@@ -76,7 +76,7 @@ namespace Win32Form1Namespace {
             this.label3.Location = new System.Drawing.Point(0, 72);
             this.label3.Size = new System.Drawing.Size(48, 23);
             this.label3.TabIndex = 8;
-            this.label3.Text = "String 2";
+            this.label3.Text = "string 2";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ClientSize = new System.Drawing.Size(292, 273);
             this.Controls.AddRange(new System.Windows.Forms.Control[] {this.label4,
@@ -95,15 +95,15 @@ namespace Win32Form1Namespace {
 //<Snippet6>
         //Sample class to use for the ComboBox item.
         private class Item {
-            String string1;
-            String string2;
+            string string1;
+            string string2;
 
-            public Item(String s1, String s2) {
+            public Item(string s1, string s2) {
                 string1 = s1;
                 string2 = s2;
             }
 
-            public String String1 {
+            public string String1 {
                 get {
                     return string1;
                 }
@@ -112,7 +112,7 @@ namespace Win32Form1Namespace {
                 }
             }
 
-            public String String2 {
+            public string String2 {
                 get {
                     return string2;
                 }

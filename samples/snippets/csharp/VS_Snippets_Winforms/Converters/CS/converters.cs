@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 
 namespace TypeCon
@@ -42,9 +42,9 @@ namespace TypeCon
 
             //============================================================
             // CharConverter 
-            // This sample converts a Char variable to and from a String.
+            // This sample converts a char variable to and from a string.
             //<snippet5>
-            Char chrA='a';
+            char chrA='a';
             string strB="b";
             Console.WriteLine(TypeDescriptor.GetConverter(chrA).ConvertTo(chrA, typeof(string)));
             Console.WriteLine(TypeDescriptor.GetConverter(chrA).ConvertFrom(strB));
@@ -76,7 +76,7 @@ namespace TypeCon
 
             //============================================================
             // DateTimeConverter
-            // This sample converts a DateTime variable to and from a String.
+            // This sample converts a DateTime variable to and from a string.
             //<snippet9>
             DateTime dt=new DateTime(1990,5,6);
             Console.WriteLine(TypeDescriptor.GetConverter(dt).ConvertTo(dt, typeof(string)));
@@ -137,7 +137,7 @@ namespace TypeCon
 
             //============================================================
             // Int32Converter
-            // The Int32 value type represents signed integers with values ranging from negative 2,147,483,648 through positive 2,147,483,647.
+            // The int value type represents signed integers with values ranging from negative 2,147,483,648 through positive 2,147,483,647.
             // This converter can only convert a 32-bit signed integer object to and from a string.
             //<snippet15>
             int myInt32 = -967299;

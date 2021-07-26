@@ -1,9 +1,9 @@
-﻿// System.Windows.Forms.DataFormats.StringFormat
+// System.Windows.Forms.DataFormats.StringFormat
 
 /*
  *  The following example demonstrates the 'StringFormat' field of 'DataFormats' class. 
- *  It stores a String object in Clipboard using the Clipboard's 'SetDataObject' method.
- *  It retrieves the String object stored in the Clipboard by using the GetDataObject method
+ *  It stores a string object in Clipboard using the Clipboard's 'SetDataObject' method.
+ *  It retrieves the string object stored in the Clipboard by using the GetDataObject method
  *  which returns the 'IDataObject'. It checks the string data is available or not 
  *  by using the 'GetDataPresent' method of 'IDataObject'. If data is there then it
  *  displays the data to the console.   
@@ -20,7 +20,7 @@ public class DataFormats_StringFormat
 // <Snippet1>
 		try
 		{
-			String myString = "This is a String from the ClipBoard";
+			string myString = "This is a string from the ClipBoard";
 			// Sets the data to the Clipboard.   
 			Clipboard.SetDataObject(myString);
 			IDataObject myDataObject = Clipboard.GetDataObject();
@@ -28,12 +28,12 @@ public class DataFormats_StringFormat
 			// Checks whether the data is present or not in the Clipboard.
 			if(myDataObject.GetDataPresent(DataFormats.StringFormat)) 
 			{
-				String clipString = (String)myDataObject.GetData(DataFormats.StringFormat);
+				string clipString = (string)myDataObject.GetData(DataFormats.StringFormat);
 				Console.WriteLine(clipString);
 			} 
 			else 
 			{
-				Console.WriteLine("No String information was contained in the clipboard.");
+				Console.WriteLine("No string information was contained in the clipboard.");
 			}
 		}
 		catch(Exception e)

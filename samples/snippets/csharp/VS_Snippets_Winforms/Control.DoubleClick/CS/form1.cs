@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Collections;
 using System.ComponentModel;
@@ -104,7 +104,7 @@ namespace Control.DoubleClick
         private void listBox1_DoubleClick(object sender, System.EventArgs e)
         {
             // Get the name of the file to open from the ListBox.
-            String file = listBox1.SelectedItem.ToString();
+            string file = listBox1.SelectedItem.ToString();
 
             try
             {

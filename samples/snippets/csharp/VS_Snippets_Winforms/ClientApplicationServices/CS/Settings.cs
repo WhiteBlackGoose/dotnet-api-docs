@@ -1,4 +1,4 @@
-﻿//<snippet400>
+//<snippet400>
 using System;
 using System.Configuration;
 using System.Web.ClientServices.Providers;
@@ -26,7 +26,7 @@ namespace ClientAppServicesDemo.Properties {
         {
             get 
             {
-                return (String)(this["WebSettingsTestText"]);
+                return (string)(this["WebSettingsTestText"]);
             }
 
             set 
@@ -42,7 +42,7 @@ namespace ClientAppServicesDemo.Properties {
         {
             get
             {
-                return (String)(this["MySetting"]);
+                return (string)(this["MySetting"]);
             }
 
             set

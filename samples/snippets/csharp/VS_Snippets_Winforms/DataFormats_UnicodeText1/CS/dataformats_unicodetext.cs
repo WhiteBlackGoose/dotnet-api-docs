@@ -1,9 +1,9 @@
-﻿// System.Windows.Forms.DataFormats.UnicodeText;System.Windows.Forms.Text;
+// System.Windows.Forms.DataFormats.UnicodeText;System.Windows.Forms.Text;
 
 /*
  *  The following example demonstrates the 'UnicodeText' and 'Text' field of 'DataFormats' class. 
- *  It stores a String object in Clipboard using the Clipboard's 'SetDataObject' method.
- *  It retrieves the String object stored in the Clipboard by using the GetDataObject method
+ *  It stores a string object in Clipboard using the Clipboard's 'SetDataObject' method.
+ *  It retrieves the string object stored in the Clipboard by using the GetDataObject method
  *  which returns the 'IDataObject'.  It checks whether the Unicodetext data is present 
  *  or not by using the 'GetDataPresent' method of 'IDataObject'. If data is there then it
  *  displays the data to the console. It also checks 'Text' format data is present or not. If
@@ -24,7 +24,7 @@ public class DataFormats_UnicodeText
 		try
 		{
 
-			String myString = "This is a String from the ClipBoard";
+			string myString = "This is a string from the ClipBoard";
       
 			// Sets the data into the Clipboard.
 			Clipboard.SetDataObject(myString);
@@ -36,13 +36,13 @@ public class DataFormats_UnicodeText
 			} 
 			else 
 			{
-				Console.WriteLine("No String information was contained in the clipboard.");
+				Console.WriteLine("No string information was contained in the clipboard.");
 			}
 
 			// Checks whether the format of the data is 'Text' or not.
 			if(myDataObject.GetDataPresent(DataFormats.Text)) 
 			{
-				String clipString = (String)myDataObject.GetData(DataFormats.StringFormat);
+				string clipString = (string)myDataObject.GetData(DataFormats.StringFormat);
 				Console.WriteLine("Data in 'Text' format:"+clipString);
 			}
 		}

@@ -1,4 +1,4 @@
-﻿// System.Windows.Forms.Control.Invoke(Delegate,Object[]);
+// System.Windows.Forms.Control.Invoke(Delegate,Object[]);
 
 /*
 The following example demonstrates the 'Invoke(Delegate,Object[])'
@@ -16,7 +16,7 @@ using System.Threading;
 
    public class MyFormControl : Form
    {
-      public delegate void AddListItem(String myString);
+      public delegate void AddListItem(string myString);
       public AddListItem myDelegate;
       private Button myButton;
       private Thread myThread;
@@ -44,7 +44,7 @@ using System.Threading;
          MyFormControl myForm = new MyFormControl();
          myForm.ShowDialog();
       }
-      public void AddListItemMethod(String myString)
+      public void AddListItemMethod(string myString)
       {
             myListBox.Items.Add(myString);
       }
@@ -66,7 +66,7 @@ using System.Threading;
       {
          myFormControl1 = myForm;
       }
-      String myString;
+      string myString;
 
       public void Run()
       {
