@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -147,7 +147,7 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet6>
-      int[] numbers = { Int32.MinValue, -1000, 0, 1000, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1000, 0, 1000, int.MaxValue };
       float result;
 
       foreach (int number in numbers)
@@ -158,11 +158,11 @@ public class Example
                            result.GetType().Name, result);
       }
       // The example displays the following output:
-      //    Converted the Int32 value '-2147483648' to the Single value -2.147484E+09.
-      //    Converted the Int32 value '-1000' to the Single value -1000.
-      //    Converted the Int32 value '0' to the Single value 0.
-      //    Converted the Int32 value '1000' to the Single value 1000.
-      //    Converted the Int32 value '2147483647' to the Single value 2.147484E+09.
+      //    Converted the int value '-2147483648' to the Single value -2.147484E+09.
+      //    Converted the int value '-1000' to the Single value -1000.
+      //    Converted the int value '0' to the Single value 0.
+      //    Converted the int value '1000' to the Single value 1000.
+      //    Converted the int value '2147483647' to the Single value 2.147484E+09.
       // </Snippet6>
    }
 
@@ -219,14 +219,14 @@ public class Example
       }
       // The example displays the following output:
       //    Converted the Boolean value 'True' to the Single value 1.
-      //    Conversion of the Char value a to a Single is not supported.
-      //    Converted the Int32 value '123' to the Single value 123.
+      //    Conversion of the char value a to a Single is not supported.
+      //    Converted the int value '123' to the Single value 123.
       //    Converted the Double value '1.764E+32' to the Single value 1.764E+32.
-      //    Converted the String value '9.78' to the Single value 9.78.
-      //    Converted the String value '1e-02' to the Single value 0.01.
+      //    Converted the string value '9.78' to the Single value 9.78.
+      //    Converted the string value '1e-02' to the Single value 0.01.
       //    Converted the Double value '1670' to the Single value 1670.
-      //    The String value A100 is not recognized as a valid Single value.
-      //    Converted the String value '1,033.67' to the Single value 1033.67.
+      //    The string value A100 is not recognized as a valid Single value.
+      //    Converted the string value '1,033.67' to the Single value 1033.67.
       //    Conversion of the DateTime value 11/7/2008 08:02:35 AM to a Single is not supported.
       //    Converted the Decimal value '79228162514264337593543950335' to the Single value 7.922816E+28.
       // </Snippet8>
@@ -278,13 +278,13 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    Converted the String value '-1,035.77219' to the Single value -1035.772.
+      //    Converted the string value '-1,035.77219' to the Single value -1035.772.
       //    Unable to convert '1AFF' to a Single.
-      //    Converted the String value '1e-35' to the Single value 1E-35.
+      //    Converted the string value '1e-35' to the Single value 1E-35.
       //    Unable to convert '1.63f' to a Single.
-      //    Converted the String value '1,635,592,999,999,999,999,999,999' to the Single value 1.635593E+24.
-      //    Converted the String value '-17.455' to the Single value -17.455.
-      //    Converted the String value '190.34001' to the Single value 190.34.
+      //    Converted the string value '1,635,592,999,999,999,999,999,999' to the Single value 1.635593E+24.
+      //    Converted the string value '-17.455' to the Single value -17.455.
+      //    Converted the string value '190.34001' to the Single value 190.34.
       //    1.29e325' is outside the range of a Single.
       // </Snippet10>
    }
