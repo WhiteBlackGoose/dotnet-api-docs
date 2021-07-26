@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -26,7 +26,7 @@ public class TestClass
 //    Unhandled Exception: System.TypeInitializationException: 
 //       The type initializer for 'Example' threw an exception. ---> 
 //       System.ArgumentOutOfRangeException: Specified argument was out of the range of valid values.
-//       at TestClass..ctor(Int32 value)
+//       at TestClass..ctor(int value)
 //       at Example..cctor()
 //       --- End of inner exception stack trace ---
 //       at Example.Main()

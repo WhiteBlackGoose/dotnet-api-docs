@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -11,11 +11,11 @@ public class Example
                            value.GetType().Name);
 
       // The example displays the following output:
-      //       word - type String
+      //       word - type string
       //       True - type Boolean
-      //       120 - type Int32
+      //       120 - type int
       //       136.34 - type Double
-      //       a - type Char
+      //       a - type char
       // </Snippet2>
    }
 }

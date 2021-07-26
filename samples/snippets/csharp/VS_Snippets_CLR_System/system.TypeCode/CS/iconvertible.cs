@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 
 namespace ConsoleApplication2
@@ -155,7 +155,7 @@ This code example produces the following results:
 Object: ConsoleApplication2.Complex
 Boolean: True
 Decimal: 8.06225774829855
-String: ( 4 , 7 )
+string: ( 4 , 7 )
 
 */
 // </snippet1>

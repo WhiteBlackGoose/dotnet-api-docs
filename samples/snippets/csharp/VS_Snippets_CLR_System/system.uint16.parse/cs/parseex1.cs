@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Temperature
@@ -26,10 +26,10 @@ public class Temperature
 			  temp.Value = UInt16.Parse(s);
 			}
          catch (FormatException e) {
-            throw new FormatException(String.Format("{0} is an invalid temperature.", s), e);
+            throw new FormatException(string.Format("{0} is an invalid temperature.", s), e);
          }
          catch (OverflowException e) {
-            throw new OverflowException(String.Format("{0} is out of range.", s), e);
+            throw new OverflowException(string.Format("{0} is out of range.", s), e);
          }
 		}
 

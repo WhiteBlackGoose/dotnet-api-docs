@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using Corporate.EmployeeObjects;
 
@@ -18,14 +18,14 @@ namespace Corporate.EmployeeObjects
 {
     public struct EmployeeA
     {
-         public String Name { get; set; }
+         public string Name { get; set; }
     }
     
     public struct EmployeeB
     {
-         public String Name { get; set; }
+         public string Name { get; set; }
 
-         public override String ToString()
+         public override string ToString()
          {
               return Name;
          }

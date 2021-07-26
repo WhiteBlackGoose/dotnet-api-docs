@@ -1,4 +1,4 @@
-﻿// The following code example demonstrates that Type objects are returned
+// The following code example demonstrates that Type objects are returned
 // by the typeid operator, and shows how Type objects are used in reflection
 // to explore information about types and to invoke members of types.
 //<Snippet1>
@@ -9,7 +9,7 @@ class Example
 {
     static void Main()
     {
-        Type t = typeof(String);
+        Type t = typeof(string);
 
         MethodInfo substr = t.GetMethod("Substring", 
             new Type[] { typeof(int), typeof(int) });
@@ -22,6 +22,6 @@ class Example
 
 /* This code example produces the following output:
 
-System.String Substring(Int32, Int32) returned "World".
+System.String Substring(int, int) returned "World".
  */
 //</Snippet1>

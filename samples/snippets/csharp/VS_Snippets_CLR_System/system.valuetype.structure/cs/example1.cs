@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -45,7 +45,7 @@ public class Utility
    
    public static bool IsInteger(ValueType value)
    {         
-      return (value is SByte || value is Int16 || value is Int32 
+      return (value is SByte || value is Int16 || value is int 
               || value is Int64 || value is Byte || value is UInt16  
               || value is UInt32 || value is UInt64 
               || value is BigInteger); 
@@ -60,7 +60,7 @@ public class Utility
    {
       return (value is Byte ||
               value is Int16 ||
-              value is Int32 ||
+              value is int ||
               value is Int64 ||
               value is SByte ||
               value is UInt16 ||

@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Text.RegularExpressions;
 
@@ -25,6 +25,6 @@ public class Example
 //       at System.Text.RegularExpressions.Regex.InitDefaultMatchTimeout()
 //       at System.Text.RegularExpressions.Regex..cctor()
 //       --- End of inner exception stack trace ---
-//       at System.Text.RegularExpressions.Regex..ctor(String pattern)
+//       at System.Text.RegularExpressions.Regex..ctor(string pattern)
 //       at Example.Main()
 // </Snippet4>

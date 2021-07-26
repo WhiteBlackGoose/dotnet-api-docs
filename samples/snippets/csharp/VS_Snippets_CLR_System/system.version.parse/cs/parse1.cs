@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -31,7 +31,7 @@ public class Example
          Console.WriteLine("Converted '{0} to {1}.", input, ver);
       }
       catch (ArgumentNullException) {
-         Console.WriteLine("Error: String to be parsed is null.");
+         Console.WriteLine("Error: string to be parsed is null.");
       }
       catch (ArgumentOutOfRangeException) {
          Console.WriteLine("Error: Negative value in '{0}'.", input);

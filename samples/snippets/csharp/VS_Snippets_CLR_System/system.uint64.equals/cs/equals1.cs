@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -10,7 +10,7 @@ public class Example
                           (ushort) 20, 10U, 20U,
                           10ul, 20ul };
       UInt64 baseValue = 20;
-      String baseType = baseValue.GetType().Name;
+      string baseType = baseValue.GetType().Name;
       
       foreach (var value in values)
          Console.WriteLine("{0} ({1}) = {2} ({3}): {4}",
@@ -22,8 +22,8 @@ public class Example
 // The example displays the following output:
 //       20 (UInt64) = 10 (Int16): False
 //       20 (UInt64) = 20 (Int16): False
-//       20 (UInt64) = 10 (Int32): False
-//       20 (UInt64) = 20 (Int32): False
+//       20 (UInt64) = 10 (int): False
+//       20 (UInt64) = 20 (int): False
 //       20 (UInt64) = 10 (Int64): False
 //       20 (UInt64) = 20 (Int64): False
 //       20 (UInt64) = 10 (Double): False
