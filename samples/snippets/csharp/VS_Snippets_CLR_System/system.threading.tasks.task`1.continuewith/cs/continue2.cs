@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -8,7 +8,7 @@ public class Example
 {
    public static void Main(string[] args)
    {
-      int upperBound = args.Length >= 1 ? Int32.Parse(args[0]) : 200;
+      int upperBound = args.Length >= 1 ? int.Parse(args[0]) : 200;
 
       var t1 = Task.Run(() => { // True = composite.
                                 // False = prime.
@@ -24,7 +24,7 @@ public class Example
       var t2 = t1.ContinueWith( (antecedent) => { // Create a list of prime numbers.
                                                   var  primes = new List<int>();
                                                   bool[] numbers = antecedent.Result;
-                                                  string output = String.Empty;
+                                                  string output = string.Empty;
 
                                                   for (int ctr = 1; ctr <= numbers.GetUpperBound(0); ctr++)
                                                      if (numbers[ctr] == false)

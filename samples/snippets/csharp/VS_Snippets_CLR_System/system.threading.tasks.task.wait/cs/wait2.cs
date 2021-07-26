@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -17,7 +17,7 @@ public class Example
                                         Task.CurrentId);
                 } , token);
       Task t2 = Task.Run( () => {
-                             for (int ctr = 0; ctr <= Int32.MaxValue; ctr++) 
+                             for (int ctr = 0; ctr <= int.MaxValue; ctr++) 
                              {}
                              Console.WriteLine("Task {0} finished.",
                                                Task.CurrentId);

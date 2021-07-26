@@ -1,4 +1,4 @@
-﻿// <Snippet11>
+// <Snippet11>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -13,7 +13,7 @@ public class Example
       t.Wait();
    }
 
-   static void ShowThreadInfo(String s)
+   static void ShowThreadInfo(string s)
    {
       Console.WriteLine("{0} thread ID: {1}",
                         s, Thread.CurrentThread.ManagedThreadId);

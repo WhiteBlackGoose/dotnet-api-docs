@@ -1,4 +1,4 @@
-﻿namespace SynchronizingObjectCS1
+namespace SynchronizingObjectCS1
 {
     // <Snippet1>
     using System;
@@ -13,7 +13,7 @@
         bool dialogIsOpen = false;
         int elapsedMinutes = 0;
         // Cache the text box cache internally without saving it.
-        String txt = "";
+        string txt = "";
 
         public Form1()
         {
@@ -42,7 +42,7 @@
             if (hasChanged & (!dialogIsOpen)) {
                 elapsedMinutes++;
                 dialogIsOpen = true;
-                if (MessageBox.Show(String.Format("{0} minutes have elapsed since the text was saved. Save it now? ",
+                if (MessageBox.Show(string.Format("{0} minutes have elapsed since the text was saved. Save it now? ",
                     elapsedMinutes), "Save Text",
                     MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
@@ -54,7 +54,7 @@
 
         private void button1_Click(Object sender, EventArgs e)
         {
-            if (String.IsNullOrEmpty(saveFileDialog1.FileName)) {
+            if (string.IsNullOrEmpty(saveFileDialog1.FileName)) {
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                     sw = new StreamWriter(saveFileDialog1.FileName, false);
             }

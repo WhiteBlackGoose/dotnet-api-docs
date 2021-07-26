@@ -1,4 +1,4 @@
-﻿// <snippet01>
+// <snippet01>
 using System;
 using System.Threading;
 using System.Threading.Tasks;
@@ -30,7 +30,7 @@ class Example
         t1.Wait();
 
         // Construct a started task using Task.Run.
-        String taskData = "delta";
+        string taskData = "delta";
         Task t3 = Task.Run( () => {Console.WriteLine("Task={0}, obj={1}, Thread={2}",
                                                      Task.CurrentId, taskData,
                                                       Thread.CurrentThread.ManagedThreadId);

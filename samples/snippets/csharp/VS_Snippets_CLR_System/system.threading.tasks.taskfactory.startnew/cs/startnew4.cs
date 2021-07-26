@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -37,7 +37,7 @@ public class Example
                                                       token.ThrowIfCancellationRequested();
                                                       Array.Sort(order, chars);
                                                       Console.WriteLine("{0} --> {1}", word,
-                                                                        new String(chars));
+                                                                        new string(chars));
                                                     }, word6, token));
 
       try {

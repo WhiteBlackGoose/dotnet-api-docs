@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -22,7 +22,7 @@ public class Example
                                            }
                                         Array.Sort(order, chars);
                                         Console.WriteLine("{0} --> {1}", word,
-                                                          new String(chars));
+                                                          new string(chars));
                                       }, word6);
          t.Start();
          tasks.Add(t);

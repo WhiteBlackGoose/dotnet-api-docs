@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -18,7 +18,7 @@ public class Example
                                                utf32 = rnd.Next(0, 0xE01F0);
                                             }
                                             // Convert it to a UTF16-encoded character.
-                                            string utf16 = Char.ConvertFromUtf32(utf32);
+                                            string utf16 = char.ConvertFromUtf32(utf32);
                                             // Display information about the character.
                                             Console.WriteLine("0x{0:X8} --> '{1,2}' ({2})", 
                                                               utf32, utf16, ShowHex(utf16));
@@ -31,7 +31,7 @@ public class Example
    {
       string hexString = null;
       // Handle only non-control characters.
-      if (! Char.IsControl(value, 0)) {
+      if (! char.IsControl(value, 0)) {
          foreach (var ch in value)
             hexString += $"0x{(ushort)ch:X} ";
       }   

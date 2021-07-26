@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -23,7 +23,7 @@ public class Example
                                                       throw new FileNotFoundException("{0} does not exist.", filename);
 
                                                    StreamReader sr = new StreamReader(fn.ToString());
-                                                   String content = sr.ReadToEnd();
+                                                   string content = sr.ReadToEnd();
                                                    sr.Close();
                                                    int words = Regex.Matches(content, pattern).Count;
                                                    Interlocked.Add(ref totalWords, words); 
@@ -48,7 +48,7 @@ public class Example
                                                        } 
                                                     }   
                                                     Console.WriteLine("\n{0,-25} {1,6} total words\n", 
-                                                                      String.Format("{0} files", nSuccessfulTasks), 
+                                                                      string.Format("{0} files", nSuccessfulTasks), 
                                                                       totalWords); 
                                                     if (nFailed > 0) {
                                                        Console.WriteLine("{0} tasks failed for the following reasons:", nFailed);

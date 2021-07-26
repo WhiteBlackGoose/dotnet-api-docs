@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Threading.Tasks;
 
@@ -29,7 +29,7 @@ public class Example
             // Process user input.
             if (userInput.Trim().ToUpper() == "X") return;
             int answer;
-            validInput = Int32.TryParse(userInput, out answer);
+            validInput = int.TryParse(userInput, out answer);
             if (! validInput)
                Console.WriteLine("Invalid input. Try again, but enter only numbers. ");
             else if (answer == result)

@@ -1,4 +1,4 @@
-﻿// What is the resolution of the system clock?
+// What is the resolution of the system clock?
 
 // <Snippet1>
 using System;
@@ -9,13 +9,13 @@ using System.Timers;
 public class Example
 {
    private static Timer aTimer;
-   private static List<String> eventlog;
+   private static List<string> eventlog;
    private static int nEventsFired = 0;
    private static DateTime previousTime;
        
    public static void Main()
    {
-        eventlog = new List<String>();
+        eventlog = new List<string>();
         
         StreamWriter sr = new StreamWriter(@".\Interval.txt");
         // Create a timer with a five millisecond interval.
@@ -37,7 +37,7 @@ public class Example
 
     private static void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
-        eventlog.Add(String.Format("Elapsed event at {0:HH':'mm':'ss.ffffff} ({1})", 
+        eventlog.Add(string.Format("Elapsed event at {0:HH':'mm':'ss.ffffff} ({1})", 
                                    e.SignalTime, 
                                    nEventsFired++ == 0 ? 
                                       0.0 : (e.SignalTime - previousTime).TotalMilliseconds));

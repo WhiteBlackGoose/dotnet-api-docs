@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Threading;
@@ -41,15 +41,15 @@ public class Example
       Console.WriteLine("Mean of Means: {0}", t.Result);
    }
 
-  private static void ShowThreadInformation(String taskName)
+  private static void ShowThreadInformation(string taskName)
   {
-      String msg = null;
+      string msg = null;
       Thread thread = Thread.CurrentThread;
       lock(lockObj) {
-         msg = String.Format("{0} thread information\n", taskName) +
-               String.Format("   Background: {0}\n", thread.IsBackground) +
-               String.Format("   Thread Pool: {0}\n", thread.IsThreadPoolThread) +
-               String.Format("   Thread ID: {0}\n", thread.ManagedThreadId);
+         msg = string.Format("{0} thread information\n", taskName) +
+               string.Format("   Background: {0}\n", thread.IsBackground) +
+               string.Format("   Thread Pool: {0}\n", thread.IsThreadPoolThread) +
+               string.Format("   Thread ID: {0}\n", thread.ManagedThreadId);
       }
       Console.WriteLine(msg);
    }

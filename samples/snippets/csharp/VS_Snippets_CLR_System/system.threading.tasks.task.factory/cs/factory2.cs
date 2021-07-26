@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -8,7 +8,7 @@ public class Example
    public static void Main()
    {
       Task<string[]>[] tasks = new Task<string[]>[2];
-      String docsDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+      string docsDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
 
       tasks[0] = Task<string[]>.Factory.StartNew( () => Directory.GetFiles(docsDirectory));
       tasks[1] = Task<string[]>.Factory.StartNew( () => Directory.GetDirectories(docsDirectory));
