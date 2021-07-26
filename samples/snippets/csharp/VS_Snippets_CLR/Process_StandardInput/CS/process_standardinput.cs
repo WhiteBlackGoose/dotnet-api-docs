@@ -1,4 +1,4 @@
-﻿// System.Diagnostics.Process.StandardInput
+// System.Diagnostics.Process.StandardInput
 //
 //
 // The following example illustrates how to redirect the StandardInput
@@ -37,7 +37,7 @@ namespace ProcessStandardInputSample
                 // Prompt the user for input text lines to sort.
                 // Write each line to the StandardInput stream of
                 // the sort command.
-                String inputText;
+                string inputText;
                 int numLines = 0;
                 do
                 {

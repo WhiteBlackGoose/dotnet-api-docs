@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Collections.Generic;
@@ -95,9 +95,9 @@ class Example
         Console.WriteLine("Final value of instance property: {0}",
             exam.InstanceProperty);
 
-        exam[17] = "String number 17";
-        exam[46] = "String number 46";
-        exam[9] = "String number 9";
+        exam[17] = "string number 17";
+        exam[46] = "string number 46";
+        exam[9] = "string number 9";
 
         Console.WriteLine(
             "\nInitial value of indexed instance property(17): '{0}'",
@@ -127,7 +127,7 @@ Final value of class-level property: 76
 Initial value of instance property: 42
 Final value of instance property: 37
 
-Initial value of indexed instance property(17): 'String number 17'
+Initial value of indexed instance property(17): 'string number 17'
 Final value of indexed instance property(17): 'New value for string number 17'
  */
 //</Snippet1>

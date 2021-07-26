@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -8,7 +8,7 @@ class Module1
     {
         // This variable holds the amount of indenting that
         // should be used when displaying each line of information.
-        Int32 indent = 0;
+        int indent = 0;
         // <snippet2>
         // Display information about the EXE assembly.
         Assembly a = typeof(Module1).Assembly;
@@ -78,7 +78,7 @@ class Module1
     }
 
     // Displays the custom attributes applied to the specified member.
-    public static void DisplayAttributes(Int32 indent, MemberInfo mi)
+    public static void DisplayAttributes(int indent, MemberInfo mi)
     {
         // Get the set of custom attributes; if none exist, just return.
         object[] attrs = mi.GetCustomAttributes(false);
@@ -93,7 +93,7 @@ class Module1
     }
 
     // Display a formatted string indented by the specified amount.
-    public static void Display(Int32 indent, string format, params object[] param)
+    public static void Display(int indent, string format, params object[] param)
 
     {
         Console.Write(new string(' ', indent*2));
@@ -158,7 +158,7 @@ class Module1
 //    Member: get_SyncRoot
 //    Member: get_IsSynchronized
 //    Member: Count
-//      Accessor method: Int32 get_Count()
+//      Accessor method: int get_Count()
 //    Member: SyncRoot
 //      Accessor method: System.Object get_SyncRoot()
 //    Member: IsSynchronized
@@ -187,8 +187,8 @@ class Module1
 //    Member: RemoveAt
 //      Parameter: Type=System.Int32, Name=index
 //    Member: Item
-//      Accessor method: System.Object get_Item(Int32)
-//      Accessor method: Void set_Item(Int32, System.Object)
+//      Accessor method: System.Object get_Item(int)
+//      Accessor method: Void set_Item(int, System.Object)
 //    Member: IsReadOnly
 //      Accessor method: Boolean get_IsReadOnly()
 //    Member: IsFixedSize

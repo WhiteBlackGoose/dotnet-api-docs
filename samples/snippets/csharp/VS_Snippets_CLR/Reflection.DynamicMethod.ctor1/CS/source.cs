@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -31,7 +31,7 @@ public class Test
         // overload of Console.WriteLine to be used in Hello.
         Type[] writeStringArgs = {typeof(string)};
         // Get the overload of Console.WriteLine that has one
-        // String parameter.
+        // string parameter.
         MethodInfo writeString =
             typeof(Console).GetMethod("WriteLine", writeStringArgs);
 

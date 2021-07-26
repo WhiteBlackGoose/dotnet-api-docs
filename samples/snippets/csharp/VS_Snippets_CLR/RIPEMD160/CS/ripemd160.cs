@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.IO;
 using System.Security.Cryptography;
@@ -72,7 +72,7 @@ public class HashDirectory
         int i;
         for (i = 0; i < array.Length; i++)
         {
-            Console.Write(String.Format("{0:X2}", array[i]));
+            Console.Write(string.Format("{0:X2}", array[i]));
             if ((i % 4) == 3) Console.Write(" ");
         }
         Console.WriteLine();

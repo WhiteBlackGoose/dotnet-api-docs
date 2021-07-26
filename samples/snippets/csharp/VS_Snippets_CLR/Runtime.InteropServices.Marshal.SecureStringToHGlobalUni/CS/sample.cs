@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.ComponentModel;
 using System.Runtime.InteropServices;
@@ -9,7 +9,7 @@ class Example
 {
      // Define the Windows LogonUser and CloseHandle functions.
      [DllImport("advapi32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-     internal static extern bool LogonUser(String username, String domain, IntPtr password,
+     internal static extern bool LogonUser(string username, string domain, IntPtr password,
              int logonType, int logonProvider, ref IntPtr token);
 
      [DllImport("kernel32.dll", CharSet = CharSet.Auto)]

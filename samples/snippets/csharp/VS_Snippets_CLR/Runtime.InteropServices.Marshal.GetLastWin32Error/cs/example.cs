@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -8,7 +8,7 @@ internal class Win32
     // function.  Set the SetLastError flag to true to allow
     // the function to set the Win32 error.
     [DllImportAttribute("user32.dll", SetLastError = true, CharSet = CharSet.Unicode)]
-    public static extern int MessageBox(IntPtr hwnd, String text, String caption, uint type);
+    public static extern int MessageBox(IntPtr hwnd, string text, string caption, uint type);
 }
 
 class Program

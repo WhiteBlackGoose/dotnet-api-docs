@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.PropertyBuilder.SetGetMethod
+// System.Reflection.Emit.PropertyBuilder.SetGetMethod
 // System.Reflection.Emit.PropertyBuilder.SetSetMethod
 // System.Reflection.Emit.PropertyBuilder.AddOtherMethod
 // System.Reflection.Emit.PropertyBuilder
@@ -43,7 +43,7 @@ public class App
                   ,null, helloWorld, null);
       Console.WriteLine("After Set operation HelloWorld.GetGreeting returned: \"" + returnValue + "\"");
 
-      // Reset 'Greeting' property to 'Default String'.
+      // Reset 'Greeting' property to 'Default string'.
       helloWorldType.InvokeMember("reset_Greeting",
                               BindingFlags.Default |BindingFlags.InvokeMethod
                               ,null, helloWorld, null);
@@ -79,11 +79,11 @@ public class App
 // <Snippet2>
       // Define a public class named "HelloWorld" in the assembly.
       TypeBuilder helloWorldTypeBuilder = myModule.DefineType("HelloWorld", TypeAttributes.Public);
-      // Define a private String field named "m_greeting" in "HelloWorld" class.
+      // Define a private string field named "m_greeting" in "HelloWorld" class.
       FieldBuilder greetingFieldBuilder = helloWorldTypeBuilder.DefineField("m_greeting",
-                                                typeof(String), FieldAttributes.Private);
+                                                typeof(string), FieldAttributes.Private);
       // Create constructor args and define constructor.
-      Type[] constructorArgs = { typeof(String) };
+      Type[] constructorArgs = { typeof(string) };
       ConstructorBuilder constructor = helloWorldTypeBuilder.DefineConstructor(
          MethodAttributes.Public, CallingConventions.Standard, constructorArgs);
 
@@ -101,7 +101,7 @@ public class App
       // Define the 'get_Greeting' method.
       MethodBuilder getGreetingMethod = helloWorldTypeBuilder.DefineMethod("get_Greeting",
          MethodAttributes.Public|MethodAttributes.HideBySig|MethodAttributes.SpecialName,
-         typeof(String),null);
+         typeof(string),null);
       // Generate IL code for 'get_Greeting' method.
       ILGenerator methodIL = getGreetingMethod.GetILGenerator();
       methodIL.Emit(OpCodes.Ldarg_0);
@@ -131,7 +131,7 @@ public class App
       // Generate IL code for reset_Greeting method.
       methodIL = otherGreetingMethod.GetILGenerator();
       methodIL.Emit(OpCodes.Ldarg_0);
-      methodIL.Emit(OpCodes.Ldstr,"Default String.");
+      methodIL.Emit(OpCodes.Ldstr,"Default string.");
       methodIL.Emit(OpCodes.Stfld, greetingFieldBuilder);
       methodIL.Emit(OpCodes.Ret);
       greetingPropertyBuilder.AddOtherMethod(otherGreetingMethod);

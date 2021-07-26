@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -13,14 +13,14 @@ public class Test
     public static void Main()
     {
         // Create an array that specifies the types of the parameters
-        // of the dynamic method. This dynamic method has a String
+        // of the dynamic method. This dynamic method has a string
         // parameter and an Integer parameter.
         Type[] helloArgs = {typeof(string), typeof(int)};
 
         // Create a dynamic method with the name "Hello", a return type
         // of Integer, and two parameters whose types are specified by
         // the array helloArgs. Create the method in the module that
-        // defines the String class.
+        // defines the string class.
         DynamicMethod hello = new DynamicMethod("Hello",
             typeof(int),
             helloArgs,
@@ -31,7 +31,7 @@ public class Test
         // overload of Console.WriteLine to be used in Hello.
         Type[] writeStringArgs = {typeof(string)};
         // Get the overload of Console.WriteLine that has one
-        // String parameter.
+        // string parameter.
         MethodInfo writeString = typeof(Console).GetMethod("WriteLine",
             writeStringArgs);
 
@@ -247,7 +247,7 @@ Return type: System.Int32
 
 The return type has no custom attributes.
 
-ToString: Int32 Hello(System.String, Int32)
+ToString: int Hello(System.String, int)
 
 Parameters: name, type, ParameterAttributes
         message, System.String, In

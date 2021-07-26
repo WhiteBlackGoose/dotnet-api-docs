@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // <Snippet3>
 using System;
 using System.ComponentModel;
@@ -36,7 +36,7 @@ class ProcessInformation
             Console.Write("Select the index of the verb: ");
             var indexInput = Console.ReadLine();
             int index;
-            if (Int32.TryParse(indexInput, out index))
+            if (int.TryParse(indexInput, out index))
             {
                 if (index < 0 || index >= i)
                 {
