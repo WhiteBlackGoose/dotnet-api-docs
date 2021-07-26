@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,8 +18,8 @@ namespace Samples.AspNet.CS.Controls
     Level = AspNetHostingPermissionLevel.Minimal)]
   public class TextDisplayWebPart : WebPart
   {
-    private String _contentText = null;
-    private String _fontStyle = null;
+    private string _contentText = null;
+    private string _fontStyle = null;
     TextBox input;
     Label DisplayContent;
     Literal lineBreak;
@@ -43,14 +43,14 @@ namespace Samples.AspNet.CS.Controls
     // </snippet4>
 
     [Personalizable(), WebBrowsable]
-    public String ContentText
+    public string ContentText
     {
       get { return _contentText; }
       set { _contentText = value; }
     }
 
     [Personalizable(), WebBrowsable()]
-    public String FontStyle
+    public string FontStyle
     {
       get { return _fontStyle; }
       set { _fontStyle = value; }
@@ -85,12 +85,12 @@ namespace Samples.AspNet.CS.Controls
       if (!string.IsNullOrEmpty(input.Text))
       {
         _contentText = input.Text + @"<br />";
-        input.Text = String.Empty;
+        input.Text = string.Empty;
         DisplayContent.Text = this.ContentText;
       }
     }
 
-    private void SetFontStyle(Label label, String selectedStyle)
+    private void SetFontStyle(Label label, string selectedStyle)
     {
       if (selectedStyle == "Bold")
       {
@@ -148,7 +148,7 @@ namespace Samples.AspNet.CS.Controls
       {
         TextDisplayWebPart part = 
           (TextDisplayWebPart)WebPartToEdit;
-        String currentStyle = part.FontStyle;
+        string currentStyle = part.FontStyle;
 
         // Select the current font style in the drop-down control.
         foreach (ListItem item in PartContentFontStyle.Items)

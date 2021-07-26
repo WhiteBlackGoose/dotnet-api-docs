@@ -1,4 +1,4 @@
-﻿// <snippet9>
+// <snippet9>
 namespace PersTest
 {
 
@@ -37,7 +37,7 @@ namespace PersTest
             get
             {
                 object o = ViewState["Text"];
-                return (o != null) ? (String)o : "My Links";
+                return (o != null) ? (string)o : "My Links";
             }
             set
             {
@@ -173,7 +173,7 @@ namespace PersTest
     public class UrlListExWebPart : UrlListWebPart, ITrackingPersonalizable
     {
 
-        private string _trackingLog = String.Empty;
+        private string _trackingLog = string.Empty;
         private bool _loading;
         private bool _saving;
 

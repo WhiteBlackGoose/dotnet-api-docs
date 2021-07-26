@@ -1,4 +1,4 @@
-﻿// <snippet6>
+// <snippet6>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,8 +18,8 @@ namespace Samples.AspNet.CS.Controls
   public class UserInfoWebPart : WebPart
   {
     HttpServerUtility server = HttpContext.Current.Server;
-    private String _userNickName = "Add a nickname.";
-    private String _userPetName = "Add a pet name.";
+    private string _userNickName = "Add a nickname.";
+    private string _userPetName = "Add a pet name.";
     private DateTime _userSpecialDate = DateTime.Now;
     private Boolean _userIsCurrent = true;
     private JobTypeName _userJobType = JobTypeName.Unselected;
@@ -43,7 +43,7 @@ namespace Samples.AspNet.CS.Controls
     // public properties, so that users can save property values  
     // and edit them with a PropertyGridEditorPart control.
     [Personalizable(), WebBrowsable, WebDisplayName("Nickname")]
-    public String NickName
+    public string NickName
     {
       get 
       { 
@@ -58,7 +58,7 @@ namespace Samples.AspNet.CS.Controls
     }
 
     [Personalizable(), WebBrowsable, WebDisplayName("Pet Name")]
-    public String PetName
+    public string PetName
     {
       get 
       { 
@@ -182,13 +182,13 @@ namespace Samples.AspNet.CS.Controls
     Level = AspNetHostingPermissionLevel.Minimal)]
   public class TextDisplayWebPart : WebPart
   {
-    private String _contentText = null;
+    private string _contentText = null;
     TextBox input;
     Label DisplayContent;
     Literal lineBreak;
 
     [Personalizable(), WebBrowsable]
-    public String ContentText
+    public string ContentText
     {
       get { return _contentText; }
       set { _contentText = value; }
@@ -217,10 +217,10 @@ namespace Samples.AspNet.CS.Controls
     private void submit_Click(object sender, EventArgs e)
     {
       // Update the label string.
-      if (!String.IsNullOrEmpty(input.Text))
+      if (!string.IsNullOrEmpty(input.Text))
       {
         _contentText = Context.Server.HtmlEncode(input.Text) + @"<br />";
-        input.Text = String.Empty;
+        input.Text = string.Empty;
         DisplayContent.Text = this.ContentText;
       }
     }

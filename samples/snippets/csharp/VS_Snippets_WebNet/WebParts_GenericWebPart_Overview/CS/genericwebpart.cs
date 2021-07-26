@@ -1,4 +1,4 @@
-﻿// <snippet3>
+// <snippet3>
 using System;
 using System.Data;
 using System.Configuration;
@@ -21,8 +21,8 @@ public partial class genericwebpart_sample : System.Web.UI.Page
 
     if (!IsPostBack)
     {
-      Label2.Text = String.Empty;
-      Label3.Text = String.Empty;
+      Label2.Text = string.Empty;
+      Label3.Text = string.Empty;
     }
   }
 
