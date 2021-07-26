@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -17,13 +17,13 @@ public class TestFormatting
       balance = 16.34;
       wday = DaysOfWeek.Monday;
 
-      output = String.Format(new AcctNumberFormat(),
+      output = string.Format(new AcctNumberFormat(),
                              "On {2}, the balance of account {0:H} was {1:C2}.",
                              acctNumber, balance, wday);
       Console.WriteLine(output);
 
       wday = DaysOfWeek.Tuesday;
-      output = String.Format(new AcctNumberFormat(),
+      output = string.Format(new AcctNumberFormat(),
                              "On {2}, the balance of account {0:I} was {1:C2}.",
                              acctNumber, balance, wday);
       Console.WriteLine(output);
@@ -55,7 +55,7 @@ public class AcctNumberFormat : IFormatProvider, ICustomFormatter
             return HandleOtherFormats(fmt, arg);
          }
          catch (FormatException e) {
-            throw new FormatException(String.Format("The format of '{0}' is invalid.", fmt), e);
+            throw new FormatException(string.Format("The format of '{0}' is invalid.", fmt), e);
          }
 
       // Provide default formatting for unsupported format strings.
@@ -65,7 +65,7 @@ public class AcctNumberFormat : IFormatProvider, ICustomFormatter
             return HandleOtherFormats(fmt, arg);
          }
          catch (FormatException e) {
-            throw new FormatException(String.Format("The format of '{0}' is invalid.", fmt), e);
+            throw new FormatException(string.Format("The format of '{0}' is invalid.", fmt), e);
          }
 
       // Convert argument to a string.
@@ -92,7 +92,7 @@ public class AcctNumberFormat : IFormatProvider, ICustomFormatter
       else if (arg != null)
          return arg.ToString();
       else
-         return String.Empty;
+         return string.Empty;
    }
 }
 // </Snippet2>

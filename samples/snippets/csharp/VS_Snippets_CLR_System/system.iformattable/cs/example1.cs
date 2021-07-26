@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -9,7 +9,7 @@ public class Temperature : IFormattable
    public Temperature(decimal temperature)
    {
       if (temperature < -273.15m)
-        throw new ArgumentOutOfRangeException(String.Format("{0} is less than absolute zero.",
+        throw new ArgumentOutOfRangeException(string.Format("{0} is less than absolute zero.",
                                               temperature));
       this.temp = temperature;
    }
@@ -41,7 +41,7 @@ public class Temperature : IFormattable
 
    public string ToString(string format, IFormatProvider provider)
    {
-      if (String.IsNullOrEmpty(format)) format = "G";
+      if (string.IsNullOrEmpty(format)) format = "G";
       if (provider == null) provider = CultureInfo.CurrentCulture;
 
       switch (format.ToUpperInvariant())
@@ -54,7 +54,7 @@ public class Temperature : IFormattable
          case "K":
             return Kelvin.ToString("F2", provider) + " K";
          default:
-            throw new FormatException(String.Format("The {0} format string is not supported.", format));
+            throw new FormatException(string.Format("The {0} format string is not supported.", format));
       }
    }
 }
@@ -71,8 +71,8 @@ public class Example
 
       // Use composite formatting with a format provider.
       temp1 = new Temperature(-40);
-      Console.WriteLine(String.Format(CultureInfo.CurrentCulture, "{0:C} (Celsius) = {0:K} (Kelvin) = {0:F} (Fahrenheit)", temp1));
-      Console.WriteLine(String.Format(new CultureInfo("fr-FR"), "{0:C} (Celsius) = {0:K} (Kelvin) = {0:F} (Fahrenheit)\n", temp1));
+      Console.WriteLine(string.Format(CultureInfo.CurrentCulture, "{0:C} (Celsius) = {0:K} (Kelvin) = {0:F} (Fahrenheit)", temp1));
+      Console.WriteLine(string.Format(new CultureInfo("fr-FR"), "{0:C} (Celsius) = {0:K} (Kelvin) = {0:F} (Fahrenheit)\n", temp1));
 
       // Call ToString method with format string.
       temp1 = new Temperature(32);

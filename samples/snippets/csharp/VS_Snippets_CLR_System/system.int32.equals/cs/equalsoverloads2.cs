@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -50,26 +50,26 @@ public class Example
 }
 // The example displays the following output:
 //       value = byte1:            True
-//       112 (Int32) = 112 (Byte): False
+//       112 (int) = 112 (Byte): False
 //
 //       value = short1:            True
-//       112 (Int32) = 112 (Int16): False
+//       112 (int) = 112 (Int16): False
 //
 //       value = long1:             False
-//       112 (Int32) = 112 (Int64): False
+//       112 (int) = 112 (Int64): False
 //
 //       value = sbyte1:            True
-//       112 (Int32) = 112 (SByte): False
+//       112 (int) = 112 (SByte): False
 //
 //       value = ushort1:            True
-//       112 (Int32) = 112 (UInt16): False
+//       112 (int) = 112 (UInt16): False
 //
 //       value = ulong1:             False
-//       112 (Int32) = 112 (UInt64): False
+//       112 (int) = 112 (UInt64): False
 //
 //       value = dec1:                False
-//       112 (Int32) = 112 (Decimal): False
+//       112 (int) = 112 (Decimal): False
 //
 //       value = dbl1:               False
-//       112 (Int32) = 112 (Double): False
+//       112 (int) = 112 (Double): False
 // </Snippet1>

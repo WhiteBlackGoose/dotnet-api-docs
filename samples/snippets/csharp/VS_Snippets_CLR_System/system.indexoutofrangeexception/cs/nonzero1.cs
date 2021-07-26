@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -22,7 +22,7 @@ public class Example
 // The example displays the following output:
 //    Unhandled Exception:
 //    System.IndexOutOfRangeException: Index was outside the bounds of the array.
-//       at System.Array.InternalGetReference(Void* elemRef, Int32 rank, Int32* pIndices)
-//       at System.Array.SetValue(Object value, Int32 index)
+//       at System.Array.InternalGetReference(Void* elemRef, int rank, int* pIndices)
+//       at System.Array.SetValue(Object value, int index)
 //       at Example.Main()
 // </Snippet1>

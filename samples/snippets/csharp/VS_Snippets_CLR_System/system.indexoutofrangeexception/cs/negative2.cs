@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Collections.Generic;
 
@@ -13,7 +13,7 @@ public class Example
       if (args.Length < 2)
          startValue = 2;
       else
-         if (! Int32.TryParse(args[1], out startValue))
+         if (! int.TryParse(args[1], out startValue))
             startValue = 2;
 
       ShowValues(startValue);

@@ -1,13 +1,13 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
 
 public class WordCount
 {
-   private String filename = String.Empty;
+   private string filename = string.Empty;
    private int nWords = 0;
-   private String pattern = @"\b\w+\b";
+   private string pattern = @"\b\w+\b";
 
    public WordCount(string filename)
    {
@@ -15,7 +15,7 @@ public class WordCount
          throw new FileNotFoundException("The file does not exist.");
 
       this.filename = filename;
-      string txt = String.Empty;
+      string txt = string.Empty;
       using (StreamReader sr = new StreamReader(filename)) {
          txt = sr.ReadToEnd();
       }

@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Collections.Generic;
 
@@ -13,7 +13,7 @@ public class Example
       if (args.Length < 2)
          startValue = 2;
       else
-         if (! Int32.TryParse(args[1], out startValue))
+         if (! int.TryParse(args[1], out startValue))
             startValue = 2;
 
       ShowValues(startValue);
@@ -41,7 +41,7 @@ public class Example
 //    Unhandled Exception: System.ArgumentOutOfRangeException:
 //    Index was out of range. Must be non-negative and less than the size of the collection.
 //    Parameter name: index
-//       at System.Collections.Generic.List`1.get_Item(Int32 index)
-//       at Example.ShowValues(Int32 startValue)
+//       at System.Collections.Generic.List`1.get_Item(int index)
+//       at Example.ShowValues(int startValue)
 //       at Example.Main()
 // </Snippet5>
