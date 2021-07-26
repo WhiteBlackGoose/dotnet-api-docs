@@ -1,6 +1,6 @@
-﻿/*
+/*
    System.Web.Services.Discovery.DiscoveryClientProtocol.DiscoveryClientProtocol
-   System.Web.Services.Discovery.DiscoveryClientProtocol.Download(ref String)
+   System.Web.Services.Discovery.DiscoveryClientProtocol.Download(ref string)
 
    The following example demonstrates the 'constructor' and the
    method 'Download' of the 'DiscoveryClientProtocol' class. The

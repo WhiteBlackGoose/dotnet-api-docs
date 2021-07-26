@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demonstrates 'GetHostByAddress(IPAddress)' method of 'Dns' class.
    It takes an IP address string from commandline or uses default value and creates
    an instance of IPAddress for the specified IP address string. Obtains the IPHostEntry
@@ -14,7 +14,7 @@ class DnsHostByAddress
 {
    public static void Main()
    {
-      String IpAddressString = "";
+      string IpAddressString = "";
       DnsHostByAddress myDnsHostByAddress = new DnsHostByAddress();
       Console.Write("Type an IP address (press Enter for default, default is '207.46.131.199'): ");
       IpAddressString = Console.ReadLine();
@@ -23,7 +23,7 @@ class DnsHostByAddress
       else
          myDnsHostByAddress.DisplayHostAddress("207.46.131.199");
    }
-   public void DisplayHostAddress(String IpAddressString)
+   public void DisplayHostAddress(string IpAddressString)
    {
       // Call 'GetHostByAddress(IPAddress)' method giving an 'IPAddress' object as argument.
       // Obtain an 'IPHostEntry' instance, containing address information of the specified host.

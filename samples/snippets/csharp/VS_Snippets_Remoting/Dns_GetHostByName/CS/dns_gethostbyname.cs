@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demonstrates 'GetHostByName' method of 'Dns' class.
    It takes a URL string from commandline or uses default value, and obtains
    the 'IPHostEntry' object by calling 'GetHostByName' method of 'Dns' class.Then
@@ -14,7 +14,7 @@ class DnsHostByName
    public static void Main()
 
     {
-      String hostName = "";
+      string hostName = "";
       DnsHostByName myDnsHostByName = new DnsHostByName();
       Console.Write("Type a URL (press Enter for default, default is 'www.microsoft.net') : ");
       hostName = Console.ReadLine();
@@ -24,7 +24,7 @@ class DnsHostByName
          myDnsHostByName.DisplayHostName("www.microsoft.net");
    }
 
-   public void DisplayHostName(String hostName)
+   public void DisplayHostName(string hostName)
    {
       // Call the GetHostByName method passing a DNS style host name(for example,
       // "www.contoso.com") as an argument.

@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance;
+// System.Runtime.Remoting.Proxies.ProxyAttribute.CreateInstance;
 // System.Runtime.Remoting.Proxies.ProxyAttribute.CreateProxy;
 // System.Runtime.Remoting.Proxies.RealProxy.SetStubData;
 // System.Runtime.Remoting.Proxies.RealProxy.Invoke;
@@ -89,7 +89,7 @@ namespace Samples
    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
    public class MyProxy : RealProxy
    {
-      String myUri;
+      string myUri;
       MarshalByRefObject myMarshalByRefObject;
       public MyProxy(): base()
       {

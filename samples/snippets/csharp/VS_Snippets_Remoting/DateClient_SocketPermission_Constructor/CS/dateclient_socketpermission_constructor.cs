@@ -1,4 +1,4 @@
-﻿/*
+/*
   This program demonstrates the 'SocketPermission(PermissionState)',
   'SocketPermission(NetworkAccess, TransportType, string, int) constructors,
   'FromXml', 'Intersect', 'AddPermission' methods and 'AllPorts' field
@@ -46,7 +46,7 @@ public class DateClient {
 		asciiEncoding = Encoding.ASCII;
 	}
 
-	public String GetDate() {
+	public string GetDate() {
 // <Snippet1>
 // <Snippet2>
 // <Snippet3>
@@ -134,8 +134,8 @@ public class UserDateClient {
 			return;
 		}	
 		try {
-			DateClient myDateClient = new DateClient(IPAddress.Parse(args[0]), Int32.Parse(args[1]));
-			String currentDate = myDateClient.GetDate();
+			DateClient myDateClient = new DateClient(IPAddress.Parse(args[0]), int.Parse(args[1]));
+			string currentDate = myDateClient.GetDate();
 			Console.WriteLine("The current date and time is : ");
 			Console.WriteLine("{0}", currentDate);
 		}

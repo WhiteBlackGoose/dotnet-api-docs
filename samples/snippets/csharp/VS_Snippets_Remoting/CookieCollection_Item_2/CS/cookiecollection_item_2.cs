@@ -1,4 +1,4 @@
-﻿/*
+/*
   This program demonstrates 'Item(int)' properties of 'CookieCollection' class.
 
   This program uses an internal site called "CookiesServer.aspx". The program creates a 'HttpWebRequest'
@@ -51,9 +51,9 @@ public class CookieCollection_Item_2 {
 			// Get the response without any cookies sent to the server.
 			HttpWebResponse myHttpWebResponse = (HttpWebResponse) myHttpWebRequest.GetResponse();
 
-			String usrName;
-			String dateBirth;
-			String placeBirth;
+			string usrName;
+			string dateBirth;
+			string placeBirth;
 
 			// Get the information from the user as requested by the server and send it over to the server.
 			myHttpWebRequest = (HttpWebRequest) WebRequest.Create(requestUri);
@@ -65,7 +65,7 @@ public class CookieCollection_Item_2 {
 			Console.Write("\nDateOfBirth [dd/mm/yyyy]: ");
 			dateBirth = Console.ReadLine();
 			Regex regex = new Regex("/");
-			String convertDate = regex.Replace(dateBirth, "%2F");
+			string convertDate = regex.Replace(dateBirth, "%2F");
 			Console.Write("\nPlaceOfBirth : ");
 			placeBirth = Console.ReadLine();
 			Console.WriteLine("");

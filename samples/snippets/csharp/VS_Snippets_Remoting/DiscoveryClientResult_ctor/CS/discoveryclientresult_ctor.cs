@@ -1,7 +1,7 @@
-﻿// System.Web.Services.Discovery.DiscoveryClientResult(Type,String,String)
+// System.Web.Services.Discovery.DiscoveryClientResult(Type,string,String)
 
 /*
-The following example demonstrates the DiscoveryClientResult(Type,String,String)
+The following example demonstrates the DiscoveryClientResult(Type,string,String)
 constructor of 'DiscoveryClientResult' class.
 A 'DiscoveryClientResultCollection' object is obtained by reading a '.discomap' file
 which contains the 'DiscoveryClientResult' objects, representing the details of

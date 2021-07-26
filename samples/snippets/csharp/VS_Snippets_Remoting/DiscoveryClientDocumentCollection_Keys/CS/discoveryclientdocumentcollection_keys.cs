@@ -1,7 +1,7 @@
-﻿/*
+/*
    System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Keys
    System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Values
-   System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Contains(String)
+   System.Web.Services.Discovery.DiscoveryClientDocumentCollection.Contains(string)
 
    The following example demonstrates the 'Keys', 'Values' properties
    and the 'Contains' method. The 'Keys' property returns the names

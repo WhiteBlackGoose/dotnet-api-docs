@@ -1,4 +1,4 @@
-﻿/*
+/*
   This program demonstrates the 'ToXml' and 'IsUnrestricted' method and 'ConnectList' property of
   'SocketPermission' class.
 
@@ -72,7 +72,7 @@ public class DateClient {
 		}
 	}
 
-	public String GetDate()
+	public string GetDate()
 	{
 
 		SocketPermission socketPermission1 = new SocketPermission(PermissionState.Unrestricted);
@@ -163,8 +163,8 @@ public class UserDateClient {
 			return;
 		}	
 		try {
-			DateClient myDateClient = new DateClient(IPAddress.Parse(args[0]), Int32.Parse(args[1]));
-			String currentDate = myDateClient.GetDate();
+			DateClient myDateClient = new DateClient(IPAddress.Parse(args[0]), int.Parse(args[1]));
+			string currentDate = myDateClient.GetDate();
 			Console.WriteLine("The current date and time is : ");
 			Console.WriteLine("{0}", currentDate);
 		}

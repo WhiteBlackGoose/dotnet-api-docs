@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Channels.CommonTransportKeys
+// System.Runtime.Remoting.Channels.CommonTransportKeys
 // System.Runtime.Remoting.Channels.CommonTransportKeys.IPAddress
 // System.Runtime.Remoting.Channels.CommonTransportKeys.ConnectionId
 // System.Runtime.Remoting.Channels.CommonTransportKeys.RequestUri
@@ -26,7 +26,7 @@ namespace Logging
    public class LoggingClientChannelSinkProvider : IClientChannelSinkProvider
    {
       private IClientChannelSinkProvider next1 = null;
-      public IClientChannelSink CreateSink(IChannelSender channel1, String url1,
+      public IClientChannelSink CreateSink(IChannelSender channel1, string url1,
          Object remoteChannelData)
       {
          IClientChannelSink localNextSink = null;

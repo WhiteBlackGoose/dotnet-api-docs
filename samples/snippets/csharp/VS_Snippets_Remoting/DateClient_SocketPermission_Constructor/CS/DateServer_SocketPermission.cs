@@ -1,4 +1,4 @@
-﻿/*
+/*
   This program demonstrates the 'AcceptList' property  of 'SocketPermission' class.
 
   This program provides a class called 'DateServer' that functions as a server
@@ -56,7 +56,7 @@ public class DateServer {
 	}
 
 	// Return the current date on the client connection.
-	public bool Create(String portString) {
+	public bool Create(string portString) {
 		// Create another 'SocketPermission' object with two ip addresses.
 		// First 'SocketPermission' ip-address is '192.168.144.238' for 'All' transport types and
       // for 'All' ports for the ip-address.

@@ -1,4 +1,4 @@
-﻿// System.Net.CredentialCache.DefaultCredentials.
+// System.Net.CredentialCache.DefaultCredentials.
 
 /* This program demonstrates the 'DefaultCredentials' property of the 'CredentialCache'
    class.
@@ -51,7 +51,7 @@ class CredentialCache_DefaultCredentials
             while (count > 0)
             {
                 // Dump the 256 characters on a string and display the string onto the console.
-                String output = new String(read, 0, count);
+                string output = new string(read, 0, count);
                 Console.Write(output);
                 count = readStream.Read(read, 0, 256);
             }
