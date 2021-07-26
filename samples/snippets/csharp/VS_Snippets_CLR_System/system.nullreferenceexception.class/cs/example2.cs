@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Collections.Generic;
 
@@ -6,11 +6,11 @@ public class Example
 {
    public static void Main()
    {
-      List<String> names = GetData();
+      List<string> names = GetData();
       PopulateNames(names);
    }
 
-   private static void PopulateNames(List<String> names)
+   private static void PopulateNames(List<string> names)
    {
       String[] arrNames = { "Dakota", "Samuel", "Nikita",
                             "Koani", "Saya", "Yiska", "Yumaevsky" };
@@ -18,7 +18,7 @@ public class Example
          names.Add(arrName);
    }
 
-   private static List<String> GetData()
+   private static List<string> GetData()
    {
       return null;
    }

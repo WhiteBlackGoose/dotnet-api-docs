@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -62,8 +62,8 @@ public class Example
    private static void IntegerConstructor()
    {
       // <Snippet6>
-      int[] integers = { Int32.MinValue, -10534, -189, 0, 17, 113439,
-                         Int32.MaxValue };
+      int[] integers = { int.MinValue, -10534, -189, 0, 17, 113439,
+                         int.MaxValue };
       BigInteger constructed, assigned;
 
       foreach (int number in integers)

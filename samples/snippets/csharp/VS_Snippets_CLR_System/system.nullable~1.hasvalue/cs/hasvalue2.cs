@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -27,7 +27,7 @@ public class Example
 }
 // The example displays the following output:
 //       Has a value: True
-//       Type: Int32
+//       Type: int
 //       Value: 10
 //
 //       Has a value: False

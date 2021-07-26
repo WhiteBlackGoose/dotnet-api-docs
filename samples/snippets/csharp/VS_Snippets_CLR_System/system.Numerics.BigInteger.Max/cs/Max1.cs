@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -10,9 +10,9 @@ public class Example
                                BigInteger.MinusOne,
                                10359321239000,
                                BigInteger.Pow(103988, 2),
-                               BigInteger.Multiply(Int32.MaxValue, Int16.MaxValue),
+                               BigInteger.Multiply(int.MaxValue, Int16.MaxValue),
                                BigInteger.Add(BigInteger.Pow(Int64.MaxValue, 2),
-                               BigInteger.Pow(Int32.MaxValue, 2)) };
+                               BigInteger.Pow(int.MaxValue, 2)) };
       if (numbers.Length < 2)
       {
          Console.WriteLine("Cannot determine which is the larger of {0} numbers.",

@@ -1,4 +1,4 @@
-﻿// Illustrates explicit BigInteger conversions defined
+// Illustrates explicit BigInteger conversions defined
 // using the op_Explicit method.
 
 using System;
@@ -102,7 +102,7 @@ public class ExplicitConversion
       // </Snippet4>
 
       // <Snippet5>
-      // BigInteger to Int32 conversion.
+      // BigInteger to int conversion.
       BigInteger goodInteger = 200000;
       BigInteger badInteger = 65000000000;
 

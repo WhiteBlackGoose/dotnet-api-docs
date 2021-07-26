@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Numerics;
 
@@ -11,7 +11,7 @@ public class Example
       BigInteger[] dividends = { BigInteger.Multiply((BigInteger) Single.MaxValue, 2),
                                  BigInteger.Parse("90612345123875509091827560007100099"),
                                  BigInteger.One,
-                                 BigInteger.Multiply(Int32.MaxValue, Int64.MaxValue),
+                                 BigInteger.Multiply(int.MaxValue, Int64.MaxValue),
                                  divisor + BigInteger.One };
 
       // Divide each dividend by divisor in three different ways.

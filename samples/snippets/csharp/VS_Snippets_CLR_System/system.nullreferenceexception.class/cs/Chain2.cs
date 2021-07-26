@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       var pages = new Pages();
       Page current = pages.CurrentPage;
       if (current != null) {
-         String title = current.Title;
+         string title = current.Title;
          Console.WriteLine("Current title: '{0}'", title);
       }
       else {
@@ -60,5 +60,5 @@ public class Pages
 public class Page
 {
    public Uri URL;
-   public String Title;
+   public string Title;
 }

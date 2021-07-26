@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -6,7 +6,7 @@ public class Example
 {
    public static void Main()
    {
-      List<String> names = new List<String>();
+      List<string> names = new List<string>();
       names.Add("Major Major Major");
    }
 }

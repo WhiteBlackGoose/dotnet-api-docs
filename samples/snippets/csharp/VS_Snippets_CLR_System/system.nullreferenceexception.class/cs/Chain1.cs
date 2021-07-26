@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 
 public class Example
@@ -6,8 +6,8 @@ public class Example
    public static void Main()
    {
       var pages = new Pages();
-      if (! String.IsNullOrEmpty(pages.CurrentPage.Title)) {
-         String title = pages.CurrentPage.Title;
+      if (! string.IsNullOrEmpty(pages.CurrentPage.Title)) {
+         string title = pages.CurrentPage.Title;
          Console.WriteLine("Current title: '{0}'", title);
       }
    }
@@ -53,7 +53,7 @@ public class Pages
 public class Page
 {
    public Uri URL;
-   public String Title;
+   public string Title;
 }
 // The example displays the following output:
 //    Unhandled Exception:

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Numerics;
 
 public class Example
@@ -68,7 +68,7 @@ public class Example
       //    BigInteger -16 = SByte -16 : True
       //    BigInteger 1233 = Int16 1233 : True
       //    BigInteger 64000 = UInt16 64000 : True
-      //    BigInteger -1603854 = Int32 -1603854 : True
+      //    BigInteger -1603854 = int -1603854 : True
       //    BigInteger 1223300 = UInt32 1223300 : True
       //    BigInteger -123822229012 = Int64 -123822229012 : True
       // </Snippet1>

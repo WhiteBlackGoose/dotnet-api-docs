@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Numerics;
@@ -17,7 +17,7 @@ public class Example
       FileStream fs;
       BinaryFormatter formatter = new BinaryFormatter();
 
-      BigInteger number = BigInteger.Pow(Int32.MaxValue, 20) * BigInteger.MinusOne;
+      BigInteger number = BigInteger.Pow(int.MaxValue, 20) * BigInteger.MinusOne;
       Console.WriteLine("The original value is {0}.", number);
       SignAndMagnitude sm = new SignAndMagnitude();
       sm.Sign = number.Sign;

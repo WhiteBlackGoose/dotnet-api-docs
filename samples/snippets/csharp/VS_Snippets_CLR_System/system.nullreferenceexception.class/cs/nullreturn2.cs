@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       Person[] persons = Person.AddRange( new String[] { "Abigail", "Abra",
                                           "Abraham", "Adrian", "Ariella",
                                           "Arnold", "Aston", "Astor" } );
-      String nameToFind = "Robert";
+      string nameToFind = "Robert";
       Person found = Array.Find(persons, p => p.FirstName == nameToFind);
       Console.WriteLine(found.FirstName);
    }
@@ -25,12 +25,12 @@ public class Person
       return p;
    }
 
-   public Person(String firstName)
+   public Person(string firstName)
    {
       this.FirstName = firstName;
    }
 
-   public String FirstName;
+   public string FirstName;
 }
 // The example displays the following output:
 //       Unhandled Exception: System.NullReferenceException:

@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the
 // Nullable<T>.ToString method.
 
@@ -26,7 +26,7 @@ class Sample
     string msg = dspDT.ToString();
 
     Console.Write("{0} ", title);
-    if (String.IsNullOrEmpty(msg))
+    if (string.IsNullOrEmpty(msg))
         Console.WriteLine("The nullable DateTime has no defined value.");
     else
         Console.WriteLine("The current date and time is {0}.", msg);

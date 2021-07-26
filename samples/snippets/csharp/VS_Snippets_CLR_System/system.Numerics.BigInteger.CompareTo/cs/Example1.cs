@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Numerics;
@@ -27,7 +27,7 @@ public struct StarInfo : IComparable<StarInfo>
    // Display name of star and its distance in parentheses.
    public override string ToString()
    {
-      return String.Format("{0,-10} ({1:N0})", this.Name, this.Distance);
+      return string.Format("{0,-10} ({1:N0})", this.Name, this.Distance);
    }
 
    // Compare StarInfo objects by their distance from Earth.
