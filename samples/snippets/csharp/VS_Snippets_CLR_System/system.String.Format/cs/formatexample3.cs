@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public enum Color {Yellow = 1, Blue, Green};
@@ -9,12 +9,12 @@ class Example
 
    public static void Main() 
    {
-      // Store the output of the String.Format method in a string.
+      // Store the output of the string.Format method in a string.
       string s = "";
    
       // Format a negative integer or floating-point number in various ways.
       Console.WriteLine("Standard Numeric Format Strings");
-      s = String.Format( 
+      s = string.Format( 
           "(C) Currency: . . . . . . . . {0:C}\n" +
           "(D) Decimal:. . . . . . . . . {0:D}\n" +
           "(E) Scientific: . . . . . . . {1:E}\n" +
@@ -30,7 +30,7 @@ class Example
    
       // Format a date in various ways.
       Console.WriteLine("Standard Date and Time Format Strings");
-      s = String.Format(  
+      s = string.Format(  
           "(d) Short date: . . . . . . . {0:d}\n" +
           "(D) Long date:. . . . . . . . {0:D}\n" +
           "(t) Short time: . . . . . . . {0:t}\n" +
@@ -51,7 +51,7 @@ class Example
    
       // Format an enumeration value in various ways.
       Console.WriteLine("Standard Enumeration Format Specifiers");
-      s = String.Format(
+      s = string.Format(
           "(G) General:. . . . . . . . . {0:G}\n" +
           "    (default):. . . . . . . . {0} (default = 'G')\n" +
           "(F) Flags:. . . . . . . . . . {1:F}\n" +

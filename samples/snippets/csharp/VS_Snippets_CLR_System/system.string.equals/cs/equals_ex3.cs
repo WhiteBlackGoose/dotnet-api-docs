@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 using System.Threading;
@@ -21,7 +21,7 @@ public class Example
             foreach (var comparison in comparisons) 
                Console.WriteLine("   {0} = {1} ({2}): {3}", strings1[ctr],
                                  strings2[ctr], comparison, 
-                                 String.Equals(strings1[ctr], strings2[ctr], comparison));
+                                 string.Equals(strings1[ctr], strings2[ctr], comparison));
 
             Console.WriteLine();         
          }

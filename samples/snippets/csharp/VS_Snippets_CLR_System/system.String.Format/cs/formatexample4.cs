@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 public class Example
@@ -14,7 +14,7 @@ public class Example
       string output;   
       foreach (var item in temperatureInfo)
       {
-         output = String.Format("Temperature at {0,8:t} on {0,9:d}: {1,5:N1}°F", 
+         output = string.Format("Temperature at {0,8:t} on {0,9:d}: {1,5:N1}°F", 
                                 item.Key, item.Value);
          Console.WriteLine(output);
       }

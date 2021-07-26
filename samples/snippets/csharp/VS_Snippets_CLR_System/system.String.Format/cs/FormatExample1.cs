@@ -1,5 +1,5 @@
-﻿// <Snippet1>
-// This code example demonstrates the String.Format() method.
+// <Snippet1>
+// This code example demonstrates the string.Format() method.
 // Formatting for this example uses the "en-US" culture.
 
 using System;
@@ -12,14 +12,14 @@ class Sample
 
     public static void Main() 
     {
-// Store the output of the String.Format method in a string.
+// Store the output of the string.Format method in a string.
     string s = "";
 
     Console.Clear();
 
 // Format a negative integer or floating-point number in various ways.
     Console.WriteLine("Standard Numeric Format Specifiers");
-    s = String.Format(CultureInfo.InvariantCulture, 
+    s = string.Format(CultureInfo.InvariantCulture, 
         "(C) Currency: . . . . . . . . {0:C}\n" +
         "(D) Decimal:. . . . . . . . . {0:D}\n" +
         "(E) Scientific: . . . . . . . {1:E}\n" +
@@ -35,7 +35,7 @@ class Sample
 
 // Format the current date in various ways.
     Console.WriteLine("Standard DateTime Format Specifiers");
-    s = String.Format(CultureInfo.InvariantCulture.DateTimeFormat, 
+    s = string.Format(CultureInfo.InvariantCulture.DateTimeFormat, 
         "(d) Short date: . . . . . . . {0:d}\n" +
         "(D) Long date:. . . . . . . . {0:D}\n" +
         "(t) Short time: . . . . . . . {0:t}\n" +
@@ -56,7 +56,7 @@ class Sample
 
 // Format a Color enumeration value in various ways.
     Console.WriteLine("Standard Enumeration Format Specifiers");
-    s = String.Format(CultureInfo.InvariantCulture, 
+    s = string.Format(CultureInfo.InvariantCulture, 
         "(G) General:. . . . . . . . . {0:G}\n" +
         "    (default):. . . . . . . . {0} (default = 'G')\n" +
         "(F) Flags:. . . . . . . . . . {0:F} (flags or integer)\n" +

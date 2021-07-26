@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -10,7 +10,7 @@ public class Example
                             "  = {2,10} ({2,8:X8})";
       int value1 = 16932;
       int value2 = 15421;
-      string result = String.Format(formatString, 
+      string result = string.Format(formatString, 
                                     value1, value2, value1 & value2);
       Console.WriteLine(result);
       // The example displays the following output:

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -8,7 +8,7 @@ public class Example
       DateTime dat = new DateTime(2012, 1, 17, 9, 30, 0); 
       string city = "Chicago";
       int temp = -16;
-      string output = String.Format("At {0} in {1}, the temperature was {2} degrees.",
+      string output = string.Format("At {0} in {1}, the temperature was {2} degrees.",
                                     dat, city, temp);
       Console.WriteLine(output);
       // The example displays output like the following:

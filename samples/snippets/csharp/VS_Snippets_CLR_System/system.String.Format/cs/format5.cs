@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -11,12 +11,12 @@ public class Example
       TimeSpan loTime = new TimeSpan(3, 16, 10);
       decimal loTemp = 54.8m; 
 
-      string result1 = String.Format("Temperature on {0:d}:\n{1,11}: {2} degrees (hi)\n{3,11}: {4} degrees (lo)", 
+      string result1 = string.Format("Temperature on {0:d}:\n{1,11}: {2} degrees (hi)\n{3,11}: {4} degrees (lo)", 
                                      date1, hiTime, hiTemp, loTime, loTemp);
       Console.WriteLine(result1);
       Console.WriteLine();
            
-      string result2 = String.Format("Temperature on {0:d}:\n{1,11}: {2} degrees (hi)\n{3,11}: {4} degrees (lo)", 
+      string result2 = string.Format("Temperature on {0:d}:\n{1,11}: {2} degrees (hi)\n{3,11}: {4} degrees (lo)", 
                                      new object[] { date1, hiTime, hiTemp, loTime, loTemp });
       Console.WriteLine(result2);
       // The example displays output like the following:

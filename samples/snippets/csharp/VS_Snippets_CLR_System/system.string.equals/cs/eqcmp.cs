@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 class Sample 
@@ -28,8 +28,8 @@ class Sample
             {
                string otherChar = threeIs[innerCtr];
                Console.WriteLine("{0} (U+{1}) = {2} (U+{3}): {4}", 
-                                 instanceChar, Convert.ToInt16(Char.Parse(instanceChar)).ToString("X4"), 
-                                 otherChar, Convert.ToInt16(Char.Parse(otherChar)).ToString("X4"), 
+                                 instanceChar, Convert.ToInt16(char.Parse(instanceChar)).ToString("X4"), 
+                                 otherChar, Convert.ToInt16(char.Parse(otherChar)).ToString("X4"), 
                                  instanceChar.Equals(otherChar, sc));
             }
             Console.WriteLine();

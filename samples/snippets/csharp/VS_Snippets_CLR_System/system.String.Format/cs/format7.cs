@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -20,11 +20,11 @@ public class Example
          // See if adding the number of years exceeds dateValue.
          string output;
          if (birthdate.AddYears(years) <= dateValue) {
-            output = String.Format("You are now {0} years old.", years);
+            output = string.Format("You are now {0} years old.", years);
             Console.WriteLine(output);
          }   
          else {
-            output = String.Format("You are now {0} years old.", years - 1);
+            output = string.Format("You are now {0} years old.", years - 1);
             Console.WriteLine(output);
          }      
       }

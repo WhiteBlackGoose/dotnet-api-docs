@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class TestFormatter
@@ -6,12 +6,12 @@ public class TestFormatter
    public static void Main()
    {
       int acctNumber = 79203159;
-      Console.WriteLine(String.Format(new CustomerFormatter(), "{0}", acctNumber));
-      Console.WriteLine(String.Format(new CustomerFormatter(), "{0:G}", acctNumber));
-      Console.WriteLine(String.Format(new CustomerFormatter(), "{0:S}", acctNumber));
-      Console.WriteLine(String.Format(new CustomerFormatter(), "{0:P}", acctNumber));
+      Console.WriteLine(string.Format(new CustomerFormatter(), "{0}", acctNumber));
+      Console.WriteLine(string.Format(new CustomerFormatter(), "{0:G}", acctNumber));
+      Console.WriteLine(string.Format(new CustomerFormatter(), "{0:S}", acctNumber));
+      Console.WriteLine(string.Format(new CustomerFormatter(), "{0:P}", acctNumber));
       try {
-         Console.WriteLine(String.Format(new CustomerFormatter(), "{0:X}", acctNumber));
+         Console.WriteLine(string.Format(new CustomerFormatter(), "{0:X}", acctNumber));
       }
       catch (FormatException e) {
          Console.WriteLine(e.Message);
@@ -39,7 +39,7 @@ public class CustomerFormatter : IFormatProvider, ICustomFormatter
       }
       else
       {
-         if (String.IsNullOrEmpty(format)) 
+         if (string.IsNullOrEmpty(format)) 
             format = "G";
          
          string customerString = arg.ToString();
@@ -63,7 +63,7 @@ public class CustomerFormatter : IFormatProvider, ICustomFormatter
                                      customerString.Substring(6);
             default:
                throw new FormatException( 
-                         String.Format("The '{0}' format specifier is not supported.", format));
+                         string.Format("The '{0}' format specifier is not supported.", format));
          }
       }   
    }

@@ -1,9 +1,9 @@
-﻿// <Snippet10>
+// <Snippet10>
 using System;
 
 public class CityInfo
 {
-   public CityInfo(String name, int population, Decimal area, int year)
+   public CityInfo(string name, int population, Decimal area, int year)
    {
       this.Name = name;
       this.Population = population;
@@ -11,7 +11,7 @@ public class CityInfo
       this.Year = year;
    }
    
-   public readonly String Name; 
+   public readonly string Name; 
    public readonly int Population;
    public readonly Decimal Area;
    public readonly int Year;
@@ -30,7 +30,7 @@ public class Example
    private static void ShowPopulationData(CityInfo city)
    {
       object[] args = { city.Name, city.Year, city.Population, city.Area };
-      String result = String.Format("{0} in {1}: Population {2:N0}, Area {3:N1} sq. feet", 
+      string result = string.Format("{0} in {1}: Population {2:N0}, Area {3:N1} sq. feet", 
                                     args);
       Console.WriteLine(result); 
    }
