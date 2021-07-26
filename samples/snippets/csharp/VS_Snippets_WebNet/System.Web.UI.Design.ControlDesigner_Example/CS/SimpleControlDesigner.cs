@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.ComponentModel;
 using System.Web.UI;
@@ -77,7 +77,7 @@ namespace AspNet.Samples
             if (simpleControl.Text.Length > 0)
             {
                 string spec = "<a href='{0}.aspx'>{0}</a>";
-                return String.Format(spec, simpleControl.Text);
+                return string.Format(spec, simpleControl.Text);
             }
             else
             {

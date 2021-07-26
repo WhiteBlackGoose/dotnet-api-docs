@@ -1,4 +1,4 @@
-﻿using System.Web.Security;
+using System.Web.Security;
 using System.Configuration.Provider;
 using System.Collections.Specialized;
 using System;
@@ -87,7 +87,7 @@ namespace Samples.AspNet.Membership
       if (name == null || name.Length == 0)
         name = "OdbcMembershipProvider";
 
-      if (String.IsNullOrEmpty(config["description"]))
+      if (string.IsNullOrEmpty(config["description"]))
       {
         config.Remove("description");
         config.Add("description", "Sample ODBC Membership provider");

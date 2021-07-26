@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 namespace Samples.AspNet.CS {
 
   using System;
@@ -22,7 +22,7 @@ namespace Samples.AspNet.CS {
       get {
         object o = ViewState["ControlID"];
         if (o == null)
-          return String.Empty;
+          return string.Empty;
         return (string)o;
       }
       set {

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Web;
 using System.Web.SessionState;
@@ -104,7 +104,7 @@ namespace Samples.AspNet.SessionState
         {
             try
             {
-                pHashtableLock.AcquireWriterLock(Int32.MaxValue);
+                pHashtableLock.AcquireWriterLock(int.MaxValue);
 
                 this.RemoveExpiredSessionData();
             }
@@ -169,7 +169,7 @@ namespace Samples.AspNet.SessionState
             {
                 try
                 {
-                    pHashtableLock.AcquireReaderLock(Int32.MaxValue);
+                    pHashtableLock.AcquireReaderLock(int.MaxValue);
                     sessionData = (SessionItem)pSessionItems[sessionID];
 
                     if (sessionData != null)
@@ -206,7 +206,7 @@ namespace Samples.AspNet.SessionState
 
                 try
                 {
-                    pHashtableLock.AcquireWriterLock(Int32.MaxValue);
+                    pHashtableLock.AcquireWriterLock(int.MaxValue);
                     pSessionItems[sessionID] = sessionData;
                 }
                 finally
@@ -261,7 +261,7 @@ namespace Samples.AspNet.SessionState
             {
                 try
                 {
-                    pHashtableLock.AcquireWriterLock(Int32.MaxValue);
+                    pHashtableLock.AcquireWriterLock(int.MaxValue);
 
                     sessionID = pSessionIDManager.GetSessionID(context);
                     pSessionItems.Remove(sessionID);

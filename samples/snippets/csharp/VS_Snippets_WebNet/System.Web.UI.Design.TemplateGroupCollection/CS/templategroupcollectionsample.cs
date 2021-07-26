@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Web.UI;
 using System.Web.UI.Design;
@@ -15,9 +15,9 @@ namespace Examples.AspNet
     {
         private DerivedControl internalControl = null;
 
-        private const String templateGroupName = "My template group";
-        private const String templateDefinitionName1 = "First";
-        private const String templateDefinitionName2 = "Second";
+        private const string templateGroupName = "My template group";
+        private const string templateDefinitionName1 = "First";
+        private const string templateDefinitionName2 = "Second";
         private TemplateGroup internalGroup = null;
 
         // Override the read-only TemplateGroups property.

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -23,7 +23,7 @@ namespace ControlDesignerSamples.CS
         // the design time text in italics.
         public override string GetDesignTimeHtml()
         {
-            string html = String.Empty;
+            string html = string.Empty;
  
             try
             {
@@ -39,7 +39,7 @@ namespace ControlDesignerSamples.CS
             }
             catch (System.Exception e)
             {
-               if (String.IsNullOrEmpty(html))
+               if (string.IsNullOrEmpty(html))
                {
                    html = GetErrorDesignTimeHtml(e);
                }

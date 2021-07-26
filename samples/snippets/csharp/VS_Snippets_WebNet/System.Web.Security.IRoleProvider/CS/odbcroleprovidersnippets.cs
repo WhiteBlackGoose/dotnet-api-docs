@@ -1,4 +1,4 @@
-﻿using System.Web.Security;
+using System.Web.Security;
 using System.Configuration.Provider;
 using System.Collections.Specialized;
 using System;
@@ -41,7 +41,7 @@ namespace Samples.AspNet.Roles
       if (name == null || name.Length == 0)
         name = "OdbcRoleProvider";
 
-      if (String.IsNullOrEmpty(config["description"]))
+      if (string.IsNullOrEmpty(config["description"]))
       {
         config.Remove("description");
         config.Add("description", "Sample ODBC Role provider");

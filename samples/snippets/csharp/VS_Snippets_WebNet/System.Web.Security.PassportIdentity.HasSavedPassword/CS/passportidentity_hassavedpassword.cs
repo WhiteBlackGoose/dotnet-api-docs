@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web.Security;
 
 namespace myPassportExamples
@@ -12,7 +12,7 @@ public static void Main()
 // Declare new PassportIdendity object as variable newPass.
 System.Web.Security.PassportIdentity newPass = new System.Web.Security.PassportIdentity();
 // Set a string variable that indicates whether the user has a valid Passport ticket.
-String sHasTick = newPass.HasTicket.ToString();
+string sHasTick = newPass.HasTicket.ToString();
 // </snippet1>
 }
 }

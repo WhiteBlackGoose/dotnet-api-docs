@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // Create a class that derives from the
 // ChtmlTextWriter class.
 using System;
@@ -16,7 +16,7 @@ namespace AspNet.Samples.CS
 		{
 		}
 
-		public CustomChtmlTextWriter(TextWriter writer, String tabString)
+		public CustomChtmlTextWriter(TextWriter writer, string tabString)
 			: base(writer, tabString)
 		{
 		}
@@ -27,7 +27,7 @@ namespace AspNet.Samples.CS
 		// not supported in CHTML.
 		protected override bool OnAttributeRender(string name, string value, HtmlTextWriterAttribute key)
 		{
-			if (String.Equals("bgcolor", name))
+			if (string.Equals("bgcolor", name))
 			{
 				return false;
 			}

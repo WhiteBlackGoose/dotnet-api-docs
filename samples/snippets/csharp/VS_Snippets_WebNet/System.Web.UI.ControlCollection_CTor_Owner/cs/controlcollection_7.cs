@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Security.Permissions;
@@ -29,9 +29,9 @@ namespace ASPNET.Samples.CS
 	[AspNetHostingPermission(SecurityAction.Demand, Level = AspNetHostingPermissionLevel.Minimal)]
 	public sealed class ChildControl : Control
 	{
-		private String messageValue;
+		private string messageValue;
 
-		public String Message
+		public string Message
 		{
 			get
 			{

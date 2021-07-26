@@ -1,4 +1,4 @@
-﻿using System.Web.Security;
+using System.Web.Security;
 using System.Configuration.Provider;
 using System.Collections.Specialized;
 using System;
@@ -88,7 +88,7 @@ public override void Initialize(string name, NameValueCollection config)
       if (name == null || name.Length == 0)
         name = "OdbcMembershipProvider";
 
-      if (String.IsNullOrEmpty(config["description"]))
+      if (string.IsNullOrEmpty(config["description"]))
       {
         config.Remove("description");
         config.Add("description", "Sample ODBC Membership provider");
@@ -672,7 +672,7 @@ public override string GetPassword(string username, string answer)
   }
 
   if (RequiresQuestionAndAnswer && 
-      String.Compare(passwordAnswer, answer, true, CultureInfo.InvariantCulture) != 0)
+      string.Compare(passwordAnswer, answer, true, CultureInfo.InvariantCulture) != 0)
   {
     throw new MembershipPasswordException("Incorrect password answer.");
   }

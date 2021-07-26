@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Web;
 using System.Web.UI;
@@ -10,7 +10,7 @@ namespace ASPNET.Sample
         [AspNetHostingPermission(SecurityAction.Demand, Level = AspNetHostingPermissionLevel.Minimal)]
         public sealed class ViewStateControl3 : WebControl
         {
-                private String _text;
+                private string _text;
 
                 // <Snippet1>
                 // Override the OnLoad method to check if the 
@@ -24,7 +24,7 @@ namespace ASPNET.Sample
                 {
                         if (Page.IsPostBack)
                         {
-                                String s;
+                                string s;
 
                                 if (this.IsLiteralContent())
                                 {
@@ -39,13 +39,13 @@ namespace ASPNET.Sample
                         }
                 }
                 // </Snippet1>
-                public String Text
+                public string Text
                 {
                         get
                         {
                                 if (_text == null)
                                 {
-                                        return String.Empty;
+                                        return string.Empty;
                                 }
                                 else
                                 {
@@ -57,14 +57,14 @@ namespace ASPNET.Sample
                                 _text = value;
                         }
                 }
-                public String TextInViewState
+                public string TextInViewState
                 {
                         get
                         {
                                 Object o = ViewState["TextInViewState"];
                                 if (o == null)
                                 {
-                                        return String.Empty;
+                                        return string.Empty;
                                 }
                                 else
                                 {
