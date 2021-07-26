@@ -1,4 +1,4 @@
-﻿// <Snippet20>
+// <Snippet20>
 using System;
 using System.Data;
 using System.Security.Permissions;
@@ -82,7 +82,7 @@ namespace Samples.AspNet.CS
     /// </returns>
     private bool IsPathVirtual(string virtualPath)
     {
-      String checkPath = VirtualPathUtility.ToAppRelative(virtualPath);
+      string checkPath = VirtualPathUtility.ToAppRelative(virtualPath);
       return checkPath.StartsWith("~/vrdir", StringComparison.InvariantCultureIgnoreCase);
     }
 

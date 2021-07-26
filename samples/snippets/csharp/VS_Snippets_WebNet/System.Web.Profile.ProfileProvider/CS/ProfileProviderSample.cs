@@ -1,4 +1,4 @@
-﻿//<Snippet9>
+//<Snippet9>
 using System.Web.Profile;
 using System.Configuration.Provider;
 using System.Collections.Specialized;
@@ -87,7 +87,7 @@ namespace Samples.AspNet.Profile
     if (name == null || name.Length == 0)
       name = "OdbcProfileProvider";
 
-    if (String.IsNullOrEmpty(config["description"]))
+    if (string.IsNullOrEmpty(config["description"]))
     {
       config.Remove("description");
       config.Add("description", "Sample ODBC Profile provider");
@@ -438,7 +438,7 @@ namespace Samples.AspNet.Profile
 
   private void SetZipCode(int uniqueID, string zipCode)
   {
-    zipCode ??= String.Empty;
+    zipCode ??= string.Empty;
 
     OdbcConnection conn = new OdbcConnection(connectionString);
     OdbcCommand cmd = new OdbcCommand("DELETE FROM ProfileData WHERE UniqueID = ?", conn);
@@ -689,7 +689,7 @@ namespace Samples.AspNet.Profile
 
       if (WriteExceptionsToEventLog)
       {
-        WriteToEventLog(e, "DeleteProfiles(String())");
+        WriteToEventLog(e, "DeleteProfiles(string())");
         throw new ProviderException(exceptionMessage);
       }
       else

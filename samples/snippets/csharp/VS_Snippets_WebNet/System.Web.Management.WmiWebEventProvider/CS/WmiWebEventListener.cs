@@ -1,4 +1,4 @@
-﻿/* File name: WmiWebEventListener.cs
+/* File name: WmiWebEventListener.cs
 * Shows how to capture the WMI events associated with 
 * ASP.NET health monitoriong types. 
  */
@@ -91,7 +91,7 @@ namespace SamplesAspNet
 
             // Define the Common Information Model (CIM) path 
             // for WIM monitoring. 
-            string path = String.Format("\\\\{0}\\root\\aspnet", 
+            string path = string.Format("\\\\{0}\\root\\aspnet", 
                 machine);
 
             // Create a managed object watcher as 

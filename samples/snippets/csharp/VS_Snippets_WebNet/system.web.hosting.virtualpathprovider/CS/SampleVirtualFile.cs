@@ -1,4 +1,4 @@
-﻿// <Snippet40>
+// <Snippet40>
 using System;
 using System.Data;
 using System.IO;
@@ -37,7 +37,7 @@ namespace Samples.AspNet.CS
       // Get the virtual file from the resource table.
       DataTable files = ds.Tables["resource"];
       DataRow[] rows = files.Select(
-        String.Format("(name = '{0}') AND (type='file')", this.Name));
+        string.Format("(name = '{0}') AND (type='file')", this.Name));
 
       // If the select returned a row, store the file contents.
       if (rows.Length > 0)
@@ -52,7 +52,7 @@ namespace Samples.AspNet.CS
     // <Snippet42>
     private string FormatTimeStamp(DateTime time)
     {
-      return String.Format("{0} at {1}",
+      return string.Format("{0} at {1}",
         time.ToLongDateString(), time.ToLongTimeString());
     }
 

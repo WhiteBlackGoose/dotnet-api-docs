@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 /// <summary>
 /// Summary description for Global_asax
@@ -18,7 +18,7 @@ public class Global_asax
         e.AnonymousID = "mysite.com_Anonymous_User_" + DateTime.Now.Ticks;
 
         // Increment count of unique anonymous users
-        Application["UserCount"] = Int32.Parse(Application["UserCount"].ToString()) + 1;
+        Application["UserCount"] = int.Parse(Application["UserCount"].ToString()) + 1;
     }
     //</snippet2>
 }

@@ -1,4 +1,4 @@
-﻿// <Snippet30>
+// <Snippet30>
 using System;
 using System.Collections;
 using System.Data;
@@ -39,7 +39,7 @@ namespace Samples.AspNet.CS
       // Get the virtual directory from the resource table.
       DataTable dirs = ds.Tables["resource"];
       DataRow[] rows = dirs.Select(
-        String.Format("(name = '{0}') AND (type='dir')", path));
+        string.Format("(name = '{0}') AND (type='dir')", path));
 
       // If the select returned a row, the directory exists.
       if (rows.Length > 0)
@@ -52,7 +52,7 @@ namespace Samples.AspNet.CS
         //   resources should choose a method that consumes fewer
         //   computer resources.
         DataRow[] childRows = dirs.Select(
-          String.Format("parentPath = '{0}'", path));
+          string.Format("parentPath = '{0}'", path));
 
         foreach (DataRow childRow in childRows)
         {
