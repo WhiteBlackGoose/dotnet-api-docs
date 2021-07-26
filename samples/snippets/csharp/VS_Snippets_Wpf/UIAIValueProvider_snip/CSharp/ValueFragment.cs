@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Drawing;
@@ -145,7 +145,7 @@ namespace UIAIValueProvider_snip
             // Arbitrary string length limit.
             if (value.Length > 5)
                 throw new ArgumentOutOfRangeException(
-                    "String is greater than five characters in length.");
+                    "string is greater than five characters in length.");
             controlValue = value;
         }
         // </SnippetSetValue>

@@ -1,4 +1,4 @@
-﻿/*************************************************************************************************
+/*************************************************************************************************
  *
  * File: ClientForm.cs
  *
@@ -135,7 +135,7 @@ namespace CustomElementClient
         /// <param name="parentElement">Parent element, such as an application window, or the 
         /// AutomationElement.RootElement when searching for the application window.</param>
         /// <returns>The UI Automation element.</returns>
-        private AutomationElement FindChildElement(String controlName, AutomationElement rootElement)
+        private AutomationElement FindChildElement(string controlName, AutomationElement rootElement)
         {
             if ((controlName == "") || (rootElement == null))
             {
@@ -391,7 +391,7 @@ namespace CustomElementClient
         /// This deselects any currently selected items. To add the item to the current selection 
         /// in a multiselect list, use AddToSelection instead of Select.
         /// </remarks>
-        public void SelectListItem(AutomationElement listElement, String itemText)
+        public void SelectListItem(AutomationElement listElement, string itemText)
         {
             if ((listElement == null) || (itemText == ""))
             {
@@ -493,7 +493,7 @@ namespace CustomElementClient
 
             // Retrieve the cached property and pattern.
             SelectionItemPattern pattern;
-            String itemName;
+            string itemName;
             try
             {
                 itemName = elementListItem.Cached.Name;
@@ -515,7 +515,7 @@ namespace CustomElementClient
             AutomationElement parentList = pattern.Cached.SelectionContainer;
 
             // The following line will raise an exception, because the HelpText property was not cached.
-            /*** String itemHelp = elementListItem.Cached.HelpText; ***/
+            /*** string itemHelp = elementListItem.Cached.HelpText; ***/
 
             // Similarly, pattern properties that were not specified in the CacheRequest cannot be 
             // retrieved from the cache. This would raise an exception.
@@ -568,11 +568,11 @@ namespace CustomElementClient
             cacheRequest.Pop();
 
             // Retrieve the cached property and pattern.
-            String itemName = elementListItem.Cached.Name;
+            string itemName = elementListItem.Cached.Name;
             SelectionItemPattern pattern = elementListItem.GetCachedPattern(SelectionItemPattern.Pattern) as SelectionItemPattern;
 
             // The following is an alternative way of retrieving the Name property.
-            itemName = elementListItem.GetCachedPropertyValue(AutomationElement.NameProperty) as String;
+            itemName = elementListItem.GetCachedPropertyValue(AutomationElement.NameProperty) as string;
 
             // This is yet another way, which returns AutomationElement.NotSupported if the element does
             // not supply a value. If the second parameter is false, a default name is returned.
@@ -583,7 +583,7 @@ namespace CustomElementClient
             }
             else
             {
-                itemName = objName as String;
+                itemName = objName as string;
             }
 
             // The following call raises an exception, because only the cached properties are available, 
@@ -837,7 +837,7 @@ namespace CustomElementClient
 
         void MiscellaneousCalls(AutomationElement element)
         {
-            String s = element.Current.Name;
+            string s = element.Current.Name;
 
             // <Snippet111>
             // element is an AutomationElement.
@@ -959,7 +959,7 @@ namespace CustomElementClient
             //InvokePattern invoker = elementButton.GetCurrentPattern(InvokePattern.Pattern) as InvokePattern;
             //invoker.Invoke();
             // AutomationElement elementList = GetListItemParent(elementListItem);
-            String s = ListElement.Current.Name;
+            string s = ListElement.Current.Name;
 
             //SetupComboElement(MainWindowElement);
             //MiscellaneousCalls(ListElement);

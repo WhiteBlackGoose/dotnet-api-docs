@@ -1,4 +1,4 @@
-﻿//<SnippetThreadingWeatherCodeBehind>
+//<SnippetThreadingWeatherCodeBehind>
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -16,7 +16,7 @@ namespace SDKSamples
         // Delegates to be used in placking jobs onto the Dispatcher.
         private delegate void NoArgDelegate();
         //<SnippetThreadingWeatherDelegates>
-        private delegate void OneArgDelegate(String arg);
+        private delegate void OneArgDelegate(string arg);
         //</SnippetThreadingWeatherDelegates>
 
         // Storyboards for the animations.
@@ -68,7 +68,7 @@ namespace SDKSamples
             
             // Tried and true method for weather forecasting - random numbers.
             Random rand = new Random();
-            String weather;
+            string weather;
 
             if (rand.Next(2) == 0)
             {
@@ -90,7 +90,7 @@ namespace SDKSamples
         //</SnippetThreadingWeatherFetchWeather>
 
         //<SnippetThreadingWeatherUpdateUI>
-        private void UpdateUserInterface(String weather)
+        private void UpdateUserInterface(string weather)
         {    
             //Set the weather image
             if (weather == "sunny")

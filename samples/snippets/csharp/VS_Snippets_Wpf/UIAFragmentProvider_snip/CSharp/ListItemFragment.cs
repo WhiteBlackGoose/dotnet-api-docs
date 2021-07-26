@@ -1,4 +1,4 @@
-﻿/*************************************************************************************************
+/*************************************************************************************************
  *
  * File: ListItemFragment.cs
  *
@@ -37,7 +37,7 @@ namespace ElementProvider
     {
         ParentList parentControl;
         ArrayList parentItems; 
-        String myText = "";
+        string myText = "";
         Rectangle myBounds;
         bool amSelected;
         int myID;
@@ -49,7 +49,7 @@ namespace ElementProvider
         /// <param name="mainForm">Host form.</param>
         /// <param name="rect">Position and size of control.</param>
         /// <param name="ownerControl">Control that parents this one in the UI automation tree.</param>
-        public MyListItem(ParentList parent, ArrayList items, String text, Rectangle myRect)
+        public MyListItem(ParentList parent, ArrayList items, string text, Rectangle myRect)
         {
             myText = text;
             parentControl = parent;
@@ -62,7 +62,7 @@ namespace ElementProvider
         /// <summary>
         /// Gets and sets the text of the item.
         /// </summary>
-        public String Text
+        public string Text
         {
             get
             {

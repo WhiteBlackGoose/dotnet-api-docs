@@ -1,4 +1,4 @@
-﻿/*************************************************************************************************
+/*************************************************************************************************
  *
  * File: ListFragment.cs
  *
@@ -116,7 +116,7 @@ namespace ElementProvider
         /// </summary>
         /// <param name="text">Item to add.</param>
         /// <returns>Index of the added item.</returns>
-        public int Add(String text)
+        public int Add(string text)
         {
             // Dynamically resize the control. To keep things simple for this example,
             // it is assumed that there will be no need for scrolling.

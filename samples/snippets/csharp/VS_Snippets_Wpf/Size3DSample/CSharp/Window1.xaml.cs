@@ -1,4 +1,4 @@
-﻿//This is a list of commonly used namespaces for a window.
+//This is a list of commonly used namespaces for a window.
 using System;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,7 +29,7 @@ namespace ThreeDSizeSample
 			RadioButton li = (sender as RadioButton);
 			
             // Strings used to display the results
-            String syntaxString, resultType, operationString;
+            string syntaxString, resultType, operationString;
 					
 			// The local variables point1, point2, vector2, etc are defined in each
 			// case block for readability reasons. Each variable is contained within
@@ -259,13 +259,13 @@ namespace ThreeDSizeSample
                         // Gets a string representation of a Size3D Structure
 
                         Size3D size1 = new Size3D(2,4,6);
-                        String sizeString;
+                        string sizeString;
 
                         sizeString = size1.ToString();
                         // sizeString is equal to "2,4,6"
 
                         // Displaying Results
-						resultType = "String";
+						resultType = "string";
                         syntaxString = "sizeString = size1.ToString();";
                         operationString = "Getting the ToString of size1";
                         ShowResults(sizeString.ToString(), syntaxString, resultType, operationString);
@@ -297,7 +297,7 @@ namespace ThreeDSizeSample
         }
 
         // Displays the results of the operation
-        private void ShowResults(String resultValue, String syntax, String resultType, String opString)
+        private void ShowResults(string resultValue, string syntax, string resultType, string opString)
         {
 
             txtResultValue.Text = resultValue;

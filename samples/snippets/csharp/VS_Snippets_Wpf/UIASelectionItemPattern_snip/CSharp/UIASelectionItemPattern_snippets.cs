@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Automation;
@@ -322,7 +322,7 @@ namespace UIASelectionItemPattern_snip
         /// </remarks>
         ///--------------------------------------------------------------------
         public void SelectListItem(
-            AutomationElement selectionContainer, String itemText)
+            AutomationElement selectionContainer, string itemText)
         {
             if ((selectionContainer == null) || (itemText == ""))
             {

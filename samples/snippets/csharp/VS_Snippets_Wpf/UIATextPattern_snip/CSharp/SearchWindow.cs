@@ -1,4 +1,4 @@
-﻿/*****************************************************************************************
+/*****************************************************************************************
  * File: FindText.cs
  *
  * Description: 
@@ -101,7 +101,7 @@ namespace SDKSample
         private TextPatternRange searchTextRange;
         private Boolean _bBOD;
         private Boolean _bBackward;
-        private String _sApplication = "WordPad.exe";
+        private string _sApplication = "WordPad.exe";
 
         // Constructor
         public SearchWindow()
@@ -2075,7 +2075,7 @@ namespace SDKSample
         }
         // </Snippet1061>
         // <Snippet1062> 
-        private Int32 CompareRangeEndpoints(AutomationElement target)
+        private int CompareRangeEndpoints(AutomationElement target)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2305,7 +2305,7 @@ namespace SDKSample
         }
         // </Snippet1069>
         // <Snippet1070>
-         private String TextFromSelection(AutomationElement target, Int32 length)
+         private string TextFromSelection(AutomationElement target, int length)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2354,7 +2354,7 @@ namespace SDKSample
         /// Only the text range starting and ending endpoints are modified.
         /// </remarks>
         /// -------------------------------------------------------------------
-        private Int32 MoveSelection(
+        private int MoveSelection(
             AutomationElement targetTextElement, 
             TextUnit textUnit,
             int units,
@@ -2407,7 +2407,7 @@ namespace SDKSample
         }
         // </Snippet1072>
         // <Snippet1073>
-        private Int32 MoveEndpointByRangeFromSelection(AutomationElement target, Int32 units)
+        private int MoveEndpointByRangeFromSelection(AutomationElement target, int units)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
@@ -2450,7 +2450,7 @@ namespace SDKSample
         }
         // </Snippet1074>
         // <Snippet1075>
-        private void SetSelection(AutomationElement target, String s, Boolean backward, Boolean ignorecase)
+        private void SetSelection(AutomationElement target, string s, Boolean backward, Boolean ignorecase)
         {
             // Specify the control type we're looking for, in this case 'Document'
             PropertyCondition cond = new PropertyCondition(AutomationElement.ControlTypeProperty, ControlType.Document);
