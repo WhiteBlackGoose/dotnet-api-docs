@@ -1,4 +1,4 @@
-﻿// <Snippet13>
+// <Snippet13>
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -14,16 +14,16 @@ public class Example
          sb.Append(Convert.ToChar(ctr), 4);
       
       // Create a parallel string object.
-      String sbString = sb.ToString();
+      string sbString = sb.ToString();
       // Determine where each new character sequence begins.
-      String pattern = @"(\w)\1+";
+      string pattern = @"(\w)\1+";
       MatchCollection matches = Regex.Matches(sbString, pattern);
 
       // Uppercase the first occurrence of the sequence, and separate it
       // from the previous sequence by an underscore character.
       for (int ctr = matches.Count - 1; ctr >= 0; ctr--) { 
          Match m = matches[ctr];
-         sb[m.Index] = Char.ToUpper(sb[m.Index]);
+         sb[m.Index] = char.ToUpper(sb[m.Index]);
          if (m.Index > 0) sb.Insert(m.Index, "_");
       }
       // Display the resulting string.

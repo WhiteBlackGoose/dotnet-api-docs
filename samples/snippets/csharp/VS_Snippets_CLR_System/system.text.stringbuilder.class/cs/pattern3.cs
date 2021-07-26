@@ -1,4 +1,4 @@
-﻿// <Snippet14>
+// <Snippet14>
 using System;
 using System.Text;
 
@@ -14,11 +14,11 @@ public class Example
 
       // Iterate the text to determine when a new character sequence occurs.
       int position = 0;
-      Char current = '\u0000';
+      char current = '\u0000';
       do {
          if (sb[position] != current) {
             current = sb[position];
-            sb[position] = Char.ToUpper(sb[position]);
+            sb[position] = char.ToUpper(sb[position]);
             if (position > 0) 
                sb.Insert(position, "_");
             position += 2;
@@ -28,7 +28,7 @@ public class Example
          }      
       } while (position <= sb.Length - 1);
       // Display the resulting string.
-      String sbString = sb.ToString();
+      string sbString = sb.ToString();
       int line = 0;
       do {
          int nChars = line * 80 + 79 <= sbString.Length ? 

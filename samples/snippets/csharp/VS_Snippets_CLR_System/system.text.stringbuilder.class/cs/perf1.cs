@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -61,7 +61,7 @@ public class Example
 
       // Display performance information
       Console.WriteLine("{0,10} {1,20} {2,20}", 
-                        "Operations", "String Time", "StringBuilder Time");
+                        "Operations", "string Time", "StringBuilder Time");
 
       for (int ctr = 0; ctr < stringTimes.Count; ctr++) 
          Console.WriteLine("{0,10} {1,20} {2,20}", stringTimes[ctr].Operations,
@@ -69,7 +69,7 @@ public class Example
    }
 }
 // The example displays the following output:
-//    Operations          String Time   StringBuilder Time
+//    Operations          string Time   StringBuilder Time
 //            10     00:00:00.0000019     00:00:00.0000087
 //            20     00:00:00.0000025     00:00:00.0000087
 //            30     00:00:00.0000032     00:00:00.0000090

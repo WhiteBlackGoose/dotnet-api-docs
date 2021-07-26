@@ -1,4 +1,4 @@
-﻿// <Snippet7>
+// <Snippet7>
 using System;
 using System.Globalization;
 using System.Text;
@@ -19,8 +19,8 @@ public class Example
             
       // Decrease each number by one.
       for (int ctr = 0; ctr < sb.Length; ctr++) {
-         if (Char.GetUnicodeCategory(sb[ctr]) == UnicodeCategory.DecimalDigitNumber) {
-            int number = (int) Char.GetNumericValue(sb[ctr]);
+         if (char.GetUnicodeCategory(sb[ctr]) == UnicodeCategory.DecimalDigitNumber) {
+            int number = (int) char.GetNumericValue(sb[ctr]);
             number--;
             if (number < 0) number = 9;
          

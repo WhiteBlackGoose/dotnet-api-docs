@@ -1,4 +1,4 @@
-﻿// <Snippet12>
+// <Snippet12>
 using System;
 using System.Text;
 
@@ -20,7 +20,7 @@ public class Example
          if (isFahrenheit)
             sb.AppendFormat("{0:d}: {1}\n", baseDate, temperature);
          else
-            isFahrenheit = f.SearchAndAppend(String.Format("{0:d}: {1}\n", 
+            isFahrenheit = f.SearchAndAppend(string.Format("{0:d}: {1}\n", 
                                              baseDate, temperature));
          baseDate = baseDate.AddDays(1);
       }            
@@ -39,15 +39,15 @@ public class Example
 public class StringBuilderFinder
 {
    private StringBuilder sb;
-   private String text;
+   private string text;
    
-   public StringBuilderFinder(StringBuilder sb, String textToFind)
+   public StringBuilderFinder(StringBuilder sb, string textToFind)
    {
       this.sb = sb;
       this.text = textToFind;
    }
    
-   public bool SearchAndAppend(String stringToSearch)
+   public bool SearchAndAppend(string stringToSearch)
    {
       sb.Append(stringToSearch);
       return stringToSearch.Contains(text);

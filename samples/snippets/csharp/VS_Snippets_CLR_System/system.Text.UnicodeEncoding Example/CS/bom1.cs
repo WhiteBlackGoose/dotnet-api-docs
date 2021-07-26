@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.IO;
 using System.Text;
@@ -11,7 +11,7 @@ public class Example
         Encoding unicode = new UnicodeEncoding();
 
         // A Unicode string with two characters outside an 8-bit code range.
-        String unicodeString =
+        string unicodeString =
             "This Unicode string has 2 characters outside the " +
             "ASCII range: \n" +
             "Pi (\u03A0)), and Sigma (\u03A3).";
@@ -34,9 +34,9 @@ public class Example
 
         // Open the file using StreamReader.
         var sr = new StreamReader(@".\UTF8Encoding.txt");
-        String newString = sr.ReadToEnd();
+        string newString = sr.ReadToEnd();
         sr.Close();
-        Console.WriteLine("String read using StreamReader:");
+        Console.WriteLine("string read using StreamReader:");
         Console.WriteLine(newString);
         Console.WriteLine();
 
@@ -46,7 +46,7 @@ public class Example
         fs.Read(bytes, 0, (int)fs.Length);
         fs.Close();
 
-        String decodedString = unicode.GetString(bytes);
+        string decodedString = unicode.GetString(bytes);
         Console.WriteLine("Decoded bytes:");
         Console.WriteLine(decodedString);
    }
@@ -60,7 +60,7 @@ public class Example
 //
 //    Wrote 174 bytes to the file.
 //
-//    String read using StreamReader:
+//    string read using StreamReader:
 //    This Unicode string has 2 characters outside the ASCII range:
 //    Pi (π), and Sigma (Σ).
 //

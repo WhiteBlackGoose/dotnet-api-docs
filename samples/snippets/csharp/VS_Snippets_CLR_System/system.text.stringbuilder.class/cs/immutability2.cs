@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -8,7 +8,7 @@ public class Example
       string value = "This is the first sentence" + ".";
       fixed (char* start = value)
       {
-         value = String.Concat(value, "This is the second sentence. ");
+         value = string.Concat(value, "This is the second sentence. ");
          fixed (char* current = value)
          {
             Console.WriteLine(start == current);

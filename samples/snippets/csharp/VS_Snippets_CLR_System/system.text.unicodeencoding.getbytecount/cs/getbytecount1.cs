@@ -1,10 +1,10 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
 class UTF8EncodingExample {
     public static void Main() {
-        String chars = "UTF-16 Encoding Example";
+        string chars = "UTF-16 Encoding Example";
         Encoding unicode = Encoding.Unicode;
 
         Console.WriteLine("Bytes needed to encode '{0}':", chars);

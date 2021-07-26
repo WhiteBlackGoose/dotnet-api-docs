@@ -1,4 +1,4 @@
-﻿// <Snippet15>
+// <Snippet15>
 using System;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -14,7 +14,7 @@ public class Example
          sb.Append(Convert.ToChar(ctr), 4);
      
       // Convert it to a string.
-      String sbString = sb.ToString();
+      string sbString = sb.ToString();
 
       // Use a regex to uppercase the first occurrence of the sequence, 
       // and separate it from the previous sequence by an underscore.
