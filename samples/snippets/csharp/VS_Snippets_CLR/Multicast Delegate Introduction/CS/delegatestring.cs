@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +8,7 @@ class StringContainer
    public delegate void CheckAndDisplayDelegate(string str);
 
    // A generic list object that holds the strings.
-   private List<String> container = new List<String>();
+   private List<string> container = new List<string>();
 
    // A method that adds strings to the collection.
    public void AddString(string str)

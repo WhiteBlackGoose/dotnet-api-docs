@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Security.Permissions;
 using Microsoft.Win32;
@@ -58,7 +58,7 @@ class RegKey
         // <Snippet4>
         // Delete or close the new subkey.
         Console.Write("\nDelete newly created registry key? (Y/N) ");
-        if(Char.ToUpper(Convert.ToChar(Console.Read())) == 'Y')
+        if(char.ToUpper(Convert.ToChar(Console.Read())) == 'Y')
         {
             Registry.CurrentUser.DeleteSubKeyTree("Test9999");
             Console.WriteLine("\nRegistry key {0} deleted.",

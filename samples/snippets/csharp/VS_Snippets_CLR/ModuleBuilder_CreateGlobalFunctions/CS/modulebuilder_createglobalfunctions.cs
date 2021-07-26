@@ -1,8 +1,8 @@
-﻿// System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(String,MethodAttributes,Type,Type[])
+// System.Reflection.Emit.ModuleBuilder.DefineGlobalMethod(string,MethodAttributes,Type,Type[])
 // System.Reflection.Emit.ModuleBuilder.CreateGlobalFunctions
 
 /*
-   The following example demonstrates the 'DefineGlobalMethod(String,MethodAttributes,Type,Type[])'
+   The following example demonstrates the 'DefineGlobalMethod(string,MethodAttributes,Type,Type[])'
    and 'CreateGlobalFunctions' methods of 'ModuleBuilder' class.
    A dynamic assembly with a module in it is created in 'CodeGenerator' class. Then a global method
    is created in the module using the 'DefineGlobalMethod' method. The global method is called from

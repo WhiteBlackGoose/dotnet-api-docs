@@ -1,7 +1,7 @@
-﻿// System.Reflection.Emit.ModuleBuilder.DefineResource(String,String)
+// System.Reflection.Emit.ModuleBuilder.DefineResource(string,String)
 
 /*
-The following example demonstrates the 'DefineResource(String,String)' method
+The following example demonstrates the 'DefineResource(string,String)' method
 of 'ModuleBuilder' class.
 A dynamic assembly with a module in it is created in 'CodeGenerator' class.
 Then a managed resource is defined in the module using the 'DefineResource'
@@ -35,9 +35,9 @@ using System.Resources;
          IResourceWriter myResourceWriter =
                myModuleBuilder.DefineResource("MyResource.resource","Description");
          // Add resources to the resource writer.
-         myResourceWriter.AddResource("String 1", "First String");
-         myResourceWriter.AddResource("String 2", "Second String");
-         myResourceWriter.AddResource("String 3", "Third String");
+         myResourceWriter.AddResource("string 1", "First string");
+         myResourceWriter.AddResource("string 2", "Second string");
+         myResourceWriter.AddResource("string 3", "Third string");
          myAssemblyBuilder.Save("MyAssembly.dll");
       }
    }

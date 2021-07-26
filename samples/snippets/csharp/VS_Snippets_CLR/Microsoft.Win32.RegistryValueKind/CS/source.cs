@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using Microsoft.Win32;
 
@@ -76,7 +76,7 @@ This code example produces the following output:
 
  BinaryValue (Binary) = 0A 2B 2C 2D 0E FF
 
- StringValue (String) = The path is %PATH%
+ StringValue (string) = The path is %PATH%
 
  ExpandedStringValue (ExpandString) = The path is C:\Program Files\Microsoft.NET\SDK\v2.0\Bin;
  [***The remainder of this output is omitted.***]

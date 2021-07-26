@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -221,8 +221,8 @@ Is the resolved method the same? True
 System.ArgumentException: A BadImageFormatException has been thrown while parsing the signature. This is likely due to lack of a generic context. Ensure genericTypeArguments and genericMethodArguments are provided and contain enough context.
 
 Case 3:
-Void GM1[Object](Int32, System.Object)
-Void GM1[Object](Int32, System.Object)
+Void GM1[Object](int, System.Object)
+Void GM1[Object](int, System.Object)
 Is the resolved method the same? True
 
 Case 4:
@@ -231,8 +231,8 @@ Void M()
 Is the resolved method the same? True
 
 Case 5:
-Void GM1[Object](Int32, System.Object)
-Void GM1[Object](Int32, System.Object)
+Void GM1[Object](int, System.Object)
+Void GM1[Object](int, System.Object)
 Is the resolved method the same? True
  */
 //</Snippet1>

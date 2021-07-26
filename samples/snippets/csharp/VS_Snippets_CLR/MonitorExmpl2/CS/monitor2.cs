@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Threading;
 using System.Collections.Generic;
@@ -257,11 +257,11 @@ public class Example
 
             for(int col = 0; col < 3; col++)
             {
-               sb.Append(String.Format("{0,9}", results[col][row]));
+               sb.Append(string.Format("{0,9}", results[col][row]));
                total += results[col][row];
             }
 
-            sb.AppendLine(String.Format("{0,9}", total));
+            sb.AppendLine(string.Format("{0,9}", total));
          }
 
          Console.WriteLine(sb.ToString());

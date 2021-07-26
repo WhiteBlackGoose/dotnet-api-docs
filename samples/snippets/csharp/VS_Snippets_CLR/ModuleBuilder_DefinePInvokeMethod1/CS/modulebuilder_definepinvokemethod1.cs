@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(String,String,MethodAttributes,
+// System.Reflection.Emit.ModuleBuilder.DefinePInvokeMethod(string,String,MethodAttributes,
 //                  CallingConventions,Type,Type[],CallingConvention,CharSet)
 /*
    The following example demonstrates that DefinePInvokeMethod doesn't work (that is,

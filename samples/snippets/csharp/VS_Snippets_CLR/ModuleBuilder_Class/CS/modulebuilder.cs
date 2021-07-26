@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.ModuleBuilder
+// System.Reflection.Emit.ModuleBuilder
 
 /*
 The following example demonstrates the 'ModuleBuilder' class.
@@ -37,8 +37,8 @@ class and created class is called from the 'TestClass'.
 
          // Add 'Greeting' field to the class, with the specified attribute and type.
          FieldBuilder greetingField = myTypeBuilder.DefineField("Greeting",
-                                                               typeof(String), FieldAttributes.Public);
-         Type[] myMethodArgs = { typeof(String) };
+                                                               typeof(string), FieldAttributes.Public);
+         Type[] myMethodArgs = { typeof(string) };
 
          // Add 'MyMethod' method to the class, with the specified attribute and signature.
          MethodBuilder myMethod = myTypeBuilder.DefineMethod("MyMethod",
