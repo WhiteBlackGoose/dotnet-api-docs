@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -34,13 +34,13 @@ namespace Samples.AspNet.CS.Controls
     Level = AspNetHostingPermissionLevel.Minimal)]
   public class TextDisplayWebPart : WebPart
   {
-    private String _contentText = null;
+    private string _contentText = null;
     TextBox input;
     Label DisplayContent;
     Literal lineBreak;
 
     [Personalizable(), WebBrowsable]
-    public String ContentText
+    public string ContentText
     {
       get { return _contentText; }
       set { _contentText = value; }
@@ -72,7 +72,7 @@ namespace Samples.AspNet.CS.Controls
       if (!string.IsNullOrEmpty(input.Text))
       {
         _contentText = input.Text + @"<br />";
-        input.Text = String.Empty;
+        input.Text = string.Empty;
         DisplayContent.Text = this.ContentText;
       }
     }
