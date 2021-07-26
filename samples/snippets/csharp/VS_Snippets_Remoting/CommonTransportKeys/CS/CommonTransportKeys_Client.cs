@@ -1,4 +1,4 @@
-﻿/*
+/*
    Supporting file: Client
 */
 using System;
@@ -18,7 +18,7 @@ public class Client
 
           Foo server = new Foo();
           // Call share method.
-          server.PrintString("String logged to console.");
+          server.PrintString("string logged to console.");
           Console.WriteLine("Connected to server ...");
        }
        catch(Exception e)

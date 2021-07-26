@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Web;
 using System.Web.UI;
@@ -16,7 +16,7 @@ public class TestClass: Page
   // Due to collision problems with SHA1, Microsoft recommends SHA256 or better.
   SHA1Managed Sha1 = new SHA1Managed();
   Byte[] updHash = Sha1.ComputeHash(Encoding.UTF8.GetBytes("username" + "password" +  "domain"));
-  String secureGroupName = Encoding.Default.GetString(updHash);
+  string secureGroupName = Encoding.Default.GetString(updHash);
 
   // Create a request for a specific URL.
   WebRequest myWebRequest=WebRequest.Create("http://www.contoso.com");

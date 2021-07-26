@@ -1,4 +1,4 @@
-﻿/*
+/*
    Supporting file: Server
 */
 using System;
@@ -16,8 +16,8 @@ public class Server
 
         Console.WriteLine("Listening...");
 
-        String keyState = "";
-        while (String.Compare(keyState,"0", true) != 0)
+        string keyState = "";
+        while (string.Compare(keyState,"0", true) != 0)
         {
             Console.WriteLine("***** Press 0 to exit this service *****");
             keyState = Console.ReadLine();

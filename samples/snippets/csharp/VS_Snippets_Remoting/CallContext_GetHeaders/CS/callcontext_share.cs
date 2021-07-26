@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.CallContext.SetHeaders(Header[])
+// System.Runtime.Remoting.CallContext.SetHeaders(Header[])
 
 using System;
 using System.Runtime.Remoting;
@@ -43,7 +43,7 @@ namespace RemotingSamples
       {
         get
         {
-          return String.Format("The identity of {0} has been accessed {1} times.",
+          return string.Format("The identity of {0} has been accessed {1} times.",
                                              myIprincipal.Identity.Name,noOfAccesses);
         }
       }

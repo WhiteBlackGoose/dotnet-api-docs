@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -40,7 +40,7 @@ public class TrustedIssuerNameRegistry : IssuerNameRegistry
             //
             // DO NOT use this sample code 'as is' in production code.
             //
-            if ( String.Equals( x509Token.Certificate.SubjectName.Name, "CN=localhost" ) )
+            if ( string.Equals( x509Token.Certificate.SubjectName.Name, "CN=localhost" ) )
             {
                 return "IPSTS";
             }

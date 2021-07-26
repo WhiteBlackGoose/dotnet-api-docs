@@ -1,4 +1,4 @@
-﻿// System.Net.Authorization.Authorization(string,bool);System.Net.Authorization.ProtectionRealm
+// System.Net.Authorization.Authorization(string,bool);System.Net.Authorization.ProtectionRealm
 
 /* This program demonstrates the 'ProtectionRealm' property and 'Authorization(string,bool)' constructor of
    the "Authorization" class. The "IAuthenticationModule" interface is implemented in 'CloneBasic' to make
@@ -116,7 +116,7 @@ namespace CloneBasicAuthentication
        GetPage(url,userName,passwd);
     }
 
-    public static void GetPage(String url,string username,string passwd)
+    public static void GetPage(string url,string username,string passwd)
     {
         try
         {
@@ -136,7 +136,7 @@ namespace CloneBasicAuthentication
                 for(int i=0; i < e.Response.Headers.Count; ++i)
                 {
                     // Retrieve the challenge string from the header "WWW-Authenticate".
-                    if((String.Compare(e.Response.Headers.Keys[i],"WWW-Authenticate",true) == 0))
+                    if((string.Compare(e.Response.Headers.Keys[i],"WWW-Authenticate",true) == 0))
                         challenge = e.Response.Headers[i];
                 }
             }

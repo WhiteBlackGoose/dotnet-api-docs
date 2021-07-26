@@ -1,4 +1,4 @@
-﻿//-----------------------------------------------------------------------------
+//-----------------------------------------------------------------------------
 //
 // THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
 // ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
@@ -125,7 +125,7 @@ namespace PassiveFlowSTS
         private SignInResponseMessage ProcessSignInRequest(SignInRequestMessage requestMessage)
         {
             // Ensure that the requestMessage has the required wtrealm parameter
-            if (String.IsNullOrEmpty(requestMessage.Realm))
+            if (string.IsNullOrEmpty(requestMessage.Realm))
             {
                 throw new InvalidOperationException("Missing realm");
             }

@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program implments the remote method which will be called by the
    client.
 */
@@ -11,7 +11,7 @@ namespace RemotingSamples
       {
          Console.WriteLine("HelloServer activated");
       }
-      public String HelloMethod(String name)
+      public string HelloMethod(string name)
       {
          Console.WriteLine("Hello.HelloMethod : {0}", name);
          return "Hi there " + name;

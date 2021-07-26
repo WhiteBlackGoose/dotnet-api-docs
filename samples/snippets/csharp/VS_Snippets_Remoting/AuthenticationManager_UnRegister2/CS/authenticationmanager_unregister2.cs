@@ -1,8 +1,8 @@
-﻿// System.Net.AuthenticationManager.UnRegister(String).
+// System.Net.AuthenticationManager.UnRegister(string).
 // System.Net.AuthenticationManager.Register.
 // Grouping Clause : 1,3 AND 2,3.
 
-/*This program demonstrates the 'UnRegister(String)' and 'Register' methods of
+/*This program demonstrates the 'UnRegister(string)' and 'Register' methods of
 'AuthenticationManager' class. It gets all the authentication modules registered with the system into an
 IEnumerator instance ,unregisters the first authentication module and displays to show that it was
 unregistered. Then registers the same module back again and displays all the modules again.*/
@@ -29,7 +29,7 @@ namespace Authentication2
         // Get the first Authentication module registered with the system.
         IAuthenticationModule authenticationModule1 = (IAuthenticationModule)registeredModules.Current;
         // Call the UnRegister() method to unregister the first authentication module from the system.
-        String authenticationScheme = authenticationModule1.AuthenticationType;
+        string authenticationScheme = authenticationModule1.AuthenticationType;
         AuthenticationManager.Unregister(authenticationScheme);
         Console.WriteLine("\nSuccessfully unregistered '{0}",authenticationModule1+"'.");
         // Display all modules to see that the module was unregistered.

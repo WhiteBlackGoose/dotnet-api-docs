@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 /**
 * The following sample is intended to demonstrate how to use a
 * TcpListener for synchronous communcation with a TCP client
@@ -57,7 +57,7 @@ public class TcpListenerSample
                 {
                     // Translate data bytes to a ASCII string.
                     data = System.Text.Encoding.ASCII.GetString(bytes, 0, i);
-                    Console.WriteLine(String.Format("Received: {0}", data));
+                    Console.WriteLine(string.Format("Received: {0}", data));
 
                     // Process the data sent by the client.
                     data = data.ToUpper();
@@ -66,7 +66,7 @@ public class TcpListenerSample
 
                     // Send back a response.
                     stream.Write(msg, 0, msg.Length);
-                    Console.WriteLine(String.Format("Sent: {0}", data));
+                    Console.WriteLine(string.Format("Sent: {0}", data));
 
                     i = stream.Read(bytes, 0, bytes.Length);
                 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.Security.Cryptography.X509Certificates;
 
@@ -41,11 +41,11 @@ using System.Security.Cryptography.X509Certificates;
          return ValidationResult;
      }
 
-     private String GetProblemMessage(CertificateProblem Problem)
+     private string GetProblemMessage(CertificateProblem Problem)
      {
-         String ProblemMessage = "";
+         string ProblemMessage = "";
          CertificateProblem problemList = new CertificateProblem();
-         String ProblemCodeName = Enum.GetName(problemList.GetType(),Problem);
+         string ProblemCodeName = Enum.GetName(problemList.GetType(),Problem);
          if(ProblemCodeName != null)
             ProblemMessage = ProblemMessage + "-Certificateproblem:" +
                ProblemCodeName;

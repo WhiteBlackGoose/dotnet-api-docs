@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Text;
 using System.Runtime.Remoting.Messaging;
@@ -21,7 +21,7 @@ public class HelloServiceClass : MarshalByRefObject {
    }
 
    [PermissionSet(SecurityAction.LinkDemand)]
-   public String HelloMethod(String name) {
+   public string HelloMethod(string name) {
 
       //Extract the call context data
       LogicalCallContextData data = (LogicalCallContextData)CallContext.GetData("test data");
@@ -34,7 +34,7 @@ public class HelloServiceClass : MarshalByRefObject {
       }
       else {
          Console.WriteLine("Go away! You are not identified!");
-         return String.Empty;
+         return string.Empty;
       }
 
         // calculate and return result to client	
@@ -52,7 +52,7 @@ public class LogicalCallContextData : ILogicalThreadAffinative
 
    public string numOfAccesses {
       get {
-         return String.Format("The identity of {0} has been accessed {1} times.",
+         return string.Format("The identity of {0} has been accessed {1} times.",
                               _principal.Identity.Name,
                               _nAccesses);
       }

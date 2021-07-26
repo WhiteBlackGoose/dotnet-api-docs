@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Channels.ChannelServices.SyncDispatchMessage(IMessage)
+// System.Runtime.Remoting.Channels.ChannelServices.SyncDispatchMessage(IMessage)
 
 /*
    The following example demonstrates 'SyncDispatchMessage' method of
@@ -21,7 +21,7 @@ using System.Security.Permissions;
 // Create a custom 'RealProxy'.
 public class MyProxy : RealProxy
 {
-   String myURIString;
+   string myURIString;
    MarshalByRefObject myMarshalByRefObject;
 
    [PermissionSet(SecurityAction.LinkDemand)]
@@ -60,7 +60,7 @@ public class MyProxy : RealProxy
       while (myIDictionaryEnumerator.MoveNext())
       {
          Object myKey = myIDictionaryEnumerator.Key;
-         String myKeyName = myKey.ToString();
+         string myKeyName = myKey.ToString();
          Object myValue = myIDictionaryEnumerator.Value;
 
          Console.WriteLine("\t{0} : {1}", myKeyName,

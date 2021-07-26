@@ -1,4 +1,4 @@
-﻿/*
+/*
    The class 'HelloServer' is derived from 'MarshalByRefObject' to
    make it remotable.
 */
@@ -15,7 +15,7 @@ namespace RemotingSamples
          Console.WriteLine("HelloServer activated");
       }
 
-      public String HelloMethod(String myName)
+      public string HelloMethod(string myName)
       {
          Console.WriteLine("Hello.HelloMethod : {0}", myName);
          return "Hi there " + myName;
