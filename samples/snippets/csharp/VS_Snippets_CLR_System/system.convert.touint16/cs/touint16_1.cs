@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -91,12 +91,12 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    Converted the Char value 'a' to the UInt16 value 97.
-      //    Converted the Char value 'z' to the UInt16 value 122.
-      //    Converted the Char value '' to the UInt16 value 7.
-      //    Converted the Char value '?' to the UInt16 value 1023.
-      //    Converted the Char value '?' to the UInt16 value 32767.
-      //    Converted the Char value '?' to the UInt16 value 65534.
+      //    Converted the char value 'a' to the UInt16 value 97.
+      //    Converted the char value 'z' to the UInt16 value 122.
+      //    Converted the char value '' to the UInt16 value 7.
+      //    Converted the char value '?' to the UInt16 value 1023.
+      //    Converted the char value '?' to the UInt16 value 32767.
+      //    Converted the char value '?' to the UInt16 value 65534.
       // </Snippet3>
    }
 
@@ -197,7 +197,7 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet7>
-      int[] numbers = { Int32.MinValue, -1, 0, 121, 340, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1, 0, 121, 340, int.MaxValue };
       ushort result;
 
       foreach (int number in numbers)
@@ -214,12 +214,12 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    The Int32 value -2147483648 is outside the range of the UInt16 type.
-      //    The Int32 value -1 is outside the range of the UInt16 type.
-      //    Converted the Int32 value '0' to the UInt16 value 0.
-      //    Converted the Int32 value '121' to the UInt16 value 121.
-      //    Converted the Int32 value '340' to the UInt16 value 340.
-      //    The Int32 value 2147483647 is outside the range of the UInt16 type.
+      //    The int value -2147483648 is outside the range of the UInt16 type.
+      //    The int value -1 is outside the range of the UInt16 type.
+      //    Converted the int value '0' to the UInt16 value 0.
+      //    Converted the int value '121' to the UInt16 value 121.
+      //    Converted the int value '340' to the UInt16 value 340.
+      //    The int value 2147483647 is outside the range of the UInt16 type.
       // </Snippet7>
    }
 
@@ -282,16 +282,16 @@ public class Example
       }
       // The example displays the following output:
       //    Converted the Boolean value 'True' to the UInt16 value 1.
-      //    The Int32 value -12 is outside the range of the UInt16 type.
-      //    Converted the Int32 value '163' to the UInt16 value 163.
-      //    Converted the Int32 value '935' to the UInt16 value 935.
-      //    Converted the Char value 'x' to the UInt16 value 120.
+      //    The int value -12 is outside the range of the UInt16 type.
+      //    Converted the int value '163' to the UInt16 value 163.
+      //    Converted the int value '935' to the UInt16 value 935.
+      //    Converted the char value 'x' to the UInt16 value 120.
       //    No conversion to a UInt16 exists for the DateTime value 5/12/2009 12:00:00 AM.
-      //    Converted the String value '104' to the UInt16 value 104.
-      //    The String value 103.0 is not in a recognizable format.
-      //    The String value -1 is outside the range of the UInt16 type.
-      //    The String value 1.00e2 is not in a recognizable format.
-      //    The String value One is not in a recognizable format.
+      //    Converted the string value '104' to the UInt16 value 104.
+      //    The string value 103.0 is not in a recognizable format.
+      //    The string value -1 is outside the range of the UInt16 type.
+      //    The string value 1.00e2 is not in a recognizable format.
+      //    The string value One is not in a recognizable format.
       //    Converted the Double value '100' to the UInt16 value 100.
       // </Snippet9>
    }
@@ -379,11 +379,11 @@ public class Example
          }
       }
       // The example displays the following output:
-      //    Converted the String value '1603' to the UInt16 value 1603.
-      //    The String value 1,603 is not in a recognizable format.
-      //    The String value one is not in a recognizable format.
-      //    The String value 1.6e03 is not in a recognizable format.
-      //    The String value 1.2e-02 is not in a recognizable format.
+      //    Converted the string value '1603' to the UInt16 value 1603.
+      //    The string value 1,603 is not in a recognizable format.
+      //    The string value one is not in a recognizable format.
+      //    The string value 1.6e03 is not in a recognizable format.
+      //    The string value 1.2e-02 is not in a recognizable format.
       //    -1326 is outside the range of the UInt16 type.
       //    1074122 is outside the range of the UInt16 type.
       // </Snippet12>

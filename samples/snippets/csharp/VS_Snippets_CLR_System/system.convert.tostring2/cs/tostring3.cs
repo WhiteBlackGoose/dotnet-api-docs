@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -275,7 +275,7 @@ public class Example
    private static void ConvertInt32WithProvider()
    {
       // <Snippet20>
-      int[] numbers = { Int32.MinValue, Int32.MaxValue};
+      int[] numbers = { int.MinValue, int.MaxValue};
       System.Globalization.NumberFormatInfo nfi = new System.Globalization.NumberFormatInfo();
       nfi.NegativeSign = "~";
       nfi.PositiveSign = "!";
@@ -293,7 +293,7 @@ public class Example
    private static void ConvertInt64WithProvider()
    {
       // <Snippet21>
-      long[] numbers = { ((long) Int32.MinValue) * 2, ((long) Int32.MaxValue) * 2};
+      long[] numbers = { ((long) int.MinValue) * 2, ((long) int.MaxValue) * 2};
       System.Globalization.NumberFormatInfo nfi = new System.Globalization.NumberFormatInfo();
       nfi.NegativeSign = "~";
       nfi.PositiveSign = "!";

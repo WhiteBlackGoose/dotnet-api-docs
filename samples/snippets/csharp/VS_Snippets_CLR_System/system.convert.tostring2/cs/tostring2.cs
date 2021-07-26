@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -103,8 +103,8 @@ public class Example
    {
       // <Snippet11>
       int[] bases = { 2, 8, 10, 16};
-      int[] numbers = { Int32.MinValue, -19327543, -13621, -18, 12,
-                                   19142, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -19327543, -13621, -18, 12,
+                                   19142, int.MaxValue };
 
       foreach (int baseValue in bases)
       {
