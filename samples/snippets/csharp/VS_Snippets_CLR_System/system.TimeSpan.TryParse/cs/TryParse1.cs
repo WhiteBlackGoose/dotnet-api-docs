@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class TryParse
@@ -33,7 +33,7 @@ public class TryParse
    public static void Main()
    {
         Console.WriteLine( "{0,20}   {1,21}", 
-            "String to Parse", "TimeSpan" );    
+            "string to Parse", "TimeSpan" );    
         Console.WriteLine( "{0,20}   {1,21}", 
             "---------------", "---------------------" );    
 
@@ -63,7 +63,7 @@ public class TryParse
         ParseTimeSpan("10.12:00");
    }
 }
-//            String to Parse                TimeSpan
+//            string to Parse                TimeSpan
 //            ---------------   ---------------------
 //                          0        00:00:00
 //                         14     14.00:00:00

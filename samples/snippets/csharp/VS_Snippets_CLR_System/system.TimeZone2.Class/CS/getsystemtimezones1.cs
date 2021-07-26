@@ -1,4 +1,4 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 using System.Globalization;
 using System.IO;
@@ -27,7 +27,7 @@ public class Example
          sw.Write("   Daylight Name: {0, 39}", timeZone.DaylightName);
          sw.Write(hasDST ? "   ***Has " : "   ***Does Not Have ");
          sw.WriteLine("Daylight Saving Time***");
-         offsetString = String.Format("{0} hours, {1} minutes", offsetFromUtc.Hours, offsetFromUtc.Minutes);
+         offsetString = string.Format("{0} hours, {1} minutes", offsetFromUtc.Hours, offsetFromUtc.Minutes);
          sw.WriteLine("   Offset from UTC: {0, 40}", offsetString);
          adjustRules = timeZone.GetAdjustmentRules();
          sw.WriteLine("   Number of adjustment rules: {0, 26}", adjustRules.Length);  

@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -6,7 +6,7 @@ public class Example
    public static void Main()
    {
       TimeSpan interval = DateTime.Now - DateTime.Now.Date;
-      string msg = String.Format("Elapsed Time Today: {0:d} hours.",
+      string msg = string.Format("Elapsed Time Today: {0:d} hours.",
                                  interval);
       Console.WriteLine(msg);
    }

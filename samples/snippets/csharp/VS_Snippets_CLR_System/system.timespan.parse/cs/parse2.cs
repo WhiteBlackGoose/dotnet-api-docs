@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Globalization;
 using System.Text.RegularExpressions;
@@ -14,11 +14,11 @@ public class Example
                                  new CultureInfo("ru-RU"),
                                  CultureInfo.InvariantCulture };
       
-      string header = String.Format("{0,-17}", "String");
+      string header = string.Format("{0,-17}", "string");
       foreach (CultureInfo culture in cultures)
          header += culture.Equals(CultureInfo.InvariantCulture) ? 
-                      String.Format("{0,20}", "Invariant") :
-                      String.Format("{0,20}", culture.Name);
+                      string.Format("{0,20}", "Invariant") :
+                      string.Format("{0,20}", culture.Name);
       Console.WriteLine(header);
       Console.WriteLine();
       
@@ -43,7 +43,7 @@ public class Example
    }
 }
 // The example displays the following output:
-//    String                          en-US               ru-RU           Invariant
+//    string                          en-US               ru-RU           Invariant
 //    
 //    6                          6.00:00:00          6.00:00:00          6.00:00:00
 //    6:12                         06:12:00            06:12:00            06:12:00

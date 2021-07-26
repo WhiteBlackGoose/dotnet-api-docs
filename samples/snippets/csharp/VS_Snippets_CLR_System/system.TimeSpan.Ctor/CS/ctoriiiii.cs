@@ -1,4 +1,4 @@
-﻿//<Snippet4>
+//<Snippet4>
 // Example of the TimeSpan( int, int, int, int, int ) constructor. 
 using System;
 
@@ -13,7 +13,7 @@ class TimeSpanCtorIIIIIDemo
 
         // Format the constructor for display.
         string ctor = 
-            String.Format( "TimeSpan( {0}, {1}, {2}, {3}, {4} )", 
+            string.Format( "TimeSpan( {0}, {1}, {2}, {3}, {4} )", 
                 days, hours, minutes, seconds, millisec);
 
         // Display the constructor and its value.

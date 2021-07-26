@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class ToString
@@ -34,7 +34,7 @@ public class ToString
 
    private static string FormatTimeSpan(TimeSpan span, bool showSign)
    {
-      string sign = String.Empty;
+      string sign = string.Empty;
       if (showSign && (span > TimeSpan.Zero)) 
          sign = "+";  
       

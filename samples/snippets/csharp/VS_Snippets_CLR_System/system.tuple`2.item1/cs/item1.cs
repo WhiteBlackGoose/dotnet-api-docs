@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Class1
@@ -16,7 +16,7 @@ public class Class1
       else
          Console.WriteLine(@"{0} \ {1} = <Error>", dividend, divisor);
                         
-      dividend = Int32.MaxValue; divisor = -2073;
+      dividend = int.MaxValue; divisor = -2073;
       result = IntegerDivide(dividend, divisor);
       if (result != null)
          Console.WriteLine(@"{0} \ {1} = {2}, remainder {3}", 

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Class1
 {
@@ -10,7 +10,7 @@ public class Class1
       TimeSpan time3 = time1 + time2;              // Add the two time spans.
       
       Console.WriteLine("  {0,12}\n +  {1,10}\n   {3}\n    {2,10}", 
-                        time1, time2, time3, new String('_', 10));
+                        time1, time2, time3, new string('_', 10));
 
       // The example displays the following output:
       //           1.00:00:00

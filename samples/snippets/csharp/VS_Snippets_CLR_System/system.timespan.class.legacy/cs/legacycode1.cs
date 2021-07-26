@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -22,7 +22,7 @@ public class Example
          TimeSpan interval = new TimeSpan(12, 30, 45);
          string output;
          try {
-            output = String.Format("{0:r}", interval);
+            output = string.Format("{0:r}", interval);
          }
          catch (FormatException) {
             output = "Invalid Format";

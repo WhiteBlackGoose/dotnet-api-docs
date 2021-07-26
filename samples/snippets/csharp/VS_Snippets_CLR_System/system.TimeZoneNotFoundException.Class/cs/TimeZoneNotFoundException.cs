@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.IO;
 using System.Runtime.Serialization;
@@ -52,13 +52,13 @@ public class TestTimeZoneExceptions
       catch (TimeZoneNotFoundException ex1)
       {
          throw new TimeZoneNotFoundException( 
-               String.Format("The time zone '{0}' cannot be found.", tzName), 
+               string.Format("The time zone '{0}' cannot be found.", tzName), 
                ex1);
       }          
       catch (InvalidTimeZoneException ex2)
       {
          throw new InvalidTimeZoneException( 
-               String.Format("The time zone {0} contains invalid data.", tzName), 
+               string.Format("The time zone {0} contains invalid data.", tzName), 
                ex2); 
       }      
    }

@@ -1,4 +1,4 @@
-﻿//<Snippet3>
+//<Snippet3>
 using System;
 
 class Example
@@ -12,7 +12,7 @@ class Example
 
         // Format the constructor for display.
         string ctor = 
-            String.Format( "TimeSpan( {0}, {1}, {2}, {3} )", 
+            string.Format( "TimeSpan( {0}, {1}, {2}, {3} )", 
                 days, hours, minutes, seconds);
 
         // Display the constructor and its value.

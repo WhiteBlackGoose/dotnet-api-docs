@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -16,8 +16,8 @@ public class Class1
       // Display tuple data in table.
       string header = "Population in";
       Console.WriteLine("{0,-12} {1,66}", 
-                        "City", new String('-',(66-header.Length)/2) + header + 
-                                new String('-', (66-header.Length)/2));
+                        "City", new string('-',(66-header.Length)/2) + header + 
+                                new string('-', (66-header.Length)/2));
       Console.WriteLine("{0,24}{1,11}{2,11}{3,11}{4,11}{5,11}\n", 
                         "1950", "1960", "1970", "1980", "1990", "2000");         
 

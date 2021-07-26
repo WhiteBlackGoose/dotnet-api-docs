@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 // Example of the TimeSpan( long ) constructor.
 using System;
 
@@ -10,7 +10,7 @@ class TimeSpanCtorLDemo
         TimeSpan elapsedTime = new TimeSpan( ticks );
 
         // Format the constructor for display.
-        string ctor = String.Format( "TimeSpan( {0} )", ticks );
+        string ctor = string.Format( "TimeSpan( {0} )", ticks );
 
         // Pad the end of a TimeSpan string with spaces if
         // it does not contain milliseconds.
