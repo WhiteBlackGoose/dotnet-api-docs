@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ConvertSnippet		
 {
@@ -29,10 +29,10 @@ namespace ConvertSnippet
 				char chrNumber = System.Convert.ToChar(strNumber[0]);
 			}
 			catch (System.ArgumentNullException) {
-				System.Console.WriteLine("String is null");
+				System.Console.WriteLine("string is null");
 			}
 			catch (System.FormatException) {
-				System.Console.WriteLine("String length is greater than 1.");
+				System.Console.WriteLine("string length is greater than 1.");
 			}
 
 			// System.Console.ReadLine() returns a string and it
@@ -44,10 +44,10 @@ namespace ConvertSnippet
 									System.Console.ReadLine());
 			}
 			catch (System.ArgumentNullException) {
-				System.Console.WriteLine("String is null.");
+				System.Console.WriteLine("string is null.");
 			}
 			catch (System.FormatException) {
-				System.Console.WriteLine("String does not consist of an " +
+				System.Console.WriteLine("string does not consist of an " +
 								"optional sign followed by a series of digits.");
 			}
 			catch (System.OverflowException) {

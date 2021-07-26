@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections;
 
@@ -219,7 +219,7 @@ public class DataSet : IConvertible
     public char ToChar( IFormatProvider provider )
     {
         return Convert.ToChar( Convert.ToUInt16( CalcNLimitAverage(
-            Char.MinValue, Char.MaxValue, provider ) ) );
+            char.MinValue, char.MaxValue, provider ) ) );
     }
 
     // Convert to DateTime by adding the calculated average as
@@ -263,7 +263,7 @@ public class DataSet : IConvertible
     public int ToInt32( IFormatProvider provider )
     {
         return Convert.ToInt32( CalcNLimitAverage(
-            Int32.MinValue, Int32.MaxValue, provider ) );
+            int.MinValue, int.MaxValue, provider ) );
     }
 
     public long ToInt64( IFormatProvider provider )
@@ -318,7 +318,7 @@ public class DataSet : IConvertible
     public string ToString( IFormatProvider provider )
     {
         AverageType avgType = GetAverageInfo( provider ).TypeOfAverage;
-        return String.Format( "( {0}: {1:G10} )", avgType,
+        return string.Format( "( {0}: {1:G10} )", avgType,
             Average( avgType ) );
     }
 }
