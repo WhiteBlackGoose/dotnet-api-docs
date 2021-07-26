@@ -1,4 +1,4 @@
-﻿/* 
+/* 
 System.Web.UI.PersistenceMode.Attribute;System.Web.UI.PersistenceMode.InnerProperty;
 System.Web.UI.PersistenceMode.InnerDefaultProperty;
 
@@ -24,12 +24,12 @@ namespace PersistenceModeAttributeSamples
     // The container control class to instantiate the template property 'MessageTemplate'
     public class TemplateItem : Control, INamingContainer 
     {
-        private String     _author         = null;
-        public TemplateItem(String author) 
+        private string     _author         = null;
+        public TemplateItem(string author) 
         {
             _author = author;
         }
-        public String Author 
+        public string Author 
         {
            get 
            {
@@ -47,7 +47,7 @@ namespace PersistenceModeAttributeSamples
     public class MyTemplateControl : Control, INamingContainer 
     {
         private ITemplate  _messageTemplate = null;
-        private String     _author         = null;
+        private string     _author         = null;
         private ListItemCollection myCollection = null;
 
 // <Snippet1>

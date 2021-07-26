@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Collections;
@@ -26,7 +26,7 @@ public partial class Default2 : System.Web.UI.Page
         listDictionary.Add("ListPrice", null);
         LinqDataSource1.Insert(listDictionary);
 
-        TextBox1.Text = String.Empty;
+        TextBox1.Text = string.Empty;
         DetailsView1.DataBind();
     }
     // </Snippet1>

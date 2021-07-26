@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.ComponentModel;
 using System.Web.UI;
@@ -33,7 +33,7 @@ namespace Samples.AspNet.CS.Controls{
         public string Text {
             get {
                 string s = (string)ViewState["Text"];
-                return((s == null) ? String.Empty : s);
+                return((s == null) ? string.Empty : s);
             }
             set {
                 ViewState["Text"] = value;
@@ -75,8 +75,8 @@ namespace Samples.AspNet.CS.Controls{
         // using the GetPostBackClientHyperlink method.
         protected override void AddAttributesToRender(HtmlTextWriter writer) {
             base.AddAttributesToRender(writer);
-			writer.AddAttribute(HtmlTextWriterAttribute.Href, Page.ClientScript.GetPostBackClientHyperlink(this, String.Empty));
-            //writer.AddAttribute(HtmlTextWriterAttribute.Href, Page.GetPostBackClientHyperlink(this, String.Empty));  
+			writer.AddAttribute(HtmlTextWriterAttribute.Href, Page.ClientScript.GetPostBackClientHyperlink(this, string.Empty));
+            //writer.AddAttribute(HtmlTextWriterAttribute.Href, Page.GetPostBackClientHyperlink(this, string.Empty));  
         }
         // </snippet2>
        

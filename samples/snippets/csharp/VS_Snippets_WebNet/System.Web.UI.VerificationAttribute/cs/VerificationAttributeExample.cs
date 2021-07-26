@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Web;
@@ -20,24 +20,24 @@ namespace SomeNamespace
 			VerificationReportLevel.Error, 1, 
 			"The image is missing an text equivalent.", 
 			VerificationRule.NotEmptyString, "ImageUrl")]
-		public virtual String ImageText
+		public virtual string ImageText
 		{
 			get
 			{
 				object obj = ViewState["ImageText"];
-				return ((obj == null) ? String.Empty : (string)obj);
+				return ((obj == null) ? string.Empty : (string)obj);
 			}
 			set
 			{
 				ViewState["ImageText"] = value;
 			}
 		}
-		public virtual String ImageUrl
+		public virtual string ImageUrl
 		{
 			get 
 			{
 				object obj = ViewState["ImageUrl"];
-				return ((obj == null) ? String.Empty : (string)obj);
+				return ((obj == null) ? string.Empty : (string)obj);
 			}
 			set 
 			{ 

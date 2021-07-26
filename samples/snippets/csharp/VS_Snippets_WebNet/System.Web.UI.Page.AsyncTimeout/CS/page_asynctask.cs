@@ -1,4 +1,4 @@
-﻿// <Snippet2> 
+// <Snippet2> 
 using System;
 using System.Web;
 using System.Web.UI;
@@ -8,13 +8,13 @@ namespace Samples.AspNet.CS.Controls
 {
 	public class MyAsyncTask
 	{
-		private String _taskprogress;
+		private string _taskprogress;
 		private AsyncTaskDelegate _dlgt;
 
 		// Create delegate.
 		protected delegate void AsyncTaskDelegate();
 
-		public String GetAsyncTaskProgress()
+		public string GetAsyncTaskProgress()
 		{
 			return _taskprogress;
 		}

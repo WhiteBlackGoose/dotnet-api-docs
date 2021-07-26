@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Collections;
@@ -32,7 +32,7 @@ public partial class customeditablebox : System.Web.UI.UserControl, IEditableTex
         get
         {
             // Provide implementation.
-            return String.Empty;
+            return string.Empty;
         }
         set
         {

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Configuration;
 using System.Web;
@@ -28,7 +28,7 @@ public partial class LoginCancelEventArgscs_aspx : System.Web.UI.Page
         }
         else
         {
-            Login1.InstructionText = String.Empty;
+            Login1.InstructionText = string.Empty;
         }
     }
 }

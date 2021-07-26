@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Web;
 using System.Web.UI;
@@ -20,7 +20,7 @@ namespace Samples.AspNet.CS1.Controls
             get
             {
                 string s = (string)ViewState["TargetUrl"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {
@@ -35,7 +35,7 @@ namespace Samples.AspNet.CS1.Controls
             get
             {
                 string s = (string)ViewState["Text"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {
@@ -62,7 +62,7 @@ namespace Samples.AspNet.CS2.Controls
             get
             {
                 string s = (string)ViewState["TargetUrl"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {
@@ -77,7 +77,7 @@ namespace Samples.AspNet.CS2.Controls
             get
             {
                 string s = (string)ViewState["Text"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {
@@ -104,7 +104,7 @@ namespace Samples.AspNet.CS3.Controls
             get
             {
                 string s = (string)ViewState["TargetUrl"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {
@@ -119,7 +119,7 @@ namespace Samples.AspNet.CS3.Controls
             get
             {
                 string s = (string)ViewState["Text"];
-                return ((s == null) ? String.Empty : s);
+                return ((s == null) ? string.Empty : s);
             }
             set
             {

@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -17,8 +17,8 @@ namespace Contoso
         System.Web.UI.WebControls.Adapters.MenuAdapter, IPostBackEventHandler
     {
 
-        // String variable to hold the currently selected path.
-        private string menuPath = String.Empty;
+        // string variable to hold the currently selected path.
+        private string menuPath = string.Empty;
 
         //<Snippet2>
         protected new System.Web.UI.WebControls.Menu Control
@@ -36,7 +36,7 @@ namespace Contoso
         {
             if (controlState != null)
             {
-                if (controlState is String)
+                if (controlState is string)
                 {
                     menuPath = (string)controlState;
                 }

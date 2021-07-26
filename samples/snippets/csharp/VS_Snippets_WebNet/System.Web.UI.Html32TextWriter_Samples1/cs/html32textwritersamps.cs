@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 // <snippet1>
 using System.IO;
 using System.Web.UI;
@@ -16,7 +16,7 @@ namespace Examples.AspNet
 
 		// Create a constructor for the class that takes
 		// a TextWriter and a string as parameters.
-		public CustomHtml32TextWriter(TextWriter writer, String tabString) 
+		public CustomHtml32TextWriter(TextWriter writer, string tabString) 
 			: base(writer, tabString)
 		{
 		}

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Web.UI;
 using System.Web;
@@ -48,7 +48,7 @@ public class ObjectStateFormatterTest
         catch (HttpException e)
         {
             ViewStateException vse = (ViewStateException)e.InnerException;
-            String logMessage;
+            string logMessage;
 
             logMessage = "ViewStateException. Path: " + vse.Path + Environment.NewLine;
             logMessage += "PersistedState: " + vse.PersistedState + Environment.NewLine;
@@ -70,7 +70,7 @@ public class ObjectStateFormatterTest
     }
     // </snippet2>
 
-    private void LogEvent(String message)
+    private void LogEvent(string message)
     {
     }
 }
