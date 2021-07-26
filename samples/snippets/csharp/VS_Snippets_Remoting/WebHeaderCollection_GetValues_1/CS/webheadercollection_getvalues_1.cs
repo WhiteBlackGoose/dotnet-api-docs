@@ -1,4 +1,4 @@
-﻿/* 
+/* 
  This program demonstrate's the 'GetValues(string)' method of 'WebHeaderCollection' class.
  
  The program creates a 'HttpWebRequest' object from the specified URL and gets the response from it. The 
@@ -24,7 +24,7 @@ public class WebHeaderCollection_GetValues_1 {
             WebHeaderCollection myWebHeaderCollection = myHttpWebResponse.Headers;
 
             for(int i = 0; i < myWebHeaderCollection.Count; i++) {
-                String header = myWebHeaderCollection.GetKey(i);
+                string header = myWebHeaderCollection.GetKey(i);
                 String[] values = myWebHeaderCollection.GetValues(header);
                 if(values.Length > 0) {
                     Console.WriteLine("The values of {0} header are : ", header);

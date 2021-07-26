@@ -1,4 +1,4 @@
-﻿/*System.Net.WebRequest.PreAuthenticate,System.Net.WebRequest.Credentials
+/*System.Net.WebRequest.PreAuthenticate,System.Net.WebRequest.Credentials
  This program demonstrates the 'PreAuthenticate' and 'NetworkCredential' properties of the WebRequest Class.
 The PreAuthenticate Property has a default value set to False.
 This is set to True and new NetwrokCredential object is created with UserName and Password.  
@@ -65,7 +65,7 @@ class WebRequest_Preauthenticate
 			Console.WriteLine("\nThe contents of the Html page of the requested Uri are : ");
 			while (count > 0) 
 			{
-				String outputData = new String(readBuff, 0, count);
+				string outputData = new string(readBuff, 0, count);
 				Console.Write(outputData);
 				count = streamRead.Read(readBuff, 0, 256);
 			}

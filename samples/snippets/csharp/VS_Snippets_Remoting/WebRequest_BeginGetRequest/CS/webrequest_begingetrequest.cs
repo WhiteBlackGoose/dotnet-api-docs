@@ -1,4 +1,4 @@
-﻿/* System.Net.WebRequest.BeginGetRequestStream System.Net.WebRequest.EndGetRequestStream System.Net.WebRequest.Method
+/* System.Net.WebRequest.BeginGetRequestStream System.Net.WebRequest.EndGetRequestStream System.Net.WebRequest.Method
   This program demonstrates 'BeginGetRequestStream' and 'EndGetRequestStream' methods and the 'Method' property of 
     the 'WebRequest' class. 
    A new 'WebRequest' object is created. The method property of the 'WebRequest' object is set to POST. An 
@@ -63,7 +63,7 @@ class WebRequest_BeginGetRequeststream
 
             while (count > 0) 
             {
-                String outputData = new String(readBuff, 0, count);
+                string outputData = new string(readBuff, 0, count);
                 Console.Write(outputData);
                 count = streamRead.Read(readBuff, 0, 256);
             }

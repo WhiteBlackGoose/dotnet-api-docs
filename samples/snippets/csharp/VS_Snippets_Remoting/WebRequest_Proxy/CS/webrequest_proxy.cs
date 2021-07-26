@@ -1,4 +1,4 @@
-﻿/*System.Net.WebRequest.Proxy
+/*System.Net.WebRequest.Proxy
  This program demonstrates the 'Proxy' property of the 'WebRequest' class.
 A WebRequest object is created and a new Proxy Object is created.
 The Proxy Object is assigned the 'Proxy' Property of the WebRequest Object and then printed to the console,this is the default Proxy setting.
@@ -70,7 +70,7 @@ class WebRequest_Proxy
 				Console.WriteLine("\nThe contents of the Html pages are :");	
 				while (count > 0) 
 				{
-					String outputData = new String(readBuff, 0, count);
+					string outputData = new string(readBuff, 0, count);
 					Console.Write(outputData);
 					count = streamRead.Read(readBuff, 0, 256);
 				}

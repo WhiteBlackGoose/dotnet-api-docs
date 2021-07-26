@@ -1,6 +1,6 @@
-﻿// System.Net.WebException.WebException(String,InnerException,Status,WebResponse);
+// System.Net.WebException.WebException(string,InnerException,Status,WebResponse);
 /*
-This program demonstrates the 'WebException(String,InnerException,Status,WebResponse)'  constructor of
+This program demonstrates the 'WebException(string,InnerException,Status,WebResponse)'  constructor of
 'WebException' class.
 A 'HttpConnect' class is defined which extends the 'WebResponse' class.  Then a 'HttpConnect' object is 
 created by taking an uri(intranet) from the user as input and 'ConnectHttpServer' method is called to connect
@@ -26,7 +26,7 @@ public class HttpConnect : WebResponse{
 			 try
 			 {
 				Console.WriteLine("Please give any Intranet Site Address (eg:manjeera.wipro.com)");
-				String uriConnect = Console.ReadLine();
+				string uriConnect = Console.ReadLine();
 				 HttpConnect myHttpConnect = new HttpConnect();
 				 myHttpConnect.ConnectHttpServer(uriConnect);
 			 }
@@ -62,7 +62,7 @@ public class HttpConnect : WebResponse{
 		  return getStream;
 		}
 
-    	public void ConnectHttpServer(String connectUri)
+    	public void ConnectHttpServer(string connectUri)
         {
 // <Snippet1>
 			 // Send the data. 
@@ -88,8 +88,8 @@ public class HttpConnect : WebResponse{
 			 connectSocket.Send(byteGet, byteGet.Length, 0);
 	    
 			 // Receive the information sent by the server.
-			 Int32 bytesReceived = connectSocket.Receive(recvBytes, recvBytes.Length, 0);
-			 String headerString = ASCII.GetString(recvBytes, 0, bytesReceived);
+			 int bytesReceived = connectSocket.Receive(recvBytes, recvBytes.Length, 0);
+			 string headerString = ASCII.GetString(recvBytes, 0, bytesReceived);
 
 			// Check whether 'status 404' is there or not in the information sent by server.
 			if(headerString.IndexOf("404")!=-1)

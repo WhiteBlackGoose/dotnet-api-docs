@@ -1,4 +1,4 @@
-﻿/*
+/*
  This program demonstrate's the 'GetValues(string)' method of 
  'WebHeaderCollection' class.
  
@@ -41,7 +41,7 @@ public class WebHeaderCollection_GetValues_1
 
             for(int i = 0; i < myWebHeaderCollection.Count; i++)
             {
-                String header = myWebHeaderCollection.GetKey(i);
+                string header = myWebHeaderCollection.GetKey(i);
                 String[] values = 
                     myWebHeaderCollection.GetValues(header);
                 if(values.Length > 0) 
@@ -72,7 +72,7 @@ public class WebHeaderCollection_GetValues_1
 
             Console.WriteLine("");
 
-            // show the use of Get(Int32) and GetValue(Int32)
+            // show the use of Get(int) and GetValue(int)
             if (myWebHeaderCollection.Count > 0)
             {
                 // get the name and value of the first header

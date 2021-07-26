@@ -1,4 +1,4 @@
-﻿// System.Net.WebResponse.Close
+// System.Net.WebResponse.Close
 
 /*This program demonstrates the 'Close' method of 'WebResponse' Class. 
 It takes an URL from console and creates a 'WebRequest' object for the Url. It then gets back 
@@ -29,7 +29,7 @@ class WebResponseSnippet {
       return;
     }
 
-  public static void GetPage(String url) 
+  public static void GetPage(string url) 
    {
 	   try 
          {

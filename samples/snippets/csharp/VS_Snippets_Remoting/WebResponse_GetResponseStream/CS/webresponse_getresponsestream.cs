@@ -1,4 +1,4 @@
-﻿// System.Net.WebResponse.GetResponseStream
+// System.Net.WebResponse.GetResponseStream
 
 /* This program demonstrates the 'GetResponseStream' method of the 'WebResponse' class.
 It creates a web request and queries for a response. It then gets the response stream. This response stream 
@@ -28,7 +28,7 @@ class WebResponseSnippet
       return;
     }
 
-   public static void getPage(String url) 
+   public static void getPage(string url) 
 	{
 
 	try 
@@ -58,7 +58,7 @@ class WebResponseSnippet
 	while (count > 0) 
 	{
     	    // Dump the 256 characters on a string and display the string onto the console.
-	    String str = new String(read, 0, count);
+	    string str = new string(read, 0, count);
 	    Console.Write(str);
 	    count = readStream.Read(read, 0, 256);
 	}
