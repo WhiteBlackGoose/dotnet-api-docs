@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.ComponentModel;
 using System.Windows;
@@ -20,7 +20,7 @@ namespace SDKSample
             myDataProperty = "Last bound time was " + dateTime.ToLongTimeString();
         }
 
-        public String MyDataProperty
+        public string MyDataProperty
         {
             get { return myDataProperty; }
             set

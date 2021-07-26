@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
@@ -108,7 +108,7 @@ namespace SDKSample
             {}
         }
         public event PropertyChangedEventHandler PropertyChanged;
-        private void OnPropertyChanged(String info)
+        private void OnPropertyChanged(string info)
         {
             PropertyChangedEventHandler handler = PropertyChanged;
             if (handler !=null)

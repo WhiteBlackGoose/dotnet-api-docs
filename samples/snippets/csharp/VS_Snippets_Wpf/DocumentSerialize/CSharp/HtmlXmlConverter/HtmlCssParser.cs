@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 // 
 // File: HtmlXamlConverter.cs
 //
@@ -202,7 +202,7 @@ namespace SdkSample
         // Skips white spaces in style values
         private static void ParseWhiteSpace(string styleValue, ref int nextIndex)
         {
-            while (nextIndex < styleValue.Length && Char.IsWhiteSpace(styleValue[nextIndex]))
+            while (nextIndex < styleValue.Length && char.IsWhiteSpace(styleValue[nextIndex]))
             {
                 nextIndex++;
             }
@@ -224,7 +224,7 @@ namespace SdkSample
                 }
             }
 
-            if (nextIndex + word.Length < styleValue.Length && Char.IsLetterOrDigit(styleValue[nextIndex + word.Length]))
+            if (nextIndex + word.Length < styleValue.Length && char.IsLetterOrDigit(styleValue[nextIndex + word.Length]))
             {
                 return false;
             }
@@ -270,9 +270,9 @@ namespace SdkSample
                 nextIndex++;
             }
 
-            if (nextIndex < styleValue.Length && Char.IsDigit(styleValue[nextIndex]))
+            if (nextIndex < styleValue.Length && char.IsDigit(styleValue[nextIndex]))
             {
-                while (nextIndex < styleValue.Length && (Char.IsDigit(styleValue[nextIndex]) || styleValue[nextIndex] == '.'))
+                while (nextIndex < styleValue.Length && (char.IsDigit(styleValue[nextIndex]) || styleValue[nextIndex] == '.'))
                 {
                     nextIndex++;
                 }
@@ -355,7 +355,7 @@ namespace SdkSample
                     nextIndex++;
                     while (nextIndex < styleValue.Length)
                     {
-                        character = Char.ToUpper(styleValue[nextIndex]);
+                        character = char.ToUpper(styleValue[nextIndex]);
                         if (!('0' <= character && character <= '9' || 'A' <= character && character <= 'F'))
                         {
                             break;
@@ -380,7 +380,7 @@ namespace SdkSample
                     }
                     color = "gray"; // return bogus color
                 }
-                else if (Char.IsLetter(character))
+                else if (char.IsLetter(character))
                 {
                     color = ParseWordEnumeration(_colors, styleValue, ref nextIndex);
                     if (color == null)

@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 // 
 // File: HtmlFromXamlConverter.cs
 //
@@ -124,7 +124,7 @@ namespace SdkSample
         /// after WriteStartElement state.
         /// </param>
         /// <param name="inlineStyle">
-        /// String builder for collecting css properties for inline STYLE attribute.
+        /// string builder for collecting css properties for inline STYLE attribute.
         /// </param>
         private static void WriteFormattingProperties(XmlTextReader xamlReader, XmlTextWriter htmlWriter, StringBuilder inlineStyle)
         {

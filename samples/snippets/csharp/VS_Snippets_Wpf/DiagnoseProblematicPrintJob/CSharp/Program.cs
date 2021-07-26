@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Printing;
@@ -13,7 +13,7 @@ namespace DiagnoseProblematicPrintJob
             // Obtain a list of print servers.
             Console.Write("Enter path and file name of CRLF-delimited list of print servers" + 
                 "\n(press Return for default \"C:\\PrintServers.txt\"): ");
-            String pathToListOfPrintServers = Console.ReadLine();
+            string pathToListOfPrintServers = Console.ReadLine();
             if (pathToListOfPrintServers == "")
             {
                 pathToListOfPrintServers = @"C:\PrintServers.txt";
@@ -23,7 +23,7 @@ namespace DiagnoseProblematicPrintJob
             // Obtain the username of the person with the problematic print job.
             Console.Write("\nEnter username of person that submitted print job" + 
                 "\n(press Return for the current user {0}: ", Environment.UserName);
-            String userName = Console.ReadLine();
+            string userName = Console.ReadLine();
             if (userName == "")
             {
                 userName = Environment.UserName;
@@ -32,12 +32,12 @@ namespace DiagnoseProblematicPrintJob
             // Prompt user to determine the method that will be used to read the queue status.
             Console.Write("\nEnter \"Y\" to check the problematic job using its JobStatus attributes." + 
                 "\nOtherwise, press Return and the job will be checked using its specific properties: ");
-            String useAttributesResponse = Console.ReadLine();
+            string useAttributesResponse = Console.ReadLine();
 
             // Create list of all jobs submitted by user.
-            String line;
+            string line;
             Boolean atLeastOne = false; 
-            String jobList = "\n\nAll print jobs submitted by the user are listed here:\n\n";
+            string jobList = "\n\nAll print jobs submitted by the user are listed here:\n\n";
             while ((line = fileOfPrintServers.ReadLine()) != null)
             {
                 PrintServer myPS = new PrintServer(line, PrintSystemDesiredAccess.AdministrateServer);
@@ -81,13 +81,13 @@ namespace DiagnoseProblematicPrintJob
                 // When the problematic print job has been identified, enter information about it.
                 Console.Write("\nEnter the print server hosting the job (including leading slashes \\\\): " +
                 "\n(press Return for the current computer \\\\{0}): ", Environment.MachineName);
-                String pServer = Console.ReadLine();
+                string pServer = Console.ReadLine();
                 if (pServer == "")
                 {
                     pServer = "\\\\" +Environment.MachineName;
                 }
                 Console.Write("\nEnter the print queue hosting the job: ");
-                String pQueue = Console.ReadLine(); 
+                string pQueue = Console.ReadLine(); 
                 Console.Write("\nEnter the job ID: ");
                 Int16 jobID = Convert.ToInt16(Console.ReadLine());
 
@@ -233,7 +233,7 @@ namespace DiagnoseProblematicPrintJob
                  "\nhas paused the job or queue." +
                  "\nResume the queue? (Has no effect if queue is not paused.)" +
                  "\nEnter \"Y\" to resume, otherwise press return: ");
-            String resume = Console.ReadLine();
+            string resume = Console.ReadLine();
             if (resume == "Y")
             {
                 theJob.HostingPrintQueue.Resume();
@@ -241,7 +241,7 @@ namespace DiagnoseProblematicPrintJob
                 // It is possible the job is also paused. Find out how the user wants to handle that.
                 Console.WriteLine("Does user want to resume print job or cancel it?" +
                     "\nEnter \"Y\" to resume (any other key cancels the print job): ");
-                String userDecision = Console.ReadLine();
+                string userDecision = Console.ReadLine();
                 if (userDecision == "Y")
                 {
                     theJob.Resume();
@@ -293,7 +293,7 @@ namespace DiagnoseProblematicPrintJob
             if (pq.StartTimeOfDay != pq.UntilTimeOfDay) // If the printer is not available 24 hours a day
             {
                 DateTime utcNow = DateTime.UtcNow;
-                Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
+                int utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
 
                 // If now is not within the range of available times . . .
                 if (!((pq.StartTimeOfDay < utcNowAsMinutesAfterMidnight) 
@@ -314,7 +314,7 @@ namespace DiagnoseProblematicPrintJob
             if (theJob.StartTimeOfDay != theJob.UntilTimeOfDay) // If the job cannot be printed at all times of day
             {
                 DateTime utcNow = DateTime.UtcNow;
-                Int32 utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
+                int utcNowAsMinutesAfterMidnight = (utcNow.TimeOfDay.Hours * 60) + utcNow.TimeOfDay.Minutes;
 
                 // If "now" is not within the range of available times . . .
                 if (!((theJob.StartTimeOfDay < utcNowAsMinutesAfterMidnight) 
@@ -333,7 +333,7 @@ namespace DiagnoseProblematicPrintJob
     class TimeConverter
     {
         // Convert time as minutes past UTC midnight into human readable time in local time zone.
-        internal static DateTime ConvertToLocalHumanReadableTime(Int32 timeInMinutesAfterUTCMidnight)
+        internal static DateTime ConvertToLocalHumanReadableTime(int timeInMinutesAfterUTCMidnight)
         {
             // Construct a UTC midnight object.
             // Must start with current date so that the local Daylight Savings system, if any, will be taken into account.

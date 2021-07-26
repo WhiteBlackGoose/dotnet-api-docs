@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -85,7 +85,7 @@ namespace DatePickerSnippets
             {
                 if (datePickerObj.BlackoutDates.Contains(newDate))
                 {
-                    MessageBox.Show(String.Format("The date, {0}, cannot be selected.",
+                    MessageBox.Show(string.Format("The date, {0}, cannot be selected.",
                                                    e.Text));
                 }
             }

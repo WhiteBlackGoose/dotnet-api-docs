@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Globalization;
 using System.Reflection;
@@ -16,7 +16,7 @@ namespace SDKSample
     {
         object IValueConverter.Convert(object o, Type type, object parameter, CultureInfo culture)
         {
-            return String.Format("{0:f2}", o);
+            return string.Format("{0:f2}", o);
         }
 
         object IValueConverter.ConvertBack(object o, Type type, object parameter, CultureInfo culture)

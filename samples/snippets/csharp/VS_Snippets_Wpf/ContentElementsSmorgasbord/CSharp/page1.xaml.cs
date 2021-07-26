@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Windows.Media;
 using System.Windows;
@@ -18,7 +18,7 @@ namespace Foo {
         public string CustomProperty
         {
             get { return _value; }
-            set { _value = (String)value; }
+            set { _value = (string)value; }
         }
         private string _value;
     }

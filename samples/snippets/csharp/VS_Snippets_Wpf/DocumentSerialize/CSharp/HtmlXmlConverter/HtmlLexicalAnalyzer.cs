@@ -1,4 +1,4 @@
-﻿//---------------------------------------------------------------------------
+//---------------------------------------------------------------------------
 // 
 // File: HtmlLexicalAnalyzer.cs
 //
@@ -279,7 +279,7 @@ namespace SdkSample
             }
             else
             {
-                while (!this.IsAtEndOfStream && !Char.IsWhiteSpace(this.NextCharacter) && this.NextCharacter != '>')
+                while (!this.IsAtEndOfStream && !char.IsWhiteSpace(this.NextCharacter) && this.NextCharacter != '>')
                 {
                     _nextToken.Append(this.NextCharacter);
                     this.GetNextCharacter();
@@ -358,7 +358,7 @@ namespace SdkSample
                     this.ReadLookAheadCharacter();
 
                     // largest numeric entity is 7 characters
-                    for (int i = 0; i < 7 && Char.IsDigit(_lookAheadCharacter); i++)
+                    for (int i = 0; i < 7 && char.IsDigit(_lookAheadCharacter); i++)
                     {
                         entityCode = 10 * entityCode + (_lookAheadCharacterCode - (int)'0');
                         this.ReadLookAheadCharacter();
@@ -385,13 +385,13 @@ namespace SdkSample
                         _isNextCharacterEntity = false;
                     }
                 }
-                else if (Char.IsLetter(_lookAheadCharacter))
+                else if (char.IsLetter(_lookAheadCharacter))
                 {
                     // entity is written as a string
                     string entity = "";
 
                     // maximum length of string entities is 10 characters
-                    for (int i = 0; i < 10 && (Char.IsLetter(_lookAheadCharacter) || Char.IsDigit(_lookAheadCharacter)); i++)
+                    for (int i = 0; i < 10 && (char.IsLetter(_lookAheadCharacter) || char.IsDigit(_lookAheadCharacter)); i++)
                     {
                         entity += _lookAheadCharacter;
                         this.ReadLookAheadCharacter();
@@ -481,7 +481,7 @@ namespace SdkSample
                     }
                 }
 
-                if (!Char.IsWhiteSpace(this.NextCharacter))
+                if (!char.IsWhiteSpace(this.NextCharacter))
                 {
                     break;
                 }
@@ -503,7 +503,7 @@ namespace SdkSample
         /// </returns>
         private bool IsGoodForNameStart(char character)
         {
-            return character == '_' || Char.IsLetter(character);
+            return character == '_' || char.IsLetter(character);
         }
 
         /// <summary>
@@ -526,7 +526,7 @@ namespace SdkSample
                 character == '.' || 
                 character == '-' || 
                 character == ':' ||
-                Char.IsDigit(character) || 
+                char.IsDigit(character) || 
                 IsCombiningCharacter(character) || 
                 IsExtender(character);
         }

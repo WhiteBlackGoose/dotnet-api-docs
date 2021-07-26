@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -114,7 +114,7 @@ namespace ControlContentOverviewSnippets
         {
             ListBox listBox1 = new ListBox();
 
-            // Add a String to a ListBoxItem and add the 
+            // Add a string to a ListBoxItem and add the 
             // ListBoxItem to the ListBox.
             ListBoxItem lbItem1 = new ListBoxItem();
             lbItem1.Content = "This is a string in a ListBox";
@@ -139,7 +139,7 @@ namespace ControlContentOverviewSnippets
         void AddFirstListBox()
         {
             //<Snippet4>
-            // Add a String to the ListBox.
+            // Add a string to the ListBox.
             listBox1.Items.Add("This is a string in a ListBox");
 
             // Add a DateTime object to a ListBox.

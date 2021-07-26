@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -234,7 +234,7 @@ namespace SDKSamples
 
         private void cmdButtonClick(object sender, RoutedEventArgs e)
         {
-            txtGesture.Text = String.Empty;
+            txtGesture.Text = string.Empty;
             txtGesture.Text += "Windows Input Bindings \n";
             foreach (InputBinding binding in this.InputBindings)
             {

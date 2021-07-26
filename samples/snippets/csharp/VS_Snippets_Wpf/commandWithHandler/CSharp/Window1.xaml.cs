@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
@@ -21,7 +21,7 @@ namespace WCSamples
         //<SnippetCommandHandlerExecutedHandler>
         void OpenCmdExecuted(object target, ExecutedRoutedEventArgs e)
         {
-            String command, targetobj;
+            string command, targetobj;
             command = ((RoutedCommand)e.Command).Name;
             targetobj = ((FrameworkElement)target).Name;
             MessageBox.Show("The " + command +  " command has been invoked on target object " + targetobj);
