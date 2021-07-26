@@ -1,4 +1,4 @@
-﻿// Illustrates Convert.ToDateTime(Object) method.
+// Illustrates Convert.ToDateTime(Object) method.
 
 // <Snippet1>
 using System;
@@ -48,7 +48,7 @@ public class ConversionToDateTime
    }
 }
 // The example displays the following output:
-//       Conversion of the Int32 '16352' is not supported
+//       Conversion of the int '16352' is not supported
 //       '' converts to 1/1/0001 12:00:00 AM.
 //       'monthly' is not in the proper format.
 //       '05/01/1996' converts to 5/1/1996 12:00:00 AM.

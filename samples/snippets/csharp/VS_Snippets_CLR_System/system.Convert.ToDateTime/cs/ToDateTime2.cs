@@ -1,4 +1,4 @@
-﻿// Illustrates Convert.ToDateTime(String) method.
+// Illustrates Convert.ToDateTime(string) method.
 
 // <Snippet2>
 using System;
@@ -13,7 +13,7 @@ public class ConversionToDateTime
       ConvertToDateTime(dateString);
 
       // Convert an empty string.
-      dateString = String.Empty;
+      dateString = string.Empty;
       ConvertToDateTime(dateString);
 
       // Convert a non-date string.

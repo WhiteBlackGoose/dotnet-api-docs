@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 public class Example
 {
@@ -64,21 +64,21 @@ public class Example
    private static void ConvertInt32()
    {
       // <Snippet3>
-      int[] numbers = { Int32.MinValue, -1000, 0, 1000, Int32.MaxValue };
+      int[] numbers = { int.MinValue, -1000, 0, 1000, int.MaxValue };
       decimal result;
 
       foreach (int number in numbers)
       {
          result = Convert.ToDecimal(number);
-         Console.WriteLine("Converted the Int32 value {0} to the Decimal value {1}.",
+         Console.WriteLine("Converted the int value {0} to the Decimal value {1}.",
                            number, result);
       }
       // The example displays the following output:
-      //    Converted the Int32 value -2147483648 to the Decimal value -2147483648.
-      //    Converted the Int32 value -1000 to the Decimal value -1000.
-      //    Converted the Int32 value 0 to the Decimal value 0.
-      //    Converted the Int32 value 1000 to the Decimal value 1000.
-      //    Converted the Int32 value 2147483647 to the Decimal value 2147483647.
+      //    Converted the int value -2147483648 to the Decimal value -2147483648.
+      //    Converted the int value -1000 to the Decimal value -1000.
+      //    Converted the int value 0 to the Decimal value 0.
+      //    Converted the int value 1000 to the Decimal value 1000.
+      //    Converted the int value 2147483647 to the Decimal value 2147483647.
       // </Snippet3>
    }
 
@@ -112,14 +112,14 @@ public class Example
       }
       // The example displays the following output:
       //    Converted the Boolean value True to 1.
-      //    Conversion of the Char value a to a Decimal is not supported.
-      //    Converted the Int32 value 123 to 123.
+      //    Conversion of the char value a to a Decimal is not supported.
+      //    Converted the int value 123 to 123.
       //    The Double value 1.764E+32 is out of range of the Decimal type.
-      //    Converted the String value 9.78 to 9.78.
-      //    The String value 1e-02 is not recognized as a valid Decimal value.
+      //    Converted the string value 9.78 to 9.78.
+      //    The string value 1e-02 is not recognized as a valid Decimal value.
       //    Converted the Double value 1670 to 1670.
-      //    The String value A100 is not recognized as a valid Decimal value.
-      //    Converted the String value 1,033.67 to 1033.67.
+      //    The string value A100 is not recognized as a valid Decimal value.
+      //    Converted the string value 1,033.67 to 1033.67.
       //    Conversion of the DateTime value 10/15/2008 05:40:42 PM to a Decimal is not supported.
       //    The Double value 1.79769313486232E+308 is out of range of the Decimal type.
       // </Snippet4>

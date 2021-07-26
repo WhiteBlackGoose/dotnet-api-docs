@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.Globalization;
 
@@ -6,7 +6,7 @@ public class Example
 {
    public static void Main()
    {
-      Console.WriteLine("{0,-18}{1,-12}{2}\n", "Date String", "Culture", "Result");
+      Console.WriteLine("{0,-18}{1,-12}{2}\n", "Date string", "Culture", "Result");
 
       string[] cultureNames = { "en-US", "ru-RU","ja-JP" };
       string[] dateStrings = { "01/02/09", "2009/02/03",  "01/2009/03",
