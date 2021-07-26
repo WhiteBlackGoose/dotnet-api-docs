@@ -1,4 +1,4 @@
-﻿// <snippet5>
+// <snippet5>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,8 +18,8 @@ namespace Samples.AspNet.CS.Controls
   public class UserInfoWebPart : WebPart
   {
     HttpServerUtility server = HttpContext.Current.Server;
-    private String _userNickName = "Add a nickname.";
-    private String _userPetName = "Add a pet name.";
+    private string _userNickName = "Add a nickname.";
+    private string _userPetName = "Add a pet name.";
     private DateTime _userSpecialDate = DateTime.Now;
     private Boolean _userIsCurrent = true;
     private JobTypeName _userJobType = JobTypeName.Unselected;
@@ -43,7 +43,7 @@ namespace Samples.AspNet.CS.Controls
     // public properties, so that users can save property values  
     // and edit them with a PropertyGridEditorPart control.
     [Personalizable(), WebBrowsable, WebDisplayName("Nickname")]
-    public String NickName
+    public string NickName
     {
       get 
       { 
@@ -58,7 +58,7 @@ namespace Samples.AspNet.CS.Controls
     }
 
     [Personalizable(), WebBrowsable, WebDisplayName("Pet Name")]
-    public String PetName
+    public string PetName
     {
       get 
       { 

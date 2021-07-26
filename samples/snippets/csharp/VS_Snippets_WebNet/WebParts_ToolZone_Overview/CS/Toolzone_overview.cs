@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.Web;
 using System.Web.UI;
@@ -10,10 +10,10 @@ public partial class Toolzone_overview_cs : System.Web.UI.Page
   protected void Button1_Click(Object sender, EventArgs e)
   {
     if(string.IsNullOrEmpty(TextBox1.Text))
-      EditorZone1.InstructionText = String.Empty;
+      EditorZone1.InstructionText = string.Empty;
     else
       EditorZone1.InstructionText = Server.HtmlEncode(TextBox1.Text);
-      TextBox1.Text = String.Empty;
+      TextBox1.Text = string.Empty;
   }
 }
 // </snippet2>
