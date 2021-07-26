@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
@@ -18,8 +18,8 @@ namespace Samples.AspNet
         static void Main(string[] args)
         {
 
-            string inputStr = String.Empty;
-            string option = String.Empty;
+            string inputStr = string.Empty;
+            string option = string.Empty;
 
             // Define a regular expression to allow only 
             // alphanumeric inputs that are at most 20 character 
@@ -76,7 +76,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                           "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                           name, declared, type);
                         // </Snippet2>
@@ -96,7 +96,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                           "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                           name, declared, type);
                         // </Snippet3>
@@ -116,7 +116,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet4>
@@ -136,7 +136,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet5>
@@ -156,7 +156,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet6>
@@ -176,7 +176,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet7>
@@ -195,7 +195,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet8>
@@ -215,7 +215,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet9>
@@ -235,7 +235,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet10>
@@ -255,7 +255,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet11>
@@ -275,7 +275,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet12>
@@ -295,7 +295,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet13>
@@ -314,7 +314,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet14>
@@ -333,7 +333,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet15>
@@ -352,7 +352,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet16>
@@ -371,7 +371,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet17>
@@ -390,7 +390,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet18>
@@ -409,7 +409,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet19>
@@ -428,7 +428,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet20>
@@ -447,7 +447,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet21>
@@ -466,7 +466,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet22>
@@ -485,7 +485,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet23>
@@ -505,7 +505,7 @@ namespace Samples.AspNet
                         name = info.SectionName ;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet24>
@@ -525,7 +525,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet25>
@@ -545,7 +545,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet26>
@@ -565,7 +565,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet27>
@@ -585,7 +585,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet28>
@@ -605,7 +605,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet29>
@@ -625,7 +625,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet30>
@@ -645,7 +645,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet31>
@@ -665,7 +665,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet32>
@@ -685,7 +685,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet33>
@@ -705,7 +705,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet34>
@@ -725,7 +725,7 @@ namespace Samples.AspNet
                         name = info.SectionName;
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet35>
@@ -746,7 +746,7 @@ namespace Samples.AspNet
                         type = info.Type;
                         declared = info.IsDeclared.ToString();
                         
-                        msg = String.Format(
+                        msg = string.Format(
                             "Name:     {0}\nDeclared: {1}\nType:     {2}\n",
                             name, declared, type);
                         // </Snippet36>
@@ -769,13 +769,13 @@ namespace Samples.AspNet
                             declared = info.IsDeclared.ToString();
                             if (i < 10)
                             {
-                                msg = String.Format(
+                                msg = string.Format(
                                     "{0})Name:   {1}\nDeclared: {2}\nType:     {3}\n",
                                     i.ToString(), name, declared, type);
                             }
                             else
                             {
-                                msg = String.Format(
+                                msg = string.Format(
                                      "{0})Name:  {1}\nDeclared: {2}\nType:     {3}\n",
                                      i.ToString(), name, declared, type);
                             }
