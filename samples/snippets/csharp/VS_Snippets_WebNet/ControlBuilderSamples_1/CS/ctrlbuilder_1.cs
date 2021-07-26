@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 // To work correctly with the .aspx file for this sample, name the compiled DLL 
 // generated from this class ctrlBuilder_1.dll.
 // Create a namespace that contains two classes that inherit from the
@@ -27,10 +27,10 @@ namespace CustomControlBuilders
   {
      // Override the GetChildControlType method to detect
      // child elements named myitem.
-     public override Type GetChildControlType(String tagName,
+     public override Type GetChildControlType(string tagName,
                                        IDictionary attributes)
      {
-        if (String.Compare(tagName, "myitem", true) == 0) 
+        if (string.Compare(tagName, "myitem", true) == 0) 
         {
            return typeof(TextBox);
         }

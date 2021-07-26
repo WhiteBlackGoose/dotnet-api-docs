@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -20,10 +20,10 @@ namespace MyUserControl
     public sealed class SimpleControl : WebControl 
     {
     
-         private String UserMessage=null;
+         private string UserMessage=null;
     
          // Create a property named ControlValue.
-         public String ControlValue 
+         public string ControlValue 
          {
             get 
             {

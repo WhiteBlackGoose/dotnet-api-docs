@@ -1,4 +1,4 @@
-﻿// System.Web.UI.Control.AddParsedSubObject;
+// System.Web.UI.Control.AddParsedSubObject;
 
 /*
    The following example demonstrates the method 'AddParsedSubObject' of class
@@ -25,10 +25,10 @@ namespace ControlSample
    // Custom ControlBuilder class. Interprets nested tag name "myitem" as a textbox. 
    public class MyControlBuilder : ControlBuilder 
    {
-      public override Type GetChildControlType(String tagName,
+      public override Type GetChildControlType(string tagName,
                                           IDictionary attributes)
       {
-         if (String.Compare(tagName, "myitem", true) == 0) 
+         if (string.Compare(tagName, "myitem", true) == 0) 
          {
             return typeof(TextBox);
          }

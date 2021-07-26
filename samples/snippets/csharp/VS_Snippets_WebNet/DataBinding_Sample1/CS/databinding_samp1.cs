@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // Create a namespace that contains a class, named 
 // SimpleDesigner, that extends the ControlDesigner class.
 // The DataBinding and DataBindingCollection classes 
@@ -34,7 +34,7 @@ namespace DataBindingTest
                 {
                     return myBinding.Expression;
                 }
-                return String.Empty;
+                return string.Empty;
             }
             set
             {
@@ -73,9 +73,9 @@ namespace DataBindingTest
             
             DataBindingCollection myDataBindingCollection;
             DataBinding myDataBinding1, myDataBinding2;
-            String myStringReplace1, myDataBindingExpression1, removedBinding, removedBindingAfterReplace, myDataBindingExpression2, myStringReplace2;
+            string myStringReplace1, myDataBindingExpression1, removedBinding, removedBindingAfterReplace, myDataBindingExpression2, myStringReplace2;
             string[] removedBindings1, removedBindings2;
-            Int32 temp;
+            int temp;
 
             if (myHtmlControlDesignBehavior == null)
                 return;
@@ -99,7 +99,7 @@ namespace DataBindingTest
                     return;
                 }
                 // DataBinding is not null.
-                myDataBindingExpression1 = String.Concat("<%#", myDataBinding1.Expression, "%>");
+                myDataBindingExpression1 = string.Concat("<%#", myDataBinding1.Expression, "%>");
                 myHtmlControlDesignBehavior.SetAttribute(myStringReplace1, myDataBindingExpression1);
                 int index = myStringReplace1.IndexOf("-");
             }
@@ -133,13 +133,13 @@ namespace DataBindingTest
             while (myEnumerator.MoveNext())
             {
                 myDataBinding2 = (DataBinding)myEnumerator.Current;
-                String dataBindingOutput1, dataBindingOutput2, dataBindingOutput3;
-                dataBindingOutput1 = String.Concat("The property name is ", myDataBinding2.PropertyName);
-                dataBindingOutput2 = String.Concat("The property type is ", myDataBinding2.PropertyType.ToString(), "-", dataBindingOutput1);
-                dataBindingOutput3 = String.Concat("The expression is ", myDataBinding2.Expression, "-", dataBindingOutput2);
+                string dataBindingOutput1, dataBindingOutput2, dataBindingOutput3;
+                dataBindingOutput1 = string.Concat("The property name is ", myDataBinding2.PropertyName);
+                dataBindingOutput2 = string.Concat("The property type is ", myDataBinding2.PropertyType.ToString(), "-", dataBindingOutput1);
+                dataBindingOutput3 = string.Concat("The expression is ", myDataBinding2.Expression, "-", dataBindingOutput2);
                 WriteToFile(dataBindingOutput3);
 
-                myDataBindingExpression2 = String.Concat("<%#", myDataBinding2.Expression, "%>");
+                myDataBindingExpression2 = string.Concat("<%#", myDataBinding2.Expression, "%>");
                 myStringReplace2 = myDataBinding2.PropertyName.Replace(".", "-");
                 myHtmlControlDesignBehavior.SetAttribute(myStringReplace2, myDataBindingExpression2);
                 int index = myStringReplace2.IndexOf('-');

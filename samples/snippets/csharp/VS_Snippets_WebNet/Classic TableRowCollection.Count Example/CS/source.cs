@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -16,7 +16,7 @@ public class Page1: Page
                 cellNum < Table1.Rows[cellNum].Cells.Count; cellNum++)
             {
                 Table1.Rows[rowNum].Cells[cellNum].Text = 
-                    String.Format("({0}, {1})", rowNum, cellNum);
+                    string.Format("({0}, {1})", rowNum, cellNum);
             }            
         }
     }

@@ -1,6 +1,6 @@
-﻿// <Snippet1>
+// <Snippet1>
 // The following example uses the 
-// DataBindingHandlerAttribute(String) constructor to designate
+// DataBindingHandlerAttribute(string) constructor to designate
 // the custom DataBindingHandler class, named MyDataBindingHandler,
 // for the custom MyWebControl class.
 using System;

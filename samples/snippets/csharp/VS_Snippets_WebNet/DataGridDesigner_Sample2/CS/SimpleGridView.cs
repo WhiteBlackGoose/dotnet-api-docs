@@ -1,4 +1,4 @@
-﻿//<Snippet10>
+//<Snippet10>
 using System;
 using System.Drawing;
 using System.Security.Permissions;
@@ -34,7 +34,7 @@ namespace ASPNET.Examples.CS
         //<Snippet2>
         public override string GetDesignTimeHtml()
         {
-            string designTimeHtml = String.Empty;
+            string designTimeHtml = string.Empty;
 
             simpleGView = (SimpleGridView)Component;
 

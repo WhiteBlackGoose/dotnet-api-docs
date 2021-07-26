@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Configuration;
 
@@ -16,9 +16,9 @@ namespace Samples.AspNet.CS
             ShowSectionGroupCollectionInfo(mySectionGroupCollection);
         }
         //</Snippet10>
-        static String getSpacer()
+        static string getSpacer()
         {
-            String spacer = "";
+            string spacer = "";
             for (int i = 0; i < indentLevel; i++)
             {
                 spacer = spacer + "    ";
@@ -28,7 +28,7 @@ namespace Samples.AspNet.CS
         //<Snippet9>
         static void ShowSectionGroupCollectionInfo(ConfigurationSectionGroupCollection mySectionGroupCollection)
         {
-            foreach (String mySectionGroupName in mySectionGroupCollection.Keys)
+            foreach (string mySectionGroupName in mySectionGroupCollection.Keys)
             {
                 ConfigurationSectionGroup mySectionGroup = 
                     (ConfigurationSectionGroup)mySectionGroupCollection[mySectionGroupName];
@@ -55,7 +55,7 @@ namespace Samples.AspNet.CS
             indentLevel++;
             //<Snippet7>
             ConfigurationSectionCollection mySectionCollection = mySectionGroup.Sections;
-            foreach (String mySectionName in mySectionCollection.Keys)
+            foreach (string mySectionName in mySectionCollection.Keys)
             {
                 ConfigurationSection mySection = (ConfigurationSection)mySectionCollection[mySectionName];
                 Console.WriteLine(getSpacer() + "Section Name:" 

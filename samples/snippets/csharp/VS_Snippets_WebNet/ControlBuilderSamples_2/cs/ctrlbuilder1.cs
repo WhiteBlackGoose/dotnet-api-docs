@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.ComponentModel;
 using System.Web;
 using System.Web.UI;
@@ -64,12 +64,12 @@ namespace MS.ASPNET.Samples
 			}
 		}
 
-		public String Text
+		public string Text
 		{
 			get {
-				String s = (string)ViewState["Text"];
+				string s = (string)ViewState["Text"];
 				if (s == null)
-					return String.Empty;
+					return string.Empty;
 				else
 					return s;
 			}

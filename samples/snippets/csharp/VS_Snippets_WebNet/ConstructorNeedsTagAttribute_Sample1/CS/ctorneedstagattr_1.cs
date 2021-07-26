@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
@@ -19,17 +19,17 @@ namespace CTorNeedsTagAtt
         Level=AspNetHostingPermissionLevel.Minimal)]
      public sealed class Simple : WebControl 
      {
-        private String NameTag = "";
+        private string NameTag = "";
 
-        public Simple(String tag)
+        public Simple(string tag)
          {
                this.NameTag = tag;
          }         
 
-         private String   UserMessage = null;
+         private string   UserMessage = null;
 
          // Create a property named ControlValue.
-         public String ControlValue 
+         public string ControlValue 
          {
             get 
             {

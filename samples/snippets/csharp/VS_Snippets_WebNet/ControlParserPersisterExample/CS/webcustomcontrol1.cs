@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Drawing;
 using System.Drawing.Design;
@@ -281,7 +281,7 @@ namespace ControlParserPersisterDesignerControl_CS
         public StringDisplayForm(string displayText)
         {
             this.Size = new Size(400, 300);
-            this.Text = "Control Persistence String";
+            this.Text = "Control Persistence string";
 
             this.SuspendLayout();
             TBox.Multiline = true;
@@ -317,7 +317,7 @@ namespace ControlParserPersisterDesignerControl_CS
         public StringInputForm()
         {
             this.Size = new Size(400, 300);
-            this.Text = "Input Control Persistence String";
+            this.Text = "Input Control Persistence string";
 
             this.SuspendLayout();
             tbox = new System.Windows.Forms.TextBox();
