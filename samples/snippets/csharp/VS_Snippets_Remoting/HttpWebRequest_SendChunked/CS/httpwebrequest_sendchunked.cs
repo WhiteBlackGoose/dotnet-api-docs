@@ -1,4 +1,4 @@
-﻿/*
+/*
    System.Net.HttpWebRequest.SendChunked
    System.Net.HttpWebRequest.TransferEncoding
    This program demonstrates the 'TransferEncoding' and 'SendChunked' properties of the 'HttpWebRequest' class.
@@ -47,7 +47,7 @@ class HttpWebRequest_SendChunked
          Console.WriteLine("Message :{0}", e.Message);
       }
    }
-   public static void GetPage(String myUri)
+   public static void GetPage(string myUri)
    {
       try
       {
@@ -86,7 +86,7 @@ class HttpWebRequest_SendChunked
 
          while (count > 0)
          {
-            String outputData = new String(readBuff, 0, count);
+            string outputData = new string(readBuff, 0, count);
             Console.WriteLine(outputData);
             count = streamRead.Read(readBuff, 0, 256);
          }

@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.GetResponseHeader
+// System.Net.HttpWebResponse.GetResponseHeader
 
 /* This program demonstrates the 'GetResponseHeader' method of the 'HttpWebResponse' class
 It creates a web request and queries for a response. If the site requires authentication it
@@ -27,7 +27,7 @@ class HttpWebResponseSnippet
     }
 
 // <Snippet1>
-   public static void GetPage(String url)
+   public static void GetPage(string url)
 	{
 	try
  			{	

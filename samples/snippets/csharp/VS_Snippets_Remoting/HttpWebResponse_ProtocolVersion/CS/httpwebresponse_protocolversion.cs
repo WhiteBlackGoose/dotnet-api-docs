@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.ProtocolVersion
+// System.Net.HttpWebResponse.ProtocolVersion
 
 /* This program demonstrates the 'ProtocolVersion' property of the 'HttpWebResponse' class.
 It creates a web request and queries for a response. The server should respond using the same version */
@@ -25,7 +25,7 @@ class HttpWebResponseSnippet
 		return;
     }
 	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	{
 
 	try

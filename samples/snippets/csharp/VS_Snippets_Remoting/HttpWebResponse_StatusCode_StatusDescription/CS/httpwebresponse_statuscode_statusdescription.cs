@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.StatusCode; System.Net.HttpWebResponse.StatusDescription
+// System.Net.HttpWebResponse.StatusCode; System.Net.HttpWebResponse.StatusDescription
 
 /* This program demonstrates the 'StatusCode' and 'StatusDescription' property of the 'HttpWebResponse' class.
 It creates a web request and queries for a response. */
@@ -26,7 +26,7 @@ class HttpWebResponseSnippet
     }
 // <Snippet1>	
 // <Snippet2>	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	{
 		try
  		  {	

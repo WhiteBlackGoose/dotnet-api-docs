@@ -1,4 +1,4 @@
-﻿//  System.Runtime.Remoting.Channels.IChannelReceiver
+//  System.Runtime.Remoting.Channels.IChannelReceiver
 //  System.Runtime.Remoting.Channels.IChannelReceiver.ChannelData
 //  System.Runtime.Remoting.Channels.IChannelReceiver.GetUrlsForUri
 //  System.Runtime.Remoting.Channels.IChannelReceiver.StartListening
@@ -43,7 +43,7 @@ namespace RemotingSamples
             Console.WriteLine(" 3 - Exit");
 
             Console.Write("Option : ");
-            int myOption = Int32.Parse(Console.ReadLine());
+            int myOption = int.Parse(Console.ReadLine());
             switch(myOption)
             {
                case 1:

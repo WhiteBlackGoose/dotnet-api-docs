@@ -1,4 +1,4 @@
-﻿/*System.Net.HttpWebRequest.Timeout
+/*System.Net.HttpWebRequest.Timeout
   This program demonstrates the 'Timeout' property of the HttpWebRequest class.
   A new HttpWebRequest Object is created. The default value of the 'Timeout' property is printed to the console.
   It is then set to some value and displayed to the console. If the 'Timeout' property is set to a value less
@@ -34,7 +34,7 @@ class HttpWebRequest_Timeout
 			Console.WriteLine("\nThe contents of the HTML page are, ");	
 			while (count > 0)
 			{
-				String outputData = new String(readBuff, 0, count);
+				string outputData = new string(readBuff, 0, count);
 				Console.Write(outputData);
 				count = streamRead.Read(readBuff, 0, 256);
 			}

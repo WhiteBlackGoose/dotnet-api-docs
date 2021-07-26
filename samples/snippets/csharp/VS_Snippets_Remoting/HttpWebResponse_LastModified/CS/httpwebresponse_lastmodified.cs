@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.LastModified
+// System.Net.HttpWebResponse.LastModified
 
 /* This program demonstrates the 'LastModified' property of the 'HttpWebResponse' class
 It creates a web request and queries for a response. The program checks
@@ -26,7 +26,7 @@ class HttpWebResponseSnippet
 		return;
     }
 	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	{
 
 	try

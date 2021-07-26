@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.Close
+// System.Net.HttpWebResponse.Close
 
 /* This program demonstrates the 'Close' method of the 'HttpWebResponse' class.
 It creates a web request and queries for a response. The response object can be processed as desired.
@@ -22,7 +22,7 @@ class HttpWebResponseSnippet
 	       	return;
     }
 	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	{
 	try
  		  {	

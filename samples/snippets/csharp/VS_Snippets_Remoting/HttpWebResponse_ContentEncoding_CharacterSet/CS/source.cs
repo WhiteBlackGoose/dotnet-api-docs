@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net;
 using System.IO;
 using System.Text;
@@ -22,7 +22,7 @@ class HttpWebResponseSnippet
 		return;
     	}
 	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	{
 // <Snippet1>
 	try
@@ -34,11 +34,11 @@ class HttpWebResponseSnippet
 			Console.WriteLine("The character set used is :" + myHttpWebResponse.CharacterSet);
 
 			char seperator = '/';
-			String contenttype = myHttpWebResponse.ContentType;
+			string contenttype = myHttpWebResponse.ContentType;
 			// Retrieve 'text' if the content type is of 'text/html.
-			String maintype = contenttype.Substring(0,contenttype.IndexOf(seperator));
+			string maintype = contenttype.Substring(0,contenttype.IndexOf(seperator));
 			// Display only 'text' type.
-			if (String.Compare(maintype,"text") == 0)
+			if (string.Compare(maintype,"text") == 0)
 				{
 				Console.WriteLine("\n Content type is 'text'.");
 
@@ -58,7 +58,7 @@ class HttpWebResponseSnippet
 				while (index < myHttpWebResponse.ContentLength)
 				{
     				// Dump the 256 characters on a string and display the string onto the console.
-					String str = new String(read, 0, count);
+					string str = new string(read, 0, count);
 					Console.WriteLine(str);
 					index += count;
 					count = readStream.Read(read, 0, 256);

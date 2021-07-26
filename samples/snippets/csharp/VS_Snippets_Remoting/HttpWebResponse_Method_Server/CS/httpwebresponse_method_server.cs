@@ -1,4 +1,4 @@
-﻿// System.Net.HttpWebResponse.Method;System.Net.HttpWebResponse.Server
+// System.Net.HttpWebResponse.Method;System.Net.HttpWebResponse.Server
 
 /* This program demonstrates the 'Method' and 'Server' properties of the 'HttpWebResponse' class.
 It creates a Web request and queries for a response. It evaluates the response method used and the prints
@@ -28,7 +28,7 @@ class HttpWebResponseSnippet
 		return;
      }
 	
-    public static void GetPage(String url)
+    public static void GetPage(string url)
 	   {
 // <Snippet1>
 // <Snippet2>
@@ -39,7 +39,7 @@ class HttpWebResponseSnippet
 				HttpWebResponse myHttpWebResponse = (HttpWebResponse)myHttpWebRequest.GetResponse();
 				string method ;
 				method = myHttpWebResponse.Method;
-				if (String.Compare(method,"GET") == 0)
+				if (string.Compare(method,"GET") == 0)
 					Console.WriteLine("\nThe 'GET' method was successfully invoked on the following Web Server : {0}",
 									   myHttpWebResponse.Server);
 				// Releases the resources of the response.
