@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Text;
 
@@ -10,7 +10,7 @@ class EncodingExample
       Encoding ascii = Encoding.ASCII;
   
       // A Unicode string with two characters outside the ASCII code range.
-      String unicodeString =
+      string unicodeString =
           "This unicode string contains two characters " +
           "with codes outside the ASCII code range, " +
           "Pi (\u03a0) and Sigma (\u03a3).";
@@ -45,7 +45,7 @@ class EncodingExample
 
       // Decode bytes back to a string.
       // Notice missing the Pi and Sigma characters.
-      String decodedString = ascii.GetString(encodedBytes);
+      string decodedString = ascii.GetString(encodedBytes);
       Console.WriteLine();
       Console.WriteLine("Decoded bytes:");
       Console.WriteLine(decodedString);

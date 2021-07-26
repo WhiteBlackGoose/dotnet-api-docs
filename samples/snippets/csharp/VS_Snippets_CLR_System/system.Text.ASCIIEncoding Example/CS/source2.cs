@@ -1,4 +1,4 @@
-﻿//<snippet2>
+//<snippet2>
 using System;
 using System.Text;
 
@@ -13,7 +13,7 @@ class BaseTypeEncoding
     public static void SnippetA()
     {
         //<snippet3>
-        string MyString = "Encoding String.";
+        string MyString = "Encoding string.";
         ASCIIEncoding AE = new ASCIIEncoding();
         byte[] ByteArray = AE.GetBytes(MyString);
         for (int x = 0; x < ByteArray.Length; x++)

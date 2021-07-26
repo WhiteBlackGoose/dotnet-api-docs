@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Text;
 
@@ -24,7 +24,7 @@ public class Example
    {
       string returnString = null;
       foreach (var byteValue in bytes)
-         returnString += String.Format("0x{0:X2} ", byteValue);
+         returnString += string.Format("0x{0:X2} ", byteValue);
 
       return returnString.Trim();
    }

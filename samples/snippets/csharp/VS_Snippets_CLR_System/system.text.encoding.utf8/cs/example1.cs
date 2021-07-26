@@ -1,4 +1,4 @@
-﻿// The following code example determines the number of bytes required to encode a character array,
+// The following code example determines the number of bytes required to encode a character array,
 // encodes the characters, and displays the resulting bytes.
 
 // <Snippet2>
@@ -10,7 +10,7 @@ public class Example
    public static void Main()  
    {
       // Create a character array.
-      string gkNumber = Char.ConvertFromUtf32(0x10154);
+      string gkNumber = char.ConvertFromUtf32(0x10154);
       char[] chars = new char[] { 'z', 'a', '\u0306', '\u01FD', '\u03B2', 
                                   gkNumber[0], gkNumber[1] };
 

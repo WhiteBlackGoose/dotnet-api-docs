@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -7,7 +7,7 @@ class Example
     public static void Main() 
     {
         // Define a string.
-        String original = "ASCII Encoding Example";
+        string original = "ASCII Encoding Example";
         // Instantiate an ASCII encoding object.
         ASCIIEncoding ascii = new ASCIIEncoding();
         
@@ -21,7 +21,7 @@ class Example
         Console.WriteLine();
 
         // Decode the bytes and display the resulting Unicode string.
-        String decoded = ascii.GetString(bytes);
+        string decoded = ascii.GetString(bytes);
         Console.WriteLine("Decoded string: '{0}'", decoded);
     }
 }

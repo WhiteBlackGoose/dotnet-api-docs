@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -20,8 +20,8 @@ public class Example
             Console.WriteLine("   Group {0}{1}: '{2}'", 
                               groupNumber, 
                               ! string.IsNullOrEmpty(name) & 
-                              ! Int32.TryParse(name, out number) ?
-                                 " (" + name + ")" : String.Empty, 
+                              ! int.TryParse(name, out number) ?
+                                 " (" + name + ")" : string.Empty, 
                               m.Groups[groupNumber].Value);
          }
       } 

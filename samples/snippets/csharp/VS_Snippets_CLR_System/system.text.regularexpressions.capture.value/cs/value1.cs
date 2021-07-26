@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text.RegularExpressions;
 
@@ -6,7 +6,7 @@ public class Example
 {
    public static void Main()
    {
-      String pattern = @"^([a-z]+)(\d+)?\.([a-z]+(\d)*)$";
+      string pattern = @"^([a-z]+)(\d+)?\.([a-z]+(\d)*)$";
       String[] values = { "AC10", "Za203.CYM", "XYZ.CoA", "ABC.x170" };   
       foreach (var value in values) {
          Match m = Regex.Match(value, pattern, RegexOptions.IgnoreCase);
@@ -28,7 +28,7 @@ public class Example
          } 
          else {
             Console.WriteLine("No match for {0}: Match.Value is {1}", 
-                              value, m.Value == String.Empty ? "<empty>" : m.Value);
+                              value, m.Value == string.Empty ? "<empty>" : m.Value);
          }
       }
    }

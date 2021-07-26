@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Text;
 
@@ -21,10 +21,10 @@ public class Example
       catch (EncoderFallbackException e) {
          Console.WriteLine("Unable to encode {0} at index {1}", 
                            e.IsUnknownSurrogate() ? 
-                              String.Format("U+{0:X4} U+{1:X4}", 
+                              string.Format("U+{0:X4} U+{1:X4}", 
                                             Convert.ToUInt16(e.CharUnknownHigh),
                                             Convert.ToUInt16(e.CharUnknownLow)) :
-                              String.Format("U+{0:X4}", 
+                              string.Format("U+{0:X4}", 
                                             Convert.ToUInt16(e.CharUnknown)),
                            e.Index);
       }                     

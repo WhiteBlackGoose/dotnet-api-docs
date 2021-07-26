@@ -1,4 +1,4 @@
-﻿// The following code example determines the number of bytes required to encode a string or a range in the string,
+// The following code example determines the number of bytes required to encode a string or a range in the string,
 // encodes the characters, and displays the resulting bytes.
 
 // <Snippet1>
@@ -17,7 +17,7 @@ public class SamplesEncoding  {
       //    Greek Small Letter Beta (U+03B2)
       //    a high-surrogate value (U+D8FF)
       //    a low-surrogate value (U+DCFF)
-      String myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
+      string myStr = "za\u0306\u01FD\u03B2\uD8FF\uDCFF";
 
       // Get different encodings.
       Encoding  u7    = Encoding.UTF7;
@@ -45,7 +45,7 @@ public class SamplesEncoding  {
       PrintCountsAndBytes( myStr, 4, 3, u32 );
    }
 
-   public static void PrintCountsAndBytes( String s, Encoding enc )  {
+   public static void PrintCountsAndBytes( string s, Encoding enc )  {
 
       // Display the name of the encoding used.
       Console.Write( "{0,-30} :", enc.ToString() );
@@ -65,7 +65,7 @@ public class SamplesEncoding  {
       PrintHexBytes( bytes );
    }
 
-   public static void PrintCountsAndBytes( String s, int index, int count, Encoding enc )  {
+   public static void PrintCountsAndBytes( string s, int index, int count, Encoding enc )  {
 
       // Display the name of the encoding used.
       Console.Write( "{0,-30} :", enc.ToString() );
