@@ -1,4 +1,4 @@
-﻿using DateTimeExtensions;
+using DateTimeExtensions;
 using System;
 using System.Collections.Generic;
 using System.Globalization;
@@ -17,9 +17,9 @@ namespace SystemDateTimeReference
         public static void Snippets()
         {
             File.Delete(filenameTxt);
-            PersistAsLocalStrings();
+            PersistAsLocalstrings();
             File.Delete(filenameTxt);
-            PersistAsInvariantStrings();
+            PersistAsInvariantstrings();
             File.Delete(filenameTxt);
 
             File.Delete(filenameInts);
@@ -39,13 +39,13 @@ namespace SystemDateTimeReference
         }
 
         // <Snippet1>
-        public static void PersistAsLocalStrings()
+        public static void PersistAsLocalstrings()
         {
-            SaveLocalDatesAsString();
-            RestoreLocalDatesFromString();
+            SaveLocalDatesAsstring();
+            RestoreLocalDatesFromstring();
         }
 
-        private static void SaveLocalDatesAsString()
+        private static void SaveLocalDatesAsstring()
         {
             DateTime[] dates = { new DateTime(2014, 6, 14, 6, 32, 0),
                            new DateTime(2014, 7, 10, 23, 49, 0),
@@ -58,8 +58,8 @@ namespace SystemDateTimeReference
             Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             for (int ctr = 0; ctr < dates.Length; ctr++)
             {
-                Console.WriteLine(dates[ctr].ToString("f"));
-                output += dates[ctr].ToString() + (ctr != dates.Length - 1 ? "|" : "");
+                Console.WriteLine(dates[ctr].Tostring("f"));
+                output += dates[ctr].Tostring() + (ctr != dates.Length - 1 ? "|" : "");
             }
             var sw = new StreamWriter(filenameTxt);
             sw.Write(output);
@@ -67,14 +67,14 @@ namespace SystemDateTimeReference
             Console.WriteLine("Saved dates...");
         }
 
-        private static void RestoreLocalDatesFromString()
+        private static void RestoreLocalDatesFromstring()
         {
             TimeZoneInfo.ClearCachedData();
             Console.WriteLine($"Current Time Zone: {TimeZoneInfo.Local.DisplayName}");
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
             StreamReader sr = new StreamReader(filenameTxt);
             string[] inputValues = sr.ReadToEnd().Split(new char[] { '|' },
-                                                        StringSplitOptions.RemoveEmptyEntries);
+                                                        stringSplitOptions.RemoveEmptyEntries);
             sr.Close();
             Console.WriteLine("The dates on an {0} system:",
                               Thread.CurrentThread.CurrentCulture.Name);
@@ -114,13 +114,13 @@ namespace SystemDateTimeReference
         // </Snippet1>
 
         // <Snippet2>
-        public static void PersistAsInvariantStrings()
+        public static void PersistAsInvariantstrings()
         {
-            SaveDatesAsInvariantStrings();
-            RestoreDatesAsInvariantStrings();
+            SaveDatesAsInvariantstrings();
+            RestoreDatesAsInvariantstrings();
         }
 
-        private static void SaveDatesAsInvariantStrings()
+        private static void SaveDatesAsInvariantstrings()
         {
             DateTime[] dates = { new DateTime(2014, 6, 14, 6, 32, 0),
                            new DateTime(2014, 7, 10, 23, 49, 0),
@@ -133,8 +133,8 @@ namespace SystemDateTimeReference
             Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             for (int ctr = 0; ctr < dates.Length; ctr++)
             {
-                Console.WriteLine(dates[ctr].ToString("f"));
-                output += dates[ctr].ToUniversalTime().ToString("O", CultureInfo.InvariantCulture)
+                Console.WriteLine(dates[ctr].Tostring("f"));
+                output += dates[ctr].ToUniversalTime().Tostring("O", CultureInfo.InvariantCulture)
                           + (ctr != dates.Length - 1 ? "|" : "");
             }
             var sw = new StreamWriter(filenameTxt);
@@ -143,7 +143,7 @@ namespace SystemDateTimeReference
             Console.WriteLine("Saved dates...");
         }
 
-        private static void RestoreDatesAsInvariantStrings()
+        private static void RestoreDatesAsInvariantstrings()
         {
             TimeZoneInfo.ClearCachedData();
             Console.WriteLine("Current Time Zone: {0}",
@@ -151,7 +151,7 @@ namespace SystemDateTimeReference
             Thread.CurrentThread.CurrentCulture = CultureInfo.CreateSpecificCulture("en-GB");
             StreamReader sr = new StreamReader(filenameTxt);
             string[] inputValues = sr.ReadToEnd().Split(new char[] { '|' },
-                                                        StringSplitOptions.RemoveEmptyEntries);
+                                                        stringSplitOptions.RemoveEmptyEntries);
             sr.Close();
             Console.WriteLine("The dates on an {0} system:",
                               Thread.CurrentThread.CurrentCulture.Name);
@@ -213,7 +213,7 @@ namespace SystemDateTimeReference
             var ticks = new long[dates.Length];
             for (int ctr = 0; ctr < dates.Length; ctr++)
             {
-                Console.WriteLine(dates[ctr].ToString("f"));
+                Console.WriteLine(dates[ctr].Tostring("f"));
                 ticks[ctr] = dates[ctr].ToUniversalTime().Ticks;
             }
             var fs = new FileStream(filenameInts, FileMode.Create);
@@ -238,7 +238,7 @@ namespace SystemDateTimeReference
 
             try
             {
-                items = br.ReadInt32();
+                items = br.Readint();
                 dates = new DateTime[items];
 
                 for (int ctr = 0; ctr < items; ctr++)
@@ -270,7 +270,7 @@ namespace SystemDateTimeReference
 
             Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             foreach (var value in dates)
-                Console.WriteLine(value.ToString("f"));
+                Console.WriteLine(value.Tostring("f"));
 
             Console.WriteLine("Restored dates...");
         }
@@ -375,7 +375,7 @@ namespace SystemDateTimeReference
             Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             for (int ctr = 0; ctr < dates.Length; ctr++)
             {
-                Console.WriteLine(dates[ctr].ToString("f"));
+                Console.WriteLine(dates[ctr].Tostring("f"));
                 dates[ctr] = dates[ctr].ToUniversalTime();
             }
             bin.Serialize(fs, dates);
@@ -396,7 +396,7 @@ namespace SystemDateTimeReference
 
             Console.WriteLine($"The dates on an {Thread.CurrentThread.CurrentCulture.Name} system:");
             foreach (var value in dates)
-                Console.WriteLine(value.ToLocalTime().ToString("f"));
+                Console.WriteLine(value.ToLocalTime().Tostring("f"));
 
             Console.WriteLine("Restored dates...");
         }
