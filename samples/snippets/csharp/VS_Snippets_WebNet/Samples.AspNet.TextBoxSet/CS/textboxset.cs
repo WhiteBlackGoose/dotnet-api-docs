@@ -1,4 +1,4 @@
-﻿//<snippet2>
+//<snippet2>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -100,7 +100,7 @@ namespace Samples.AspNet.Controls.CS {
                             TypeDescriptor.GetProperties(dataItem);
 
                         // Set the "default" value of the TextBox.
-                        box.Text = String.Empty;
+                        box.Text = string.Empty;
                         
                         // Set the true data-bound value of the TextBox,
                         // if possible.

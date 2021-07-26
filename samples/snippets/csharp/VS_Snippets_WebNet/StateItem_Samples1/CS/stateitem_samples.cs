@@ -1,4 +1,4 @@
-﻿// <snippet5>
+// <snippet5>
 // Create a custom control with two properties named Text and 
 // FontSize that get their values from and set their values
 // to the control's ViewState property.
@@ -11,11 +11,11 @@ namespace ViewStateSamples1
 {
    public class ctlViewState1 : Control
    {
-      public String Text
+      public string Text
       {
          get
          {
-            return (String) ViewState["Text"];
+            return (string) ViewState["Text"];
          }
          set
          {

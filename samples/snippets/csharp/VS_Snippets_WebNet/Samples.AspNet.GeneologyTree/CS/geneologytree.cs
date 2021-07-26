@@ -1,4 +1,4 @@
-﻿// <snippet2>
+// <snippet2>
 using System;
 using System.Collections;
 using System.ComponentModel;
@@ -18,7 +18,7 @@ namespace Samples.AspNet.CS.Controls {
         private TreeNode rootNode;
         public TreeNode RootNode {
             get {
-                rootNode ??= new TreeNode(String.Empty);
+                rootNode ??= new TreeNode(string.Empty);
                 return rootNode;
             }
         }
@@ -105,7 +105,7 @@ namespace Samples.AspNet.CS.Controls {
                             TypeDescriptor.GetProperties(data);
 
                         // Set the "default" value of the node.
-                        newNode.Text = String.Empty;                        
+                        newNode.Text = string.Empty;                        
 
                         // Set the true data-bound value of the TextBox,
                         // if possible.

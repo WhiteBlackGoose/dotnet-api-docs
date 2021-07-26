@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 namespace Samples.AspNet.CS.Controls
 {
   using System;
@@ -20,7 +20,7 @@ namespace Samples.AspNet.CS.Controls
       set { _employeeID = value; }
     }
 
-    private string _firstName = String.Empty;
+    private string _firstName = string.Empty;
     [DataObjectFieldAttribute(false, false, true)]
     public string FirstName
     {
@@ -28,7 +28,7 @@ namespace Samples.AspNet.CS.Controls
       set { _firstName = value; }
     }
 
-    private string _lastName = String.Empty;
+    private string _lastName = string.Empty;
     [DataObjectFieldAttribute(false, false, true)]
     public string LastName
     {

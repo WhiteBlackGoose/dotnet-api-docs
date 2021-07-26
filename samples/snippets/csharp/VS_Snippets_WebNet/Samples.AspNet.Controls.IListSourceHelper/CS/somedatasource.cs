@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 namespace Samples.AspNet.Controls.CS {
     using System;
     using System.Collections;
@@ -28,7 +28,7 @@ namespace Samples.AspNet.Controls.CS {
 
         public virtual ICollection GetViewNames() {
             ArrayList al = new ArrayList(1);
-            al.Add(GetView(String.Empty).Name);
+            al.Add(GetView(string.Empty).Name);
             return al as ICollection;
         }
 

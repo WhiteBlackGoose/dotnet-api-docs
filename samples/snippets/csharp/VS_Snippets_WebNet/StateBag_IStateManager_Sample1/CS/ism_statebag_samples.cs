@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 // Create a namespace that contains a class, MyItem,
 // that implements the IStateManager interface and 
 // another, MyControl, that overrides its own view-state
@@ -116,7 +116,7 @@ namespace StateBagSample
         public string EnumerateViewState()
         {
             string keyName, keyValue;
-            string result = String.Empty;
+            string result = string.Empty;
             StateItem myStateItem;
             IDictionaryEnumerator myDictionaryEnumerator = _viewstate.GetEnumerator();
             while (myDictionaryEnumerator.MoveNext())

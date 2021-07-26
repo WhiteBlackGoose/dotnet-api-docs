@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Xml;
 
@@ -13,7 +13,7 @@ namespace Samples.AspNet.Config
 
             string rawXmlString = rawXml.OuterXml;
 
-            if (String.IsNullOrEmpty(rawXmlString)) {
+            if (string.IsNullOrEmpty(rawXmlString)) {
                 return rawXml;
             }
 

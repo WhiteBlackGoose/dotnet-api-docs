@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.ComponentModel;
 using System.ComponentModel.Design;
@@ -181,7 +181,7 @@ namespace Samples.ASPNet.ControlDesigners_CS
 
         //<Snippet5>
         // Create the regions and design-time markup. Called by the designer host.
-        public override String GetDesignTimeHtml(DesignerRegionCollection regions) {
+        public override string GetDesignTimeHtml(DesignerRegionCollection regions) {
             // Create 3 regions: 2 clickable headers and an editable row
             regions.Add(new DesignerRegion(this, "Header0"));
             regions.Add(new DesignerRegion(this, "Header1"));
@@ -217,7 +217,7 @@ namespace Samples.ASPNet.ControlDesigners_CS
                     return ControlPersister.PersistTemplate(template, host);
             }
 
-            return String.Empty;
+            return string.Empty;
         }
         //</Snippet6>
 

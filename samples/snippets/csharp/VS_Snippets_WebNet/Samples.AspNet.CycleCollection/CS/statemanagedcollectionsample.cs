@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 namespace Samples.AspNet.CS.Controls {
 
     using System;
@@ -52,7 +52,7 @@ namespace Samples.AspNet.CS.Controls {
 
         protected internal Cycle(int numWheels) : this(numWheels, "Red"){ }
         
-        protected internal Cycle(int numWheels, String color) {    
+        protected internal Cycle(int numWheels, string color) {    
             numberOfWheels = numWheels;
             CycleColor = color;
         }
@@ -65,7 +65,7 @@ namespace Samples.AspNet.CS.Controls {
         public string CycleColor {
             get { 
                 object o = ViewState["Color"];
-                return (null == o) ? String.Empty : o.ToString() ;
+                return (null == o) ? string.Empty : o.ToString() ;
             }
             set {
                 ViewState["Color"] = value;            

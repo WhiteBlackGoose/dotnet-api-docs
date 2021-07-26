@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Collections.Specialized;
 using System.Configuration;
@@ -29,10 +29,10 @@ class UsingAppSettingsSection
         // Create a set of unique key/value pairs to store in
         // the appSettings section of an auxiliary configuration
         // file.
-        string time1 = String.Concat(DateTime.Now.ToLongDateString(),
+        string time1 = string.Concat(DateTime.Now.ToLongDateString(),
                                " ", DateTime.Now.ToLongTimeString());
 
-        string time2 = String.Concat(DateTime.Now.ToLongDateString(),
+        string time2 = string.Concat(DateTime.Now.ToLongDateString(),
                                " ", new DateTime(2009, 06, 30).ToLongTimeString());
        
         string[] buffer = {"<appSettings>",
