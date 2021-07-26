@@ -1,4 +1,4 @@
-﻿// <Snippet1> 
+// <Snippet1> 
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -81,17 +81,17 @@ public partial class ReadWriteCache : System.Web.UI.Page
         int phMemUse = cacheSection.PercentagePhysicalMemoryUsedLimit;
         long pvBytesLimit = cacheSection.PrivateBytesLimit;
 
-        string cacheEntry = String.Format("File: {0} <br/>", currentFile);
+        string cacheEntry = string.Format("File: {0} <br/>", currentFile);
         buffer.Append(cacheEntry);
-        cacheEntry = String.Format("Expiration Disabled: {0} <br/>", dExpiration);
+        cacheEntry = string.Format("Expiration Disabled: {0} <br/>", dExpiration);
         buffer.Append(cacheEntry);
-        cacheEntry = String.Format("Memory Collection Disabled: {0} <br/>", dMemCollection);
+        cacheEntry = string.Format("Memory Collection Disabled: {0} <br/>", dMemCollection);
         buffer.Append(cacheEntry);
-        cacheEntry = String.Format("Poll Time: {0} <br/>", pollTime.ToString());
+        cacheEntry = string.Format("Poll Time: {0} <br/>", pollTime.ToString());
         buffer.Append(cacheEntry);
-        cacheEntry = String.Format("Memory Limit: {0} <br/>", phMemUse.ToString());
+        cacheEntry = string.Format("Memory Limit: {0} <br/>", phMemUse.ToString());
         buffer.Append(cacheEntry);
-        cacheEntry = String.Format("Bytes Limit: {0} <br/>", pvBytesLimit.ToString());
+        cacheEntry = string.Format("Bytes Limit: {0} <br/>", pvBytesLimit.ToString());
         buffer.Append(cacheEntry);
 
         Label1.Text = buffer.ToString();

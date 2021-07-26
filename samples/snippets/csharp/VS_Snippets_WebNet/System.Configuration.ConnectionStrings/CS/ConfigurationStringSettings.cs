@@ -1,4 +1,4 @@
-﻿// <Snippet21>
+// <Snippet21>
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -35,7 +35,7 @@ namespace ConfigurationStringSettings
                 ConnectionStringSettings cs =
                     csSection.ConnectionStrings[i];
 
-                Console.WriteLine("  Connection String: \"{0}\"",
+                Console.WriteLine("  Connection string: \"{0}\"",
                     cs.ConnectionString);
 
                 Console.WriteLine("#{0}", i);

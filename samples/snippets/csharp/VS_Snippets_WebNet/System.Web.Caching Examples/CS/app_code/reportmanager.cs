@@ -1,4 +1,4 @@
-﻿// <Snippet10>
+// <Snippet10>
 
 using System;
 using System.Text;
@@ -9,7 +9,7 @@ public static class ReportManager
 {
     private static string _lastRemoved = "";
 
-    public static String GetReport()
+    public static string GetReport()
     {
         string report = HttpRuntime.Cache["MyReport"] as string;
         report ??= GenerateAndCacheReport();
@@ -32,7 +32,7 @@ public static class ReportManager
         return report;
     }
 
-    public static void ReportRemovedCallback(String key, object value,
+    public static void ReportRemovedCallback(string key, object value,
         CacheItemRemovedReason removedReason)
     {
         _lastRemoved = "Re-created " + DateTime.Now.ToString();

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Configuration;
 
@@ -164,7 +164,7 @@ public class UrlsCollection : ConfigurationElementCollection
 // by the UrlsCollection.
 public class UrlConfigElement : ConfigurationElement
 {
-    public UrlConfigElement(String name, String url, int port)
+    public UrlConfigElement(string name, string url, int port)
     {
         this.Name = name;
         this.Url = url;

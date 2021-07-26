@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Configuration;
 using System.Text;
 
@@ -66,7 +66,7 @@ namespace Samples.AspNet
                     csSection.ConnectionStrings[i];
                 
                 // <Snippet4>
-                Console.WriteLine("  Connection String: \"{0}\"",
+                Console.WriteLine("  Connection string: \"{0}\"",
                     cs.ConnectionString);
                 // </Snippet4>
 

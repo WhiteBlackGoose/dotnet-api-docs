@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Configuration;
@@ -72,11 +72,11 @@ namespace Samples.AspNet
         //<Snippet0>
         [ConfigurationProperty("fileName", DefaultValue="   default.txt  ")]
         [TypeConverter(typeof(WhiteSpaceTrimStringConverter))]
-        public String FileName
+        public string FileName
         {
             get
             {
-                return (String)this["fileName"];
+                return (string)this["fileName"];
             }
             set
             {

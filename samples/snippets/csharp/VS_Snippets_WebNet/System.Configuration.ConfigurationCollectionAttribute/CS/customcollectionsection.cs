@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 
 using System;
 using System.Configuration;
@@ -150,7 +150,7 @@ public class UrlsCollection : ConfigurationElementCollection
 // Notice that you can change the default values to create new default elements.
 public class UrlConfigElement : ConfigurationElement
 {
-    public UrlConfigElement(String name, String url)
+    public UrlConfigElement(string name, string url)
     {
         this.Name = name;
         this.Url = url;

@@ -1,4 +1,4 @@
-﻿// File name: CustomElement.cs
+// File name: CustomElement.cs
 // Allowed snippet tags range: [31 - 50].
 
 //<Snippet31>
@@ -12,8 +12,8 @@ namespace Samples.AspNet
     {
         //<Snippet32>
         // Constructor allowing name, url, and port to be specified.
-        public UrlConfigElement(String newName,
-            String newUrl, int newPort)
+        public UrlConfigElement(string newName,
+            string newUrl, int newPort)
         {
             Name = newName;
             Url = newUrl;

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 namespace CustomResourceProviders
 {
     using System;
@@ -74,7 +74,7 @@ namespace CustomResourceProviders
             {
                 string cultureName = null;
                 CultureInfo currentUICulture = CultureInfo.CurrentUICulture;
-                if (!String.Equals(currentUICulture.Name,
+                if (!string.Equals(currentUICulture.Name,
                     CultureInfo.InstalledUICulture.Name))
                 {
                     cultureName = currentUICulture.Name;
@@ -172,7 +172,7 @@ namespace CustomResourceProviders
         void IDisposable.Dispose() { }
         string IDesignTimeResourceWriter.CreateResourceKey(string resourceName, object obj)
         {
-            return String.Empty;
+            return string.Empty;
         }
     }
 

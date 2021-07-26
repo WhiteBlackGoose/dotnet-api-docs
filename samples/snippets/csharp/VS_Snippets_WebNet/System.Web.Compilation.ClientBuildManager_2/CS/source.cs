@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Collections.Generic;
@@ -13,12 +13,12 @@ namespace PrecompBuildSystem
     public class PrecompBuilder
     {
         private static ClientBuildManager builder;
-        private static String _vPath;	// Virtual
-        private static String _pPath;	// Physical
-        private static String _tPath;	// Target
+        private static string _vPath;	// Virtual
+        private static string _pPath;	// Physical
+        private static string _tPath;	// Target
         private static PrecompilationFlags _flags;
         private static ClientBuildManagerParameter _cbmParameter;
-        private static String _keyContainer;
+        private static string _keyContainer;
 
         public static void Main(string[] args)
         {
