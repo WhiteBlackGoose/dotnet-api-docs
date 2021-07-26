@@ -1,8 +1,8 @@
-﻿// System.Configuration.Install.InstallerCollection.Insert(Int32, Installer)
+// System.Configuration.Install.InstallerCollection.Insert(int, Installer)
 // System.Configuration.Install.InstallerCollection.AddRange(InstallerCollection)
 
 /*
-   The following example demonstrates the 'Insert(Int32, Installer)' and
+   The following example demonstrates the 'Insert(int, Installer)' and
    'AddRange(InstallerCollection)' methods of the 'InstallerCollection'
    class. It Creates 'AssemblyInstaller' instances for 'MyAssembly1.exe'
    and 'MyAssembly2.exe'. These instances of 'AssemblyInstaller' are

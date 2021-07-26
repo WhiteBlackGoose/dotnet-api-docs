@@ -1,7 +1,7 @@
-﻿// System.Configuration.Install.InstallerCollection.Item(Int32)
+// System.Configuration.Install.InstallerCollection.Item(int)
 
 /*
-   The following example demonstrates the 'Item(Int32)' method of the
+   The following example demonstrates the 'Item(int)' method of the
    'InstallerCollection' class. It creates 'AssemblyInstaller' instances
    for 'MyAssembly1.exe' and 'MyAssembly2.exe'. These instances are added
    to an instance of 'TransactedInstaller'. The names of all the assemblies

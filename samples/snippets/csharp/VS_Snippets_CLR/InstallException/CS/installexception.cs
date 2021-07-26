@@ -1,11 +1,11 @@
-﻿// System.Configuration.Install.InstallException
+// System.Configuration.Install.InstallException
 // System.Configuration.Install.InstallException.InstallException()
-// System.Configuration.Install.InstallException.InstallException(String, Exception)
-// System.Configuration.Install.InstallException.InstallException(String)
+// System.Configuration.Install.InstallException.InstallException(string, Exception)
+// System.Configuration.Install.InstallException.InstallException(string)
 
 /*
-   The following example demonstrates the 'InstallException()', 'InstallException(String)'
-   and 'InstallException(String, Exception)' constructors for 'InstallException' class.
+   The following example demonstrates the 'InstallException()', 'InstallException(string)'
+   and 'InstallException(string, Exception)' constructors for 'InstallException' class.
    This example shows an assembly having its own installer named 'MyInstaller'
    which has an attribute 'RunInstallerAttribute', indicating that this installer
    will be invoked by InstallUtil.exe. InstallUtil.exe calls the 'Install', 'Commit',

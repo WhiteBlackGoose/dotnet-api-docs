@@ -1,8 +1,8 @@
-﻿// System.Int32.Equals(Object)
+// System.Int32.Equals(Object)
 
 /*
    The following program demonstrates the 'Equals(Object)' method
-   of struct 'Int32'. This compares an instance of 'Int32' with the
+   of struct 'int'. This compares an instance of 'int' with the
    passed in object and returns true if they are equal.
 */
 
@@ -14,8 +14,8 @@ class MyInt32_Equals
          try
          {
 // <Snippet1>
-            Int32 myVariable1 = 60;
-            Int32 myVariable2 = 60;
+            int myVariable1 = 60;
+            int myVariable2 = 60;
 
             // Get and display the declaring type.
             Console.WriteLine("\nType of 'myVariable1' is '{0}' and"+

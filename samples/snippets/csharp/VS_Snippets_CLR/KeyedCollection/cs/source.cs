@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -150,7 +150,7 @@ public class OrderItem
 
     public override string ToString()
     {
-        return String.Format(
+        return string.Format(
             "{0,9} {1,6} {2,-12} at {3,8:#,###.00} = {4,10:###,###.00}",
             PartNumber, _quantity, Description, UnitPrice,
             UnitPrice * _quantity);

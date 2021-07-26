@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -15,7 +15,7 @@ namespace IsDef1CS
             // Get the assembly object.
             Assembly assy = clsType.Assembly;
             // Store the assembly's name.
-            String assyName = assy.GetName().Name;
+            string assyName = assy.GetName().Name;
             // See if the Assembly Description is defined.
             bool isdef = Attribute.IsDefined(assy,
                 typeof(AssemblyDescriptionAttribute));

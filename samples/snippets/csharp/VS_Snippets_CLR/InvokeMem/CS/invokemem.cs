@@ -1,14 +1,14 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
 // This sample class has a field, constructor, method, and property.
 class MyType
 {
-    Int32 myField;
-    public MyType(ref Int32 x) {x *= 5;}
-    public override String ToString() {return myField.ToString();}
-    public Int32 MyProp
+    int myField;
+    public MyType(ref int x) {x *= 5;}
+    public override string ToString() {return myField.ToString();}
+    public int MyProp
     {
         get {return myField;}
         set
@@ -40,14 +40,14 @@ class MyApp
             BindingFlags.DeclaredOnly |
             BindingFlags.Public | BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.SetField, null, obj, new Object[] {5});
-        Int32 v = (Int32) t.InvokeMember("myField",
+        int v = (int) t.InvokeMember("myField",
             BindingFlags.DeclaredOnly |
             BindingFlags.Public | BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.GetField, null, obj, null);
         Console.WriteLine("myField: " + v);
 
         // Call a method.
-        String s = (String) t.InvokeMember("ToString",
+        string s = (string) t.InvokeMember("ToString",
             BindingFlags.DeclaredOnly |
             BindingFlags.Public | BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.InvokeMethod, null, obj, null);
@@ -82,7 +82,7 @@ class MyApp
             BindingFlags.DeclaredOnly |
             BindingFlags.Public | BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.SetProperty, null, obj, new Object[] {2});
-        v = (Int32) t.InvokeMember("MyProp",
+        v = (int) t.InvokeMember("MyProp",
             BindingFlags.DeclaredOnly |
             BindingFlags.Public | BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.GetProperty, null, obj, null);

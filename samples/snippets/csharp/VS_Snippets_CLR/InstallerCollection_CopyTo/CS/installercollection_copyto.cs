@@ -1,7 +1,7 @@
-﻿// System.Configuration.Install.InstallerCollection.CopyTo(Installer[], Int32)
+// System.Configuration.Install.InstallerCollection.CopyTo(Installer[], int)
 
 /*
-   The following example demonstrates the 'CopyTo(Installer[], Int32)' method
+   The following example demonstrates the 'CopyTo(Installer[], int)' method
    of the 'InstallerCollection' class. It Creates 'AssemblyInstaller' instances
    for 'MyAssembly1.exe' and 'MyAssembly2.exe'. These instances of
    'AssemblyInstaller' are added to an instance of 'TransactedInstaller'

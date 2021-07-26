@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.IO;
 
@@ -28,7 +28,7 @@ namespace PathExample
             // Display each invalid character to the console.
             foreach (char someChar in charArray)
             {
-                if (Char.IsWhiteSpace(someChar))
+                if (char.IsWhiteSpace(someChar))
                 {
                     Console.WriteLine(",\t{0:X4}", (int)someChar);
                 }
@@ -44,7 +44,7 @@ namespace PathExample
 // The output will look something like:
 //
 // The following characters are invalid in a path:
-// Char    Hex Value
+// char    Hex Value
 // ",      0022
 // <,      003C
 // >,      003E
@@ -52,7 +52,7 @@ namespace PathExample
 // ...
 //
 // The following characters are invalid in a filename:
-// Char    Hex Value
+// char    Hex Value
 // ",      0022
 // <,      003C
 // >,      003E

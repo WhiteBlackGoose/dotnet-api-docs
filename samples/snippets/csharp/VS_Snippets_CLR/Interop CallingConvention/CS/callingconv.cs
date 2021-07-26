@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Runtime.InteropServices;
 
@@ -11,10 +11,10 @@ internal static class NativeMethods
     // int printf( const char *format [, argument]... )
 
     [DllImport("msvcrt.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
-    internal static extern int printf(String format, int i, double d);
+    internal static extern int printf(string format, int i, double d);
 
     [DllImport("msvcrt.dll", CharSet = CharSet.Unicode, CallingConvention = CallingConvention.Cdecl)]
-    internal static extern int printf(String format, int i, String s);
+    internal static extern int printf(string format, int i, string s);
 }
 
 public class App
