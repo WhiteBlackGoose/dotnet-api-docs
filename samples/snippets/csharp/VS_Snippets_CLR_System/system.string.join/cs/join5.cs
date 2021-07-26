@@ -1,4 +1,4 @@
-﻿// <Snippet5>
+// <Snippet5>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,7 +28,7 @@ public class Example
       animals.Add(new Animal("Squirrel", "Rodent"));
       animals.Add(new Animal("Gray Wolf", "Carnivora"));
       animals.Add(new Animal("Capybara", "Rodent"));
-      string output = String.Join(" ", animals.Where( animal => 
+      string output = string.Join(" ", animals.Where( animal => 
                       (animal.Order == "Rodent")));
       Console.WriteLine(output);  
    }

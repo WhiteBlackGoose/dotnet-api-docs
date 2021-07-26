@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates members of the 
 // System.StringComparer class.
 
@@ -77,7 +77,7 @@ class Sample
 
     public static void Display(List<string> lst, string title)
     {
-        Char c;
+        char c;
         int  codePoint;
         Console.WriteLine(title);
         foreach (string s in lst)

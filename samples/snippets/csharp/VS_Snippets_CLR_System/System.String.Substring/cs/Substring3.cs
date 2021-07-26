@@ -1,16 +1,16 @@
-﻿using System;
+using System;
 
 public class Example
 {
     public static void Main()
     {
         // <Snippet3>
-        String s = "<term>extant<definition>still in existence</definition></term>";
-        String searchString = "<definition>";
+        string s = "<term>extant<definition>still in existence</definition></term>";
+        string searchString = "<definition>";
         int startIndex = s.IndexOf(searchString);
         searchString = "</" + searchString.Substring(1);
         int endIndex = s.IndexOf(searchString);
-        String substring = s.Substring(startIndex, endIndex + searchString.Length - startIndex);
+        string substring = s.Substring(startIndex, endIndex + searchString.Length - startIndex);
         Console.WriteLine("Original string: {0}", s);
         Console.WriteLine("Substring;       {0}", substring); 
 

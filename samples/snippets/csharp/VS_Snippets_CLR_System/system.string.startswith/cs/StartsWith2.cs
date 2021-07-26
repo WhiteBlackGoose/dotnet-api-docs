@@ -1,12 +1,12 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
 {
    public static void Main()
    {
-      String title = "The House of the Seven Gables";
-      String searchString = "the";
+      string title = "The House of the Seven Gables";
+      string searchString = "the";
       StringComparison comparison = StringComparison.InvariantCulture;
       Console.WriteLine("'{0}':", title);
       Console.WriteLine("   Starts with '{0}' ({1:G} comparison): {2}",

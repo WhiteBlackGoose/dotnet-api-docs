@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the 
-// System.String.StartsWith(String, ..., CultureInfo) method.
+// System.String.StartsWith(string, ..., CultureInfo) method.
 
 using System;
 using System.Threading;

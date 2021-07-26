@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 public class Example
 {
     public static void Main()
     {
         // <Snippet2>
-        String s = "aaaaabbbcccccccdd";
-        Char charRange = 'b';
+        string s = "aaaaabbbcccccccdd";
+        char charRange = 'b';
         int startIndex = s.IndexOf(charRange);
         int endIndex = s.LastIndexOf(charRange);
         int length = endIndex - startIndex + 1;

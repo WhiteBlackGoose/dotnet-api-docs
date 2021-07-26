@@ -1,4 +1,4 @@
-﻿// <Snippet4>
+// <Snippet4>
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ public class Example
 {
    public static void Main()
    {
-      string output = String.Join(" ", GetAlphabet(true).Where( letter => 
+      string output = string.Join(" ", GetAlphabet(true).Where( letter => 
                       letter.CompareTo("M") >= 0));
       Console.WriteLine(output);  
    }

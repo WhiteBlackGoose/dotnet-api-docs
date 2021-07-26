@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the 
-// System.String.LastIndexOf(String, ..., StringComparison) methods.
+// System.String.LastIndexOf(string, ..., StringComparison) methods.
 
 using System;
 using System.Threading;

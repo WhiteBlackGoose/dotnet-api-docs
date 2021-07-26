@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +9,7 @@ public class Example
       int maxPrime = 100;
       List<int> primes = GetPrimes(maxPrime);
       Console.WriteLine("Primes less than {0}:", maxPrime);
-      Console.WriteLine("   {0}", String.Join(" ", primes));
+      Console.WriteLine("   {0}", string.Join(" ", primes));
    }
 
    private static List<int> GetPrimes(int maxPrime)
