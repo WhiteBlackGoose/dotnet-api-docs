@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System;
 using System.Drawing;
 using System.Collections;
@@ -42,7 +42,7 @@ public class AutoSizing : System.Windows.Forms.Form
     {
         Label directions = new Label();
         directions.AutoSize = true;
-        String newLine = Environment.NewLine;
+        string newLine = Environment.NewLine;
         directions.Text = "Press the buttons that start " + newLine
             + "with 'Change' to see how different sizing " + newLine
             + "modes deal with content changes.";

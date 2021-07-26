@@ -1,4 +1,4 @@
-﻿//<snippet100>
+//<snippet100>
 using System.Windows.Forms;
 using System;
 using System.Drawing;
@@ -381,7 +381,7 @@ public class DataGridViewColumnDemo : Form
         foreach (DataGridViewColumn column in dataGridView.Columns)
         {
 
-            column.HeaderText = String.Concat("Column ",
+            column.HeaderText = string.Concat("Column ",
                 column.Index.ToString());
         }
     }

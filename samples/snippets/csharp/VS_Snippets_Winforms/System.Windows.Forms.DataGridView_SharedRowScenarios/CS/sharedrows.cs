@@ -1,4 +1,4 @@
-﻿//<Snippet0>
+//<Snippet0>
 using System;
 using System.Data;
 using System.Data.SqlClient;
@@ -83,7 +83,7 @@ class SharedRows : Form
     private void dataGridView1_CellContextMenuStripNeeded(object sender,
         DataGridViewCellContextMenuStripNeededEventArgs e)
     {
-        cellErrorText = String.Empty;
+        cellErrorText = string.Empty;
 
         if (strip == null)
         {
@@ -182,7 +182,7 @@ class SharedRows : Form
             string reportsTo = dataGridView1.Rows[theCellImHoveringOver.RowIndex].
                 Cells[theCellImHoveringOver.ColumnIndex].Value.ToString();
 
-            if (String.IsNullOrEmpty(reportsTo))
+            if (string.IsNullOrEmpty(reportsTo))
             {
                 e.ToolTipText = "The buck stops here!";
             }

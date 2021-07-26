@@ -1,4 +1,4 @@
-﻿// This sample shows how to create a custom button column/cell that allows specific 
+// This sample shows how to create a custom button column/cell that allows specific 
 // button cells to be disabled. This is done by rendering the disabled buttons in 
 // the overridden Paint method with ButtonRenderer.
 
@@ -206,7 +206,7 @@ public class DataGridViewDisableButtonCell : DataGridViewButtonCell
                 PushButtonState.Disabled);
 
             // Draw the disabled button text. 
-            if (this.FormattedValue is String) 
+            if (this.FormattedValue is string) 
             {
                 TextRenderer.DrawText(graphics,
                     (string)this.FormattedValue,

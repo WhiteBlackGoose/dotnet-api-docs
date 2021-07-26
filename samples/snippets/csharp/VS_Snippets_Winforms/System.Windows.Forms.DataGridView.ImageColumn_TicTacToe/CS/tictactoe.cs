@@ -1,4 +1,4 @@
-﻿// This example demonstrates using images to create a 
+// This example demonstrates using images to create a 
 // TicTacToe game.
 //<snippet0>
 using System.IO;
@@ -277,7 +277,7 @@ public class TicTacToe : System.Windows.Forms.Form
         {
             cell.ToolTipText = imageColumn.Description;
         }
-        else { cell.ToolTipText = String.Empty; }
+        else { cell.ToolTipText = string.Empty; }
     }
 
     private void dataGridView1_CellMouseLeave(object sender,

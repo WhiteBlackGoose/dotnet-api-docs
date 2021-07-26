@@ -1,4 +1,4 @@
-﻿//<snippet000>
+//<snippet000>
 using System;
 using System.Text;
 using System.Collections.Generic;
@@ -108,7 +108,7 @@ public class Form1 : Form
         StringBuilder report = new StringBuilder();
         foreach (Task t in tasks)
         {
-            String assignment = 
+            string assignment = 
                 t.AssignedTo == null ? 
                 "unassigned" : "assigned to " + t.AssignedTo.Name;
             report.AppendFormat("Task {0} is {1}.", t.Id, assignment);
@@ -125,7 +125,7 @@ public class Form1 : Form
             dataGridView1.Columns["Status Request"].Index) return;
 
         // Retrieve the task ID.
-        Int32 taskID = (Int32)dataGridView1[0, e.RowIndex].Value;
+        int taskID = (int)dataGridView1[0, e.RowIndex].Value;
 
         //<snippet120>
         // Retrieve the Employee object from the "Assigned To" cell.
@@ -140,7 +140,7 @@ public class Form1 : Form
         }
         else
         {
-            MessageBox.Show(String.Format(
+            MessageBox.Show(string.Format(
                 "Task {0} is unassigned.", taskID), "Status Request");
         }
     }
@@ -150,19 +150,19 @@ public class Form1 : Form
 //<snippet200>
 public class Task
 {
-    public Task(Int32 id)
+    public Task(int id)
     {
         idValue = id;
     }
 
-    public Task(Int32 id, Employee assignedTo)
+    public Task(int id, Employee assignedTo)
     {
         idValue = id;
         assignedToValue = assignedTo;
     }
 
-    private Int32 idValue;
-    public Int32 Id
+    private int idValue;
+    public int Id
     {
         get { return idValue; }
         set { idValue = value; }
@@ -180,13 +180,13 @@ public class Task
 //<snippet300>
 public class Employee
 {
-    public Employee(String name)
+    public Employee(string name)
     {
         nameValue = name;
     }
 
-    private String nameValue;
-    public String Name
+    private string nameValue;
+    public string Name
     {
         get { return nameValue; }
         set { nameValue = value; }
@@ -199,9 +199,9 @@ public class Employee
     }
     //</snippet310>
 
-    public void RequestStatus(Int32 taskID)
+    public void RequestStatus(int taskID)
     {
-        MessageBox.Show(String.Format(
+        MessageBox.Show(string.Format(
             "Status for task {0} has been requested from {1}.", 
             taskID, nameValue), "Status Request");
     }

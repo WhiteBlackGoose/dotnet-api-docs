@@ -1,4 +1,4 @@
-﻿//<snippet0>
+//<snippet0>
 using System.IO;
 using System.Collections.Generic;
 using System.Windows.Forms;
@@ -77,7 +77,7 @@ public class VirtualModeDemo : Form
             {
                 // Show a blank value if the cursor is just resting
                 // on the last row.
-                e.Value = String.Empty;
+                e.Value = string.Empty;
             }
         }
         else

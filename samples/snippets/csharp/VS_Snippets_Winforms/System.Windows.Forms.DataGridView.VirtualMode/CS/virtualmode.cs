@@ -1,4 +1,4 @@
-﻿// The purpose of this snippet is to demonstrate how to use all the primary virtual-mode events. 
+// The purpose of this snippet is to demonstrate how to use all the primary virtual-mode events. 
 // Additionally, this example implements row-level commit-scope. To experiment with this feature,
 // make some edits in multiple cells within a single row, then click ESC once to revert the edit
 // for a single cell, and twice to revert the edit for the entire row. You can commit all edits 
@@ -149,7 +149,7 @@ public class Form1 : Form
         }
 
         // Set the appropriate Customer property to the cell value entered.
-        String newValue = e.Value as String;
+        string newValue = e.Value as string;
         switch (this.dataGridView1.Columns[e.ColumnIndex].Name)
         {
             case "Company Name":
@@ -266,21 +266,21 @@ public class Form1 : Form
 //<Snippet200>
 public class Customer
 {
-    private String companyNameValue;
-    private String contactNameValue;
+    private string companyNameValue;
+    private string contactNameValue;
 
     public Customer()
     {
         // Leave fields empty.
     }
 
-    public Customer(String companyName, String contactName)
+    public Customer(string companyName, string contactName)
     {
         companyNameValue = companyName;
         contactNameValue = contactName;
     }
 
-    public String CompanyName
+    public string CompanyName
     {
         get
         {
@@ -292,7 +292,7 @@ public class Customer
         }
     }
 
-    public String ContactName
+    public string ContactName
     {
         get
         {

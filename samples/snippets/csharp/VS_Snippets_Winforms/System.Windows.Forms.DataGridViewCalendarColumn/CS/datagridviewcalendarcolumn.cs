@@ -1,4 +1,4 @@
-﻿//<Snippet000>
+//<Snippet000>
 //<Snippet001>
 using System;
 using System.Windows.Forms;
@@ -116,13 +116,13 @@ class CalendarEditingControl : DateTimePicker, IDataGridViewEditingControl
         }
         set
         {            
-            if (value is String)
+            if (value is string)
             {
                 try
                 {
                     // This will throw an exception of the string is 
                     // null, empty, or not in the format of a date.
-                    this.Value = DateTime.Parse((String)value);
+                    this.Value = DateTime.Parse((string)value);
                 }
                 catch
                 {

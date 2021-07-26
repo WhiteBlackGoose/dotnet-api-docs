@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Text;
@@ -53,7 +53,7 @@ public class RowOperations : System.Windows.Forms.Form
             if (e.Value != null)
             {
                 // Check for the string "pink" in the cell.
-                String stringValue = (String)e.Value;
+                string stringValue = (string)e.Value;
                 stringValue = stringValue.ToLower();
                 if (((stringValue.IndexOf("pink") > -1)))
         		{
@@ -277,7 +277,7 @@ public class RowOperations : System.Windows.Forms.Form
 
     private Boolean IsTrackGood(DataGridViewCell cell)
     {
-        Int32 cellValueAsInt;
+        int cellValueAsInt;
         if (cell.Value.ToString().Length == 0)
         {
             cell.ErrorText = "Please enter a track";
@@ -292,7 +292,7 @@ public class RowOperations : System.Windows.Forms.Form
                 "Zero is not a valid track";
             return false;
         }
-        else if (!Int32.TryParse(cell.Value.ToString(), out cellValueAsInt))
+        else if (!int.TryParse(cell.Value.ToString(), out cellValueAsInt))
         {
             cell.ErrorText = "A Track must be a number";
             songsDataGridView.Rows[cell.RowIndex].ErrorText =
@@ -337,12 +337,12 @@ public class RowOperations : System.Windows.Forms.Form
         foreach (DataGridViewCell cell in 
             songsDataGridView.Rows[args.RowIndex].Cells)
         {
-            cell.ErrorText = String.Empty;
+            cell.ErrorText = string.Empty;
         }
 
         foreach (DataGridViewRow row in songsDataGridView.Rows)
         {
-            row.ErrorText = String.Empty;
+            row.ErrorText = string.Empty;
         }
     }
     //</snippet10>
