@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 
 public class Example
@@ -7,11 +7,11 @@ public class Example
    {
       char[] characters = { 'H', 'e', 'l', 'l', 'o', ' ', 
                             'w', 'o', 'r', 'l', 'd', '!', '\u0000' };
-      String value;
+      string value;
       
       fixed (char* charPtr = characters) {
          int length = 0;
-         Char* iterator = charPtr;
+         char* iterator = charPtr;
    
          while (*iterator != '\x0000')
          {
@@ -20,7 +20,7 @@ public class Example
             iterator++;
             length++;
          }
-         value = new String(charPtr, 0, length);
+         value = new string(charPtr, 0, length);
       }
       Console.WriteLine(value);
    }

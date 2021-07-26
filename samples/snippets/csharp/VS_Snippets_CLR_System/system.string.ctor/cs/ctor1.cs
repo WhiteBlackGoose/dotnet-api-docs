@@ -1,12 +1,12 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
 {
    public static void Main()
    {
-      String value1 = "This is a string.";
-      String value2 = value1;
+      string value1 = "This is a string.";
+      string value2 = value1;
       Console.WriteLine(value1);
       Console.WriteLine(value2);
    }

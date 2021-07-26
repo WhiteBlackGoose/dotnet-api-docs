@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Collections.Generic;
 
@@ -7,12 +7,12 @@ public class Example
    public static void Main()
    {
       int maxPrime = 100;
-      IEnumerable<String> primeList = GetPrimes(maxPrime);
+      IEnumerable<string> primeList = GetPrimes(maxPrime);
       Console.WriteLine("Primes less than {0}:", maxPrime);
-      Console.WriteLine("   {0}", String.Concat(primeList));
+      Console.WriteLine("   {0}", string.Concat(primeList));
    }
 
-   private static IEnumerable<String> GetPrimes(int maxPrime)
+   private static IEnumerable<string> GetPrimes(int maxPrime)
    {
       Array values = Array.CreateInstance(typeof(int), 
                               new int[] { maxPrime - 1}, new int[] { 2 }); 
@@ -27,7 +27,7 @@ public class Example
                values.SetValue(1, ctr * multiplier);
       }      
       
-      List<String> primes = new List<String>();
+      List<string> primes = new List<string>();
       for (int ctr = values.GetLowerBound(0); ctr <= values.GetUpperBound(0); ctr++)
          if ((int) values.GetValue(ctr) == 0) 
             primes.Add(ctr.ToString() + " ");

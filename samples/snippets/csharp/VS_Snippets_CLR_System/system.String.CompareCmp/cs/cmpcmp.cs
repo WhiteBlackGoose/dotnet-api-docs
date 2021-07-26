@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the 
-// System.String.Compare(String, String, StringComparison) method.
+// System.String.Compare(string, string, StringComparison) method.
 
 using System;
 using System.Threading;
@@ -74,7 +74,7 @@ class Sample
         string result = "equal to";
         int cmpValue = 0;
 
-        cmpValue = String.Compare(testI[x], testI[y], comparison);
+        cmpValue = string.Compare(testI[x], testI[y], comparison);
         if (cmpValue < 0)
             result = "less than";
         else if (cmpValue > 0)

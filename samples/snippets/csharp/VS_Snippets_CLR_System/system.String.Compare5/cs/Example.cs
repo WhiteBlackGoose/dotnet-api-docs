@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 
@@ -19,7 +19,7 @@ public class Example
       int length = Math.Max(name1.Length, name2.Length);
       
       Console.WriteLine("Sorted alphabetically by last name:");
-      if (String.Compare(name1, index1, name2, index2, length, 
+      if (string.Compare(name1, index1, name2, index2, length, 
                          new CultureInfo("en-US"), CompareOptions.IgnoreCase) < 0)
          Console.WriteLine("{0}\n{1}", name1, name2); 
       else

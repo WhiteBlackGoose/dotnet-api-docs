@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 
 public class Example
@@ -10,7 +10,7 @@ public class Example
       string value;
       
       fixed (char* charPtr = characters) {
-         value = new String(charPtr);
+         value = new string(charPtr);
       }                            
       Console.WriteLine(value);
    }

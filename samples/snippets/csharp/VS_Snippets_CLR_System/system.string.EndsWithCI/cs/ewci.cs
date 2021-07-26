@@ -1,6 +1,6 @@
-﻿//<snippet1>
+//<snippet1>
 // This code example demonstrates the 
-// System.String.EndsWith(String, ..., CultureInfo) method.
+// System.String.EndsWith(string, ..., CultureInfo) method.
 
 using System;
 using System.Threading;

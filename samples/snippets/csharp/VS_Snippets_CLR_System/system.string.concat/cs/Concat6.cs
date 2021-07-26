@@ -1,15 +1,15 @@
-﻿// <Snippet6>
+// <Snippet6>
 using System;
 
 public class Example
 {
    public static void Main()
    {
-      String s1 = "We went to a bookstore, ";
-      String s2 = "a movie, ";
-      String s3 = "and a restaurant.";
+      string s1 = "We went to a bookstore, ";
+      string s2 = "a movie, ";
+      string s3 = "and a restaurant.";
 
-      var s = String.Concat(s1, s2, s3);
+      var s = string.Concat(s1, s2, s3);
       Console.WriteLine(s);
    }
 }

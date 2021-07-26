@@ -1,9 +1,9 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public static class StringExtensions
 {
-   public static bool Contains(this String str, String substring, 
+   public static bool Contains(this string str, string substring, 
                                StringComparison comp)
    {                            
         if (substring == null)
@@ -27,8 +27,8 @@ public class Example
     public static void Main()
     {
         // <Snippet2>
-        String s = "This is a string.";
-        String sub1 = "this";
+        string s = "This is a string.";
+        string sub1 = "this";
         Console.WriteLine("Does '{0}' contain '{1}'?", s, sub1);
         StringComparison comp = StringComparison.Ordinal;
         Console.WriteLine("   {0:G}: {1}", comp, s.Contains(sub1, comp));

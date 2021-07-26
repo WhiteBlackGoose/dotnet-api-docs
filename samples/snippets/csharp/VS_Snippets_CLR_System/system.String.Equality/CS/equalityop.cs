@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// Example for the String Equality operator.
+//<snippet1>
+// Example for the string Equality operator.
 using System;
 
 class EqualityOp 
@@ -7,7 +7,7 @@ class EqualityOp
     public static void Main() 
     {
         Console.WriteLine( 
-            "This example of the String Equality operator\n" +
+            "This example of the string Equality operator\n" +
             "generates the following output.\n" );
 
         CompareAndDisplay( "ijkl" );
@@ -17,7 +17,7 @@ class EqualityOp
 
     static void CompareAndDisplay( string Comparand )
     {
-        String  Lower = "abcd";
+        string  Lower = "abcd";
 
         Console.WriteLine( 
             "\"{0}\" == \"{1}\" ?  {2}",
@@ -26,7 +26,7 @@ class EqualityOp
 }
 
 /*
-This example of the String Equality operator 
+This example of the string Equality operator 
 generates the following output.
 
 "abcd" == "ijkl" ?  False

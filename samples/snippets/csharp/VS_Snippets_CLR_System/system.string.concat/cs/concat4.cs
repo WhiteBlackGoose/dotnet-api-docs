@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 
@@ -29,7 +29,7 @@ public class Example
          // Sort the array. 
          Array.Sort(keys, letters, 0, WORD_SIZE, Comparer.Default);      
          // Display the scrambled word.
-         string scrambledWord = String.Concat(letters[0], letters[1], 
+         string scrambledWord = string.Concat(letters[0], letters[1], 
                                               letters[2], letters[3]);
          Console.WriteLine("{0} --> {1}", word, scrambledWord);
       } 
