@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demonstrates 'GetCredential' method of 'ICredentials' interface.
    The 'CredentialList' class implements the 'ICredentials' interface, which stores credentials for multiple
    internet resources. The Program takes URL, Username, Password, and Domain name from command line and adds
@@ -19,10 +19,10 @@ namespace CredentialSample
 		class CredentialInfo
 		{
 			public Uri uriObj;
-			public String authenticationType;
+			public string authenticationType;
 			public NetworkCredential networkCredentialObj;
 
-			public CredentialInfo(Uri uriObj, String authenticationType, NetworkCredential networkCredentialObj)
+			public CredentialInfo(Uri uriObj, string authenticationType, NetworkCredential networkCredentialObj)
 			{
 				this.uriObj = uriObj;
 				this.authenticationType = authenticationType;
@@ -37,13 +37,13 @@ namespace CredentialSample
 			arrayListObj = new ArrayList();
 		}
 
-		public void Add (Uri uriObj, String authenticationType, NetworkCredential credential)
+		public void Add (Uri uriObj, string authenticationType, NetworkCredential credential)
 		{
 			// Add a 'CredentialInfo' object into a list.
 			arrayListObj.Add (new CredentialInfo(uriObj, authenticationType, credential));
 		}
 		// Remove the 'CredentialInfo' object from the list that matches to the given 'Uri' and 'AuthenticationType'
-		public void Remove (Uri uriObj, String authenticationType)
+		public void Remove (Uri uriObj, string authenticationType)
 		{
 			for(int index=0;index < arrayListObj.Count; index++)
 			{
@@ -52,7 +52,7 @@ namespace CredentialSample
 					arrayListObj.RemoveAt(index);
 			}
 		}
-		public NetworkCredential GetCredential (Uri uriObj, String authenticationType)
+		public NetworkCredential GetCredential (Uri uriObj, string authenticationType)
 		{
 			for(int index=0;index < arrayListObj.Count; index++)
 			{

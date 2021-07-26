@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.IO;
 using System.Collections;
@@ -30,9 +30,9 @@ class Circle : IDeserializationCallback
         m_area = Math.PI * m_radius * m_radius;
     }
 
-    public override String ToString()
+    public override string ToString()
     {
-        return String.Format("radius={0}, area={1}", m_radius, m_area);
+        return string.Format("radius={0}, area={1}", m_radius, m_area);
     }
 }
 

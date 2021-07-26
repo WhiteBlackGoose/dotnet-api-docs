@@ -1,4 +1,4 @@
-﻿// System.Net.IPEndPoint.MaxPort; System.Net.IPEndPoint.MinPort;
+// System.Net.IPEndPoint.MaxPort; System.Net.IPEndPoint.MinPort;
 // System.Net.IPEndPoint.AddressFamily; System.Net.IPEndPoint.IPEndPoint(long,int)
 // System.Net.IPEndPoint.Address; System.Net.IPEndPoint.Port;
 
@@ -85,12 +85,12 @@ class IPEndPointSnippet
 	{
 		try
 		{
-			// Set up variables and String to write to the server.
+			// Set up variables and string to write to the server.
 			Encoding ASCII = Encoding.ASCII;
 			
 			Byte[] byteGet = ASCII.GetBytes(getString);
 			Byte[] recvBytes = new Byte[256];
-			String strRetPage = null;
+			string strRetPage = null;
     		// Create the Socket for sending data over TCP.
 			Socket mySocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream,
 				ProtocolType.Tcp);
@@ -99,7 +99,7 @@ class IPEndPointSnippet
 			// Send the GET text to the host.
 			mySocket.Send(byteGet,byteGet.Length,0);
     		// Receive the page, loop until all bytes are received.
-			Int32 byteCount = mySocket.Receive(recvBytes,recvBytes.Length,0);
+			int byteCount = mySocket.Receive(recvBytes,recvBytes.Length,0);
 			strRetPage = strRetPage + ASCII.GetString(recvBytes,0,byteCount);
     		while (byteCount > 0)
 			{

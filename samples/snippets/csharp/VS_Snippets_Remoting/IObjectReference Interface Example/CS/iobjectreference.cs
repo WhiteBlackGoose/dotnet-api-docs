@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 using System;
 using System.Web;
 using System.IO;
@@ -19,7 +19,7 @@ public sealed class Singleton : ISerializable
 
     // Here are the instance fields.
     private string someString_value;
-    private Int32 someNumber_value;
+    private int someNumber_value;
 
    public string SomeString
    {
@@ -27,7 +27,7 @@ public sealed class Singleton : ISerializable
        set{someString_value = value;}
    }
 
-   public Int32 SomeNumber
+   public int SomeNumber
    {
        get{return someNumber_value;}
        set{someNumber_value = value;}

@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Messaging.IMethodMessage.LogicalCallContext
+// System.Runtime.Remoting.Messaging.IMethodMessage.LogicalCallContext
 // System.Runtime.Remoting.Messaging.IMethodMessage.Uri
 
 /*
@@ -48,7 +48,7 @@ public class MyProxyAttribute : ProxyAttribute
    public class MyProxy : RealProxy
    {
 
-   String stringUri;
+   string stringUri;
    MarshalByRefObject targetObject;
 
 [SecurityPermission(SecurityAction.LinkDemand)]

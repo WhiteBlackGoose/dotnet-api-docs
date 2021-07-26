@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demonstrates 'NetworkToHostOrder(short)', 'NetworkToHostOrder(int)' and
    'NetworkToHostOrder(long)' methods of 'IPAddress' class.
    It takes a string from commandline for each of above cases and convert it to the corresponding
@@ -19,7 +19,7 @@ class NetworkToHostByteSample
        short networkByteShort = 4365;
        int networkByteInt = 286064640;
        long networkByteLong = 1228638273342013440;
-       String networkByteString = "";
+       string networkByteString = "";
 
        NetworkToHostByteSample networkToHostByteSampleObj = new NetworkToHostByteSample();
 

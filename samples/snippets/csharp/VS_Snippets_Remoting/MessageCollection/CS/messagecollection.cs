@@ -1,6 +1,6 @@
-﻿// System.Web.Services.Description.MessageCollection.CopyTo;
-// System.Web.Services.Description.MessageCollection.Item Property(Int32);
-// System.Web.Services.Description.MessageCollection.Item Property (String);
+// System.Web.Services.Description.MessageCollection.CopyTo;
+// System.Web.Services.Description.MessageCollection.Item Property(int);
+// System.Web.Services.Description.MessageCollection.Item Property (string);
 // System.Web.Services.Description.MessageCollection.Contains;
 // System.Web.Services.Description.MessageCollection.IndexOf;
 // System.Web.Services.Description.MessageCollection.Remove;

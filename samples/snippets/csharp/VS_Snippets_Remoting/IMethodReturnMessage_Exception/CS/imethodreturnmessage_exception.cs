@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception
+// System.Runtime.Remoting.Messaging.IMethodReturnMessage.Exception
 
 /*
    The following example demonstrates 'Exception' property of 'IMethodReturnMessage'interface.
@@ -28,7 +28,7 @@ namespace CustomProxySample
    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
    public class MyProxy : RealProxy
    {
-      String _URI;
+      string _URI;
       MarshalByRefObject myMarshalByRefObject;
       public MyProxy(Type myType): base(myType)
       {

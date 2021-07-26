@@ -1,4 +1,4 @@
-﻿// System.Runtime.Remoting.Messaging.IMethodReturnMessage
+// System.Runtime.Remoting.Messaging.IMethodReturnMessage
 // System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgs
 // System.Runtime.Remoting.Messaging.IMethodReturnMessage.ReturnValue
 // System.Runtime.Remoting.Messaging.IMethodReturnMessage.OutArgCount
@@ -38,7 +38,7 @@ namespace CustomProxySample
    [PermissionSet(SecurityAction.Demand, Name="FullTrust")]
    public class MyProxy : RealProxy
    {
-      String stringUri;
+      string stringUri;
       MarshalByRefObject myMarshalByRefObject;
 
       public MyProxy(Type myType): base(myType)

@@ -1,4 +1,4 @@
-﻿/* This file is a support file for demonstrating the members of
+/* This file is a support file for demonstrating the members of
    IChannelSender interface on the client side. */
 
 using System;
@@ -43,7 +43,7 @@ class MyServer
          Console.WriteLine("Parsed : " +
                         myHttpServerChannel.Parse(myHttpServerChannel.GetChannelUri()+
                                                                "/SayHello",out myString));
-         Console.WriteLine("String : " + myString);
+         Console.WriteLine("string : " + myString);
          Console.WriteLine("Hit <enter> to stop listening...");
          Console.ReadLine();
          // Stop listening to channel.

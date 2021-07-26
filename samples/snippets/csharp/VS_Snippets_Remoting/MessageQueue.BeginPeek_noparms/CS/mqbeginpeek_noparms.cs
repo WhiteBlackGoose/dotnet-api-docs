@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Messaging;
 
@@ -22,7 +22,7 @@ namespace MyProject
 			// Create an instance of MessageQueue. Set its formatter.
 			MessageQueue myQueue = new MessageQueue(".\\myQueue");
 			myQueue.Formatter = new XmlMessageFormatter(new Type[]
-				{typeof(String)});
+				{typeof(string)});
 
 			// Add an event handler for the PeekCompleted event.
 			myQueue.PeekCompleted += new

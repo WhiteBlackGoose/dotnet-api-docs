@@ -1,4 +1,4 @@
-﻿/*
+/*
    This program demostrates 'AddressList' property of 'IPHostEntry' class.
    It takes a URL from commandline(or uses default value) and obtains a
    'IPHostEntry' object by calling 'GetHostByName' method of 'Dns' class and
@@ -13,7 +13,7 @@ class HostInfoSample
 {
    public static void Main()
    {
-      String hostString = " ";
+      string hostString = " ";
       // Create an instance of HostInfoSample class.
       HostInfoSample hostInfoSampleObj = new HostInfoSample();
       Console.Write("Type a URL(or press Enter for default, default is 'www.microsoft.net') : ");
@@ -25,7 +25,7 @@ class HostInfoSample
    }
 // <Snippet1>
 
-   public void GetIpAddressList(String hostString)
+   public void GetIpAddressList(string hostString)
    {
 	   try
 	   {
