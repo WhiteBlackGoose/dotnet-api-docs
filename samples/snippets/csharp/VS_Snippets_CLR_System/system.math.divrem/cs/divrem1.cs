@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 
 public class Example
@@ -6,8 +6,8 @@ public class Example
    public static void Main()
    {
       // Define several positive and negative dividends.
-      int[] dividends = { Int32.MaxValue, 13952, 0, -14032,
-                                     Int32.MinValue };
+      int[] dividends = { int.MaxValue, 13952, 0, -14032,
+                                     int.MinValue };
       // Define one positive and one negative divisor.
       int[] divisors = { 2000, -2000 };
 

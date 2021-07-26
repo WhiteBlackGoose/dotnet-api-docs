@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.IO;
 using System.Text;
@@ -9,7 +9,7 @@ public class Example
    public static async Task Main()
    {
       Encoding enc = Encoding.Unicode;
-      String value = "This is a string to persist.";
+      string value = "This is a string to persist.";
       Byte[] bytes  = enc.GetBytes(value);
 
       FileStream fs = new FileStream(@".\TestFile.dat",

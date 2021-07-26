@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.IO;
 using System.Threading.Tasks;
 
@@ -6,7 +6,7 @@ public class Example
 {
    public static async Task Main()
    {
-      String name = @".\TestFile.dat";
+      string name = @".\TestFile.dat";
       var fs = new FileStream(name,
                               FileMode.Create,
                               FileAccess.Write);

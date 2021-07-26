@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
 public class Example
 {
    public static void Main()
    {
       // <Snippet4>
-      int[] values = { Int32.MaxValue, 16921, 0, -804128, Int32.MinValue };
+      int[] values = { int.MaxValue, 16921, 0, -804128, int.MinValue };
       foreach (int value in values)
       {
          try {

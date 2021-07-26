@@ -1,4 +1,4 @@
-﻿// <Snippet3>
+// <Snippet3>
 using System;
 using System.IO;
 using System.Threading.Tasks;
@@ -7,7 +7,7 @@ public class Example
 {
    public static async Task Main()
    {
-      String name = @".\TestFile.dat";
+      string name = @".\TestFile.dat";
       var fs = new FileStream(name,
                               FileMode.Create,
                               FileAccess.Write);
@@ -46,12 +46,12 @@ public class FileUtilities
 }
 // The example displays the following output:
 //    Unhandled Exception: System.NotSupportedException: Stream does not support reading.
-//       at System.IO.FileStream.BeginRead(Byte[] array, Int32 offset, Int32 numBytes, AsyncCallback callback, Object state)
+//       at System.IO.FileStream.BeginRead(Byte[] array, int offset, int numBytes, AsyncCallback callback, Object state)
 //       at System.IO.Stream.<>c.<BeginEndReadAsync>b__46_0(Stream stream, ReadWriteParameters args, AsyncCallback callback, Object state)
 //       at System.Threading.Tasks.TaskFactory`1.FromAsyncTrim[TInstance, TArgs](TInstance thisRef, TArgs args, Func`5 beginMethod, Func`3 endMethod)
-//       at System.IO.Stream.BeginEndReadAsync(Byte[] buffer, Int32 offset, Int32 count)
-//       at System.IO.FileStream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count, CancellationToken cancellationToken)
-//       at System.IO.Stream.ReadAsync(Byte[] buffer, Int32 offset, Int32 count)
+//       at System.IO.Stream.BeginEndReadAsync(Byte[] buffer, int offset, int count)
+//       at System.IO.FileStream.ReadAsync(Byte[] buffer, int offset, int count, CancellationToken cancellationToken)
+//       at System.IO.Stream.ReadAsync(Byte[] buffer, int offset, int count)
 //       at FileUtilities.GetEncodingType(FileStream fs) in C:\Work\docs\program.cs:line 26
 //       at Example.Main() in C:\Work\docs\program.cs:line 13
 //       at Example.<Main>()
