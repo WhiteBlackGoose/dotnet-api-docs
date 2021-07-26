@@ -1,4 +1,4 @@
-﻿// <SNIPPET1>
+// <SNIPPET1>
 using System;
 using System.Security.Cryptography;
 using System.Text;
@@ -35,7 +35,7 @@ class TripleDESSample
         }
     }
 
-    public static void EncryptTextToFile(String Data, String FileName, byte[] Key, byte[] IV)
+    public static void EncryptTextToFile(string Data, string FileName, byte[] Key, byte[] IV)
     {
         try
         {
@@ -76,7 +76,7 @@ class TripleDESSample
         }
     }
 
-    public static string DecryptTextFromFile(String FileName, byte[] Key, byte[] IV)
+    public static string DecryptTextFromFile(string FileName, byte[] Key, byte[] IV)
     {
         try
         {

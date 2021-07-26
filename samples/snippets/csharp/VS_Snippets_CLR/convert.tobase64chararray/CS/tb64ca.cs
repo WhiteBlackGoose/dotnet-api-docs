@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the Convert.ToBase64CharArray() and
 //                               Convert.FromBase64CharArray methods
 
@@ -20,7 +20,7 @@ class Sample
     string ruler1b = "         5         6         7      ";
     string ruler2b = "123456789012345678901234567890123456";
     string ruler3b = "----+----+----+----+----+----+----+-";
-    string ruler   = String.Concat(ruler1a, ruler1b, nl,
+    string ruler   = string.Concat(ruler1a, ruler1b, nl,
                                    ruler2a, ruler2b, nl,
                                    ruler3a, ruler3b);
 
@@ -34,19 +34,19 @@ class Sample
     }
     Console.Write("{0}{0}", nl);
 
-// 2) Convert the input Byte array to a Char array, with newlines inserted.
+// 2) Convert the input Byte array to a char array, with newlines inserted.
     charArrayLength =
         Convert.ToBase64CharArray(byteArray1, 0, byteArray1.Length,
                                    charArray, 0, Base64FormattingOptions.InsertLineBreaks);
-    Console.WriteLine("2) Convert the input Byte array to a Char array with newlines.");
-    Console.Write("   Output: A Char array (length = {0}). ", charArrayLength);
+    Console.WriteLine("2) Convert the input Byte array to a char array with newlines.");
+    Console.Write("   Output: A char array (length = {0}). ", charArrayLength);
     Console.WriteLine("The elements of the array are:{0}", nl);
     Console.WriteLine(ruler);
-    Console.WriteLine(new String(charArray));
+    Console.WriteLine(new string(charArray));
     Console.WriteLine();
 
-// 3) Convert the Char array back to a Byte array.
-    Console.WriteLine("3) Convert the Char array to an output Byte array.");
+// 3) Convert the char array back to a Byte array.
+    Console.WriteLine("3) Convert the char array to an output Byte array.");
     byteArray2 = Convert.FromBase64CharArray(charArray, 0, charArrayLength);
 
 // 4) Are the input and output Byte arrays equivalent?
@@ -81,8 +81,8 @@ C8 C9 CA CB CC CD CE CF D0 D1 D2 D3 D4 D5 D6 D7 D8 D9 DA DB
 DC DD DE DF E0 E1 E2 E3 E4 E5 E6 E7 E8 E9 EA EB EC ED EE EF
 F0 F1 F2 F3 F4 F5 F6 F7 F8 F9 FA FB FC FD FE FF
 
-2) Convert the input Byte array to a Char array with newlines.
-   Output: A Char array (length = 352). The elements of the array are:
+2) Convert the input Byte array to a char array with newlines.
+   Output: A char array (length = 352). The elements of the array are:
 
          1         2         3         4         5         6         7
 1234567890123456789012345678901234567890123456789012345678901234567890123456
@@ -93,7 +93,7 @@ cnN0dXZ3eHl6e3x9fn+AgYKDhIWGh4iJiouMjY6PkJGSk5SVlpeYmZqbnJ2en6ChoqOkpaanqKmq
 q6ytrq+wsbKztLW2t7i5uru8vb6/wMHCw8TFxsfIycrLzM3Oz9DR0tPU1dbX2Nna29zd3t/g4eLj
 5OXm5+jp6uvs7e7v8PHy8/T19vf4+fr7/P3+/w==
 
-3) Convert the Char array to an output Byte array.
+3) Convert the char array to an output Byte array.
 4) The output Byte array is equal to the input Byte array: True
 
 */

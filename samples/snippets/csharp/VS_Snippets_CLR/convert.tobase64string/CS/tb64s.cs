@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates the Convert.ToBase64String() and
 //                               Convert.FromBase64String() methods
 
@@ -25,7 +25,7 @@ class Sample
     string ruler1b = "         5         6         7      ";
     string ruler2b = "123456789012345678901234567890123456";
     string ruler3b = "----+----+----+----+----+----+----+-";
-    string ruler   = String.Concat(ruler1a, ruler1b, nl,
+    string ruler   = string.Concat(ruler1a, ruler1b, nl,
                                    ruler2a, ruler2b, nl,
                                    ruler3a, ruler3b, nl);
 
