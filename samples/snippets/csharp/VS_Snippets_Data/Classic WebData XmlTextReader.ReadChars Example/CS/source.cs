@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Xml;
 
@@ -6,7 +6,7 @@ using System.Xml;
 
 public class Sample {
 
-  private const String filename = "items.xml";
+  private const string filename = "items.xml";
 
   public static void Main() {
 
@@ -15,7 +15,7 @@ public class Sample {
     try {
 
       // Declare variables used by ReadChars
-      Char []buffer;
+      char []buffer;
       int iCnt = 0;
       int charbuffersize;
 
@@ -33,7 +33,7 @@ public class Sample {
       while ( (iCnt = reader.ReadChars(buffer,0,charbuffersize)) > 0 ) {
         // Print out chars read and the buffer contents.
         Console.WriteLine ("  Chars read to buffer:" + iCnt);
-        Console.WriteLine ("  Buffer: [{0}]", new String(buffer,0,iCnt));
+        Console.WriteLine ("  Buffer: [{0}]", new string(buffer,0,iCnt));
         // Clear the buffer.
         Array.Clear(buffer,0,charbuffersize);
       }

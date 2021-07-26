@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Xml.Xsl;
 using System.Data;
@@ -12,7 +12,7 @@ public class Form1: Form
  {
 
 // <Snippet1>
-if (nsmgr.HasNamespace(String.Empty))
+if (nsmgr.HasNamespace(string.Empty))
   Console.WriteLine(nsmgr.DefaultNamespace);
    // </Snippet1>
  }

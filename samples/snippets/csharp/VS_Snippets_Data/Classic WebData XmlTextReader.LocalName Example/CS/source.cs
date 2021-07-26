@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -18,7 +18,7 @@ public class Sample {
        // namespace URI of each node.
        while (reader.Read()) {
          if (reader.IsStartElement()) {
-           if (reader.Prefix==String.Empty)
+           if (reader.Prefix==string.Empty)
                     {
                         Console.WriteLine("<{0}>", reader.LocalName);
                     }

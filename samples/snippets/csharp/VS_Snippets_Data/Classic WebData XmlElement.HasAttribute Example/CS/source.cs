@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -17,7 +17,7 @@ public class Sample
 
     // Check to see if the element has a genre attribute.
     if (root.HasAttribute("genre")){
-      String genre = root.GetAttribute("genre");
+      string genre = root.GetAttribute("genre");
       Console.WriteLine(genre);
    }
   }

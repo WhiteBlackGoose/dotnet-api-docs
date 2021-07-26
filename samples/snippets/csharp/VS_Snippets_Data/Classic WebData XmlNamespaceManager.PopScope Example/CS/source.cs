@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -29,7 +29,7 @@ public class Sample
   private void ShowAllNamespaces(XmlNamespaceManager nsmgr)
   {
     do{
-       foreach (String prefix in nsmgr)
+       foreach (string prefix in nsmgr)
        {
         Console.WriteLine("Prefix={0}, Namespace={1}", prefix,nsmgr.LookupNamespace(prefix));
        }

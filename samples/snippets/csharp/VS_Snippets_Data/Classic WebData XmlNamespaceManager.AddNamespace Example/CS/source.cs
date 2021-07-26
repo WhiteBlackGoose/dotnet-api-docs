@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Xml;
 
@@ -14,7 +14,7 @@ public class Sample
         {
 
             // Create the string containing the XML to read.
-            String xmlFrag = "<book>" +
+            string xmlFrag = "<book>" +
                            "<title>Pride And Prejudice</title>" +
                            "<author>" +
                            "<first-name>Jane</first-name>" +
@@ -27,14 +27,14 @@ public class Sample
             // Create an XmlNamespaceManager to resolve namespaces.
             NameTable nt = new NameTable();
             XmlNamespaceManager nsmgr = new XmlNamespaceManager(nt);
-            nsmgr.AddNamespace(String.Empty, "urn:samples"); //default namespace
+            nsmgr.AddNamespace(string.Empty, "urn:samples"); //default namespace
             nsmgr.AddNamespace("curr", "urn:samples:dollar");
 
             // Create an XmlParserContext.  The XmlParserContext contains all the information
             // required to parse the XML fragment, including the entity information and the
             // XmlNamespaceManager to use for namespace resolution.
             XmlParserContext context;
-            String subset = "<!ENTITY h 'hardcover'>";
+            string subset = "<!ENTITY h 'hardcover'>";
             context = new XmlParserContext(nt, nsmgr, "book", null, null, subset, null, null, XmlSpace.None);
 
             // Create the reader.

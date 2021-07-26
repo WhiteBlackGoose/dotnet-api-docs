@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.IO;
 using System.Xml;
@@ -19,7 +19,7 @@ public class Sample
      writer.WriteStartDocument();
 
      //Write the ProcessingInstruction node.
-     String PItext="type=\"text/xsl\" href=\"book.xsl\"";
+     string PItext="type=\"text/xsl\" href=\"book.xsl\"";
      writer.WriteProcessingInstruction("xml-stylesheet", PItext);
 
      //Write the DocumentType node.

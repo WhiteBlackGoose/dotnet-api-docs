@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
  using System;
  using System.IO;
  using System.Xml;
@@ -6,11 +6,11 @@
 
  public class SchemaCollectionSample
  {
-   private const String doc1 = "booksSchema.xml";
-   private const String doc2 = "booksSchemaFail.xml";
-   private const String doc3 = "newbooks.xml";
-   private const String schema = "books.xsd";
-   private const String schema1 = "schema1.xdr";
+   private const string doc1 = "booksSchema.xml";
+   private const string doc2 = "booksSchemaFail.xml";
+   private const string doc3 = "newbooks.xml";
+   private const string schema = "books.xsd";
+   private const string schema1 = "schema1.xdr";
 
    private XmlTextReader reader=null;
    private XmlValidatingReader vreader = null;
@@ -34,7 +34,7 @@
        SchemaCollectionSample validation = new SchemaCollectionSample();
    }
 
-   private void Validate(String filename, XmlSchemaCollection xsc)
+   private void Validate(string filename, XmlSchemaCollection xsc)
    {
 
       m_success = true;
