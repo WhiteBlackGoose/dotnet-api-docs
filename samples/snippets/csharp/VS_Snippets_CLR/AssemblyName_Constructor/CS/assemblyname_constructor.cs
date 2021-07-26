@@ -1,4 +1,4 @@
-﻿// System.Reflection.AssemblyName.AssemblyName()
+// System.Reflection.AssemblyName.AssemblyName()
 // System.Reflection.AssemblyName.Name
 // System.Reflection.AssemblyName.Version
 
@@ -68,7 +68,7 @@ public class AssemblyName_Constructor
       Assembly myAssembly = null;
       for(int i = 0; i < myAssemblies.Length; i++)
       {
-         if(String.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
+         if(string.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
             myAssembly = myAssemblies[i];
       }
       if(myAssembly != null)

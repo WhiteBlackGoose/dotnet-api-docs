@@ -1,4 +1,4 @@
-﻿// <snippet1>
+// <snippet1>
 using System;
 using System.Reflection;
 using System.IO;
@@ -84,7 +84,7 @@ namespace BindingFlagsSnippet
             // BindingFlags.InvokeMethod
             // Call a method using named parameters.
             object[] argValues = new object [] {"Mouse", "Micky"};
-            String [] argNames = new String [] {"lastName", "firstName"};
+            string [] argNames = new string [] {"lastName", "firstName"};
             t.InvokeMember ("PrintName", BindingFlags.InvokeMethod, null, null, argValues, null, null,
                 argNames);
 
@@ -174,7 +174,7 @@ namespace BindingFlagsSnippet
 
     public class TestClass
     {
-        public String Name;
+        public string Name;
         private Object [] values = new Object [] {0, 1,2,3,4,5,6,7,8,9};
 
         public Object this [int index]
@@ -221,7 +221,7 @@ namespace BindingFlagsSnippet
             return d1 + d2;
         }
 
-        public static void PrintName (String firstName, String lastName)
+        public static void PrintName (string firstName, string lastName)
         {
             Console.WriteLine ("{0},{1}", lastName,firstName);
         }

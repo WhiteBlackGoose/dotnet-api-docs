@@ -1,5 +1,5 @@
-﻿//<snippet1>
-// This example demonstrates the Char.IsLowSurrogate() method
+//<snippet1>
+// This example demonstrates the char.IsLowSurrogate() method
 //                                    IsHighSurrogate() method
 //                                    IsSurrogatePair() method
 using System;
@@ -10,8 +10,8 @@ class Sample
     {
     char cHigh = '\uD800';
     char cLow  = '\uDC00';
-    string s1  = new String(new char[] {'a', '\uD800', '\uDC00', 'z'});
-    string divider = String.Concat( Environment.NewLine, new String('-', 70),
+    string s1  = new string(new char[] {'a', '\uD800', '\uDC00', 'z'});
+    string divider = string.Concat( Environment.NewLine, new string('-', 70),
                                     Environment.NewLine);
 
     Console.WriteLine();
@@ -27,24 +27,24 @@ class Sample
     Console.WriteLine(divider);
 
     Console.WriteLine("Is each of the following characters a high surrogate?");
-    Console.WriteLine("A1) cLow?  - {0}", Char.IsHighSurrogate(cLow));
-    Console.WriteLine("A2) cHigh? - {0}", Char.IsHighSurrogate(cHigh));
-    Console.WriteLine("A3) s1[0]? - {0}", Char.IsHighSurrogate(s1, 0));
-    Console.WriteLine("A4) s1[1]? - {0}", Char.IsHighSurrogate(s1, 1));
+    Console.WriteLine("A1) cLow?  - {0}", char.IsHighSurrogate(cLow));
+    Console.WriteLine("A2) cHigh? - {0}", char.IsHighSurrogate(cHigh));
+    Console.WriteLine("A3) s1[0]? - {0}", char.IsHighSurrogate(s1, 0));
+    Console.WriteLine("A4) s1[1]? - {0}", char.IsHighSurrogate(s1, 1));
     Console.WriteLine(divider);
 
     Console.WriteLine("Is each of the following characters a low surrogate?");
-    Console.WriteLine("B1) cLow?  - {0}", Char.IsLowSurrogate(cLow));
-    Console.WriteLine("B2) cHigh? - {0}", Char.IsLowSurrogate(cHigh));
-    Console.WriteLine("B3) s1[0]? - {0}", Char.IsLowSurrogate(s1, 0));
-    Console.WriteLine("B4) s1[2]? - {0}", Char.IsLowSurrogate(s1, 2));
+    Console.WriteLine("B1) cLow?  - {0}", char.IsLowSurrogate(cLow));
+    Console.WriteLine("B2) cHigh? - {0}", char.IsLowSurrogate(cHigh));
+    Console.WriteLine("B3) s1[0]? - {0}", char.IsLowSurrogate(s1, 0));
+    Console.WriteLine("B4) s1[2]? - {0}", char.IsLowSurrogate(s1, 2));
     Console.WriteLine(divider);
 
     Console.WriteLine("Is each of the following pairs of characters a surrogate pair?");
-    Console.WriteLine("C1) cHigh and cLow?  - {0}", Char.IsSurrogatePair(cHigh, cLow));
-    Console.WriteLine("C2) s1[0] and s1[1]? - {0}", Char.IsSurrogatePair(s1, 0));
-    Console.WriteLine("C3) s1[1] and s1[2]? - {0}", Char.IsSurrogatePair(s1, 1));
-    Console.WriteLine("C4) s1[2] and s1[3]? - {0}", Char.IsSurrogatePair(s1, 2));
+    Console.WriteLine("C1) cHigh and cLow?  - {0}", char.IsSurrogatePair(cHigh, cLow));
+    Console.WriteLine("C2) s1[0] and s1[1]? - {0}", char.IsSurrogatePair(s1, 0));
+    Console.WriteLine("C3) s1[1] and s1[2]? - {0}", char.IsSurrogatePair(s1, 1));
+    Console.WriteLine("C4) s1[2] and s1[3]? - {0}", char.IsSurrogatePair(s1, 2));
     Console.WriteLine(divider);
     }
 }

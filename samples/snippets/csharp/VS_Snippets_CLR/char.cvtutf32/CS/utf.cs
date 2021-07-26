@@ -1,6 +1,6 @@
-﻿//<snippet1>
-// This example demonstrates the Char.ConvertFromUtf32() method
-//                           and Char.ConvertToUtf32() overloads.
+//<snippet1>
+// This example demonstrates the char.ConvertFromUtf32() method
+//                           and char.ConvertToUtf32() overloads.
 using System;
 
 class Sample
@@ -16,10 +16,10 @@ class Sample
     string comment2c = "Create a code point from a high surrogate and a low surrogate code point.";
 
 //  Convert code point U+0041 to UTF-16. The UTF-16 equivalent of
-//  U+0041 is a Char with hexadecimal value 0041.
+//  U+0041 is a char with hexadecimal value 0041.
 
     Console.WriteLine(comment);
-    s1 = Char.ConvertFromUtf32(letterA);
+    s1 = char.ConvertFromUtf32(letterA);
     Console.Write("    1a) 0x{0:X} => ", letterA);
     Show(s1);
     Console.WriteLine();
@@ -27,7 +27,7 @@ class Sample
 //  Convert the lone UTF-16 character to a code point.
 
     Console.WriteLine(comment1b);
-    letterA = Char.ConvertToUtf32(s1, 0);
+    letterA = char.ConvertToUtf32(s1, 0);
     Console.Write("    1b) ");
     Show(s1);
     Console.WriteLine(" => 0x{0:X}", letterA);
@@ -39,7 +39,7 @@ class Sample
 //  U+1D161 is a surrogate pair with hexadecimal values D834 and DD61.
 
     Console.WriteLine(comment);
-    s1 = Char.ConvertFromUtf32(music);
+    s1 = char.ConvertFromUtf32(music);
     Console.Write("    2a) 0x{0:X} => ", music);
     Show(s1);
     Console.WriteLine();
@@ -48,7 +48,7 @@ class Sample
 //  zero to a code point.
 
     Console.WriteLine(comment2b);
-    music = Char.ConvertToUtf32(s1, 0);
+    music = char.ConvertToUtf32(s1, 0);
     Console.Write("    2b) ");
     Show(s1);
     Console.WriteLine(" => 0x{0:X}", music);
@@ -56,7 +56,7 @@ class Sample
 //  Convert the high and low characters in the surrogate pair into a code point.
 
     Console.WriteLine(comment2c);
-    music = Char.ConvertToUtf32(s1[0], s1[1]);
+    music = char.ConvertToUtf32(s1[0], s1[1]);
     Console.Write("    2c) ");
     Show(s1);
     Console.WriteLine(" => 0x{0:X}", music);
@@ -68,7 +68,7 @@ class Sample
         {
         Console.Write("0x{0:X}{1}",
                        (int)s[x],
-                       ((x == s.Length-1)? String.Empty : ", "));
+                       ((x == s.Length-1)? string.Empty : ", "));
         }
     }
 }

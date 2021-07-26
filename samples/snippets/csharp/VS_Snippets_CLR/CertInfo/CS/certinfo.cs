@@ -1,4 +1,4 @@
-﻿//<SNIPPET1>
+//<SNIPPET1>
 using System;
 using System.Security.Cryptography;
 using System.Security.Permissions;
@@ -45,7 +45,7 @@ class CertInfo
 			Console.WriteLine("{0}Public Key Format: {1}{0}", Environment.NewLine, x509.PublicKey.EncodedKeyValue.Format(true));
 			Console.WriteLine("{0}Raw Data Length: {1}{0}", Environment.NewLine, x509.RawData.Length);
 			Console.WriteLine("{0}Certificate to string: {1}{0}", Environment.NewLine, x509.ToString(true));
-			Console.WriteLine("{0}Certificate to XML String: {1}{0}", Environment.NewLine, x509.PublicKey.Key.ToXmlString(false));
+			Console.WriteLine("{0}Certificate to XML string: {1}{0}", Environment.NewLine, x509.PublicKey.Key.ToXmlString(false));
 
 			//Add the certificate to a X509Store.
 			X509Store store = new X509Store();

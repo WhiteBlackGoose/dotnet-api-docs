@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -12,7 +12,7 @@ class Example
             typeof(Example).Assembly.GetName().Version);
 
         Console.WriteLine("The version of mscorlib.dll is: {0}",
-            typeof(String).Assembly.GetName().Version);
+            typeof(string).Assembly.GetName().Version);
     }
 }
 

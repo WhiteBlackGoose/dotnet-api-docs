@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Threading;
 
@@ -12,7 +12,7 @@ namespace Examples.AdvancedProgramming.AsynchronousOperations
             Console.WriteLine("Test method begins.");
             Thread.Sleep(callDuration);
             threadId = Thread.CurrentThread.ManagedThreadId;
-            return String.Format("My call time was {0}.", callDuration.ToString());
+            return string.Format("My call time was {0}.", callDuration.ToString());
         }
     }
     // The delegate must have the same signature as the method

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Globalization;
@@ -63,7 +63,7 @@ public class MyBinder : Binder
                     if(names.Length != args.Length)
                         throw new ArgumentException("names and args must have the same number of elements.");
                     for(int k = 0; k < names.Length; k++)
-                        if(String.Compare(parameters[j].Name, names[k].ToString()) == 0)
+                        if(string.Compare(parameters[j].Name, names[k].ToString()) == 0)
                             args[j] = myBinderState.args[k];
                 }
                 // Determine whether the types specified by the user can be converted to the parameter type.
@@ -175,7 +175,7 @@ public class MyBinder : Binder
             // If both type1 and type2 have the same type, return true.
             if(typeCode1 == typeCode2)
                 return true;
-            // Possible conversions from Char follow.
+            // Possible conversions from char follow.
             if(typeCode1 == TypeCode.Char)
                 switch(typeCode2)
                 {
@@ -246,7 +246,7 @@ public class MyBinder : Binder
                     case TypeCode.Double : return true;
                     default              : return false;
                 }
-            // Possible conversions from Int32 follow.
+            // Possible conversions from int follow.
             if(typeCode1 == TypeCode.Int32)
                 switch(typeCode2)
                 {

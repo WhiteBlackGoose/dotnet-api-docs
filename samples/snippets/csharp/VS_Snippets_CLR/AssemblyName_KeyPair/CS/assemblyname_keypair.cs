@@ -1,4 +1,4 @@
-﻿// System.Reflection.AssemblyName.KeyPair
+// System.Reflection.AssemblyName.KeyPair
 // System.Reflection.AssemblyName.GetPublicKey()
 // System.Reflection.AssemblyName.GetPublicKeyToken()
 // System.Reflection.AssemblyName.Flags
@@ -88,7 +88,7 @@ public class AssemblyName_CodeBase
       // Get the dynamic assembly named 'MyAssembly'.
       Assembly myAssembly = null;
       for(int i = 0; i < myAssemblies.Length; i++)
-         if(String.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
+         if(string.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
             myAssembly = myAssemblies[i];
 
       // Display the full assembly information to the console.

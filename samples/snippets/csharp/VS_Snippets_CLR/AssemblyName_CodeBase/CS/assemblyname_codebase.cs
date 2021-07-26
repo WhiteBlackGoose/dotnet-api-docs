@@ -1,4 +1,4 @@
-﻿// System.Reflection.AssemblyName.CodeBase
+// System.Reflection.AssemblyName.CodeBase
 // System.Reflection.AssemblyName.CultureInfo
 // System.Reflection.AssemblyName.HashAlgorithm
 // System.Reflection.AssemblyName.FullName
@@ -80,7 +80,7 @@ public class AssemblyName_CodeBase
       Assembly myAssembly = null;
       for(int i = 0; i < myAssemblies.Length; i++)
       {
-         if(String.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
+         if(string.Compare(myAssemblies[i].GetName().Name, "MyAssembly") == 0)
             myAssembly = myAssemblies[i];
       }
       // Display the full assembly information to the console.
