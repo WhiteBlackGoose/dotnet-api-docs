@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -10,11 +10,11 @@ public class Form1: Form
     protected DataGrid dataGrid1;
 
     // <Snippet1>
-    private void PrintToString(DataSet dataSet)
+    private void PrintTostring(DataSet dataSet)
     {
         foreach(DataTable table in dataSet.Tables)
         {
-            Console.WriteLine(table.ToString());
+            Console.WriteLine(table.Tostring());
         }
     }
     // </Snippet1>

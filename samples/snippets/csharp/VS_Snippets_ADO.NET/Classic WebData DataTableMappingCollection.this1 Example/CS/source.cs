@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -21,8 +21,8 @@ public class Form1: Form
             Console.WriteLine("Error: no such table in collection");
         else
             Console.WriteLine
-                ("Name: " + mappings["Categories"].ToString() + "\n"
-                + "Index: " + mappings.IndexOf("Categories").ToString());
+                ("Name: " + mappings["Categories"].Tostring() + "\n"
+                + "Index: " + mappings.IndexOf("Categories").Tostring());
     }
     // </Snippet1>
 }

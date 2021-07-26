@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -54,7 +54,7 @@ public static DataSet CreateDataSet()
     // Add twelve rows
     for (int i = 0; i < 10; i++)
     {
-        t.Rows.Add(new object[] { i, i.ToString() });
+        t.Rows.Add(new object[] { i, i.Tostring() });
     }
     t.Rows.Add(new object[] { 11, "abc" });
     t.Rows.Add(new object[] { 15, "ABC" });

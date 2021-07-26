@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -22,7 +22,7 @@ public class Form1: Form
         // Code to add columns and rows not shown here.
 
         Console.WriteLine(table.TableName);
-        Console.WriteLine(thisDataSet.Tables.Count.ToString());
+        Console.WriteLine(thisDataSet.Tables.Count.Tostring());
     }
     // </Snippet1>
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -20,8 +20,8 @@ public class Form1: Form
         string message = "TableMappings:\n";
         for(int i=0;i < mappings.Count;i++)
         {
-            message += i.ToString() + " "
-                + mappings[i].ToString() + "\n";
+            message += i.Tostring() + " "
+                + mappings[i].Tostring() + "\n";
         }
         Console.WriteLine(message);
     }

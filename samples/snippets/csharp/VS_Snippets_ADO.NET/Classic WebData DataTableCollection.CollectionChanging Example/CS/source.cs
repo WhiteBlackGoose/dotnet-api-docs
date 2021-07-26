@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 using System.Data.Odbc;
@@ -63,7 +63,7 @@ class Program
         // catch.
 
         Console.WriteLine("Collection_Changing Event: '{0}'\table element={1}",
-            e.Action.ToString(), e.Element.ToString());
+            e.Action.Tostring(), e.Element.Tostring());
     }
     // </Snippet1>
 }

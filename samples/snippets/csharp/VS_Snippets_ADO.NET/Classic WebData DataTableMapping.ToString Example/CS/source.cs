@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -20,8 +20,8 @@ public class Form1: Form
         DataTableMapping mapping =
             new DataTableMapping("Categories","DataCategories");
         mappings.Add((Object) mapping);
-        Console.WriteLine("Table " + mapping.ToString() + " added to " +
-            "table mapping collection " + mappings.ToString());
+        Console.WriteLine("Table " + mapping.Tostring() + " added to " +
+            "table mapping collection " + mappings.Tostring());
     }
     // </Snippet1>
 }

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Xml;
 using System.Data;
 using System.Data.Common;
@@ -37,7 +37,7 @@ public class Form1: Form
         {
             row = table.NewRow();
             row["id"] = i;
-            row["item"] = "item " + i.ToString();
+            row["item"] = "item " + i.Tostring();
             table.Rows.Add(row);
         }
 
