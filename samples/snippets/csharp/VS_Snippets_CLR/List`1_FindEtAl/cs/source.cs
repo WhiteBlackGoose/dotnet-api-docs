@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections.Generic;
 
@@ -55,7 +55,7 @@ public class Example
     }
 
     // Search predicate returns true if a string ends in "saurus".
-    private static bool EndsWithSaurus(String s)
+    private static bool EndsWithSaurus(string s)
     {
         return s.ToLower().EndsWith("saurus");
     }

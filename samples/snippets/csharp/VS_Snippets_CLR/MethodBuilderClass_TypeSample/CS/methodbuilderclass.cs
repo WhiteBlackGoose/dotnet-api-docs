@@ -1,4 +1,4 @@
-﻿// System.Reflection.Emit.MethodBuilder
+// System.Reflection.Emit.MethodBuilder
 
 /*
    This program demonstrates 'MethodBuilder' class. A dynamic class 'myTypeBuilder'
@@ -35,7 +35,7 @@ public class MethodBuilderClass
                                                  TypeAttributes.Public);
          // Define a public string field named 'myField'.
          FieldBuilder myField = myTypeBuilder.DefineField("MyDynamicField",
-                        typeof(String), FieldAttributes.Public);
+                        typeof(string), FieldAttributes.Public);
 
          // Define the dynamic method 'MyDynamicMethod'.
          MethodBuilder myMethodBuilder = myTypeBuilder.DefineMethod("MyDynamicMethod",

@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates Math.Atan()
 //                           Math.Atan2()
 //                           Math.Tan()
@@ -26,9 +26,9 @@ class Sample
     Console.WriteLine("The previous tangent is equivalent to {0} degrees.", angle);
 
 // Calculate the arctangent of an angle.
-    String line1 = "{0}The arctangent of the angle formed by the x-axis and ";
-    String line2 = "a vector to point ({0},{1}) is {2}, ";
-    String line3 = "which is equivalent to {0} degrees.";
+    string line1 = "{0}The arctangent of the angle formed by the x-axis and ";
+    string line2 = "a vector to point ({0},{1}) is {2}, ";
+    string line3 = "which is equivalent to {0} degrees.";
 
     radians = Math.Atan2(y, x);
     angle = radians * (180/Math.PI);

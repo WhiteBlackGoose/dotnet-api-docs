@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -117,7 +117,7 @@ Void Generic[T](T)
                 T  parameter position 0
                    declaring method: Void Generic[T](T)
 
-Void Generic[Int32](Int32)
+Void Generic[Int32](int)
         Is this a generic method definition? False
         Is it a generic method? True
         Does it have unassigned generic parameters? False

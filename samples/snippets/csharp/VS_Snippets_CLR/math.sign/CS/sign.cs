@@ -1,4 +1,4 @@
-﻿//<snippet1>
+//<snippet1>
 // This example demonstrates Math.Sign()
 using System;
 
@@ -22,7 +22,7 @@ class Sample
         Console.WriteLine($"{nl}Test the sign of the following types of values:");
         Console.WriteLine(str, "Byte   ", xByte1, Test(Math.Sign(xByte1)));
         Console.WriteLine(str, "Int16  ", xShort1, Test(Math.Sign(xShort1)));
-        Console.WriteLine(str, "Int32  ", xInt1, Test(Math.Sign(xInt1)));
+        Console.WriteLine(str, "int  ", xInt1, Test(Math.Sign(xInt1)));
         Console.WriteLine(str, "Int64  ", xLong1, Test(Math.Sign(xLong1)));
         Console.WriteLine(str, "Single ", xSingle1, Test(Math.Sign(xSingle1)));
         Console.WriteLine(str, "Double ", xDouble1, Test(Math.Sign(xDouble1)));
@@ -48,7 +48,7 @@ This example produces the following results:
 Test the sign of the following types of values:
 Byte   :   0 is equal to zero.
 Int16  :  -2 is less than zero.
-Int32  :  -3 is less than zero.
+int  :  -3 is less than zero.
 Int64  :  -4 is less than zero.
 Single :   0 is equal to zero.
 Double :   6 is greater than zero.

@@ -1,4 +1,4 @@
-﻿// This example demonstrates Math.Min()
+// This example demonstrates Math.Min()
 using System;
 
 class Sample
@@ -25,7 +25,7 @@ class Sample
         Console.WriteLine("Display the lesser of two values:\n");
         Console.WriteLine(str, "Byte   ", xByte1, xByte2, Math.Min(xByte1, xByte2));
         Console.WriteLine(str, "Int16  ", xShort1, xShort2, Math.Min(xShort1, xShort2));
-        Console.WriteLine(str, "Int32  ", xInt1, xInt2, Math.Min(xInt1, xInt2));
+        Console.WriteLine(str, "int  ", xInt1, xInt2, Math.Min(xInt1, xInt2));
         Console.WriteLine(str, "Int64  ", xLong1, xLong2, Math.Min(xLong1, xLong2));
         Console.WriteLine(str, "Single ", xSingle1, xSingle2, Math.Min(xSingle1, xSingle2));
         Console.WriteLine(str, "Double ", xDouble1, xDouble2, Math.Min(xDouble1, xDouble2));
@@ -44,7 +44,7 @@ class Sample
 
         Byte   : The lesser of   1 and  51 is 1.
         Int16  : The lesser of  -2 and  52 is -2.
-        Int32  : The lesser of  -3 and  53 is -3.
+        int  : The lesser of  -3 and  53 is -3.
         Int64  : The lesser of  -4 and  54 is -4.
         Single : The lesser of   5 and  55 is 5.
         Double : The lesser of   6 and  56 is 6.

@@ -1,4 +1,4 @@
-﻿// This example demonstrates Math.Max()
+// This example demonstrates Math.Max()
 using System;
 
 class Sample
@@ -25,7 +25,7 @@ class Sample
         Console.WriteLine("Display the greater of two values:\n");
         Console.WriteLine(str, "Byte   ", xByte1, xByte2, Math.Max(xByte1, xByte2));
         Console.WriteLine(str, "Int16  ", xShort1, xShort2, Math.Max(xShort1, xShort2));
-        Console.WriteLine(str, "Int32  ", xInt1, xInt2, Math.Max(xInt1, xInt2));
+        Console.WriteLine(str, "int  ", xInt1, xInt2, Math.Max(xInt1, xInt2));
         Console.WriteLine(str, "Int64  ", xLong1, xLong2, Math.Max(xLong1, xLong2));
         Console.WriteLine(str, "Single ", xSingle1, xSingle2, Math.Max(xSingle1, xSingle2));
         Console.WriteLine(str, "Double ", xDouble1, xDouble2, Math.Max(xDouble1, xDouble2));
@@ -44,7 +44,7 @@ class Sample
 
         Byte   : The greater of   1 and  51 is 51.
         Int16  : The greater of  -2 and  52 is 52.
-        Int32  : The greater of  -3 and  53 is 53.
+        int  : The greater of  -3 and  53 is 53.
         Int64  : The greater of  -4 and  54 is 54.
         Single : The greater of   5 and  55 is 55.
         Double : The greater of   6 and  56 is 56.

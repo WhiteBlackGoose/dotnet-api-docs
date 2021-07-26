@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Reflection;
 
@@ -57,7 +57,7 @@ public class AuthorsAttribute : Attribute
       string retval = "";
       for (int ctr = 0; ctr < _authors.Count; ctr++)
       {
-         retval += $"{_authors[ctr]}{(ctr < _authors.Count - 1 ? ", " : String.Empty)}";
+         retval += $"{_authors[ctr]}{(ctr < _authors.Count - 1 ? ", " : string.Empty)}";
       }
       if (retval.Trim().Length == 0)
       {

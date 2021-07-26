@@ -1,4 +1,4 @@
-﻿//Types:System.Runtime.InteropServices.Marshal
+//Types:System.Runtime.InteropServices.Marshal
 //<snippet1>
 using System;
 using System.Text;
@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 
 public struct Point
 {
-    public Int32 x, y;
+    public int x, y;
 }
 
 public sealed class App

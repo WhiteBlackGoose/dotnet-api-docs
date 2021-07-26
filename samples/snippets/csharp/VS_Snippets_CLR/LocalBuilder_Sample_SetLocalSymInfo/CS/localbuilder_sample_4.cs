@@ -1,13 +1,13 @@
-﻿// System.Reflection.Emit.LocalBuilder
+// System.Reflection.Emit.LocalBuilder
 // System.Reflection.Emit.ILGenerator.DeclareLocal(Type)
-// System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(String)
+// System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(string)
 // System.Reflection.Emit.LocalBuilder.LocalType()
-// System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(String, Int32, Int32)
+// System.Reflection.Emit.LocalBuilder.SetLocalSymInfo(string, int, int)
 
 /*
 
-This program demonstrates 'LocalType' property, 'SetLocalSymInfo(String)',
-'SetLocalSymInfo(String, Int32,Int32)' methods, class level for 'LocalBuilder' and
+This program demonstrates 'LocalType' property, 'SetLocalSymInfo(string)',
+'SetLocalSymInfo(string, int,Int32)' methods, class level for 'LocalBuilder' and
 'DeclareLocal(Type)' method of ILGenerator class. An assembly 'Example' is created using
 AssemblyBuilder, ModuleBuilder, FieldBuilder, TypeBuilder, ConstructorBuilder classes.
 Localbuilder class is used to create local variables of the specified type.
@@ -46,7 +46,7 @@ class LocalBuilder_Sample
         // and returns a string.
         MethodBuilder myMethod = myTypeBuilder.DefineMethod("Function1",
            MethodAttributes.Public | MethodAttributes.Static,
-           typeof(String), new Type[] { typeof(int) });
+           typeof(string), new Type[] { typeof(int) });
 
         // Generate IL for 'Function1'. The function body demonstrates
         // assigning an argument to a local variable, assigning a

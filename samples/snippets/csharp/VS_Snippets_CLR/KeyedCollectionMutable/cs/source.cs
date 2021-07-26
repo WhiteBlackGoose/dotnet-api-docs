@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -190,7 +190,7 @@ public class MutableKey
 
     public override string ToString()
     {
-        return String.Format("{0,9} {1}", _key, Value);
+        return string.Format("{0,9} {1}", _key, Value);
     }
 }
 
