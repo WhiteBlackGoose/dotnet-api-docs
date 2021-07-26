@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
@@ -6,12 +6,12 @@ public class Employee
 {
    private string _id;
 
-   public String FirstName { get; set; }
-   public String MiddleName { get; set; }
-   public String LastName  { get; set; }
+   public string FirstName { get; set; }
+   public string MiddleName { get; set; }
+   public string LastName  { get; set; }
    public DateTime HireDate  { get; set; }
 
-   public String ID
+   public string ID
    {
       get { return _id; }
       set {
@@ -36,9 +36,9 @@ public class Example
 }
 // The example displays the following output:
 //       The Employee type has the following properties:
-//          FirstName (String)
-//          MiddleName (String)
-//          LastName (String)
+//          FirstName (string)
+//          MiddleName (string)
+//          LastName (string)
 //          HireDate (DateTime)
-//          ID (String)
+//          ID (string)
 // </Snippet1>

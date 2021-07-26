@@ -1,19 +1,19 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
 public class Planet
 {
-   private String planetName;
+   private string planetName;
    private Double distanceFromEarth;
    
-   public Planet(String name, Double distance)
+   public Planet(string name, Double distance)
    {
       planetName = name;
       distanceFromEarth = distance;
    } 
 
-   public String Name
+   public string Name
    { get { return planetName; } }
    
    public Double Distance 
@@ -49,6 +49,6 @@ public class Example
 // The example displays the following output:
 //       Type is: Planet
 //       Properties (N = 2):
-//          Name (String): Jupiter
+//          Name (string): Jupiter
 //          Distance (Double): 365000000
 // </Snippet1>

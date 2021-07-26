@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Globalization;
 using System.Resources;
@@ -37,7 +37,7 @@ public class Example
 //    , Boolean createIfNotExists, Boolean tryParents, StackCrawlMark& stackMark)
 //       at System.Resources.ResourceManager.InternalGetResourceSet(CultureInfo culture, Boolean
 //     createIfNotExists, Boolean tryParents)
-//       at System.Resources.ResourceManager.GetString(String name, CultureInfo culture)
+//       at System.Resources.ResourceManager.GetString(string name, CultureInfo culture)
 //       at Example.Main()
 // The example displays the following output when created using BuildDefault.bat:
 //    The current UI culture is fr-FR

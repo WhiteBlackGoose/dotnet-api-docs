@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Threading;
@@ -186,7 +186,7 @@ class TestCtorBuilder {
            // -- Method GetType;
            // -- Constructor .ctor;
 	   // ---
-	   // Constructor: Void .ctor(Int32, Int32, Int32);
+	   // Constructor: Void .ctor(int, int, int);
 	   // ---
 	   // aPoint is type Point.
 	   // aPoint.x = 4

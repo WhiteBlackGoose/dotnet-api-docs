@@ -1,4 +1,4 @@
-﻿// <Snippet2>
+// <Snippet2>
 using System;
 using System.Reflection;
 
@@ -14,7 +14,7 @@ public class Example
 {
    public static void Main()
    {
-      MethodInfo equals = typeof(Int32).GetMethod("Equals", 
+      MethodInfo equals = typeof(int).GetMethod("Equals", 
                                         new Type[] { typeof(Object) } );
       Console.WriteLine("{0}.{1} is inherited: {2}", 
                         equals.ReflectedType.Name, equals.Name,
@@ -28,6 +28,6 @@ public class Example
    }
 }
 // The example displays the following output:
-//       Int32.Equals is inherited: True
+//       int.Equals is inherited: True
 //       Object.Equals is inherited: False
 // </Snippet2>

@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 
 using System;
 using System.Threading;
@@ -76,7 +76,7 @@ class EmitWriteLineDemo {
        // for said string. In the below case, you are substituting in two values,
        // so the chosen overload is Console.WriteLine(string, object, object).
 
-       String inStr = "({0}, {1})";
+       string inStr = "({0}, {1})";
        Type[] wlParams = new Type[] {typeof(string),
 				     typeof(object),
 				     typeof(object)};

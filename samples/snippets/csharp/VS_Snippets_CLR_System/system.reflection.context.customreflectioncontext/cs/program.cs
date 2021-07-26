@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -34,7 +34,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             myCRC mc = new myCRC();
-            Type t = typeof(String);
+            Type t = typeof(string);
 
             //A representation of the type in the default reflection context.
             TypeInfo ti = t.GetTypeInfo();

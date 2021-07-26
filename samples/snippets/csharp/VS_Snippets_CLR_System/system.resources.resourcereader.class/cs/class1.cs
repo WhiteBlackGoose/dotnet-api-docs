@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Collections;
 using System.Resources;
@@ -18,20 +18,20 @@ public class Example
 }
 // The example displays the following output:
 //       Resources in ApplicationResources.resources:
-//          Label3: '"Last Name:"' (Type String)
-//          Label2: '"Middle Name:"' (Type String)
-//          Label1: '"First Name:"' (Type String)
-//          Label7: '"State:"' (Type String)
-//          Label6: '"City:"' (Type String)
-//          Label5: '"Street Address:"' (Type String)
-//          Label4: '"SSN:"' (Type String)
-//          Label9: '"Home Phone:"' (Type String)
-//          Label8: '"Zip Code:"' (Type String)
-//          Title: '"Contact Information"' (Type String)
-//          Label12: '"Other Phone:"' (Type String)
-//          Label13: '"Fax:"' (Type String)
-//          Label10: '"Business Phone:"' (Type String)
-//          Label11: '"Mobile Phone:"' (Type String)
-//          Label14: '"Email Address:"' (Type String)
-//          Label15: '"Alternate Email Address:"' (Type String)
+//          Label3: '"Last Name:"' (Type string)
+//          Label2: '"Middle Name:"' (Type string)
+//          Label1: '"First Name:"' (Type string)
+//          Label7: '"State:"' (Type string)
+//          Label6: '"City:"' (Type string)
+//          Label5: '"Street Address:"' (Type string)
+//          Label4: '"SSN:"' (Type string)
+//          Label9: '"Home Phone:"' (Type string)
+//          Label8: '"Zip Code:"' (Type string)
+//          Title: '"Contact Information"' (Type string)
+//          Label12: '"Other Phone:"' (Type string)
+//          Label13: '"Fax:"' (Type string)
+//          Label10: '"Business Phone:"' (Type string)
+//          Label11: '"Mobile Phone:"' (Type string)
+//          Label14: '"Email Address:"' (Type string)
+//          Label15: '"Alternate Email Address:"' (Type string)
 // </Snippet1>

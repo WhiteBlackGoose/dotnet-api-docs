@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 
@@ -66,9 +66,9 @@ public class Test
 /* This code example produces the following output:
 
 ------ List the overloads of M in the derived class D ------
-Overload of M: Void M(Int32)  IsHideBySig = True, DeclaringType = B
+Overload of M: Void M(int)  IsHideBySig = True, DeclaringType = B
 Overload of M: Void M()  IsHideBySig = True, DeclaringType = B
-Overload of M: Void M(Int32)  IsHideBySig = True, DeclaringType = D
+Overload of M: Void M(int)  IsHideBySig = True, DeclaringType = D
 ------ Call the overloads of M available in D ------
 B's M()
 D's M(42)

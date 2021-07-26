@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -19,7 +19,7 @@ public class Example
 //       OpCodeType (OpCodeType): Primitive
 //       StackBehaviourPop (StackBehaviour): Pop1_pop1
 //       StackBehaviourPush (StackBehaviour): Push1
-//       Size (Int32): 1
+//       Size (int): 1
 //       Value (Int16): 88
-//       Name (String): add
+//       Name (string): add
 // </Snippet1>

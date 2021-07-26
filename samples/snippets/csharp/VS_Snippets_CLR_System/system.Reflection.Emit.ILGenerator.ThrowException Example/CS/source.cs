@@ -1,4 +1,4 @@
-﻿//<Snippet1>
+//<Snippet1>
 using System;
 using System.Reflection;
 using System.Reflection.Emit;
@@ -178,7 +178,7 @@ Enter another integer value: 101
 If either integer was > 100, an exception will be thrown.
 ---
 Caught System.OverflowException: Arithmetic operation resulted in an overflow.
-   at Adder.DoAdd(Int32 , Int32 )
+   at Adder.DoAdd(int , int )
  24 + 101 = -1
  */
 //</Snippet1>

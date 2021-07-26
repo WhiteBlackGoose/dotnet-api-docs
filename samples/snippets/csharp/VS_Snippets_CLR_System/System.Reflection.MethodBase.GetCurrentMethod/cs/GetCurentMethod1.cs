@@ -1,4 +1,4 @@
-﻿// <Snippet1>
+// <Snippet1>
 using System;
 using System.Reflection;
 
@@ -122,5 +122,5 @@ public class Test<T>
 //       Executing Test`1.ConvertValue
 //             Generic method: True, definition: True, Args: Y
 //       Executing Test`1.GetValue
-//       Int32 -> 200 (Byte)
+//       int -> 200 (Byte)
 // </Snippet1>
